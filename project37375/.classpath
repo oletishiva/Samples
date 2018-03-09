@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/boon-0.33.jar"/>
+	<classpathentry kind="lib" path="lib/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="lib/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="lib/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="lib/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="lib/imageClient_doc.zip"/>
+	<classpathentry kind="lib" path="lib/imageClient.jar"/>
+	<classpathentry kind="lib" path="lib/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="lib/manager-client-11.2.jar"/>
+	<classpathentry kind="lib" path="lib/manager-client-api-11.2.jar"/>
+	<classpathentry kind="lib" path="lib/manager-client-standalone-without-unittest-11.2.jar"/>
+	<classpathentry kind="lib" path="lib/mobile-webdriver.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-api-2.42.2.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-support-2.44.0.jar"/>
+	<classpathentry kind="lib" path="lib/ws-commons-util-1.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/xmlrpc-client-3.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/xmlrpc-common-3.1.2.jar"/>
+	<classpathentry kind="lib" path="otherLib/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="otherLib/ant-javamail-1.6.2.jar"/>
+	<classpathentry kind="lib" path="otherLib/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="otherLib/jxl.jar"/>
+	<classpathentry kind="lib" path="otherLib/mail-1.4.jar"/>
+	<classpathentry kind="lib" path="otherLib/ooxml-schemas-1.3.jar"/>
+	<classpathentry kind="lib" path="otherLib/poi-3.17.jar"/>
+	<classpathentry kind="lib" path="otherLib/poi-ooxml-3.17.jar"/>
+	<classpathentry kind="lib" path="otherLib/poi-ooxml-schemas-3.17.jar"/>
+	<classpathentry kind="lib" path="otherLib/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="otherLib/zip4j_1.3.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
