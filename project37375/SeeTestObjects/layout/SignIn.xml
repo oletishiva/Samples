@@ -1,0 +1,16 @@
+<Layout name="SignIn.xml">
+    <Elements>
+        <element id="1" index="0" name="Sign In" value="xpath=//*[@class='android.widget.TextView']" zone="NATIVE"/>
+        <element id="2" index="0" name="email" value="xpath=//*[@id='email']" zone="NATIVE"/>
+        <element id="3" index="0" name="password" value="xpath=//*[@id='password']" zone="NATIVE"/>
+        <element id="4" index="0" name="forgotPassword(&quot;Forgot Password?&quot;)" value="xpath=//*[@text='Forgot Password?']" zone="NATIVE"/>
+        <element id="5" index="0" name="createAccount(&quot;Create New Account&quot;)" value="xpath=//*[@text='Create New Account']" zone="NATIVE"/>
+        <element id="6" index="0" name="submit(&quot;Sign In&quot;)" value="xpath=//*[@id='submit']" zone="NATIVE"/>
+    </Elements>
+    <Relations>
+        <relation elements="2 3" id="1" name="rule_1" tests="Exists EqualWidth"/>
+        <relation elements="4 5" id="2" name="rule_2" tests="Exists OrderedVertically"/>
+        <relation elements="6" id="3" name="rule_3" tests="Exists AlignedBottom"/>
+        <relation elements="1" id="4" name="rule_4" tests="Exists AlignedTop"/>
+    </Relations>
+</Layout>

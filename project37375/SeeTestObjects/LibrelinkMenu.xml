@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><domain fixed="false" fullWindow="true" name="LibrelinkMenu">
+<obj text="LibrelinkLeftmenu" version="1">
+<images enable="false">
+<image file="LibrelinkMenu\LibrelinkLeftmenu.PNG" jump="1" mainColor="-8a8a8b" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.widget.ImageButton" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="" method="xpath" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="" textBB="" textIOS="" textWP="" value="//*[@contentDescription='Navigate up']" xpath="//*[@contentDescription='Navigate up']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+<obj text="LibrelinkMoreOptions" version="1">
+<images enable="false">
+<image file="LibrelinkMenu\LibrelinkMoreOptions.PNG" jump="1" mainColor="-888889" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="" method="xpath" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="" textBB="" textIOS="" textWP="" value="//*[@contentDescription='More options']" xpath="//*[@contentDescription='More options']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+<obj text="Manual User" version="1">
+<images enable="false">
+<image file="LibrelinkMenu\Manual User.PNG" jump="1" mainColor="-e5e5e6" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.support.v7.widget.AppCompatTextView" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="navdrawer_header" method="text" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="Manual User" textBB="" textIOS="" textWP="" value="Manual User" xpath="//*[@text='Manual User']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+<obj text="Daily Patterns" version="1">
+<images enable="false">
+<image file="LibrelinkMenu\Daily Patterns.PNG" jump="1" mainColor="-e1e1e2" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.support.v7.widget.AppCompatTextView" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="navdrawer_item_title" method="text" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="Daily Patterns" textBB="" textIOS="" textWP="" value="Daily Patterns" xpath="//*[@text='Daily Patterns']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+<obj text="Time in Target" version="1">
+<images enable="false">
+<image file="LibrelinkMenu\Time in Target.PNG" jump="1" mainColor="-e3e3e4" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.support.v7.widget.AppCompatTextView" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="navdrawer_item_title" method="text" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="Time in Target" textBB="" textIOS="" textWP="" value="Time in Target" xpath="//*[@text='Time in Target']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+<obj text="LowGlucose Events" version="1">
+<images enable="false">
+<image file="LibrelinkMenu\LowGlucose Events.PNG" jump="1" mainColor="-e4e4e5" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.support.v7.widget.AppCompatTextView" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="navdrawer_item_title" method="text" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="Low-Glucose Events" textBB="" textIOS="" textWP="" value="Low-Glucose Events" xpath="//*[@text='Low-Glucose Events']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+<obj text="Average Glucose" version="1">
+<images enable="false">
+<image file="LibrelinkMenu\Average Glucose.PNG" jump="1" mainColor="-e3e3e4" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.support.v7.widget.AppCompatTextView" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="navdrawer_item_title" method="text" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="Average Glucose" textBB="" textIOS="" textWP="" value="Average Glucose" xpath="//*[@text='Average Glucose']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+<obj text="Daily Graph" version="1">
+<images enable="false">
+<image file="LibrelinkMenu\Daily Graph.PNG" jump="1" mainColor="-e3e3e4" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.support.v7.widget.AppCompatTextView" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="navdrawer_item_title" method="text" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="Daily Graph" textBB="" textIOS="" textWP="" value="Daily Graph" xpath="//*[@text='Daily Graph']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+<obj text="Estimated A1c" version="1">
+<images enable="false">
+<image file="LibrelinkMenu\Estimated A1c.PNG" jump="1" mainColor="-e3e3e4" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.support.v7.widget.AppCompatTextView" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="navdrawer_item_title" method="text" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="Estimated A1c" textBB="" textIOS="" textWP="" value="Estimated A1c" xpath="//*[@text='Estimated A1c']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+<obj text="Sensor Usage" version="1">
+<images enable="false">
+<image file="LibrelinkMenu\Sensor Usage.PNG" jump="1" mainColor="-e3e3e4" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.support.v7.widget.AppCompatTextView" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="navdrawer_item_title" method="text" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="Sensor Usage" textBB="" textIOS="" textWP="" value="Sensor Usage" xpath="//*[@text='Sensor Usage']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+<obj text="LibreLink Settings" version="1">
+<images enable="false">
+<image file="LibrelinkMenu\LibreLink Settings.PNG" jump="1" mainColor="-e0e0e1" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.support.v7.widget.AppCompatTextView" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="title" method="text" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="LibreLink Settings" textBB="" textIOS="" textWP="" value="LibreLink Settings" xpath="//*[@text='LibreLink Settings']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+<obj text="Account Settings" version="1">
+<images enable="false">
+<image file="LibrelinkMenu\Account Settings.PNG" jump="1" mainColor="-dfdfe0" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.support.v7.widget.AppCompatTextView" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="title" method="text" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="Account Settings" textBB="" textIOS="" textWP="" value="Account Settings" xpath="//*[@text='Account Settings']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+<obj text="Change Password" version="1">
+<images enable="false">
+<image file="LibrelinkMenu\Change Password.PNG" jump="1" mainColor="-e0e0e1" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.support.v7.widget.AppCompatTextView" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="title" method="text" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="Change Password" textBB="" textIOS="" textWP="" value="Change Password" xpath="//*[@text='Change Password']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+<obj text="Help" version="1">
+<images enable="false">
+<image file="LibrelinkMenu\Help.PNG" jump="1" mainColor="-e0e0e1" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.support.v7.widget.AppCompatTextView" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="title" method="text" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="Help" textBB="" textIOS="" textWP="" value="Help" xpath="//*[@text='Help']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+<obj text="About" version="1">
+<images enable="false">
+<image file="LibrelinkMenu\About.PNG" jump="1" mainColor="-e0e0e1" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.support.v7.widget.AppCompatTextView" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="title" method="text" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="About" textBB="" textIOS="" textWP="" value="About" xpath="//*[@text='About']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+<obj text="Reports" version="1">
+<images enable="false">
+<image file="LibrelinkMenu\Reports.PNG" jump="1" mainColor="-e0e0e1" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.support.v7.widget.AppCompatTextView" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="navdrawer_header" method="text" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="Reports" textBB="" textIOS="" textWP="" value="Reports" xpath="//*[@text='Reports']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+<obj text="Home" version="1">
+<images enable="false">
+<image file="LibrelinkMenu\Home_1.PNG" jump="1" mainColor="-201e22" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.support.v7.widget.AppCompatTextView" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="navdrawer_item_title" method="text" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="Home" textBB="" textIOS="" textWP="" value="Home" xpath="//*[@text='Home']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+<obj text="Logbook" version="1">
+<images enable="false">
+<image file="LibrelinkMenu\Logbook.PNG" jump="1" mainColor="-e2e2e3" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.support.v7.widget.AppCompatTextView" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="navdrawer_item_title" method="text" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="Logbook" textBB="" textIOS="" textWP="" value="Logbook" xpath="//*[@text='Logbook']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+<obj text="Reminders" version="1">
+<images enable="false">
+<image file="LibrelinkMenu\Reminders_1.PNG" jump="1" mainColor="-e4e4e5" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.support.v7.widget.AppCompatTextView" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="navdrawer_item_title" method="text" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="Reminders" textBB="" textIOS="" textWP="" value="Reminders" xpath="//*[@text='Reminders']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+</domain>

@@ -1,0 +1,11 @@
+<Layout name="InformationScreen.xml">
+    <Elements>
+        <element id="1" index="0" name="appTourImage" value="xpath=//*[@id='appTourImage' and ./following-sibling::*[@text='Check your glucose with your phone.']]" zone="NATIVE"/>
+        <element id="2" index="0" name="getStartedNow(&quot;Get Started Now&quot;)" value="xpath=//*[@text='Get Started Now']" zone="NATIVE"/>
+        <element id="3" index="0" name="circlePagerIndicator" value="xpath=//*[@id='circlePagerIndicator']" zone="NATIVE"/>
+    </Elements>
+    <Relations>
+        <relation elements="1 3" id="1" name="InformationScreenRule" tests="EqualWidth"/>
+        <relation elements="2" id="2" name="GetStartedNowRule" tests="AlignedBottom"/>
+    </Relations>
+</Layout>
