@@ -31,7 +31,7 @@ public class DailyGraph_T002_Gap_LowG_YaxisRange extends ReportsHelper {
 		 * @Dependancy Script cannot proceed if this step fails
 		 * 
 		 **/
-		navigateToScreen(client, "Settings");
+		clickOnSettingsMenu(client, "App Settings");
 		if (getUnits().equalsIgnoreCase("mg/dL")) {
 			verifyandsetTGfromSettings(client, 100, 140);
 		} else if (getUnits().equalsIgnoreCase("mmol/L")) {

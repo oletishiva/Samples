@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2015 Airstrip - All Rights Reserved. -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<!-- Plurals -->
+	<plurals name="insulinUnits">
+		<item quantity="one">%1$s μονάδα</item>
+		<item quantity="other">%1$s μονάδες</item>
+	</plurals>
+	<plurals name="days">
+		<item quantity="one">1 ημέρα</item>
+		<item quantity="other">%1$d ημέρες</item>
+	</plurals>
+	<plurals name="hours">
+		<item quantity="one">1 ώρα</item>
+		<item quantity="other">%1$d ώρες</item>
+	</plurals>
+	<plurals name="minutes">
+		<item quantity="one">1 λεπτό</item>
+		<item quantity="other">%1$d λεπτά</item>
+	</plurals>
+	<!-- Phrase describing a time duration in seconds using secs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationSecs">
+		<item quantity="one">1 δευτ.</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> δευτ.</item>
+	</plurals>
+	<!-- Phrase describing a time duration in minutes using mins abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationMins">
+		<item quantity="one">1 λεπτό</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> λεπτά</item>
+	</plurals>
+	<!-- Phrase describing a time duration in hours using hrs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationHrs">
+		<item quantity="one">1 ώρα</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> ώρες</item>
+	</plurals>
+	<plurals name="sensorExpiresInDays">
+		<item quantity="one">Αντικαταστήστε τον αισθητήρα σε 1 ημέρα</item>
+		<item quantity="other">Αντικαταστήστε τον αισθητήρα σε <xliff:g id="count">%d</xliff:g> ημέρες</item>
+	</plurals>
+	<plurals name="sensorExpiresInHours">
+		<item quantity="one">Αντικαταστήστε τον αισθητήρα σε 1 ώρα</item>
+		<item quantity="other">Αντικαταστήστε τον αισθητήρα σε <xliff:g id="count">%d</xliff:g> ώρες</item>
+	</plurals>
+	<plurals name="sensorExpiresInMins">
+		<item quantity="one">Αντικαταστήστε τον αισθητήρα σε 1 λεπτό</item>
+		<item quantity="other">Αντικαταστήστε τον αισθητήρα σε <xliff:g id="count">%d</xliff:g> λεπτά</item>
+	</plurals>
+	<plurals name="sensorReadyInMins">
+		<item quantity="one">Αισθητήρας έτοιμος σε 1 λεπτό</item>
+		<item quantity="other">Αισθητήρας έτοιμος σε <xliff:g id="count">%d</xliff:g> λεπτά</item>
+	</plurals>
+
+	<!-- common/generic words, phrases, symbols, and abbreviations -->
+	<string name="deciLiter">dL</string>
+	<string name="gramsSymbol">g</string>
+	<string name="liter">L</string>
+	<string name="mgdl">mg/dL</string>
+	<string name="milligrams">mg</string>
+	<string name="millimole">mmol</string>
+	<string name="mmol">mmol/L</string>
+	<string name="percentSign">\u0025</string>
+	<string name="servingsSymbol">μερίδα</string>
+	<string name="accept">Αποδοχή</string>
+	<string name="account">Ρυθμίσεις λογαριασμού</string>
+	<string name="all">Όλα</string>
+	<string name="back">Πίσω</string>
+	<string name="average">Μέσος όρος</string>
+	<string name="delete">Διαγραφή</string>
+	<string name="cancel">Ακύρωση</string>
+	<string name="durationHourMinuteConcatenate">%1$s %2$s</string>
+	<string name="comments">Σχόλια</string>
+	<string name="done">Τέλος</string>
+	<string name="email">Email</string>
+	<string name="friday">Παρασκευή</string>
+	<string name="grams">γραμ.</string>
+	<string name="gramsOfCarbs">γραμμάρια υδατανθρ.</string>
+	<string name="units">μονάδες</string>
+	<string name="help">Βοήθεια</string>
+	<string name="home">Αρχική</string>
+	<string name="insulinDose">Δόση ινσουλίνης</string>
+	<string name="loading">Φόρτωση</string>
+	<string name="logbook">Ημερολόγιο</string>
+	<string name="monday">Δευτέρα</string>
+	<string name="next">Επόμενο</string>
+	<string name="no">Όχι</string>
+	<string name="note">Σημείωση</string>
+	<string name="ok">OK</string>
+	<string name="password">Κωδ. πρόσβασης</string>
+	<string name="reminders">Υπενθυμίσεις</string>
+	<string name="reject">Απόρριψη</string>
+	<string name="reports">Αναφορές</string>
+	<string name="saturday">Σάββατο</string>
+	<string name="save">Αποθήκευση</string>
+	<string name="sending">Αποστολή</string>
+	<string name="servings">μερίδες</string>
+	<string name="servingsOfCarbs">μερίδες υδατάν.</string>
+	<string name="settings">Ρυθμίσεις εφαρμογής</string>
+	<string name="share">Κοινοποιήστε</string>
+	<string name="start">Έναρξη</string>
+	<string name="submit">Υποβολή</string>
+	<string name="sunday">Κυριακή</string>
+	<string name="thursday">Πέμπτη</string>
+	<string name="tuesday">Τρίτη</string>
+	<string name="wednesday">Τετάρτη</string>
+	<string name="yes">Ναι</string>
+	<string name="days7">7 ημέρες</string>
+	<string name="days14">14 ημέρες</string>
+	<string name="days30">30 ημέρες</string>
+	<string name="days90">90 ημέρες</string>
+	<string name="eventLog">Αρχ. κατ. συμβάντων</string>
+	<string name="eventLogEmptyMessage">Κανένα συμβάν</string>
+
+	<string name="minorFirstName">Όνομα ανηλίκου</string>
+	<string name="minorLastName">Επώνυμο ανηλίκου</string>
+	<string name="parentFirstName">@string/parentGuardianFirstName</string>
+	<string name="parentLastName">@string/parentGuardianLastName</string>
+	<string name="lastName">Επώνυμο</string>
+	<string name="daily_graph">Ημερήσιο γράφημα</string>
+	<string name="daily_patterns">Ημερήσια μοτίβα</string>
+	<string name="estimated_a1c">Εκτιμώμενη A1c</string>
+	<string name="firstName">Όνομα</string>
+	<string name="noResults">(Κανένα αποτέλεσμα)</string>
+	<string name="signIn">Είσοδος</string>
+	<string name="signingIn">Σύνδεση</string>
+	<string name="scanSensor">Σαρώστε τον αισθητήρα</string>
+	<string name="time_in_target">Χρόνος εντός στόχου</string>
+	<string name="errorMsgUnexpected">Μη αναμενόμενο σφάλμα εφαρμογής.</string>
+	<string name="error_nfc_unsupported">Δεν υποστηρίζεται τεχνολογία NFC</string>
+	<string name="error_nfc_disabled">Απενεργοποιημένο NFC</string>
+	<string name="error_networktime_disabled">Απενεργ. αυτόμ. ενημέρωσης ημερομηνίας και ώρας</string>
+	<string name="errorOtherNfcInstalled">Ανιχνεύτηκε άλλη εφαρμογή που χρησιμοποιεί NFC. Για να διασφαλίσετε ότι το FreeStyle LibreLink χρησιμοποιείται για την ανάγνωση του αισθητήρα σας, θα χρειαστεί να ενεργοποιείτε την εφαρμογή FreeStyle LibreLink κάθε φορά πριν σαρώσετε. Ή εάν απεγκαταστήσετε την άλλη εφαρμογή NFC, θα  μπορείτε να σαρώσετε τον αισθητήρα σας οποτεδήποτε είναι ξεκλείδωτο το smartphone σας.</string>
+	<string name="loadingChartDataText">Φόρτωση δεδομένων</string>
+	<string name="chartErrorMessage">Σφάλμα φόρτωσης δεδομένων</string>
+	<string name="timeZoneChangeMessage">Αλλαγή ζώνης ώρας από %1$s\u00A0σε\u00A0%2$s &lt;b&gt;(%3$s)&lt;/b&gt;</string>
+
+	<!-- Countries -->
+	<string name="countryName_AE">Ηνωμένα Αραβικά Εμιράτα</string>
+	<string name="countryName_AG">Αντίγκουα και Μπαρμπούντα</string>
+	<string name="countryName_AR">Αργεντινή</string>
+	<string name="countryName_AT">Αυστρία</string>
+	<string name="countryName_AU">Αυστραλία</string>
+	<string name="countryName_AZ">Αζερμπαϊτζάν</string>
+	<string name="countryName_BE">Βέλγιο</string>
+	<string name="countryName_BH">Μπαχρέιν</string>
+	<string name="countryName_BR">Βραζιλία</string>
+	<string name="countryName_BS">Μπαχάμες</string>
+	<string name="countryName_BW">Μποτσουάνα</string>
+	<string name="countryName_BY">Λευκορωσία</string>
+	<string name="countryName_BZ">Μπελίσε</string>
+	<string name="countryName_CA">Καναδάς</string>
+	<string name="countryName_CH">Ελβετία</string>
+	<string name="countryName_CL">Χιλή</string>
+	<string name="countryName_CN">Κίνα</string>
+	<string name="countryName_CO">Κολομβία</string>
+	<string name="countryName_CR">Κόστα Ρίκα</string>
+	<string name="countryName_CY">Κύπρος</string>
+	<string name="countryName_DE">Γερμανία</string>
+	<string name="countryName_DK">Δανία</string>
+	<string name="countryName_DO">Δομινικανή Δημοκρατία</string>
+	<string name="countryName_DZ">Αλγερία</string>
+	<string name="countryName_EC">Ισημερινός</string>
+	<string name="countryName_ES">Ισπανία</string>
+	<string name="countryName_FI">Φινλανδία</string>
+	<string name="countryName_FR">Γαλλία</string>
+	<string name="countryName_GB">Ηνωμένο Βασίλειο</string>
+	<string name="countryName_GR">Ελλάδα</string>
+	<string name="countryName_HK">Χονγκ Κονγκ</string>
+	<string name="countryName_IE">Ιρλανδία</string>
+	<string name="countryName_IL">Ισραήλ</string>
+	<string name="countryName_IS">Ισλανδία</string>
+	<string name="countryName_IT">Ιταλία</string>
+	<string name="countryName_JO">Ιορδανία</string>
+	<string name="countryName_JP">Ιαπωνία</string>
+	<string name="countryName_KR">Δημοκρατία της Κορέας</string>
+	<string name="countryName_KW">Κουβέιτ</string>
+	<string name="countryName_KZ">Καζακστάν</string>
+	<string name="countryName_LB">Λίβανος</string>
+	<string name="countryName_LU">Λουξεμβούργο</string>
+	<string name="countryName_MT">Μάλτα</string>
+	<string name="countryName_MX">Μεξικό</string>
+	<string name="countryName_MY">Μαλαισία</string>
+	<string name="countryName_NL">Ολλανδία</string>
+	<string name="countryName_NO">Νορβηγία</string>
+	<string name="countryName_NZ">Νέα Ζηλανδία</string>
+	<string name="countryName_OM">Ομάν</string>
+	<string name="countryName_PA">Παναμάς</string>
+	<string name="countryName_PE">Περού</string>
+	<string name="countryName_PL">Πολωνία</string>
+	<string name="countryName_PT">Πορτογαλία</string>
+	<string name="countryName_QA">Κατάρ</string>
+	<string name="countryName_RU">Ρωσία</string>
+	<string name="countryName_SA">Σαουδική Αραβία</string>
+	<string name="countryName_SE">Σουηδία</string>
+	<string name="countryName_SG">Σιγκαπούρη</string>
+	<string name="countryName_TH">Ταϊλάνδη</string>
+	<string name="countryName_TR">Τουρκία</string>
+	<string name="countryName_TT">Τρινιντάντ και Τομπάγκο</string>
+	<string name="countryName_TW">Ταϊβάν</string>
+	<string name="countryName_US">Ηνωμένες Πολιτείες Αμερικής</string>
+	<string name="countryName_UY">Ουρουγουάη</string>
+	<string name="countryName_VE">Βενεζουέλα</string>
+	<string name="countryName_ZA">Νότια Αφρική</string>
+	<string name="countryName_ZW">Ζιμπάμπουε</string>
+
+	<!-- License Check -->
+	<string name="librelinkLicenseCheck">Έλεγχος άδειας FreeStyle LibreLink</string>
+	<string name="licenseCheckFailed">Παρακαλώ εγκαταστήστε αυτή την εφαρμογή από το Google Play.</string>
+
+	<!-- Update Version Check -->
+	<string name="librelink_upgrade_check">Έλεγχος αναβάθμισης FreeStyle LibreLink</string>
+	<string name="checkingVersion">Έλεγχος έκδοσης</string>
+	<string name="errorVersionCheckFailed">Αυτή η έκδοση του FreeStyle LibreLink πρέπει να ενημερωθεί. Παρακαλώ ελέγξτε το Google Play για την πιο πρόσφατη έκδοση.</string>
+
+	<!-- App Tour -->
+	<string name="checkGlucoseWithPhone">Μπορείτε να ελέγξετε τη γλυκόζη σας με το smartphone σας.</string>
+	<string name="instantAccess">Μπορείτε να έχετε γρήγορη πρόσβαση στις πληροφορίες της γλυκόζης σας.</string>
+	<string name="actionableInsights">Μπορείτε να έχετε πρόσβαση σε πληροφορίες που θα σας βοηθήσουν να λαμβάνετε τεκμηριωμένες αποφάσεις.</string>
+	<string name="shareGlucoseInformation">Μπορείτε να κοινοποιήσετε τις πληροφορίες της γλυκόζης σας στον επαγγελματία υγείας που σας παρακολουθεί και σε αγαπημένα σας πρόσωπα.</string>
+
+	<!-- Account Registration/Sign In -->
+	<string name="changeUserMessage">Με την είσοδο στον λογαριασμό σας, οποιαδήποτε δεδομένα σε αυτήν τη συσκευή από τον προηγούμενο χρήστη θα διαγραφούν.\n\nΘέλετε να συνεχίσετε;</string>
+	<string name="changeDeviceMessage">Πατήστε OK για να συνδέσετε αυτό το smartphone στον υπάρχοντα λογαριασμό σας LibreView. Μπορείτε να συνεχίσετε να διαβάζετε έναν αισθητήρα που ενεργοποιήσατε με το προηγούμενο smartphone σας.\n\nΣημείωση: Εάν πατήσετε OK θα αποσυνδέσετε το προηγούμενο smartphone σας.</string>
+	<string name="registeringDevice">Καταχώριση Smartphone</string>
+	<string name="firstNameLabel">@string/firstName</string>
+	<string name="lastNameLabel">@string/lastName</string>
+	<string name="emailLabel">@string/email</string>
+	<string name="dateOfBirthLabel">@string/dateOfBirth</string>
+	<string name="dateOfBirth">Ημερομηνία γέννησης</string>
+	<string name="passwordLabel">@string/password</string>
+	<string name="createPasswordLabel">@string/password</string>
+	<string name="changePassword">Κωδ. πρόσβ. λογαριασμού</string>
+	<string name="newPasswordLabel">Νέος κωδ. πρόσβασης</string>
+	<string name="currentPasswordLabel">Τρέχων κωδ. πρόσβασης</string>
+	<string name="confirmPasswordLabel">Επιβεβαίωση κωδ. πρόσβασης</string>
+	<string name="sendingResetRequest">Αποστολή αιτήματος επαναφοράς κωδ. πρόσβασης</string>
+	<string name="adultRegistrationTitle">Σύνδεση λογαριασμού</string>
+	<string name="minorRegistrationTitle">Σύνδεση λογ. γονέα/κηδεμόνα</string>
+	<string name="signInLinkText">@string/signIn</string>
+	<string name="account_sign_in_title">@string/signIn</string>
+	<string name="alreadyHaveAccountPromptText">Έχετε ήδη λογαριασμό LibreView;</string>
+	<string name="invalidPasswordErrorMessage">Εισάγετε έγκυρο κωδ. πρόσβασης. Οι κωδ. πρόσβασης πρέπει να αποτελούνται από 8\u201336 χαρακτήρες και να περιέχουν τουλάχιστον 1 αριθμό, 1 κεφαλαίο και 1 πεζό γράμμα.</string>
+	<string tools:ignore="PluralsCandidate" name="tooYoungErrorMessage">Πρέπει να είστε %1$s ετών και άνω για να χρησιμοποιήσετε το FreeStyle LibreLink.</string>
+	<string name="tooYoungWarningMessage">Η ημερομηνία γέννησης χρησιμοποιείται για τη ρύθμιση του λογαριασμού σας LibreView και όχι για να προσδιοριστεί αν η εφαρμογή είναι κατάλληλη για χρήση από εσάς. Συμβουλευτείτε το εγχειρίδιο χρήσης της εφαρμογής προτού χρησιμοποιήσετε την εφαρμογή.</string>
+	<string name="forgotPasswordText">Ξεχάσατε τον κωδ. πρόσβασης;</string>
+	<string name="createNewAccountText">Δημιουργία νέου λογαριασμού</string>
+	<string name="existing_user_login_text">Υπάρχει ήδη ένας λογαριασμός με αυτή τη διεύθυνση email. Παρακαλώ εισάγετε τη διεύθυνση email και τον κωδ. πρόσβασής σας.</string>
+	<string name="normal_user_login_text">Παρακαλώ συνδεθείτε στον λογαριασμό σας LibreView.</string>
+	<string name="passwordMismatchErrorMessage">Οι κωδ. πρόσβασης πρέπει να ταιριάζουν</string>
+	<string name="invalidEmailAddressErrorMessage">Εισάγετε έγκυρη διεύθυνση email.</string>
+	<string name="passwordResetSent">Έχουν αποσταλεί οδηγίες για την επαναφορά του κωδ. πρόσβασής σας στη διεύθυνση email σας.</string>
+	<string name="accountContactOptIn">Παρακαλώ επιθυμώ να λαμβάνω πληροφορίες και ενημερώσεις σχετικά με την Abbott Diabetes Care και τα προϊόντα και τις υπηρεσίες της. (Μπορείτε να καταργήσετε την εγγραφή σας οποιαδήποτε στιγμή.)</string>
+	<string name="passwordResetMessage">Εισαγάγετε τη διεύθυνση email που χρησιμοποιήσατε για τη δημιουργία αυτού του λογαριασμού. Θα αποσταλούν οδηγίες για την επαναφορά του κωδ. πρόσβασής σας σε αυτή τη διεύθυνση email.</string>
+	<string name="nonExistentUserErrorMessage">Δεν υπάρχει κανένας λογαριασμό για τη διεύθυνση email που εισάγατε.</string>
+	<string name="invalidLoginErrorMessage">Η διεύθυνση email ή ο κωδ. πρόσβασης δεν είναι σωστά. Δοκιμάστε ξανά.</string>
+	<string name="invalidProfileUpdatePassword">Ο κωδ. πρόσβασης δεν είναι σωστός. Δοκιμάστε ξανά.</string>
+	<string name="invalidProfileDOB">Δεν μπορείτε να αλλάξετε τον τύπο του λογαριασμού σας από ενηλίκου σε ανηλίκου. Παρακαλώ επεξεργαστείτε την ημερομηνία γέννησής σας αντίστοιχα.</string>
+	<string name="invalidAppKeyErrorMessage">Σφάλμα επικοινωνίας με το διακομιστή. Το κλειδί της εφαρμογής είναι άκυρο.</string>
+	<string name="invalidNetworkDomainErrorMessage">Σφάλμα επικοινωνίας με το διακομιστή. Ο τομέας (domain) είναι άκυρος.</string>
+	<string name="invalidRegistrationErrorMessage">Δεν ήταν δυνατή η ολοκλήρωση της εγγραφής λόγω μη έγκυρων δεδομένων.</string>
+	<string name="invalidAccountRegionErrorMessage">Οι ρυθμίσεις χώρας στην εφαρμογή σας και στο λογαριασμό σας δεν ταιριάζουν. Παρακαλώ δημιουργήστε νέο λογαριασμό.</string>
+	<string name="accountRegisteringProgressMessage">Καταχώριση</string>
+	<string name="accountUpdateProgressMessage">Αποστολή</string>
+	<string name="accountAlreadyRegisteredErrorMessage">Αυτή η διεύθυνση email συνδέεται ήδη με έναν λογαριασμό LibreView.\n\nΔεν χρειάζεται να δημιουργήσετε νέο λογαριασμό. Απλά συνδεθείτε.</string>
+	<string name="professionalAccountAlreadyRegisteredErrorMessage">Αυτή η διεύθυνση email συνδεέται ήδη με έναν επαγγελματικό λογαριασμό LibreView. Θα χρειαστεί να χρησιμοποιήσετε διαφορετική διεύθυνση email για τη δημιουργία ενός λογαριασμού για τη χρήση αυτής της εφαρμογής.</string>
+	<string name="alreadyRegisteredSignInButtonText">@string/signIn</string>
+	<string name="enter_numera_data">Δημιουργήστε τον λογαριασμό σας LibreView για χρήση με το FreeStyle LibreLink και οποιεσδήποτε άλλες συμβατές εφαρμογές.</string>
+	<string name="minorRegistrationHeader">Αυτός ο χρήστης είναι ανήλικος. Ένας γονέας ή κηδεμόνας πρέπει να ολοκληρώσει τη δημιουργία του λογαριασμού για τη χρήση αυτού του λογισμικού.</string>
+	<string name="parentGuardianFirstName">Όνομα γονέα/νόμιμου κηδεμόνα</string>
+	<string name="parentGuardianLastName">Επώνυμο γονέα/νόμιμου κηδεμόνα</string>
+	<string name="parentGuardianEmail">@string/email</string>
+	<string name="nameAndBirthDateHeader">Ας αρχίσουμε με κάποιες βασικές πληροφορίες.</string>
+	<string name="nameAndBirthDateTitle">@string/createNewAccountText</string>
+	<string name="profileUpdateTopText">Η αλλαγή οποιασδήποτε από τις παρακάτω πληροφορίες θα ανανεώσει τα στοιχεία του λογαριασμού σας.</string>
+	<string name="changePasswordTopText">Οι κωδ. πρόσβασης πρέπει να αποτελούνται από 8-36 χαρακτήρες και να περιέχουν τουλάχιστον 1 αριθμό, 1 κεφαλαίο και 1 πεζό γράμμα.</string>
+	<string name="createAccountSubmitButtonText">Δημιουργία λογαριασμού</string>
+	<string name="authenticationFailure">Ο έλεγχος ταυτότητας με το διακομιστή απέτυχε. Παρακαλώ συνδεθείτε ξανά.</string>
+	<string name="authenticationFailureLoginButton">Είσοδος</string>
+	<string name="reenterPassword">Παρακαλώ εισάγετε ξανά τον κωδ. πρόσβασής σας.</string>
+	<string name="parentLoginText">Απαιτείτε σύνδεση γονέα/κηδεμόνα.</string>
+	<string name="parentLoginSubText">Εισάγετε τον κωδ. πρόσβασης του λογαριασμού για κοινή πρόσβαση.</string>
+
+	<!-- Side Navigation Drawer -->
+	<string name="navigation_drawer_username">%1$s %2$s</string>
+	<string name="navigation_drawer_daily_graph">@string/daily_graph</string>
+	<string name="navigation_drawer_estimated_a1c">@string/estimated_a1c</string>
+	<string name="navigation_drawer_average_glucose">Μέσος όρος γλυκόζης</string>
+	<string name="navigation_drawer_low_glucose">Συμβάντα χαμηλής γλυκόζης</string>
+	<string name="navigation_drawer_sensor_usage">Χρήση αισθητήρα</string>
+	<string name="navigation_drawer_daily_patterns">@string/daily_patterns</string>
+	<string name="navigation_drawer_time_in_target">@string/time_in_target</string>
+	<string name="navigation_drawer_sharedata">@string/share</string>
+
+	<!-- Home -->
+	<string name="applyNewSensor">Εφαρμόστε νέο αισθητήρα</string>
+	<string name="scanNewSensor">Σαρώστε νέο αισθητήρα</string>
+	<string name="startNewSensor">Εφαρμόστε και σαρώστε νέο αισθητήρα</string>
+	<string name="sensorReadyIn">Ο αισθητήρας μπορεί να χρησιμοποιηθεί σε %1$s</string>
+	<string name="readyToScanDetail">Ο αισθητήρας σας είναι έτοιμος για χρήση. Για έλεγχο της γλυκόζης σας, κρατήστε το πίσω μέρος του smartphone σας πάνω στον αισθητήρα μέχρι να ακούσετε δύο ηχητικούς τόνους.</string>
+	<string name="applyNewSensorDetail">Εφαρμόστε νέο αισθητήρα.</string>
+	<string name="scanNewSensorDetail">Σαρώστε τον αισθητήρα για να ξεκινήσει.</string>
+	<string name="scanNewSensorDetailLateJoin">Αν θέλετε να χρησιμοποιήσετε μια συσκευή ανάγνωσης, θα πρέπει πρώτα να σαρώσετε με αυτήν.</string>
+	<string name="scanSensorDetail">Σαρώστε τον αισθητήρα.</string>
+	<string name="last24Hours">Τελευταίες 24 ώρες</string>
+	<string name="lastScan">Τελευταία σάρωση</string>
+	<string name="sensorIsReady">Έτοιμος για σάρωση</string>
+	<string name="sensorWarmingUp">Έναρξη νέου αισθητήρα</string>
+	<string name="sensorHasEnded">Ο αισθητήρας σας έχει τελειώσει</string>
+	<string name="sensorEndsIn">Ο αισθητήρας τελειώνει σε: %1$s</string>
+	<string name="sensorLateJoinMessage">Μπορείτε τώρα να σαρώσετε τον αισθητήρα χρησιμοποιώντας αυτήν τη συσκευή και τη συσκευή που χρησιμοποιήσατε για την έναρξη του αισθητήρα.\n\nΣημείωση: Για να διασφαλίσετε ότι οι αναφορές σε μια συσκευή προβάλλουν όλα τα δεδομένα, σαρώνετε τον αισθητήρα με αυτήν τη συσκευή τουλάχιστον μία φορά κάθε 8 ώρες. Δεν γίνεται κοινοποιήση των δεδομένων και των αναφορών μεταξύ διαφορετικών συσκευών.</string>
+
+	<!-- Stats/Reports -->
+	<!-- Used for Germany to force 24 hour time on the chart axis -->
+	<bool name="force24HourTimes">false</bool>
+
+	<!-- Used to set the string format for graph axis unless 24 hour time is used -->
+	<string name="amTimeAxisFormat">h\'Π.Μ.\'</string>
+	<string name="pmTimeAxisFormat">h\'Μ.Μ.\'</string>
+
+	<string name="mmolPerMolFormatter" tools:ignore="PluralsCandidate">( %d mmol/mol )</string>
+	<string name="sensor_usage_total_scans">Συνολικές σαρώσεις</string>
+	<string name="sensor_usage_day_average">Σαρώσεις ανά ημέρα</string>
+	<string name="sensor_usage_captured">% δεδομένων αισθητήρα που έχουν καταγραφεί</string>
+	<string name="days_of_data" tools:ignore="PluralsCandidate">Διαθέσιμα δεδομένα για %1$d από %2$d ημέρες</string>
+	<string name="a1cDaysOfData" tools:ignore="PluralsCandidate">Χρονικά διαστήματα δεδομένων %1$d από %2$d ημέρες</string>
+	<string name="no_sensor_data">Ελλειπή δεδομένα αισθητήρα</string>
+	<string name="timeintarget_glucose_range">%1$s-%2$s</string>
+	<string name="timeintarget_glucose_less_than">&lt; %s</string>
+	<string name="timeintarget_glucose_greater_than">&gt; %s</string>
+	<string name="timeintarget_percent">%</string>
+	<string name="target">ΣΤΟΧΟΣ</string>
+	<string name="timeInTargetGlucoseRangeLabel">Εύρος τιμών-στόχου: %s</string>
+	<string name="average_glucose_info_title">ΜΕΣΟΣ ΟΡΟΣ ΓΛΥΚΟΖΗΣ</string>
+	<string name="average_glucose_info_msg">Ο μέσος όρος γλυκόζης παρέχει πληροφορίες σχετικά με τους μέσους όρους των ενδείξεων γλυκόζης του αισθητήρα σας. Ο συνολικός μέσος όρος για την επιλεγμένη περίοδο προβάλλεται κάτω από το γράφημα. Εμφανίζεται επίσης ο μέσος όρος για διαφορετικά διαστήματα της ημέρας. Οι ενδείξεις πάνω ή κάτω από το εύρος τιμών-στόχου της γλυκόζης σας είναι κίτρινες, πορτοκαλί ή κόκκινες. Οι ενδείξεις εντός εύρους στόχου είναι πράσινες.</string>
+	<string name="low_glucose_info_title">ΣΥΜΒΑΝΤΑ ΧΑΜΗΛΗΣ ΓΛΥΚΟΖΗΣ</string>
+	<string name="low_glucose_info_msg_mg">Τα συμβάντα χαμηλής γλυκόζης παρέχουν πληροφορίες σχετικά με τον αριθμό των συμβάντων χαμηλής γλυκόζης που έχουν καταγραφεί από τον αισθητήρα σας. Ένα συμβάν χαμηλής γλυκόζης καταγράφεται όταν η ένδειξη γλυκόζης του αισθητήρα σας είναι χαμηλότερη από 70 mg/dL για παραπάνω από 15 λεπτά. Ο συνολικός αριθμός συμβάντων προβάλλεται κάτω από το γράφημα. Το ραβδόγραμμα προβάλλει τα συμβάντα χαμηλής γλυκόζης σε διαφορετικά διαστήματα της ημέρας.</string>
+	<string name="low_glucose_info_msg_mmol">Τα συμβάντα χαμηλής γλυκόζης παρέχουν πληροφορίες σχετικά με τον αριθμό των συμβάντων χαμηλής γλυκόζης που έχουν καταγραφεί από τον αισθητήρα σας. Ένα συμβάν χαμηλής γλυκόζης καταγράφεται όταν η ένδειξη γλυκόζης του αισθητήρα σας είναι χαμηλότερη από 3,9 mmol/L για παραπάνω από 15 λεπτά. Ο συνολικός αριθμός συμβάντων προβάλλεται κάτω από το γράφημα. Το ραβδόγραμμα προβάλλει τα συμβάντα χαμηλής γλυκόζης σε διαφορετικά διαστήματα της ημέρας.</string>
+	<string name="a1c_info_title">ΕΚΤΙΜΩΜΕΝΗ A1c</string>
+	<string name="a1c_info_msg">Το εκτιμώμενο επίπεδο A1c που έχετε (ονομάζεται επίσης HbA1c) βασίζεται στα διαθέσιμα δεδομένα γλυκόζης του αισθητήρα των τελευταίων 90 ημερών. Όσο περισσότερα δεδομένα είναι διαθέσιμα, τόσο καλύτερη θα είναι η εκτίμησή σας. Ωστόσο, το εκτιμώμενο επίπεδο μπορεί να μην ταιριάζει με την A1c που μετράται σε ένα εργαστήριο.\n\nΗ A1c μπορεί να χρησιμοποιηθεί ως δείκτης του πόσο καλά έχουν ρυθμιστεί τα επίπεδα γλυκόζης σας και μπορεί να χρησιμοποιηθεί για την παρακολούθηση του σχήματος θεραπείας του διαβήτη σας.</string>
+	<string name="daily_info_title">ΗΜΕΡΗΣΙΟ ΓΡΑΦΗΜΑ</string>
+	<string name="daily_info_msg">Το ημερήσιο γράφημα παρέχει ένα γράφημα των ενδείξεων γλυκόζης του αισθητήρα σας ανά ημέρα.\n\nΜπορεί να δείτε κενά στο γράφημα κατά τη διάρκεια των χρονικών διαστημάτων που δεν έχετε κάνει σάρωση τουλάχιστον μία φορά κάθε 8 ώρες.\n\nΜπορεί να εμφανιστεί ένα σύμβολο ρολογιού που υποδεικνύει την αλλαγή της ζώνης ώρας. Μπορεί να προκληθούν κενά στο γράφημα ή να αποκρυφτούν οι ενδείξεις γλυκόζης.</string>
+	<string name="sensor_usage_info_title">ΧΡΗΣΗ ΑΙΣΘΗΤΗΡΑ</string>
+	<string name="sensor_usage_info_msg">Η χρήση του αισθητήρα παρέχει πληροφορίες σχετικά με το πόσο συχνά σαρώνετε τον αισθητήρα σας. Αυτό περιλαμβάνει ένα μέσο όρο του αριθμού των σαρώσεων του αισθητήρα σας ανά ημέρα, το ποσοστό των δεδομένων του αισθητήρα που πιθανώς καταγράφηκαν από τις σαρώσεις σας και τον συνολικό αριθμό των σαρώσεων.</string>
+	<string name="time_in_target_info_title">ΧΡΟΝΟΣ ΕΝΤΟΣ ΣΤΟΧΟΥ</string>
+	<string name="time_in_target_info_msg">Ο χρόνος εντός στόχου παρέχει ένα γράφημα που εμφανίζει το ποσοστό του χρόνου που οι ενδείξεις γλυκόζης του αισθητήρα σας ήταν πάνω, κάτω ή εντός του εύρους τιμών-στόχου γλυκόζης.</string>
+	<string name="daily_average">Μέσος όρος: %1$s %2$s</string>
+	<string name="total_events">Σύνολο συμβάντων: %1$d</string>
+	<string name="daily_patterns_info_title">ΗΜΕΡΗΣΙΑ ΜΟΤΙΒΑ</string>
+	<string name="daily_patterns_info_msg">Τα ημερήσια μοτίβα παρέχουν ένα γράφημα που εμφανίζει τα μοτίβα και τη διακύμανση της γλυκόζης του αισθητήρα σας σε διάστημα μιας τυπικής ημέρας. Η έντονη μαύρη γραμμή απεικονίζει τη διάμεση τιμή (τιμή που κατέχει τη μεσαία θέση) των ενδείξεων της γλυκόζης σας σε κάθε χρονικό σημείο. Η περιοχή με γαλάζια σκίαση αντιπροσωπεύει το εύρος τιμών του 10–90ου εκατοστημορίου των ενδείξεων γλυκόζης του αισθητήρα σας. Η περιοχή με σκούρα μπλε σκίαση αντιπροσωπεύει το εύρος τιμών του 25–75ου εκατοστημορίου.\n\nΣημείωση: Τα ημερήσια μοτίβα χρειάζονται τουλάχιστον 5 ημέρες δεδομένων γλυκόζης.</string>
+
+	<!-- Scan Result -->
+	<string name="glucoseAboveRange">ΥΨΗΛΗ ΓΛΥΚΟΖΗ\n(ΕΚΤΟΣ ΕΥΡΟΥΣ ΣΤΟΧΟΥ)</string>
+	<string name="glucoseBelowRange">ΧΑΜΗΛΗ ΓΛΥΚΟΖΗ\n(ΕΚΤΟΣ ΕΥΡΟΥΣ ΣΤΟΧΟΥ)</string>
+	<string name="glucoseGoingHigh">Η ΓΛΥΚΟΖΗ ΑΥΞΑΝΕΤΑΙ</string>
+	<string name="glucoseGoingLow">Η ΓΛΥΚΟΖΗ ΜΕΙΩΝΕΤΑΙ</string>
+	<string name="glucoseHigh">ΥΨΗΛΗ ΓΛΥΚΟΖΗ</string>
+	<string name="glucoseInRange">ΓΛΥΚΟΖΗ ΕΝΤΟΣ ΕΥΡΟΥΣ ΣΤΟΧΟΥ</string>
+	<string name="glucoseLow">ΧΑΜΗΛΗ ΓΛΥΚΟΖΗ</string>
+	<string name="highGlucoseIsDangerous">Η υψηλή γλυκόζη μπορεί να είναι επικίνδυνη. Ελέγξτε ξανά τη γλυκόζη σας και αντιμετωπίστε τη σύμφωνα με τις συστάσεις του επαγγελματία υγείας που σας παρακολουθεί. Συστήνεται να ελέγξετε την κετόνη σας.</string>
+	<string name="lowGlucoseIsDangerous">Η χαμηλή γλυκόζη μπορεί να είναι επικίνδυνη. Ελέγξτε ξανά τη γλυκόζη σας και αντιμετωπίστε τη σύμφωνα με τις συστάσεις του επαγγελματία υγείας που σας παρακολουθεί.</string>
+	<string name="yourGlucose">Η γλυκόζη μου</string>
+	<string name="vrcFailedTitle">Σφάλμα κατά την προβολή του αποτελέσματος</string>
+	<string name="vrcFailedText">Το αποτέλεσμα είναι: %s</string>
+	<string name="error_sensor_incompatible_title">Μη συμβατός αισθητήρας</string>
+	<string name="error_sensor_incompatible_msg">Ο αισθητήρας δεν μπορεί να χρησιμοποιηθεί με αυτή την έκδοση του FreeStyle LibreLink.</string>
+	<string name="error_sensor_terminated_title">Αντικαταστήστε τον αισθητήρα</string>
+	<string name="error_sensor_terminated_msg">Ο αισθητήρας σας δεν λειτουργεί. Αφαιρέστε τον αισθητήρα σας και κάντε έναρξη νέου αισθητήρα.</string>
+	<string name="error_sensor_removed_title">Αντικαταστήστε τον αισθητήρα</string>
+	<string name="error_sensor_removed_msg">Ο αισθητήρας σας δεν λειτουργεί. Αφαιρέστε τον αισθητήρα σας και κάντε έναρξη νέου αισθητήρα.</string>
+	<string name="error_sensor_expired_title">O αισθητήρας τελείωσε</string>
+	<string name="error_sensor_expired_msg">Έναρξη νέου αισθητήρα για έλεγχο γλυκόζης.</string>
+	<string name="error_sensor_inwarmup_title">Ενεργοποίηση αισθητήρα</string>
+	<string name="error_sensor_inwarmup_msg">Αυτός ο αισθητήρας έχει ενεργοποιηθεί αλλά δεν είναι ακόμη έτοιμος για χρήση.</string>
+	<string name="error_sensor_corrupt_title">Σφάλμα σάρωσης</string>
+	<string name="error_sensor_corrupt_msg">Το smartphone δεν μπόρεσε να σαρώσει τον αισθητήρα. Σαρώστε τον αισθητήρα ξανά.</string>
+	<string name="error_sensor_transmission_title">Σφάλμα σάρωσης</string>
+	<string name="error_sensor_transmission_msg">Το smartphone δεν μπόρεσε να σαρώσει τον αισθητήρα. Σαρώστε τον αισθητήρα ξανά. Φροντίστε να κρατάτε το πίσω μέρος του smartphone κοντά στον αισθητήρα. Όταν ακούσετε τον πρώτο τόνο ή δόνηση, κρατήστε το smartphone σταθερό μέχρι να ακούσετε και τον δεύτερο τόνο ή δόνηση.</string>
+	<string name="error_sensor_already_started_title">Ο αισθητήρας χρησιμοποιείται ήδη</string>
+	<string name="error_sensor_already_started_msg">Η έναρξη του αισθητήρα που μόλις σαρώσατε έγινε από μια άλλη συσκευή και δεν μπορεί να χρησιμοποιηθεί.</string>
+	<string name="error_sensor_already_started_msg_llj">Η έναρξη αυτού του αισθητήρα έγινε από κάποια άλλη συσκευή. Για να λειτουργήσει ο αισθητήρας με αυτό το smartphone, πρέπει να χρησιμοποιήσετε αυτό το smartphone για να σαρώσετε τον αισθητήρα εντός της πρώτης ώρας από την έναρξη.</string>
+	<string name="error_sensor_temporary_problem_title">Σφάλμα αισθητήρα</string>
+	<string name="error_sensor_temporary_problem_msg">Η ένδειξη γλυκόζης δεν είναι διαθέσιμη. Προσπαθήστε να σαρώσετε ξανά σε 10 λεπτά.</string>
+	<string name="error_sensor_too_hot_title">Πολύ ζεστός αισθητήρας</string>
+	<string name="error_sensor_too_hot_msg">Ο αισθητήρας είναι πολύ ζεστός για να δώσει ενδείξεις γλυκόζης. Ξαναπροσπαθήστε σε λίγα λεπτά.</string>
+	<string name="error_sensor_too_cold_title">Πολύ κρύος αισθητήρας</string>
+	<string name="error_sensor_too_cold_msg">Ο αισθητήρας είναι πολύ κρύος για να δώσει ενδείξεις γλυκόζης. Ξαναπροσπαθήστε σε λίγα λεπτά.</string>
+	<string name="error_sensor_insertion_failure_title">Ελέγξτε τον αισθητήρα</string>
+	<string name="error_sensor_insertion_failure_msg">Παρακαλώ ελέγξτε τον αισθητήρα σας. Εάν ξεκολλήσει από το δέρμα σας, αφαιρέστε τον αισθητήρα και κάντε έναρξη νέου. Εάν έχει εφαρμοστεί σωστά, επαναλάβετε την έναρξη αισθητήρα.</string>
+	<string name="error_sensor_not_active_title">Βρέθηκε νέος αισθητήρας</string>
+	<string name="error_sensor_not_active_msg">Η έναρξη ενός νέου αισθητήρα θα τελειώσει τον αισθητήρα που χρησιμοποιείτε τη δεδομένη στιγμή.\n\nΘέλετε να κάνετε έναρξη νέου αισθητήρα τώρα;</string>
+
+	<!-- Add/Edit Note -->
+	<string name="addNote">Προσθ. σημείωσης</string>
+	<string name="editNote">Επεξεργ. σημείωσης</string>
+	<string name="highIntensity">Υψηλή ένταση</string>
+	<string name="mediumIntensity">Μεσαία ένταση</string>
+	<string name="lowIntensity">Χαμηλή ένταση</string>
+	<string name="noExerciseTypeChosen">Επιλέξτε ένταση</string>
+	<string name="food">Γεύμα</string>
+	<string name="exercise">Άσκηση</string>
+	<string name="longActingInsulin">Ινσουλ. μακράς δράσης</string>
+	<string name="rapidActingInsulin">Ινσουλίνη ταχείας δράσης</string>
+	<string name="meal">Γεύμα</string>
+	<string name="breakfast">Πρωινό</string>
+	<string name="lunch">Μεσημεριανό</string>
+	<string name="snack">Σνακ</string>
+	<string name="dinner">Βραδινό</string>
+	<string name="carbsGramsError">Η τιμή θα είναι ακέραιος αριθμός μεταξύ %1$s και %2$s</string>
+	<string name="carbsServingsError">Η τιμή θα είναι πολλαπλάσιο του 0,5 και μεταξύ %1$s και %2$s</string>
+	<string name="insulinDoseError">Η τιμή θα είναι πολλαπλάσιο του 0,1 και μεταξύ 0,1 και %1$d</string>
+
+	<!-- Manual BG -->
+	<string name="manualBgTitle">Αποτέλεσμα γλυκόζης αίματος</string>
+	<string name="manualBgExplanation">Εισάγετε το αποτέλεσμα από τη μέτρηση γλυκόζης αίματος.</string>
+	<string name="manualBgError">Η τιμή θα είναι ακέραιος αριθμός μεταξύ %1$s και %2$s</string>
+
+	<!-- Logbook -->
+	<string name="logbookDetail">Λεπτομέρειες ημερολογίου</string>
+	<string name="logbookListEmpty">Δεν βρέθηκαν εγγραφές για αυτή την ημερομηνία.</string>
+	<string name="logbookDetailCarbFormatDoseAndUnit">" (&lt;b&gt;%1$s%2$s&lt;/b&gt;)"</string>
+	<string name="logbookDetailInsulinFormatTypeAndDose">%1$s (&lt;b&gt;%2$s&lt;/b&gt;)</string>
+	<string name="logbookDetailSeparator">", "</string>
+	<string name="noteBalloonSeparator">&lt;br/&gt;</string>
+	<string name="logbookDetailExerciseType">@string/exercise</string>
+	<string name="logbookDetailExerciseFormatType">Άσκηση %s</string>
+	<string name="logbookDetailExerciseFormatDuration">" (&lt;b&gt;%s&lt;/b&gt;)"</string>
+
+	<!-- Reminders -->
+	<string name="alarms">Ειδοποιήσεις</string>
+	<string name="repeating">Επανάληψη</string>
+	<string name="timers">Χρονόμετρα</string>
+	<string name="addReminder">Προσθήκη υπενθύμισης</string>
+	<string name="alarmName">Όνομα υπενθύμισης</string>
+	<string name="checkGlucose">Ελέγξτε τη γλυκόζη</string>
+	<string name="myReminder">Η υπενθύμισή μου</string>
+	<string name="nextReminderPrompt">Επόμενη υπενθύμιση:\u0020</string>
+	<string name="nextAlarmPrompt">Επόμενη υπενθύμιση: %1$s, %2$s</string>
+	<string name="noActiveReminders">Καμία ενεργή υπενθύμιση.</string>
+	<string name="noActiveRemindersAutoScanSensorEnabled">Καμία ενεργή υπενθύμιση. Το χρονόμετρο του αισθητήρα σάρωσης θα μηδενιστεί όταν κάνετε ξανά σάρωση.</string>
+	<string name="remindMeToCheckAgain">Υπενθύμιση για έλεγχο γλυκόζης σε:</string>
+	<string name="setReminder">Ρύθμιση</string>
+
+	<!-- Send Reports -->
+	<string name="sendChooserTitle">Αποστολή</string>
+
+	<!-- Settings -->
+	<string name="unitOfMeasurementTitle">Μονάδα μέτρησης</string>
+	<string name="unitOfMeasurementTopText">Επιλέξτε τη μονάδα μέτρησης για τη γλυκόζη σας. Όλα τα δεδομένα γλυκόζης θα προβληθούν με χρήση αυτών των μονάδων.</string>
+	<string name="unitOfMeasurementTopTextForSetup">Επιλέξτε τη μονάδα μέτρησης της γλυκόζης σας. Όλα τα δεδομένα γλυκόζης θα προβληθούν με χρήση αυτών των μονάδων. ΔΕΝ θα μπορείτε να το αλλάξετε αυτό αργότερα.</string>
+	<string name="unitOfMeasureWarning">Είναι ΠΟΛΥ σημαντικό να επιλέξτε τη σωστή μονάδα μέτρησης για τη γλυκόζη σας. Η επιλογή λανθασμένης μονάδας μέτρησης μπορεί να οδηγήσει σε εσφαλμένη ερμηνεία των τιμών γλυκόζης σας. Ρωτήστε τον επαγγελματίας υγείας που σας παρακολουθεί εάν δεν ξέρετε ποια μονάδα μέτρησης να χρησιμοποιήσετε.</string>
+	<string name="unitOfMeasurementFixedTopText">Η μονάδα μέτρησης της γλυκόζης σας ρυθμίζεται αυτόματα με βάση τη χώρα σας.</string>
+	<string name="unitOfMeasurementFixedCountryText">Η χώρα σας είναι η</string>
+	<string name="unitOfMeasurementFixedText">Η μονάδα μέτρησής σας είναι</string>
+	<string name="targetGlucoseRangeTitle">Εύρος στόχου γλυκόζης</string>
+	<string name="targetGlucoseRangeTopText">Το εύρος τιμών-στόχου γλυκόζης σας θα προβάλλεται στα διάφορα γραφήματα. Ρωτήστε τον επαγγελματία υγείας σας εάν δεν το γνωρίζετε.</string>
+	<string name="targetGlucoseRangeTopTextForSetup">Το εύρος τιμών-στόχου γλυκόζης σας θα προβάλλεται σε διάφορα γραφήματα και μπορεί να αλλάξει εάν μεταβείτε στις Ρυθμίσεις. Ρωτήστε τον επαγγελματία υγείας σας εάν δεν το γνωρίζετε.</string>
+	<string name="carbohydrateUnitsTitle">Μονάδες υδατανθράκων</string>
+	<string name="carbohydrateUnitsTopText">Μπορείτε να εισάγετε υδατάνθρακες είτε ως γραμμάρια είτε ως μερίδες, ανάλογα με τον τρόπο που τους υπολογίζετε. Επιλέξτε την προτιμώμενη μονάδα μέτρησης υδατανθράκων.</string>
+	<string name="carbohydrateUnitServingSizeMessage">Επιλέξτε το προτιμώμενο μέγεθος της μερίδας σας ή επικοινωνήστε με τον επαγγελματία υγείας σας εάν δεν το γνωρίζετε.</string>
+	<string name="carbohydrateUnitsTopTextForSetup">@string/carbohydrateUnitsTopText</string>
+	<string name="scanSoundsTitle">Ήχοι σάρωσης</string>
+	<string name="scanSoundsOsDefault">ήχος και δόνηση</string>
+	<string name="scanSoundsVibeOnly">μόνο δόνηση</string>
+	<string name="scanSoundsTopText">Η σάρωση ενός αισθητήρα θα προκαλέσει μια δόνηση. Επιλέξτε εάν θέλετε να ακούσετε έναν ήχο εκτός από τη δόνηση.</string>
+	<string name="scanSoundsTopTextForSetup">@string/scanSoundsTopText</string>
+	<string name="scanSoundsNote">Σημειώστε ότι:\nΟι ήχοι σάρωσης θα αντιγράψουν τις ρυθμίσεις έντασης ήχου από το smartphone σας. Για παράδειγμα, εάν η ένταση ήχου του smartphone σας είναι απενεργοποιημένη, δεν θα ακούσετε τον ήχο σάρωσης.</string>
+	<string name="textToSpeechTitle">Μετατροπή κειμένου σε ομιλία</string>
+	<string name="textToSpeechOn">on</string>
+	<string name="textToSpeechOff">off</string>
+	<string name="textToSpeechTopText">Ενεργοποιήστε τη Μετατροπή κειμένου σε ομιλία για να διαβαστεί δυνατά η ένδειξη γλυκόζης.</string>
+	<string name="textToSpeechNote">Σημειώστε ότι:\nΗ Μετατροπή κειμένου σε ομιλία θα αντιγράψει τις ρυθμίσεις έντασης ήχου από το smartphone σας. Για παράδειγμα, εάν η ένταση ήχου του smartphone σας είναι απενεργοποιημένη, δεν θα ακουστεί δυνατά η ένδειξη γλυκόζης.</string>
+	<string name="countryOfOriginTitle">Επιβεβαιώστε τη χώρα</string>
+	<string name="countryOfOriginTopText">Η χώρα σας χρησιμοποιείται κατά τη διάρκεια της ρύθμισης της εφαρμογής και για να διασφαλιστεί η σωστή αποθήκευση των δεδομένων σας.</string>
+	<string name="countryOfOriginTopTextForSetup">@string/countryOfOriginTopText</string>
+	<string name="countryOfOriginExplanation">Εάν είναι σωστή, πατήστε Επόμενο.\n\nΕάν είναι λάθος, μπορεί να χρειαστεί να απεγκαταστήσετε το FreeStyle LibreLink και να εγκαταστήσετε την έκδοση της χώρας σας. Εάν έχετε απορίες, επικοινωνήστε με το Τμήμα Υποστήριξης Πελατών.</string>
+	<string name="targetGlucoseRangeUnitText">Τιμές σε</string>
+	<string name="servingsWithGramsEquivalent" tools:ignore="PluralsCandidate">μερίδες (1 μερίδα = %.1f γραμμάρια)</string>
+	<string name="countryLabel">Χώρα διαμονής</string>
+	<string name="countryLabelForSetup">Ως χώρα σας έχει αναγνωριστεί η</string>
+	<string name="defaultNetworkErrorMessage">Σφάλμα επικοινωνίας με το διακομιστή.</string>
+	<string name="serverNotFoundErrorMessage">Σφάλμα επικοινωνίας με το διακομιστή. Ο διακομιστής δεν βρέθηκε.</string>
+	<string name="pageNotFoundErrorMessage">Σφάλμα επικοινωνίας με το διακομιστή. Δεν βρέθηκε περιεχόμενο στο διακομιστή.</string>
+	<string name="networkingErrorMessage">Παρουσιάστηκε σφάλμα δικτύου κατά την επικοινωνία με το διακομιστή.</string>
+	<string name="internalServerErrorMessage">Σφάλμα επικοινωνίας με το διακομιστή. Παρουσιάστηκε εσωτερικό σφάλμα του διακομιστή.</string>
+	<string name="requestTimeoutErrorMessage">Σφάλμα επικοινωνίας με το διακομιστή. Λήξη χρονικού ορίου αιτήματος.</string>
+	<string name="serviceUnavailableErrorMessage">Σφάλμα επικοινωνίας με το διακομιστή. Η υπηρεσία δεν είναι διαθέσιμη.</string>
+	<string name="submitButtonText">@string/submit</string>
+	<string name="mgPerDeciliterRadioText"><b>mg/dL</b> (για παράδειγμα 100 mg/dL)</string>
+	<string name="mmolPerLiterRadioText"><b>mmol/L</b> (για παράδειγμα 5,6 mmol/L)</string>
+	<string name="target_range_separator">-</string>
+	<string name="glucoseRangeFormat">%1$s - %2$s %3$s</string>
+	<string name="settingsUnitOfMeasureConfirmationMessage">Επιβεβαιώστε ότι θέλετε να επιλέξετε την παρακάτω μονάδα μέτρησης:</string>
+	<string name="networkNotConnectedDefault">Το smartphone σας δεν είναι τη δεδομένη στιγμή συνδεδεμένο στο Διαδίκτυο. Αυτή η λειτουργία δεν μπορεί να ολοκληρωθεί μέχρι να αποκτήσετε σύνδεση στο Διαδίκτυο.</string>
+	<string name="networkNotConnectedSetup">Το smartphone σας δεν είναι τη δεδομένη στιγμή συνδεδεμένο στο Διαδίκτυο. Δεν μπορεί να ολοκληρωθεί η ρύθμιση μέχρι να αποκτήσετε σύνδεση στο Διαδίκτυο.</string>
+	<string name="networkNotConnectedProfileUpdate">Το smartphone σας δεν είναι τη δεδομένη στιγμή συνδεδεμένο στο Διαδίκτυο. Ο λογαριασμός σας δεν μπορεί να αλλάξει μέχρι να αποκτήσετε σύνδεση στο Διαδίκτυο.</string>
+	<string name="privacyNoticeAcceptanceStatement">Έχω διαβάσει και αποδέχομαι ρητά τη Δήλωση Προστασίας Προσωπικών Δεδομένων.</string>
+	<string name="privacyNoticeTitle">Επισήμ. προστ. προσ. δεδομ.</string>
+	<string name="termsOfUseAcceptanceStatement">Έχω διαβάσει και αποδέχομαι ρητά τους όρους χρήσης.</string>
+	<string name="termsOfUseTitle">Όροι χρήσης</string>
+	<string name="nfcUnsupported">Για να χρησιμοποιήσετε το FreeStyle LibreLink για να σαρώσετε τον αισθητήρα σας, το NFC πρέπει να υποστηρίζεται από το smartphone σας.</string>
+	<string name="turnOnNfcPrompt">Για να χρησιμοποιήσετε το FreeStyle LibreLink για να σαρώσετε τον αισθητήρα σας, πρέπει να είναι ενεργοποιημένο το NFC στο smartphone σας. Θέλετε να το ενεργοποιήσετε;</string>
+	<string name="enableNetworkTime">Για να χρησιμοποιήσετε το FreeStyle LibreLink για να σαρώσετε τον αισθητήρα σας, το smartphone σας πρέπει να ρυθμιστεί ώστε να ενημερώνει αυτόματα την ημερομηνία και την ώρα. Θέλετε να ενεργοποιήσετε αυτή την επιλογή;</string>
+	<string name="getStartedNow">Ξεκινήστε τώρα</string>
+
+	<!-- My Glucose Explanation -->
+	<string name="myGlucoseExplanationTitle">Η γλυκόζη μου</string>
+	<string name="myGlucoseExplanationTopText">Αυτή η οθόνη εμφανίζεται μετά τη σάρωση του αισθητήρα σας.</string>
+	<string name="myGlucoseExplanationResultCallouts">Η οθόνη Η γλυκόζη μου περιλαμβάνει (1) την τρέχουσα τιμή της γλυκόζης σας, (2) το βέλος τάσης της γλυκόζης σας και (3) το γράφημα της γλυκόζης σας.</string>
+
+	<!-- Trend Arrow Explanation -->
+	<string name="trendExplanationTitle">Βέλος τάσης γλυκόζης</string>
+	<string name="trendExplanationTopText">Κατά τη σάρωση του αισθητήρα σας, ένα βέλος τάσης θα υποδεικνύει την πρόσφατη τάση της γλυκόζης σας.</string>
+	<string name="trendExplanationRisingQuickly">Ταχεία αύξηση</string>
+	<string name="trendExplanationRising">Αύξηση</string>
+	<string name="trendExplanationStable">μικρή μεταβολή</string>
+	<string name="trendExplanationFalling">Μείωση</string>
+	<string name="trendExplanationFallingQuickly">Ταχεία μείωση</string>
+
+	<!-- Help -->
+	<string name="helpItemTitleApplySensor">Πώς να εφαρμόσετε έναν αισθητήρα</string>
+	<string name="helpItemTitleScanSensor">Πώς να σαρώσετε έναν αισθητήρα</string>
+	<string name="helpItemTitleEventLog">@string/eventLog</string>
+	<string name="helpItemTitleUserGuide">Εγχειρίδιο χρήσης</string>
+
+	<!-- OneStep Log Upload -->
+	<string name="logUploadTitle">Αποστολή δεδομένων αντιμετώπισης προβλημάτων</string>
+	<string name="logUploadOptInDescription">Η αποστολή δεδομένων αντιμετώπισης προβλημάτων βοηθά το Τμήμα Υποστήριξης Πελατών να απαντήσει στις ερωτήσεις σας.</string>
+	<string name="logUploadOptInText1">Η Δήλωση Προστασίας Προσωπικών Δεδομένων που αποδεχθήκατε προηγουμένως περιγράφει τι περιλαμβάνουν τα δεδομένα αντιμετώπισης προβλημάτων.</string>
+	<string name="logUploadViewPrivacyButtonLabel">Προβολή Δήλωσης Προστασίας Προσωπικών Δεδομένων</string>
+	<string name="logUploadOptInText2">Συμφωνείτε με την αποστολή των δεδομένων αντιμετώπισης προβλημάτων;</string>
+	<string name="logUploadDecline">Διαφωνώ</string>
+	<string name="logUploadAccept">Συμφωνώ</string>
+	<string name="logUploadDescription">Εισάγετε τον αριθμό περιστατικού και των κωδικό επαλήθευσης που σας παρείχε το Τμήμα Υποστήριξης Πελατών.</string>
+	<string name="logUploadCaseNumberLabel">Αριθμός περιστατικού</string>
+	<string name="logUploadAccessCodeLabel">Κωδικός επαλήθευσης</string>
+	<string name="logUploadSendButtonLabel">Αποστολή</string>
+	<string name="logUploadErrorTypo">Εσφαλμένος αριθμός περιστατικού ή κωδικός επαλήθευσης</string>
+	<string name="logUploadErrorUploadFailedTitle">Σφάλμα κατά την αποστολή δεδομένων αντιμετώπισης προβλημάτων</string>
+	<string name="logUploadErrorUploadFailedText">Πατήστε για νέα δοκιμή.</string>
+
+	<!-- Apply Sensor Tour -->
+	<string name="applySensorTitle">Εφαρμογή αισθητήρα</string>
+	<string name="applySensorTitleStep1">ΒΗΜΑ 1</string>
+	<string name="applySensorTextStep1">Επιλέξτε μια περιοχή στο πίσω μέρος του άνω βραχίονά σας.</string>
+	<string name="applySensorSubTextStep1">Σημείωση: Αποφύγετε ουλές, ελιές, ραγάδες, εξογκώματα και περιοχές ενέσεων ινσουλίνης. Για να αποτρέψετε τον ερεθισμό του δέρματος, να εναλλάσσετε περιοχές μεταξύ των εφαρμογών.</string>
+	<string name="applySensorTitleStep2">ΒΗΜΑ 2</string>
+	<string name="applySensorTextStep2">Καθαρίστε το σημείο τοποθέτησης με ένα μαντηλάκι αλκοόλης. Αφήστε την περιοχή να στεγνώσει καλά προτού συνεχίσετε.</string>
+	<string name="applySensorTitleStep3">ΒΗΜΑ 3</string>
+	<string name="applySensorTextStep3">Αφαιρέστε πλήρως το κάλυμμα από τη συσκευασία του αισθητήρα.</string>
+	<string name="applySensorTitleStep4">ΒΗΜΑ 4</string>
+	<string name="applySensorTextStep4">Ξεβιδώστε το καπάκι από τη συσκευή εφαρμογής αισθητήρα.</string>
+	<string name="applySensorTitleStep5">ΒΗΜΑ 5</string>
+	<string name="applySensorTextStep5">Ευθυγραμμίστε τη σκουρόχρωμη ένδειξη της συσκευής εφαρμογής αισθητήρα με την αντίστοιχη ένδειξη της συσκευασίας αισθητήρα. Σε σκληρή, επίπεδη επιφάνεια, πιέστε σταθερά προς τα κάτω τη συσκευή εφαρμογής αισθητήρα μέχρι να τερματίσει.</string>
+	<string name="applySensorTitleStep6">ΒΗΜΑ 6</string>
+	<string name="applySensorTextStep6">Ανασηκώστε τη συσκευή εφαρμογής του αισθητήρα για να την αφαιρέσετε από τη συσκευασία του αισθητήρα.</string>
+	<string name="applySensorTitleStep7">ΒΗΜΑ 7</string>
+	<string name="applySensorTextStep7">Η συσκευή εφαρμογής αισθητήρα είναι έτοιμη για την τοποθέτηση του αισθητήρα. Μην αγγίζετε το εσωτερικό της συσκευής εφαρμογής του αισθητήρα και μην την επανατοποθετείτε στη συσκευασία του αισθητήρα.</string>
+	<string name="applySensorTitleStep8">ΒΗΜΑ 8</string>
+	<string name="applySensorTextStep8">Τοποθετήστε τη συσκευή εφαρμογής αισθητήρα πάνω στο επιλεγμένο σημείο τοποθέτησης και πιέστε τη σταθερά προς το σώμα για την εφαρμογή του αισθητήρα.</string>
+	<string name="applySensorTitleStep9">ΒΗΜΑ 9</string>
+	<string name="applySensorTextStep9">Απομακρύνετε απαλά τη συσκευή εφαρμογής αισθητήρα από το σώμα σας.</string>
+	<string name="applySensorTitleStep10">ΒΗΜΑ 10</string>
+	<string name="applySensorTextStep10">Βεβαιωθείτε ότι ο αισθητήρας είναι σταθερά τοποθετημένος. Απορρίψτε τη χρησιμοποιημένη συσκευή εφαρμογής αισθητήρα και τη συσκευασία αισθητήρα σύμφωνα με τους τοπικούς κανονισμούς.</string>
+
+	<!-- Scan Sensor Tour -->
+	<string name="scanSensorTitle">Σάρωση αισθητήρα</string>
+	<string name="scanSensorTitleStep1">ΒΗΜΑ 1</string>
+	<string name="scanSensorTextStep1"><![CDATA[Κρατήστε το <b>πίσω μέρος</b> του smartphone <b>κοντά</b> στον αισθητήρα και σαρώστε.]]></string>
+	<string name="scanSensorTitleStep2">ΒΗΜΑ 2</string>
+	<string name="scanSensorTextStep2">Εάν είναι ενεργοποιημένος ο ήχος, το smartphone θα παράγει διάφορους ηχητικούς τόνους και δονήσεις καθώς σαρώνει τον αισθητήρα. Μην απομακρύνετε το smartphone μέχρι να σταματήσουν όλοι οι ηχητικοί τόνοι και οι δονήσεις.</string>
+	<string name="scanSensorTitleStep3">ΒΗΜΑ 3</string>
+	<string name="scanSensorTextStep3">Για να σαρώσετε τον αισθητήρα, μπορεί να χρειαστεί να επανατοποθετήσετε το smartphone σας κοντά στον αισθητήρα σας, για να εντοπίσετε την κεραία NFC του smartphone σας.</string>
+
+	<!-- About -->
+	<string name="about">Σχετικά</string>
+	<string name="appNameLabel">Όνομα:</string>
+	<string name="appNameValue">FreeStyle LibreLink</string>
+	<string name="appPartOfSystem">Μέρος του συστήματος παρακολούθησης γλυκόζης με τεχνολογία Flash FreeStyle Libre</string>
+	<string name="last3sensors">Τελευταίοι 3 αισθητήρες:</string>
+	<string name="sensorStatus">&#160;&#160;&#160;&#160;Κατάσταση: %1$s</string>
+	<string name="udi">UDI:</string>
+	<string name="registrationNumber">Αριθμός μητρώου:</string>
+	<string name="productStandardNumber">Τυπικός αριθμός προϊόντος:</string>
+	<string name="model">Μοντέλο smartphone:</string>
+	<string name="appCountryLabel">Χώρα:</string>
+	<string name="supportWebsiteLabel">Τμήμα Υποστήριξης Πελατών:</string>
+	<string name="supportWebsiteValue">http://www.freestylelibre.com</string>
+	<string name="consultInstructionsForUse">Συμβουλευτείτε τις οδηγίες χρήσης</string>
+	<string name="productOfUsa">Προϊόν Η.Π.Α.</string>
+	<string name="patentWebsiteLabel">Ιστοσελίδα διπλώματος ευρεσιτεχνίας:</string>
+	<string name="patentWebsiteValue">https://www.abbott.com/patents</string>
+	<string name="trademarkStatement">Τα FreeStyle Libre και οι σχετικές εμπορικές επωνυμίες είναι εμπορικά σήματα της Abbott Diabetes Care, Inc. σε διάφορες δικαιοδοσίες.</string>
+	<string name="copyrightStatement">©2018 Abbott</string>
+	<string name="osVersion">Έκδοση λειτουργικού Android:</string>
+	<string name="sensorNotPresent">Χωρίς ενεργό αισθητήρα</string>
+	<string name="softwareVersion">Έκδοση λογισμικού:</string>
+
+	<!-- Notifications -->
+	<string name="alarmExpired">Η ειδοποίηση έληξε</string>
+	<string name="timerExpired">Το χρονόμετρο έληξε</string>
+
+	<string name="sensorActivated">Ο αισθητήρας ξεκίνησε</string>
+	<string name="sensorReady">Ο αισθητήρας είναι έτοιμος</string>
+	<string name="sensorReadyContent">Ο αισθητήρας σας είναι έτοιμος για χρήση</string>
+	<string name="sensorExpired">O αισθητήρας τελείωσε</string>
+	<string name="sensorExpiredContent">Έναρξη νέου αισθητήρα για έλεγχο γλυκόζης</string>
+	<string name="sensorEndingSoon">Τέλος αισθητήρα σύντομα</string>
+
+	<!-- Data Upload -->
+	<string name="uploadFailedTitle">Η αποστολή απέτυχε</string>
+	<string name="uploadFailedNoConnectivityContent">Χωρίς σύνδεση</string>
+	<string name="uploadFailedInvalidToken">Ο έλεγχος ταυτότητας απέτυχε. Κλικ για σύνδεση.</string>
+	<string name="uploadFailedOther">Παρουσιάστηκε σφάλμα. Κλικ για επανάληψη</string>
+	<string name="uploadingDataTitle">Αποστολή δεδομένων FreeStyle LibreLink</string>
+	<string name="uploadingDataContent">Αποστολή δεδομένων</string>
+	<string name="serving_size_in_grams">1 μερίδα = %.1f γραμμάρια</string>
+	<string name="acceptLanguageHeader">el-GR, el;q=0.8</string>
+	<string name="appLocale">el-GR</string>
+
+	<string name="reportHeaderDayOnlyFormat">d</string>
+	<string name="reportHeaderFullDateFormat">d MMMM yyyy</string>
+	<string name="reportHeaderShortMonthFormat">d MMM</string>
+	<string name="reportHeaderShortMonthFullFormat">d MMM yyyy</string>
+	<string name="reportHeaderDateRangeFormat">%1$s - %2$s</string>
+	<string name="reportShareSubjectFormat">%1$s: %2$s</string>
+
+	<string name="nonActionableExplanationTitle">Επιβεβαιώστε την ένδειξη γλυκόζης</string>
+	<string name="nonActionableExplanationMessage">Επιβεβαιώστε την ένδειξη γλυκόζης σας με μια ταινία μέτρησης προτού λάβετε αποφάσεις για τη θεραπεία.</string>
+
+	<!-- TTS Result -->
+	<string name="spokenLo">εκτός εύρους στόχου και χαμηλή</string>
+	<string name="spokenHi">εκτός εύρους στόχου και υψηλή</string>
+	<string name="spokenMgDl">χιλιοστόγραμμα ανά δεκατόλιτρο</string>
+	<string name="spokenMmolL">χιλιοστογραμμομόρια ανά λίτρο</string>
+	<string name="resultWithTrendNotDetermined">%1$s %2$s με μη διαθέσιμη τάση</string>
+	<string name="resultWithTrendFallingQuickly">%1$s %2$s και μειώνεται γρήγορα</string>
+	<string name="resultWithTrendFalling">%1$s %2$s και μειώνεται</string>
+	<string name="resultWithTrendStable">%1$s %2$s και αλλάζει αργά</string>
+	<string name="resultWithTrendRising">%1$s %2$s και αυξάνεται</string>
+	<string name="resultWithTrendRisingQuickly">%1$s %2$s και αυξάνεται γρήγορα</string>
+
+	<!-- Download Progress -->
+	<string name="progressDownloadingConfiguration">Λήψη διαμόρφωσης εφαρμογής</string>
+	<string name="progressDownloadingUserGuide">Λήψη εγχειριδίου χρήσης</string>
+	<string name="insufficientSpaceMessage">Ο διαθέσιμος χώρος στο smartphone σας δεν επαρκεί.</string>
+
+
+	<!-- New strings added 25SEPT2017 -->
+
+	<string name="modalLookingForSensor">Κρατήστε το iPhone κοντά στον αισθητήρα</string>
+	<string name="modalSensorFound">Η σάρωση ολοκληρώθηκε</string>
+	<string name="settingsMenuTitle">Ρυθμίσεις</string>
+	<string name="genericOSVersion">Έκδοση λειτουργικού:</string>
+	<string name="editTime">Επεξεργασία ώρας</string>
+	<string name="detail">Λεπτομέρεια</string>
+	<string name="helpItemTitleGlucoseHelp">Ενδείξεις γλυκόζης</string>
+	<string name="glucoseHelp">Ενδείξεις γλυκόζης</string>
+
+	<!-- Abbreviated time passed -->
+	<string name="mins_passed">%dλεπτ. πριν</string>
+	<string name="hours_passed">%dώρες πριν</string>
+
+	<string name="iosNotificationsDisabled">Για να λαμβάνετε ειδοποιήσεις, οι ειδοποιήσεις πρέπει να είναι ενεργοποιημένες στις ρυθμίσεις iOS.</string>
+	<string name="glucoseWarningReminderPrompt">Θέλετε να ορίσετε μια υπενθύμιση για τον έλεγχο της γλυκόζης σας;</string>
+	<string name="NFCReaderUsageDescription">Το FreeStyle LibreLink χρησιμοποιεί NFC για τη σάρωση των αισθητήρων FreeStyle Libre.</string>
+	<string name="NSPhotoLibraryAddUsageDescription">Το FreeStyle LibreLink χρειάζεται πρόσβαση στη βιβλιοθήκη πολυμέσων σας για την αποθήκευση των αναφορών. Οι φωτογραφίες σας δεν θα κοινοποιηθούν χωρίς την άδειά σας.</string>
+	<string name="deleteNote">Διαγραφή σημείωσης</string>
+	<string name="deleteNoteConfirmation">Θέλετε να διαγράψετε αυτήν τη σημείωση;</string>
+
+	<!-- New strings with existing Android Counterparts -->
+
+	<string name="iosScanSensorTextStep1">Πατήστε το πλήκτρο σάρωσης προτού σαρώσετε τον αισθητήρα σας.</string>
+	<string name="iosScanSensorTextStep2">Κρατήστε το επάνω μέρος του iPhone σας κοντά στον αισθητήρα.</string>
+	<string name="iosScanSensorTextStep3">Το iPhone σας θα δονηθεί και θα κάνει έναν ήχο (εάν είναι ενεργοποιημένοι οι ήχοι) μετά τη σάρωση του αισθητήρα.</string>
+	<string name="iosErrorVersionCheckFailed">Αυτή η έκδοση του FreeStyle LibreLink πρέπει να ενημερωθεί. Ελέγξτε το App Store για την πιο πρόσφατη έκδοση.</string>
+	<string name="iosReadyToScanDetail">Ο αισθητήρας σας είναι έτοιμος για χρήση.</string>
+	<string name="iosDefaultSensorErrorMsg">Η σάρωσή σας ήταν ανεπιτυχής. Πατήστε το πλήκτρο σάρωσης και σαρώστε ξανά.</string>
+	<string name="iosEnableNetworkTimeTitle">Ενημέρωση ημερομηνίας και ώρας</string>
+	<string name="iosEnableNetworkTime">Για να χρησιμοποιήσετε το FreeStyle LibreLink, οι ρυθμίσεις ημερομηνίας και ώρας πρέπει να ενημερώνονται αυτόματα. Πηγαίνετε στις Ρυθμίσεις &gt; Γενικές &gt; Ημερομηνία και Ώρα και ενεργοποιήστε την επιλογή Αυτόματη ρύθμιση.</string>
+
+	<!-- New string added per Ashwin Kumar's request 2017-08-30-->
+	<string name="iosCheckGlucoseWithPhone">Μπορείτε να ελέγξετε τη γλυκόζη σας με το iPhone σας.</string>
+	<string name="retry">Επανάληψη</string>
+
+	<!-- New strings for US changes 2017-10-31 -->
+	<string name="sensorUserPrompt">Εισάγετε τις πληροφορίες του ατόμου που θα φορέσει τον αισθητήρα. </string>
+	<string name="welcome">Καλώς ήρθατε!</string>
+	<string name="welcomeDetail">Αφιερώστε λίγα λεπτά για να μάθετε πώς να κατανοείτε τις ενδείξεις γλυκόζης σας με αυτή την εφαρμογή.</string>
+	<string name="backgroundGlucoseColorsTitle">Χρώμα φόντου γλυκόζης</string>
+	<string name="backgroundGlucoseColorsDetail">Η τρέχουσα γλυκόζη σας προσδιορίζει το χρώμα του φόντου.</string>
+	<string name="glucoseHighAbove240Mgdl">Υψηλή γλυκόζη (πάνω από 240 mg/dL)</string>
+	<string name="glucoseBetweenTarget240Mgdl">Μεταξύ του εύρους τιμών-στόχου και 240 mg/dL</string>
+	<string name="glucoseTargetRange">Γλυκόζη εντός του εύρους τιμών-στόχου</string>
+	<string name="glucoseBetweenTarget70Mgdl">Μεταξύ του εύρους τιμών-στόχου και 70 mg/dL</string>
+	<string name="glucoseLowBelow70Mgdl">Χαμηλή γλυκόζη (κάτω από 70 mg/dL)</string>
+	<string name="glucoseHighAbove240Mmol">Υψηλή γλυκόζη (πάνω από 13,3 mmol/L)</string>
+	<string name="glucoseBetweenTarget240Mmol">Μεταξύ του εύρους τιμών-στόχου και 13,3 mmol/L</string>
+	<string name="glucoseBetweenTarget70Mmol">Μεταξύ του εύρους τιμών-στόχου και 3,9 mmol/L</string>
+	<string name="glucoseLowBelow70Mmol">Χαμηλή γλυκόζη (κάτω από 3,9 mmol/L)</string>
+	<string name="treatmentDecisions">Αποφάσεις για τη θεραπεία</string>
+	<string name="treatmentDecisionsSymbol">Εάν δείτε αυτό το σύμβολο, κάντε μια μέτρηση γλυκόζης αίματος προτού λάβετε αποφάσεις για τη θεραπεία.</string>
+	<string name="treatmentDecisionsTest">Εάν η ένδειξη γλυκόζης του αισθητήρα δεν συμβαδίζει με αυτό που αισθάνεστε, κάντε μια μέτρηση γλυκόζης αίματος.</string>
+	<string name="checkBloodGlucoseTitle">Ελέγξτε τη γλυκόζη αίματος</string>
+	<string name="checkBloodGlucoseMessage">Κάντε μια μέτρηση γλυκόζης αίματος προτού λάβετε αποφάσεις για τη θεραπεία.</string>
+	<string name="highGlucoseCheckBloodGlucose">Η υψηλή γλυκόζη μπορεί να είναι επικίνδυνη. Κάντε μια μέτρηση γλυκόζης αίματος προτού λάβετε αποφάσεις για τη θεραπεία. Σκεφτείτε να ελέγξετε την κετόνη σας.</string>
+	<string name="lowGlucoseCheckBloodGlucose">Η χαμηλή γλυκόζη μπορεί να είναι επικίνδυνη. Κάντε μια μέτρηση γλυκόζης αίματος προτού λάβετε αποφάσεις για τη θεραπεία.</string>
+	<string name="reminder">Υπενθύμιση</string>
+	<string name="safetyInformation">Πληροφορίες ασφάλειας</string>
+	<string name="labeling">Επισήμανση</string>
+	<string name="userGuides">Οδηγοί Χρήσης</string>
+	<string name="quickStartGuide">Οδηγός Γρήγορης Εκκίνησης</string>
+	<string name="quickReferenceGuide">Συνοπτικός Οδηγός Αναφοράς</string>
+	<string name="myGlucoseExplanationUpdate">Η ένδειξη γλυκόζης σας εμφανίζεται μετά από την επιτυχή σάρωση του αισθητήρα σας. Αναζητήστε (1) την τρέχουσα γλυκόζη, (2) το βέλος τάσης της γλυκόζης, (3) το γράφημα γλυκόζης και (4) οποιοδήποτε μήνυμα σχετικά με την γλυκόζη σας.</string>
+	<string name="sensorPlacementInstruction">Ο αισθητήρας θα πρέπει να εφαρμόζεται μόνο στο πίσω μέρος του άνω τμήματος του βραχίονά σας.</string>
+	<string name="sensorReadyAt">Ο αισθητήρας θα είναι έτοιμος σε:</string>
+	<string name="formattedTimeRemaining">(%1$s απομένουν)</string>
+	<string name="sensorStartedByOtherDevice">Η έναρξη αυτού του αισθητήρα έγινε από κάποια άλλη συσκευή.</string>
+	<string name="sensorLatejoinExplanation">Για να λειτουργήσει ο αισθητήρας με αυτό το smartphone, πρέπει να χρησιμοποιήσετε αυτό το smartphone για να σαρώσετε τον αισθητήρα ενόσω πραγματοποιείται εκκίνηση του αισθητήρα.</string>
+	<string name="androidScanInstruction1">Κρατήστε το πίσω μέρος του smartphone κοντά στον αισθητήρα.</string>
+	<string name="androidScanInstruction2">Περιμένετε μέχρι να ακούσετε δύο ηχητικούς τόνους ή δονήσεις.</string>
+	<string name="bugFixesTitle">Επιδιορθώσεις σφαλμάτων</string>
+	<string name="bugFixesDetail">Επιδιορθώσεις σφαλμάτων και βελτιώσεις απόδοσης</string>
+	<string name="performanceImprovements">Βελτιώσεις απόδοσης</string>
+	<string name="sensorChangeExplanation">Η έναρξη ενός νέου αισθητήρα θα τερματίσει τη λειτουργία του αισθητήρα που χρησιμοποιείτε τη δεδομένη στιγμή.</string>
+	<string name="useNewSensorPrompt">Θέλετε να αρχίσετε να χρησιμοποιείτε τον νέο αισθητήρα;</string>
+	<string name="earlySensorActivationPrompt">Θέλετε να γίνει αυτός ο επόμενος αισθητήρας σας;</string>
+	<string name="changeSensorPrompt">Θέλετε να αρχίσετε να χρησιμοποιείτε αυτόν τον αισθητήρα;</string>
+	<string name="replaceExistingSensor">Αυτό θα αντικαταστήσει τον αισθητήρα που ενεργοποιήσατε πιο πρόσφατα.</string>
+	<string name="earlyActivationExistingEndsSoon">Μπορείτε να συνεχίσετε να χρησιμοποιείτε τον υφιστάμενο αισθητήρα σας μέχρι να τελειώσει.</string>
+	<string name="earlyActivationEndsExisting">Μπορείτε να συνεχίσετε να χρησιμοποιείτε τον υφιστάμενο αισθητήρα σας μέχρι να είναι έτοιμος ο νέος αισθητήρας σας.</string>
+	<string name="scanOtherSensor">Σαρώστε τον άλλο αισθητήρα σας για έλεγχο της γλυκόζης.</string>
+	<string name="sensorNotWorking">Ο αισθητήρας σας δεν λειτουργεί.</string>
+	<string name="currentSensorEndsAt">Ο υφιστάμενος αισθητήρας σας τελειώνει σε:</string>
+	<string name="newSensorReadyAt">Ο νέος αισθητήρας θα είναι έτοιμος σε:</string>
+	<string name="sensorAlreadyStarted">Αυτός ο αισθητήρας έχει ήδη ενεργοποιηθεί.</string>
+	<string name="earlySensorStartupTimeRemaining">Η ένδειξη γλυκόζης δεν είναι διαθέσιμη. Προσπαθήστε να σαρώσετε ξανά σε %1$s.</string>
+	<string name="glucoseReadingUnavailable">Η ένδειξη γλυκόζης δεν είναι διαθέσιμη. </string>
+	<string name="scanAgainIn">Προσπαθήστε να σαρώσετε ξανά σε %1$s.</string>
+	<string name="softwareReleaseVersion">Τελική έκδοση λογισμικού:</string>
+	<string name="softwareFullVersion">Πλήρης έκδοση λογισμικού:</string>
+</resources>

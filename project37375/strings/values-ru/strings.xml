@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2015 Airstrip - All Rights Reserved. -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<!-- Plurals -->
+	<plurals name="insulinUnits">
+		<item quantity="one">%1$s единица</item>
+		<item quantity="other">%1$s единиц(ы)</item>
+	</plurals>
+	<plurals name="days">
+		<item quantity="one">1 день</item>
+		<item quantity="other">%1$d дня(ей)</item>
+	</plurals>
+	<plurals name="hours">
+		<item quantity="one">1 час</item>
+		<item quantity="other">%1$d часа(ов)</item>
+	</plurals>
+	<plurals name="minutes">
+		<item quantity="one">1 минута</item>
+		<item quantity="other">%1$d минут(ы)</item>
+	</plurals>
+	<!-- Phrase describing a time duration in seconds using secs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationSecs">
+		<item quantity="one">1 с</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> с</item>
+	</plurals>
+	<!-- Phrase describing a time duration in minutes using mins abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationMins">
+		<item quantity="one">1 мин</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> мин</item>
+	</plurals>
+	<!-- Phrase describing a time duration in hours using hrs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationHrs">
+		<item quantity="one">1 ч</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> ч</item>
+	</plurals>
+	<plurals name="sensorExpiresInDays">
+		<item quantity="one">Заменить датчик через 1 день</item>
+		<item quantity="other">Заменить датчик через <xliff:g id="count">%d</xliff:g> дня</item>
+	</plurals>
+	<plurals name="sensorExpiresInHours">
+		<item quantity="one">Заменить датчик через 1 час</item>
+		<item quantity="other">Заменить датчик через <xliff:g id="count">%d</xliff:g> час(а)</item>
+	</plurals>
+	<plurals name="sensorExpiresInMins">
+		<item quantity="one">Заменить датчик через 1 минуту</item>
+		<item quantity="other">Заменить датчик через <xliff:g id="count">%d</xliff:g> минуту(ы)</item>
+	</plurals>
+	<plurals name="sensorReadyInMins">
+		<item quantity="one">Датчик будет готов через 1 минуту</item>
+		<item quantity="other">Датчик будет готов через <xliff:g id="count">%d</xliff:g> минуту(ы)</item>
+	</plurals>
+
+	<!-- common/generic words, phrases, symbols, and abbreviations -->
+	<string name="deciLiter">dL</string>
+	<string name="gramsSymbol">г</string>
+	<string name="liter">L</string>
+	<string name="mgdl">mg/dL</string>
+	<string name="milligrams">mg</string>
+	<string name="millimole">mmol</string>
+	<string name="mmol">mmol/L</string>
+	<string name="percentSign">\u0025</string>
+	<string name="servingsSymbol">пц.</string>
+	<string name="accept">Принять</string>
+	<string name="account">Настройки учетной записи</string>
+	<string name="all">Все</string>
+	<string name="back">Назад</string>
+	<string name="average">Средн.</string>
+	<string name="delete">Удалить</string>
+	<string name="cancel">Отменить</string>
+	<string name="durationHourMinuteConcatenate">%1$s %2$s</string>
+	<string name="comments">Комментарии</string>
+	<string name="done">Готово</string>
+	<string name="email">Адрес электронной почты</string>
+	<string name="friday">Пятница</string>
+	<string name="grams">граммы</string>
+	<string name="gramsOfCarbs">граммов углев.</string>
+	<string name="units">ед.</string>
+	<string name="help">Справка</string>
+	<string name="home">Главная</string>
+	<string name="insulinDose">Доза инсулина</string>
+	<string name="loading">Выполняется загрузка</string>
+	<string name="logbook">Журнал</string>
+	<string name="monday">Понедельник</string>
+	<string name="next">Далее</string>
+	<string name="no">Нет</string>
+	<string name="note">Примечание</string>
+	<string name="ok">OK</string>
+	<string name="password">Пароль</string>
+	<string name="reminders">Напоминания</string>
+	<string name="reject">Отклонить</string>
+	<string name="reports">Отчеты</string>
+	<string name="saturday">Суббота</string>
+	<string name="save">Сохранить</string>
+	<string name="sending">Выполняется отправка</string>
+	<string name="servings">порции</string>
+	<string name="servingsOfCarbs">порции углеводов</string>
+	<string name="settings">Настройки приложения</string>
+	<string name="share">Передать</string>
+	<string name="start">Начало</string>
+	<string name="submit">Отправить</string>
+	<string name="sunday">Воскресенье</string>
+	<string name="thursday">Четверг</string>
+	<string name="tuesday">Вторник</string>
+	<string name="wednesday">Среда</string>
+	<string name="yes">Да</string>
+	<string name="days7">7 дней</string>
+	<string name="days14">14 дней</string>
+	<string name="days30">30 дней</string>
+	<string name="days90">90 дней</string>
+	<string name="eventLog">Журнал событий</string>
+	<string name="eventLogEmptyMessage">Событий нет</string>
+
+	<string name="minorFirstName">Имя несовершеннолетнего</string>
+	<string name="minorLastName">Фамилия несовершеннолетнего</string>
+	<string name="parentFirstName">@string/parentGuardianFirstName</string>
+	<string name="parentLastName">@string/parentGuardianLastName</string>
+	<string name="lastName">Фамилия</string>
+	<string name="daily_graph">Суточный график</string>
+	<string name="daily_patterns">Суточные профили</string>
+	<string name="estimated_a1c">Оценка A1c</string>
+	<string name="firstName">Имя</string>
+	<string name="noResults">(Нет результатов)</string>
+	<string name="signIn">Войти</string>
+	<string name="signingIn">Выполняется вход</string>
+	<string name="scanSensor">Сканирование датчика</string>
+	<string name="time_in_target">Время в целевом диапазоне</string>
+	<string name="errorMsgUnexpected">Непредвиденная ошибка приложения.</string>
+	<string name="error_nfc_unsupported">NFC не поддерживается</string>
+	<string name="error_nfc_disabled">NFC отключен</string>
+	<string name="error_networktime_disabled">Авт. настр. даты и времени отключена</string>
+	<string name="errorOtherNfcInstalled">Обнаружено другое приложение, использующее NFC. Чтобы обеспечить считывание вашего датчика в приложении FreeStyle LibreLink, нужно запускать FreeStyle LibreLink перед каждым сканированием. Или же, если удалить другое приложение NFC, то можно сканировать датчик в любое время, когда смартфон разблокирован.</string>
+	<string name="loadingChartDataText">Выполняется загрузка данных</string>
+	<string name="chartErrorMessage">Ошибка загрузки данных</string>
+	<string name="timeZoneChangeMessage">Изменение час. пояса с %1$s\u00A0на\u00A0%2$s &lt;b&gt;(%3$s)&lt;/b&gt;</string>
+
+	<!-- Countries -->
+	<string name="countryName_AE">Объединенные Арабские Эмираты</string>
+	<string name="countryName_AG">Антигуа и Барбуда</string>
+	<string name="countryName_AR">Аргентина</string>
+	<string name="countryName_AT">Австрия</string>
+	<string name="countryName_AU">Австралия</string>
+	<string name="countryName_AZ">Азербайджан</string>
+	<string name="countryName_BE">Бельгия</string>
+	<string name="countryName_BH">Бахрейн</string>
+	<string name="countryName_BR">Бразилия</string>
+	<string name="countryName_BS">Багамы</string>
+	<string name="countryName_BW">Ботсвана</string>
+	<string name="countryName_BY">Беларусь</string>
+	<string name="countryName_BZ">Белиз</string>
+	<string name="countryName_CA">Канада</string>
+	<string name="countryName_CH">Швейцария</string>
+	<string name="countryName_CL">Чили</string>
+	<string name="countryName_CN">Китай</string>
+	<string name="countryName_CO">Колумбия</string>
+	<string name="countryName_CR">Коста-Рика</string>
+	<string name="countryName_CY">Кипр</string>
+	<string name="countryName_DE">Германия</string>
+	<string name="countryName_DK">Дания</string>
+	<string name="countryName_DO">Доминиканская Республика</string>
+	<string name="countryName_DZ">Алжир</string>
+	<string name="countryName_EC">Эквадор</string>
+	<string name="countryName_ES">Испания</string>
+	<string name="countryName_FI">Финляндия</string>
+	<string name="countryName_FR">Франция</string>
+	<string name="countryName_GB">Великобритания</string>
+	<string name="countryName_GR">Греция</string>
+	<string name="countryName_HK">Гонконг</string>
+	<string name="countryName_IE">Ирландия</string>
+	<string name="countryName_IL">Израиль</string>
+	<string name="countryName_IS">Исландия</string>
+	<string name="countryName_IT">Италия</string>
+	<string name="countryName_JO">Иордания</string>
+	<string name="countryName_JP">Япония</string>
+	<string name="countryName_KR">Республика Корея</string>
+	<string name="countryName_KW">Кувейт</string>
+	<string name="countryName_KZ">Казахстан</string>
+	<string name="countryName_LB">Ливан</string>
+	<string name="countryName_LU">Люксембург</string>
+	<string name="countryName_MT">Мальта</string>
+	<string name="countryName_MX">Мексика</string>
+	<string name="countryName_MY">Малайзия</string>
+	<string name="countryName_NL">Нидерланды</string>
+	<string name="countryName_NO">Норвегия</string>
+	<string name="countryName_NZ">Новая Зеландия</string>
+	<string name="countryName_OM">Оман</string>
+	<string name="countryName_PA">Панама</string>
+	<string name="countryName_PE">Перу</string>
+	<string name="countryName_PL">Польша</string>
+	<string name="countryName_PT">Португалия</string>
+	<string name="countryName_QA">Катар</string>
+	<string name="countryName_RU">Россия</string>
+	<string name="countryName_SA">Саудовская Аравия</string>
+	<string name="countryName_SE">Швеция</string>
+	<string name="countryName_SG">Сингапур</string>
+	<string name="countryName_TH">Таиланд</string>
+	<string name="countryName_TR">Турция</string>
+	<string name="countryName_TT">Тринидад и Тобаго</string>
+	<string name="countryName_TW">Тайвань</string>
+	<string name="countryName_US">Соединенные Штаты Америки</string>
+	<string name="countryName_UY">Уругвай</string>
+	<string name="countryName_VE">Венесуэла</string>
+	<string name="countryName_ZA">Южная Африка</string>
+	<string name="countryName_ZW">Зимбабве</string>
+
+	<!-- License Check -->
+	<string name="librelinkLicenseCheck">Проверка лицензии FreeStyle LibreLink</string>
+	<string name="licenseCheckFailed">Установите это приложение с сайта Google Play.</string>
+
+	<!-- Update Version Check -->
+	<string name="librelink_upgrade_check">Проверка обновления FreeStyle LibreLink</string>
+	<string name="checkingVersion">Проверка версии</string>
+	<string name="errorVersionCheckFailed">Эта версия FreeStyle LibreLink нуждается в обновлении. Проверьте наличие последней версии в Google Play.</string>
+
+	<!-- App Tour -->
+	<string name="checkGlucoseWithPhone">Вы можете проверить уровень глюкозы с помощью смартфона.</string>
+	<string name="instantAccess">Вы можете получить быстрый доступ к информации об уровне глюкозы.</string>
+	<string name="actionableInsights">Вы можете получить данные для принятия решений, воспользовавшись большей полнотой информации.</string>
+	<string name="shareGlucoseInformation">Вы можете передавать информацию о вашем уровне глюкозы медицинским работникам и близким людям.</string>
+
+	<!-- Account Registration/Sign In -->
+	<string name="changeUserMessage">После того как вы войдете в программу со своей учетной записи, все данные предыдущего пользователя будут удалены с этого устройства.\n\nХотите продолжить?</string>
+	<string name="changeDeviceMessage">Нажмите ОК, чтобы войти с этого смартфона в вашу существующую учетную запись LibreView. Вы можете продолжать снимать показания датчика, как на предыдущем смартфоне.\n\nПримечание: Нажатие на ОК приведет к выходу предыдущего смартфона из программы.</string>
+	<string name="registeringDevice">Регистрация смартфона</string>
+	<string name="firstNameLabel">@string/firstName</string>
+	<string name="lastNameLabel">@string/lastName</string>
+	<string name="emailLabel">@string/email</string>
+	<string name="dateOfBirthLabel">@string/dateOfBirth</string>
+	<string name="dateOfBirth">Дата рождения</string>
+	<string name="passwordLabel">@string/password</string>
+	<string name="createPasswordLabel">@string/password</string>
+	<string name="changePassword">Пароль к учетной записи</string>
+	<string name="newPasswordLabel">Новый пароль</string>
+	<string name="currentPasswordLabel">Текущий пароль</string>
+	<string name="confirmPasswordLabel">Подтвердить пароль</string>
+	<string name="sendingResetRequest">Отправка запроса на изменение пароля</string>
+	<string name="adultRegistrationTitle">Вход в учетную запись</string>
+	<string name="minorRegistrationTitle">Вход сродителя/опекуна</string>
+	<string name="signInLinkText">@string/signIn</string>
+	<string name="account_sign_in_title">@string/signIn</string>
+	<string name="alreadyHaveAccountPromptText">У вас уже имеется учетная запись LibreView?</string>
+	<string name="invalidPasswordErrorMessage">Введите действительный пароль. Пароль должен содержать 8\u201336 символов, в том числе не менее 1 цифры, 1 прописной буквы и 1 строчной буквы.</string>
+	<string tools:ignore="PluralsCandidate" name="tooYoungErrorMessage">Чтобы вы могли пользоваться FreeStyle LibreLink, вам должно исполниться %1$s лет.</string>
+	<string name="tooYoungWarningMessage">Дата вашего рождения используется в приложении LibreView для создания вашей учетной записи, а не для определения вашего права пользоваться приложением. Перед использованием приложения изучите Руководство пользователя приложения.</string>
+	<string name="forgotPasswordText">Забыли пароль?</string>
+	<string name="createNewAccountText">Создать учетную запись</string>
+	<string name="existing_user_login_text">Учетная запись с этим адресом эл. почты уже существует. Введите свои адрес эл. почты и пароль.</string>
+	<string name="normal_user_login_text">Введите свои данные для входа в учетную запись LibreView.</string>
+	<string name="passwordMismatchErrorMessage">Пароли должны совпадать</string>
+	<string name="invalidEmailAddressErrorMessage">Введите действительный адрес эл. почты.</string>
+	<string name="passwordResetSent">Инструкции по изменению пароля отправлены на ваш адрес эл. почты.</string>
+	<string name="accountContactOptIn">Прошу направлять мне информацию о компании Abbott Diabetes Care и других продуктах и услугах компании Abbott. (Подписку можно в любое время отменить.)</string>
+	<string name="passwordResetMessage">Для регистрации этой учетной записи введите адрес эл. почты. Инструкции по изменению пароля будут отправлены по этому адресу.</string>
+	<string name="nonExistentUserErrorMessage">С этим адресом эл. почты не связана ни одна учетная запись.</string>
+	<string name="invalidLoginErrorMessage">Неправильный адрес эл. почты или пароль. Повторите попытку.</string>
+	<string name="invalidProfileUpdatePassword">Неправильный пароль. Повторите попытку.</string>
+	<string name="invalidProfileDOB">Вы не можете изменить тип учетной записи со взрослого на несовершеннолетний. Отредактируйте дату рождения в соответствии с типом учетной записи.</string>
+	<string name="invalidAppKeyErrorMessage">Ошибка связи с сервером. Недействительный ключ приложения.</string>
+	<string name="invalidNetworkDomainErrorMessage">Ошибка связи с сервером. Недействительный домен.</string>
+	<string name="invalidRegistrationErrorMessage">Завершение регистрации невозможно из-за недействительных данных.</string>
+	<string name="invalidAccountRegionErrorMessage">Настройка страны в вашем приложении не соответствует вашей учетной записи. Создайте новую учетную запись.</string>
+	<string name="accountRegisteringProgressMessage">Выполняется регистрация</string>
+	<string name="accountUpdateProgressMessage">Выполняется отправка</string>
+	<string name="accountAlreadyRegisteredErrorMessage">Этот адрес эл. почты уже связан с учетной записью LibreView.\n\nВам не нужно создавать новую учетную запись. Просто войдите в программу.</string>
+	<string name="professionalAccountAlreadyRegisteredErrorMessage">Этот адрес эл. почты уже связан с профессиональной учетной записью LibreView. Чтобы создать учетную запись и пользоваться этим приложением, вам необходим другой адрес эл. почты.</string>
+	<string name="alreadyRegisteredSignInButtonText">@string/signIn</string>
+	<string name="enter_numera_data">Создайте учетную запись LibreView для использования с FreeStyle LibreLink и любыми другими совместимыми приложениями.</string>
+	<string name="minorRegistrationHeader">Этот пользователь является несовершеннолетним. Чтобы пользоваться этим приложением, учетная запись должна быть заполнена родителем или опекуном.</string>
+	<string name="parentGuardianFirstName">Имя родителя (опекуна)</string>
+	<string name="parentGuardianLastName">Фамилия родителя (опекуна)</string>
+	<string name="parentGuardianEmail">@string/email</string>
+	<string name="nameAndBirthDateHeader">Начнем с самой основной информации.</string>
+	<string name="nameAndBirthDateTitle">@string/createNewAccountText</string>
+	<string name="profileUpdateTopText">Изменение любой указанной ниже информации обновит вашу учетную запись.</string>
+	<string name="changePasswordTopText">Пароль должен содержать 8–36 символов, в том числе не менее 1 цифры, 1 прописной буквы и 1 строчной буквы.</string>
+	<string name="createAccountSubmitButtonText">Создать учетную запись</string>
+	<string name="authenticationFailure">Ошибка проверки подлинности на сервере. Войдите в систему снова.</string>
+	<string name="authenticationFailureLoginButton">Войти в приложение</string>
+	<string name="reenterPassword">Повторите ввод пароля.</string>
+	<string name="parentLoginText">В программу должен войти родитель/опекун.</string>
+	<string name="parentLoginSubText">Введите пароль к учетной записи, чтобы получить доступ к распределению.</string>
+
+	<!-- Side Navigation Drawer -->
+	<string name="navigation_drawer_username">%1$s %2$s</string>
+	<string name="navigation_drawer_daily_graph">@string/daily_graph</string>
+	<string name="navigation_drawer_estimated_a1c">@string/estimated_a1c</string>
+	<string name="navigation_drawer_average_glucose">Глюкоза средн.</string>
+	<string name="navigation_drawer_low_glucose">Гипогликемич. явления</string>
+	<string name="navigation_drawer_sensor_usage">Использование датчика</string>
+	<string name="navigation_drawer_daily_patterns">@string/daily_patterns</string>
+	<string name="navigation_drawer_time_in_target">@string/time_in_target</string>
+	<string name="navigation_drawer_sharedata">@string/share</string>
+
+	<!-- Home -->
+	<string name="applyNewSensor">Установить новый датчик</string>
+	<string name="scanNewSensor">Сканировать новый датчик</string>
+	<string name="startNewSensor">Установить и сканировать датчик</string>
+	<string name="sensorReadyIn">Датчик можно использовать через %1$s</string>
+	<string name="readyToScanDetail">Датчик готов к использованию. Для проверки уровня глюкозы приложите заднюю панель смартфона к датчику, пока не услышите два гудка.</string>
+	<string name="applyNewSensorDetail">Установить новый датчик.</string>
+	<string name="scanNewSensorDetail">Для пуска датчика сканируйте его.</string>
+	<string name="scanNewSensorDetailLateJoin">Если вы хотите также использовать сканер, вы должны использовать сканер первым.</string>
+	<string name="scanSensorDetail">Скан. датчик.</string>
+	<string name="last24Hours">Последние 24 ч</string>
+	<string name="lastScan">Последнее сканирование</string>
+	<string name="sensorIsReady">Готов к сканированию</string>
+	<string name="sensorWarmingUp">Запуск нового датчика</string>
+	<string name="sensorHasEnded">Работа датчика закончена</string>
+	<string name="sensorEndsIn">Вр. раб. датчика заканчивается через: %1$s</string>
+	<string name="sensorLateJoinMessage">Теперь вы можете сканировать датчик этим устройством и устройством, использованным для запуска датчика.\n\nПримечание: Чтобы обеспечить полноту данных при выведении отчетов на дисплей устройства, сканируйте датчик по меньшей мере каждые 8 часов. Данные и отчеты не распределяются между устройствами.</string>
+
+	<!-- Stats/Reports -->
+	<!-- Used for Germany to force 24 hour time on the chart axis -->
+	<bool name="force24HourTimes">false</bool>
+
+	<!-- Used to set the string format for graph axis unless 24 hour time is used -->
+	<string name="amTimeAxisFormat">h\'AM\'</string>
+	<string name="pmTimeAxisFormat">h\'PM\'</string>
+
+	<string name="mmolPerMolFormatter" tools:ignore="PluralsCandidate">( %d mmol/mol )</string>
+	<string name="sensor_usage_total_scans">Всего сканов</string>
+	<string name="sensor_usage_day_average">Сканов в день</string>
+	<string name="sensor_usage_captured">% полученных данных датчика</string>
+	<string name="days_of_data" tools:ignore="PluralsCandidate">Доступны данные по %1$d из %2$d дней</string>
+	<string name="a1cDaysOfData" tools:ignore="PluralsCandidate">Получены данные за период %1$d из %2$d дней</string>
+	<string name="no_sensor_data">Данных датчика недостаточно</string>
+	<string name="timeintarget_glucose_range">%1$s-%2$s</string>
+	<string name="timeintarget_glucose_less_than">&lt; %s</string>
+	<string name="timeintarget_glucose_greater_than">&gt; %s</string>
+	<string name="timeintarget_percent">%</string>
+	<string name="target">ЦЕЛЕВОЙ</string>
+	<string name="timeInTargetGlucoseRangeLabel">Целевой диапазон: %s</string>
+	<string name="average_glucose_info_title">СРЕДН. УРОВЕНЬ ГЛЮКОЗЫ</string>
+	<string name="average_glucose_info_msg">Параметр Средний уровень глюкозы отображает среднее значение измеренных датчиком показателей уровня глюкозы. Суммарное среднее значение за выбранный период отображается под графиком. Также отображается среднее значение для различных времен суток. Показатели, находящиеся выше или ниже целевого диапазона глюкозы, отображаются желтым, оранжевым или красным. Показатели в пределах диапазона отображаются зеленым.</string>
+	<string name="low_glucose_info_title">ГИПОГЛИКЕМИЧ. ЯВЛЕНИЯ</string>
+	<string name="low_glucose_info_msg_mg">Параметр Гипогликемические явления отображает сведения о количестве гипогликемических явлений, измеренных датчиком. Гипогликемическое явление регистрируется, когда датчик обнаруживает уровень глюкозы ниже 70 mg/dL на протяжении более 15 минут. Общее количество явлений отображается под графиком. Столбчатый график отображает гипогликемические события в различные времена суток.</string>
+	<string name="low_glucose_info_msg_mmol">Параметр Гипогликемические явления отображает сведения о количестве гипогликемических явлений, измеренных датчиком. Гипогликемич. явление регистрируется, когда датчик обнаруживает уровень глюкозы ниже 3,9 mmol/L на протяжении более 15 минут. Общее количество явлений отображается под графиком. Столбчатый график отображает гипогликемические события в различные времена суток.</string>
+	<string name="a1c_info_title">РАСЧЕТНЫЙ УРОВЕНЬ A1c</string>
+	<string name="a1c_info_msg">Расчетный уровень A1c (также называемый уровнем HbA1c) рассчитывается на основании всех результатов измерения глюкозы датчиком в течение последних 90 дней. Чем больше данных имеется в наличии, тем ближе к действительности рассчитанная величина. Тем не менее, расчетный уровень может не совпасть с уровнем A1c, измеренным в лаборатории.\n\nA1c можно использовать как показатель качества контроля уровня глюкозы в крови, и он может быть использован для мониторинга лечения диабета.</string>
+	<string name="daily_info_title">СУТОЧНЫЙ ГРАФИК</string>
+	<string name="daily_info_msg">Суточный график представляет собой график показателей определения уровня глюкозы датчиком за одни сутки.\n\nВ графике могут быть разрывы, соответствующие периодам времени, когда вы сканировали реже чем каждые 8 часов.\n\nМожет появиться символ часов, указывающий на смену часового пояса. В графике могут появиться разрывы или показатели глюкозы могут быть спрятаны.</string>
+	<string name="sensor_usage_info_title">ИСПОЛЬЗОВАНИЕ ДАТЧИКА</string>
+	<string name="sensor_usage_info_msg">Параметр Использование датчика отображает сведения о частоте сканирования датчика. В их число входят среднее количество сканов датчика за сутки, процент возможных показателей, записанных с датчика при сканировании, а также суммарное количество сканов.</string>
+	<string name="time_in_target_info_title">ВРЕМЯ В ЦЕЛЕВОМ ДИАПАЗОНЕ</string>
+	<string name="time_in_target_info_msg">Параметр Время в целевом диапазоне представляет собой график, показывающий процент времени, в течение которого показатели глюкозы датчика находились выше, ниже или в пределах целевого диапазона глюкозы.</string>
+	<string name="daily_average">Средн.: %1$s %2$s</string>
+	<string name="total_events">Всего событий: %1$d</string>
+	<string name="daily_patterns_info_title">СУТОЧНЫЕ ПРОФИЛИ</string>
+	<string name="daily_patterns_info_msg">Параметр Суточные профили представляет собой график, показывающий тенденцию развития и изменчивость показателей глюкозы датчика на протяжении типичных суток. Жирная черная линия обозначает медиану (среднюю точку) ваших показателей глюкозы. Светло-голубой фон соответствует диапазону 10–90-го процентилей ваших показателей глюкозы датчика. Темно-синий фон соответствует диапазону 25–75-го процентилей.\n\nПримечание: Для суточного профиля необходимы данные об уровне глюкозы не менее чем за 5 дней.</string>
+
+	<!-- Scan Result -->
+	<string name="glucoseAboveRange">ВЫСОКИЙ УР. ГЛЮКОЗЫ\n(ЗА ПРЕДЕЛАМИ ДОПУСТИМОГО ДИАПАЗОНА)</string>
+	<string name="glucoseBelowRange">НИЗК. УР. ГЛЮК.\n(ЗА ПРЕДЕЛАМИ ДОПУСТИМОГО ДИАПАЗОНА)</string>
+	<string name="glucoseGoingHigh">УР. ГЛЮКОЗЫ ПОВЫШАЕТСЯ</string>
+	<string name="glucoseGoingLow">УР. ГЛЮКОЗЫ СНИЖАЕТСЯ</string>
+	<string name="glucoseHigh">ВЫСОКИЙ УР. ГЛЮКОЗЫ</string>
+	<string name="glucoseInRange">ГЛЮКОЗА В ПРЕДЕЛАХ ЦЕЛЕВОГО ДИАПАЗОНА</string>
+	<string name="glucoseLow">НИЗК. УР. ГЛЮК.</string>
+	<string name="highGlucoseIsDangerous">Высокий ур. глюкозы может быть опасным. Повторите измерение уровня глюкозы и вводите инсулин согласно рекомендации медицинского работника. Возможно, следует проверить ур. кетонов.</string>
+	<string name="lowGlucoseIsDangerous">Низкий уровень глюкозы может быть опасным. Повторите измерение уровня глюкозы и вводите инсулин согласно рекомендации медицинского работника.</string>
+	<string name="yourGlucose">Мой уровень глюкозы</string>
+	<string name="vrcFailedTitle">Ошибка при отображении результата</string>
+	<string name="vrcFailedText">Результат: %s</string>
+	<string name="error_sensor_incompatible_title">Несовместимый датчик</string>
+	<string name="error_sensor_incompatible_msg">Этот датчик нельзя использовать с данной версией FreeStyle LibreLink.</string>
+	<string name="error_sensor_terminated_title">Замените датчик</string>
+	<string name="error_sensor_terminated_msg">Ваш датчик не работает. Снимите датчик и запустите новый.</string>
+	<string name="error_sensor_removed_title">Замените датчик</string>
+	<string name="error_sensor_removed_msg">Ваш датчик не работает. Снимите датчик и запустите новый.</string>
+	<string name="error_sensor_expired_title">Вр. раб. датчика законч.</string>
+	<string name="error_sensor_expired_msg">Запустить новый датчик для проверки ур. глюкозы.</string>
+	<string name="error_sensor_inwarmup_title">Запуск датчика</string>
+	<string name="error_sensor_inwarmup_msg">Этот датчик был запущен, но еще не готов к использованию.</string>
+	<string name="error_sensor_corrupt_title">Ошибка скан.</string>
+	<string name="error_sensor_corrupt_msg">Смартфон не смог сканировать датчик. Повторите сканирование датчика.</string>
+	<string name="error_sensor_transmission_title">Ошибка скан.</string>
+	<string name="error_sensor_transmission_msg">Смартфон не смог сканировать датчик. Повторите сканирование датчика. Убедитесь в том, что задняя панель смартфона находится рядом с датчиком. После первого гудка или вибрации удерживайте смартфон неподвижно до второго гудка или вибрации.</string>
+	<string name="error_sensor_already_started_title">Датчик уже используется</string>
+	<string name="error_sensor_already_started_msg">Только что сканированный вами датчик был запущен другим устройством и не может использоваться.</string>
+	<string name="error_sensor_already_started_msg_llj">Датчик был запущен другим устройством. Чтобы датчик мог работать с этим смартфоном, вы должны использовать этот смартфон для сканирования датчика в течение первого часа его работы.</string>
+	<string name="error_sensor_temporary_problem_title">Ошибка датч.</string>
+	<string name="error_sensor_temporary_problem_msg">Показатели глюкозы недоступны. Повторите сканирование через 10 мин.</string>
+	<string name="error_sensor_too_hot_title">Датч. горячий</string>
+	<string name="error_sensor_too_hot_msg">Датчик слишком горячий, чтобы определять глюкозу. Повторите попытку через несколько минут.</string>
+	<string name="error_sensor_too_cold_title">Датч. холодный</string>
+	<string name="error_sensor_too_cold_msg">Датчик слишком холодный, чтобы определять глюкозу. Повторите попытку через несколько минут.</string>
+	<string name="error_sensor_insertion_failure_title">Проверить датчик</string>
+	<string name="error_sensor_insertion_failure_msg">Проверьте датчик. Если датчик неплотно прикреплен к коже, снимите его и запустите новый. Если он наложен правильно, попробуйте запустить его снова.</string>
+	<string name="error_sensor_not_active_title">Найден новый датчик</string>
+	<string name="error_sensor_not_active_msg">Запуск нового датчика прекратит работу датчика, используемого в наст. время.\n\nХотите запустить новый датчик?</string>
+
+	<!-- Add/Edit Note -->
+	<string name="addNote">Добавить примеч.</string>
+	<string name="editNote">Изменить примеч.</string>
+	<string name="highIntensity">Высокая интенсивность</string>
+	<string name="mediumIntensity">Средняя интенсивность</string>
+	<string name="lowIntensity">Низкая интенсивность</string>
+	<string name="noExerciseTypeChosen">Выбрать интенсивность</string>
+	<string name="food">Пища</string>
+	<string name="exercise">Физ. нагрузка</string>
+	<string name="longActingInsulin">Инсулин длит. действия</string>
+	<string name="rapidActingInsulin">Инсулин быстр действ.</string>
+	<string name="meal">Прандиальный</string>
+	<string name="breakfast">Завтрак</string>
+	<string name="lunch">Обед</string>
+	<string name="snack">Легкая закуска</string>
+	<string name="dinner">Ужин</string>
+	<string name="carbsGramsError">Значение должно быть целым числом от %1$s до %2$s</string>
+	<string name="carbsServingsError">Значение должно быть кратным 0,5 и в диапазоне от %1$s до %2$s</string>
+	<string name="insulinDoseError">Значение должно быть кратным 0,1 и в диапазоне от 0,1 до %1$d</string>
+
+	<!-- Manual BG -->
+	<string name="manualBgTitle">Результат определения уровня глюкозы в крови</string>
+	<string name="manualBgExplanation">Укажите результат определения уровня глюкозы в крови.</string>
+	<string name="manualBgError">Значение должно быть целым числом от %1$s до %2$s</string>
+
+	<!-- Logbook -->
+	<string name="logbookDetail">Подробный журнал</string>
+	<string name="logbookListEmpty">Записи за эту дату отсутствуют.</string>
+	<string name="logbookDetailCarbFormatDoseAndUnit">" (&lt;b&gt;%1$s%2$s&lt;/b&gt;)"</string>
+	<string name="logbookDetailInsulinFormatTypeAndDose">%1$s (&lt;b&gt;%2$s&lt;/b&gt;)</string>
+	<string name="logbookDetailSeparator">", "</string>
+	<string name="noteBalloonSeparator">&lt;br/&gt;</string>
+	<string name="logbookDetailExerciseType">@string/exercise</string>
+	<string name="logbookDetailExerciseFormatType">Физ. нагрузка %s</string>
+	<string name="logbookDetailExerciseFormatDuration">" (&lt;b&gt;%s&lt;/b&gt;)"</string>
+
+	<!-- Reminders -->
+	<string name="alarms">Сигналы</string>
+	<string name="repeating">Повтор</string>
+	<string name="timers">Таймеры</string>
+	<string name="addReminder">Добавить напомин.</string>
+	<string name="alarmName">Название напоминания</string>
+	<string name="checkGlucose">Проверьте глюкозу</string>
+	<string name="myReminder">Напоминание для меня</string>
+	<string name="nextReminderPrompt">След. напоминание:\u0020</string>
+	<string name="nextAlarmPrompt">След. напоминание: %1$s, %2$s</string>
+	<string name="noActiveReminders">Нет активных напоминаний.</string>
+	<string name="noActiveRemindersAutoScanSensorEnabled">Нет активных напоминаний. Таймер сканирования датчика будет сброшен при следующем сканировании.</string>
+	<string name="remindMeToCheckAgain">Напомн. проверить глюкозу через:</string>
+	<string name="setReminder">Установить</string>
+
+	<!-- Send Reports -->
+	<string name="sendChooserTitle">Отправить</string>
+
+	<!-- Settings -->
+	<string name="unitOfMeasurementTitle">Единица измерения</string>
+	<string name="unitOfMeasurementTopText">Выберите единицу измерения уровня глюкозы. Эта единица будет использована во всех результатах измерения глюкозы.</string>
+	<string name="unitOfMeasurementTopTextForSetup">Выберите единицу измерения уровня глюкозы. Эта единица будет использована во всех результатах измерения глюкозы. Позже вы НЕ сможете изменить эту настройку.</string>
+	<string name="unitOfMeasureWarning">ОЧЕНЬ важно выбрать правильную единицу измерения уровня глюкозы. Неправильный выбор единицы измерения может привести к неправильной интерпретации значений уровня глюкозы. Если вы не знаете, какую единицу измерения уровня глюкозы следует использовать, проконсультируйтесь с медицинским работником.</string>
+	<string name="unitOfMeasurementFixedTopText">Единица измерения уровня глюкозы установлена автоматически для вашей страны.</string>
+	<string name="unitOfMeasurementFixedCountryText">Ваша страна</string>
+	<string name="unitOfMeasurementFixedText">Ваша единица изменения глюкозы</string>
+	<string name="targetGlucoseRangeTitle">Целевой диапазон глюкозы</string>
+	<string name="targetGlucoseRangeTopText">Ваш целевой диапазон глюкозы будет отображен на различных графиках. Если вы его не знаете, проконсультируйтесь с медицинским работником.</string>
+	<string name="targetGlucoseRangeTopTextForSetup">Ваш целевой диапазон глюкозы будет отображен на различных графиках и может быть изменен с помощью настроек. Если вы его не знаете, проконсультируйтесь с медицинским работником.</string>
+	<string name="carbohydrateUnitsTitle">Единицы углеводов</string>
+	<string name="carbohydrateUnitsTopText">Количество углеводов может быть измерено в граммах или порциях в зависимости от того, как вы их считаете. Выберите предпочитаемую вами единицу измерения углеводов.</string>
+	<string name="carbohydrateUnitServingSizeMessage">Выберите предпочтительный размер порции. Если вы его не знаете, то обратитесь к медицинскому работнику.</string>
+	<string name="carbohydrateUnitsTopTextForSetup">@string/carbohydrateUnitsTopText</string>
+	<string name="scanSoundsTitle">Звуки при сканировании</string>
+	<string name="scanSoundsOsDefault">звук и вибрация</string>
+	<string name="scanSoundsVibeOnly">только вибрация</string>
+	<string name="scanSoundsTopText">Сканирование датчика приведет к вибрации. Выберите, хотите ли вы в дополнение к вибрации слышать звук.</string>
+	<string name="scanSoundsTopTextForSetup">@string/scanSoundsTopText</string>
+	<string name="scanSoundsNote">Примечание:\nИздаваемые при сканировании звуки будут иметь уровень громкости, настроенный на вашем смартфоне. Например, если звук на вашем смартфоне отключен, вы не услышите звуков при сканировании.</string>
+	<string name="textToSpeechTitle">Чтение вслух</string>
+	<string name="textToSpeechOn">вкл.</string>
+	<string name="textToSpeechOff">выкл.</string>
+	<string name="textToSpeechTopText">Если вы хотите, чтобы ваши показатели глюкозы были прочитаны вслух, включите преобразование текста в речь.</string>
+	<string name="textToSpeechNote">Примечание:\nПреобразованный в речь текст будет произноситься на уровне громкости, настроенном на вашем смартфоне. Например, если звук на вашем смартфоне отключен, вы не услышите прочитанных вслух показателей глюкозы.</string>
+	<string name="countryOfOriginTitle">Подтвердите страну</string>
+	<string name="countryOfOriginTopText">Данные о вашей стране используются при настройке приложения для обеспечения правильного хранения данных.</string>
+	<string name="countryOfOriginTopTextForSetup">@string/countryOfOriginTopText</string>
+	<string name="countryOfOriginExplanation">Если это правильно, нажмите Далее.\n\nЕсли это не правильно, вам может потребоваться удалить FreeStyle LibreLink и установить версию приложения для вашей страны. Если у вас возникли вопросы, обращайтесь в Отдел обслуживания клиентов.</string>
+	<string name="targetGlucoseRangeUnitText">Значения в</string>
+	<string name="servingsWithGramsEquivalent" tools:ignore="PluralsCandidate">порциях (1 порция = %.1f граммов)</string>
+	<string name="countryLabel">Страна проживания</string>
+	<string name="countryLabelForSetup">Ваша страна проживания определена как</string>
+	<string name="defaultNetworkErrorMessage">Ошибка связи с сервером.</string>
+	<string name="serverNotFoundErrorMessage">Ошибка связи с сервером. Сервер не найден.</string>
+	<string name="pageNotFoundErrorMessage">Ошибка связи с сервером. Контент на сервере не обнаружен.</string>
+	<string name="networkingErrorMessage">Ошибка сети при связи с сервером.</string>
+	<string name="internalServerErrorMessage">Ошибка связи с сервером. Произошла внутренняя ошибка сервера.</string>
+	<string name="requestTimeoutErrorMessage">Ошибка связи с сервером. Истек срок ожидания ответа на запрос.</string>
+	<string name="serviceUnavailableErrorMessage">Ошибка связи с сервером. Сервис недоступен.</string>
+	<string name="submitButtonText">@string/submit</string>
+	<string name="mgPerDeciliterRadioText"><b>mg/dL</b> (например, 100 mg/dL)</string>
+	<string name="mmolPerLiterRadioText"><b>mmol/L</b> (например, 5,6 mmol/L)</string>
+	<string name="target_range_separator">-</string>
+	<string name="glucoseRangeFormat">%1$s - %2$s %3$s</string>
+	<string name="settingsUnitOfMeasureConfirmationMessage">Подтвердите выбор следующей единицы измерения:</string>
+	<string name="networkNotConnectedDefault">Ваш смартфон в настоящее время не подключен к сети Интернет. Завершить операцию можно только после подключения к сети Интернет.</string>
+	<string name="networkNotConnectedSetup">Ваш смартфон в настоящее время не подключен к сети Интернет. Завершить настройку можно только после подключения к сети Интернет.</string>
+	<string name="networkNotConnectedProfileUpdate">Ваш смартфон в настоящее время не подключен к сети Интернет. Изменить учетную запись можно только после подключения к сети Интернет.</string>
+	<string name="privacyNoticeAcceptanceStatement">Вы прочли и однозначно принимаете положение о конфиденциальности.</string>
+	<string name="privacyNoticeTitle">Конфиденциальность</string>
+	<string name="termsOfUseAcceptanceStatement">Вы прочли и однозначно принимаете положение об условиях применения.</string>
+	<string name="termsOfUseTitle">Условия применения</string>
+	<string name="nfcUnsupported">Для использования FreeStyle LibreLink с целью сканирования датчика ваш смартфон должен поддерживать NFC.</string>
+	<string name="turnOnNfcPrompt">Для использования FreeStyle LibreLink с целью сканирования датчика в вашем смартфоне должна быть включена поддержка NFC. Включить ее?</string>
+	<string name="enableNetworkTime">Для использования FreeStyle LibreLink с целью сканирования датчика в вашем смартфоне должна быть включена функция автоматического обновления даты и времени. Включить ее?</string>
+	<string name="getStartedNow">Начало работы</string>
+
+	<!-- My Glucose Explanation -->
+	<string name="myGlucoseExplanationTitle">Мой уровень глюкозы</string>
+	<string name="myGlucoseExplanationTopText">Этот экран отображается после сканирования датчика.</string>
+	<string name="myGlucoseExplanationResultCallouts">Экран Мой уровень глюкозы содержит (1) текущий уровень глюкозы, (2) стрелку, указывающую на тенденцию изменения уровня глюкозы, и (3) график глюкозы.</string>
+
+	<!-- Trend Arrow Explanation -->
+	<string name="trendExplanationTitle">Стрелка тенденции изменения уровня глюкозы</string>
+	<string name="trendExplanationTopText">При сканир. датчика стрелка укажет недавнюю тенденцию изменения ур. глюкозы.</string>
+	<string name="trendExplanationRisingQuickly">Быстрое повышение</string>
+	<string name="trendExplanationRising">Повышение</string>
+	<string name="trendExplanationStable">Медленное изменение</string>
+	<string name="trendExplanationFalling">Снижение</string>
+	<string name="trendExplanationFallingQuickly">Быстрое снижение</string>
+
+	<!-- Help -->
+	<string name="helpItemTitleApplySensor">Как установить датчик</string>
+	<string name="helpItemTitleScanSensor">Как сканировать датчик</string>
+	<string name="helpItemTitleEventLog">@string/eventLog</string>
+	<string name="helpItemTitleUserGuide">Руководство по эксплуатации</string>
+
+	<!-- OneStep Log Upload -->
+	<string name="logUploadTitle">Отправить данные для устранения неполадок</string>
+	<string name="logUploadOptInDescription">Отправка данных для устранения неполадок поможет Отделу обслуживания клиентов ответить на ваши вопросы.</string>
+	<string name="logUploadOptInText1">Положение о конфиденциальности, принятое вами ранее, описывает состав данных для устранения неполадок.</string>
+	<string name="logUploadViewPrivacyButtonLabel">Ознакомиться с положением о конфиденциальности</string>
+	<string name="logUploadOptInText2">Вы согласны отправить данные для устранения неполадок?</string>
+	<string name="logUploadDecline">Отклонить</string>
+	<string name="logUploadAccept">Принять</string>
+	<string name="logUploadDescription">Укажите номер случая и код верификации, предоставленные Отделом обслуживания клиентов.</string>
+	<string name="logUploadCaseNumberLabel">Номер случая</string>
+	<string name="logUploadAccessCodeLabel">Код верификации</string>
+	<string name="logUploadSendButtonLabel">Отправить</string>
+	<string name="logUploadErrorTypo">Неправильный номер случая или код верификации</string>
+	<string name="logUploadErrorUploadFailedTitle">Ошибка при отправке данных для устранения неполадок</string>
+	<string name="logUploadErrorUploadFailedText">Коснитесь, чтобы повторить попытку.</string>
+
+	<!-- Apply Sensor Tour -->
+	<string name="applySensorTitle">Установка датчика</string>
+	<string name="applySensorTitleStep1">ДЕЙСТВИЕ 1</string>
+	<string name="applySensorTextStep1">Выберите место на задней поверхности плеча.</string>
+	<string name="applySensorSubTextStep1">Примечание: Не выбирайте места со шрамами, родинками, растяжками, бугорками и местами инъекции инсулина. Во избежание раздражения кожи устанавливайте датчик каждый раз на новое место.</string>
+	<string name="applySensorTitleStep2">ДЕЙСТВИЕ 2</string>
+	<string name="applySensorTextStep2">Протрите кожу спиртовым тампоном. Дайте коже высохнуть, затем продолжайте.</string>
+	<string name="applySensorTitleStep3">ДЕЙСТВИЕ 3</string>
+	<string name="applySensorTextStep3">Полностью снимите крышку с футляра датчика.</string>
+	<string name="applySensorTitleStep4">ДЕЙСТВИЕ 4</string>
+	<string name="applySensorTextStep4">Отвинтите колпачок от аппликатора датчика.</string>
+	<string name="applySensorTitleStep5">ДЕЙСТВИЕ 5</string>
+	<string name="applySensorTextStep5">Совместите темную метку на аппликаторе датчика с темной меткой на футляре датчика. Поместив датчика на твердую поверхность, сильно нажмите на аппликатор датчика, чтобы он дошел до упора.</string>
+	<string name="applySensorTitleStep6">ДЕЙСТВИЕ 6</string>
+	<string name="applySensorTextStep6">Поднимите аппликатор датчика, чтобы извлечь его из футляра датчика.</string>
+	<string name="applySensorTitleStep7">ДЕЙСТВИЕ 7</string>
+	<string name="applySensorTextStep7">Аппликатор датчика готов к установке датчика. Не касайтесь внутренней поверхности аппликатора датчика и не возвращайте его в футляр датчика.</string>
+	<string name="applySensorTitleStep8">ДЕЙСТВИЕ 8</string>
+	<string name="applySensorTextStep8">Наложите аппликатор датчика на выбранный участок кожи и плотно прижмите для установки датчика.</string>
+	<string name="applySensorTitleStep9">ДЕЙСТВИЕ 9</string>
+	<string name="applySensorTextStep9">Осторожно отведите аппликатор датчика от кожи.</string>
+	<string name="applySensorTitleStep10">ДЕЙСТВИЕ 10</string>
+	<string name="applySensorTextStep10">Убедитесь в надежной фиксации датчика. Удалите использованные аппликатор и футляр датчика в отходы согласно местным правилам.</string>
+
+	<!-- Scan Sensor Tour -->
+	<string name="scanSensorTitle">Сканирование датчика</string>
+	<string name="scanSensorTitleStep1">ДЕЙСТВИЕ 1</string>
+	<string name="scanSensorTextStep1"><![CDATA[Поднесите смартфон <b>задней</b> панелью <b>вплотную</b> к датчику.]]></string>
+	<string name="scanSensorTitleStep2">ДЕЙСТВИЕ 2</string>
+	<string name="scanSensorTextStep2">Если звук включен, смартфон во время сканирования датчика подаст серию гудков и вибраций. Не отделяйте смартфон от датчика, пока звуки и вибрация не прекратятся.</string>
+	<string name="scanSensorTitleStep3">ДЕЙСТВИЕ 3</string>
+	<string name="scanSensorTextStep3">Чтобы просканировать датчик, вам может понадобиться изменить положение смартфона в непосредственной близости от датчика, чтобы обнаружить, где находится антенна NFC смартфона.</string>
+
+	<!-- About -->
+	<string name="about">О приложении</string>
+	<string name="appNameLabel">Наименование:</string>
+	<string name="appNameValue">FreeStyle LibreLink</string>
+	<string name="appPartOfSystem">Входит в состав системы Flash мониторинга глюкозы FreeStyle Libre</string>
+	<string name="last3sensors">Последние три датчика:</string>
+	<string name="sensorStatus">&#160;&#160;&#160;&#160;Состояние: %1$s</string>
+	<string name="udi">UDI:</string>
+	<string name="registrationNumber">Регистрационный номер:</string>
+	<string name="productStandardNumber">Стандартный номер изделия:</string>
+	<string name="model">Модель смартфона:</string>
+	<string name="appCountryLabel">Страна:</string>
+	<string name="supportWebsiteLabel">Отдел обслуживания клиентов:</string>
+	<string name="supportWebsiteValue">http://www.freestylelibre.com</string>
+	<string name="consultInstructionsForUse">См. инструкцию по применению</string>
+	<string name="productOfUsa">Изготовлено в США</string>
+	<string name="patentWebsiteLabel">Веб-сайт для справки о патентах:</string>
+	<string name="patentWebsiteValue">https://www.abbott.com/patents</string>
+	<string name="trademarkStatement">FreeStyle, Libre и связанные с ними символы брендов являются товарными знаками компании Abbott Diabetes Care Inc. в различных юрисдикциях.</string>
+	<string name="copyrightStatement">©2018 Abbott</string>
+	<string name="osVersion">Версия ОС Android:</string>
+	<string name="sensorNotPresent">Нет актив. датч.</string>
+	<string name="softwareVersion">Версия программного обеспечения:</string>
+
+	<!-- Notifications -->
+	<string name="alarmExpired">Срок сигнала истек</string>
+	<string name="timerExpired">Срок таймера истек</string>
+
+	<string name="sensorActivated">Датчик запущен</string>
+	<string name="sensorReady">Датчик готов</string>
+	<string name="sensorReadyContent">Датчик готов к использованию</string>
+	<string name="sensorExpired">Вр. раб. датчика законч.</string>
+	<string name="sensorExpiredContent">Запустить новый датчик для проверки ур. глюкозы</string>
+	<string name="sensorEndingSoon">Время работы датчика скоро закончится</string>
+
+	<!-- Data Upload -->
+	<string name="uploadFailedTitle">Ошибка отправки</string>
+	<string name="uploadFailedNoConnectivityContent">Нет связи</string>
+	<string name="uploadFailedInvalidToken">Ошибка проверки подлинности. Щелкните для входа.</string>
+	<string name="uploadFailedOther">Произошла ошибка. Щелкните для повторения</string>
+	<string name="uploadingDataTitle">Отправка данных из FreeStyle LibreLink</string>
+	<string name="uploadingDataContent">Выполняется отправка данных</string>
+	<string name="serving_size_in_grams">1 порция = %.1f граммов</string>
+	<string name="acceptLanguageHeader">ru-RU, ru;q=0.8</string>
+	<string name="appLocale">ru-RU</string>
+
+	<string name="reportHeaderDayOnlyFormat">d</string>
+	<string name="reportHeaderFullDateFormat">d MMMM yyyy</string>
+	<string name="reportHeaderShortMonthFormat">d MMM</string>
+	<string name="reportHeaderShortMonthFullFormat">d MMM yyyy</string>
+	<string name="reportHeaderDateRangeFormat">%1$s - %2$s</string>
+	<string name="reportShareSubjectFormat">%1$s: %2$s</string>
+
+	<string name="nonActionableExplanationTitle">Подтвердите показатели глюкозы</string>
+	<string name="nonActionableExplanationMessage">Перед принятием решения о лечении подтвердите показатели глюкозы при помощи тест-полоски.</string>
+
+	<!-- TTS Result -->
+	<string name="spokenLo">за пределами диапазона, ниже</string>
+	<string name="spokenHi">за пределами диапазона, выше</string>
+	<string name="spokenMgDl">миллиграммы на децилитр</string>
+	<string name="spokenMmolL">миллимоли на литр</string>
+	<string name="resultWithTrendNotDetermined">%1$s %2$s, тенденция отсутствует</string>
+	<string name="resultWithTrendFallingQuickly">%1$s %2$s, быстрое снижение</string>
+	<string name="resultWithTrendFalling">%1$s %2$s, снижение</string>
+	<string name="resultWithTrendStable">%1$s %2$s, медленное изменение</string>
+	<string name="resultWithTrendRising">%1$s %2$s, подъем</string>
+	<string name="resultWithTrendRisingQuickly">%1$s %2$s, быстрый подъем</string>
+
+	<!-- Download Progress -->
+	<string name="progressDownloadingConfiguration">Загружается конфигурация приложения</string>
+	<string name="progressDownloadingUserGuide">Загружается Руководство по эксплуатации</string>
+	<string name="insufficientSpaceMessage">Недостаточное дисковое пространство на вашем смартфоне.</string>
+
+
+	<!-- New strings added 25SEPT2017 -->
+
+	<string name="modalLookingForSensor">Держите iPhone рядом с датчиком</string>
+	<string name="modalSensorFound">Сканирование завершено</string>
+	<string name="settingsMenuTitle">Настройки</string>
+	<string name="genericOSVersion">Версия ОС:</string>
+	<string name="editTime">Изменение времени</string>
+	<string name="detail">Подробности</string>
+	<string name="helpItemTitleGlucoseHelp">Показатели уровня глюкозы</string>
+	<string name="glucoseHelp">Показатели уровня глюкозы</string>
+
+	<!-- Abbreviated time passed -->
+	<string name="mins_passed">%dм назад</string>
+	<string name="hours_passed">%dч назад</string>
+
+	<string name="iosNotificationsDisabled">Чтобы получать напоминания, вы должны включить уведомления в настройках системы iOS.</string>
+	<string name="glucoseWarningReminderPrompt">Хотите установить напоминание о проверке уровня глюкозы?</string>
+	<string name="NFCReaderUsageDescription">FreeStyle LibreLink пользуется NFC для сканирования датчиков FreeStyle Libre.</string>
+	<string name="NSPhotoLibraryAddUsageDescription">Чтобы сохранить отчеты, FreeStyle LibreLink нуждается в доступе к вашей медийной библиотеке. Ваши фотографии не будут передаваться без вашего разрешения.</string>
+	<string name="deleteNote">Удалить примечание</string>
+	<string name="deleteNoteConfirmation">Хотите удалить это примечание?</string>
+
+	<!-- New strings with existing Android Counterparts -->
+
+	<string name="iosScanSensorTextStep1">Нажмите кнопку сканирования, прежде чем просканировать датчик.</string>
+	<string name="iosScanSensorTextStep2">Держите верхнюю часть iPhone рядом с датчиком.</string>
+	<string name="iosScanSensorTextStep3">После сканирования датчика iPhone завибрирует и издаст звук (если звук включен).</string>
+	<string name="iosErrorVersionCheckFailed">Эта версия FreeStyle LibreLink нуждается в обновлении. Отыщите последнюю версию приложения в App Store.</string>
+	<string name="iosReadyToScanDetail">Датчик готов к использованию.</string>
+	<string name="iosDefaultSensorErrorMsg">Сканирование не завершено успешно. Нажмите кнопку сканирования, чтобы повторить попытку.</string>
+	<string name="iosEnableNetworkTimeTitle">Обновление даты и времени</string>
+	<string name="iosEnableNetworkTime">Для использования FreeStyle LibreLink настройки даты и времени должны обновляться автоматически. Перейдите в Настройки &gt; Основные &gt; Дата и время и включите опцию Автоматически.</string>
+
+	<!-- New string added per Ashwin Kumar's request 2017-08-30-->
+	<string name="iosCheckGlucoseWithPhone">Вы можете проверить уровень глюкозы с помощью iPhone.</string>
+	<string name="retry">Повторить попытку</string>
+
+	<!-- New strings for US changes 2017-10-31 -->
+	<string name="sensorUserPrompt">Укажите сведения о лице, которое будет носить датчик. </string>
+	<string name="welcome">Добро пожаловать!</string>
+	<string name="welcomeDetail">Уделите несколько минут, чтобы научиться читать показатели глюкозы в этом приложении.</string>
+	<string name="backgroundGlucoseColorsTitle">Цвет фона уровня глюкозы</string>
+	<string name="backgroundGlucoseColorsDetail">Ваш текущий уровень глюкозы определяет цвет фона при отображении уровня глюкозы.</string>
+	<string name="glucoseHighAbove240Mgdl">Высокий ур. глюкозы (выше 240 mg/dL)</string>
+	<string name="glucoseBetweenTarget240Mgdl">Между целевым диапазоном и 240 mg/dL</string>
+	<string name="glucoseTargetRange">Уровень глюкозы в пределах вашего целевого диапазона</string>
+	<string name="glucoseBetweenTarget70Mgdl">Между целевым диапазоном и 70 mg/dL</string>
+	<string name="glucoseLowBelow70Mgdl">Низкий уровень глюкозы (ниже 70 mg/dL)</string>
+	<string name="glucoseHighAbove240Mmol">Высокий ур. глюкозы (выше 13,3 mmol/L)</string>
+	<string name="glucoseBetweenTarget240Mmol">Между целевым диапазоном и 13,3 mmol/L</string>
+	<string name="glucoseBetweenTarget70Mmol">Между целевым диапазоном и 3,9 mmol/L</string>
+	<string name="glucoseLowBelow70Mmol">Низкий уровень глюкозы (ниже 3,9 mmol/L)</string>
+	<string name="treatmentDecisions">Принятие решения о лечении</string>
+	<string name="treatmentDecisionsSymbol">Если отображается этот символ, выполните определение уровня глюкозы в крови, прежде чем принимать решение о лечении.</string>
+	<string name="treatmentDecisionsTest">Если определяемый датчиком показатель глюкозы не соответствует вашему самочувствию, выполните определение уровня глюкозы в крови.</string>
+	<string name="checkBloodGlucoseTitle">Измерьте уровень глюкозы в крови</string>
+	<string name="checkBloodGlucoseMessage">Измерьте уровень глюкозы в крови, прежде чем принимать решение о лечении.</string>
+	<string name="highGlucoseCheckBloodGlucose">Высокий ур. глюкозы может быть опасным. Измерьте уровень глюкозы в крови, прежде чем принимать решение о лечении. Возможно, следует проверить ур. кетонов.</string>
+	<string name="lowGlucoseCheckBloodGlucose">Низкий уровень глюкозы может быть опасным. Измерьте уровень глюкозы в крови, прежде чем принимать решение о лечении.</string>
+	<string name="reminder">Напоминание</string>
+	<string name="safetyInformation">Информация по технике безопасности</string>
+	<string name="labeling">Маркировка</string>
+	<string name="userGuides">Руководства по эксплуатации</string>
+	<string name="quickStartGuide">Краткое начальное руководство</string>
+	<string name="quickReferenceGuide">Краткое справочное руководство</string>
+	<string name="myGlucoseExplanationUpdate">После успешного сканирования датчика отображается ваш показатель глюкозы. Обратите внимание на (1) текущий уровень глюкозы, (2) стрелку, указывающую на тенденцию изменения уровня глюкозы, (3) график глюкозы и (4) какие-либо сообщения относительно уровня глюкозы.</string>
+	<string name="sensorPlacementInstruction">Датчик следует устанавливать исключительно на заднюю поверхности плеча.</string>
+	<string name="sensorReadyAt">Датчик будет готов в:</string>
+	<string name="formattedTimeRemaining">(осталось %1$s)</string>
+	<string name="sensorStartedByOtherDevice">Датчик был запущен другим устройством.</string>
+	<string name="sensorLatejoinExplanation">Чтобы датчик мог работать с этим смартфоном, вы должны использовать этот смартфон для сканирования датчика при его запуске.</string>
+	<string name="androidScanInstruction1">Держите заднюю панель смартфона рядом с датчиком.</string>
+	<string name="androidScanInstruction2">Подождите, пока смартфон не подаст два звуковых или вибрационных сигнала.</string>
+	<string name="bugFixesTitle">Исправление ошибок</string>
+	<string name="bugFixesDetail">Исправление ошибок и улучшение показателей работы устройства</string>
+	<string name="performanceImprovements">Улучшение показателей работы устройства</string>
+	<string name="sensorChangeExplanation">Запуск нового датчика прекратит работу датчика, используемого в наст. время.</string>
+	<string name="useNewSensorPrompt">Хотите начать пользоваться новым датчиком?</string>
+	<string name="earlySensorActivationPrompt">Хотите пользоваться этим датчиком далее?</string>
+	<string name="changeSensorPrompt">Хотите начать пользоваться этим датчиком?</string>
+	<string name="replaceExistingSensor">Этот датчик заменит датчик, запущенный последним.</string>
+	<string name="earlyActivationExistingEndsSoon">Вы можете продолжать пользоваться текущим датчиком до окончания его срока службы.</string>
+	<string name="earlyActivationEndsExisting">Вы будете продолжать пользоваться текущим датчиком до того, как ваш следующий датчик будет готов.</string>
+	<string name="scanOtherSensor">Просканируйте ваш другой датчик, чтобы проверить уровень глюкозы.</string>
+	<string name="sensorNotWorking">Ваш датчик не работает.</string>
+	<string name="currentSensorEndsAt">Срок службы текущего датчика истекает через:</string>
+	<string name="newSensorReadyAt">Новый датчик будет готов в:</string>
+	<string name="sensorAlreadyStarted">Этот датчик уже запущен.</string>
+	<string name="earlySensorStartupTimeRemaining">Показатели глюкозы недоступны. Повторите сканирование через %1$s.</string>
+	<string name="glucoseReadingUnavailable">Показатели глюкозы недоступны. </string>
+	<string name="scanAgainIn">Повторите сканирование через %1$s.</string>
+	<string name="softwareReleaseVersion">Версия выпуска программного обеспечения:</string>
+	<string name="softwareFullVersion">Полная версия программного обеспечения:</string>
+</resources>

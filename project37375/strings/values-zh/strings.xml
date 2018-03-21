@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2015 Airstrip - All Rights Reserved. -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<!-- Plurals -->
+	<plurals name="insulinUnits">
+		<item quantity="one">%1$s 单位</item>
+		<item quantity="other">%1$s 单位</item>
+	</plurals>
+	<plurals name="days">
+		<item quantity="one">1 天</item>
+		<item quantity="other">%1$d 天</item>
+	</plurals>
+	<plurals name="hours">
+		<item quantity="one">1 小时</item>
+		<item quantity="other">%1$d 小时</item>
+	</plurals>
+	<plurals name="minutes">
+		<item quantity="one">1 分钟</item>
+		<item quantity="other">%1$d 分钟</item>
+	</plurals>
+	<!-- Phrase describing a time duration in seconds using secs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationSecs">
+		<item quantity="one">1 秒</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> 秒</item>
+	</plurals>
+	<!-- Phrase describing a time duration in minutes using mins abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationMins">
+		<item quantity="one">1 分钟</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> 分钟</item>
+	</plurals>
+	<!-- Phrase describing a time duration in hours using hrs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationHrs">
+		<item quantity="one">1 小时</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> 小时</item>
+	</plurals>
+	<plurals name="sensorExpiresInDays">
+		<item quantity="one">1 天后更换传感器</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> 天后更换传感器</item>
+	</plurals>
+	<plurals name="sensorExpiresInHours">
+		<item quantity="one">1 小时后更换传感器</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> 小时后更换传感器</item>
+	</plurals>
+	<plurals name="sensorExpiresInMins">
+		<item quantity="one">1 分钟后更换传感器</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> 分钟后更换传感器</item>
+	</plurals>
+	<plurals name="sensorReadyInMins">
+		<item quantity="one">1 分钟后传感器准备就绪</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> 分钟后传感器准备就绪</item>
+	</plurals>
+
+	<!-- common/generic words, phrases, symbols, and abbreviations -->
+	<string name="deciLiter">dL</string>
+	<string name="gramsSymbol">克</string>
+	<string name="liter">L</string>
+	<string name="mgdl">mg/dL</string>
+	<string name="milligrams">mg</string>
+	<string name="millimole">mmol</string>
+	<string name="mmol">mmol/L</string>
+	<string name="percentSign">\u0025</string>
+	<string name="servingsSymbol">份数</string>
+	<string name="accept">接受</string>
+	<string name="account">帐户设置</string>
+	<string name="all">全部</string>
+	<string name="back">返回</string>
+	<string name="average">平均值</string>
+	<string name="delete">删除</string>
+	<string name="cancel">取消</string>
+	<string name="durationHourMinuteConcatenate">%1$s %2$s</string>
+	<string name="comments">备注</string>
+	<string name="done">完成</string>
+	<string name="email">电子邮件</string>
+	<string name="friday">星期五</string>
+	<string name="grams">克</string>
+	<string name="gramsOfCarbs">克碳水化合物</string>
+	<string name="units">单位</string>
+	<string name="help">帮助</string>
+	<string name="home">主页</string>
+	<string name="insulinDose">胰岛素剂量</string>
+	<string name="loading">正在加载</string>
+	<string name="logbook">记录本</string>
+	<string name="monday">星期一</string>
+	<string name="next">下一步</string>
+	<string name="no">否</string>
+	<string name="note">备注</string>
+	<string name="ok">确定</string>
+	<string name="password">密码</string>
+	<string name="reminders">提醒</string>
+	<string name="reject">拒绝</string>
+	<string name="reports">报告</string>
+	<string name="saturday">星期六</string>
+	<string name="save">保存</string>
+	<string name="sending">正在发送</string>
+	<string name="servings">份数</string>
+	<string name="servingsOfCarbs">份碳水化合物</string>
+	<string name="settings">应用程序设置</string>
+	<string name="share">分享</string>
+	<string name="start">开始</string>
+	<string name="submit">提交</string>
+	<string name="sunday">星期日</string>
+	<string name="thursday">星期四</string>
+	<string name="tuesday">星期二</string>
+	<string name="wednesday">星期三</string>
+	<string name="yes">是</string>
+	<string name="days7">7 天</string>
+	<string name="days14">14 天</string>
+	<string name="days30">30 天</string>
+	<string name="days90">90 天</string>
+	<string name="eventLog">事件日志</string>
+	<string name="eventLogEmptyMessage">无事件</string>
+
+	<string name="minorFirstName">未成年人名</string>
+	<string name="minorLastName">未成年人姓</string>
+	<string name="parentFirstName">@string/parentGuardianFirstName</string>
+	<string name="parentLastName">@string/parentGuardianLastName</string>
+	<string name="lastName">姓</string>
+	<string name="daily_graph">每日图表</string>
+	<string name="daily_patterns">日趋势图</string>
+	<string name="estimated_a1c">预估糖化血红蛋白</string>
+	<string name="firstName">名</string>
+	<string name="noResults">（无结果）</string>
+	<string name="signIn">登录</string>
+	<string name="signingIn">正在登录</string>
+	<string name="scanSensor">扫描传感器</string>
+	<string name="time_in_target">达标时间</string>
+	<string name="errorMsgUnexpected">意外的应用程序错误。</string>
+	<string name="error_nfc_unsupported">不支持 NFC</string>
+	<string name="error_nfc_disabled"> NFC天线被禁用</string>
+	<string name="error_networktime_disabled">自动更新日期和时间被禁用</string>
+	<string name="errorOtherNfcInstalled">检测出另一使用 NFC 的应用程序。为了确保辅理善瞬感宝用于读取您的传感器，您将需要每次启动辅理善瞬感宝，然后开始扫描。或者，您也可以卸载其他 NFC 应用程序，即可在智能手机解锁的任何状态下扫描您的传感器。</string>
+	<string name="loadingChartDataText">正在加载数据</string>
+	<string name="chartErrorMessage">加载数据错误</string>
+	<string name="timeZoneChangeMessage">时区从 %1$s\u00A0更改为\u00A0%2$s &lt;b&gt;（%3$s）&lt;/b&gt;</string>
+
+	<!-- Countries -->
+	<string name="countryName_AE">阿拉伯联合酋长国</string>
+	<string name="countryName_AG">安提瓜和巴布达</string>
+	<string name="countryName_AR">阿根廷</string>
+	<string name="countryName_AT">奥地利</string>
+	<string name="countryName_AU">澳大利亚</string>
+	<string name="countryName_AZ">阿塞拜疆</string>
+	<string name="countryName_BE">比利时</string>
+	<string name="countryName_BH">巴林</string>
+	<string name="countryName_BR">巴西</string>
+	<string name="countryName_BS">巴哈马</string>
+	<string name="countryName_BW">博茨瓦纳</string>
+	<string name="countryName_BY">比拉罗斯</string>
+	<string name="countryName_BZ">伯利兹</string>
+	<string name="countryName_CA">加拿大</string>
+	<string name="countryName_CH">瑞士</string>
+	<string name="countryName_CL">智利</string>
+	<string name="countryName_CN">中国</string>
+	<string name="countryName_CO">哥伦比亚</string>
+	<string name="countryName_CR">哥斯达黎加</string>
+	<string name="countryName_CY">塞浦路斯</string>
+	<string name="countryName_DE">德国</string>
+	<string name="countryName_DK">丹麦</string>
+	<string name="countryName_DO">多米尼加共和国</string>
+	<string name="countryName_DZ">阿尔及利亚</string>
+	<string name="countryName_EC">厄瓜多尔</string>
+	<string name="countryName_ES">西班牙</string>
+	<string name="countryName_FI">芬兰</string>
+	<string name="countryName_FR">法国</string>
+	<string name="countryName_GB">英国</string>
+	<string name="countryName_GR">希腊</string>
+	<string name="countryName_HK">香港</string>
+	<string name="countryName_IE">爱尔兰</string>
+	<string name="countryName_IL">以色列</string>
+	<string name="countryName_IS">冰岛</string>
+	<string name="countryName_IT">意大利</string>
+	<string name="countryName_JO">约旦</string>
+	<string name="countryName_JP">日本</string>
+	<string name="countryName_KR">韩国</string>
+	<string name="countryName_KW">科威特</string>
+	<string name="countryName_KZ">哈萨克斯坦</string>
+	<string name="countryName_LB">黎巴嫩</string>
+	<string name="countryName_LU">卢森堡</string>
+	<string name="countryName_MT">马耳他</string>
+	<string name="countryName_MX">墨西哥</string>
+	<string name="countryName_MY">马来西亚</string>
+	<string name="countryName_NL">荷兰</string>
+	<string name="countryName_NO">挪威</string>
+	<string name="countryName_NZ">新西兰</string>
+	<string name="countryName_OM">阿曼</string>
+	<string name="countryName_PA">巴拿马</string>
+	<string name="countryName_PE">秘鲁</string>
+	<string name="countryName_PL">波兰</string>
+	<string name="countryName_PT">葡萄牙</string>
+	<string name="countryName_QA">卡塔尔</string>
+	<string name="countryName_RU">俄罗斯</string>
+	<string name="countryName_SA">沙特阿拉伯</string>
+	<string name="countryName_SE">瑞典</string>
+	<string name="countryName_SG">新加坡</string>
+	<string name="countryName_TH">泰国</string>
+	<string name="countryName_TR">土耳其</string>
+	<string name="countryName_TT">千里达与多贝哥</string>
+	<string name="countryName_TW">台湾</string>
+	<string name="countryName_US">美国</string>
+	<string name="countryName_UY">乌拉圭</string>
+	<string name="countryName_VE">委内瑞拉</string>
+	<string name="countryName_ZA">南非</string>
+	<string name="countryName_ZW">津巴布韦</string>
+
+	<!-- License Check -->
+	<string name="librelinkLicenseCheck">辅理善瞬感宝许可证检查</string>
+	<string name="licenseCheckFailed">请从 Google Play 安装此应用程序。</string>
+
+	<!-- Update Version Check -->
+	<string name="librelink_upgrade_check">辅理善瞬感宝升级检查</string>
+	<string name="checkingVersion">正在检查版本</string>
+	<string name="errorVersionCheckFailed">需要更新此版本辅理善瞬感宝。请检查 Google Play 以查看最新的版本。</string>
+
+	<!-- App Tour -->
+	<string name="checkGlucoseWithPhone">使用您的智能手机检查您的葡萄糖值。</string>
+	<string name="instantAccess">快速了解您的葡萄糖信息。</string>
+	<string name="actionableInsights">透过数据获得详细解读以做出更加明智的决定。</string>
+	<string name="shareGlucoseInformation">与专业医护人员和您的家人分享您的葡萄糖信息。</string>
+
+	<!-- Account Registration/Sign In -->
+	<string name="changeUserMessage">通过登录您的帐户，此装置上先前用户的所有数据将被删除。\n\n是否继续? </string>
+	<string name="changeDeviceMessage">点击”确定”以将您的智能手机登录到您现有的瞬感云帐户。您可以继续读取您的前一部智能手机启动的传感器。\n\n备注：点击”确定”以将您的前一部智能手机注销。</string>
+	<string name="registeringDevice">注册智能手机</string>
+	<string name="firstNameLabel">@string/firstName</string>
+	<string name="lastNameLabel">@string/lastName</string>
+	<string name="emailLabel">@string/email</string>
+	<string name="dateOfBirthLabel">@string/dateOfBirth</string>
+	<string name="dateOfBirth">出生日期</string>
+	<string name="passwordLabel">@string/password</string>
+	<string name="createPasswordLabel">@string/password</string>
+	<string name="changePassword">帐户密码</string>
+	<string name="newPasswordLabel">新密码</string>
+	<string name="currentPasswordLabel">当前密码</string>
+	<string name="confirmPasswordLabel">确认密码</string>
+	<string name="sendingResetRequest">正在发送密码重置请求</string>
+	<string name="adultRegistrationTitle">帐户登录</string>
+	<string name="minorRegistrationTitle">父母/监护人帐户注册</string>
+	<string name="signInLinkText">@string/signIn</string>
+	<string name="account_sign_in_title">@string/signIn</string>
+	<string name="alreadyHaveAccountPromptText">已有一个瞬感云帐户？</string>
+	<string name="invalidPasswordErrorMessage">请输入一个有效的密码。密码必须是 8\u201336 个字符，并包含至少 1 个数字、1 个大写字母和 1 个小写字母。</string>
+	<string tools:ignore="PluralsCandidate" name="tooYoungErrorMessage">您必须年满 %1$s 岁或更大才可使用辅理善瞬感宝。</string>
+	<string name="tooYoungWarningMessage">出生日期用于设置您的瞬感云f帐户，而不是用于确定本应用程序是否适合您使用。使用本应用程序之前，请参阅应用程序用户手册。</string>
+	<string name="forgotPasswordText">忘记了密码？</string>
+	<string name="createNewAccountText">创建新帐户</string>
+	<string name="existing_user_login_text">已经存在此电子邮箱的帐户。请输入您的电子邮箱和密码。</string>
+	<string name="normal_user_login_text">请输入您的瞬感云帐户登录名。</string>
+	<string name="passwordMismatchErrorMessage">密码必须一致</string>
+	<string name="invalidEmailAddressErrorMessage">请输入一个有效的电子邮箱。</string>
+	<string name="passwordResetSent">重置密码的说明已发送到您的电子邮箱。</string>
+	<string name="accountContactOptIn">请向我发送 Abbott Diabetes Care 和其他 Abbott 产品和服务有关的信息。（您可以任何时候取消订阅。）</string>
+	<string name="passwordResetMessage">请输入用于注册此帐户的电子邮箱。重置密码的说明将发送到该电子邮箱。</string>
+	<string name="nonExistentUserErrorMessage">您输入的电子邮箱的帐户不存在。</string>
+	<string name="invalidLoginErrorMessage">电子邮箱或密码不正确。请再试一次。</string>
+	<string name="invalidProfileUpdatePassword">密码不正确。请再试一次。</string>
+	<string name="invalidProfileDOB">您不可将您的帐户类型从成人更改为未成年人。请相应地编辑您的出生日期。</string>
+	<string name="invalidAppKeyErrorMessage">与服务器通信出错。应用程序密钥无效。</string>
+	<string name="invalidNetworkDomainErrorMessage">与服务器通信出错。域无效。</string>
+	<string name="invalidRegistrationErrorMessage">由于无效数据不能完成注册。</string>
+	<string name="invalidAccountRegionErrorMessage">您的应用程序的国家设置与您的帐户不匹配。请创建新的帐户。</string>
+	<string name="accountRegisteringProgressMessage">正在注册</string>
+	<string name="accountUpdateProgressMessage">正在发送</string>
+	<string name="accountAlreadyRegisteredErrorMessage">此电子邮箱已经与瞬感云帐户关联。\n\n您不需要创建一个新的帐户。只要登录。</string>
+	<string name="professionalAccountAlreadyRegisteredErrorMessage">此电子邮箱已经与瞬感云专家版帐户关联。您将需要使用不同的电子邮箱创建帐户以使用此应用程序。</string>
+	<string name="alreadyRegisteredSignInButtonText">@string/signIn</string>
+	<string name="enter_numera_data">创建您的瞬感云帐户以便使用辅理善瞬感宝应用程序和所有其他兼容的应用程序。</string>
+	<string name="minorRegistrationHeader">此用户是未成年人。需由父母或监护人完成帐户注册以使用该软件。</string>
+	<string name="parentGuardianFirstName">父母或法定监护人名</string>
+	<string name="parentGuardianLastName">父母或法定监护人姓</string>
+	<string name="parentGuardianEmail">@string/email</string>
+	<string name="nameAndBirthDateHeader">请输入您的基本信息。</string>
+	<string name="nameAndBirthDateTitle">@string/createNewAccountText</string>
+	<string name="profileUpdateTopText">更改任一如下信息将自动更新您的帐户。</string>
+	<string name="changePasswordTopText">密码必须是 8-36 个字符，并包含至少 1 个数字、1 个大写字母和 1 个小写字母。</string>
+	<string name="createAccountSubmitButtonText">创建帐户</string>
+	<string name="authenticationFailure">服务器认证失败。请再次登录。</string>
+	<string name="authenticationFailureLoginButton">登录</string>
+	<string name="reenterPassword">请再次输入您的密码。</string>
+	<string name="parentLoginText">需要父母或监护人登录名。</string>
+	<string name="parentLoginSubText">请输入帐户密码以便共享访问权限。</string>
+
+	<!-- Side Navigation Drawer -->
+	<string name="navigation_drawer_username">%1$s %2$s</string>
+	<string name="navigation_drawer_daily_graph">@string/daily_graph</string>
+	<string name="navigation_drawer_estimated_a1c">@string/estimated_a1c</string>
+	<string name="navigation_drawer_average_glucose">葡萄糖平均值</string>
+	<string name="navigation_drawer_low_glucose">低葡萄糖事件</string>
+	<string name="navigation_drawer_sensor_usage">传感器使用情况</string>
+	<string name="navigation_drawer_daily_patterns">@string/daily_patterns</string>
+	<string name="navigation_drawer_time_in_target">@string/time_in_target</string>
+	<string name="navigation_drawer_sharedata">@string/share</string>
+
+	<!-- Home -->
+	<string name="applyNewSensor">敷贴新的传感器</string>
+	<string name="scanNewSensor">扫描新的传感器</string>
+	<string name="startNewSensor">敷贴并扫描新的传感器</string>
+	<string name="sensorReadyIn">距离传感器可使用时间%1$s</string>
+	<string name="readyToScanDetail">传感器准备就绪。要检查您的葡萄糖值，握住您的智能手机，使其背面对着传感器，直到您听见二次铃声或振动。</string>
+	<string name="applyNewSensorDetail">敷贴一个新的传感器。</string>
+	<string name="scanNewSensorDetail">扫描传感器将其启动。</string>
+	<string name="scanNewSensorDetailLateJoin">如果您还想使用扫描检测仪，您必须首先使用它进行扫描。</string>
+	<string name="scanSensorDetail">扫描传感器。</string>
+	<string name="last24Hours">最近 24 小时</string>
+	<string name="lastScan">上次扫描</string>
+	<string name="sensorIsReady">准备好扫描</string>
+	<string name="sensorWarmingUp">新的传感器正在启动</string>
+	<string name="sensorHasEnded">您的传感器已失效</string>
+	<string name="sensorEndsIn">距离传感器失效还有：%1$s</string>
+	<string name="sensorLateJoinMessage">您现在可以使用此装置扫描传感器并用装置启动传感器。\n\n备注：要确保装置显示屏上的报告显示完整数据，请至少每 8 小时使用该设备扫描传感器。装置之间不共享数据和报告。</string>
+
+	<!-- Stats/Reports -->
+	<!-- Used for Germany to force 24 hour time on the chart axis -->
+	<bool name="force24HourTimes">false</bool>
+
+	<!-- Used to set the string format for graph axis unless 24 hour time is used -->
+	<string name="amTimeAxisFormat">\'上午\'h</string>
+	<string name="pmTimeAxisFormat">\'下午\'h</string>
+
+	<string name="mmolPerMolFormatter" tools:ignore="PluralsCandidate">（%d mmol/mol）</string>
+	<string name="sensor_usage_total_scans">总计扫描数</string>
+	<string name="sensor_usage_day_average">日均扫描次数</string>
+	<string name="sensor_usage_captured">%传感器数据已获取</string>
+	<string name="days_of_data" tools:ignore="PluralsCandidate">%2$d 天中有 %1$d 天数据可用</string>
+	<string name="a1cDaysOfData" tools:ignore="PluralsCandidate">数据涵盖 %2$d 天中的 %1$d 天</string>
+	<string name="no_sensor_data">传感器数据不充足</string>
+	<string name="timeintarget_glucose_range">%1$s-%2$s</string>
+	<string name="timeintarget_glucose_less_than">&lt; %s</string>
+	<string name="timeintarget_glucose_greater_than">&gt; %s</string>
+	<string name="timeintarget_percent">%</string>
+	<string name="target">目标</string>
+	<string name="timeInTargetGlucoseRangeLabel">目标范围：%s</string>
+	<string name="average_glucose_info_title">葡萄糖平均值</string>
+	<string name="average_glucose_info_msg">葡萄糖平均值提供您的葡萄糖读数平均值信息。所选期间的总平均值显示在图表下方。还显示一天中不同时段的平均值。高于或低于目标葡萄糖范围的读数以黄色、橙色或红色显示。范围内的读数以绿色显示。</string>
+	<string name="low_glucose_info_title">低葡萄糖事件</string>
+	<string name="low_glucose_info_msg_mg">低葡萄糖事件提供您的传感器测得的低葡萄糖事件数量的信息。当您的传感器葡萄糖读数低于 70 mg/dL 超过 15 分钟时，记录低葡萄糖事件。事件总数显示在图表下方。柱状图显示一天中不同时段的低葡萄糖事件。</string>
+	<string name="low_glucose_info_msg_mmol">低葡萄糖事件提供您的传感器测得的低葡萄糖事件数量的信息。当您的传感器葡萄糖读数低于 3.9 mmol/L 超过 15 分钟时，记录低葡萄糖事件。事件总数显示在图表下方。柱状图显示一天中不同时段的低葡萄糖事件。</string>
+	<string name="a1c_info_title">预估糖化血红蛋白</string>
+	<string name="a1c_info_msg">您的预估糖化血红蛋白水平（也称为 HbA1c）基于过去90天内可用的传感器葡萄糖数据。可用的数据越多，预估越准确。然而，预估的水平可能与实验室测得的糖化血红蛋白不一致。\n\n糖化血红蛋白可用作您的葡萄糖水平如何控制的指标，可用于监测您的糖尿病治疗方案。</string>
+	<string name="daily_info_title">每日图表</string>
+	<string name="daily_info_msg">每日图表提供您每天的葡萄糖读数图。\n\n若您在 8 小时内未扫描过至少一次，您可能看到不连续曲线图。\n\n如出现时钟符号，指示时区更改。可能导致不连续曲线图，或可能隐藏葡萄糖读数。</string>
+	<string name="sensor_usage_info_title">传感器使用情况</string>
+	<string name="sensor_usage_info_msg">传感器使用情况提供您扫描频率有关的信息。这包括每天扫描传感器的次数平均值，扫描记录数据百分比以及扫描总数。</string>
+	<string name="time_in_target_info_title">达标时间</string>
+	<string name="time_in_target_info_msg">达标时间显示您的传感器葡萄糖读数高于、低于或在目标葡萄糖范围内的时间百分比。</string>
+	<string name="daily_average">平均值：%1$s %2$s</string>
+	<string name="total_events">事件总计：%1$d</string>
+	<string name="daily_patterns_info_title">日趋势图</string>
+	<string name="daily_patterns_info_msg">日趋势图显示您的葡萄糖在典型的一天中的模式和变异性。粗黑线表示您的葡萄糖读数的中值（中点）。浅蓝色阴影表示您的传感器读数的 10-90 百分位数范围。深蓝色阴影表示 25–75 百分位数范围。\n\n备注：日趋势图需要至少 5 天的葡萄糖数据。</string>
+
+	<!-- Scan Result -->
+	<string name="glucoseAboveRange">高葡萄糖值\n（超出范围）</string>
+	<string name="glucoseBelowRange">低葡萄糖值\n（超出范围）</string>
+	<string name="glucoseGoingHigh">葡萄糖升高</string>
+	<string name="glucoseGoingLow">葡萄糖降低</string>
+	<string name="glucoseHigh">高葡萄糖值</string>
+	<string name="glucoseInRange">葡萄糖值在目标范围内</string>
+	<string name="glucoseLow">低葡萄糖值</string>
+	<string name="highGlucoseIsDangerous">高葡萄糖值可能会带来危险。请再次检测您的葡萄糖并按照专业医护人员推荐的方式治疗。请考虑检查您的血酮。</string>
+	<string name="lowGlucoseIsDangerous">低葡萄糖可能会带来危险。请再次检测您的葡萄糖并按照专业医护人员推荐的方式治疗。</string>
+	<string name="yourGlucose">我的葡萄糖值</string>
+	<string name="vrcFailedTitle">显示结果错误</string>
+	<string name="vrcFailedText">结果为：%s</string>
+	<string name="error_sensor_incompatible_title">传感器不兼容</string>
+	<string name="error_sensor_incompatible_msg">此传感器不能与本版本的辅理善瞬感宝一起使用。</string>
+	<string name="error_sensor_terminated_title">更换传感器</string>
+	<string name="error_sensor_terminated_msg">您的传感器无法正常工作。请取下您的传感器并启动一个新的传感器。</string>
+	<string name="error_sensor_removed_title">更换传感器</string>
+	<string name="error_sensor_removed_msg">您的传感器无法正常工作。请取下您的传感器并启动一个新的传感器。</string>
+	<string name="error_sensor_expired_title">传感器已失效</string>
+	<string name="error_sensor_expired_msg">请启动一个新的传感器检测葡萄糖。</string>
+	<string name="error_sensor_inwarmup_title">传感器正在启动</string>
+	<string name="error_sensor_inwarmup_msg">此传感器已启动，但尚未准备好使用。</string>
+	<string name="error_sensor_corrupt_title">扫描错误</string>
+	<string name="error_sensor_corrupt_msg">智能手机未成功扫描传感器。请再次扫描传感器。</string>
+	<string name="error_sensor_transmission_title">扫描错误</string>
+	<string name="error_sensor_transmission_msg">智能手机未成功扫描传感器。请再次扫描传感器。确保握住您的智能手机，使其背面靠近传感器。当您听到第一次铃声或振动时，请握住智能手机，直到听到第二次铃声或振动。</string>
+	<string name="error_sensor_already_started_title">传感器已在使用中</string>
+	<string name="error_sensor_already_started_msg">您刚才扫描的传感器已被其他装置启动，不能使用。</string>
+	<string name="error_sensor_already_started_msg_llj">此传感器已被其他装置启动。为了传感器能与此智能手机配合使用，您必须在启动后的第一个小时内使用此智能手机扫描传感器。</string>
+	<string name="error_sensor_temporary_problem_title">传感器错误</string>
+	<string name="error_sensor_temporary_problem_msg">无法获取葡萄糖读数，请在 10 分钟后再次尝试扫描。</string>
+	<string name="error_sensor_too_hot_title">传感器过热</string>
+	<string name="error_sensor_too_hot_msg">传感器过热，无法提供葡萄糖读数。请在几分钟后再试一次。</string>
+	<string name="error_sensor_too_cold_title">传感器过冷</string>
+	<string name="error_sensor_too_cold_msg">传感器过冷，无法提供葡萄糖读数。请在几分钟后再试一次。</string>
+	<string name="error_sensor_insertion_failure_title">检查传感器</string>
+	<string name="error_sensor_insertion_failure_msg">请检查您的传感器。如果传感器与皮肤接触有松脱现象，请取下它，并启动一个新的传感器。如果敷贴正确，请尝试再次启动传感器。</string>
+	<string name="error_sensor_not_active_title">发现新的传感器</string>
+	<string name="error_sensor_not_active_msg">启动新的传感器将使您当前使用的传感器失效。\n\n您要不要现在启动新的传感器？</string>
+
+	<!-- Add/Edit Note -->
+	<string name="addNote">添加备注</string>
+	<string name="editNote">编辑备注</string>
+	<string name="highIntensity">高强度</string>
+	<string name="mediumIntensity">中强度</string>
+	<string name="lowIntensity">低强度</string>
+	<string name="noExerciseTypeChosen">选择强度</string>
+	<string name="food">食物</string>
+	<string name="exercise">运动</string>
+	<string name="longActingInsulin">长效胰岛素</string>
+	<string name="rapidActingInsulin">速效胰岛素</string>
+	<string name="meal">用餐</string>
+	<string name="breakfast">早餐</string>
+	<string name="lunch">午餐</string>
+	<string name="snack">零食</string>
+	<string name="dinner">晚餐</string>
+	<string name="carbsGramsError">值应该是介于 %1$s 至 %2$s 之间的整数</string>
+	<string name="carbsServingsError">值应该是 0.5 的倍数且介于 %1$s 至 %2$s 之间</string>
+	<string name="insulinDoseError">值应该是 0.1 的倍数且介于 0.1 至 %1$d 之间</string>
+
+	<!-- Manual BG -->
+	<string name="manualBgTitle">血糖结果</string>
+	<string name="manualBgExplanation">输入您的血糖测试结果。</string>
+	<string name="manualBgError">值应该是 %1$s 至 %2$s 之间的整数</string>
+
+	<!-- Logbook -->
+	<string name="logbookDetail">记录本详情</string>
+	<string name="logbookListEmpty">此日期无条目。</string>
+	<string name="logbookDetailCarbFormatDoseAndUnit">" (&lt;b&gt;%1$s%2$s&lt;/b&gt;)"</string>
+	<string name="logbookDetailInsulinFormatTypeAndDose">%1$s (&lt;b&gt;%2$s&lt;/b&gt;)</string>
+	<string name="logbookDetailSeparator">", "</string>
+	<string name="noteBalloonSeparator">&lt;br/&gt;</string>
+	<string name="logbookDetailExerciseType">@string/exercise</string>
+	<string name="logbookDetailExerciseFormatType">运动%s</string>
+	<string name="logbookDetailExerciseFormatDuration">" (&lt;b&gt;%s&lt;/b&gt;)"</string>
+
+	<!-- Reminders -->
+	<string name="alarms">闹钟</string>
+	<string name="repeating">重复</string>
+	<string name="timers">定时器</string>
+	<string name="addReminder">添加提醒</string>
+	<string name="alarmName">提醒名称</string>
+	<string name="checkGlucose">检测葡萄糖</string>
+	<string name="myReminder">我的提醒</string>
+	<string name="nextReminderPrompt">下一个提醒：\u0020</string>
+	<string name="nextAlarmPrompt">下一个提醒：%1$s, %2$s </string>
+	<string name="noActiveReminders">没有活动提醒。</string>
+	<string name="noActiveRemindersAutoScanSensorEnabled">没有活动提醒。当您再次扫描时，扫描传感器将重置。</string>
+	<string name="remindMeToCheckAgain">在以下时间后提醒我检测葡萄糖：</string>
+	<string name="setReminder">设置</string>
+
+	<!-- Send Reports -->
+	<string name="sendChooserTitle">发送</string>
+
+	<!-- Settings -->
+	<string name="unitOfMeasurementTitle">测量单位</string>
+	<string name="unitOfMeasurementTopText">选择您的葡萄糖测量单位。所有葡萄糖数据将使用这些单位显示。</string>
+	<string name="unitOfMeasurementTopTextForSetup">选择您的葡萄糖测量单位。所有葡萄糖数据将使用这些单位显示。之后，您将不能对此进行更改。</string>
+	<string name="unitOfMeasureWarning">为您的葡萄糖选择正确的测量单位非常重要。错误测量单位可能导致您的葡萄糖值解读错误。如果您不知道使用哪个测量单位，请咨询您的专业医护人员。</string>
+	<string name="unitOfMeasurementFixedTopText">根据您的国家自动地设置您的葡萄糖测量单位。</string>
+	<string name="unitOfMeasurementFixedCountryText">您的国家是</string>
+	<string name="unitOfMeasurementFixedText">您的测量单位是</string>
+	<string name="targetGlucoseRangeTitle">目标葡萄糖范围</string>
+	<string name="targetGlucoseRangeTopText">您的目标葡萄糖范围将在各种图表上显示。如果您不确定，请咨询您的专业医护人员。</string>
+	<string name="targetGlucoseRangeTopTextForSetup">您的目标葡萄糖范围将在各种图表上显示，并且可以在”设置”中进行更改。如果您不确定，请咨询您的专业医护人员。</string>
+	<string name="carbohydrateUnitsTitle">碳水化合物单位</string>
+	<string name="carbohydrateUnitsTopText">您可以按照自己常用的计算方式选择克或份数为单位，输入碳水化合物的摄入量。选择您首选的碳水化合物单位。</string>
+	<string name="carbohydrateUnitServingSizeMessage">请选择您适合的份量大小。如果您不清楚，请向您的专业医护人员咨询。</string>
+	<string name="carbohydrateUnitsTopTextForSetup">@string/carbohydrateUnitsTopText</string>
+	<string name="scanSoundsTitle">扫描提示音</string>
+	<string name="scanSoundsOsDefault">声音和震动</string>
+	<string name="scanSoundsVibeOnly">仅震动</string>
+	<string name="scanSoundsTopText">扫描传感器默认震动模式。请选择是否同时开启提示音。</string>
+	<string name="scanSoundsTopTextForSetup">@string/scanSoundsTopText</string>
+	<string name="scanSoundsNote">请注意：\n“扫描提示音”将遵循您的智能手机的音量设置。例如，如果您的智能手机音量被关闭，您将不会听见扫描提示音。</string>
+	<string name="textToSpeechTitle">文本转换成语音</string>
+	<string name="textToSpeechOn">开</string>
+	<string name="textToSpeechOff">关</string>
+	<string name="textToSpeechTopText">打开”文本转换成语音”将大声读出葡萄糖读数。</string>
+	<string name="textToSpeechNote">请注意：\n”文本转换成语音”将遵循您的智能手机的音量设置。例如，如果您的智能手机音量被关闭，您将不会听见葡萄糖读数播音。</string>
+	<string name="countryOfOriginTitle">确认国家</string>
+	<string name="countryOfOriginTopText">您的国家信息用于应用程序设置期间，并且保证您的数据被适当地存储。</string>
+	<string name="countryOfOriginTopTextForSetup">@string/countryOfOriginTopText</string>
+	<string name="countryOfOriginExplanation">如果正确，点击”下一步”。\n\n如果不正确，您可能需要卸载辅理善瞬感宝，然后安装您国家的版本。如果您有疑问，请与客户服务部联系。</string>
+	<string name="targetGlucoseRangeUnitText">单位</string>
+	<string name="servingsWithGramsEquivalent" tools:ignore="PluralsCandidate">份数（1 份= %.1f 克）)</string>
+	<string name="countryLabel">居住国家</string>
+	<string name="countryLabelForSetup">您的国家被识别为</string>
+	<string name="defaultNetworkErrorMessage">与服务器通信出错。</string>
+	<string name="serverNotFoundErrorMessage">与服务器通信出错。找不到服务器。</string>
+	<string name="pageNotFoundErrorMessage">与服务器通信出错。服务器上找不到内容。</string>
+	<string name="networkingErrorMessage">与服务器通信时发生网络错误。</string>
+	<string name="internalServerErrorMessage">与服务器通信出错。发生服务器内部错误。</string>
+	<string name="requestTimeoutErrorMessage">与服务器通信出错。请求超时。</string>
+	<string name="serviceUnavailableErrorMessage">与服务器通信出错。服务不可用。</string>
+	<string name="submitButtonText">@string/submit</string>
+	<string name="mgPerDeciliterRadioText"><b>mg/dL</b>（例如，100 mg/dL）</string>
+	<string name="mmolPerLiterRadioText"><b>mmol/L</b>（例如，5.6 mmol/L）</string>
+	<string name="target_range_separator">-</string>
+	<string name="glucoseRangeFormat">%1$s - %2$s %3$s</string>
+	<string name="settingsUnitOfMeasureConfirmationMessage">请确认您想要选择以下测量单位：</string>
+	<string name="networkNotConnectedDefault">您的智能手机当前没有连接到互联网。不能完成此操作，直到您有互联网连接。</string>
+	<string name="networkNotConnectedSetup">您的智能手机当前没有连接到互联网。不能完成设置，直到您有互联网连接。</string>
+	<string name="networkNotConnectedProfileUpdate">您的智能手机当前没有连接到互联网。不能更改您的帐户，直到您有互联网连接。</string>
+	<string name="privacyNoticeAcceptanceStatement">我已阅读并确认接受隐私权通告。</string>
+	<string name="privacyNoticeTitle">隐私权通告</string>
+	<string name="termsOfUseAcceptanceStatement">我已阅读并确认接受使用条款。</string>
+	<string name="termsOfUseTitle">使用条款</string>
+	<string name="nfcUnsupported">要使用辅理善瞬感宝扫描您的传感器，您的智能手机必须支持 NFC。</string>
+	<string name="turnOnNfcPrompt">要使用辅理善瞬感宝扫描您的传感器，您的智能手机必须启用 NFC。您是否想要将其打开？</string>
+	<string name="enableNetworkTime">要使用辅理善瞬感宝扫描您的传感器，您的智能手机必须设置为自动更新日期和时间。您是否想要将其打开？</string>
+	<string name="getStartedNow">立即开始</string>
+
+	<!-- My Glucose Explanation -->
+	<string name="myGlucoseExplanationTitle">我的葡萄糖值</string>
+	<string name="myGlucoseExplanationTopText">在您扫描您的传感器之后，此屏幕出现。</string>
+	<string name="myGlucoseExplanationResultCallouts">“我的葡萄糖值”屏幕包含 (1) 您当前的葡萄糖值、(2) 您葡萄糖的变化趋势箭头和 (3) 您的葡萄糖图谱。</string>
+
+	<!-- Trend Arrow Explanation -->
+	<string name="trendExplanationTitle">葡萄糖变化趋势箭头</string>
+	<string name="trendExplanationTopText">当您扫描传感器时，箭头会指示您最近的葡萄糖变化趋势。</string>
+	<string name="trendExplanationRisingQuickly">迅速升高</string>
+	<string name="trendExplanationRising">升高</string>
+	<string name="trendExplanationStable">缓慢变化</string>
+	<string name="trendExplanationFalling">下降</string>
+	<string name="trendExplanationFallingQuickly">迅速下降</string>
+
+	<!-- Help -->
+	<string name="helpItemTitleApplySensor">如何敷贴传感器</string>
+	<string name="helpItemTitleScanSensor">如何扫描传感器</string>
+	<string name="helpItemTitleEventLog">@string/eventLog</string>
+	<string name="helpItemTitleUserGuide">用户手册</string>
+
+	<!-- OneStep Log Upload -->
+	<string name="logUploadTitle">发送故障排除数据</string>
+	<string name="logUploadOptInDescription">发送故障排除数据帮助客户服务部回答您的问题。</string>
+	<string name="logUploadOptInText1">您先前接受的“隐私权通告”描述了包括哪些故障排除数据。</string>
+	<string name="logUploadViewPrivacyButtonLabel">查看隐私权通告</string>
+	<string name="logUploadOptInText2">您是否同意发送您的故障排除数据。</string>
+	<string name="logUploadDecline">拒绝</string>
+	<string name="logUploadAccept">同意</string>
+	<string name="logUploadDescription">请输入客户服务部提供的案件编号和验证码。</string>
+	<string name="logUploadCaseNumberLabel">案件编号</string>
+	<string name="logUploadAccessCodeLabel">验证码</string>
+	<string name="logUploadSendButtonLabel">发送</string>
+	<string name="logUploadErrorTypo">案件编号或验证码不正确</string>
+	<string name="logUploadErrorUploadFailedTitle">发送故障排除数据出错</string>
+	<string name="logUploadErrorUploadFailedText">点击重试。</string>
+
+	<!-- Apply Sensor Tour -->
+	<string name="applySensorTitle">敷贴传感器</string>
+	<string name="applySensorTitleStep1">第 1 步</string>
+	<string name="applySensorTextStep1">选择上臂背侧。</string>
+	<string name="applySensorSubTextStep1">备注：避免疤痕、痣、妊娠纹、肿块和胰岛素注射部位。为了防止皮肤过敏，每次敷贴新的传感器时建议变换敷贴部位。</string>
+	<string name="applySensorTitleStep2">第 2 步</string>
+	<string name="applySensorTextStep2">用酒精棉擦拭准备敷贴的部位。擦拭部位变干后再后继续。</string>
+	<string name="applySensorTitleStep3">第 3 步</string>
+	<string name="applySensorTextStep3">将封膜从传感器组件包上完全撕开。</string>
+	<string name="applySensorTitleStep4">第 4 步</string>
+	<string name="applySensorTextStep4">从传感器敷贴器旋下盖子。</string>
+	<string name="applySensorTitleStep5">第 5 步</string>
+	<string name="applySensorTextStep5">将传感器敷贴器上的深色标记和传感器组件包上的深色标记对齐。置于坚硬平整的表面上，用力按下传感器敷贴器直到它停止。</string>
+	<string name="applySensorTitleStep6">第 6 步</string>
+	<string name="applySensorTextStep6">将传感器敷贴器从传感器组件包中提起。</string>
+	<string name="applySensorTitleStep7">第 7 步</string>
+	<string name="applySensorTextStep7">传感器敷贴器准备就绪。请勿触摸传感器敷贴器内侧或将其放回传感器组件包中。</string>
+	<string name="applySensorTitleStep8">第 8 步</string>
+	<string name="applySensorTextStep8">将传感器敷贴器放置在敷贴部位上方，用力按下以敷贴传感器。</string>
+	<string name="applySensorTitleStep9">第 9 步</string>
+	<string name="applySensorTextStep9">轻轻地移开传感器敷贴器。</string>
+	<string name="applySensorTitleStep10">第 10 步</string>
+	<string name="applySensorTextStep10">确保传感器粘贴牢固。根据当地法规的要求丢弃用过的传感器敷贴器和传感器组件包。</string>
+
+	<!-- Scan Sensor Tour -->
+	<string name="scanSensorTitle">扫描传感器</string>
+	<string name="scanSensorTitleStep1">第 1 步</string>
+	<string name="scanSensorTextStep1"><![CDATA[握住您的智能手机，使其<b>背面</b><b>对着</b>传感器。]]></string>
+	<string name="scanSensorTitleStep2">第 2 步</string>
+	<string name="scanSensorTextStep2">若开启声音功能，智能手机在扫描传感器时会产生一系列的铃声和震动。请勿将智能手机移开，直到铃声和震动停止为止。</string>
+	<string name="scanSensorTitleStep3">第 3 步</string>
+	<string name="scanSensorTextStep3">您可能需要上下左右移动智能手机的位置，确保手机的NFC天线贴近传感器，以便成功扫描。</string>
+
+	<!-- About -->
+	<string name="about">关于</string>
+	<string name="appNameLabel">名称：</string>
+	<string name="appNameValue">辅理善瞬感宝应用程序</string>
+	<string name="appPartOfSystem">辅理善瞬感扫描式葡萄糖监测系统</string>
+	<string name="last3sensors">最近 3 个传感器：</string>
+	<string name="sensorStatus">&#160;&#160;&#160;&#160;状态：%1$s</string>
+	<string name="udi">UDI：</string>
+	<string name="registrationNumber">注册编号：</string>
+	<string name="productStandardNumber">产品标准号：</string>
+	<string name="model">智能手机型号：</string>
+	<string name="appCountryLabel">国家：</string>
+	<string name="supportWebsiteLabel">客户服务部：</string>
+	<string name="supportWebsiteValue">http://www.freestylelibre.com</string>
+	<string name="consultInstructionsForUse">查阅使用说明</string>
+	<string name="productOfUsa">美国产品</string>
+	<string name="patentWebsiteLabel">专利网站：</string>
+	<string name="patentWebsiteValue">https://www.abbott.com/patents</string>
+	<string name="trademarkStatement">FreeStyle、Libre 和相关品牌标志为 Abbott Diabetes Care, Inc. 在各个司法管辖区的商标。</string>
+	<string name="copyrightStatement">©2018 Abbott</string>
+	<string name="osVersion">Android OS 版本：</string>
+	<string name="sensorNotPresent">无激活的传感器</string>
+	<string name="softwareVersion">软件版本：</string>
+
+	<!-- Notifications -->
+	<string name="alarmExpired">闹钟失效</string>
+	<string name="timerExpired">定时器失效</string>
+
+	<string name="sensorActivated">传感器已启动</string>
+	<string name="sensorReady">传感器准备就绪</string>
+	<string name="sensorReadyContent">传感器准备就绪</string>
+	<string name="sensorExpired">传感器已失效</string>
+	<string name="sensorExpiredContent">请启动一个新的传感器检测葡萄糖</string>
+	<string name="sensorEndingSoon">传感器即将失效</string>
+
+	<!-- Data Upload -->
+	<string name="uploadFailedTitle">上传失败</string>
+	<string name="uploadFailedNoConnectivityContent">无连接</string>
+	<string name="uploadFailedInvalidToken">验证失败。单击以登录。</string>
+	<string name="uploadFailedOther">发生错误。单击重试</string>
+	<string name="uploadingDataTitle">正在上传辅理善瞬感宝数据</string>
+	<string name="uploadingDataContent">正在发送数据</string>
+	<string name="serving_size_in_grams">1 份食物 = %.1f 克</string>
+	<string name="acceptLanguageHeader">zh-CN, zh;q=0.8</string>
+	<string name="appLocale">zh-CN</string>
+
+	<string name="reportHeaderDayOnlyFormat">d \'日\'</string>
+	<string name="reportHeaderFullDateFormat">yyyy \'年\' MMMM d \'日\'</string>
+	<string name="reportHeaderShortMonthFormat">MMM d \'日\'</string>
+	<string name="reportHeaderShortMonthFullFormat">yyyy \'年\' MMM d \'日\'</string>
+	<string name="reportHeaderDateRangeFormat">%1$s - %2$s</string>
+	<string name="reportShareSubjectFormat">%1$s: %2$s</string>
+
+	<string name="nonActionableExplanationTitle">确认葡萄糖读数</string>
+	<string name="nonActionableExplanationMessage">在作出治疗决定前，请使用试纸确认您的葡萄糖读数。</string>
+
+	<!-- TTS Result -->
+	<string name="spokenLo">超出范围且低</string>
+	<string name="spokenHi">超出范围且高</string>
+	<string name="spokenMgDl">每分升毫克</string>
+	<string name="spokenMmolL">每升毫摩尔</string>
+	<string name="resultWithTrendNotDetermined">%1$s %2$s，趋势不可用</string>
+	<string name="resultWithTrendFallingQuickly">%1$s %2$s且迅速下降</string>
+	<string name="resultWithTrendFalling">%1$s %2$s且下降</string>
+	<string name="resultWithTrendStable">%1$s %2$s且缓慢变化</string>
+	<string name="resultWithTrendRising">%1$s %2$s且上升</string>
+	<string name="resultWithTrendRisingQuickly">%1$s %2$s且迅速上升</string>
+
+	<!-- Download Progress -->
+	<string name="progressDownloadingConfiguration">正在下载应用程序配置</string>
+	<string name="progressDownloadingUserGuide">正在下载用户手册</string>
+	<string name="insufficientSpaceMessage">您的智能手机空间不足。</string>
+
+
+	<!-- New strings added 25SEPT2017 -->
+
+	<string name="modalLookingForSensor">握住 iPhone 靠近传感器。</string>
+	<string name="modalSensorFound">扫描完成。</string>
+	<string name="settingsMenuTitle">设置</string>
+	<string name="genericOSVersion">OS 版本:</string>
+	<string name="editTime">编辑时间</string>
+	<string name="detail">详细信息</string>
+	<string name="helpItemTitleGlucoseHelp">葡萄糖读数</string>
+	<string name="glucoseHelp">葡萄糖读数</string>
+
+	<!-- Abbreviated time passed -->
+	<string name="mins_passed">%d 分钟前</string>
+	<string name="hours_passed">%d 小时前</string>
+
+	<string name="iosNotificationsDisabled">必须在“iOS 设置”中启用通知，才能接收提醒。</string>
+	<string name="glucoseWarningReminderPrompt">您是否想要设置提醒以检查您的葡萄糖？</string>
+	<string name="NFCReaderUsageDescription">辅理善瞬感宝使用 NFC 扫描辅理善瞬感传感器。</string>
+	<string name="NSPhotoLibraryAddUsageDescription">辅理善瞬感宝需要访问您的媒体库才能保存报告。在未获得您的允许的情况下，不会分享您的照片。</string>
+	<string name="deleteNote">删除备注</string>
+	<string name="deleteNoteConfirmation">您想要删除此备注吗？</string>
+
+	<!-- New strings with existing Android Counterparts -->
+
+	<string name="iosScanSensorTextStep1">请点击扫描按钮，开始扫描您的传感器。</string>
+	<string name="iosScanSensorTextStep2">握住您的 iPhone，使其顶部靠近传感器。</string>
+	<string name="iosScanSensorTextStep3">扫描传感器后，您的 iPhone 会震动并发出声音（如果已启用声音）。</string>
+	<string name="iosErrorVersionCheckFailed">需要更新此版本的辅理善瞬感宝。请查看 App Store 是否有最新的版本。</string>
+	<string name="iosReadyToScanDetail">您的传感器准备好使用。</string>
+	<string name="iosDefaultSensorErrorMsg">您的扫描没有成功。点击扫描按钮，再扫描一次。</string>
+	<string name="iosEnableNetworkTimeTitle">更新日期与时间。</string>
+	<string name="iosEnableNetworkTime">您的日期与时间必须设置为自动更新，才能使用辅理善瞬感宝。前往设置&gt; 通用&gt; 日期与时间，并启用“自动设置”。</string>
+
+	<!-- New string added per Ashwin Kumar's request 2017-08-30-->
+	<string name="iosCheckGlucoseWithPhone">您可以使用 iPhone 檢查您的葡萄糖。</string>
+	<string name="retry">重试</string>
+
+	<!-- New strings for US changes 2017-10-31 -->
+	<string name="sensorUserPrompt">输入将要佩戴传感器用户的个人信息。</string>
+	<string name="welcome">欢迎！</string>
+	<string name="welcomeDetail">请花些时间来学习如何理解本应用程序中的葡萄糖读数。</string>
+	<string name="backgroundGlucoseColorsTitle">葡萄糖背景颜色</string>
+	<string name="backgroundGlucoseColorsDetail">您当前的葡萄糖值决定了背景显示的颜色。</string>
+	<string name="glucoseHighAbove240Mgdl">高葡萄糖（高于 240 mg/dL）</string>
+	<string name="glucoseBetweenTarget240Mgdl">高于目标范围但低于240 mg/dL </string>
+	<string name="glucoseTargetRange">葡萄糖值处于目标范围内</string>
+	<string name="glucoseBetweenTarget70Mgdl">低于目标范围但高于70 mg/dL </string>
+	<string name="glucoseLowBelow70Mgdl">低葡萄糖（低于 70 mg/dL）</string>
+	<string name="glucoseHighAbove240Mmol">高葡萄糖（高于 13.3 mmol/L）</string>
+	<string name="glucoseBetweenTarget240Mmol">高于目标范围但低于13.3 mmol/L </string>
+	<string name="glucoseBetweenTarget70Mmol">低于目标范围但高于3.9 mmol/L </string>
+	<string name="glucoseLowBelow70Mmol">低葡萄糖（低于 3.9 mmol/L）</string>
+	<string name="treatmentDecisions">治疗决定</string>
+	<string name="treatmentDecisionsSymbol">如果您看到这个符号，在做治疗决定前请先做一次血糖测试。</string>
+	<string name="treatmentDecisionsTest">如果传感器葡萄糖读数与您的感觉不符，请进行血糖测试。</string>
+	<string name="checkBloodGlucoseTitle">检查血糖</string>
+	<string name="checkBloodGlucoseMessage">做治疗决定前请先进行一次血糖测试。</string>
+	<string name="highGlucoseCheckBloodGlucose">高葡萄糖可能会带来危险。做治疗决定前请先进行一次血糖测试。请考虑检查您的血酮。</string>
+	<string name="lowGlucoseCheckBloodGlucose">低葡萄糖可能会带来危险。做治疗决定前请先进行一次血糖测试。</string>
+	<string name="reminder">提醒</string>
+	<string name="safetyInformation">安全信息</string>
+	<string name="labeling">标签</string>
+	<string name="userGuides">用户手册</string>
+	<string name="quickStartGuide">快速入门指南</string>
+	<string name="quickReferenceGuide">快速参考指南</string>
+	<string name="myGlucoseExplanationUpdate">成功扫描传感器后，屏幕将显示您的葡萄糖读数。您可以看到（1）当前葡萄糖值，（2）葡萄糖变化趋势箭头，（3）葡萄糖图谱，和（4）其他葡萄糖消息。</string>
+	<string name="sensorPlacementInstruction">传感器只能敷贴在上臂背侧。</string>
+	<string name="sensorReadyAt">传感器将在以下时间准备就绪：</string>
+	<string name="formattedTimeRemaining">（%1$s剩余）</string>
+	<string name="sensorStartedByOtherDevice">此传感器已被其他设备启动。</string>
+	<string name="sensorLatejoinExplanation">为了使传感器能与此智能手机配合使用，您必须在传感器的启动时间内使用此智能手机扫描传感器。</string>
+	<string name="androidScanInstruction1">握住您的智能手机，使其背面靠近传感器。</string>
+	<string name="androidScanInstruction2">等待直至听到两声铃声或感到两次振动。</string>
+	<string name="bugFixesTitle">错误修复</string>
+	<string name="bugFixesDetail">错误修复和性能改进</string>
+	<string name="performanceImprovements">性能改进</string>
+	<string name="sensorChangeExplanation">启动新的传感器将使您当前使用的传感器失效。</string>
+	<string name="useNewSensorPrompt">您希望开始使用新的传感器？</string>
+	<string name="earlySensorActivationPrompt">您希望它作为您的下一个传感器？</string>
+	<string name="changeSensorPrompt">您希望开始使用此传感器？</string>
+	<string name="replaceExistingSensor">这将取代最近启动的传感器。</string>
+	<string name="earlyActivationExistingEndsSoon">您可以继续使用当前的传感器直到它失效。</string>
+	<string name="earlyActivationEndsExisting">您可以继续使用当前的传感器直到新的传感器准备就绪。</string>
+	<string name="scanOtherSensor">扫描其他传感器以检测葡萄糖。</string>
+	<string name="sensorNotWorking">您的传感器无法正常工作。</string>
+	<string name="currentSensorEndsAt">当前传感器失效的时间：</string>
+	<string name="newSensorReadyAt">新传感器准备就绪的时间：</string>
+	<string name="sensorAlreadyStarted">此传感器已启动。</string>
+	<string name="earlySensorStartupTimeRemaining">无法获取葡萄糖读数，请在 %1$s 后再次尝试扫描。</string>
+	<string name="glucoseReadingUnavailable">无法获取葡萄糖读数，</string>
+	<string name="scanAgainIn">请在 %1$s 后再次尝试扫描。</string>
+	<string name="softwareReleaseVersion">软件发布版本：</string>
+	<string name="softwareFullVersion">软件完整版本：</string>
+</resources>

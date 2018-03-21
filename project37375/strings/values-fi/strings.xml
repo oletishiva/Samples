@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2015 Airstrip - All Rights Reserved. -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<!-- Plurals -->
+	<plurals name="insulinUnits">
+		<item quantity="one">%1$s yksikkö</item>
+		<item quantity="other">%1$s yksikköä</item>
+	</plurals>
+	<plurals name="days">
+		<item quantity="one">1 päivä</item>
+		<item quantity="other">%1$d päivää</item>
+	</plurals>
+	<plurals name="hours">
+		<item quantity="one">1 tunti</item>
+		<item quantity="other">%1$d tuntia</item>
+	</plurals>
+	<plurals name="minutes">
+		<item quantity="one">1 minuutti</item>
+		<item quantity="other">%1$d minuuttia</item>
+	</plurals>
+	<!-- Phrase describing a time duration in seconds using secs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationSecs">
+		<item quantity="one">1 s</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> s</item>
+	</plurals>
+	<!-- Phrase describing a time duration in minutes using mins abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationMins">
+		<item quantity="one">1 min</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> min</item>
+	</plurals>
+	<!-- Phrase describing a time duration in hours using hrs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationHrs">
+		<item quantity="one">1 t</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> t</item>
+	</plurals>
+	<plurals name="sensorExpiresInDays">
+		<item quantity="one">Vaihda sensori 1 vrk:n sisällä</item>
+		<item quantity="other">Vaihda sensori <xliff:g id="count">%d</xliff:g> päivän sisällä</item>
+	</plurals>
+	<plurals name="sensorExpiresInHours">
+		<item quantity="one">Vaihda sensori 1 tunnin sisällä</item>
+		<item quantity="other">Vaihda sensori <xliff:g id="count">%d</xliff:g> tunnin sisällä</item>
+	</plurals>
+	<plurals name="sensorExpiresInMins">
+		<item quantity="one">Vaihda sensori 1 minuutin sisällä</item>
+		<item quantity="other">Vaihda sensori <xliff:g id="count">%d</xliff:g> minuutin sisällä</item>
+	</plurals>
+	<plurals name="sensorReadyInMins">
+		<item quantity="one">Sensori valmis 1 minuutin kuluessa</item>
+		<item quantity="other">Sensori valmis <xliff:g id="count">%d</xliff:g> minuutin kuluessa</item>
+	</plurals>
+
+	<!-- common/generic words, phrases, symbols, and abbreviations -->
+	<string name="deciLiter">dL</string>
+	<string name="gramsSymbol">g</string>
+	<string name="liter">L</string>
+	<string name="mgdl">mg/dL</string>
+	<string name="milligrams">mg</string>
+	<string name="millimole">mmol</string>
+	<string name="mmol">mmol/L</string>
+	<string name="percentSign">\u0025</string>
+	<string name="servingsSymbol">ann.</string>
+	<string name="accept">Hyväksy</string>
+	<string name="account">Tilin asetukset</string>
+	<string name="all">Kaikki</string>
+	<string name="back">Takaisin</string>
+	<string name="average">Keskiarvo</string>
+	<string name="delete">Poista</string>
+	<string name="cancel">Peruuta</string>
+	<string name="durationHourMinuteConcatenate">%1$s %2$s</string>
+	<string name="comments">Kommentit</string>
+	<string name="done">Valmis</string>
+	<string name="email">Sähköposti</string>
+	<string name="friday">Perjantai</string>
+	<string name="grams">grammaa</string>
+	<string name="gramsOfCarbs">g HH</string>
+	<string name="units">yksikköä</string>
+	<string name="help">Ohje</string>
+	<string name="home">Koti</string>
+	<string name="insulinDose">Insuliiniannos</string>
+	<string name="loading">Ladataan</string>
+	<string name="logbook">Lokikirja</string>
+	<string name="monday">Maanantai</string>
+	<string name="next">Seuraava</string>
+	<string name="no">Ei</string>
+	<string name="note">Huomautus</string>
+	<string name="ok">OK</string>
+	<string name="password">Salasana</string>
+	<string name="reminders">Muistutukset</string>
+	<string name="reject">Hylkää</string>
+	<string name="reports">Raportit</string>
+	<string name="saturday">Lauantai</string>
+	<string name="save">Tallenna</string>
+	<string name="sending">Lähetetään</string>
+	<string name="servings">ruoka-annosta</string>
+	<string name="servingsOfCarbs">HH annosta</string>
+	<string name="settings">Sovelluksen asetukset</string>
+	<string name="share">Jaa</string>
+	<string name="start">Aloita</string>
+	<string name="submit">Lähetä</string>
+	<string name="sunday">Sunnuntai</string>
+	<string name="thursday">Torstai</string>
+	<string name="tuesday">Tiistai</string>
+	<string name="wednesday">Keskiviikko</string>
+	<string name="yes">Kyllä</string>
+	<string name="days7">7 päivää</string>
+	<string name="days14">14 päivää</string>
+	<string name="days30">30 päivää</string>
+	<string name="days90">90 päivää</string>
+	<string name="eventLog">Tapahtumaloki</string>
+	<string name="eventLogEmptyMessage">Ei tapahtumia</string>
+
+	<string name="minorFirstName">Alaikäisen etunimi</string>
+	<string name="minorLastName">Alaikäisen sukunimi</string>
+	<string name="parentFirstName">@string/parentGuardianFirstName</string>
+	<string name="parentLastName">@string/parentGuardianLastName</string>
+	<string name="lastName">Sukunimi</string>
+	<string name="daily_graph">Vuorokausikuvaaja</string>
+	<string name="daily_patterns">Vuorokausikatsaus</string>
+	<string name="estimated_a1c">Arvioitu A1c</string>
+	<string name="firstName">Etunimi</string>
+	<string name="noResults">(ei tuloksia)</string>
+	<string name="signIn">Kirjaudu sisään</string>
+	<string name="signingIn">Kirjaudutaan sisään</string>
+	<string name="scanSensor">Skannaa sensori</string>
+	<string name="time_in_target">Aika tavoitteessa</string>
+	<string name="errorMsgUnexpected">Odottamaton sovellusvirhe.</string>
+	<string name="error_nfc_unsupported">NFC-toimintoa ei tueta</string>
+	<string name="error_nfc_disabled">NFC ei käytössä</string>
+	<string name="error_networktime_disabled">Automaattinen pvm. ja aika ei käytössä</string>
+	<string name="errorOtherNfcInstalled">Havaittiin toinen NFC-toimintoa käyttävä sovellus. Jotta varmistat, että FreeStyle LibreLink voi lukea sensoriasi, FreeStyle LibreLink täytyy käynnistää aina ennen skannausta. Mutta jos poistat toisen NFC-sovelluksen asennuksen, sensorin skannauksen pitäisi onnistua aina, kun älypuhelin ei ole lukittuna.</string>
+	<string name="loadingChartDataText">Tietoja ladataan</string>
+	<string name="chartErrorMessage">Virhe tietoja ladattaessa</string>
+	<string name="timeZoneChangeMessage">Aikavyöhykkeen muutos tästä %1$s\u00A0tähän\u00A0%2$s &lt;b&gt;(%3$s)&lt;/b&gt;</string>
+
+	<!-- Countries -->
+	<string name="countryName_AE">Arabiemiirikunnat</string>
+	<string name="countryName_AG">Antigua ja Barbuda</string>
+	<string name="countryName_AR">Argentiina</string>
+	<string name="countryName_AT">Itävalta</string>
+	<string name="countryName_AU">Australia</string>
+	<string name="countryName_AZ">Azerbaidzan</string>
+	<string name="countryName_BE">Belgia</string>
+	<string name="countryName_BH">Bahrain</string>
+	<string name="countryName_BR">Brasilia</string>
+	<string name="countryName_BS">Bahama</string>
+	<string name="countryName_BW">Botswana</string>
+	<string name="countryName_BY">Valko-Venäjä</string>
+	<string name="countryName_BZ">Belize</string>
+	<string name="countryName_CA">Kanada</string>
+	<string name="countryName_CH">Sveitsi</string>
+	<string name="countryName_CL">Chile</string>
+	<string name="countryName_CN">Kiina</string>
+	<string name="countryName_CO">Kolumbia</string>
+	<string name="countryName_CR">Costa Rica</string>
+	<string name="countryName_CY">Kypros</string>
+	<string name="countryName_DE">Saksa</string>
+	<string name="countryName_DK">Tanska</string>
+	<string name="countryName_DO">Dominikaaninen tasavalta</string>
+	<string name="countryName_DZ">Algeria</string>
+	<string name="countryName_EC">Ecuador</string>
+	<string name="countryName_ES">Espanja</string>
+	<string name="countryName_FI">Suomi</string>
+	<string name="countryName_FR">Ranska</string>
+	<string name="countryName_GB">Iso-Britannia</string>
+	<string name="countryName_GR">Kreikka</string>
+	<string name="countryName_HK">Hongkong</string>
+	<string name="countryName_IE">Irlanti</string>
+	<string name="countryName_IL">Israel</string>
+	<string name="countryName_IS">Islanti</string>
+	<string name="countryName_IT">Italia</string>
+	<string name="countryName_JO">Jordania</string>
+	<string name="countryName_JP">Japani</string>
+	<string name="countryName_KR">Korean tasavalta</string>
+	<string name="countryName_KW">Kuwait</string>
+	<string name="countryName_KZ">Kazakstan</string>
+	<string name="countryName_LB">Libanon</string>
+	<string name="countryName_LU">Luxemburg</string>
+	<string name="countryName_MT">Malta</string>
+	<string name="countryName_MX">Meksiko</string>
+	<string name="countryName_MY">Malesia</string>
+	<string name="countryName_NL">Alankomaat</string>
+	<string name="countryName_NO">Norja</string>
+	<string name="countryName_NZ">Uusi-Seelanti</string>
+	<string name="countryName_OM">Oman</string>
+	<string name="countryName_PA">Panama</string>
+	<string name="countryName_PE">Peru</string>
+	<string name="countryName_PL">Puola</string>
+	<string name="countryName_PT">Portugali</string>
+	<string name="countryName_QA">Qatar</string>
+	<string name="countryName_RU">Venäjä</string>
+	<string name="countryName_SA">Saudi-Arabia</string>
+	<string name="countryName_SE">Ruotsi</string>
+	<string name="countryName_SG">Singapore</string>
+	<string name="countryName_TH">Thaimaa</string>
+	<string name="countryName_TR">Turkki</string>
+	<string name="countryName_TT">Trinidad ja Tobago</string>
+	<string name="countryName_TW">Taiwan</string>
+	<string name="countryName_US">Yhdysvallat</string>
+	<string name="countryName_UY">Uruguay</string>
+	<string name="countryName_VE">Venezuela</string>
+	<string name="countryName_ZA">Etelä-Afrikka</string>
+	<string name="countryName_ZW">Zimbabwe</string>
+
+	<!-- License Check -->
+	<string name="librelinkLicenseCheck">FreeStyle LibreLink -käyttölupatarkistus</string>
+	<string name="licenseCheckFailed">Asenna tämä sovellus Google Playstä.</string>
+
+	<!-- Update Version Check -->
+	<string name="librelink_upgrade_check">FreeStyle LibreLink -päivitystarkistus</string>
+	<string name="checkingVersion">Versiota tarkistetaan</string>
+	<string name="errorVersionCheckFailed">Tämä FreeStyle LibreLinkin versio on päivitettävä. Etsi viimeisin versio Google Playn avulla.</string>
+
+	<!-- App Tour -->
+	<string name="checkGlucoseWithPhone">Voit tarkastaa glukoosin älypuhelimen avulla.</string>
+	<string name="instantAccess">Pääset nopeasti glukoositietoihisi.</string>
+	<string name="actionableInsights">Saat tarkemman yleiskuvan, jonka perusteella voit tehdä päätöksiä.</string>
+	<string name="shareGlucoseInformation">Voit jakaa glukoositietosi hoitohenkilökunnalle ja läheisillesi.</string>
+
+	<!-- Account Registration/Sign In -->
+	<string name="changeUserMessage">Kun kirjaudut tilillesi, tässä laitteessa mahdollisesti olevat edellisen käyttäjän tiedot poistetaan.\n\nHaluatko jatkaa?</string>
+	<string name="changeDeviceMessage">Liitä tämä älypuhelin aiempaan LibreView-tiliisi napauttamalla OK. Voit jatkaa aiemmalla älypuhelimellasi aloitetun sensorin lukemista.\n\nHuomaa: Kun napautat OK, aiempi älypuhelimesi kirjautuu ulos tililtä.</string>
+	<string name="registeringDevice">Älypuhelinta rekisteröidään</string>
+	<string name="firstNameLabel">@string/firstName</string>
+	<string name="lastNameLabel">@string/lastName</string>
+	<string name="emailLabel">@string/email</string>
+	<string name="dateOfBirthLabel">@string/dateOfBirth</string>
+	<string name="dateOfBirth">Syntymäaika</string>
+	<string name="passwordLabel">@string/password</string>
+	<string name="createPasswordLabel">@string/password</string>
+	<string name="changePassword">Tilin salasana</string>
+	<string name="newPasswordLabel">Uusi salasana</string>
+	<string name="currentPasswordLabel">Nykyinen salasana</string>
+	<string name="confirmPasswordLabel">Vahvista salasana</string>
+	<string name="sendingResetRequest">Lähetetään salasanan vaihtopyyntöä</string>
+	<string name="adultRegistrationTitle">Sisäänkirjautuminen tiliin</string>
+	<string name="minorRegistrationTitle">Vanh./huoltajan sis.kirj. tiliin</string>
+	<string name="signInLinkText">@string/signIn</string>
+	<string name="account_sign_in_title">@string/signIn</string>
+	<string name="alreadyHaveAccountPromptText">Onko sinulla jo LibreView-tili?</string>
+	<string name="invalidPasswordErrorMessage">Anna sopiva salasana. Salasanoissa täytyy olla 8\u201336 merkkiä ja vähintään 1 numero, 1 iso kirjain ja 1 pieni kirjain.</string>
+	<string tools:ignore="PluralsCandidate" name="tooYoungErrorMessage">Sinun on oltava vähintään %1$s vuotta vanha voidaksesi käyttää FreeStyle LibreLinkiä.</string>
+	<string name="tooYoungWarningMessage">Syntymäpäivää käytetään LibreView-tilin asettamiseen eikä sen määrittämiseen, voitko käyttää sovellusta. Katso ohjeita sovelluksen käyttöoppaasta ennen sovelluksen käyttämistä.</string>
+	<string name="forgotPasswordText">Unohtuiko salasana?</string>
+	<string name="createNewAccountText">Luo uusi tili</string>
+	<string name="existing_user_login_text">Tälle sähköpostiosoitteelle on jo olemassa tili. Anna sähköpostiosoite ja salasana.</string>
+	<string name="normal_user_login_text">Anna LibreView-tilin kirjautumistiedot.</string>
+	<string name="passwordMismatchErrorMessage">Salasanojen täytyy olla samat</string>
+	<string name="invalidEmailAddressErrorMessage">Anna sopiva sähköpostiosoite.</string>
+	<string name="passwordResetSent">Salasanan vaihtamista koskevat ohjeet on lähetetty sähköpostiosoitteeseesi.</string>
+	<string name="accountContactOptIn">Lähettäkää minulle tietoja Abbott Diabetes Care -ohjelmasta ja muista Abbottin tuotteista ja palveluista. (Voit peruuttaa tilauksen milloin tahansa.)</string>
+	<string name="passwordResetMessage">Anna tätä tiliä rekisteröitäessä käytetty sähköpostiosoite. Salasanan vaihtamista koskevat ohjeet lähetetään kyseiseen osoitteeseen.</string>
+	<string name="nonExistentUserErrorMessage">Antamallesi sähköpostiosoitteelle ei olemassa tiliä.</string>
+	<string name="invalidLoginErrorMessage">Sähköpostiosoite tai salasana on virheellinen. Yritä uudelleen.</string>
+	<string name="invalidProfileUpdatePassword">Salasana on virheellinen. Yritä uudelleen.</string>
+	<string name="invalidProfileDOB">Et voi vaihtaa tilisi tyyppiä aikuisesta alaikäiseen. Muokkaa syntymäaikaasi vastaavasti.</string>
+	<string name="invalidAppKeyErrorMessage">Palvelinyhteydessä tapahtui virhe. Sovellusavain ei kelpaa.</string>
+	<string name="invalidNetworkDomainErrorMessage">Palvelinyhteydessä tapahtui virhe. Verkkotunnus ei kelpaa.</string>
+	<string name="invalidRegistrationErrorMessage">Rekisteröintiä ei voitu tehdä virheellisten tietojen vuoksi.</string>
+	<string name="invalidAccountRegionErrorMessage">Sovelluksesi ja tilisi maaasetukset eivät täsmää toisiinsa. Luo uusi tili.</string>
+	<string name="accountRegisteringProgressMessage">Rekisteröidään</string>
+	<string name="accountUpdateProgressMessage">Lähetetään</string>
+	<string name="accountAlreadyRegisteredErrorMessage">Tämä sähköpostiosoite on jo liitetty LibreView-tiliin.\n\nSinun ei tarvitse luoda uutta tiliä. Kirjaudu vain sisään.</string>
+	<string name="professionalAccountAlreadyRegisteredErrorMessage">Tämä sähköpostiosoite on jo liitetty LibreView Professional -tiliin. Sinun täytyy käyttää eri sähköpostiosoitetta voidaksesi luoda tilin tämän sovelluksen käyttämiseksi.</string>
+	<string name="alreadyRegisteredSignInButtonText">@string/signIn</string>
+	<string name="enter_numera_data">Luo LibreView-tili, jota voit käyttää FreeStyle LibreLink -sovelluksen ja muiden yhteensopivien sovellusten kanssa.</string>
+	<string name="minorRegistrationHeader">Tämä käyttäjä on alaikäinen. Tämän ohjelmiston käyttö edellyttää, että vanhempi tai huoltaja täyttää tilitiedot.</string>
+	<string name="parentGuardianFirstName">Vanhemman / laillisen huoltajan etunimi</string>
+	<string name="parentGuardianLastName">Vanhemman / laillisen huoltajan sukunimi</string>
+	<string name="parentGuardianEmail">@string/email</string>
+	<string name="nameAndBirthDateHeader">Aloitetaan perustiedoista.</string>
+	<string name="nameAndBirthDateTitle">@string/createNewAccountText</string>
+	<string name="profileUpdateTopText">Jos muutat jotain alla olevaa tietoa, tilisi päivitetään.</string>
+	<string name="changePasswordTopText">Salasanoissa täytyy olla 8–36 merkkiä ja vähintään 1 numero, 1 iso kirjain ja 1 pieni kirjain.</string>
+	<string name="createAccountSubmitButtonText">Luo tili</string>
+	<string name="authenticationFailure">Todentaminen palvelimen kanssa epäonnistui. Kirjaudu sisään uudelleen.</string>
+	<string name="authenticationFailureLoginButton">Kirjaudu sisään</string>
+	<string name="reenterPassword">Anna salasanasi uudelleen.</string>
+	<string name="parentLoginText">Vanhemman/huoltajan sisäänkirjautuminen vaaditaan.</string>
+	<string name="parentLoginSubText">Anna tilin salasana jakamiseen pääsemiseksi.</string>
+
+	<!-- Side Navigation Drawer -->
+	<string name="navigation_drawer_username">%1$s %2$s</string>
+	<string name="navigation_drawer_daily_graph">@string/daily_graph</string>
+	<string name="navigation_drawer_estimated_a1c">@string/estimated_a1c</string>
+	<string name="navigation_drawer_average_glucose">Keskimääräinen glukoosi</string>
+	<string name="navigation_drawer_low_glucose">Matalan glukoosin tapahtumat</string>
+	<string name="navigation_drawer_sensor_usage">Sensorin käyttö</string>
+	<string name="navigation_drawer_daily_patterns">@string/daily_patterns</string>
+	<string name="navigation_drawer_time_in_target">@string/time_in_target</string>
+	<string name="navigation_drawer_sharedata">@string/share</string>
+
+	<!-- Home -->
+	<string name="applyNewSensor">Aseta uusi sensori</string>
+	<string name="scanNewSensor">Skannaa uusi sensori</string>
+	<string name="startNewSensor">Aseta ja skannaa uusi sensori</string>
+	<string name="sensorReadyIn">Sensori käytettävissä: %1$s</string>
+	<string name="readyToScanDetail">Sensorisi on valmiina käyttöön. Voit tarkastaa glukoosin pitämällä älypuhelimesi takaosaa sensoria vasten, kunnes kuulet kaksi äänimerkkiä.</string>
+	<string name="applyNewSensorDetail">Aseta uusi sensori.</string>
+	<string name="scanNewSensorDetail">Aloita sensori skannaamalla se.</string>
+	<string name="scanNewSensorDetailLateJoin">Jos haluat käyttää myös lukulaitetta, sillä täytyy skannata ensin.</string>
+	<string name="scanSensorDetail">Skannaa sensori.</string>
+	<string name="last24Hours">Edelliset 24 tuntia</string>
+	<string name="lastScan">Edellinen skannaus</string>
+	<string name="sensorIsReady">Valmiina skannaukseen</string>
+	<string name="sensorWarmingUp">Uuden sensorin aloitus käynnissä</string>
+	<string name="sensorHasEnded">Sensorisi on loppunut</string>
+	<string name="sensorEndsIn">Sensori loppuu: %1$s</string>
+	<string name="sensorLateJoinMessage">Voit nyt skannata sensorin tällä laitteella ja sensorin aloittamiseen käytetyllä laitteella.\n\nHuomaa: Voit varmistaa laitteen näytön raporttien täydet tiedot skannaamalla sensorin kyseisellä laitteella vähintään kerran 8 tunnin välein. Tietoja ja raportteja ei jaeta laitteiden välillä.</string>
+
+	<!-- Stats/Reports -->
+	<!-- Used for Germany to force 24 hour time on the chart axis -->
+	<bool name="force24HourTimes">false</bool>
+
+	<!-- Used to set the string format for graph axis unless 24 hour time is used -->
+	<string name="amTimeAxisFormat">h\'AM\'</string>
+	<string name="pmTimeAxisFormat">h\'PM\'</string>
+
+	<string name="mmolPerMolFormatter" tools:ignore="PluralsCandidate">( %d mmol/mol )</string>
+	<string name="sensor_usage_total_scans">Skannauksia yhteensä</string>
+	<string name="sensor_usage_day_average">Skannauskertoja päivässä</string>
+	<string name="sensor_usage_captured">% sensoritiedoista tallennettu</string>
+	<string name="days_of_data" tools:ignore="PluralsCandidate">Tiedot käytettävissä %1$d/%2$d päivältä</string>
+	<string name="a1cDaysOfData" tools:ignore="PluralsCandidate">Tiedot käsittävät %1$d/%2$d päivää</string>
+	<string name="no_sensor_data">Ei tarpeeksi sensoritietoja</string>
+	<string name="timeintarget_glucose_range">%1$s-%2$s</string>
+	<string name="timeintarget_glucose_less_than">&lt; %s</string>
+	<string name="timeintarget_glucose_greater_than">&gt; %s</string>
+	<string name="timeintarget_percent">%</string>
+	<string name="target">TAVOITE</string>
+	<string name="timeInTargetGlucoseRangeLabel">Tavoitealue: %s</string>
+	<string name="average_glucose_info_title">KESKIMÄÄRÄINEN GLUKOOSI</string>
+	<string name="average_glucose_info_msg">Keskimääräinen glukoosi antaa tiedot sensorisi glukoosilukemien keskiarvosta. Valitun ajanjakson kokonaiskeskiarvo näytetään kuvaajan alapuolella. Keskiarvo näytetään myös päivän eri ajanjaksoille. Glukoosin tavoitealueesi alapuolella tai yläpuolella olevat lukemat ovat keltaisia, oransseja tai punaisia. Alueen sisällä olevat lukemat ovat vihreitä.</string>
+	<string name="low_glucose_info_title">MATALAN GLUKOOSIN TAPAHTUMAT</string>
+	<string name="low_glucose_info_msg_mg">Matalan glukoosin tapahtumat antavat tietoa sensorisi mittaamien matalan glukoosin tapahtumien määrästä. Matalan glukoosin tapahtuma tallennetaan, kun sensorisi glukoosilukema on alle 70 mg/dL yli 15 minuutin ajan. Tapahtumien kokonaismäärä näytetään kuvaajan alla. Palkkikuvaaja näyttää matalan glukoosin tapahtumat päivän eri jaksoista.</string>
+	<string name="low_glucose_info_msg_mmol">Matalan glukoosin tapahtumat antavat tietoa sensorisi mittaamien matalan glukoosin tapahtumien määrästä. Matalan glukoosin tapahtuma tallennetaan, kun sensorisi glukoosilukema on alle 3,9 mmol/L yli 15 minuutin ajan. Tapahtumien kokonaismäärä näytetään kuvaajan alla. Palkkikuvaaja näyttää matalan glukoosin tapahtumat päivän eri jaksoista.</string>
+	<string name="a1c_info_title">ARVIOITU A1c</string>
+	<string name="a1c_info_msg">Arvioitu A1c-tasosi (kutsutaan myös nimellä HbA1c) perustuu käytettävissä oleviin sensorin glukoositietoihin edellisten 90 päivän ajalta. Mitä enemmän tietoja on käytettävissä, sitä tarkempi arvio on. Arvioitu taso ei ehkä kuitenkaan ole sama kuin laboratoriossa mitattu A1c.\n\nA1c-arviota voidaan käyttää merkkinä siitä, miten hyvin glukoositasosi ovat olleet hallinnassa ja sitä voidaan käyttää diabeteksen hoito-ohjelmasi seurantaan.</string>
+	<string name="daily_info_title">VUOROKAUSIKUVAAJA</string>
+	<string name="daily_info_msg">Vuorokausikuvaaja antaa kuvaajan sensorisi glukoosilukemista päivän mukaan.\n\nVoit nähdä aukkoja kuvaajassa niinä aikoina, jolloin et ole skannannut sensoria vähintään kerran 8 tunnin välein.\n\nJos havaitaan aikavyöhykkeen muutos, näytössä näkyy kellosymboli. Näissä tapauksissa kuvaajassa voi olla aukkoja tai glukoosilukemat voivat olla piilossa näkyviltä.</string>
+	<string name="sensor_usage_info_title">SENSORIN KÄYTTÖ</string>
+	<string name="sensor_usage_info_msg">Sensorin käyttö antaa tietoa siitä, kuinka usein skannaat sensoriasi. Tähän kuuluvat keskiarvo siitä, kuinka monta kertaa skannasit sensoriasi kunakin päivänä, mahdollisten skannauksistasi tallennettujen sensoritietojen prosenttiosuus sekä skannausten kokonaismäärä.</string>
+	<string name="time_in_target_info_title">AIKA TAVOITTEESSA</string>
+	<string name="time_in_target_info_msg">Aika tavoitteessa antaa kuvaajan, jossa näkyvät prosentteina aikatiedot, jolloin sensorisi glukoosilukemat olivat glukoosin tavoitealueen ylä- tai alapuolella tai sen sisällä.</string>
+	<string name="daily_average">Keskiarvo: %1$s %2$s</string>
+	<string name="total_events">Tapahtumia yhteensä: %1$d</string>
+	<string name="daily_patterns_info_title">VUOROKAUSIKATSAUS</string>
+	<string name="daily_patterns_info_msg">Vuorokausikatsaus antaa kuvaajan, jossa näkyvät sensorisi glukoosikatsaus ja -vaihtelu tyypillisenä vuorokautena. Paksu musta viiva on glukoosilukemiesi mediaani (keskipiste). Vaaleansininen varjostus edustaa sensorilukemiesi 10.–90. prosenttipisteen aluetta. Tummansininen varjostus edustaa 25.-75. prosenttipisteen aluetta.\n\nHuomaa: Vuorokausikatsaukseen tarvitaan vähintään 5 vuorokauden glukoositiedot.</string>
+
+	<!-- Scan Result -->
+	<string name="glucoseAboveRange">KORKEA GLUKOOSI\n(ALUEEN ULKOPUOLELLA)</string>
+	<string name="glucoseBelowRange">MATALA GLUKOOSI\n(ALUEEN ULKOPUOLELLA)</string>
+	<string name="glucoseGoingHigh">GLUKOOSI NOUSEMASSA</string>
+	<string name="glucoseGoingLow">GLUKOOSI LASKEMASSA</string>
+	<string name="glucoseHigh">KORKEA GLUKOOSI</string>
+	<string name="glucoseInRange">GLUKOOSI ALUEEN SISÄPUOLELLA</string>
+	<string name="glucoseLow">MATALA GLUKOOSI</string>
+	<string name="highGlucoseIsDangerous">Korkea glukoosi voi olla vaarallista. Tarkasta glukoosi uudelleen ja hoida hoitohenkilökunnan suositusten mukaisesti. Harkitse ketoaineiden tarkastamista.</string>
+	<string name="lowGlucoseIsDangerous">Matala glukoosi voi olla vaarallista. Tarkasta glukoosi uudelleen ja hoida hoitohenkilökunnan suositusten mukaisesti.</string>
+	<string name="yourGlucose">Oma glukoosi</string>
+	<string name="vrcFailedTitle">Tuloksen näyttövirhe</string>
+	<string name="vrcFailedText">Tulos: %s</string>
+	<string name="error_sensor_incompatible_title">Yhteensopimaton sensori</string>
+	<string name="error_sensor_incompatible_msg">Tätä sensoria ei voida käyttää FreeStyle LibreLinkin tämän version kanssa.</string>
+	<string name="error_sensor_terminated_title">Vaihda sensori</string>
+	<string name="error_sensor_terminated_msg">Sensorisi ei toimi. Poista sensori ja aloita uuden käyttö.</string>
+	<string name="error_sensor_removed_title">Vaihda sensori</string>
+	<string name="error_sensor_removed_msg">Sensorisi ei toimi. Poista sensori ja aloita uuden käyttö.</string>
+	<string name="error_sensor_expired_title">Sensori loppunut</string>
+	<string name="error_sensor_expired_msg">Aloita uusi sensori, jotta voit tarkastaa glukoosin.</string>
+	<string name="error_sensor_inwarmup_title">Sensorin aloitus käynnissä</string>
+	<string name="error_sensor_inwarmup_msg">Tämän sensorin käyttö on aloitettu, mutta se ei ole vielä valmis käyttöön.</string>
+	<string name="error_sensor_corrupt_title">Skannausvirhe</string>
+	<string name="error_sensor_corrupt_msg">Älypuhelin ei voinut skannata sensoria. Skannaa sensori uudelleen.</string>
+	<string name="error_sensor_transmission_title">Skannausvirhe</string>
+	<string name="error_sensor_transmission_msg">Älypuhelin ei voinut skannata sensoria. Skannaa sensori uudelleen. Varmista, että pidät älypuhelimesi takaosaa sensorin lähellä. Kun havaitset ensimmäisen merkkiäänen tai värinän, pidä älypuhelinta paikallaan, kunnes havaitset toisen merkkiäänen tai värinän.</string>
+	<string name="error_sensor_already_started_title">Sensori on jo käytössä</string>
+	<string name="error_sensor_already_started_msg">Juuri skannaamasi sensorin käyttö aloitettiin toisella laitteella, eikä sensoria voida käyttää.</string>
+	<string name="error_sensor_already_started_msg_llj">Tämän sensorin käyttö aloitettiin toisella laitteella. Jotta sensori toimisi tämän älypuhelimen kanssa, sinun täytyy käyttää tätä älypuhelinta sensorin skannaamiseen sensorin ensimmäisen tunnin aikana.</string>
+	<string name="error_sensor_temporary_problem_title">Sensorivirhe</string>
+	<string name="error_sensor_temporary_problem_msg">Glukoosilukema ei ole saatavilla. Yritä skannausta uudelleen 10 minuutin kuluttua.</string>
+	<string name="error_sensor_too_hot_title">Sensori liian kuuma</string>
+	<string name="error_sensor_too_hot_msg">Sensori on liian kuuma antaakseen glukoosilukemia. Yritä uudelleen muutaman minuutin kuluttua.</string>
+	<string name="error_sensor_too_cold_title">Sensori liian kylmä</string>
+	<string name="error_sensor_too_cold_msg">Sensori on liian kylmä antaakseen glukoosilukemia. Yritä uudelleen muutaman minuutin kuluttua.</string>
+	<string name="error_sensor_insertion_failure_title">Tarkista sensori</string>
+	<string name="error_sensor_insertion_failure_msg">Tarkista sensorisi. Jos sensori ei ole kunnolla kiinni ihollasi, poista sensori ja aloita uuden sensorin käyttö. Jos sensori on kunnolla kiinni, yritä aloittaa sensorin käyttö uudelleen.</string>
+	<string name="error_sensor_not_active_title">Uusi sensori havaittu</string>
+	<string name="error_sensor_not_active_msg">Uuden sensorin käytön aloittaminen lopettaa nyt käyttämäsi sensorin.\n\nHaluatko aloittaa uuden käyttämisen nyt?</string>
+
+	<!-- Add/Edit Note -->
+	<string name="addNote">Lisää huomautus</string>
+	<string name="editNote">Muuta huomautusta</string>
+	<string name="highIntensity">Suuri rasitus</string>
+	<string name="mediumIntensity">Kohtalainen rasitus</string>
+	<string name="lowIntensity">Pieni rasitus</string>
+	<string name="noExerciseTypeChosen">Valitse rasituksen aste</string>
+	<string name="food">Ruoka</string>
+	<string name="exercise">Liikunta</string>
+	<string name="longActingInsulin">Pitkävaikutteinen insuliini</string>
+	<string name="rapidActingInsulin">Nopeavaikutteinen insuliini</string>
+	<string name="meal">Ateria</string>
+	<string name="breakfast">Aamiainen</string>
+	<string name="lunch">Lounas</string>
+	<string name="snack">Välipala</string>
+	<string name="dinner">Päivällinen</string>
+	<string name="carbsGramsError">Arvon on oltava kokonaisluku väliltä %1$s–%2$s</string>
+	<string name="carbsServingsError">Arvon on oltava luvun 0,5 monikerta ja väliltä %1$s–%2$s</string>
+	<string name="insulinDoseError">Arvon on oltava luvun 0,1 monikerta ja väliltä 0,1–%1$d</string>
+
+	<!-- Manual BG -->
+	<string name="manualBgTitle">Veren glukoosiarvo</string>
+	<string name="manualBgExplanation">Anna tulos veren glukoosimittauksesta.</string>
+	<string name="manualBgError">Arvon on oltava kokonaisluku väliltä %1$s–%2$s</string>
+
+	<!-- Logbook -->
+	<string name="logbookDetail">Lokikirjatieto</string>
+	<string name="logbookListEmpty">Tälle päivämäärälle ei ole tietoja.</string>
+	<string name="logbookDetailCarbFormatDoseAndUnit">" (&lt;b&gt;%1$s%2$s&lt;/b&gt;)"</string>
+	<string name="logbookDetailInsulinFormatTypeAndDose">%1$s (&lt;b&gt;%2$s&lt;/b&gt;)</string>
+	<string name="logbookDetailSeparator">", "</string>
+	<string name="noteBalloonSeparator">&lt;br/&gt;</string>
+	<string name="logbookDetailExerciseType">@string/exercise</string>
+	<string name="logbookDetailExerciseFormatType">Liikunta%s</string>
+	<string name="logbookDetailExerciseFormatDuration">" (&lt;b&gt;%s&lt;/b&gt;)"</string>
+
+	<!-- Reminders -->
+	<string name="alarms">Hälytykset</string>
+	<string name="repeating">Toistetaan</string>
+	<string name="timers">Ajastimet</string>
+	<string name="addReminder">Lisää muistutus</string>
+	<string name="alarmName">Muistutuksen nimi</string>
+	<string name="checkGlucose">Tarkasta glukoosi</string>
+	<string name="myReminder">Oma muistutus</string>
+	<string name="nextReminderPrompt">Seuraava muistutus:\u0020</string>
+	<string name="nextAlarmPrompt">Seuraava muistutus: %1$s, %2$s</string>
+	<string name="noActiveReminders">Ei aktiivisia muistutuksia.</string>
+	<string name="noActiveRemindersAutoScanSensorEnabled">Ei aktiivisia muistutuksia. Skannaa sensori -ajastin nollautuu, kun skannaat uudelleen.</string>
+	<string name="remindMeToCheckAgain">Muistuta uudelleen glukoosin tarkistuksesta, aika:</string>
+	<string name="setReminder">Aseta</string>
+
+	<!-- Send Reports -->
+	<string name="sendChooserTitle">Lähetä</string>
+
+	<!-- Settings -->
+	<string name="unitOfMeasurementTitle">Mittayksikkö</string>
+	<string name="unitOfMeasurementTopText">Valitse mittayksikkö glukoosiasi varten. Kaikki glukoositiedot näytetään näitä yksiköitä käyttäen.</string>
+	<string name="unitOfMeasurementTopTextForSetup">Valitse mittayksikkö glukoosia varten. Kaikki glukoositiedot esitetään näitä yksikköjä käyttäen. ET voi muuttaa tätä myöhemmin.</string>
+	<string name="unitOfMeasureWarning">On ERITTÄIN tärkeää valita oikea mittayksikkö glukoosia varten. Väärä mittayksikkö voi johtaa glukoosiarvojesi väärään tulkintaan. Kysy neuvoa hoitohenkilökunnalta, jos et tiedä, mitä mittayksikköä sinun tulee käyttää.</string>
+	<string name="unitOfMeasurementFixedTopText">Glukoosin mittayksikkö asetetaan automaattisesti asuinmaasi perusteella.</string>
+	<string name="unitOfMeasurementFixedCountryText">Oma maasi:</string>
+	<string name="unitOfMeasurementFixedText">Mittayksikkösi on</string>
+	<string name="targetGlucoseRangeTitle">Glukoosin tavoitealue</string>
+	<string name="targetGlucoseRangeTopText">Glukoosin tavoitealue näytetään erilaisissa kuvaajissa. Tarkista asia hoitohenkilökunnalta, jos et tiedä sitä.</string>
+	<string name="targetGlucoseRangeTopTextForSetup">Glukoosin tavoitealue näytetään erilaisissa kuvaajissa ja sitä voidaan muuttaa asetuksista. Tarkista asia hoitohenkilökunnalta, jos et tiedä sitä.</string>
+	<string name="carbohydrateUnitsTitle">Hiilihydraattiyksiköt</string>
+	<string name="carbohydrateUnitsTopText">Hiilihydraatit voidaan lisätä joko grammoina tai ruoka-annoksina laskutavan mukaan. Valitse haluamasi hiilihydraattiyksikkö.</string>
+	<string name="carbohydrateUnitServingSizeMessage">Valitse haluamasi ruoka-annoskoko tai ota yhteys hoitohenkilökuntaan, jos et tiedä sitä.</string>
+	<string name="carbohydrateUnitsTopTextForSetup">@string/carbohydrateUnitsTopText</string>
+	<string name="scanSoundsTitle">Skannausäänet</string>
+	<string name="scanSoundsOsDefault">ääni ja värinä</string>
+	<string name="scanSoundsVibeOnly">pelkkä värinä</string>
+	<string name="scanSoundsTopText">Sensorin skannaaminen laukaisee värinän. Valitse haluaisitko myös kuulla äänen värinän lisäksi.</string>
+	<string name="scanSoundsTopTextForSetup">@string/scanSoundsTopText</string>
+	<string name="scanSoundsNote">Huomaathan:\nSkannauksen äänet käyttävät älypuhelimesi äänenvoimakkuuden asetuksia. Jos älypuhelimestasi on esimerkiksi äänenvoimakkuus hiljennetty, et kuule skannausääntäkään.</string>
+	<string name="textToSpeechTitle">Teksti puheeksi</string>
+	<string name="textToSpeechOn">päällä</string>
+	<string name="textToSpeechOff">pois</string>
+	<string name="textToSpeechTopText">Saat glukoosilukeman ääneen luettuna, jos käynnistät Teksti puheeksi -toiminnon.</string>
+	<string name="textToSpeechNote">Huomaathan:\nTeksti puheeksi -toiminto käyttää älypuhelimesi äänenvoimakkuuden asetuksia. Jos älypuhelimestasi on esimerkiksi äänenvoimakkuus hiljennetty, et kuule glukoosilukemaakaan ääneen luettuna.</string>
+	<string name="countryOfOriginTitle">Vahvista maa</string>
+	<string name="countryOfOriginTopText">Maatasi käytetään sovelluksen käyttöönoton aikana ja sen varmistamiseen, että tietosi tallennetaan oikein.</string>
+	<string name="countryOfOriginTopTextForSetup">@string/countryOfOriginTopText</string>
+	<string name="countryOfOriginExplanation">Jos tämä on oikein, napauta Seuraava.\n\nJos tämä on väärin, FreeStyle LibreLink -sovelluksen asennus on ehkä poistettava ja sinun on asennettava oman maasi versio. Jos sinulla on kysyttävää, ota yhteys asiakaspalveluun.</string>
+	<string name="targetGlucoseRangeUnitText">Arvot</string>
+	<string name="servingsWithGramsEquivalent" tools:ignore="PluralsCandidate">ruoka-annoksessa (1 ruoka-annos = %.1f grammaa)</string>
+	<string name="countryLabel">Asuinmaa</string>
+	<string name="countryLabelForSetup">Maaksesi on tunnistettu:</string>
+	<string name="defaultNetworkErrorMessage">Virhe palvelinyhteydessä</string>
+	<string name="serverNotFoundErrorMessage">Virhe palvelinyhteydessä. Palvelinta ei löydy.</string>
+	<string name="pageNotFoundErrorMessage">Virhe palvelinyhteydessä. Palvelimessa ei ole sisältöä.</string>
+	<string name="networkingErrorMessage">Palvelimen tietoyhteydessä tapahtui verkkovirhe.</string>
+	<string name="internalServerErrorMessage">Virhe palvelinyhteydessä. Tapahtui sisäinen palvelinvirhe.</string>
+	<string name="requestTimeoutErrorMessage">Virhe palvelinyhteydessä. Pyyntöaika kului loppuun.</string>
+	<string name="serviceUnavailableErrorMessage">Virhe palvelinyhteydessä. Palvelu ei ole käytettävissä.</string>
+	<string name="submitButtonText">@string/submit</string>
+	<string name="mgPerDeciliterRadioText"><b>mg/dL</b> (esimerkiksi 100 mg/dL)</string>
+	<string name="mmolPerLiterRadioText"><b>mmol/L</b> (esimerkiksi 5,6 mmol/L)</string>
+	<string name="target_range_separator">-</string>
+	<string name="glucoseRangeFormat">%1$s - %2$s %3$s</string>
+	<string name="settingsUnitOfMeasureConfirmationMessage">Vahvista, että haluat valita seuraavan mittayksikön:</string>
+	<string name="networkNotConnectedDefault">Älypuhelintasi ei ole nyt yhdistetty Internetiin. Tätä toimintoa ei voida tehdä, ennen kuin sinulla on yhteys Internetiin.</string>
+	<string name="networkNotConnectedSetup">Älypuhelintasi ei ole nyt yhdistetty Internetiin. Asetusta ei voida tehdä, ennen kuin sinulla on yhteys Internetiin.</string>
+	<string name="networkNotConnectedProfileUpdate">Älypuhelintasi ei ole nyt yhdistetty Internetiin. Tiliäsi ei voida muuttaa, ennen kuin sinulla on yhteys Internetiin.</string>
+	<string name="privacyNoticeAcceptanceStatement">Olen lukenut tietosuojailmoituksen ja hyväksyn sen.</string>
+	<string name="privacyNoticeTitle">Tietosuojailmoitus</string>
+	<string name="termsOfUseAcceptanceStatement">Olen lukenut käyttöehdot ja hyväksyn ne.</string>
+	<string name="termsOfUseTitle">Käyttöehdot</string>
+	<string name="nfcUnsupported">Jotta FreeStyle LibreLink voi skannata sensorisi, älypuhelimesi täytyy tukea NFC-toimintoa.</string>
+	<string name="turnOnNfcPrompt">Jotta FreeStyle LibreLink voi skannata sensorisi, NFC-toiminnon on oltava käytössä älypuhelimessasi. Haluatko ottaa sen käyttöön?</string>
+	<string name="enableNetworkTime">Jotta FreeStyle LibreLink voi skannata sensorisi, automaattinen päivämäärä ja aika -toiminnon on oltava käytössä älypuhelimessasi. Haluatko ottaa tämän toiminnon käyttöön?</string>
+	<string name="getStartedNow">Aloita nyt</string>
+
+	<!-- My Glucose Explanation -->
+	<string name="myGlucoseExplanationTitle">Oma glukoosi</string>
+	<string name="myGlucoseExplanationTopText">Tämä näyttö tulee näkyviin, kun skannaat sensorisi.</string>
+	<string name="myGlucoseExplanationResultCallouts">Glukoosi-näyttöruudussa on (1) nykyinen glukoosisi, (2) glukoosisi suuntanuoli ja (3) glukoosikuvaajasi.</string>
+
+	<!-- Trend Arrow Explanation -->
+	<string name="trendExplanationTitle">Glukoosin suuntanuoli</string>
+	<string name="trendExplanationTopText">Kun skannaat sensorin, nuoli osoittaa nykyisen glukoositrendisi.</string>
+	<string name="trendExplanationRisingQuickly">Nousee nopeasti</string>
+	<string name="trendExplanationRising">Nousee</string>
+	<string name="trendExplanationStable">Muuttuu hitaasti</string>
+	<string name="trendExplanationFalling">Laskee</string>
+	<string name="trendExplanationFallingQuickly">Laskee nopeasti</string>
+
+	<!-- Help -->
+	<string name="helpItemTitleApplySensor">Miten sensori asetetaan</string>
+	<string name="helpItemTitleScanSensor">Miten sensori skannataan</string>
+	<string name="helpItemTitleEventLog">@string/eventLog</string>
+	<string name="helpItemTitleUserGuide">Käyttäjän ohjekirja</string>
+
+	<!-- OneStep Log Upload -->
+	<string name="logUploadTitle">Lähetä vianmääritystiedot</string>
+	<string name="logUploadOptInDescription">Vianmääritystietojen lähettäminen auttaa asiakaspalvelua vastaamaan kysymyksiisi.</string>
+	<string name="logUploadOptInText1">Aiemmin hyväksymässäsi tietosuojailmoituksessa kerrotaan, mitä vianmääritystiedot sisältävät.</string>
+	<string name="logUploadViewPrivacyButtonLabel">Katso tietosuojailmoitusta</string>
+	<string name="logUploadOptInText2">Hyväksytkö, että vianmääritystiedot lähetetään?</string>
+	<string name="logUploadDecline">Kiellän</string>
+	<string name="logUploadAccept">Hyväksyn</string>
+	<string name="logUploadDescription">Anna asiakaspalvelun antama tapausnumero ja varmennuskoodi.</string>
+	<string name="logUploadCaseNumberLabel">Tapausnumero</string>
+	<string name="logUploadAccessCodeLabel">Varmennuskoodi</string>
+	<string name="logUploadSendButtonLabel">Lähetä</string>
+	<string name="logUploadErrorTypo">Virheellinen tapausnumero tai varmennuskoodi</string>
+	<string name="logUploadErrorUploadFailedTitle">Virhe vianmääritystietojen lähettämisessä</string>
+	<string name="logUploadErrorUploadFailedText">Napauta yrittääksesi uudelleen.</string>
+
+	<!-- Apply Sensor Tour -->
+	<string name="applySensorTitle">Sensorin asettaminen</string>
+	<string name="applySensorTitleStep1">VAIHE 1</string>
+	<string name="applySensorTextStep1">Valitse kohta käsivarren takaosasta.</string>
+	<string name="applySensorSubTextStep1">Huomaa: Vältä arpien, luomien, venytysjuovien, kyhmyjen ja insuliinipistosten kohtia. Vaihtele kohtaa sensorien välillä ihoärsytyksen välttämiseksi.</string>
+	<string name="applySensorTitleStep2">VAIHE 2</string>
+	<string name="applySensorTextStep2">Puhdista kohta alkoholipyyhkeellä. Anna kohdan kuivua ennen kuin jatkat.</string>
+	<string name="applySensorTitleStep3">VAIHE 3</string>
+	<string name="applySensorTextStep3">Vedä kansi kokonaan irti sensoripakkauksesta.</string>
+	<string name="applySensorTitleStep4">VAIHE 4</string>
+	<string name="applySensorTextStep4">Kierrä tulppa irti sensorin asettimesta.</string>
+	<string name="applySensorTitleStep5">VAIHE 5</string>
+	<string name="applySensorTextStep5">Kohdista sensorin asettimessa ja sensoripakkauksessa olevat tummat merkit toisiinsa. Paina sensorin asetinta voimakkaasti alaspäin kovalla pinnalla, kunnes asetin pysähtyy.</string>
+	<string name="applySensorTitleStep6">VAIHE 6</string>
+	<string name="applySensorTextStep6">Nosta sensorin asetin ulos sensoripakkauksesta.</string>
+	<string name="applySensorTitleStep7">VAIHE 7</string>
+	<string name="applySensorTextStep7">Sensorin asetin on valmis sensorin asettamista varten. Älä kosketa sensorin asettimen sisäpuolta tai aseta asetinta takaisin sensoripakkaukseen.</string>
+	<string name="applySensorTitleStep8">VAIHE 8</string>
+	<string name="applySensorTextStep8">Kohdista sensorin asetin valmisteltuun kohtaan. Aseta sensori painamalla voimakkaasti alaspäin.</string>
+	<string name="applySensorTitleStep9">VAIHE 9</string>
+	<string name="applySensorTextStep9">Vedä sensorin asetin varovasti pois kehostasi.</string>
+	<string name="applySensorTitleStep10">VAIHE 10</string>
+	<string name="applySensorTextStep10">Varmista, että sensori on kunnolla kiinni. Hävitä käytetty sensorin asetin ja sensoripakkaus paikallisten määräysten mukaisesti.</string>
+
+	<!-- Scan Sensor Tour -->
+	<string name="scanSensorTitle">Sensorin skannaaminen</string>
+	<string name="scanSensorTitleStep1">VAIHE 1</string>
+	<string name="scanSensorTextStep1"><![CDATA[Pidä älypuhelimen <b>takaosaa</b> sensoria <b>vasten</b>.]]></string>
+	<string name="scanSensorTitleStep2">VAIHE 2</string>
+	<string name="scanSensorTextStep2">Jos ääni on käytössä, älypuhelin antaa sarjan äänimerkkejä ja värinöitä skannatessaan sensoria. Älä siirrä älypuhelinta pois kohdasta, ennen kuin äänimerkit ja värinät ovat loppuneet.</string>
+	<string name="scanSensorTitleStep3">VAIHE 3</string>
+	<string name="scanSensorTextStep3">Kun älypuhelin on lähellä sensoria, älypuhelinta täytyy ehkä hiukan siirtää, jotta älypuhelimesi NFC-antenni paikannetaan.</string>
+
+	<!-- About -->
+	<string name="about">Tietoja</string>
+	<string name="appNameLabel">Nimi:</string>
+	<string name="appNameValue">FreeStyle LibreLink</string>
+	<string name="appPartOfSystem">Osa FreeStyle Libre Flash -glukoosin seurantajärjestelmää</string>
+	<string name="last3sensors">Edelliset 3 sensoria:</string>
+	<string name="sensorStatus">&#160;&#160;&#160;&#160;Tila: %1$s</string>
+	<string name="udi">UDI:</string>
+	<string name="registrationNumber">Rekisteröintinumero:</string>
+	<string name="productStandardNumber">Tuotteen yleisnumero:</string>
+	<string name="model">Älypuhelimen malli:</string>
+	<string name="appCountryLabel">Maa:</string>
+	<string name="supportWebsiteLabel">Asiakaspalvelu:</string>
+	<string name="supportWebsiteValue">http://www.freestylelibre.com</string>
+	<string name="consultInstructionsForUse">Perehdy käyttöohjeisiin</string>
+	<string name="productOfUsa">Tuotettu Yhdysvalloissa</string>
+	<string name="patentWebsiteLabel">Patenttien verkkosivusto:</string>
+	<string name="patentWebsiteValue">https://www.abbott.com/patents</string>
+	<string name="trademarkStatement">FreeStyle, Libre ja niihin liittyvät tuotemerkit ovat Abbott Diabetes Care, Inc. -yhtiön tavaramerkkejä eri lainkäyttöalueilla.</string>
+	<string name="copyrightStatement">©2018 Abbott</string>
+	<string name="osVersion">Android OS -versio:</string>
+	<string name="sensorNotPresent">Ei akt. sensoria</string>
+	<string name="softwareVersion">Ohjelmistoversio:</string>
+
+	<!-- Notifications -->
+	<string name="alarmExpired">Hälytys vanhentunut</string>
+	<string name="timerExpired">Ajastinaika kulunut</string>
+
+	<string name="sensorActivated">Sensori aloitettu</string>
+	<string name="sensorReady">Sensori valmiina</string>
+	<string name="sensorReadyContent">Sensorisi on valmiina käyttöön</string>
+	<string name="sensorExpired">Sensori loppunut</string>
+	<string name="sensorExpiredContent">Aloita uusi sensori tarkastaaksesi glukoosin</string>
+	<string name="sensorEndingSoon">Sensori loppuu pian</string>
+
+	<!-- Data Upload -->
+	<string name="uploadFailedTitle">Lataus epäonnistui</string>
+	<string name="uploadFailedNoConnectivityContent">Ei yhteyttä</string>
+	<string name="uploadFailedInvalidToken">Todennus epäonnistui. Napsauta kirjautuaksesi sisään.</string>
+	<string name="uploadFailedOther">Tapahtui virhe. Napsauta yrittääksesi uudelleen</string>
+	<string name="uploadingDataTitle">FreeStyle LibreLink -tietoja ladataan</string>
+	<string name="uploadingDataContent">Tietoja lähetetään</string>
+	<string name="serving_size_in_grams">1 ruoka-annos = %.1f grammaa</string>
+	<string name="acceptLanguageHeader">fi-FI, fi;q=0.8</string>
+	<string name="appLocale">fi-FI</string>
+
+	<string name="reportHeaderDayOnlyFormat">d</string>
+	<string name="reportHeaderFullDateFormat">d \'.\' MMMM yyyy</string>
+	<string name="reportHeaderShortMonthFormat">d \'.\' MMM</string>
+	<string name="reportHeaderShortMonthFullFormat">d \'.\' MMM yyyy</string>
+	<string name="reportHeaderDateRangeFormat">%1$s - %2$s</string>
+	<string name="reportShareSubjectFormat">%1$s: %2$s</string>
+
+	<string name="nonActionableExplanationTitle">Varmista glukoosilukema</string>
+	<string name="nonActionableExplanationMessage">Varmista glukoosilukema mittausliuskalla ennen hoitopäätösten tekemistä.</string>
+
+	<!-- TTS Result -->
+	<string name="spokenLo">tavoitealueen ulkopuolella ja matala</string>
+	<string name="spokenHi">tavoitealueen ulkopuolella ja korkea</string>
+	<string name="spokenMgDl">milligrammaa desilitrassa</string>
+	<string name="spokenMmolL">millimoolia litrassa</string>
+	<string name="resultWithTrendNotDetermined">%1$s %2$s ja suuntaa ei saatavilla</string>
+	<string name="resultWithTrendFallingQuickly">%1$s %2$s ja laskee nopeasti</string>
+	<string name="resultWithTrendFalling">%1$s %2$s ja laskee</string>
+	<string name="resultWithTrendStable">%1$s %2$s ja muuttuu hitaasti</string>
+	<string name="resultWithTrendRising">%1$s %2$s ja nousee</string>
+	<string name="resultWithTrendRisingQuickly">%1$s %2$s ja nousee nopeasti</string>
+
+	<!-- Download Progress -->
+	<string name="progressDownloadingConfiguration">Ladataan sovellusmääritystä</string>
+	<string name="progressDownloadingUserGuide">Ladataan käyttöopasta</string>
+	<string name="insufficientSpaceMessage">Älypuhelimessasi ei ole tarpeeksi tilaa.</string>
+
+
+	<!-- New strings added 25SEPT2017 -->
+
+	<string name="modalLookingForSensor">Pidä iPhone sensorin lähellä</string>
+	<string name="modalSensorFound">Skannaus tehty</string>
+	<string name="settingsMenuTitle">Asetukset</string>
+	<string name="genericOSVersion">OS-versio:</string>
+	<string name="editTime">Muokkaa aikaa</string>
+	<string name="detail">Tarkempi tieto</string>
+	<string name="helpItemTitleGlucoseHelp">Glukoosilukemat</string>
+	<string name="glucoseHelp">Glukoosilukemat</string>
+
+	<!-- Abbreviated time passed -->
+	<string name="mins_passed">%d kk sitten</string>
+	<string name="hours_passed">%d h sitten</string>
+
+	<string name="iosNotificationsDisabled">Jos haluat saada muistutuksia, ota iOS-asetuksissa käyttöön ilmoitukset.</string>
+	<string name="glucoseWarningReminderPrompt">Haluatko asettaa muistutuksen glukoosin tarkistamiseksi?</string>
+	<string name="NFCReaderUsageDescription">FreeStyle LibreLink käyttää NFC:tä FreeStyle Libre -sensoreiden skannauksessa.</string>
+	<string name="NSPhotoLibraryAddUsageDescription">FreeStyle LibreLinkin on saatava oikeus käyttää mediakirjastoasi raporttien tallentamiseksi. Kuviasi ei jaeta ilman sinun suostumustasi.</string>
+	<string name="deleteNote">Poista huomautus</string>
+	<string name="deleteNoteConfirmation">Haluatko poistaa tämän huomautuksen?</string>
+
+	<!-- New strings with existing Android Counterparts -->
+
+	<string name="iosScanSensorTextStep1">Napauta skannauspainiketta ennen sensorin skannaamista.</string>
+	<string name="iosScanSensorTextStep2">Pidä iPhonen yläosa sensorin lähellä.</string>
+	<string name="iosScanSensorTextStep3">iPhone alkaa väristä ja antaa äänimerkin (jos äänet ovat käytössä) sensorin skannauksen jälkeen.</string>
+	<string name="iosErrorVersionCheckFailed">Tämä FreeStyle LibreLinkin versio on päivitettävä. Tarkasta App Storesta viimeisin versio.</string>
+	<string name="iosReadyToScanDetail">Sensori on valmiina käyttöön.</string>
+	<string name="iosDefaultSensorErrorMsg">Skannaus ei onnistunut. Napauta skannauspainiketta ja skannaa uudestaan.</string>
+	<string name="iosEnableNetworkTimeTitle">Päivitä päivämäärä ja aika</string>
+	<string name="iosEnableNetworkTime">Päivämäärä- ja aika-asetukset täytyy päivittää automaattisesti FreeStyle LibreLinkin käyttämiseksi. Avaa Asetukset &gt; Yleiset &gt; Päivä ja aika ja ota käyttöön Aseta automaattisesti.</string>
+
+	<!-- New string added per Ashwin Kumar's request 2017-08-30-->
+	<string name="iosCheckGlucoseWithPhone">Voit tarkastaa glukoosin iPhonesi avulla.</string>
+	<string name="retry">Yritä uudelleen</string>
+
+	<!-- New strings for US changes 2017-10-31 -->
+	<string name="sensorUserPrompt">Anna tiedot henkilöstä, joka tulee käyttämään sensoria. </string>
+	<string name="welcome">Tervetuloa!</string>
+	<string name="welcomeDetail">Käytä muutama hetki tutustumiseen, jotta ymmärrät glukoosilukemasi tällä sovelluksella.</string>
+	<string name="backgroundGlucoseColorsTitle">Glukoosin taustaväri</string>
+	<string name="backgroundGlucoseColorsDetail">Nykyinen glukoosisi määrittää, mikä väri taustalla näkyy.</string>
+	<string name="glucoseHighAbove240Mgdl">Korkea glukoosi (yli 240mg/dL)</string>
+	<string name="glucoseBetweenTarget240Mgdl">Tavoitealueen ja arvon 240 mg/dL välissä</string>
+	<string name="glucoseTargetRange">Glukoosi on tavoitealueella</string>
+	<string name="glucoseBetweenTarget70Mgdl">Tavoitealueen ja arvon 70 mg/dL välissä</string>
+	<string name="glucoseLowBelow70Mgdl">Matala glukoosi (alle 70 mg/dL)</string>
+	<string name="glucoseHighAbove240Mmol">Korkea glukoosi (yli 13,3 mmol/L)</string>
+	<string name="glucoseBetweenTarget240Mmol">Tavoitealueen ja arvon 13,3 mmol/L välissä</string>
+	<string name="glucoseBetweenTarget70Mmol">Tavoitealueen ja arvon 3,9 mmol/L välissä</string>
+	<string name="glucoseLowBelow70Mmol">Matala glukoosi (alle 3,9 mmol/L)</string>
+	<string name="treatmentDecisions">Hoitopäätökset</string>
+	<string name="treatmentDecisionsSymbol">Kun näet tämän symbolin, mittaa verensokeri ennen hoitopäätösten tekemistä.</string>
+	<string name="treatmentDecisionsTest">Jos sensorin glukoosilukema ei vastaa oloasi, mittaa verensokeri.</string>
+	<string name="checkBloodGlucoseTitle">Tarkista verensokeri</string>
+	<string name="checkBloodGlucoseMessage">MIttaa verensokeri ennen hoitopäätösten tekemistä.</string>
+	<string name="highGlucoseCheckBloodGlucose">Korkea glukoosi voi olla vaarallista. MIttaa verensokeri ennen hoitopäätösten tekemistä. Harkitse ketoaineiden tarkastamista.</string>
+	<string name="lowGlucoseCheckBloodGlucose">Matala glukoosi voi olla vaarallista. Mittaa verensokeri ennen hoitopäätösten tekemistä.</string>
+	<string name="reminder">Muistutus</string>
+	<string name="safetyInformation">Turvallisuustietoja</string>
+	<string name="labeling">Merkinnät</string>
+	<string name="userGuides">Käyttöoppaat</string>
+	<string name="quickStartGuide">Käyttöönoton pikaopas</string>
+	<string name="quickReferenceGuide">Pikaopas</string>
+	<string name="myGlucoseExplanationUpdate">Glukoosilukemasi näkyy, kun olet skannannut sensorisi onnistuneesti. Näet (1) nykyisen glukoosin, (2) glukoosin suuntanuolen, (3) glukoosikuvaajan sekä (4) mahdollisen viestin glukoosista.</string>
+	<string name="sensorPlacementInstruction">Sensori tulee asettaa vain käsivarren takaosaan.</string>
+	<string name="sensorReadyAt">Sensori valmiina:</string>
+	<string name="formattedTimeRemaining">(%1$s jäljellä)</string>
+	<string name="sensorStartedByOtherDevice">Tämän sensorin käyttö aloitettiin toisella laitteella.</string>
+	<string name="sensorLatejoinExplanation">Jotta sensori toimisi tämän älypuhelimen kanssa, sinun täytyy käyttää tätä älypuhelinta sensorin skannaamiseen sensorin aloituksen ollessa käynnissä.</string>
+	<string name="androidScanInstruction1">Pidä älypuhelimesi takaosaa sensorin lähellä.</string>
+	<string name="androidScanInstruction2">Odota, kunnes kuuluu kaksi merkkiääntä tai tunnet kaksi värinää.</string>
+	<string name="bugFixesTitle">Teknisten ongelmien korjaaminen</string>
+	<string name="bugFixesDetail">Teknisten ongelmien korjaaminen ja toimintakyvyn parantaminen</string>
+	<string name="performanceImprovements">Toimintakyvyn parantaminen</string>
+	<string name="sensorChangeExplanation">Uuden sensorin käytön aloittaminen lopettaa nyt käyttämäsi sensorin.</string>
+	<string name="useNewSensorPrompt">Haluatko aloittaa uuden sensorin käyttämisen nyt?</string>
+	<string name="earlySensorActivationPrompt">Haluatko, että tämä sensori on seuraava sensorisi?</string>
+	<string name="changeSensorPrompt">Haluatko aloittaa tämän sensorin käyttämisen?</string>
+	<string name="replaceExistingSensor">Tämä korvaa viimeksi käyttöön aloitetun sensorin.</string>
+	<string name="earlyActivationExistingEndsSoon">Voit jatkaa nykyisen sensorisi käyttämistä, kunnes se loppuu.</string>
+	<string name="earlyActivationEndsExisting">Voit jatkaa nykyisen sensorisi käyttämistä, kunnes uusi sensorisi on valmis.</string>
+	<string name="scanOtherSensor">Tarkasta glukoosi skannaamalla toisella sensorillasi.</string>
+	<string name="sensorNotWorking">Sensorisi ei toimi.</string>
+	<string name="currentSensorEndsAt">Nykyinen sensori loppuu:</string>
+	<string name="newSensorReadyAt">Uusi sensori valmiina:</string>
+	<string name="sensorAlreadyStarted">Tämä sensori on jo aloitettu.</string>
+	<string name="earlySensorStartupTimeRemaining">Glukoosilukema ei ole saatavilla. Yritä skannata uudelleen %1$s kuluttua.</string>
+	<string name="glucoseReadingUnavailable">Glukoosilukema ei ole saatavilla. </string>
+	<string name="scanAgainIn">Yritä skannata uudelleen %1$s kuluttua.</string>
+	<string name="softwareReleaseVersion">Ohjelmiston julkaisuversio:</string>
+	<string name="softwareFullVersion">Ohjelmisto koko versio:</string>
+</resources>

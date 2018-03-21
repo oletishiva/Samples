@@ -164,7 +164,7 @@ ReportsHelper {
 		 **/
 
 
-		changeTimeZone(client, LibrelinkConstants.USZone);
+		changeTimeZone(client, LibrelinkConstants.US);
 		setTheDateAndTime(client, 01, 07, 2016, "10:00");
 		changePhoneHourTimeFormat(client, LibrelinkConstants.TWELVE_HOUR_FORMAT);
 		launch(client);

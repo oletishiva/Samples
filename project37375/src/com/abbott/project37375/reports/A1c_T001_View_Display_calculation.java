@@ -313,6 +313,7 @@ public class A1c_T001_View_Display_calculation extends ReportsHelper {
 		 * @Dependancy Script cannot proceed if this step fails
 		 * 
 		 **/
+		
 		setTheDateAndTime(client, 22, 05, 2013, "00:00");
 
 		/**
@@ -670,8 +671,6 @@ public class A1c_T001_View_Display_calculation extends ReportsHelper {
 		navigateToScreen(client, "Estimated A1c");
 		verifyEstimatedA1cReportDatePeriodForNdays(client, "4Jan");
 		capturescreenshot(client, getStepID(), true);
-
-
 		selectingSASMode(client,"DEFAULT");
 		currentSystemTime(client);
 

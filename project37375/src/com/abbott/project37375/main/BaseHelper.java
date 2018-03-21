@@ -2,14 +2,13 @@ package com.abbott.project37375.main;
 
 import static java.time.temporal.ChronoUnit.DAYS;
 
-import java.io.BufferedReader;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintStream;
 import java.text.DateFormat;
@@ -25,6 +24,8 @@ import java.util.Properties;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import jxl.read.biff.BiffException;
@@ -40,9 +41,14 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import com.experitest.client.Client;
+
 
 public class BaseHelper {
 
@@ -89,7 +95,7 @@ public class BaseHelper {
 	private String estformat;
 	private String cstformat;
 	private String apkActivity; 
-
+	private String reportLocation;
 	public String getapkPackage() {
 		return apkPackage;
 	}
@@ -100,6 +106,14 @@ public class BaseHelper {
 
 	public String getapkFileName() {
 		return apkFileName;
+	}
+
+	public String getReportLocation() {
+		return reportLocation;
+	}
+	public void setReportLocation(String reportLocation)
+	{
+		this.reportLocation = reportLocation;
 	}
 
 	public void setapkFileName(String ipaFileName) {
@@ -327,25 +341,48 @@ public class BaseHelper {
 			setInputLanguage(client,getLanguageFileName());
 			launch(client);
 			if((!getTestName().contains("ReleaseBuild"))){
-				
+
 				if(!client.isElementFound("NATIVE", "xpath=//*[@id='getStartedNow' and @onScreen='true']", 0)){
 					clearData(client);
 				}
-				
+
 				if( (!getTestName().contains("FirstTime")) && (!getTestName().contains("AccountSettings"))){
 					byPassSetup(client);					
 				}else{
 					selectNetworkMode(client,"Use Real Servers");
 				}
 			}
-			
+
 		}else{
 			changePhoneHourTimeFormat(client, LibrelinkConstants.TWENTYFOUR_HOUR_FORMAT);
+			try {
+				currentSystemTime(client);
+			} catch (ParseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			automaticDateAndTime(client, true);
 			automaticDateAndTimeZone(client, true);
 		}
 	}
-	
+	/**
+	 * Author : Devi
+	 * 
+	 * Method to change report name
+	 */
+
+	public  void changeReportName() {
+
+		File oldFile=new File(getReportLocation()+ "\\index.pdf");
+		File newFile=new File(getReportLocation() +"\\"+getClass().getSimpleName()+".pdf");
+		boolean success=oldFile.renameTo(newFile);
+		if(success) {
+			System.out.println("Rename the report");
+		}else {
+			System.out.println("Failed to rename the report");
+		}
+	}
+
 	/**
 	 * Author: Devi
 	 * 
@@ -356,7 +393,7 @@ public class BaseHelper {
 	 * 
 	 */
 	public void byPassSetup(Client client) {
-		
+
 		openDebugDrawer(client);
 		client.elementSwipeWhileNotFound("NATIVE", "id=debug_drawer", "Down",
 				100, 2000, "NATIVE", "xpath=//*[@id='debug_overrides_skip_startup_wizard']", 14, 1000, 1,
@@ -605,9 +642,9 @@ public class BaseHelper {
 			if( !getTestName().contains("PreRequisite") && (!getTestName().contains("ReleaseBuild"))){
 				System.out.println(client.getDeviceLog());
 				closeNotification(client);
-				
+
 				//TODO check if time zone is not enabled to automatic then update timezone and reset it
-			
+
 			}
 
 		} else {
@@ -617,12 +654,22 @@ public class BaseHelper {
 
 		if( !getTestName().contains("PreRequisite") && (!getTestName().contains("ReleaseBuild"))){
 			changePhoneHourTimeFormat(client, LibrelinkConstants.TWENTYFOUR_HOUR_FORMAT);
+			try {
+				currentSystemTime(client);
+			} catch (ParseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			automaticDateAndTime(client, true);
 			automaticDateAndTimeZone(client, true);
 			clearData(client);
-			
+
 		}
+
+
 		client.generateReport(true);
+		changeReportName();	
+
 		didFail = false;
 		exception = null;
 	}
@@ -712,7 +759,7 @@ public class BaseHelper {
 	}
 
 	/**
-	 * Author: ShabinaSherif/NagarajuKasarla
+	 * Author: ShabinaSherif/Devi
 	 * 
 	 * Method to set up report location
 	 * 
@@ -723,7 +770,7 @@ public class BaseHelper {
 		String reportFolder = getProperty("user.dir") + "\\Reports\\reports\\"+  getTestName()+"\\" +getCountryCode() +"\\"+testStartTimeStamp ;
 
 		client.setReporter("pdf", reportFolder,  getReportName() );
-
+		setReportLocation(reportFolder+"\\test0");
 	}
 
 	/**
@@ -998,12 +1045,12 @@ public class BaseHelper {
 	/**
 	 * Author: NagarajuKasarla
 	 * 
-	 * Method To convert string files to property files
+	 * create property files
 	 * 
 	 */
 
 	public static void createPropertyFiles() {
-		ValueFilpath=getProperty("user.dir") +"\\stringfiles";
+		ValueFilpath=getProperty("user.dir") +"\\strings";
 		FinalLocation=getProperty("user.dir") +"\\languagefiles";
 		File finalPath = new File(FinalLocation);
 		if (!finalPath.exists())
@@ -1020,9 +1067,16 @@ public class BaseHelper {
 		convertAll(new File(ValueFilpath));
 	}
 
+	/**
+	 * Author:  LourdeNoelRini
+	 * 
+	 *   convert xml to property file
+	 * 
+	 */
+
 	public static void convertAll(File node) {
 		String propertyContent = "";
-		if (node.isDirectory() && !(node.getName().equalsIgnoreCase("languagefiles")) && !(node.getName().equalsIgnoreCase("converted"))) {
+		if (node.isDirectory() && !(node.getName().equalsIgnoreCase("languagefiles"))) {
 			System.out.println(node.getAbsoluteFile());
 			String[] subNote = node.list();
 			for (String filename : subNote) {
@@ -1034,8 +1088,6 @@ public class BaseHelper {
 				propertyContent = convertFiles(node);                         
 
 				ConvertedFilename = node.getParentFile().getName();
-				ConvertedFilename = ConvertedFilename.replaceAll(".lproj", "");
-
 				File finalPath = new File(FinalLocation);
 				if (!finalPath.exists())
 					finalPath.mkdir();
@@ -1056,31 +1108,103 @@ public class BaseHelper {
 		}
 	}
 
-	public static String convertFiles(File inputFile) {
-		String fileContent = "";
-		if(inputFile.getParentFile().isDirectory()) {				
-			try (BufferedReader br = new BufferedReader(new InputStreamReader(
-					new FileInputStream(inputFile), "UTF-8"))) {				    
-				String line;
-				while ((line = br.readLine()) != null) {
-					if(line != null && !line.contains("/*") && !line.contains("*/") && (!line.equals(""))) {//Exclude comments
-						line = line.replaceAll("\";", "");
-						line = line.replaceAll("\" = \"", " = ");
-						line = line.replaceAll("\"", "");
+	/**
+	 * Author:  LourdeNoelRini
+	 * 
+	 *   Get value from XML file
+	 * 
+	 * 
+	 */
 
-						System.out.println(line);
-						line += "\n";
-						fileContent += line;
-					}
-				}
-
-			} catch (Exception e) {
-				e.printStackTrace();
+	public static String getValue(NodeList nList, String key) {
+		for (int temp = 0; temp < nList.getLength(); temp++) {
+			Node nNode = nList.item(temp);
+			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+				Element eElement = (Element) nNode;
+				if (eElement.getAttribute("name").equalsIgnoreCase(key))
+					return nNode.getFirstChild().getNodeValue();
 			}
 		}
-		return fileContent;
-
+		return null;
 	}
+
+	/**
+	 * Author: LourdeNoelRini
+	 * 
+	 *   Converting individual files
+	 * 
+	 * 
+	 */
+
+	public static String convertFiles(File file) {
+		String propertyContent = "";
+		try {
+			DocumentBuilderFactory dbFactory = DocumentBuilderFactory
+					.newInstance();
+			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+			Document doc = dBuilder.parse(file);
+			doc.getDocumentElement().normalize();
+			// For Plurals
+			NodeList nListPlurals = doc.getElementsByTagName("plurals");
+			for (int temp = 0; temp < nListPlurals.getLength(); temp++) {
+				Node nNode = nListPlurals.item(temp);
+				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+					Element eElement = (Element) nNode;
+					String parentName = eElement.getAttribute("name");
+					NodeList nSubList = eElement.getElementsByTagName("item");
+					if (nSubList != null) {
+						for (int idx = 0; idx < nSubList.getLength(); idx++) {
+							Node nSubNode = nSubList.item(idx);
+							if (nSubNode.getNodeType() == Node.ELEMENT_NODE) {
+								Element eSubElement = (Element) nSubNode;
+								String childName = "";
+								if (eSubElement.getAttribute("quantity")
+										.equalsIgnoreCase("one")) {
+									childName = "_singular";
+									propertyContent += parentName
+											+ childName
+											+ "="
+											+ nSubNode.getFirstChild()
+											.getNodeValue()
+											+ System.lineSeparator();
+								} else {
+									childName = "_plural";
+									propertyContent += parentName + childName
+											+ "=" + nSubNode.getTextContent()
+											+ System.lineSeparator();
+								}
+							}
+						}
+					}
+				}
+			}
+			// For Strings
+			NodeList nListStrings = doc.getElementsByTagName("string");
+			for (int temp = 0; temp < nListStrings.getLength(); temp++) {
+				Node nNode = nListStrings.item(temp);
+				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+					Element eElement = (Element) nNode;
+					if (nNode.getFirstChild().getNodeValue()!=null && nNode.getFirstChild().getNodeValue()
+							.contains("@string")) {
+						propertyContent += eElement.getAttribute("name")
+								+ "="
+								+ getValue(nListStrings, nNode.getFirstChild()
+										.getNodeValue().split("/")[1])
+								+ System.lineSeparator();
+					} else {
+						propertyContent += eElement.getAttribute("name") + "="
+								+ ((nNode.getFirstChild().getNodeValue() != null) ?(nNode.getFirstChild().getTextContent().replaceAll("<b>", "").replaceAll("</b>", "").replaceAll("<u>", "").replaceAll("</u>", "")):nNode.getTextContent())
+								+ System.lineSeparator();
+
+					}
+				}
+			}
+		} catch (Exception e) {
+			System.out.println("Exception during convertion" + e);
+		}
+		return propertyContent;
+	}
+
 
 	/**
 	 * Author: NagarajuKasarla
@@ -1155,7 +1279,23 @@ public class BaseHelper {
 	 *
 	 */
 	public void changePhoneHourTimeFormat(Client client, String hourFormat) {
-		client.run("adb shell settings put system time_12_24 " + hourFormat + "");
+		/*openDateTimeSettings(client);
+		if(client.elementSwipeWhileNotFound("NATIVE", "xpath=//*[@id='list']", "Down", 200, 2000, "NATIVE", "xpath=//*[@text='Use 24-hour format']", 0, 1000, 3, false)){
+			// If statement
+		}
+		if(hourFormat.contains("24")){
+			if(client.isElementFound("NATIVE", "xpath=//*[@id='checkbox' and @checked='false' and ./parent::*[./preceding-sibling::*[./*[@text='Use 24-hour format']]]]", 0)){
+				client.click("NATIVE", "xpath=//*[@id='checkbox' and ./parent::*[./preceding-sibling::*[./*[@text='Use 24-hour format']]]]", 0, 1);
+			}
+		}else{
+			if(client.isElementFound("NATIVE", "xpath=//*[@id='checkbox' and @checked='true' and ./parent::*[./preceding-sibling::*[./*[@text='Use 24-hour format']]]]", 0)){
+				client.click("NATIVE", "xpath=//*[@id='checkbox' and ./parent::*[./preceding-sibling::*[./*[@text='Use 24-hour format']]]]", 0, 1);
+			}
+		}
+		client.click("NATIVE", "xpath=//*[@resource-id='com.android.settings:id/next_button']", 0, 1);
+	*/	//TODO use android back button
+
+		client.run("adb shell settings put system time_12_24 " + hourFormat + "; am broadcast -a android.intent.action.TIME_SET");
 		waitFor(client, 10);
 	}
 
@@ -1304,11 +1444,13 @@ public class BaseHelper {
 	 */
 
 	public void setTheDateAndTime(Client client, int date, int month,int year, String time) throws ParseException {
-		String timeformat = getTimeFormat(client);
-		if(timeformat.contains("12")){
+		appNetworkTimeCheck(client,true);
+		automaticDateAndTime(client, false);
+		//String timeformat = getTimeFormat(client);
+		/*if(timeformat.contains("12")){
 			changePhoneHourTimeFormat(client, LibrelinkConstants.TWENTYFOUR_HOUR_FORMAT);
 			waitFor(client, 5);
-		}
+		}*/
 		String[] t=time.split(":");
 		System.out.println("============**================" + date);
 		System.out.println("============*================" + month);
@@ -1336,26 +1478,27 @@ public class BaseHelper {
 			String YYYYMMDD = sdf.format(c.getTime());
 			System.out.println(YYYYMMDD);
 			// This command has been executed twice to overcome the time changing challenges due to day light savings
-			client.run("adb shell su -c 'date -s " + YYYYMMDD + "'");
-			client.run("adb shell su -c 'date -s " + YYYYMMDD + "'");
+			client.run("adb shell su -c 'date -s " + YYYYMMDD + "; am broadcast -a android.intent.action.TIME_SET'");
+			client.run("adb shell su -c 'date -s " + YYYYMMDD + "; am broadcast -a android.intent.action.TIME_SET'");
 		}
 		else{
 			SimpleDateFormat altsdf = new SimpleDateFormat("MMddHHmmYY.ss");
 			String MMDDYY = altsdf.format(c.getTime());
 			System.out.println(MMDDYY);
 
-			client.run("adb shell su -c 'date -u " + MMDDYY + "'");
+			client.run("adb shell su -c 'date -u " + MMDDYY + "; am broadcast -a android.intent.action.TIME_SET'");
 			// This command has been executed twice to overcome the time changing challenges due to day light savings
-			client.run("adb shell su -c 'date " + MMDDYY + "'");
+			client.run("adb shell su -c 'date " + MMDDYY + "; am broadcast -a android.intent.action.TIME_SET'");
 
 			waitFor(client, 20);
 
 		}
 		waitFor(client, 10);
-		if(timeformat.contains("12")){
+		launch(client);
+		/*if(timeformat.contains("12")){
 			changePhoneHourTimeFormat(client, LibrelinkConstants.TWELVE_HOUR_FORMAT);
 			waitFor(client, 5);
-		}
+		}*/
 
 	}
 
@@ -1374,6 +1517,8 @@ public class BaseHelper {
 	 * 
 	 */	
 	public void setTheTimeAlone(Client client, String time) throws ParseException{
+		appNetworkTimeCheck(client,true);
+		automaticDateAndTime(client, false);
 		String[] t=time.split(":");
 		System.out.println("============================" + t[0]);
 		System.out.println("============================" + t[1]);
@@ -1706,6 +1851,7 @@ public class BaseHelper {
 
 	public void navigateToSubMenuScreens(Client client,
 			String subscreen) {
+		waitFor(client,1);
 		client.waitForElement("NATIVE", "text=${settings}", 0,
 				10000);
 		client.click("NATIVE", "text=${" + subscreen + "}", 0, 1);
@@ -2518,31 +2664,33 @@ public class BaseHelper {
 
 	public void loadTestData(Client client, String sasmode, String folder,
 			String jsonfile) {
-			debugDrawerClearData(client);
+		debugDrawerClearData(client);
+		//TODO need to remove the default option in new build
+		selectingSASMode(client, "DEFAULT");
 		selectingSASMode(client, sasmode);
 		//TODO Remove the command when it's implemented
 		/*client.click("NATIVE", "xpath=//*[@id='debug_sas_mode_edit']",0,1);
 		waitFor(client, 1);*/
-			if (folder != null) {
+		if (folder != null) {
 
-				client.click("NATIVE", "xpath=//*[@text='" + folder
-						+ "/']", 0, 1);
+			client.click("NATIVE", "xpath=//*[@text='" + folder
+					+ "/']", 0, 1);
+		}
+		waitFor(client, 1);
+
+		if (client
+				.waitForElement(
+						"NATIVE",
+						"xpath=//*[@text='Set Mock Data File' and @id='alertTitle']",
+						0, 10000)) {
+
+			if (client.elementSwipeWhileNotFound("NATIVE",
+					"id=parentPanel", "Down", 100, 2000, "NATIVE",
+					"text=" + jsonfile, 0, 1000, 6, false)) {
 			}
-			waitFor(client, 1);
-
-			if (client
-					.waitForElement(
-							"NATIVE",
-							"xpath=//*[@text='Set Mock Data File' and @id='alertTitle']",
-							0, 10000)) {
-
-				if (client.elementSwipeWhileNotFound("NATIVE",
-						"id=parentPanel", "Down", 100, 2000, "NATIVE",
-						"text=" + jsonfile, 0, 1000, 6, false)) {
-				}
-				client.click("NATIVE", "text=" + jsonfile, 0, 1);
-			}
-			waitFor(client, 10);
+			client.click("NATIVE", "text=" + jsonfile, 0, 1);
+		}
+		waitFor(client, 10);
 
 
 	}
@@ -2776,7 +2924,7 @@ public class BaseHelper {
 
 
 	/**
-	 * Author: NagarajuKasarla
+	 * Author: NagarajuKasarla/Devi
 	 * 
 	 * Set Glucose Range
 	 * 
@@ -2789,28 +2937,33 @@ public class BaseHelper {
 	 */
 	public void setHighGlucoseRange(Client client, int highvalue, String High)
 	{
+		
+		
 		client.runNativeAPICall("NATIVE", "xpath=//*[@id='rangeHigh']", 0,
 				"view.setValue(" + highvalue + ");");
 
 
 		if (getUnits().equalsIgnoreCase("mg/dL") && High.equals("180")||getUnits().equalsIgnoreCase("mmol/L") && High.equals("10.0")) {
-			client.elementSwipe("NATIVE", "id=rangeHigh", 0, "Down", 150, 1000);
+		//to overcome refresh issue to get low values
+			client.elementSwipe("NATIVE", "xpath=//*[@id='rangeHigh']", 0, "Up", 300, 1000);
+			client.elementSwipe("NATIVE", "xpath=//*[@id='rangeHigh']", 0, "Down", 150, 1000);
 			waitFor(client, 3);
-			client.clickIn("NATIVE", "id=rangeHigh", 0, "Inside", "NATIVE", "xpath=//*[@id='numberpicker_input' and @text='"+High+"']", 0, 0, 0, 1);
-
+			client.clickIn("NATIVE", "xpath=//*[@id='rangeHigh']", 0, "Inside", "NATIVE", "xpath=//*[@id='numberpicker_input' and @text='"+High+"']", 0, 0, 0, 1);
+			
 		}
 		else {
 			waitFor(client, 4);
-			client.elementSwipe("NATIVE", "id=numberpicker_input", 1, "Down", 350, 2000);
-			waitFor(client, 2);
-			client.clickIn("NATIVE", "id=rangeHigh", 0, "Inside", "NATIVE", "xpath=//*[@id='numberpicker_input' and @text='"+High+"']", 0, 0, 0, 1);
+			client.elementSwipe("NATIVE","xpath=//*[@id='numberpicker_input']", 1, "Down", 300, 2000);
+			waitFor(client, 4);
+			client.clickIn("NATIVE", "xpath=//*[@id='rangeHigh']", 0, "Inside", "NATIVE", "xpath=//*[@id='numberpicker_input' and @text='"+High+"']", 0, 0, 0, 1);
 
 
 		}
+		
 	}
 
 	/**
-	 * Author: NagarajuKasarla
+	 * Author: NagarajuKasarla/Devi
 	 * 
 	 * Set Glucose Range
 	 * 
@@ -2823,17 +2976,20 @@ public class BaseHelper {
 	 */
 	public void setLowGlucoseRange(Client client, int lowvalue, String Low)
 	{
+		
 		client.runNativeAPICall("NATIVE", "xpath=//*[@id='rangeLow']", 0,
 				"view.setValue(" + lowvalue + ");");
 
 		if (getUnits().equalsIgnoreCase("mg/dL") && Low.equals("70")||getUnits().equalsIgnoreCase("mmol/L") && Low.equals("3.9")) {
-			client.elementSwipe("NATIVE", "id=rangeLow", 0, "Up", 150, 1000);
+			client.elementSwipe("NATIVE", "xpath=//*[@id='rangeHigh']", 0, "Down", 300, 1000);
+			client.elementSwipe("NATIVE", "xpath=//*[@id='rangeLow']", 0, "Up", 150, 1000);
 			waitFor(client, 3);
-			client.clickIn("NATIVE", "id=rangeLow", 0, "Inside", "NATIVE", "xpath=//*[@id='numberpicker_input' and @text='"+Low+"']", 0, 0, 0, 1);
+			client.clickIn("NATIVE", "xpath=//*[@id='rangeLow']", 0, "Inside", "NATIVE", "xpath=//*[@id='numberpicker_input' and @text='"+Low+"']", 0, 0, 0, 1);
 
 		} else {
 			waitFor(client, 4);
-			client.elementSwipe("NATIVE", "id=numberpicker_input", 0, "Up", 350, 2000);
+			// pixel was changed from 150 to 300
+			client.elementSwipe("NATIVE", "id=numberpicker_input", 0, "Up", 300, 2000);
 			waitFor(client, 3);
 			client.clickIn("NATIVE", "id=rangeLow", 0, "Inside", "NATIVE", "xpath=//*[@id='numberpicker_input' and @text='"+Low+"']", 0, 0, 0, 1);
 
@@ -3059,7 +3215,7 @@ public class BaseHelper {
 	}
 
 	/**
-	 * Author: NagarajuKasarla
+	 * Author: NagarajuKasarla/Devi
 	 *
 	 * Method to Set Default Target glucose range
 	 *
@@ -3067,7 +3223,7 @@ public class BaseHelper {
 	 *          Integrate SeeTestAutomation
 	 */
 	public void cleanUpForTG(Client client)  {
-		clickOnSettingsMenu(client, "settings");
+		clickOnSettingsMenu(client, "App Settings");
 		if (getUnits().equals("mg/dL")) {
 			verifyandsetTGfromSettings(client, 100, 140);
 		} else if (getUnits().equals("mmol/L")) {
@@ -3077,7 +3233,7 @@ public class BaseHelper {
 	}
 
 	/**
-	 * Author: NagarajuKasarla
+	 * Author: NagarajuKasarla/Devi
 	 * 
 	 * Set Time Zone in Device settings
 	 * 
@@ -3113,10 +3269,11 @@ public class BaseHelper {
 					false);
 			client.sleep(1000);
 			if (zone.equalsIgnoreCase("America/Denver")) {
-				client.elementSwipeWhileNotFound("NATIVE",
+				/*client.elementSwipeWhileNotFound("NATIVE",
 						"xpath=//*[@class='android.widget.ListView']", "Down",
 						600, 1000, "NATIVE", "xpath=//*[@text='"
-								+ getZone(zone) + "']", 1, 1000, 15, true);
+								+ getZone(zone) + "']", 1, 1000, 15, true);*/
+				client.run("adb shell input swipe 300 300 0 10000");
 				client.sleep(500);
 				if(!client.isElementFound("NATIVE","xpath=//*[@id='summary']",0)){
 					client.click("NATIVE", "xpath=//*[@text='"+getZone(zone)+ "']", 1, 1);
@@ -3365,7 +3522,7 @@ public class BaseHelper {
 	 * 
 	 */
 	public void navigateToMyGlucosePage(Client client) {
-		if (!client.isElementFound("NATIVE", "xpath=//*[@id='scan_result_detail']", 0)) {
+		if (!client.isElementFound("NATIVE", "xpath=//*[@class='com.librelink.app.ui.widget.mpchart.GlucoseTimeChart']", 0)) {
 			client.click("Native",
 					"xpath=//*[@id='sensorStatus' and @text='Ready to Scan']", 0, 1);
 		} else{
@@ -3396,8 +3553,8 @@ public class BaseHelper {
 		}
 	}
 
-
 	/**
+	 * 
 	 * Author: NagarajuKasarla
 	 * 
 	 * Method to click on the Notes or Timezone in the  graph
@@ -5120,7 +5277,7 @@ public class BaseHelper {
 	}
 
 	/**
-	 * Author: NagarajuKasarla
+	 * Author: Devi
 	 * 
 	 * Click on settings menu
 	 * @param client
@@ -5134,8 +5291,8 @@ public class BaseHelper {
 		client.click("NATIVE",
 				"xpath=//*[@contentDescription='More options']", 0, 1);
 		waitFor(client, 1);
-		client.waitForElement("NATIVE", "text=${" + subSetting + "}", 0,10000);
-		client.click("NATIVE","text=${" + subSetting + "}", 0, 1);
+		client.waitForElement("NATIVE", "xpath=//*[@text='"+subSetting+"']", 0,10000);
+		client.click("NATIVE","xpath=//*[@text='"+subSetting+"']", 0, 1);
 	}
 
 	/**

@@ -29,7 +29,7 @@ public class DailyPatterns_T004_S24Req_Test extends ReportsHelper {
 		 * @Dependancy Script cannot proceed if this step fails
 		 * 
 		 **/
-		navigateToScreen(client, "Settings");
+		clickOnSettingsMenu(client, "App Settings");
 
 		if (getUnits().equalsIgnoreCase("mg/dL")) {
 			verifyandsetTGfromSettings(client, 70, 180);

@@ -19,17 +19,18 @@ public class DailyGraph_T003_TimeChange extends ReportsHelper {
 		 * @Dependancy Script cannot proceed if this step fails
 		 * 
 		 **/
+		appNetworkTimeCheck(client,true);
 		try{
-			changeTimeZone(client, LibrelinkConstants.USZone);
+			changeTimeZone(client, LibrelinkConstants.US);
 			setTheDateAndTime(client,01,07,2016,"10:00");
 			changePhoneHourTimeFormat(client, LibrelinkConstants.TWELVE_HOUR_FORMAT);
-			reLaunch(client);
+			launch(client);
 			loadTestData(client, "MOCK_2","ADC", "4hr-5dAnchorage_local-plus1hr.json");
 
 			/**
 			 * 
 			 * @stepId Step 1
-			 * @Reqt SDAIUIRS1012
+			 * @Reqt SDAUIRS1012
 			 * @Expected Graph displays a time-change icon around 8:00 am
 			 * @Dependancy NA
 			 * 
@@ -50,16 +51,16 @@ public class DailyGraph_T003_TimeChange extends ReportsHelper {
 			 * @Dependancy Script cannot proceed if this step fails
 			 * 
 			 **/
-			changeTimeZone(client, LibrelinkConstants.USZone);
+			changeTimeZone(client, LibrelinkConstants.US);
 			setTheDateAndTime(client,1,7,2016,"10:00");
 			changePhoneHourTimeFormat(client, LibrelinkConstants.TWELVE_HOUR_FORMAT);
-			reLaunch(client);
+			launch(client);
 			loadTestData(client, "MOCK_2","ADC","4hr-5dChicago_local-2hr.json");
 
 			/**
 			 * 
 			 * @stepId Step 2
-			 * @Reqt SDAIUIRS1012
+			 * @Reqt SDAUIRS1012
 			 * @Expected Graph displays a time-change icon around 8 am
 			 * @Dependancy NA
 			 * 
@@ -73,7 +74,7 @@ public class DailyGraph_T003_TimeChange extends ReportsHelper {
 			/**
 			 * 
 			 * @stepId Step 3
-			 * @Reqt SDAIUIRS1013
+			 * @Reqt SDAUIRS1013
 			 * @Expected The Daily Graph report glucose graph does not allow
 			 *           historical glucose traces from before a time change event
 			 *           to overlap with those after a time change event:Two hours

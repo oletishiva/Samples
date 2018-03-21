@@ -41,8 +41,7 @@ public class LowGlucoseEvents_T002_DataAvailable extends ReportsHelper {
 		 * 
 		 **/
 		setStepID(LibrelinkConstants.LowGlucoseEvents_T002_DataAvailable_Step1);
-		navigateToScreen
-		(client, "Low Glucose Events");
+		navigateToScreen(client, "Low Glucose Events");
 		clickOnDays(client, 7);
 		verifyReportDataAvailableForNdays(client, "LOW GLUCOSE EVENTS", 7);
 		capturescreenshot(client, getStepID(), true);

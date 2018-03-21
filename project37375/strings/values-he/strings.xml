@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2015 Airstrip - All Rights Reserved. -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<!-- Plurals -->
+	<plurals name="insulinUnits">
+		<item quantity="one">‏%1$s יחידה‏</item>
+		<item quantity="other">‏%1$s יחידות‏</item>
+	</plurals>
+	<plurals name="days">
+		<item quantity="one">‏1 יום‏</item>
+		<item quantity="other">‏%1$d ימים‏</item>
+	</plurals>
+	<plurals name="hours">
+		<item quantity="one">‏1 שעה‏</item>
+		<item quantity="other">‏%1$d שעות‏</item>
+	</plurals>
+	<plurals name="minutes">
+		<item quantity="one">‏1 דקה‏</item>
+		<item quantity="other">‏%1$d דקות‏</item>
+	</plurals>
+	<!-- Phrase describing a time duration in seconds using secs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationSecs">
+		<item quantity="one">‏1 שנייה‏</item>
+		<item quantity="other">‏<xliff:g id="count">%d</xliff:g> שנ\'</item>
+	</plurals>
+	<!-- Phrase describing a time duration in minutes using mins abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationMins">
+		<item quantity="one">1 דק\' </item>
+		<item quantity="other">‏<xliff:g id="count">%d</xliff:g> דק\'</item>
+	</plurals>
+	<!-- Phrase describing a time duration in hours using hrs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationHrs">
+		<item quantity="one">‏1 ש\'</item>
+		<item quantity="other">‏<xliff:g id="count">%d</xliff:g> שע\'</item>
+	</plurals>
+	<plurals name="sensorExpiresInDays">
+		<item quantity="one">‏‏החלף חיישן תוך יום 1‏</item>
+		<item quantity="other">‏החלף חיישן תוך <xliff:g id="count">%d</xliff:g> ימים‏</item>
+	</plurals>
+	<plurals name="sensorExpiresInHours">
+		<item quantity="one">‏החלף חיישן תוך שעה 1‏</item>
+		<item quantity="other">‏החלף חיישן תוך <xliff:g id="count">%d</xliff:g> שעות‏</item>
+	</plurals>
+	<plurals name="sensorExpiresInMins">
+		<item quantity="one">‏החלף חיישן תוך דקה 1‏</item>
+		<item quantity="other">‏החלף חיישן תוך <xliff:g id="count">%d</xliff:g> דקות‏</item>
+	</plurals>
+	<plurals name="sensorReadyInMins">
+		<item quantity="one">‏חיישן מוכן תוך דקה 1‏</item>
+		<item quantity="other">‏חיישן מוכן תוך <xliff:g id="count">%d</xliff:g> דקות‏</item>
+	</plurals>
+
+	<!-- common/generic words, phrases, symbols, and abbreviations -->
+	<string name="deciLiter">dL</string>
+	<string name="gramsSymbol">‏‎‏‎ג\'‎‏</string>
+	<string name="liter">L</string>
+	<string name="mgdl">‏‎mg/dL‎‏</string>
+	<string name="milligrams">‏‎mg‎‏</string>
+	<string name="millimole">‏‎mmol‎‏</string>
+	<string name="mmol">‏‎mmol/L‎‏</string>
+	<string name="percentSign">\u0025</string>
+	<string name="servingsSymbol">‏‎מנות‎‏</string>
+	<string name="accept">‏‎קבלה‎‏</string>
+	<string name="account">‏‎הגדרות חשבון‎‏</string>
+	<string name="all">‏‎הכול‎‏</string>
+	<string name="back">‏‎חזרה‎‏</string>
+	<string name="average">‏‎ממוצע‎‏</string>
+	<string name="delete">‏‎מחיקה‎‏</string>
+	<string name="cancel">‏‎ביטול‎‏</string>
+	<string name="durationHourMinuteConcatenate">%1$s %2$s</string>
+	<string name="comments">‏‎הערות‎‏</string>
+	<string name="done">‏‎בוצע‎‏</string>
+	<string name="email">‏‎דוא"ל‎‏</string>
+	<string name="friday">‏‎יום שישי‎‏</string>
+	<string name="grams">‏‎גרמים‎‏</string>
+	<string name="gramsOfCarbs">‏‎גרמים של פחמימות‎‏</string>
+	<string name="units">‏‎יחידות‎‏</string>
+	<string name="help">‏‎עזרה‎‏</string>
+	<string name="home">‏‎בית‎‏</string>
+	<string name="insulinDose">‏‎מינון אינסולין‎‏</string>
+	<string name="loading">‏‎טוען‎‏</string>
+	<string name="logbook">‏‎יומן‎‏</string>
+	<string name="monday">‏‎יום שני‎‏</string>
+	<string name="next">‏‎הבא‎‏</string>
+	<string name="no">‏‎לא‎‏</string>
+	<string name="note">‏‎הערות‎‏</string>
+	<string name="ok">‏‎אישור‎‏</string>
+	<string name="password">‏‎סיסמה‎‏</string>
+	<string name="reminders">‏‎תזכורות‎‏</string>
+	<string name="reject">‏‎דחייה‎‏</string>
+	<string name="reports">‏‎דוחות‎‏</string>
+	<string name="saturday">‏‎שבת‎‏</string>
+	<string name="save">‏‎שמור‎‏</string>
+	<string name="sending">‏‎שולח‎‏</string>
+	<string name="servings">‏‎מנות‎‏</string>
+	<string name="servingsOfCarbs">‏‎מנות פחמימות‎‏</string>
+	<string name="settings">‏‎הגדרות יישום‎‏</string>
+	<string name="share">‏‎שיתוף‎‏</string>
+	<string name="start">‏‎התחל‎‏</string>
+	<string name="submit">‏‎הגשה‎‏</string>
+	<string name="sunday">‏‎יום ראשון‎‏</string>
+	<string name="thursday">‏‎יום חמישי‎‏</string>
+	<string name="tuesday">‏‎יום שלישי‎‏</string>
+	<string name="wednesday">‏‎יום רביעי‎‏</string>
+	<string name="yes">‏‎כן‎‏</string>
+	<string name="days7">‏‎7‏ ימים‎‏</string>
+	<string name="days14">‏‎14‏ ימים‎‏</string>
+	<string name="days30">‏‎30‏ ימים‎‏</string>
+	<string name="days90">‏‎90‏ ימים‎‏</string>
+	<string name="eventLog">‏‎יומן אירועים‎‏</string>
+	<string name="eventLogEmptyMessage">‏‎אין אירועים‎‏</string>
+
+	<string name="minorFirstName">‏‎שם פרטי של הקטין‎‏</string>
+	<string name="minorLastName">‏‎שם משפחה של הקטין‎‏</string>
+	<string name="parentFirstName">@string/parentGuardianFirstName</string>
+	<string name="parentLastName">@string/parentGuardianLastName</string>
+	<string name="lastName">‏‎שם משפחה‎‏</string>
+	<string name="daily_graph">‏‎גרף יומי‎‏</string>
+	<string name="daily_patterns">‏‎דפוסים יומיים‎‏</string>
+	<string name="estimated_a1c">‏‎A1c משוער‎‏</string>
+	<string name="firstName">‏‎שם פרטי‎‏</string>
+	<string name="noResults">‏‎(אין תוצאות)‎‏</string>
+	<string name="signIn">‏‎כניסה לחשבון‎‏</string>
+	<string name="signingIn">‏‎נכנס לחשבון‎‏</string>
+	<string name="scanSensor">‏‎סרוק חיישן‎‏</string>
+	<string name="time_in_target">‏‎זמן ביעד המטרה‎‏</string>
+	<string name="errorMsgUnexpected">‏‎שגיאה לא צפויה ביישום.‎‏</string>
+	<string name="error_nfc_unsupported">‏‎אין תמיכה ב-NFC‎‏</string>
+	<string name="error_nfc_disabled">‏‎NFC מושבת‎‏</string>
+	<string name="error_networktime_disabled">‏‎תאריך ושעה אוטומטיים מושבתים‎‏</string>
+	<string name="errorOtherNfcInstalled">‏‎התגלה יישום אחר המשתמש ב-NFC. כדי לוודא שייעשה שימוש ב-FreeStyle LibreLink כדי לקרוא את החיישן שלך, יהיה עליך להפעיל את FreeStyle LibreLink בכל פעם לפני הסריקה. או, אם תסיר את התקנת היישום האחר שמשתמש ב-NFC, תוכל לסרוק את החיישן שלך כל עוד הטלפון החכם שלך לא נעול.‎‏</string>
+	<string name="loadingChartDataText">‏‎נתונים נטענים‎‏</string>
+	<string name="chartErrorMessage">‏‎שגיאה בטעינת נתונים‎‏</string>
+	<string name="timeZoneChangeMessage">‏‎שינוי אזור הזמן מ-%1$s\u00A0ל-\u00A0%2$s &lt;b&gt;(%3$s)&lt;/b&gt;‎‏</string>
+
+	<!-- Countries -->
+	<string name="countryName_AE">‏‎איחוד הנסיכיות הערביות‎‏</string>
+	<string name="countryName_AG">‏‎אנטיגואה וברבודה‎‏</string>
+	<string name="countryName_AR">‏‎ארגנטינה‎‏</string>
+	<string name="countryName_AT">‏‎אוסטריה‎‏</string>
+	<string name="countryName_AU">‏‎אוסטרליה‎‏</string>
+	<string name="countryName_AZ">‏‎אזרבייג\'ן‎‏‎‏</string>
+	<string name="countryName_BE">‏‎בלגיה‎‏</string>
+	<string name="countryName_BH">‏‎בחריין‎‏</string>
+	<string name="countryName_BR">‏‎ברזיל‎‏</string>
+	<string name="countryName_BS">‏‎איי הבהאמה‎‏</string>
+	<string name="countryName_BW">‏‎בוצואנה‎‏</string>
+	<string name="countryName_BY">‏‎בלרוס‎‏</string>
+	<string name="countryName_BZ">‏‎בליז</string>
+	<string name="countryName_CA">‏‎קנדה‎‏</string>
+	<string name="countryName_CH">‏‎שווייץ‎‏</string>
+	<string name="countryName_CL">‏‎צ\'ילה‎</string>
+	<string name="countryName_CN">‏‎סין‎‏</string>
+	<string name="countryName_CO">‏‎קולומביה‎‏</string>
+	<string name="countryName_CR">‏‎קוסטה ריקה‎‏</string>
+	<string name="countryName_CY">‏‎קפריסין‎‏</string>
+	<string name="countryName_DE">‏‎גרמניה‎‏</string>
+	<string name="countryName_DK">‏‎דנמרק‎‏</string>
+	<string name="countryName_DO">‏‎הרפובליקה הדומיניקנית‎‏</string>
+	<string name="countryName_DZ">‏‎אלג\'יריה‎‏</string>
+	<string name="countryName_EC">‏‎אקוודור‎‏</string>
+	<string name="countryName_ES">‏‎ספרד‎‏</string>
+	<string name="countryName_FI">‏‎פינלנד‎‏</string>
+	<string name="countryName_FR">‏‎צרפת‎‏</string>
+	<string name="countryName_GB">בריטניה</string>
+	<string name="countryName_GR">‏‎יוון‎‏</string>
+	<string name="countryName_HK">‏‎הונג קונג‎‏</string>
+	<string name="countryName_IE">‏‎אירלנד‎‏</string>
+	<string name="countryName_IL">‏‎ישראל‎‏</string>
+	<string name="countryName_IS">‏‎איסלנד‎‏</string>
+	<string name="countryName_IT">‏‎איטליה‎‏</string>
+	<string name="countryName_JO">‏‎ירדן‎‏</string>
+	<string name="countryName_JP">‏‎יפן‎‏</string>
+	<string name="countryName_KR">‏‎דרום קוריאה‎‏</string>
+	<string name="countryName_KW">‏‎כוויית‎‏</string>
+	<string name="countryName_KZ">‏‎קזחסטן‎‏</string>
+	<string name="countryName_LB">‏‎לבנון‎‏</string>
+	<string name="countryName_LU">‏‎לוקסמבורג‎‏</string>
+	<string name="countryName_MT">‏‎מלטה‎‏</string>
+	<string name="countryName_MX">‏‎מקסיקו‎‏</string>
+	<string name="countryName_MY">‏‎מלזיה‎‏</string>
+	<string name="countryName_NL">‏‎הולנד‎‏</string>
+	<string name="countryName_NO">‏‎נורבגיה‎‏</string>
+	<string name="countryName_NZ">‏‎ניו זילנד‎‏</string>
+	<string name="countryName_OM">‏‎עומן‎‏</string>
+	<string name="countryName_PA">‏‎פנמה‎‏</string>
+	<string name="countryName_PE">‏‎פרו‎‏</string>
+	<string name="countryName_PL">‏‎פולין‎‏</string>
+	<string name="countryName_PT">‏‎פורטוגל‎‏</string>
+	<string name="countryName_QA">‏‎קטאר‎‏</string>
+	<string name="countryName_RU">‏‎רוסיה‎‏</string>
+	<string name="countryName_SA">‏‎ערב הסעודית‎‏</string>
+	<string name="countryName_SE">‏‎שבדיה‎‏</string>
+	<string name="countryName_SG">‏‎סינגפור‎‏</string>
+	<string name="countryName_TH">‏‎תאילנד‎‏</string>
+	<string name="countryName_TR">‏‎תורכיה‎‏</string>
+	<string name="countryName_TT">‏‎טרינידד וטובגו‎‏</string>
+	<string name="countryName_TW">‏‎טייוואן‎‏</string>
+	<string name="countryName_US">‏‎ארצות הברית‎‏</string>
+	<string name="countryName_UY">‏‎אורוגוואי‎‏</string>
+	<string name="countryName_VE">‏‎ונצואלה‎‏</string>
+	<string name="countryName_ZA">‏‎דרום אפריקה‎‏</string>
+	<string name="countryName_ZW">‏‎זימבאבווה‎‏</string>
+
+	<!-- License Check -->
+	<string name="librelinkLicenseCheck">‏‎בדיקת רישיון של FreeStyle LibreLink‎‏</string>
+	<string name="licenseCheckFailed">‏‎נא להתקין את היישום הזה מ-Google Play.‏</string>
+
+	<!-- Update Version Check -->
+	<string name="librelink_upgrade_check">‏‎בדיקת שדרוג של FreeStyle LibreLink‎‏</string>
+	<string name="checkingVersion">‏‎בודק גרסה‎‏</string>
+	<string name="errorVersionCheckFailed">‏‎יש לשדרג את הגרסה הזו של FreeStyle LibreLink. נא לעבור אל Google Play ולהוריד את הגרסה העדכנית.‎‏</string>
+
+	<!-- App Tour -->
+	<string name="checkGlucoseWithPhone">‏‎תוכל לבדוק את רמת הסוכר באמצעות הטלפון החכם.‎‏</string>
+	<string name="instantAccess">‏‎תוכל לגשת במהירות לנתוני רמת הסוכר.‎‏</string>
+	<string name="actionableInsights">‏‎תוכל להגיע לתובנות שיעזרו לך לקבל החלטות מושכלות יותר.‎‏</string>
+	<string name="shareGlucoseInformation">‏‎תוכל לשתף את פרטי רמת הסוכר עם איש הצוות הרפואי שמטפל בך והאנשים היקרים לך.‎‏</string>
+
+	<!-- Account Registration/Sign In -->
+	<string name="changeUserMessage">‏‎כאשר תיכנס לחשבונך, נתונים כלשהם הקיימים במכשיר זה מהמשתמש הקודם יימחקו.\n\nהאם ברצונך להמשיך?‎‏</string>
+	<string name="changeDeviceMessage">‏‎הקש על "אישור" כדי להיכנס לחשבון LibreView הקיים באמצעות הטלפון החכם. תוכל להמשיך את קריאת החיישן שהתחלת בטלפון החכם הקודם.\n\nהערה: הקשה על "אישור" תוציא את הטלפון החכם הקודם מהחשבון.‎‏</string>
+	<string name="registeringDevice">‏‎רישום טלפון חכם‎‏</string>
+	<string name="firstNameLabel">@string/firstName</string>
+	<string name="lastNameLabel">@string/lastName</string>
+	<string name="emailLabel">@string/email</string>
+	<string name="dateOfBirthLabel">@string/dateOfBirth</string>
+	<string name="dateOfBirth">‏‎תאריך לידה‎‏</string>
+	<string name="passwordLabel">@string/password</string>
+	<string name="createPasswordLabel">@string/password</string>
+	<string name="changePassword">‏‎סיסמת חשבון‎‏</string>
+	<string name="newPasswordLabel">‏‎סיסמה חדשה‎‏</string>
+	<string name="currentPasswordLabel">‏‎הסיסמה הקיימת‎‏</string>
+	<string name="confirmPasswordLabel">‏‎אישור סיסמה‎‏</string>
+	<string name="sendingResetRequest">‏‎שליחת בקשה לאיפוס סיסמה‎‏</string>
+	<string name="adultRegistrationTitle">‏‎כניסה לחשבון‎‏</string>
+	<string name="minorRegistrationTitle">‏‎כניסת הורה/אפוטרופוס לחשבון‎‏</string>
+	<string name="signInLinkText">@string/signIn</string>
+	<string name="account_sign_in_title">@string/signIn</string>
+	<string name="alreadyHaveAccountPromptText">‏‎יש לך כבר חשבון LibreView‎‏?</string>
+	<string name="invalidPasswordErrorMessage">‏‎נא להזין סיסמה חוקית. הסיסמאות צריכות להכיל 8‏-36 תווים ולפחות ספרה 1, אות רישית 1 ואות קטנה 1.‎‏</string>
+	<string tools:ignore="PluralsCandidate" name="tooYoungErrorMessage">‏‎השימוש ב-FreeStyle LibreLink מוגבל לבני ‎%1$s ‎ומעלה.‎‏</string>
+	<string name="tooYoungWarningMessage">תאריך הלידה משמש להגדרת חשבון LibreView ולא כדי לקבוע אם היישום מתאים לשימושך. עיין במדריך למשתמש ביישום לפני השימוש בו.</string>
+	<string name="forgotPasswordText">‏‎שכחת את הסיסמה?‎‏</string>
+	<string name="createNewAccountText">‏‎יצירת חשבון חדש‎‏</string>
+	<string name="existing_user_login_text">‏‎חשבון בעל כתובת הדוא"ל הזו כבר קיים. נא להזין כתובת דוא"ל וסיסמה.‎‏</string>
+	<string name="normal_user_login_text">‏‎נא להזין את פרטי הכניסה לחשבון LibreView‏.‎</string>
+	<string name="passwordMismatchErrorMessage">‏‎הסיסמאות חייבות להיות תואמות.‎‏</string>
+	<string name="invalidEmailAddressErrorMessage">‏‎הזן כתובת דוא"ל חוקית.‎‏</string>
+	<string name="passwordResetSent">‏‎הוראות לאיפוס סיסמה נשלחו לכתובת הדוא"ל שלך.‎‏</string>
+	<string name="accountContactOptIn">‏‎נא לשלוח אליי מידע על Abbott Diabetes Care ועל מוצרים ושירותים אחרים של Abbott. (ניתן לבטל את ההרשמה בכל עת.)‎‏</string>
+	<string name="passwordResetMessage">‏‎נא להזין את כתובת הדוא"ל ששימשה לרישום החשבון הזה. הוראות לאיפוס סיסמה יישלחו לכתובת זו.‎‏</string>
+	<string name="nonExistentUserErrorMessage">‏‎לא קיים חשבון עבור כתובת הדוא"ל שהזנת.‎‏</string>
+	<string name="invalidLoginErrorMessage">‏‎כתובת הדוא"ל או הסיסמה לא נכונות. נא לנסות שוב.‎‏</string>
+	<string name="invalidProfileUpdatePassword">‏‎הסיסמה לא נכונה. נא לנסות שוב.‎‏</string>
+	<string name="invalidProfileDOB">‏‎לא ניתן לשנות את סוג החשבון ממבוגר לקטין. נא לערוך את תאריך הלידה בהתאם.‎‏</string>
+	<string name="invalidAppKeyErrorMessage">‏‎שגיאה בתקשורת עם השרת. מפתח היישום לא חוקי.‎‏</string>
+	<string name="invalidNetworkDomainErrorMessage">‏‎שגיאה בתקשורת עם השרת. הדומיין לא חוקי.‎‏</string>
+	<string name="invalidRegistrationErrorMessage">‏‎לא ניתן להשלים את הרישום בגלל נתונים לא חוקיים.‎‏</string>
+	<string name="invalidAccountRegionErrorMessage">הגדרות ארץ מגוריך ביישום וחשבונך לא תואמים. יש ליצור חשבון חדש.‎‏</string>
+	<string name="accountRegisteringProgressMessage">‏‎מבצע רישום‎‏</string>
+	<string name="accountUpdateProgressMessage">‏‎שולח‎‏</string>
+	<string name="accountAlreadyRegisteredErrorMessage">‏‎כתובת הדוא"ל הזו כבר משויכת לחשבון LibreView.\n\nאין צורך ליצור חשבון חדש. פשוט היכנס לחשבונך.‎‏</string>
+	<string name="professionalAccountAlreadyRegisteredErrorMessage">‏‎כתובת הדוא"ל הזו כבר משויכת לחשבון LibreView של איש צוות רפואי. תצטרך להשתמש בכתובת דוא"ל שונה כדי ליצור חשבון עבור היישום הזה.‎‏</string>
+	<string name="alreadyRegisteredSignInButtonText">@string/signIn</string>
+	<string name="enter_numera_data">‏‎צור חשבון LibreLink משלך לשימוש עם FreeStyle LibreLink ויישומים תואמים אחרים.‎‏</string>
+	<string name="minorRegistrationHeader">‏‎משתמש זה קטין. הורה או אפוטרופוס צריך להשלים את החשבון כדי להשתמש בתוכנה זו.‎‏</string>
+	<string name="parentGuardianFirstName">‏‎שם פרטי של הורה/אפוטרופוס חוקי‎‏</string>
+	<string name="parentGuardianLastName">‏‎שם משפחה של הורה/אפוטרופוס חוקי‎‏</string>
+	<string name="parentGuardianEmail">@string/email</string>
+	<string name="nameAndBirthDateHeader">‏‎נתחיל במידע בסיסי.‎‏</string>
+	<string name="nameAndBirthDateTitle">@string/createNewAccountText</string>
+	<string name="profileUpdateTopText">‏‎שינוי נתונים כלשהם מבין אלה שמופיעים להלן יוביל לעדכון החשבון.‎‏</string>
+	<string name="changePasswordTopText">‏‎הסיסמאות צריכות להכיל 8‏-36 תווים ולפחות ספרה 1, אות רישית 1 ואות קטנה 1.‎‏</string>
+	<string name="createAccountSubmitButtonText">‏‎יצירת חשבון‎‏</string>
+	<string name="authenticationFailure">‏‎אימות מול השרת נכשל. נא להיכנס לחשבון שוב.‎‏</string>
+	<string name="authenticationFailureLoginButton">‏‎כניסה לחשבון‎‏</string>
+	<string name="reenterPassword">‏‎נא להזין שוב את הסיסמה.‎‏</string>
+	<string name="parentLoginText">‏‎כניסה לחשבון צריכה להתבצע על ידי הורה/אפוטרופוס.‎‏</string>
+	<string name="parentLoginSubText">‏‎נא להזין את סיסמת החשבון כדי לקבל גישה לשיתוף.‎‏</string>
+
+	<!-- Side Navigation Drawer -->
+	<string name="navigation_drawer_username">%1$s %2$s</string>
+	<string name="navigation_drawer_daily_graph">@string/daily_graph</string>
+	<string name="navigation_drawer_estimated_a1c">@string/estimated_a1c</string>
+	<string name="navigation_drawer_average_glucose">‏‎רמת סוכר ממוצעת‎‏</string>
+	<string name="navigation_drawer_low_glucose">‏‎אירועי רמת סוכר נמוכה‎‏</string>
+	<string name="navigation_drawer_sensor_usage">‏‎שימוש בחיישן‎‏</string>
+	<string name="navigation_drawer_daily_patterns">@string/daily_patterns</string>
+	<string name="navigation_drawer_time_in_target">@string/time_in_target</string>
+	<string name="navigation_drawer_sharedata">@string/share</string>
+
+	<!-- Home -->
+	<string name="applyNewSensor">‏‎הצמדת חיישן חדש‎‏</string>
+	<string name="scanNewSensor">‏‎סרוק חיישן חדש‎‏</string>
+	<string name="startNewSensor">‏‎הצמד וסרוק חיישן חדש </string>
+	<string name="sensorReadyIn">‏‎אפשר להשתמש בחיישן בעוד %1$s‎‏</string>
+	<string name="readyToScanDetail">‏‎החיישן מוכן לשימוש. לבדיקת רמת הסוכר, הצמד את חלקו האחורי של הטלפון החכם לחיישן עד שתשמע שני צלילים.‎‏</string>
+	<string name="applyNewSensorDetail">‏‎הצמד חיישן חדש.‎‏</string>
+	<string name="scanNewSensorDetail">‏‎סרוק חיישן כדי להתחיל אותו.‎‏</string>
+	<string name="scanNewSensorDetailLateJoin">‏‎אם ברצונך להשתמש גם בקורא, תחילה עליך לסרוק באמצעותו.‎‏</string>
+	<string name="scanSensorDetail">‏‎סריקת חיישן.‎‏</string>
+	<string name="last24Hours">‏‎24 שעות אחרונות‎‏</string>
+	<string name="lastScan">‏‎סריקה אחרונה‎‏</string>
+	<string name="sensorIsReady">‏‎מוכן לסריקה‎‏</string>
+	<string name="sensorWarmingUp">‏‎חיישן חדש מופעל‎‏</string>
+	<string name="sensorHasEnded">‏‎החיישן שלך הפסיק לפעול‎‏</string>
+	<string name="sensorEndsIn">‏‎פעולת החיישן מסתיימת תוך: ‎‏ %1$s</string>
+	<string name="sensorLateJoinMessage">‏‎כעת ניתן לסרוק את החיישן באמצעות מכשיר זה והמכשיר ששימש להתחלת פעולת החיישן.\n\nהערה: כדי להבטיח הצגת נתונים מלאים בדוחות המכשיר, סרוק את החיישן באמצעות אותו מכשיר לפחות פעם אחת כל 8 שעות. אין שיתוף נתונים ודוחות בין מכשירים.‎‏</string>
+
+	<!-- Stats/Reports -->
+	<!-- Used for Germany to force 24 hour time on the chart axis -->
+	<bool name="force24HourTimes">false</bool>
+
+	<!-- Used to set the string format for graph axis unless 24 hour time is used -->
+	<string name="amTimeAxisFormat">‏‎h\'\'לפה"צ‎‏</string>
+	<string name="pmTimeAxisFormat">‏‎h\'\'אחה"צ‎‏</string>
+
+	<string name="mmolPerMolFormatter" tools:ignore="PluralsCandidate">‏‎( %d mmol/mol )‎‏</string>
+	<string name="sensor_usage_total_scans">‏‎סך הכול סריקות‎‏</string>
+	<string name="sensor_usage_day_average">‏‎סריקות ביום‎‏</string>
+	<string name="sensor_usage_captured">‏‎% מנתוני החיישן שנלכדו‎‏</string>
+	<string name="days_of_data" tools:ignore="PluralsCandidate">‏‎נתונים זמינים עבור %1$d מתוך %2$d ימים‎‏</string>
+	<string name="a1cDaysOfData" tools:ignore="PluralsCandidate">‏‎הנתונים מקיפים %1$d מתוך %2$d ימים‎‏</string>
+	<string name="no_sensor_data">‏‎אין מספיק נתוני חיישן‎‏</string>
+	<string name="timeintarget_glucose_range">%1$s-%2$s</string>
+	<string name="timeintarget_glucose_less_than">&lt; %s</string>
+	<string name="timeintarget_glucose_greater_than">&gt; %s</string>
+	<string name="timeintarget_percent">%</string>
+	<string name="target">‏‎יעד‎‏</string>
+	<string name="timeInTargetGlucoseRangeLabel">‏‎טווח יעד: ‎‏ %s</string>
+	<string name="average_glucose_info_title">‏‎רמת סוכר ממוצעת‎‏</string>
+	<string name="average_glucose_info_msg">‏‎"רמת סוכר ממוצעת" מציגה מידע על ממוצע הקריאות של רמת הסוכר בחיישן. הממוצע הכולל בתקופה שנבחרה מוצג מתחת לגרף. הממוצע מוצג גם עבור זמנים שונים במהלך היום. הקריאות מעל או מתחת לטווח ערכי היעד של רמת הסוכר מוצגות בצהוב, כתום או אדום. הקריאות בטווח ירוקות.‎‏</string>
+	<string name="low_glucose_info_title">‏‎אירועי רמת סוכר נמוכה‎‏</string>
+	<string name="low_glucose_info_msg_mg">‏‎"אירועי רמת סוכר נמוכה" מציגים מידע על מספר האירועים שבהם רמת הסוכר הייתה נמוכה לפי מדידות החיישן. אירוע רמת סוכר נמוכה נרשם כאשר קריאת רמת הסוכר בחיישן נמוכה מ-‎70 mg/dL במשך יותר מ-15 דקות. מספר האירועים הכולל מוצג מתחת לגרף. גרף העמודות מציג את אירועי רמת הסוכר הנמוכה בזמנים שונים במהלך היום.‎‏</string>
+	<string name="low_glucose_info_msg_mmol">‏‎אירועי רמת סוכר נמוכה מציגים מידע על מספר האירועים שבהם רמת הסוכר הייתה נמוכה לפי מדידות החיישן. אירוע רמת סוכר נמוכה נרשם כאשר קריאת רמת הסוכר בחיישן נמוכה מ-‎3.9 mmol/L במשך יותר מ-15 דקות. מספר האירועים הכולל מוצג מתחת לגרף. גרף העמודות מציג את אירועי רמת הסוכר הנמוכה בזמנים שונים במהלך היום.‎‏</string>
+	<string name="a1c_info_title">‏‎A1c משוער‎‏</string>
+	<string name="a1c_info_msg">רמת ה-A1c המשוערת (נקראת גם HbA1c) מבוססת על נתונים זמינים בחיישן לגבי רמת הסוכר מ-90 הימים האחרונים. ככל שכמות הנתונים הזמינים גדולה יותר, כך הערך המשוער יהיה מדויק יותר. עם זאת, ייתכן שהרמה המשוערת לא תתאים ל-A1c הנמדד במעבדה.\n\nניתן להשתמש ב-A1c כסמן המצביע על טיב השליטה ברמת הסוכר והוא עשוי לשמש למעקב אחר תוכנית הטיפול בסוכרת שלך.‎‏</string>
+	<string name="daily_info_title">‏‎גרף יומי‎‏</string>
+	<string name="daily_info_msg">‏‎"גרף יומי" הוא גרף המראה את קריאות רמת הסוכר בחיישן לפי ימים.\n\nייתכן שיופיעו בגרף פערים בגלל הזמנים שבהם לא ביצעת לפחות סריקה אחת בכל 8 שעות.\n\nייתכן שיופיע סמל שעון בנקודות שבהן אזור הזמן השתנה. כתוצאה מכך עשויים להופיע פערים בגרף או עשויה להיגרם הסתרה של קריאות רמת סוכר.‎‏</string>
+	<string name="sensor_usage_info_title">‏‎ניצול חיישן‎‏</string>
+	<string name="sensor_usage_info_msg">‏‎ניצול חיישן מציג מידע על תדירות סריקת החיישן. מידע זה כולל ממוצע הפעמים שבהן סרקת את החיישן בכל יום, אחוז נתוני החיישן שנקלטו מהסריקות ומספר הסריקות הכולל.‎‏</string>
+	<string name="time_in_target_info_title">זמן ביעד המטרה</string>
+	<string name="time_in_target_info_msg">‏‎"זמן ביעד המטרה" הוא גרף המציג את אחוז הזמן שבו קריאות רמת הסוכר בחיישן היו מעל, מתחת או בתוך טווח ערכי היעד לרמת הסוכר.‎‏</string>
+	<string name="daily_average">‏‎ממוצע: ‎‏ %1$s %2$s</string>
+	<string name="total_events">‏‎סה"כ אירועים:  %1$d</string>
+	<string name="daily_patterns_info_title">‏‎דפוסים יומיים‎‏</string>
+	<string name="daily_patterns_info_msg">‏‎"דפוסים יומיים" הוא גרף המציג את הדפוס וההשתנות של ערכי הסוכר שנקלטו בחיישן במשך יום טיפוסי. הקו השחור העבה מציג את החציון (נקודת האמצע) של קריאות רמת הסוכר. ההצללה בכחול בהיר מייצגת את טווח האחוזון 10‏-90 מקריאות החיישן. ההצללה בכחול כהה מייצגת את טווח האחוזון 25‏-75.\n\nהערה: כדי להציג דפוסים יומיים יש לקלוט נתונים של רמות הסוכר במשך לפחות 5 ימים.‎‏</string>
+
+	<!-- Scan Result -->
+	<string name="glucoseAboveRange">‏‎רמת סוכר גבוהה\n(מחוץ לטווח)‎‏</string>
+	<string name="glucoseBelowRange">‏‎רמת סוכר נמוכה\n(מחוץ לטווח)‎‏</string>
+	<string name="glucoseGoingHigh">‏‎רמת סוכר עולה‎‏</string>
+	<string name="glucoseGoingLow">‏‎רמת סוכר יורדת‎‏</string>
+	<string name="glucoseHigh">‏‎רמת סוכר גבוהה‎‏</string>
+	<string name="glucoseInRange">‏‎רמת סוכר בטווח‎‏</string>
+	<string name="glucoseLow">‏‎רמת סוכר נמוכה‎‏</string>
+	<string name="highGlucoseIsDangerous">‏‎רמת סוכר גבוהה יכולה להיות מסוכנת. בדוק שנית את רמת הסוכר שלך וטפל על פי ההמלצות של איש הצוות הרפואי שמטפל בך. שקול לבדוק את רמת הקטונים שלך.‎‏</string>
+	<string name="lowGlucoseIsDangerous">‏‎רמת סוכר נמוכה עלולה להיות מסוכנת. בדוק שנית את רמת הסוכר שלך וטפל על פי ההמלצות של איש הצוות הרפואי שמטפל בך.‎‏</string>
+	<string name="yourGlucose">‏‎רמת הסוכר שלי‎‏</string>
+	<string name="vrcFailedTitle">‏‎שגיאה בהצגת התוצאה‎‏</string>
+	<string name="vrcFailedText">‏‎התוצאה היא: ‎‏ %s</string>
+	<string name="error_sensor_incompatible_title">‏‎חיישן לא מתאים‎‏</string>
+	<string name="error_sensor_incompatible_msg">‏‎לא ניתן להשתמש בחיישן זה עם גרסה זו של FreeStyle LibreLink‎‏.</string>
+	<string name="error_sensor_terminated_title">‏‎החלף חיישן‎‏</string>
+	<string name="error_sensor_terminated_msg">‏‎החיישן שלך אינו פועל. נא הסר את החיישן שלך והתחל חיישן חדש.‎‏</string>
+	<string name="error_sensor_removed_title">‏‎החלף חיישן‎‏</string>
+	<string name="error_sensor_removed_msg">‏‎החיישן שלך אינו פועל. נא הסר את החיישן שלך והתחל חיישן חדש.‎‏</string>
+	<string name="error_sensor_expired_title">‏‎החיישן הסתיים</string>
+	<string name="error_sensor_expired_msg">‏‎התחל חיישן חדש לבדיקת רמת סוכר.‎‏</string>
+	<string name="error_sensor_inwarmup_title">‏‎מתבצעת הפעלת חיישן‎‏</string>
+	<string name="error_sensor_inwarmup_msg">‏‎הפעלת חיישן זה התחילה אך הוא עדיין לא מוכן לשימוש.‎‏</string>
+	<string name="error_sensor_corrupt_title">‏‎שגיאת סריקה‎‏</string>
+	<string name="error_sensor_corrupt_msg">‏‎הטלפון החכם לא הצליח לסרוק את החיישן. סרוק את החיישן שנית.‎‏</string>
+	<string name="error_sensor_transmission_title">‏‎שגיאת סריקה‎‏</string>
+	<string name="error_sensor_transmission_msg">‏‎הטלפון החכם לא הצליח לסרוק את החיישן. סרוק את החיישן שנית. הקפד לקרב את חלקו האחורי של הטלפון החכם לחיישן. בהישמע הצליל או הרטט הראשון, החזק את הטלפון החכם מבלי להזיזו עד להישמע הצליל או הרטט השני.‎‏</string>
+	<string name="error_sensor_already_started_title">‏‎חיישן כבר בשימוש‎‏</string>
+	<string name="error_sensor_already_started_msg">‏‎הפעלת החיישן שזה עתה סרקת התחילה באמצעות מכשיר אחר ולא ניתן להשתמש בו.‎‏</string>
+	<string name="error_sensor_already_started_msg_llj">חיישן זה הופעל על ידי מכשיר אחר. כדי שהחיישן יעבוד עם הטלפון החכם הזה, עליך לסרוק את החיישן באמצעות הטלפון החכם תוך שעה מהתחלת השימוש בו.‎‏</string>
+	<string name="error_sensor_temporary_problem_title">‏‎שגיאת חיישן‎‏</string>
+	<string name="error_sensor_temporary_problem_msg">‏‎קריאת רמת סוכר אינה זמינה. נסה לסרוק שנית בעוד 10 דקות.‎‏</string>
+	<string name="error_sensor_too_hot_title">‏‎חיישן חם מדי‎‏</string>
+	<string name="error_sensor_too_hot_msg">‏‎החיישן חם מכדי לתת קריאות רמת סוכר. נסה שנית בעוד מספר דקות.‎‏</string>
+	<string name="error_sensor_too_cold_title">‏‎חיישן קר מדי‎‏</string>
+	<string name="error_sensor_too_cold_msg">‏‎החיישן קר מכדי לתת קריאות רמת סוכר. נסה שנית בעוד מספר דקות.‎‏</string>
+	<string name="error_sensor_insertion_failure_title">‏‎בדוק חיישן‎‏</string>
+	<string name="error_sensor_insertion_failure_msg">‏‎נא בדוק את החיישן שלך. אם החיישן רופף על העור שלך, אנא הסר אותו והתחל שימוש בחיישן חדש. אם הוא הוצמד כראוי, נסה להפעיל את החיישן שנית.‎‏</string>
+	<string name="error_sensor_not_active_title">‏‎נמצא חיישן חדש‎‏</string>
+	<string name="error_sensor_not_active_msg">הפעלה של חיישן חדש תסיים את פעולת החיישן שאתה משתמש בו כרגע.\n\nהאם ברצונך להתחיל להפעיל חיישן חדש?‎‏</string>
+
+	<!-- Add/Edit Note -->
+	<string name="addNote">‏‎הוסף הערה‎‏</string>
+	<string name="editNote">‏‎עריכת הערה</string>
+	<string name="highIntensity">‏‎אינטנסיביות גבוהה‎‏</string>
+	<string name="mediumIntensity">‏‎אינטנסיביות בינונית‎‏</string>
+	<string name="lowIntensity">‏‎אינטנסיביות נמוכה‎‏</string>
+	<string name="noExerciseTypeChosen">‏‎בחר אינטנסיביות‎‏</string>
+	<string name="food">‏‎מזון‎‏</string>
+	<string name="exercise">‏‎פעילות גופנית‎‏</string>
+	<string name="longActingInsulin">‏‎אינסולין ארוך טווח‎‏</string>
+	<string name="rapidActingInsulin">‏‎אינסולין בעל פעולה מהירה‎‏</string>
+	<string name="meal">‏‎ארוחה‎‏</string>
+	<string name="breakfast">‏‎ארוחת בוקר‎‏</string>
+	<string name="lunch">‏‎ארוחת צהריים‎‏</string>
+	<string name="snack">‏‎חטיף/ארוחה קלה‎‏</string>
+	<string name="dinner">‏‎ארוחת ערב‎‏</string>
+	<string name="carbsGramsError">‏‎הערך צריך להיות מספר שלם בין %1$s ו-%2$s‎‏</string>
+	<string name="carbsServingsError">‏‎הערך צריך להיות כפולה של 0.5 ובין %1$s ו-%2$s‎‏</string>
+	<string name="insulinDoseError">‏‎הערך צריך להיות כפולה של 0.1 ובין 0.1 ו-%1$d‎‏</string>
+
+	<!-- Manual BG -->
+	<string name="manualBgTitle">‏‎תוצאת סוכר בדם‎‏</string>
+	<string name="manualBgExplanation">‏‎הזן את התוצאה של בדיקת הסוכר בדם.‎‏</string>
+	<string name="manualBgError">‏‎הערך צריך להיות מספר שלם בין %1$s ו-%2$s‎‏</string>
+
+	<!-- Logbook -->
+	<string name="logbookDetail">‏‎פירוט יומן‎‏</string>
+	<string name="logbookListEmpty">‏‎לא הוזנו נתונים עבור תאריך זה.‎‏</string>
+	<string name="logbookDetailCarbFormatDoseAndUnit">" (&lt;b&gt;%1$s%2$s&lt;/b&gt;)"</string>
+	<string name="logbookDetailInsulinFormatTypeAndDose">%1$s (&lt;b&gt;%2$s&lt;/b&gt;)</string>
+	<string name="logbookDetailSeparator">", "</string>
+	<string name="noteBalloonSeparator">&lt;br/&gt;</string>
+	<string name="logbookDetailExerciseType">@string/exercise</string>
+	<string name="logbookDetailExerciseFormatType">‏‎פעילות גופנית %s‎‏</string>
+	<string name="logbookDetailExerciseFormatDuration">" (&lt;b&gt;%s&lt;/b&gt;)"</string>
+
+	<!-- Reminders -->
+	<string name="alarms">‏‎התראות‎‏</string>
+	<string name="repeating">‏‎חזרה‎‏</string>
+	<string name="timers">‏‎טיימרים‎‏</string>
+	<string name="addReminder">‏‎הוסף תזכורת‎‏</string>
+	<string name="alarmName">‏‎שם תזכורת‎‏</string>
+	<string name="checkGlucose">‏‎בדוק רמת סוכר‎‏</string>
+	<string name="myReminder">‏‎התזכורת שלי‎‏</string>
+	<string name="nextReminderPrompt">‏‎התזכורת הבאה:‎‏\u0020</string>
+	<string name="nextAlarmPrompt">‏‎התזכורת הבאה: %1$s, %2$s‎‏</string>
+	<string name="noActiveReminders">‏‎אין תזכורות פעילות.‎‏</string>
+	<string name="noActiveRemindersAutoScanSensorEnabled">‏‎אין תזכורות פעילות. טיימר סריקת החיישן יאופס בסריקה הבאה.‎‏</string>
+	<string name="remindMeToCheckAgain">‏‎הזכר לי לבדוק רמת סוכר בעוד:‎‏</string>
+	<string name="setReminder">‏‎הגדרה‎‏</string>
+
+	<!-- Send Reports -->
+	<string name="sendChooserTitle">‏‎שליחה‎‏</string>
+
+	<!-- Settings -->
+	<string name="unitOfMeasurementTitle">‏‎יחידת מידה</string>
+	<string name="unitOfMeasurementTopText">‏‎בחר יחידת מידה עבור רמת הסוכר שלך. כל נתוני רמות הסוכר יוצגו ביחידות אלה.‎‏</string>
+	<string name="unitOfMeasurementTopTextForSetup">‏‎בחר יחידת מידה עבור רמת הסוכר שלך. כל נתוני רמות הסוכר יוצגו ביחידות אלה. לא תוכל לשנות זאת אחר כך.‎‏</string>
+	<string name="unitOfMeasureWarning">‏‎חשוב מאוד לבחור יחידת מידה נכונה עבור רמת הסוכר שלך. יחידת מידה שגויה עלולה לשבש את פירוש ערכי הסוכר שלך. פנה לאיש הצוות הרפואי המטפל בך אם אינך יודע איזו יחידת מידה לבחור.‎‏</string>
+	<string name="unitOfMeasurementFixedTopText">‏‎יחידת המידה של רמת הסוכר נקבעת אוטומטית לפי ארץ מגוריך.‎‏</string>
+	<string name="unitOfMeasurementFixedCountryText">‏‎ארץ מגוריך היא‎‏</string>
+	<string name="unitOfMeasurementFixedText">‏‎יחידת המידה שלך היא‎‏</string>
+	<string name="targetGlucoseRangeTitle">‏‎טווח ערכי היעד לרמת הסוכר‎‏</string>
+	<string name="targetGlucoseRangeTopText">‏‎טווח ערכי היעד לרמת הסוכר יוצג בגרפים שונים. פנה לאיש הצוות הרפואי המטפל בך אם אינך יודע מה הטווח.‎‏</string>
+	<string name="targetGlucoseRangeTopTextForSetup">‏‎טווח ערכי היעד לרמת הסוכר יוצג בגרפים שונים, וניתן לשנותו בהגדרות. פנה לאיש הצוות הרפואי המטפל בך אם אינך יודע מה הטווח.‎‏</string>
+	<string name="carbohydrateUnitsTitle">‏‎יחידות של פחמימות‎‏</string>
+	<string name="carbohydrateUnitsTopText">‏‎ניתן להזין פחמימות בגרמים או מנות, לפי הדרך שבה אתה סופר אותן. בחר את יחידת הפחמימות המועדפת עליך.‎‏</string>
+	<string name="carbohydrateUnitServingSizeMessage">‏‎בחר את גודל המנה המועדף עליך או פנה לאיש הצוות הרפואי המטפל בך אם אינך יודע מהו.‎‏</string>
+	<string name="carbohydrateUnitsTopTextForSetup">@string/carbohydrateUnitsTopText</string>
+	<string name="scanSoundsTitle">‏‎צלילי סריקה‎‏</string>
+	<string name="scanSoundsOsDefault">‏‎צליל ורטט‎‏</string>
+	<string name="scanSoundsVibeOnly">‏‎רטט בלבד‎‏</string>
+	<string name="scanSoundsTopText">‏‎סריקת חיישן תפעיל רטט. בחר אם ברצונך גם לשמוע צליל בנוסף לרטט.‎‏</string>
+	<string name="scanSoundsTopTextForSetup">@string/scanSoundsTopText</string>
+	<string name="scanSoundsNote">‏‎שים לב:\nעוצמת השמע של צלילי הסריקה תיקבע לפי ההגדרה בטלפון החכם. לדוגמה, אם הטלפון החכם שלך מושתק, לא תשמע את צליל הסריקה.‎‏</string>
+	<string name="textToSpeechTitle">‏‎טקסט לדיבור‎‏</string>
+	<string name="textToSpeechOn">‏‎פועל‎‏</string>
+	<string name="textToSpeechOff">‏‎כבוי‎‏</string>
+	<string name="textToSpeechTopText">‏‎הפעלת "טקסט לדיבור" מאפשרת להשמיע את קריאת רמת הסוכר.‎‏</string>
+	<string name="textToSpeechNote">‏‎שים לב:\nעוצמת השמע של "טקסט לדיבור" תיקבע לפי ההגדרה בטלפון החכם. לדוגמה, אם הטלפון החכם שלך מושתק, לא תשמע את קריאת רמת הסוכר.‎‏</string>
+	<string name="countryOfOriginTitle">‏‎אישור ארץ מגורים‎‏</string>
+	<string name="countryOfOriginTopText">‏‎ארץ מגוריך היא חלק מהגדרת היישום והשימוש בה נועד להבטיח אחסון נאות של נתונים.‎‏</string>
+	<string name="countryOfOriginTopTextForSetup">@string/countryOfOriginTopText</string>
+	<string name="countryOfOriginExplanation">‏‎אם הדבר נכון, הקש על "הבא".\n\nאם הדבר לא נכון, ייתכן שתצטרך להסיר את התקנת FreeStyle LibreLink ולהתקין את הגרסה המתאימה לארץ מגוריך. נא לפנות לשירות הלקוחות בכל שאלה.‎‏</string>
+	<string name="targetGlucoseRangeUnitText">‏‎ערכים לפי‎‏</string>
+	<string name="servingsWithGramsEquivalent" tools:ignore="PluralsCandidate">מנות (1 מנה = %.1f גרמים)</string>
+	<string name="countryLabel">‏‎ארץ מגורים‎‏</string>
+	<string name="countryLabelForSetup">‏‎ארץ מגוריך שזוהתה היא‎‏</string>
+	<string name="defaultNetworkErrorMessage">‏‎שגיאה בתקשורת עם השרת‎‏.</string>
+	<string name="serverNotFoundErrorMessage">‏‎שגיאה בתקשורת עם השרת. השרת לא נמצא.‎‏</string>
+	<string name="pageNotFoundErrorMessage">‏‎שגיאה בתקשורת עם השרת. לא נמצא תוכן בשרת.‎‏</string>
+	<string name="networkingErrorMessage">‏‎התרחשה שגיאת רשת בתקשורת עם השרת.‎‏</string>
+	<string name="internalServerErrorMessage">‏‎שגיאה בתקשורת עם השרת. התרחשה שגיאה פנימית בשרת.‎‏</string>
+	<string name="requestTimeoutErrorMessage">‏‎שגיאה בתקשורת עם השרת. תם הזמן שהוקצב לבקשה.‎‏</string>
+	<string name="serviceUnavailableErrorMessage">‏‎שגיאה בתקשורת עם השרת. השירות לא זמין.‎‏</string>
+	<string name="submitButtonText">@string/submit</string>
+	<string name="mgPerDeciliterRadioText">‏‎<b>mg/dL</b> (לדוגמה ‎100 mg/dL)‏</string>
+	<string name="mmolPerLiterRadioText">‏‎<b>mmol/L</b> (לדוגמה ‎5.6 mmol/L‎‏)</string>
+	<string name="target_range_separator">-</string>
+	<string name="glucoseRangeFormat">%1$s - %2$s %3$s</string>
+	<string name="settingsUnitOfMeasureConfirmationMessage">‏‎נא לאשר שברצונך לבחור את יחידת המידה הבאה:‎‏</string>
+	<string name="networkNotConnectedDefault">‏‎הטלפון החכם שלך לא מחובר כרגע לאינטרנט. לא ניתן להשלים את הפעולה עד ליצירת חיבור לאינטרנט.‎‏</string>
+	<string name="networkNotConnectedSetup">‏‎הטלפון החכם שלך לא מחובר כרגע לאינטרנט. לא ניתן להשלים את ההגדרה עד ליצירת חיבור לאינטרנט.‎‏</string>
+	<string name="networkNotConnectedProfileUpdate">‏‎הטלפון החכם שלך לא מחובר כרגע לאינטרנט. לא ניתן לשנות את החשבון עד ליצירת חיבור לאינטרנט.‎‏</string>
+	<string name="privacyNoticeAcceptanceStatement">‏‎קראתי את הודעת הפרטיות ואני מקבל אותה במפורש.‎‏</string>
+	<string name="privacyNoticeTitle">‏‎הודעת פרטיות‎‏</string>
+	<string name="termsOfUseAcceptanceStatement">‏‎קראתי את תנאי השימוש ואני מקבל אותם במפורש.‎‏</string>
+	<string name="termsOfUseTitle">‏‎תנאי שימוש‎‏</string>
+	<string name="nfcUnsupported">‏‎כדי להשתמש ב-FreeStyle LibreLink לסריקת החיישן, הטלפון החכם שלך צריך לתמוך ב-NFC‎‏.</string>
+	<string name="turnOnNfcPrompt">‏‎כדי להשתמש ב-FreeStyle LibreLink לסריקת החיישן, עליך לאפשר את ה- NFC בטלפון החכם שלך. האם ברצונך להפעיל את האפשרות הזו?‎‏</string>
+	<string name="enableNetworkTime">‏‎כדי להשתמש ב-FreeStyle LibreLink לסריקת החיישן, עליך לאפשר עדכון תאריך ושעה באופן אוטומטי בטלפון החכם שלך. האם ברצונך להפעיל את האפשרות הזו?‎‏</string>
+	<string name="getStartedNow">‏‎התחל עכשיו‎‏</string>
+
+	<!-- My Glucose Explanation -->
+	<string name="myGlucoseExplanationTitle">‏‎רמת הסוכר שלי‎‏</string>
+	<string name="myGlucoseExplanationTopText">‏‎מסך זה מופיע לאחר סריקת החיישן.‎‏</string>
+	<string name="myGlucoseExplanationResultCallouts">‏‎המסך "רמת הסוכר שלי" מציג (1) את רמת הסוכר הנוכחית, (2) את חץ המגמה של רמת הסוכר, (3) את גרף רמת הסוכר.‎‏</string>
+
+	<!-- Trend Arrow Explanation -->
+	<string name="trendExplanationTitle">‏‎חץ המגמה של רמת הסוכר‎‏</string>
+	<string name="trendExplanationTopText">כשאתה סורק את החיישן שלך, חץ יציין את מגמת רמת הסוכר האחרונה שלך.</string>
+	<string name="trendExplanationRisingQuickly">עולה מהר</string>
+	<string name="trendExplanationRising">עולה</string>
+	<string name="trendExplanationStable">משתנה לאט</string>
+	<string name="trendExplanationFalling">יורד</string>
+	<string name="trendExplanationFallingQuickly">יורד מהר</string>
+
+	<!-- Help -->
+	<string name="helpItemTitleApplySensor">‏‎אופן הצמדת חיישן‎‏</string>
+	<string name="helpItemTitleScanSensor">‏‎אופן סריקת חיישן‎‏</string>
+	<string name="helpItemTitleEventLog">@string/eventLog</string>
+	<string name="helpItemTitleUserGuide">‏‎מדריך למשתמש‎‏</string>
+
+	<!-- OneStep Log Upload -->
+	<string name="logUploadTitle">‏‎שליחת נתונים לפתרון תקלות‎‏</string>
+	<string name="logUploadOptInDescription">‏‎שליחת נתונים לפתרון תקלות עוזרת לשירות הלקוחות להשיב על שאלותיך.‎‏</string>
+	<string name="logUploadOptInText1">‏‎הודעת הפרטיות שקיבלת מתארת את תוכן הנתונים לפתרון תקלות.‎‏</string>
+	<string name="logUploadViewPrivacyButtonLabel">‏‎הצגת הודעת הפרטיות‎‏</string>
+	<string name="logUploadOptInText2">‏‎האם אתה מסכים שנתוני פתרון התקלות יישלחו?‎‏</string>
+	<string name="logUploadDecline">‏‎מסרב‎‏</string>
+	<string name="logUploadAccept">‏‎מסכים‎‏</string>
+	<string name="logUploadDescription">‏‎נא להזין את מספר המקרה ואת קוד האימות שקיבלת משירות הלקוחות.‎‏</string>
+	<string name="logUploadCaseNumberLabel">‏‎מספר מקרה‎‏</string>
+	<string name="logUploadAccessCodeLabel">‏‎קוד אימות‎‏</string>
+	<string name="logUploadSendButtonLabel">‏‎שליחה‎‏</string>
+	<string name="logUploadErrorTypo">‏‎מספר מקרה או קוד אימות לא נכונים‎‏</string>
+	<string name="logUploadErrorUploadFailedTitle">‏‎שגיאה בשליחת נתונים לפתרון תקלות‎‏</string>
+	<string name="logUploadErrorUploadFailedText">‏‎הקש כדי לנסות שוב.‎‏</string>
+
+	<!-- Apply Sensor Tour -->
+	<string name="applySensorTitle">‏‎הצמדת חיישן‎‏</string>
+	<string name="applySensorTitleStep1">‏‎שלב 1‎‏</string>
+	<string name="applySensorTextStep1">‏‎בחר מיקום בחלקה האחורי של הזרוע.‎‏</string>
+	<string name="applySensorSubTextStep1">‏‎הערה: הימנע מצלקות, שומות, סימני מתיחה, גושים ומיקומי הזרקת אינסולין. למניעת גירוי בעור, בחר במיקום שונה בכל שימוש.‎‏</string>
+	<string name="applySensorTitleStep2">‏‎שלב 2‎‏</string>
+	<string name="applySensorTextStep2">‏‎נקה את המקום במטלית ספוגה באלכוהול. המתן שהמקום יתייבש לפני שתמשיך.‎‏</string>
+	<string name="applySensorTitleStep3">‏‎שלב 3‎‏</string>
+	<string name="applySensorTextStep3">‏‎קלף והסר את המכסה לגמרי מאריזת החיישן.‎‏</string>
+	<string name="applySensorTitleStep4">‏‎שלב 4‎‏</string>
+	<string name="applySensorTextStep4">‏‎הסר את המכסה בהברגה מהתקן הצמדת החיישן.‎‏</string>
+	<string name="applySensorTitleStep5">‏‎שלב 5‎‏</string>
+	<string name="applySensorTextStep5">‏‎מקם את הסימן הכהה שעל התקן הצמדת החיישן מול הסימן הכהה על מארז החיישן. הנח את מארז החיישן על משטח קשיח ולחץ על התקן הצמדת החיישן בחוזקה כלפי מטה עד לעצירה מלאה.‎‏</string>
+	<string name="applySensorTitleStep6">‏‎שלב 6‎‏</string>
+	<string name="applySensorTextStep6">‏‎הרם את התקן הצמדת החיישן ממארז החיישן.‎‏</string>
+	<string name="applySensorTitleStep7">‏‎שלב 7‎‏</string>
+	<string name="applySensorTextStep7">‏‎התקן הצמדת החיישן מוכן להצמדת חיישן. אין לגעת בתוך התקן הצמדת החיישן או להניחו שוב במארז החיישן.‎‏</string>
+	<string name="applySensorTitleStep8">‏‎שלב 8‎‏</string>
+	<string name="applySensorTextStep8">‏‎הנח את התקן הצמדת החיישן מעל המיקום בעור ולחץ מטה בחוזקה להצמדת החיישן.‎‏</string>
+	<string name="applySensorTitleStep9">‏‎שלב 9‎‏</string>
+	<string name="applySensorTextStep9">‏‎הרחק בעדינות את התקן הצמדת החיישן מהגוף.‎‏</string>
+	<string name="applySensorTitleStep10">‏‎שלב 10‎‏</string>
+	<string name="applySensorTextStep10">‏‎ודא שהחיישן מוצמד היטב. סלק את התקן הצמדת החיישן המשומש ואת מארז החיישן לפי התקנות המקומיות.‎‏</string>
+
+	<!-- Scan Sensor Tour -->
+	<string name="scanSensorTitle">‏‎סריקת חיישן‎‏</string>
+	<string name="scanSensorTitleStep1">‏‎שלב 1‎‏</string>
+	<string name="scanSensorTextStep1"><![CDATA[קרב את חלקו <b>האחורי</b> של הטלפון החכם אל החיישן <b>והצמד</b> אליו.]]></string>
+	<string name="scanSensorTitleStep2">‏‎שלב 2‎‏</string>
+	<string name="scanSensorTextStep2">‏‎אם השמע לא מושתק, הטלפון החכם ישמיע סדרת צלילים ורטט במהלך סריקת החיישן. אל תרחיק את הטלפון החכם עד שהצלילים והרטט יסתיימו.‎‏</string>
+	<string name="scanSensorTitleStep3">‏‎שלב 3‎‏</string>
+	<string name="scanSensorTextStep3">‏‎לסריקת החיישן, ייתכן שתצטרך למקם שוב את הטלפון החכם ליד החיישן כדי למקם את אנטנת ה- NFC כיאות.‎‏</string>
+
+	<!-- About -->
+	<string name="about">‏‎מידע על היישום‎‏</string>
+	<string name="appNameLabel">‏‎שם:‎‏</string>
+	<string name="appNameValue">‏‎FreeStyle LibreLink‎‏</string>
+	<string name="appPartOfSystem">‏‎חלק ממערכת FreeStyle Libre לניטור Flash של רמת הסוכר‎‏</string>
+	<string name="last3sensors">‏‎3 חיישנים אחרונים:‎‏</string>
+	<string name="sensorStatus">‏‎&#160;&#160;&#160;&#160;מצב: ‎‏ %1$s</string>
+	<string name="udi">‏‎זיהוי מכשיר ייחודי:‎‏</string>
+	<string name="registrationNumber">‏‎מספר רישום:‎‏</string>
+	<string name="productStandardNumber">‏‎מספר תקן מוצר:‎‏</string>
+	<string name="model">‏‎דגם טלפון חכם:‎‏</string>
+	<string name="appCountryLabel">ארץ:</string>
+	<string name="supportWebsiteLabel">‏‎שירות לקוחות:‎‏</string>
+	<string name="supportWebsiteValue">‏‎http://www.freestylelibre.com‎‏</string>
+	<string name="consultInstructionsForUse">‏‎עיין בהוראות השימוש‎‏</string>
+	<string name="productOfUsa">‏‎מוצר מארה"ב‎‏</string>
+	<string name="patentWebsiteLabel">‏‎אתר פטנט:‎‏</string>
+	<string name="patentWebsiteValue">‏‎https://www.abbott.com/patents‎‏</string>
+	<string name="trademarkStatement">‏‎FreeStyle,‏ Libre וסימנים של מותגים קשורים הם סימנים מסחריים של Abbott Diabetes Care Inc.‎‏ בתחומי שיפוט שונים.‎‏</string>
+	<string name="copyrightStatement">‏‎©2018 Abbott‎‏</string>
+	<string name="osVersion">‏‎גרסת מערכת ההפעלה אנדרואיד:‎‏</string>
+	<string name="sensorNotPresent">‏‎אין חיישן פעיל‎‏</string>
+	<string name="softwareVersion">‏‎גרסת תוכנה:‎‏</string>
+
+	<!-- Notifications -->
+	<string name="alarmExpired">ההתראה הסתיימה</string>
+	<string name="timerExpired">‏‎פעולת הטיימר הסתיימה</string>
+
+	<string name="sensorActivated">‏‎פעולת החיישן החלה‎‏</string>
+	<string name="sensorReady">‏‎החיישן מוכן‎‏</string>
+	<string name="sensorReadyContent">‏‎החיישן מוכן לשימוש‎‏</string>
+	<string name="sensorExpired">‏‎החיישן הסתיים</string>
+	<string name="sensorExpiredContent">‏‎התחל פעולת חיישן חדש לבדיקת רמת הסוכר‎‏</string>
+	<string name="sensorEndingSoon">‏‎החיישן מסתיים בקרוב‎‏</string>
+
+	<!-- Data Upload -->
+	<string name="uploadFailedTitle">‏‎כישלון העלאה</string>
+	<string name="uploadFailedNoConnectivityContent">‏‎אין חיבור‎‏</string>
+	<string name="uploadFailedInvalidToken">‏‎האימות נכשל. לחץ לכניסה לחשבון.‎‏</string>
+	<string name="uploadFailedOther">‏‎התרחשה שגיאה. לחץ כדי לנסות שוב‎‏</string>
+	<string name="uploadingDataTitle">‏‎העלאת נתונים ב-FreeStyle LibreLink‎‏</string>
+	<string name="uploadingDataContent">‏‎שליחת נתונים מתבצעת‎‏</string>
+	<string name="serving_size_in_grams">1 מנה = %.1f גרמים</string>
+	<string name="acceptLanguageHeader">he-IL, he;q=0.8</string>
+	<string name="appLocale">he-IL</string>
+
+	<string name="reportHeaderDayOnlyFormat">‏‎d‎‏</string>
+	<string name="reportHeaderFullDateFormat">‏‎d‏ MMMM‏ yyyy‎‏</string>
+	<string name="reportHeaderShortMonthFormat">‏‎d‏ MMM‎‏</string>
+	<string name="reportHeaderShortMonthFullFormat">‏‎d‏ MMM ‏yyyy</string>
+	<string name="reportHeaderDateRangeFormat">%1$s - %2$s</string>
+	<string name="reportShareSubjectFormat">%1$s: %2$s</string>
+
+	<string name="nonActionableExplanationTitle">‏‎אשר קריאת רמת סוכר‎‏</string>
+	<string name="nonActionableExplanationMessage">‏‎אשר את קריאת רמת הסוכר שלך בעזרת מקלון בדיקה לפני קבלת החלטות לגבי הטיפול.‎‏</string>
+
+	<!-- TTS Result -->
+	<string name="spokenLo">‏‎מחוץ לטווח ונמוך‎‏</string>
+	<string name="spokenHi">‏‎מחוץ לטווח וגבוה‎‏</string>
+	<string name="spokenMgDl">‏‎מיליגרמים לכל דציליטר‎‏</string>
+	<string name="spokenMmolL">‏‎מילימולים לכל ליטר‎‏</string>
+	<string name="resultWithTrendNotDetermined">‏‎%1$s %2$s עם מגמה לא זמינה‎‏</string>
+	<string name="resultWithTrendFallingQuickly">‏‎%1$s %2$s ויורד מהר‎‏</string>
+	<string name="resultWithTrendFalling">‏‎%1$s %2$s ויורד‎‏</string>
+	<string name="resultWithTrendStable">‏‎%1$s %2$s ומשתנה לאט‎‏</string>
+	<string name="resultWithTrendRising">‏‎%1$s %2$s ועולה‎‏</string>
+	<string name="resultWithTrendRisingQuickly">‏‎%1$s %2$s ועולה מהר‎‏</string>
+
+	<!-- Download Progress -->
+	<string name="progressDownloadingConfiguration">‏‎מתבצעת הורדה של תצורת יישום‎‏</string>
+	<string name="progressDownloadingUserGuide">‏‎מתבצעת הורדה של מדריך למשתמש‎‏</string>
+	<string name="insufficientSpaceMessage">אין מספיק נפח אחסון בטלפון החכם.</string>
+
+
+	<!-- New strings added 25SEPT2017 -->
+
+	<string name="modalLookingForSensor">החזק את ה-iPhone בקרבת החיישן</string>
+	<string name="modalSensorFound">הסריקה הושלמה</string>
+	<string name="settingsMenuTitle">הגדרות</string>
+	<string name="genericOSVersion">גרסת מערכת ההפעלה:</string>
+	<string name="editTime">ערוך שעה</string>
+	<string name="detail">פירוט</string>
+	<string name="helpItemTitleGlucoseHelp">קריאות סוכר</string>
+	<string name="glucoseHelp">קריאות סוכר</string>
+
+	<!-- Abbreviated time passed -->
+	<string name="mins_passed">לפני %d דקות</string>
+	<string name="hours_passed">לפני %d שעות</string>
+
+	<string name="iosNotificationsDisabled">יש לאפשר הצגת התראות בהגדרות iOS כדי לקבל תזכורות.</string>
+	<string name="glucoseWarningReminderPrompt">האם ברצונך להגדיר תזכורת לבדיקת רמת הסוכר?</string>
+	<string name="NFCReaderUsageDescription">מערכת FreeStyle LibreLink משתמשת ב-NFC לסריקת חיישני FreeStyle LibreLink.</string>
+	<string name="NSPhotoLibraryAddUsageDescription">מערכת FreeStyle LibreLink זקוקה לגישה לספריית המדיה כדי לשמור דוחות. התצלומים שבספרייה לא ישותפו עם אף אחד ללא רשותך.</string>
+	<string name="deleteNote">מחק הערה</string>
+	<string name="deleteNoteConfirmation">האם ברצונך למחוק הערה זאת?</string>
+
+	<!-- New strings with existing Android Counterparts -->
+
+	<string name="iosScanSensorTextStep1">הקש על לחצן הסריקה לפני סריקת החיישן.</string>
+	<string name="iosScanSensorTextStep2">החזק את חלקו העליון של ה-iPhone בקרבת החיישן.</string>
+	<string name="iosScanSensorTextStep3">ה-iPhone ירטוט וישמיע צליל (אם הצלילים מאופשרים) לאחר סריקת החיישן.</string>
+	<string name="iosErrorVersionCheckFailed">יש לשדרג את הגרסה הזו של FreeStyle LibreLink. נא לעבור אל ה-App Store ולהוריד את הגרסה העדכנית.</string>
+	<string name="iosReadyToScanDetail">החיישן מוכן לשימוש.</string>
+	<string name="iosDefaultSensorErrorMsg">הסריקה לא בוצעה בהצלחה. הקש על לחצן הסריקה וסרוק שוב.</string>
+	<string name="iosEnableNetworkTimeTitle">עדכון תאריך ושעה</string>
+	<string name="iosEnableNetworkTime">כדי להשתמש ב-FreeStyle LibreLink, עליך לאפשר עדכון תאריך ושעה באופן אוטומטי. עבור אל \'הגדרות\' &gt; \'כללי\' &gt; \'תאריך ושעה\' ואפשר \'כיוון אוטומטי\'.</string>
+
+	<!-- New string added per Ashwin Kumar's request 2017-08-30-->
+	<string name="iosCheckGlucoseWithPhone">תוכל לבדוק את רמת הסוכר באמצעות ה-iPhone.</string>
+	<string name="retry">נסה שנית</string>
+
+	<!-- New strings for US changes 2017-10-31 -->
+	<string name="sensorUserPrompt">הזן את פרטי האדם שילבש את החיישן. </string>
+	<string name="welcome">ברוך הבא!</string>
+	<string name="welcomeDetail">אנא הקדש מספר רגעים כדי ללמוד איך להבין את קריאות רמת הסוכר ביישום הזה.</string>
+	<string name="backgroundGlucoseColorsTitle">צבע הרקע של רמת הסוכר</string>
+	<string name="backgroundGlucoseColorsDetail">רמת הסוכר הנוכחית קובעת את הצבע המוצג מאחור.</string>
+	<string name="glucoseHighAbove240Mgdl">רמת סוכר גבוהה (מעל 240 mg/dL)</string>
+	<string name="glucoseBetweenTarget240Mgdl">בין טווח היעד ו-240 mg/dL</string>
+	<string name="glucoseTargetRange">רמת הסוכר בתחום טווח היעד</string>
+	<string name="glucoseBetweenTarget70Mgdl">בין טווח היעד ו-70 mg/dL</string>
+	<string name="glucoseLowBelow70Mgdl">רמת סוכר נמוכה (מתחת ל-70 mg/dL)</string>
+	<string name="glucoseHighAbove240Mmol">רמת סוכר גבוהה (מעל 13.3 mmol/L)</string>
+	<string name="glucoseBetweenTarget240Mmol">בין טווח היעד ו-13.3 mmol/L</string>
+	<string name="glucoseBetweenTarget70Mmol">בין טווח היעד ו-3.9 mmol/L</string>
+	<string name="glucoseLowBelow70Mmol">רמת סוכר נמוכה (מתחת ל-3.9 mmol/L)</string>
+	<string name="treatmentDecisions">החלטות טיפול</string>
+	<string name="treatmentDecisionsSymbol">אם סמל זה מופיע, בדוק את רמת הסוכר בדם לפני שתקבל החלטות הקשורות לטיפול.</string>
+	<string name="treatmentDecisionsTest">אם קריאת רמת הסוכר בחיישן לא תואמת להרגשתך, בדוק את רמת הסוכר בדם.</string>
+	<string name="checkBloodGlucoseTitle">בדוק את רמת הסוכר בדם</string>
+	<string name="checkBloodGlucoseMessage">בדוק את רמת הסוכר בדם לפני שתקבל החלטות הקשורות לטיפול.</string>
+	<string name="highGlucoseCheckBloodGlucose">רמת סוכר גבוהה יכולה להיות מסוכנת. בדוק את רמת הסוכר בדם לפני שתקבל החלטות הקשורות לטיפול. שקול לבדוק את רמת הקטונים שלך.</string>
+	<string name="lowGlucoseCheckBloodGlucose">רמת סוכר נמוכה יכולה להיות מסוכנת. בדוק את רמת הסוכר בדם לפני שתקבל החלטות הקשורות לטיפול.</string>
+	<string name="reminder">תזכורת</string>
+	<string name="safetyInformation">מידע לגבי בטיחות</string>
+	<string name="labeling">תוויות</string>
+	<string name="userGuides">מדריכים למשתמש</string>
+	<string name="quickStartGuide">מדריך מקוצר</string>
+	<string name="quickReferenceGuide">מדריך סימוכין מקוצר</string>
+	<string name="myGlucoseExplanationUpdate">קריאת רמת הסוכר מופיעה לאחר שסריקת החיישן מסתיימת בהצלחה. חפש את (1) רמת הסוכר הנוכחית, (2) חץ המגמה של רמת הסוכר, (3) גרף רמת הסוכר ו-(4) הודעה כלשהי על רמת הסוכר.</string>
+	<string name="sensorPlacementInstruction">יש להצמיד את החיישן רק לחלקה האחורי של הזרוע.</string>
+	<string name="sensorReadyAt">החיישן מוכן בעוד:</string>
+	<string name="formattedTimeRemaining">(%1$s נותרו)</string>
+	<string name="sensorStartedByOtherDevice">מכשיר אחר התחיל את פעולת החיישן הזה.</string>
+	<string name="sensorLatejoinExplanation">כדי שהחיישן יעבוד עם הטלפון החכם הזה, עליך לסרוק את החיישן באמצעות הטלפון החכם בזמן שפעולתו מתחילה.</string>
+	<string name="androidScanInstruction1">קרב את חלקו האחורי של הטלפון החכם לחיישן.</string>
+	<string name="androidScanInstruction2">המתן עד להישמע שני צלילים או עד שתחוש פעמיים ברטט.</string>
+	<string name="bugFixesTitle">תיקוני באגים</string>
+	<string name="bugFixesDetail">תיקוני באגים ושיפורי ביצועים</string>
+	<string name="performanceImprovements">שיפורי ביצועים</string>
+	<string name="sensorChangeExplanation">התחלת הפעולה של חיישן חדש תסיים את פעולת החיישן שאתה משתמש בו כרגע.</string>
+	<string name="useNewSensorPrompt">האם ברצונך להתחיל להשתמש בחיישן החדש?</string>
+	<string name="earlySensorActivationPrompt">האם ברצונך שזה יהיה החיישן הבא?</string>
+	<string name="changeSensorPrompt">האם ברצונך להתחיל להשתמש בחיישן הזה?</string>
+	<string name="replaceExistingSensor">פעולה זו תחליף את החיישן שפעולתו התחילה לאחרונה.</string>
+	<string name="earlyActivationExistingEndsSoon">ניתן להמשיך את השימוש בחיישן הנוכחי עד שפעולתו תסתיים.</string>
+	<string name="earlyActivationEndsExisting">ניתן להמשיך את השימוש בחיישן הנוכחי עד שהחיישן החדש יהיה מוכן.</string>
+	<string name="scanOtherSensor">סרוק את החיישן הנוסף כדי לבדוק את רמת הסוכר.</string>
+	<string name="sensorNotWorking">החיישן שלך אינו פועל.</string>
+	<string name="currentSensorEndsAt">פעולת החיישן הנוכחי מסתיימת תוך:</string>
+	<string name="newSensorReadyAt">החיישן החדש מוכן בעוד:</string>
+	<string name="sensorAlreadyStarted">פעולת החיישן הזה כבר התחילה.</string>
+	<string name="earlySensorStartupTimeRemaining">קריאת רמת הסוכר אינה זמינה. נסה לסרוק שנית בעוד %1$s.</string>
+	<string name="glucoseReadingUnavailable">קריאת רמת הסוכר אינה זמינה. </string>
+	<string name="scanAgainIn">נסה לסרוק שנית בעוד %1$s.</string>
+	<string name="softwareReleaseVersion">גרסת תוכנה ששוחררה:</string>
+	<string name="softwareFullVersion">גרסת תוכנה מלאה:</string>
+</resources>

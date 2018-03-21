@@ -150,7 +150,7 @@ public class AverageGlucose_T001_View_Display_Xaxis extends ReportsHelper {
 		 * 
 		 * @stepId Step 5.1
 		 * @Reqt SDAIUIRS991_SDAISRS1164_SDAISRS1168
-		 * @Expected Navigate to Average Glucose Report from Daily Pattern report by using drop down
+		 * @Expected Navigate to Average Glucose Report from Daily Pattern report by swiping
 		 *          
 		 * @Dependancy NA
 		 * 
@@ -164,7 +164,7 @@ public class AverageGlucose_T001_View_Display_Xaxis extends ReportsHelper {
 		 * 
 		 * @stepId Step 5.2
 		 * @Reqt SDAIUIRS991_SDAISRS1164_SDAISRS1168
-		 * @Expected Navigate to Average Glucose Report from TimeInTarget report by using drop down
+		 * @Expected Navigate to Average Glucose Report from TimeInTarget report by swiping
 		 *           
 		 * @Dependancy NA
 		 * 
@@ -179,7 +179,7 @@ public class AverageGlucose_T001_View_Display_Xaxis extends ReportsHelper {
 		 * 
 		 * @stepId Step 5.3
 		 * @Reqt SDAIUIRS991_SDAISRS1164_SDAISRS1168
-		 * @Expected Navigate to Average Glucose Report from Low Glucose EVents report by using drop down
+		 * @Expected Navigate to Average Glucose Report from Low Glucose EVents report by swiping
 		 *        
 		 * @Dependancy NA
 		 * 
@@ -194,7 +194,7 @@ public class AverageGlucose_T001_View_Display_Xaxis extends ReportsHelper {
 		 * 
 		 * @stepId Step 5.4
 		 * @Reqt SDAIUIRS991_SDAISRS1164_SDAISRS1168
-		 * @Expected Navigate to Average Glucose Report from Average Glucose report by using drop down
+		 * @Expected Navigate to Average Glucose Report from Average Glucose report by swiping
 		 *           
 		 * @Dependancy NA
 		 * 
@@ -209,7 +209,7 @@ public class AverageGlucose_T001_View_Display_Xaxis extends ReportsHelper {
 		 * 
 		 * @stepId Step 5.5
 		 * @Reqt SDAIUIRS991_SDAISRS1164_SDAISRS1168
-		 * @Expected Navigate to Average Glucose Report from Estimated A1C report by using drop down
+		 * @Expected Navigate to Average Glucose Report from Estimated A1C report by swiping
 		 *         
 		 * @Dependancy NA
 		 * 
@@ -229,7 +229,7 @@ public class AverageGlucose_T001_View_Display_Xaxis extends ReportsHelper {
 		 * 
 		 * @stepId Step 5.6
 		 * @Reqt SDAIUIRS991_SDAISRS1164_SDAISRS1168
-		 * @Expected Navigate to Average Glucose Report from Sensor Usage report by using drop down
+		 * @Expected Navigate to Average Glucose Report from Sensor Usage report by swiping
 		 *           
 		 * @Dependancy NA
 		 * 

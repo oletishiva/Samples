@@ -294,10 +294,8 @@ ReportsHelper {
 		 *
 		 **/
 		setStepID(LibrelinkConstants.DailyGraph_T001_View_Display_Xaxis_Distinguish_Data_Notes_Step7);
-
 		clickArrowOnTopRightOfTheGraph(client, 1);
 		capturescreenshot(client, getStepID(), true);
-
 
 		/**
 		 *
@@ -375,7 +373,7 @@ ReportsHelper {
 
 		clickOnCalendarDate(client);
 		pickDate(client, getDateFormat("2013-2-28"));
-		verifyPageTitles(client,"DAILY GRAPH");
+		verifyPageTitles(client,"Daily Graph");
 		capturescreenshot(client, getStepID(), true);
 
 
@@ -391,7 +389,7 @@ ReportsHelper {
 		setStepID(LibrelinkConstants.DailyGraph_T001_View_Display_Xaxis_Distinguish_Data_Notes_Step13);
 
 		clickArrowOnTopLeftOfTheGraph(client, 10);
-		verifyPageTitles(client,"DAILY GRAPH");
+		verifyPageTitles(client,"Daily Graph");
 		capturescreenshot(client, getStepID(), true);
 
 
@@ -407,7 +405,7 @@ ReportsHelper {
 		setStepID(LibrelinkConstants.DailyGraph_T001_View_Display_Xaxis_Distinguish_Data_Notes_Step14);
 
 		clickArrowOnTopRightOfTheGraph(client, 5);
-		verifyPageTitles(client,"DAILY GRAPH");
+		verifyPageTitles(client,"Daily Graph");
 		capturescreenshot(client, getStepID(), true);
 
 
@@ -420,7 +418,7 @@ ReportsHelper {
 		 * @Dependancy Script cannot proceed if this step fails
 		 *
 		 **/
-		navigateToScreen(client, "Settings");
+		clickOnSettingsMenu(client, "App Settings");
 		if (getUnits().equalsIgnoreCase("mg/dL")) {
 			verifyandsetTGfromSettings(client, 100, 140);
 		} else if (getUnits().equalsIgnoreCase("mmol/L")) {
@@ -438,7 +436,7 @@ ReportsHelper {
 		setStepID(LibrelinkConstants.DailyGraph_T001_View_Display_Xaxis_Distinguish_Data_Notes_Step15);
 
 		navigateToScreen(client, "Daily Graph");
-		verifyPageTitles(client,"DAILY GRAPH");
+		verifyPageTitles(client,"Daily Graph");
 		clickArrowOnTopLeftOfTheGraph(client, 1);
 		capturescreenshot(client, getStepID(), true);
 
@@ -452,7 +450,7 @@ ReportsHelper {
 		 * @Dependancy Script cannot proceed if this step fails
 		 *
 		 **/
-		navigateToScreen(client, "Settings");
+		clickOnSettingsMenu(client, "App Settings");
 		if (getUnits().equalsIgnoreCase("mg/dL")) {
 			verifyandsetTGfromSettings(client, 70, 180);
 		} else if (getUnits().equalsIgnoreCase("mmol/L")) {
@@ -470,7 +468,7 @@ ReportsHelper {
 		setStepID(LibrelinkConstants.DailyGraph_T001_View_Display_Xaxis_Distinguish_Data_Notes_Step16);
 
 		navigateToScreen(client, "Daily Graph");
-		verifyPageTitles(client,"DAILY GRAPH");
+		verifyPageTitles(client,"Daily Graph");
 		clickArrowOnTopLeftOfTheGraph(client, 1);
 		capturescreenshot(client, getStepID(), true);
 
@@ -530,7 +528,7 @@ ReportsHelper {
 
 		clickOnCalendarDate(client);
 		pickDate(client, getDateFormat("2013-2-01"));
-		verifyPageTitles(client,"DAILY GRAPH");
+		verifyPageTitles(client,"Daily Graph");
 		capturescreenshot(client, getStepID(), true);
 
 
@@ -547,7 +545,7 @@ ReportsHelper {
 
 		clickOnCalendarDate(client);
 		pickDate(client, getDateFormat("2013-2-03"));
-		verifyPageTitles(client,"DAILY GRAPH");
+		verifyPageTitles(client,"Daily Graph");
 		capturescreenshot(client, getStepID(), true);
 
 		selectingSASMode(client,"DEFAULT");

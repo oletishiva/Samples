@@ -34,7 +34,7 @@ ReportsHelper {
 		loadTestData(client,  "MOCK_2","ADC", "Basic Data.json");
 		navigateToScreen(client, "Average Glucose");
 
-		/**
+	/*	*//**
 		 * 
 		 * @stepId Step 1
 		 * @Reqt SDAIUIRS993
@@ -43,14 +43,14 @@ ReportsHelper {
 		 *           historic glucose readings in 14 days: 10.3 mmol/L mg/dL
 		 * @Dependancy NA
 		 * 
-		 **/
+		 **//*
 		setStepID(LibrelinkConstants.AverageGlucose_T004_Calculation_Distinguish_Data_mmol_Step1);
 		clickOnDays(client, 14);
 		verifyAverageHistoricGlucoseForNdays(client, 14);
 		capturescreenshot(client, getStepID(), true);
 
 
-		/**
+		*//**
 		 *
 		 * @stepId Step 2
 		 * @Reqt SDAIUIRS993
@@ -59,14 +59,14 @@ ReportsHelper {
 		 *           historic glucose readings in 7 days: 11.0 mmol/L
 		 * @Dependancy NA
 		 *
-		 **/
+		 **//*
 		setStepID(LibrelinkConstants.AverageGlucose_T004_Calculation_Distinguish_Data_mmol_Step2);
 		clickOnDays(client, 7);
 		verifyAverageHistoricGlucoseForNdays(client, 7);
 		capturescreenshot(client, getStepID(), true);
 
 
-		/**
+		*//**
 		 *
 		 * @stepId Step 3
 		 * @Reqt SDAIUIRS993
@@ -75,14 +75,14 @@ ReportsHelper {
 		 *           historic glucose readings in 90 days: 9.1 mmol/L
 		 * @Dependancy NA
 		 *
-		 **/
+		 **//*
 		setStepID(LibrelinkConstants.AverageGlucose_T004_Calculation_Distinguish_Data_mmol_Step3);
 		clickOnDays(client, 90);
 		verifyAverageHistoricGlucoseForNdays(client, 90);
 		capturescreenshot(client, getStepID(), true);
 
 
-		/**
+		*//**
 		 *
 		 * @stepId Step 4
 		 * @Reqt SDAIUIRS993
@@ -91,14 +91,14 @@ ReportsHelper {
 		 *           historic glucose readings in 30 days: 8.3 mmol/L
 		 * @Dependancy NA
 		 *
-		 **/
+		 **//*
 		setStepID(LibrelinkConstants.AverageGlucose_T004_Calculation_Distinguish_Data_mmol_Step4);
 		clickOnDays(client, 30);
 		verifyAverageHistoricGlucoseForNdays(client, 30);
 		capturescreenshot(client, getStepID(), true);
 
 
-		/**
+*/		/**
 		 *
 		 * @stepId Pre-Condition
 		 * @Reqt NA
@@ -107,12 +107,12 @@ ReportsHelper {
 		 *           Librelink Settings
 		 * @Dependancy Script cannot proceed if this step fails
 		 *
-		 **/
-		navigateToScreen(client, "Settings");
+		 **//*
+		clickOnSettingsMenu(client, "App Settings");
 		verifyandsetTGfromSettings(client, 5.6, 7.8);
 		navigateToScreen(client, "Average Glucose");
 
-		/**
+		*//**
 		 *
 		 * @stepId Step 5
 		 * @Reqt SDAIUIRS995_SDAIUIRS1000
@@ -123,13 +123,13 @@ ReportsHelper {
 		 *           8.8;15:00-18:00: 8.5;18:00-21:00: 8.2;21:00-00:00: 7.7
 		 * @Dependancy NA
 		 *
-		 **/
+		 **//*
 		setStepID(LibrelinkConstants.AverageGlucose_T004_Calculation_Distinguish_Data_mmol_Step5);
 		clickOnDays(client, 30);
 		capturescreenshot(client, getStepID(), true);
 
 
-		/**
+		*//**
 		 *
 		 * @stepId Step 6
 		 * @Reqt SDAIUIRS995_SDAIUIRS1000
@@ -140,13 +140,13 @@ ReportsHelper {
 		 *           11.4;15:00-18:00: 11.0;18:00-21:00: 11.2;21:00-00:00: 10.4
 		 * @Dependancy NA
 		 *
-		 **/
+		 **//*
 		setStepID(LibrelinkConstants.AverageGlucose_T004_Calculation_Distinguish_Data_mmol_Step6);
 		clickOnDays(client, 7);
 		capturescreenshot(client, getStepID(), true);
 
 
-		/**
+		*//**
 		 *
 		 * @stepId Step 7
 		 * @Reqt SDAIUIRS995_1000
@@ -157,13 +157,13 @@ ReportsHelper {
 		 *           9.7;15:00-18:00: 9.6;18:00-21:00: 9.2;21:00-00:00: 8.5
 		 * @Dependancy NA
 		 *
-		 **/
+		 **//*
 		setStepID(LibrelinkConstants.AverageGlucose_T004_Calculation_Distinguish_Data_mmol_Step7);
 		clickOnDays(client, 90);
 		capturescreenshot(client, getStepID(), true);
 
 
-		/**
+		*//**
 		 *
 		 * @stepId Step 8
 		 * @Reqt SDAIUIRS995_SDAIUIRS1000
@@ -174,10 +174,10 @@ ReportsHelper {
 		 *           10.7;15:00-18:00: 10.5;18:00-21:00: 10.2;21:00-00:00: 9.6
 		 * @Dependancy NA
 		 *
-		 **/
+		 **//*
 		setStepID(LibrelinkConstants.AverageGlucose_T004_Calculation_Distinguish_Data_mmol_Step8);
 		clickOnDays(client, 14);
-		capturescreenshot(client, getStepID(), true);
+		capturescreenshot(client, getStepID(), true);*/
 
 
 		/**
@@ -189,7 +189,7 @@ ReportsHelper {
 		 * @Dependancy Script cannot proceed if this step fails
 		 * 
 		 **/
-		navigateToScreen(client, "Settings");
+		clickOnSettingsMenu(client, "App Settings");
 		verifyandsetTGfromSettings(client, 8.6, 10.0);
 		setTheDateAndTime(client, 12, 06, 2016, "00:00");
 
@@ -328,7 +328,7 @@ ReportsHelper {
 		 * @Dependancy Script cannot proceed if this step fails
 		 * 
 		 **/
-		navigateToScreen(client, "Settings");
+		clickOnSettingsMenu(client, "App Settings");
 		verifyandsetTGfromSettings(client, 8.6, 10.0);
 		navigateToScreen(client, "Average Glucose");
 
@@ -528,7 +528,7 @@ ReportsHelper {
 		 **/
 		changePhoneHourTimeFormat(client, LibrelinkConstants.TWENTYFOUR_HOUR_FORMAT);
 		launch(client);
-		navigateToScreen(client, "Settings");
+		clickOnSettingsMenu(client, "App Settings");
 		verifyandsetTGfromSettings(client, 3.9, 4.0);
 		navigateToScreen(client, "Average Glucose");
 

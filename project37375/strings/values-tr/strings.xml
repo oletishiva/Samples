@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2015 Airstrip - All Rights Reserved. -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<!-- Plurals -->
+	<plurals name="insulinUnits">
+		<item quantity="one">%1$s ünite</item>
+		<item quantity="other">%1$s ünite</item>
+	</plurals>
+	<plurals name="days">
+		<item quantity="one">1 gün</item>
+		<item quantity="other">%1$d gün</item>
+	</plurals>
+	<plurals name="hours">
+		<item quantity="one">1 saat</item>
+		<item quantity="other">%1$d saat</item>
+	</plurals>
+	<plurals name="minutes">
+		<item quantity="one">1 dakika</item>
+		<item quantity="other">%1$d dakika</item>
+	</plurals>
+	<!-- Phrase describing a time duration in seconds using secs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationSecs">
+		<item quantity="one">1 sn</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> sn</item>
+	</plurals>
+	<!-- Phrase describing a time duration in minutes using mins abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationMins">
+		<item quantity="one">1 dk</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> dk</item>
+	</plurals>
+	<!-- Phrase describing a time duration in hours using hrs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationHrs">
+		<item quantity="one">1 sa</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> sa</item>
+	</plurals>
+	<plurals name="sensorExpiresInDays">
+		<item quantity="one">Sensörü 1 gün sonra değiştirin</item>
+		<item quantity="other">Sensörü <xliff:g id="count">%d</xliff:g> gün sonra değiştirin</item>
+	</plurals>
+	<plurals name="sensorExpiresInHours">
+		<item quantity="one">Sensörü 1 saat sonra değiştirin</item>
+		<item quantity="other">Sensörü <xliff:g id="count">%d</xliff:g> saat sonra değiştirin</item>
+	</plurals>
+	<plurals name="sensorExpiresInMins">
+		<item quantity="one">Sensörü 1 dakika sonra değiştirin</item>
+		<item quantity="other">Sensörü <xliff:g id="count">%d</xliff:g> dakika sonra değiştirin</item>
+	</plurals>
+	<plurals name="sensorReadyInMins">
+		<item quantity="one">Sensör 1 dakikada hazır</item>
+		<item quantity="other">Sensör <xliff:g id="count">%d</xliff:g> dakikada hazır</item>
+	</plurals>
+
+	<!-- common/generic words, phrases, symbols, and abbreviations -->
+	<string name="deciLiter">dL</string>
+	<string name="gramsSymbol">g</string>
+	<string name="liter">L</string>
+	<string name="mgdl">mg/dL</string>
+	<string name="milligrams">mg</string>
+	<string name="millimole">mmol</string>
+	<string name="mmol">mmol/L</string>
+	<string name="percentSign">\u0025</string>
+	<string name="servingsSymbol">porsiyon</string>
+	<string name="accept">Kabul Et</string>
+	<string name="account">Hesap Ayarları</string>
+	<string name="all">Tümü</string>
+	<string name="back">Geri</string>
+	<string name="average">Ortalama</string>
+	<string name="delete">Sil</string>
+	<string name="cancel">İptal</string>
+	<string name="durationHourMinuteConcatenate">%1$s %2$s</string>
+	<string name="comments">Notlar</string>
+	<string name="done">Bitti</string>
+	<string name="email">E-posta</string>
+	<string name="friday">Cuma</string>
+	<string name="grams">gram</string>
+	<string name="gramsOfCarbs">gram karb</string>
+	<string name="units">ünite</string>
+	<string name="help">Yardım</string>
+	<string name="home">Ana Sayfa</string>
+	<string name="insulinDose">İnsülin Dozu</string>
+	<string name="loading">Yükleniyor</string>
+	<string name="logbook">Kayıt Defteri</string>
+	<string name="monday">Pazartesi</string>
+	<string name="next">İleri</string>
+	<string name="no">Hayır</string>
+	<string name="note">Not:</string>
+	<string name="ok">Tamam</string>
+	<string name="password">Şifre</string>
+	<string name="reminders">Hatırlatmalar</string>
+	<string name="reject">Red</string>
+	<string name="reports">Raporlar</string>
+	<string name="saturday">Cumartesi</string>
+	<string name="save">Kaydet</string>
+	<string name="sending">Gönderiliyor</string>
+	<string name="servings">porsiyon</string>
+	<string name="servingsOfCarbs">karb porsiyonu</string>
+	<string name="settings">Uygulama Ayarları</string>
+	<string name="share">Paylaş</string>
+	<string name="start">Başlat</string>
+	<string name="submit">Gönder</string>
+	<string name="sunday">Pazar</string>
+	<string name="thursday">Perşembe</string>
+	<string name="tuesday">Salı</string>
+	<string name="wednesday">Çarşamba</string>
+	<string name="yes">Evet</string>
+	<string name="days7">7 gün</string>
+	<string name="days14">14 gün</string>
+	<string name="days30">30 gün</string>
+	<string name="days90">90 gün</string>
+	<string name="eventLog">Olay Günlüğü</string>
+	<string name="eventLogEmptyMessage">Olay Yok</string>
+
+	<string name="minorFirstName">Reşit Olmayan Kişi Adı</string>
+	<string name="minorLastName">Reşit Olmayan Kişi Soyadı</string>
+	<string name="parentFirstName">@string/parentGuardianFirstName</string>
+	<string name="parentLastName">@string/parentGuardianLastName</string>
+	<string name="lastName">Soyadı</string>
+	<string name="daily_graph">Günlük Grafik</string>
+	<string name="daily_patterns">Günlük Seyirler</string>
+	<string name="estimated_a1c">Tahmini A1c</string>
+	<string name="firstName">İsim</string>
+	<string name="noResults">(Sonuç Yok)</string>
+	<string name="signIn">Oturum Aç</string>
+	<string name="signingIn">Oturum Açılıyor</string>
+	<string name="scanSensor">Sensörü Tara</string>
+	<string name="time_in_target">Hedefte Geçirilen Zaman</string>
+	<string name="errorMsgUnexpected">Beklenmeyen uygulama hatası.</string>
+	<string name="error_nfc_unsupported">NFC Desteklenmiyor</string>
+	<string name="error_nfc_disabled">NFC Devre Dışı</string>
+	<string name="error_networktime_disabled">Otomatik Tarih ve Zaman Devre Dışı</string>
+	<string name="errorOtherNfcInstalled">NFC kullanan başka uygulama saptandı. Sensörünüzü okumak için FreeStyle LibreLink kullanılmasını sağlamak üzere her taradığınızda FreeStyle LibreLink’i açmanız gerekecektir. Veya diğer NFC uygulamasını kaldırırsanız akıllı telefonunuz kilitli olmadığında Sensörünüzü tarayabilmeniz gerekir.</string>
+	<string name="loadingChartDataText">Veriler yükleniyor</string>
+	<string name="chartErrorMessage">Veri yüklemede hata</string>
+	<string name="timeZoneChangeMessage">Zaman dilimi değişikliği %1$s\u00A0-\u00A0%2$s &lt;b&gt;(%3$s)&lt;/b&gt;</string>
+
+	<!-- Countries -->
+	<string name="countryName_AE">Birleşik Arap Emirlikleri</string>
+	<string name="countryName_AG">Antigua ve Barbuda</string>
+	<string name="countryName_AR">Arjantin</string>
+	<string name="countryName_AT">Avusturya</string>
+	<string name="countryName_AU">Avustralya</string>
+	<string name="countryName_AZ">Azerbeycan</string>
+	<string name="countryName_BE">Belçika</string>
+	<string name="countryName_BH">Bahreyn</string>
+	<string name="countryName_BR">Brezilya</string>
+	<string name="countryName_BS">Bahamalar</string>
+	<string name="countryName_BW">Botsvana</string>
+	<string name="countryName_BY">Belarus</string>
+	<string name="countryName_BZ">Belize</string>
+	<string name="countryName_CA">Kanada</string>
+	<string name="countryName_CH">İsviçre</string>
+	<string name="countryName_CL">Şili</string>
+	<string name="countryName_CN">Çin</string>
+	<string name="countryName_CO">Kolombiya</string>
+	<string name="countryName_CR">Kosta Rika</string>
+	<string name="countryName_CY">Kıbrıs</string>
+	<string name="countryName_DE">Almanya</string>
+	<string name="countryName_DK">Danimarka</string>
+	<string name="countryName_DO">Dominik Cumhuriyeti</string>
+	<string name="countryName_DZ">Cezayir</string>
+	<string name="countryName_EC">Ekvator</string>
+	<string name="countryName_ES">İspanya</string>
+	<string name="countryName_FI">Finlandiya</string>
+	<string name="countryName_FR">Fransa</string>
+	<string name="countryName_GB">Birleşik Krallık</string>
+	<string name="countryName_GR">Yunanistan</string>
+	<string name="countryName_HK">Hong Kong</string>
+	<string name="countryName_IE">İrlanda</string>
+	<string name="countryName_IL">İsrail</string>
+	<string name="countryName_IS">İzlanda</string>
+	<string name="countryName_IT">İtalya</string>
+	<string name="countryName_JO">Ürdün</string>
+	<string name="countryName_JP">Japonya</string>
+	<string name="countryName_KR">Kore Cumhuriyeti</string>
+	<string name="countryName_KW">Kuveyt</string>
+	<string name="countryName_KZ">Kazakistan</string>
+	<string name="countryName_LB">Lübnan</string>
+	<string name="countryName_LU">Lüksemburg</string>
+	<string name="countryName_MT">Malta</string>
+	<string name="countryName_MX">Meksika</string>
+	<string name="countryName_MY">Malezya</string>
+	<string name="countryName_NL">Hollanda</string>
+	<string name="countryName_NO">Norveç</string>
+	<string name="countryName_NZ">Yeni Zelanda</string>
+	<string name="countryName_OM">Umman</string>
+	<string name="countryName_PA">Panama</string>
+	<string name="countryName_PE">Peru</string>
+	<string name="countryName_PL">Polonya</string>
+	<string name="countryName_PT">Portekiz</string>
+	<string name="countryName_QA">Katar</string>
+	<string name="countryName_RU">Rusya</string>
+	<string name="countryName_SA">Suudi Arabistan</string>
+	<string name="countryName_SE">İsveç</string>
+	<string name="countryName_SG">Singapur</string>
+	<string name="countryName_TH">Tayland</string>
+	<string name="countryName_TR">Türkiye</string>
+	<string name="countryName_TT">Trinidad ve Tobago</string>
+	<string name="countryName_TW">Tayvan</string>
+	<string name="countryName_US">Amerika Birleşik Devletleri</string>
+	<string name="countryName_UY">Uruguay</string>
+	<string name="countryName_VE">Venezuela</string>
+	<string name="countryName_ZA">Güney Afrika</string>
+	<string name="countryName_ZW">Zimbabve</string>
+
+	<!-- License Check -->
+	<string name="librelinkLicenseCheck">FreeStyle LibreLink Lisans Kontrolü</string>
+	<string name="licenseCheckFailed">Lütfen bu Uygulamayı Google Play’den yükleyin.</string>
+
+	<!-- Update Version Check -->
+	<string name="librelink_upgrade_check">FreeStyle LibreLink Yükseltme Kontrolü</string>
+	<string name="checkingVersion">Versiyon Kontrol Ediliyor</string>
+	<string name="errorVersionCheckFailed">Bu FreeStyle LibreLink versiyonunun güncellenmesi gerekli. Lütfen son versiyon için Google Play’e bakınız.</string>
+
+	<!-- App Tour -->
+	<string name="checkGlucoseWithPhone">Glukozunuzu akıllı telefonunuz ile kontrol edebilirsiniz.</string>
+	<string name="instantAccess">Glukoz bilgilerinize hızlı erişim sağlayabilirsiniz.</string>
+	<string name="actionableInsights">Daha bilgilendirilmiş kararlar vermenize yardımcı olması için içgörü elde edebilirsiniz.</string>
+	<string name="shareGlucoseInformation">Glukoz bilgilerinizi Sağlık Uzmanınız ve sevdiklerinizle paylaşabilirsiniz.</string>
+
+	<!-- Account Registration/Sign In -->
+	<string name="changeUserMessage">Hesabınızda oturum açtığınızda bu cihazda önceki kullanıcıya ait tüm veriler silinecektir.\n\nDevam etmek istiyor musunuz?</string>
+	<string name="changeDeviceMessage">Bu akıllı telefonu mevcut LibreView hesabınıza tanımlamak için Tamam kısmına tıklayın. Önceki akıllı telefonunuzla başlattığınız bir Sensörü okumaya devam edebilirsiniz.\n\nNot: Tamam kısmına tıklanması önceki akıllı telefona ait oturumu kapatacaktır.</string>
+	<string name="registeringDevice">Akıllı Telefon Kaydediliyor</string>
+	<string name="firstNameLabel">@string/firstName</string>
+	<string name="lastNameLabel">@string/lastName</string>
+	<string name="emailLabel">@string/email</string>
+	<string name="dateOfBirthLabel">@string/dateOfBirth</string>
+	<string name="dateOfBirth">Doğum Tarihi</string>
+	<string name="passwordLabel">@string/password</string>
+	<string name="createPasswordLabel">@string/password</string>
+	<string name="changePassword">Hesap Şifresi</string>
+	<string name="newPasswordLabel">Yeni Şifre</string>
+	<string name="currentPasswordLabel">Mevcut Şifre</string>
+	<string name="confirmPasswordLabel">Şifre Doğrula</string>
+	<string name="sendingResetRequest">Şifre Sıfırlama İsteği Gönderiliyor</string>
+	<string name="adultRegistrationTitle">Oturum Aç</string>
+	<string name="minorRegistrationTitle">Ebeveyn/Veli Oturum Açma</string>
+	<string name="signInLinkText">@string/signIn</string>
+	<string name="account_sign_in_title">@string/signIn</string>
+	<string name="alreadyHaveAccountPromptText">Zaten bir LibreView hesabınız var mı?</string>
+	<string name="invalidPasswordErrorMessage">Lütfen geçerli bir şifre girin. Şifreler 8\u201336 karakter olmalı ve en az 1 rakam, 1 büyük harf ve 1 küçük harf içermelidir.</string>
+	<string tools:ignore="PluralsCandidate" name="tooYoungErrorMessage">FreeStyle LibreLink kullanmak için en az %1$s yaşında olmanız gerekir.</string>
+	<string name="tooYoungWarningMessage">Doğum tarihi uygulamanın yaşınıza uygun olup olmadığını belirlemek için değil LibreView hesabınızı oluşturmak için kullanılır. Lütfen uygulamayı kullanmadan önce kullanıcı el kitabına başvurun.</string>
+	<string name="forgotPasswordText">Şifrenizi mi unuttunuz?</string>
+	<string name="createNewAccountText">Yeni Hesap Oluştur</string>
+	<string name="existing_user_login_text">Bu e-posta adresiyle bir hesap zaten var. Lütfen e-posta adresiniz ve şifrenizi girin.</string>
+	<string name="normal_user_login_text">Lütfen LibreView hesabı oturum açma bilgilerinizi girin.</string>
+	<string name="passwordMismatchErrorMessage">Şifreler eşleşmeli</string>
+	<string name="invalidEmailAddressErrorMessage">Geçerli bir e-posta adresi girin.</string>
+	<string name="passwordResetSent">Şifrenizi sıfırlama talimatı e-posta adresinize gönderildi.</string>
+	<string name="accountContactOptIn">Lütfen bana Abbott Diabetes Care ve diğer Abbott ürün ve hizmetleri hakkında bilgi gönderin. (İstediğiniz zaman aboneliğinizi sonlandırabilirsiniz.)</string>
+	<string name="passwordResetMessage">Lütfen bu hesabı kaydetmek için kullandığınız e-posta adresini girin. Şifrenizi sıfırlama talimatı o adrese gönderilecektir.</string>
+	<string name="nonExistentUserErrorMessage">Girdiğiniz e-posta adresi için hesap yok.</string>
+	<string name="invalidLoginErrorMessage">E-posta adresi veya şifre yanlış. Lütfen tekrar deneyin.</string>
+	<string name="invalidProfileUpdatePassword">Şifre yanlış. Lütfen tekrar deneyin.</string>
+	<string name="invalidProfileDOB">Hesap tipinizi bir yetişkinden reşit olmayan bir kişiye değiştiremezsiniz. Lütfen doğum tarihinizi buna göre düzenleyin.</string>
+	<string name="invalidAppKeyErrorMessage">Sunucuyla iletişim hatası. Uygulama anahtarı geçersiz.</string>
+	<string name="invalidNetworkDomainErrorMessage">Sunucuyla iletişim hatası. Alan geçersiz.</string>
+	<string name="invalidRegistrationErrorMessage">Geçersiz veri nedeniyle kayıt tamamlanamadı.</string>
+	<string name="invalidAccountRegionErrorMessage">Uygulamanız ve hesabınız için ülke ayarlarınız eşleşmiyor. Lütfen yeni bir hesap oluşturun.</string>
+	<string name="accountRegisteringProgressMessage">Kaydediliyor</string>
+	<string name="accountUpdateProgressMessage">Gönderiliyor</string>
+	<string name="accountAlreadyRegisteredErrorMessage">Bu e-posta adresi zaten bir LibreView Hesabıyla ilişkili.\n\nYeni bir hesap oluşturmanız gerekmez. Sadece Oturum Açın.</string>
+	<string name="professionalAccountAlreadyRegisteredErrorMessage">Bu e-posta adresi zaten bir LibreView Uzman Hesabıyla ilişkili. Bu uygulamayı kullanmak üzere bir hesap oluşturmak için farklı bir e-posta adresi kullanmanız gerekli.</string>
+	<string name="alreadyRegisteredSignInButtonText">@string/signIn</string>
+	<string name="enter_numera_data">FreeStyle LibreLink ve uyumlu diğer uygulamalarla kullanım için LibreView hesabınızı oluşturun.</string>
+	<string name="minorRegistrationHeader">Bu kullanıcı reşit olmayan biri. Bu yazılımı kullanmak üzere hesabı bir ebeveyn veya veli tamamlamalıdır.</string>
+	<string name="parentGuardianFirstName">Ebeveyn/Veli Adı</string>
+	<string name="parentGuardianLastName">Ebeveyn/Veli Soyadı</string>
+	<string name="parentGuardianEmail">@string/email</string>
+	<string name="nameAndBirthDateHeader">Bazı temel bilgilerle başlayalım.</string>
+	<string name="nameAndBirthDateTitle">@string/createNewAccountText</string>
+	<string name="profileUpdateTopText">Aşağıdaki bilgilerden herhangi birini değiştirmek hesabınızı güncelleyecektir.</string>
+	<string name="changePasswordTopText">Şifreler 8-36 karakter olmalı ve en az 1 rakam, 1 büyük harf ve 1 küçük harf içermelidir.</string>
+	<string name="createAccountSubmitButtonText">Hesap Oluştur</string>
+	<string name="authenticationFailure">Sunucuyla kimlik doğrulama başarısız. Lütfen tekrar oturum açın.</string>
+	<string name="authenticationFailureLoginButton">Oturum Aç</string>
+	<string name="reenterPassword">Lütfen şifrenizi tekrar girin.</string>
+	<string name="parentLoginText">Ebeveyn/Veli oturum açması gerekli.</string>
+	<string name="parentLoginSubText">Lütfen paylaşıma erişmek için hesap şifresini girin.</string>
+
+	<!-- Side Navigation Drawer -->
+	<string name="navigation_drawer_username">%1$s %2$s</string>
+	<string name="navigation_drawer_daily_graph">@string/daily_graph</string>
+	<string name="navigation_drawer_estimated_a1c">@string/estimated_a1c</string>
+	<string name="navigation_drawer_average_glucose">Ortalama Glukoz</string>
+	<string name="navigation_drawer_low_glucose">Düşük Glukoz Olayları</string>
+	<string name="navigation_drawer_sensor_usage">Sensör Kullanımı</string>
+	<string name="navigation_drawer_daily_patterns">@string/daily_patterns</string>
+	<string name="navigation_drawer_time_in_target">@string/time_in_target</string>
+	<string name="navigation_drawer_sharedata">@string/share</string>
+
+	<!-- Home -->
+	<string name="applyNewSensor">Yeni Sensörü Uygula</string>
+	<string name="scanNewSensor">Yeni Sensörü Okut</string>
+	<string name="startNewSensor">Yeni Sensörü Uygula ve Okut</string>
+	<string name="sensorReadyIn">Sensör hazır olma süresi %1$s</string>
+	<string name="readyToScanDetail">Sensörünüz kullanıma hazır. Glukozunuzu kontrol etmek için akıllı telefonunuzun arkasını iki uyarı sesi duyuncaya kadar Sensöre karşı tutun.</string>
+	<string name="applyNewSensorDetail">Yeni bir Sensör uygula.</string>
+	<string name="scanNewSensorDetail">Başlatmak için Sensörü okut</string>
+	<string name="scanNewSensorDetailLateJoin">Bir Okuyucu da kullanmak istiyorsanız önce okuyucuyla taramalısınız.</string>
+	<string name="scanSensorDetail">Sensörü Okutun.</string>
+	<string name="last24Hours">Son 24 Saat</string>
+	<string name="lastScan">Son Tarama</string>
+	<string name="sensorIsReady">Taramaya Hazır</string>
+	<string name="sensorWarmingUp">Yeni Sensör Başlıyor</string>
+	<string name="sensorHasEnded">Sensörünüzün süresi bitmiş</string>
+	<string name="sensorEndsIn">Sensör Şu Zamanda Bitiyor: %1$s</string>
+	<string name="sensorLateJoinMessage">Artık Sensörü bu cihazla ve Sensörü başlatmak için kullandığınız cihazla okutabilirseniz.\n\nNot: Bir cihazdaki raporların tüm verileri göstermesini sağlamak üzere Sensörü en az 8 saatte bir o cihazla tarayın. Veriler ve raporlar cihazlar arasında paylaşılmaz.</string>
+
+	<!-- Stats/Reports -->
+	<!-- Used for Germany to force 24 hour time on the chart axis -->
+	<bool name="force24HourTimes">false</bool>
+
+	<!-- Used to set the string format for graph axis unless 24 hour time is used -->
+	<string name="amTimeAxisFormat">h\'​​​​​​​​​​​​​AM\'</string>
+	<string name="pmTimeAxisFormat">h\'PM\'</string>
+
+	<string name="mmolPerMolFormatter" tools:ignore="PluralsCandidate">( %d mmol/mol )</string>
+	<string name="sensor_usage_total_scans">Toplam Tarama</string>
+	<string name="sensor_usage_day_average">Gün Başına Tarama</string>
+	<string name="sensor_usage_captured">Kaydedilen Sensör Verilerinin %’si</string>
+	<string name="days_of_data" tools:ignore="PluralsCandidate">%1$d / %2$d gün için veri mevcut</string>
+	<string name="a1cDaysOfData" tools:ignore="PluralsCandidate">Veriler %1$d / %2$d günü kapsıyor</string>
+	<string name="no_sensor_data">Yeterli Sensör Verisi Yok</string>
+	<string name="timeintarget_glucose_range">%1$s-%2$s</string>
+	<string name="timeintarget_glucose_less_than">&lt; %s</string>
+	<string name="timeintarget_glucose_greater_than">&gt; %s</string>
+	<string name="timeintarget_percent">%</string>
+	<string name="target">HEDEF</string>
+	<string name="timeInTargetGlucoseRangeLabel">Hedef Aralık: %s</string>
+	<string name="average_glucose_info_title">ORTALAMA GLUKOZ</string>
+	<string name="average_glucose_info_msg">Ortalama Glukoz, Sensör glukoz ölçümlerinizin ortalaması hakkında bilgi verir. Seçilen dönem için genel ortalama grafiğin altında gösterilir. Ayrıca günün farklı dönemleri için ortalama gösterilir. Hedef Glukoz Aralığınızın üzerinde veya altındaki ölçümler sarı, turuncu veya kırmızıdır. Aralık içindeki ölçümler yeşildir.</string>
+	<string name="low_glucose_info_title">DÜŞÜK GLUKOZ OLAYLARI</string>
+	<string name="low_glucose_info_msg_mg">Düşük Glukoz Olayları Sensörünüzün ölçtüğü düşük glukoz olaylarının sayısı hakkında bilgi verir. Sensör glukoz ölçümünüz 15 dakikadan uzun süre 70 mg/dL altında olduğunda bir düşük glukoz olayı kaydedilir. Toplam olay sayısı grafik altında gösterilir. Çubuk grafik günün farklı dönemlerinde düşük glukoz olaylarını gösterir.</string>
+	<string name="low_glucose_info_msg_mmol">Düşük Glukoz Olayları Sensörünüzün ölçtüğü düşük glukoz olaylarının sayısı hakkında bilgi verir. Sensör glukoz ölçümünüz 15 dakikadan uzun süre 3,9 mmol/L altında olduğunda bir düşük glukoz olayı kaydedilir. Toplam olay sayısı grafik altında gösterilir. Çubuk grafik günün farklı dönemlerinde düşük glukoz olaylarını gösterir.</string>
+	<string name="a1c_info_title">TAHMİNİ A1c</string>
+	<string name="a1c_info_msg">Tahmini A1c seviyeniz (HbA1c de denir) son 90 günlük Sensör glukoz verilerini temel alır. Ne kadar fazla veri varsa sizin için tahmin o kadar iyi olacaktır. Ancak tahmin edilen seviye bir laboratuvarda ölçülen A1c seviyenizle eşleşmeyebilir.\n\nA1c, glukoz seviyelerinizin ne kadar iyi kontrol edildiğinin bir göstergesi olarak değerlendirilebilir ve diyabet tedavi rejiminizi izlemek için kullanılabilir.</string>
+	<string name="daily_info_title">GÜNLÜK GRAFİK</string>
+	<string name="daily_info_msg">Günlük Grafik, Sensör glukoz ölçümlerinizin güne göre bir grafiğini sağlar.\n\nEn az 8 saat boyunca okutma yapmadığınız dönemlerde grafikte aralıklar görebilirsiniz.\n\nBir zaman dilimi değişikliğini belirten bir saat sembolü görülebilir. Grafikte aralıklar oluşabilir veya glukoz ölçümleriniz gizli olabilir.</string>
+	<string name="sensor_usage_info_title">SENSÖR KULLANIMI</string>
+	<string name="sensor_usage_info_msg">Sensör Kullanımı Sensörünüzü ne sıklıkla okuttuğunuz hakkında bilgi verir. Buna sensörünüzü her gün kaç kere okuttuğunuzun ortalaması, okutmalarınızdan kaydedilen olası Sensör verilerinin yüzdesi ve toplam okutma sayısı dahildir.</string>
+	<string name="time_in_target_info_title">HEDEFTE GEÇİRİLEN ZAMAN</string>
+	<string name="time_in_target_info_msg">Hedefte Geçirilen Zaman Sensör glukoz ölçümlerinizin Hedef Glukoz Aralığınızın üstünde, altında veya içinde olduğu zaman yüzdesini gösteren bir grafik sağlar.</string>
+	<string name="daily_average">Ortalama: %1$s %2$s</string>
+	<string name="total_events">Toplam Olay: %1$d</string>
+	<string name="daily_patterns_info_title">GÜNLÜK SEYİRLER</string>
+	<string name="daily_patterns_info_msg">Günlük Seyirler tipik bir günde Sensör glukozunuzun seyir ve değişkenliğini gösteren bir grafik sağlar. Kalın siyah çizgi glukoz ölçümlerinizin medyanını (orta noktası) gösterir. Açık mavi gölgeleme Sensör ölçümlerinizin 10–90. yüzdesel aralığını temsil eder. Koyu mavi gölgeleme 25–75. yüzdesel aralığını temsil eder.\n\nNot: Günlük Seyirler için en az 5 günlük glukoz verisi gerekir.</string>
+
+	<!-- Scan Result -->
+	<string name="glucoseAboveRange">YÜKSEK GLUKOZ\n(ARALIK DIŞI)</string>
+	<string name="glucoseBelowRange">DÜŞÜK GLUKOZ\n(ARALIK DIŞI)</string>
+	<string name="glucoseGoingHigh">GLUKOZ YÜKSELİYOR</string>
+	<string name="glucoseGoingLow">GLUKOZ DÜŞÜYOR</string>
+	<string name="glucoseHigh">YÜKSEK GLUKOZ</string>
+	<string name="glucoseInRange">GLUKOZ HEDEFTE</string>
+	<string name="glucoseLow">DÜŞÜK GLUKOZ</string>
+	<string name="highGlucoseIsDangerous">Yüksek glukoz tehlikeli olabilir. Glukozunuzu tekrar kontrol edin ve sağlık uzmanınızın önerdiği şekilde tedavi edin. Ketonunuzu kontrol etmeyi düşünün.</string>
+	<string name="lowGlucoseIsDangerous">Düşük glukoz tehlikeli olabilir. Glukozunuzu tekrar kontrol edin ve sağlık uzmanınızın önerdiği şekilde tedavi edin.</string>
+	<string name="yourGlucose">Glukozum</string>
+	<string name="vrcFailedTitle">Sonucu göstermede hata</string>
+	<string name="vrcFailedText">Sonuç şöyle: %s</string>
+	<string name="error_sensor_incompatible_title">Uyumsuz Sensör</string>
+	<string name="error_sensor_incompatible_msg">Bu Sensör bu FreeStyle LibreLink versiyonuyla kullanılamaz.</string>
+	<string name="error_sensor_terminated_title">Sensörü Değiştir</string>
+	<string name="error_sensor_terminated_msg">Sensörünüz çalışmıyor. Lütfen Sensörünüzü çıkarın ve yenisini başlatın.</string>
+	<string name="error_sensor_removed_title">Sensörü Değiştir</string>
+	<string name="error_sensor_removed_msg">Sensörünüz çalışmıyor. Lütfen Sensörünüzü çıkarın ve yenisini başlatın.</string>
+	<string name="error_sensor_expired_title">Sensör Kullanım Süresi Doldu</string>
+	<string name="error_sensor_expired_msg">Glukoz kontrolü için yeni bir Sensör başlatın.</string>
+	<string name="error_sensor_inwarmup_title">Sensör Başlıyor</string>
+	<string name="error_sensor_inwarmup_msg">Bu Sensör başlatılmış ama henüz kullanıma hazır değil.</string>
+	<string name="error_sensor_corrupt_title">Okutma Hatası</string>
+	<string name="error_sensor_corrupt_msg">Akıllı telefon Sensörü okuyamadı. Sensörü tekrar okutun.</string>
+	<string name="error_sensor_transmission_title">Okutma Hatası</string>
+	<string name="error_sensor_transmission_msg">Akıllı telefon Sensörü okuyamadı. Sensörü tekrar okutun. Akıllı telefonun arkasını Sensöre doğru tuttuğunuzdan emin olun. İlk ses veya titreşimi duyduğunuzda akıllı telefonu ikinci ses veya titreşimi duyuncaya kadar sabit tutun.</string>
+	<string name="error_sensor_already_started_title">Sensör Zaten Kullanılıyor</string>
+	<string name="error_sensor_already_started_msg">Az önce okuttuğunuz sensör başka bir cihaz tarafından başlatılmıştır ve kullanılamaz.</string>
+	<string name="error_sensor_already_started_msg_llj">Bu Sensör başka bir cihaz tarafından başlatılmış. Sensörün bu akıllı telefonla çalışması için Sensörü ilk bir saat içinde okuturken bu akıllı telefonu kullanmalısınız.</string>
+	<string name="error_sensor_temporary_problem_title">Sensör Hatası</string>
+	<string name="error_sensor_temporary_problem_msg">Glukoz ölçümü yok. 10 dakika içinde tekrar okutmayı deneyin.</string>
+	<string name="error_sensor_too_hot_title">Sensör Fazla Sıcak</string>
+	<string name="error_sensor_too_hot_msg">Sensör glukoz ölçümlerini sağlamak için fazla sıcak. Lütfen birkaç dakika sonra tekrar deneyin.</string>
+	<string name="error_sensor_too_cold_title">Sensör Fazla Soğuk</string>
+	<string name="error_sensor_too_cold_msg">Sensör glukoz ölçümlerini sağlamak için fazla soğuk. Lütfen birkaç dakika sonra tekrar deneyin.</string>
+	<string name="error_sensor_insertion_failure_title">Sensörü Kontrol Edin</string>
+	<string name="error_sensor_insertion_failure_msg">Lütfen Sensörünüzü kontrol edin. Cildinizden gevşemişse lütfen Sensörü çıkarın ve yenisini başlatın. Sensör uygun şekilde uygulanmış ise, Sensörü tekrar başlatmayı deneyin.</string>
+	<string name="error_sensor_not_active_title">Yeni Sensör Bulundu</string>
+	<string name="error_sensor_not_active_msg">Yeni bir Sensör başlatmak şu anda kullandığınız sensörü sonlandıracaktır.\n\nYenisini şimdi başlatmak ister misiniz?</string>
+
+	<!-- Add/Edit Note -->
+	<string name="addNote">Not Ekle</string>
+	<string name="editNote">Notu Düzenle</string>
+	<string name="highIntensity">Yüksek Şiddet</string>
+	<string name="mediumIntensity">Orta Şiddet</string>
+	<string name="lowIntensity">Düşük Şiddet</string>
+	<string name="noExerciseTypeChosen">Şiddet Seç</string>
+	<string name="food">Yemekler</string>
+	<string name="exercise">Egzersiz</string>
+	<string name="longActingInsulin">Uzun Etkili İnsülin</string>
+	<string name="rapidActingInsulin">Hızlı Etkili İnsülin</string>
+	<string name="meal">Öğün</string>
+	<string name="breakfast">Kahvaltı</string>
+	<string name="lunch">Öğle Yemeği</string>
+	<string name="snack">Atıştırma</string>
+	<string name="dinner">Akşam Yemeği</string>
+	<string name="carbsGramsError">Değer %1$s ile %2$s arasında bir tam sayı olmalıdır</string>
+	<string name="carbsServingsError">Değer 0,5’in katı olmalı %1$s ve %2$s arasında olmalıdır</string>
+	<string name="insulinDoseError">Değer 0,1’in katı olmalı ve 0,1 ile %1$d arasında olmalıdır</string>
+
+	<!-- Manual BG -->
+	<string name="manualBgTitle">Kan Glukozu Sonucu</string>
+	<string name="manualBgExplanation">Kan glukozu test sonucunuzu girin.</string>
+	<string name="manualBgError">Değer %1$s ile %2$s arasında bir tam sayı olmalıdır</string>
+
+	<!-- Logbook -->
+	<string name="logbookDetail">Kayıt Defteri Ayrıntısı</string>
+	<string name="logbookListEmpty">Bu tarih için girdi yok.</string>
+	<string name="logbookDetailCarbFormatDoseAndUnit">" (&lt;b&gt;%1$s%2$s&lt;/b&gt;)"</string>
+	<string name="logbookDetailInsulinFormatTypeAndDose">%1$s (&lt;b&gt;%2$s&lt;/b&gt;)</string>
+	<string name="logbookDetailSeparator">", "</string>
+	<string name="noteBalloonSeparator">&lt;br/&gt;</string>
+	<string name="logbookDetailExerciseType">@string/exercise</string>
+	<string name="logbookDetailExerciseFormatType">Egzersiz %s</string>
+	<string name="logbookDetailExerciseFormatDuration">" (&lt;b&gt;%s&lt;/b&gt;)"</string>
+
+	<!-- Reminders -->
+	<string name="alarms">Alarmlar</string>
+	<string name="repeating">Tekrarlayan</string>
+	<string name="timers">Zamanlayıcılar</string>
+	<string name="addReminder">Hatırlatma Ekle</string>
+	<string name="alarmName">Hatırlatma Adı</string>
+	<string name="checkGlucose">Glukozu kontrol et</string>
+	<string name="myReminder">Hatırlatma</string>
+	<string name="nextReminderPrompt">Sonraki Hatırlatma:\u0020</string>
+	<string name="nextAlarmPrompt">Sonraki Hatırlatma: %1$s, %2$s</string>
+	<string name="noActiveReminders">Aktif hatırlatma yok.</string>
+	<string name="noActiveRemindersAutoScanSensorEnabled">Aktif hatırlatma yok. Sensörü Tara zamanlayıcısı tekrar taradığınızda sıfırlanacaktır.</string>
+	<string name="remindMeToCheckAgain">Şu zamanda glukoz kontrolünü hatırlat:</string>
+	<string name="setReminder">Ayarla</string>
+
+	<!-- Send Reports -->
+	<string name="sendChooserTitle">Gönder</string>
+
+	<!-- Settings -->
+	<string name="unitOfMeasurementTitle">Ölçüm Birimi</string>
+	<string name="unitOfMeasurementTopText">Glukozunuz için Ölçüm birimini seçin. Tüm glukoz verileri bu üniteler kullanılarak gösterilecektir.</string>
+	<string name="unitOfMeasurementTopTextForSetup">Glukozunuz için ölçüm birimini seçin. Tüm glukoz verileri bu üniteler kullanılarak gösterilecektir. Bunu daha sonra DEĞİŞTİREMEYECEKSİNİZ.</string>
+	<string name="unitOfMeasureWarning">Glukozunuz için doğru ölçüm birimini seçmek ÇOK önemlidir. Yanlış ölçüm birimi glukoz değerlerinizin yanlış yorumlanmasına neden olabilir. Hangi ölçüm birimini kullanacağınızı bilmiyorsanız sağlık  uzmanınıza danışın.</string>
+	<string name="unitOfMeasurementFixedTopText">Glukoz ölçüm biriminiz otomatik olarak ülkenize göre ayarlanır.</string>
+	<string name="unitOfMeasurementFixedCountryText">Ülkeniz:</string>
+	<string name="unitOfMeasurementFixedText">Ölçüm biriminiz:</string>
+	<string name="targetGlucoseRangeTitle">Hedef Glukoz Aralığı</string>
+	<string name="targetGlucoseRangeTopText">Hedef glukoz aralığınız çeşitli grafiklerde gösterilecektir. Bilmiyorsanız sağlık uzmanınıza danışın.</string>
+	<string name="targetGlucoseRangeTopTextForSetup">Hedef glukoz aralığınız çeşitli grafiklerde gösterilecektir ve Ayarlar kısmına gidilerek değiştirilebilir. Bilmiyorsanız sağlık  uzmanınıza danışın.</string>
+	<string name="carbohydrateUnitsTitle">Karbonhidrat Üniteleri</string>
+	<string name="carbohydrateUnitsTopText">Karbonhidratlar nasıl saydığınıza bağlı olarak gram veya porsiyon olarak girilebilir. Tercih ettiğiniz karbonhidrat ünitesini seçin.</string>
+	<string name="carbohydrateUnitServingSizeMessage">Tercih ettiğiniz porsiyon büyüklüğünü seçin veya bilmiyorsanız sağlık  uzmanınızla irtibat kurun.</string>
+	<string name="carbohydrateUnitsTopTextForSetup">@string/carbohydrateUnitsTopText</string>
+	<string name="scanSoundsTitle">Okutma Sesleri</string>
+	<string name="scanSoundsOsDefault">ses ve titreşim</string>
+	<string name="scanSoundsVibeOnly">sadece titreşim</string>
+	<string name="scanSoundsTopText">Bir Sensörü okutma bir titreşimi tetikler. Titreşime ek olarak bir ses de duymak istiyorsanız seçin.</string>
+	<string name="scanSoundsTopTextForSetup">@string/scanSoundsTopText</string>
+	<string name="scanSoundsNote">Lütfen Dikkat:\nOkutma Sesleri akıllı telefonunuzdan ses yüksekliği ayarlarını alır. Örneğin akıllı telefonunuzun sesi kapalıysa tarama sesini duymayacaksınız.</string>
+	<string name="textToSpeechTitle">Metinden Konuşmaya</string>
+	<string name="textToSpeechOn">açık</string>
+	<string name="textToSpeechOff">kapalı</string>
+	<string name="textToSpeechTopText">Glukoz ölçümünüzün yüksek sesle okunması için Metinden Konuşmaya özelliğini açın.</string>
+	<string name="textToSpeechNote">Lütfen Dikkat:\nMetinden Konuşmaya akıllı telefonunuzdan ses yüksekliği ayarlarını alır. Örneğin akıllı telefonunuzun sesi kapalıysa glukoz ölçümü okuma sesini duymayacaksınız.</string>
+	<string name="countryOfOriginTitle">Ülkeyi Doğrula</string>
+	<string name="countryOfOriginTopText">Ülkeniz Uygulama kurulumu sırasında ve verilerinizin doğru saklandığından emin olmak için kullanılır.</string>
+	<string name="countryOfOriginTopTextForSetup">@string/countryOfOriginTopText</string>
+	<string name="countryOfOriginExplanation">Bu doğruysa, İleri kısmına dokunun.\n\nBu yanlışsa FreeStyle LibreLink’i kaldırıp ülkenizin versiyonunu yüklemeniz gerekebilir. Lütfen sorularınız varsa Müşteri Hizmetleriyle irtibat kurun.</string>
+	<string name="targetGlucoseRangeUnitText">Değerler şu şekilde</string>
+	<string name="servingsWithGramsEquivalent" tools:ignore="PluralsCandidate">porsiyon (1 porsiyon = %.1f gram)</string>
+	<string name="countryLabel">Yaşadığınız Ülke</string>
+	<string name="countryLabelForSetup">Ülkeniz şöyle tanımlanmıştır:</string>
+	<string name="defaultNetworkErrorMessage">Sunucuyla iletişim hatası.</string>
+	<string name="serverNotFoundErrorMessage">Sunucuyla iletişim hatası. Sunucu bulunmadı.</string>
+	<string name="pageNotFoundErrorMessage">Sunucuyla iletişim hatası. Sunucuda içerik bulunmadı.</string>
+	<string name="networkingErrorMessage">Sunucuyla iletişimde ağ hatası oluştu.</string>
+	<string name="internalServerErrorMessage">Sunucuyla iletişim hatası. Bir dahili sunucu hatası oluştu.</string>
+	<string name="requestTimeoutErrorMessage">Sunucuyla iletişim hatası. İstek süresi bitti.</string>
+	<string name="serviceUnavailableErrorMessage">Sunucuyla iletişim hatası. Servis kullanılamaz.</string>
+	<string name="submitButtonText">@string/submit</string>
+	<string name="mgPerDeciliterRadioText"><b>mg/dL</b> (örneğin 100 mg/dL)</string>
+	<string name="mmolPerLiterRadioText"><b>mmol/L</b> (örneğin 5,6 mmol/L)</string>
+	<string name="target_range_separator">-</string>
+	<string name="glucoseRangeFormat">%1$s - %2$s %3$s</string>
+	<string name="settingsUnitOfMeasureConfirmationMessage">Lütfen şu ölçüm birimini seçmek istediğinizi doğrulayın:</string>
+	<string name="networkNotConnectedDefault">Akıllı telefonunuz şu anda internete bağlı değil. İnternet bağlantınız olana kadar bu işlem tamamlanamaz.</string>
+	<string name="networkNotConnectedSetup">Akıllı telefonunuz şu anda internete bağlı değil. İnternet bağlantınız olana kadar kurulum tamamlanamaz.</string>
+	<string name="networkNotConnectedProfileUpdate">Akıllı telefonunuz şu anda internete bağlı değil. İnternet bağlantınız olana kadar hesabınız değiştirilemez.</string>
+	<string name="privacyNoticeAcceptanceStatement">Gizlilik Duyurusunu okudum ve açıkça kabul ediyorum.</string>
+	<string name="privacyNoticeTitle">Gizlilik Duyurusu</string>
+	<string name="termsOfUseAcceptanceStatement">Kullanım Şartlarını okudum ve açıkça kabul ediyorum.</string>
+	<string name="termsOfUseTitle">Kullanım Şartları</string>
+	<string name="nfcUnsupported">Sensörünüzü taramak için FreeStyle LibreLink’i kullanmak üzere akıllı telefonunuzun NFC desteklemesi gerekir.</string>
+	<string name="turnOnNfcPrompt">Sensörünüzü taramak için FreeStyle LibreLink’i kullanmak üzere akıllı telefonunuzda NFC’nin etkinleştirilmesi gerekir. Açmak istiyor musunuz?</string>
+	<string name="enableNetworkTime">Sensörünüzü taramak için FreeStyle LibreLink kullanmak üzere akıllı telefonunuzun otomatik olarak tarih ve zamanı güncellemeye ayarlanması gerekir. Bunu açmak istiyor musunuz?</string>
+	<string name="getStartedNow">Şimdi Başla</string>
+
+	<!-- My Glucose Explanation -->
+	<string name="myGlucoseExplanationTitle">Glukozum</string>
+	<string name="myGlucoseExplanationTopText">Bu ekran Sensörünüzü taradıktan sonra belirir.</string>
+	<string name="myGlucoseExplanationResultCallouts">Glukozum ekranı (1) mevcut glukozunuz, (2) glukoz trend okunuz ve (3) glukoz grafiğinizi içerir.</string>
+
+	<!-- Trend Arrow Explanation -->
+	<string name="trendExplanationTitle">Glukoz Trend Oku</string>
+	<string name="trendExplanationTopText">Sensörünüzü okuttuğunuzda glukoz düzeyinizin ne yöne ve ne kadar hızlı değiştiğini ifade eden bir trend oku gösterilir. </string>
+	<string name="trendExplanationRisingQuickly">Hızla yükseliyor</string>
+	<string name="trendExplanationRising">Yükseliyor</string>
+	<string name="trendExplanationStable">Yavaşça değişiyor</string>
+	<string name="trendExplanationFalling">Düşüyor</string>
+	<string name="trendExplanationFallingQuickly">Hızlı düşüyor</string>
+
+	<!-- Help -->
+	<string name="helpItemTitleApplySensor">Sensörü Uygulama</string>
+	<string name="helpItemTitleScanSensor">Sensörü tarama</string>
+	<string name="helpItemTitleEventLog">@string/eventLog</string>
+	<string name="helpItemTitleUserGuide">Kullanıcı El Kitabı</string>
+
+	<!-- OneStep Log Upload -->
+	<string name="logUploadTitle">Sorun Giderme Verilerini Gönder</string>
+	<string name="logUploadOptInDescription">Sorun giderme verileri göndermek Müşteri Hizmetlerinin sorularınızı yanıtlamasına yardımcı olur.</string>
+	<string name="logUploadOptInText1">Daha önce kabul ettiğiniz Gizlilik Duyurusu sorun giderme verilerinin neler içerdiğini tanımlar.</string>
+	<string name="logUploadViewPrivacyButtonLabel">Gizlilik Duyurusunu Gör</string>
+	<string name="logUploadOptInText2">Sorun giderme verilerinizi göndermeyi kabul ediyor musunuz?</string>
+	<string name="logUploadDecline">Reddet</string>
+	<string name="logUploadAccept">Kabul Et</string>
+	<string name="logUploadDescription">Lütfen Müşteri Hizmetlerinin sağladığı vaka numarası ve doğrulama kodunu girin.</string>
+	<string name="logUploadCaseNumberLabel">Vaka Numarası</string>
+	<string name="logUploadAccessCodeLabel">Doğrulama Kodu</string>
+	<string name="logUploadSendButtonLabel">Gönder</string>
+	<string name="logUploadErrorTypo">Yanlış vaka numarası veya doğrulama kodu</string>
+	<string name="logUploadErrorUploadFailedTitle">Sorun Giderme Verilerini Göndermekte Hata</string>
+	<string name="logUploadErrorUploadFailedText">Tekrar denemek için dokunun.</string>
+
+	<!-- Apply Sensor Tour -->
+	<string name="applySensorTitle">Sensörü Uygulama</string>
+	<string name="applySensorTitleStep1">ADIM 1</string>
+	<string name="applySensorTextStep1">Üst kolun arkasında bir bölge seçin.</string>
+	<string name="applySensorSubTextStep1">Not: Yara, tahriş, ben veya kist olan bölgelerden ve insülin enjeksiyon bölgelerinden kaçının. Cilt tahrişini önlemek için uygulamaları farklı bölgeleri kullanarak yapın.</string>
+	<string name="applySensorTitleStep2">ADIM 2</string>
+	<string name="applySensorTextStep2">Bölgeyi alkollü mendille temizleyin. Devam etmeden önce bölgenin kurumasını bekleyin.</string>
+	<string name="applySensorTitleStep3">ADIM 3</string>
+	<string name="applySensorTextStep3">Sensör Paketinin kapağını çekerek tamamen çıkarın.</string>
+	<string name="applySensorTitleStep4">ADIM 4</string>
+	<string name="applySensorTextStep4">Sensör Uygulayıcısının kapağını çevirerek çıkarın.</string>
+	<string name="applySensorTitleStep5">ADIM 5</string>
+	<string name="applySensorTextStep5">Sensör uygulayıcısındaki koyu renk işareti sensör paketindeki koyu renk işaretle hizalayın. Sert bir yüzeyde, duruncaya kadar Sensör uygulayıcısı üzerine sıkıca bastırın.</string>
+	<string name="applySensorTitleStep6">ADIM 6</string>
+	<string name="applySensorTextStep6">Sensör uygulayıcısını Sensör Paketinden çekerek çıkarın.</string>
+	<string name="applySensorTitleStep7">ADIM 7</string>
+	<string name="applySensorTextStep7">Sensör uygulayıcısı Sensörü uygulamaya hazırdır. Sensör uygulayıcısının içine dokunmayın veya Sensör Paketi içine geri koymayın.</string>
+	<string name="applySensorTitleStep8">ADIM 8</string>
+	<string name="applySensorTextStep8">Sensör uygulayıcısını bölge üzerine yerleştirin ve Sensörü uygulamak için sıkıca aşağı bastırın.</string>
+	<string name="applySensorTitleStep9">ADIM 9</string>
+	<string name="applySensorTextStep9">Sensör uygulayıcısını vücudunuzdan yavaşça çekin.</string>
+	<string name="applySensorTitleStep10">ADIM 10</string>
+	<string name="applySensorTextStep10">Sensörün sağlam durduğundan emin olun. Kullanılmış sensör uygulayıcısı ve sensör paketini yerel düzenlemelere göre atın.</string>
+
+	<!-- Scan Sensor Tour -->
+	<string name="scanSensorTitle">Sensörü Okutma</string>
+	<string name="scanSensorTitleStep1">ADIM 1</string>
+	<string name="scanSensorTextStep1"><![CDATA[Akıllı telefonun <b>arkasını</b> sensöre <b>karşı</b> tutun.]]></string>
+	<string name="scanSensorTitleStep2">ADIM 2</string>
+	<string name="scanSensorTextStep2">Ses etkinleştirildiğinde, akıllı telefon Sensörü okurken bir dizi ses ve titreşim oluşturacaktır. Sesler ve titreşimler duruncaya kadar akıllı telefonu çekmeyin.</string>
+	<string name="scanSensorTitleStep3">ADIM 3</string>
+	<string name="scanSensorTextStep3">Sensörü okutmak için akıllı telefonunuzu, NFC anteninin bulunması açısından Sensörünüzün yakınında tekrar konumlandırmanız gerekebilir.</string>
+
+	<!-- About -->
+	<string name="about">Hakkında</string>
+	<string name="appNameLabel">İsim:</string>
+	<string name="appNameValue">FreeStyle LibreLink</string>
+	<string name="appPartOfSystem">FreeStyle Libre Flash Glukoz Takibi Sisteminin bir Parçası</string>
+	<string name="last3sensors">Son 3 Sensör:</string>
+	<string name="sensorStatus">&#160;&#160;&#160;&#160;Durum: %1$s</string>
+	<string name="udi">UDI:</string>
+	<string name="registrationNumber">Kayıt Numarası:</string>
+	<string name="productStandardNumber">Ürün Standart Numarası:</string>
+	<string name="model">Akıllı Telefon Modeli:</string>
+	<string name="appCountryLabel">Ülke:</string>
+	<string name="supportWebsiteLabel">Müşteri Hizmetleri:</string>
+	<string name="supportWebsiteValue">http://www.freestylelibre.com</string>
+	<string name="consultInstructionsForUse">Kullanma Talimatına Başvurun</string>
+	<string name="productOfUsa">A.B.D. Malı</string>
+	<string name="patentWebsiteLabel">Patent Web sitesi:</string>
+	<string name="patentWebsiteValue">https://www.abbott.com/patents</string>
+	<string name="trademarkStatement">FreeStyle, Libre ve ilgili markalar, Abbott Diabetes Care Inc. şirketinin çeşitli yetki alanlarındaki ticari markalarıdır.</string>
+	<string name="copyrightStatement">©2018 Abbott</string>
+	<string name="osVersion">Android OS Versiyonu:</string>
+	<string name="sensorNotPresent">Aktif Sensör Yok</string>
+	<string name="softwareVersion">Yazılım Versiyonu:</string>
+
+	<!-- Notifications -->
+	<string name="alarmExpired">Alarm Süresi Geçmiş</string>
+	<string name="timerExpired">Zamanlayıcı Süresi Bitmiş</string>
+
+	<string name="sensorActivated">Sensör Başlatıldı</string>
+	<string name="sensorReady">Sensör Hazır</string>
+	<string name="sensorReadyContent">Sensörünüz kullanıma hazır</string>
+	<string name="sensorExpired">Sensör Kullanım Süresi Doldu</string>
+	<string name="sensorExpiredContent">Glukoz kontrolü için yeni bir Sensör başlatın</string>
+	<string name="sensorEndingSoon">Sensör Kullanım Süresi Doluyor</string>
+
+	<!-- Data Upload -->
+	<string name="uploadFailedTitle">Yükleme Başarısız</string>
+	<string name="uploadFailedNoConnectivityContent">Bağlantı yok</string>
+	<string name="uploadFailedInvalidToken">Kimlik doğrulama başarısız. Oturum açmak için tıklayın.</string>
+	<string name="uploadFailedOther">Bir hata oluştu. Tekrar denemek için tıklayın</string>
+	<string name="uploadingDataTitle">FreeStyle LibreLink Verileri Karşıya Yükleniyor</string>
+	<string name="uploadingDataContent">Veriler gönderiliyor</string>
+	<string name="serving_size_in_grams">1 porsiyon = %.1f gram</string>
+	<string name="acceptLanguageHeader">tr-TR, tr;q=0.8</string>
+	<string name="appLocale">tr-TR</string>
+
+	<string name="reportHeaderDayOnlyFormat">d</string>
+	<string name="reportHeaderFullDateFormat">d MMMM yyyy</string>
+	<string name="reportHeaderShortMonthFormat">d MMM</string>
+	<string name="reportHeaderShortMonthFullFormat">d MMM yyyy</string>
+	<string name="reportHeaderDateRangeFormat">%1$s - %2$s</string>
+	<string name="reportShareSubjectFormat">%1$s: %2$s</string>
+
+	<string name="nonActionableExplanationTitle">Glukoz Ölçümünü Doğrula</string>
+	<string name="nonActionableExplanationMessage">Bir tedavi kararı almadan önce glukoz ölçümünüzü bir test çubuğu ile doğrulayın.</string>
+
+	<!-- TTS Result -->
+	<string name="spokenLo">aralık dışı ve düşük</string>
+	<string name="spokenHi">aralık dışı ve yüksek</string>
+	<string name="spokenMgDl">desilitre başına miligram</string>
+	<string name="spokenMmolL">litre başına milimol</string>
+	<string name="resultWithTrendNotDetermined">%1$s %2$s trend bulunmadan</string>
+	<string name="resultWithTrendFallingQuickly">%1$s %2$s ve hızlı düşüyor</string>
+	<string name="resultWithTrendFalling">%1$s %2$s ve düşüyor</string>
+	<string name="resultWithTrendStable">%1$s %2$s ve yavaşça değişiyor</string>
+	<string name="resultWithTrendRising">%1$s %2$s ve yükseliyor</string>
+	<string name="resultWithTrendRisingQuickly">%1$s %2$s ve hızlı yükseliyor</string>
+
+	<!-- Download Progress -->
+	<string name="progressDownloadingConfiguration">Uygulama Konfigürasyonu İndiriliyor</string>
+	<string name="progressDownloadingUserGuide">Kullanıcı El Kitabı İndiriliyor</string>
+	<string name="insufficientSpaceMessage">Akıllı telefonunuzda alan yetersiz.</string>
+
+
+	<!-- New strings added 25SEPT2017 -->
+
+	<string name="modalLookingForSensor">iPhone’u Sensöre yaklaştırın Sensörü Okutma</string>
+	<string name="modalSensorFound">Tarama Tamam</string>
+	<string name="settingsMenuTitle">Ayarlar</string>
+	<string name="genericOSVersion">OS Versiyonu:</string>
+	<string name="editTime">Saati Düzenle</string>
+	<string name="detail">Ayrıntı</string>
+	<string name="helpItemTitleGlucoseHelp">Glukoz Ölçümleri</string>
+	<string name="glucoseHelp">Glukoz Ölçümleri</string>
+
+	<!-- Abbreviated time passed -->
+	<string name="mins_passed">%dd önce</string>
+	<string name="hours_passed">%ds önce</string>
+
+	<string name="iosNotificationsDisabled">Hatırlatmalar almak için iOS Ayarlarında Uyarıların etkinleştirilmiş olması gerekir.</string>
+	<string name="glucoseWarningReminderPrompt">Glukozunuzu kontrol etmek için bir hatırlatma ayarlamak ister misiniz?</string>
+	<string name="NFCReaderUsageDescription">FreeStyle LibreLink, FreeStyle Libre Sensörlerini taramak için NFC kullanır.</string>
+	<string name="NSPhotoLibraryAddUsageDescription">Raporları kaydetmek için FreeStyle LibreLink’in ortam klasörünüze erişimi olması gerekir. Fotoğraflarınız izniniz olmadan paylaşılmayacaktır.</string>
+	<string name="deleteNote">Notu Sil</string>
+	<string name="deleteNoteConfirmation">Bu notu silmek istiyor musunuz?</string>
+
+	<!-- New strings with existing Android Counterparts -->
+
+	<string name="iosScanSensorTextStep1">Sensörü okutmadan önce tara düğmesine dokunun.</string>
+	<string name="iosScanSensorTextStep2">iPhone’unuzun ön kısmını Sensöre yaklaştırın.</string>
+	<string name="iosScanSensorTextStep3">iPhone Sensörü taradıktan sonra titreşimle birlikte uyarı sesi verir (sesler etkinleştirilmişse).</string>
+	<string name="iosErrorVersionCheckFailed">Bu FreeStyle LibreLink versiyonunun güncellenmesi gerekli. Lütfen son versiyon için App Store’a bakınız.</string>
+	<string name="iosReadyToScanDetail">Sensörünüz kullanıma hazır.</string>
+	<string name="iosDefaultSensorErrorMsg">Taramanız başarısız. Tara düğmesine dokunun ve tekrar tarayın.</string>
+	<string name="iosEnableNetworkTimeTitle">Tarih ve Saati Güncelleme</string>
+	<string name="iosEnableNetworkTime">FreeStyle LibreLink kullanmak için tarih ve saat ayarlarınızın otomatik olarak güncellenmesi gerekir. Ayarlar &gt; Genel &gt; Tarih/Saat kısmına gidin ve Otomatik Ayarla’yı etkinleştirin.</string>
+
+	<!-- New string added per Ashwin Kumar's request 2017-08-30-->
+	<string name="iosCheckGlucoseWithPhone">Glukozunuzu iPhone’unuz ile kontrol edebilirsiniz.</string>
+	<string name="retry">Tekrar Dene</string>
+
+	<!-- New strings for US changes 2017-10-31 -->
+	<string name="sensorUserPrompt">Sensörü kullanacak kişi için bilgileri girin. </string>
+	<string name="welcome">Hoş geldiniz!</string>
+	<string name="welcomeDetail">Bu uygulamayla glukoz ölçümlerinizi nasıl anlayacağınızı öğrenmek için birkaç dakika ayırın.</string>
+	<string name="backgroundGlucoseColorsTitle">Glukoz Arka Alan Rengi</string>
+	<string name="backgroundGlucoseColorsDetail">Arka plan renkleri mevcut glukoz değerinize göre belirlenir.</string>
+	<string name="glucoseHighAbove240Mgdl">Yüksek Glukoz (240 mg/dL üstünde)</string>
+	<string name="glucoseBetweenTarget240Mgdl">Hedef aralık ile 240 mg/dL arasında</string>
+	<string name="glucoseTargetRange">Glukoz hedef aralık içinde</string>
+	<string name="glucoseBetweenTarget70Mgdl">Hedef aralık ile 70 mg/dL arasında</string>
+	<string name="glucoseLowBelow70Mgdl">Düşük Glukoz (70 mg/dL altında)</string>
+	<string name="glucoseHighAbove240Mmol">Yüksek Glukoz (13,3 mmol/L üstünde)</string>
+	<string name="glucoseBetweenTarget240Mmol">Hedef aralık ile 13,3 mmol/L arasında</string>
+	<string name="glucoseBetweenTarget70Mmol">Hedef aralık ile 3,9 mmol/L arasında</string>
+	<string name="glucoseLowBelow70Mmol">Düşük Glukoz (3,9 mmol/L altında)</string>
+	<string name="treatmentDecisions">Tedavi Kararları</string>
+	<string name="treatmentDecisionsSymbol">Bu sembolü görürseniz tedavi kararları vermeden önce bir kan glukozu testi yapın.</string>
+	<string name="treatmentDecisionsTest">Sensör glukoz ölçümü kendinizi nasıl hissettiğinize uymuyorsa bir kan glukozu testi yapın.</string>
+	<string name="checkBloodGlucoseTitle">Kan Glukozunu Kontrol Et</string>
+	<string name="checkBloodGlucoseMessage">Tedavi kararları vermeden önce bir kan glukozu testi yapın.</string>
+	<string name="highGlucoseCheckBloodGlucose">Yüksek glukoz tehlikeli olabilir. Tedavi kararları vermeden önce bir kan glukozu testi yapın. Keton testi yapın.</string>
+	<string name="lowGlucoseCheckBloodGlucose">Düşük glukoz tehlikeli olabilir. Tedavi kararları vermeden önce bir kan glukozu testi yapın.</string>
+	<string name="reminder">Hatırlatma</string>
+	<string name="safetyInformation">Güvenlik Bilgisi</string>
+	<string name="labeling">Etiketleme</string>
+	<string name="userGuides">Kullanıcı Kılavuzları</string>
+	<string name="quickStartGuide">Hızlı Başlangıç Kılavuzu</string>
+	<string name="quickReferenceGuide">Hızlı Başvuru Kılavuzu</string>
+	<string name="myGlucoseExplanationUpdate">Glukoz ölçümünüz Sensörünüzü okuttuktan sonra belirir. (1) Mevcut glukoz, (2) glukoz trend oku, (3) glukoz grafiği ve (4) herhangi bir glukoz mesajı için bakın.</string>
+	<string name="sensorPlacementInstruction">Sensör sadece kolunuzun üst arka kısmına uygulanmalıdır.</string>
+	<string name="sensorReadyAt">Sensör hazır:</string>
+	<string name="formattedTimeRemaining">(%1$s kaldı)</string>
+	<string name="sensorStartedByOtherDevice">Bu sensör başka bir cihaz tarafından başlatılmış.</string>
+	<string name="sensorLatejoinExplanation">Bir sensörün bu akıllı telefonla çalışması için sensörü başlarken okutmak üzere bu akıllı telefonu kullanmalısınız.</string>
+	<string name="androidScanInstruction1">Akıllı telefonunuzun arkasını sensöre yaklaştırın.</string>
+	<string name="androidScanInstruction2">İki ses veya titreşim alıncaya kadar bekleyin.</string>
+	<string name="bugFixesTitle">Hata Giderme</string>
+	<string name="bugFixesDetail">Hata giderme ve performans artışı</string>
+	<string name="performanceImprovements">Performans Artışı</string>
+	<string name="sensorChangeExplanation">Yeni bir sensör başlatmak şu anda kullandığınız sensörü sonlandıracaktır.</string>
+	<string name="useNewSensorPrompt">Yeni bir sensör kullanmaya başlamak ister misiniz?</string>
+	<string name="earlySensorActivationPrompt">Bu sensörün bir sonraki sensörünüz olmasını ister misiniz?</string>
+	<string name="changeSensorPrompt">Bu sensörü kullanmaya başlamak ister misiniz?</string>
+	<string name="replaceExistingSensor">Bu sensör, en son başlatılan sensörün yerini alacaktır.</string>
+	<string name="earlyActivationExistingEndsSoon">Mevcut sensörü sonlanıncaya kadar kullanabilirsiniz.</string>
+	<string name="earlyActivationEndsExisting">Mevcut sensörünüzü yeni sensör hazır oluncaya kadar kullanmaya devam edebilirsiniz.</string>
+	<string name="scanOtherSensor">Glukozunuzu kontrol etmek için diğer sensörünüzü okutun.</string>
+	<string name="sensorNotWorking">Sensörünüz çalışmıyor.</string>
+	<string name="currentSensorEndsAt">Mevcut Sensörün Bitme Zamanı:</string>
+	<string name="newSensorReadyAt">Yeni Sensörün Hazır Olma Zamanı:</string>
+	<string name="sensorAlreadyStarted">Bu sensör zaten başlatılmış.</string>
+	<string name="earlySensorStartupTimeRemaining">Glukoz ölçümü yok. %1$s içinde tekrar okutmayı deneyin.</string>
+	<string name="glucoseReadingUnavailable">Glukoz ölçümü yok. </string>
+	<string name="scanAgainIn">%1$s içinde tekrar okutmayı deneyin.</string>
+	<string name="softwareReleaseVersion">Yazılım Çıkış Versiyonu:</string>
+	<string name="softwareFullVersion">Yazılım Tam Versiyonu:</string>
+</resources>

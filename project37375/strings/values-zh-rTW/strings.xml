@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2015 Airstrip - All Rights Reserved. -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<!-- Plurals -->
+	<plurals name="insulinUnits">
+		<item quantity="one">%1$s 個單位</item>
+		<item quantity="other">%1$s 個單位</item>
+	</plurals>
+	<plurals name="days">
+		<item quantity="one">1 天</item>
+		<item quantity="other">%1$d 天</item>
+	</plurals>
+	<plurals name="hours">
+		<item quantity="one">1 小時</item>
+		<item quantity="other">%1$d 小時</item>
+	</plurals>
+	<plurals name="minutes">
+		<item quantity="one">1 分鐘</item>
+		<item quantity="other">%1$d 分鐘</item>
+	</plurals>
+	<!-- Phrase describing a time duration in seconds using secs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationSecs">
+		<item quantity="one">1 秒</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> 秒</item>
+	</plurals>
+	<!-- Phrase describing a time duration in minutes using mins abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationMins">
+		<item quantity="one">1 分鐘</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> 分鐘</item>
+	</plurals>
+	<!-- Phrase describing a time duration in hours using hrs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationHrs">
+		<item quantity="one">1 小時</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> 小時</item>
+	</plurals>
+	<plurals name="sensorExpiresInDays">
+		<item quantity="one">在 1 天內更換監測器</item>
+		<item quantity="other">在 <xliff:g id="count">%d</xliff:g> 天內更換監測器</item>
+	</plurals>
+	<plurals name="sensorExpiresInHours">
+		<item quantity="one">在 1 小時內更換監測器</item>
+		<item quantity="other">在 <xliff:g id="count">%d</xliff:g> 小時內更換監測器</item>
+	</plurals>
+	<plurals name="sensorExpiresInMins">
+		<item quantity="one">在 1 分鐘內更換監測器</item>
+		<item quantity="other">在 <xliff:g id="count">%d</xliff:g> 分鐘內更換監測器</item>
+	</plurals>
+	<plurals name="sensorReadyInMins">
+		<item quantity="one">監測器在 1 分鐘內就緒</item>
+		<item quantity="other">監測器在 <xliff:g id="count">%d</xliff:g> 分鐘內就緒</item>
+	</plurals>
+
+	<!-- common/generic words, phrases, symbols, and abbreviations -->
+	<string name="deciLiter">dL</string>
+	<string name="gramsSymbol">g</string>
+	<string name="liter">L</string>
+	<string name="mgdl">mg/dL</string>
+	<string name="milligrams">mg</string>
+	<string name="millimole">mmol</string>
+	<string name="mmol">mmol/L</string>
+	<string name="percentSign">\u0025</string>
+	<string name="servingsSymbol">份</string>
+	<string name="accept">接受</string>
+	<string name="account">帳戶設定</string>
+	<string name="all">所有</string>
+	<string name="back">返回</string>
+	<string name="average">平均</string>
+	<string name="delete">刪除</string>
+	<string name="cancel">取消</string>
+	<string name="durationHourMinuteConcatenate">%1$s %2$s</string>
+	<string name="comments">註釋</string>
+	<string name="done">完成</string>
+	<string name="email">電子郵件</string>
+	<string name="friday">週五</string>
+	<string name="grams">克</string>
+	<string name="gramsOfCarbs">克碳水化合物</string>
+	<string name="units">個單位</string>
+	<string name="help">說明</string>
+	<string name="home">首頁</string>
+	<string name="insulinDose">胰島素劑量</string>
+	<string name="loading">正在載入</string>
+	<string name="logbook">記錄本</string>
+	<string name="monday">週一</string>
+	<string name="next">下一步</string>
+	<string name="no">否</string>
+	<string name="note">備註</string>
+	<string name="ok">確定</string>
+	<string name="password">密碼</string>
+	<string name="reminders">提醒</string>
+	<string name="reject">拒絕</string>
+	<string name="reports">報告</string>
+	<string name="saturday">週六</string>
+	<string name="save">儲存</string>
+	<string name="sending">正在傳送</string>
+	<string name="servings">份</string>
+	<string name="servingsOfCarbs">份碳水化合物</string>
+	<string name="settings">應用程式設定</string>
+	<string name="share">分享</string>
+	<string name="start">開始</string>
+	<string name="submit">提交</string>
+	<string name="sunday">週日</string>
+	<string name="thursday">週四</string>
+	<string name="tuesday">週二</string>
+	<string name="wednesday">週三</string>
+	<string name="yes">是</string>
+	<string name="days7">7 天</string>
+	<string name="days14">14 天</string>
+	<string name="days30">30 天</string>
+	<string name="days90">90 天</string>
+	<string name="eventLog">事件日誌</string>
+	<string name="eventLogEmptyMessage">無事件</string>
+
+	<string name="minorFirstName">未成年 名字</string>
+	<string name="minorLastName">未成年 姓氏</string>
+	<string name="parentFirstName">@string/parentGuardianFirstName</string>
+	<string name="parentLastName">@string/parentGuardianLastName</string>
+	<string name="lastName">姓氏</string>
+	<string name="daily_graph">每日圖表</string>
+	<string name="daily_patterns">每日趨勢圖</string>
+	<string name="estimated_a1c">預估糖化血紅蛋白</string>
+	<string name="firstName">名字</string>
+	<string name="noResults">（沒有結果）</string>
+	<string name="signIn">登入</string>
+	<string name="signingIn">正在登入</string>
+	<string name="scanSensor">掃描監測器</string>
+	<string name="time_in_target">目標範圍內的時間</string>
+	<string name="errorMsgUnexpected">意外的應用程式錯誤。</string>
+	<string name="error_nfc_unsupported">不支援 NFC</string>
+	<string name="error_nfc_disabled">NFC 停用</string>
+	<string name="error_networktime_disabled">自動日期和時間停用</string>
+	<string name="errorOtherNfcInstalled">檢測到使用 NFC 的另一個應用程式。為了確保輔理善 LibreLink 用於讀取您的監測器,您需要在每次掃描之前啟動輔理善 LibreLink。或者，如果您解除安裝其他 NFC 應用程式，您應該能夠在您的智慧型手機解除鎖定時掃描您的監測器。</string>
+	<string name="loadingChartDataText">正在加載資料</string>
+	<string name="chartErrorMessage">加載資料時出錯</string>
+	<string name="timeZoneChangeMessage">時區從%1$s\u00A0改為\u00A0%2$s&lt;b&gt;（%3$s）&lt;/b&gt;</string>
+
+	<!-- Countries -->
+	<string name="countryName_AE">阿拉伯聯合酋長國</string>
+	<string name="countryName_AG">安提瓜和巴布達</string>
+	<string name="countryName_AR">阿根廷</string>
+	<string name="countryName_AT">奧地利</string>
+	<string name="countryName_AU">澳大利亞</string>
+	<string name="countryName_AZ">亞塞拜然</string>
+	<string name="countryName_BE">比利時</string>
+	<string name="countryName_BH">巴林</string>
+	<string name="countryName_BR">巴西</string>
+	<string name="countryName_BS">巴哈馬</string>
+	<string name="countryName_BW">博茨瓦納</string>
+	<string name="countryName_BY">白俄羅斯</string>
+	<string name="countryName_BZ">貝里斯</string>
+	<string name="countryName_CA">加拿大</string>
+	<string name="countryName_CH">瑞士</string>
+	<string name="countryName_CL">智利</string>
+	<string name="countryName_CN">中國</string>
+	<string name="countryName_CO">哥倫比亞</string>
+	<string name="countryName_CR">哥斯達黎加</string>
+	<string name="countryName_CY">塞浦路斯</string>
+	<string name="countryName_DE">德國</string>
+	<string name="countryName_DK">丹麥</string>
+	<string name="countryName_DO">多明尼加共和國</string>
+	<string name="countryName_DZ">阿爾及利亞</string>
+	<string name="countryName_EC">厄瓜多爾</string>
+	<string name="countryName_ES">西班牙</string>
+	<string name="countryName_FI">芬蘭</string>
+	<string name="countryName_FR">法國</string>
+	<string name="countryName_GB">英國</string>
+	<string name="countryName_GR">希臘</string>
+	<string name="countryName_HK">香港</string>
+	<string name="countryName_IE">愛爾蘭</string>
+	<string name="countryName_IL">以色列</string>
+	<string name="countryName_IS">冰島</string>
+	<string name="countryName_IT">義大利</string>
+	<string name="countryName_JO">約旦</string>
+	<string name="countryName_JP">日本</string>
+	<string name="countryName_KR">大韓民國</string>
+	<string name="countryName_KW">科威特</string>
+	<string name="countryName_KZ">哈薩克</string>
+	<string name="countryName_LB">黎巴嫩</string>
+	<string name="countryName_LU">盧森堡</string>
+	<string name="countryName_MT">馬爾他</string>
+	<string name="countryName_MX">墨西哥</string>
+	<string name="countryName_MY">馬來西亞</string>
+	<string name="countryName_NL">荷蘭</string>
+	<string name="countryName_NO">挪威</string>
+	<string name="countryName_NZ">紐西蘭</string>
+	<string name="countryName_OM">阿曼</string>
+	<string name="countryName_PA">巴拿馬</string>
+	<string name="countryName_PE">秘魯</string>
+	<string name="countryName_PL">波蘭</string>
+	<string name="countryName_PT">葡萄牙</string>
+	<string name="countryName_QA">卡達</string>
+	<string name="countryName_RU">俄羅斯</string>
+	<string name="countryName_SA">沙烏地阿拉伯</string>
+	<string name="countryName_SE">瑞典</string>
+	<string name="countryName_SG">新加坡</string>
+	<string name="countryName_TH">泰國</string>
+	<string name="countryName_TR">土耳其</string>
+	<string name="countryName_TT">千里達及托巴哥</string>
+	<string name="countryName_TW">台灣</string>
+	<string name="countryName_US">美國</string>
+	<string name="countryName_UY">烏拉圭</string>
+	<string name="countryName_VE">委內瑞拉</string>
+	<string name="countryName_ZA">南非</string>
+	<string name="countryName_ZW">辛巴威</string>
+
+	<!-- License Check -->
+	<string name="librelinkLicenseCheck">輔理善 LibreLink 使用權檢查</string>
+	<string name="licenseCheckFailed">請從 Google Play 安裝此應用程式。</string>
+
+	<!-- Update Version Check -->
+	<string name="librelink_upgrade_check">輔理善 LibreLink 升級檢查</string>
+	<string name="checkingVersion">正在檢查版本</string>
+	<string name="errorVersionCheckFailed">此版本的輔理善 LibreLink 需要更新。請檢查 Google Play 的最新版本。</string>
+
+	<!-- App Tour -->
+	<string name="checkGlucoseWithPhone">您可以使用智慧型手機檢查您的葡萄糖。</string>
+	<string name="instantAccess">您可以快速存取您的葡萄糖資訊。</string>
+	<string name="actionableInsights">您可以充分瞭解，以幫助您做出更明智的決定。</string>
+	<string name="shareGlucoseInformation">您可以與您的專業醫護人員和親人分享您的葡萄糖資訊。</string>
+
+	<!-- Account Registration/Sign In -->
+	<string name="changeUserMessage">登入您的帳戶後，此裝置上之前使用者的任何資料將會刪除。\n\n您想繼續嗎？</string>
+	<string name="changeDeviceMessage">點選確定將此智慧型手機登入您現有的 LibreView 帳戶。您可以繼續讀取以前的智慧型手機啟動的監測器。\n\n備註：點選確定將登出上一個智慧型手機。</string>
+	<string name="registeringDevice">註冊智慧型手機</string>
+	<string name="firstNameLabel">@string/firstName</string>
+	<string name="lastNameLabel">@string/lastName</string>
+	<string name="emailLabel">@string/email</string>
+	<string name="dateOfBirthLabel">@string/dateOfBirth</string>
+	<string name="dateOfBirth">出生日期</string>
+	<string name="passwordLabel">@string/password</string>
+	<string name="createPasswordLabel">@string/password</string>
+	<string name="changePassword">帳戶密碼</string>
+	<string name="newPasswordLabel">新密碼</string>
+	<string name="currentPasswordLabel">目前密碼</string>
+	<string name="confirmPasswordLabel">確認密碼</string>
+	<string name="sendingResetRequest">正在傳送密碼重設請求</string>
+	<string name="adultRegistrationTitle">帳戶登入</string>
+	<string name="minorRegistrationTitle">家長/監護人帳戶登入</string>
+	<string name="signInLinkText">@string/signIn</string>
+	<string name="account_sign_in_title">@string/signIn</string>
+	<string name="alreadyHaveAccountPromptText">已經有 LibreView 帳戶？</string>
+	<string name="invalidPasswordErrorMessage">請輸入有效密碼。密碼必須為 8-36 個字元，並且包含至少 1 個數字，1 個大寫字母和 1 個小寫字母。</string>
+	<string tools:ignore="PluralsCandidate" name="tooYoungErrorMessage">您必須年滿 %1$s 歲才可使用輔理善 FreeStyle LibreLink。</string>
+	<string name="tooYoungWarningMessage">「出生日期 」用來設定您的 LibreView 帳戶，而不是用來確定該應用程式是否適合您使用。在使用該應用程式前，請查閱應用程式使用手冊。</string>
+	<string name="forgotPasswordText">忘記密碼？</string>
+	<string name="createNewAccountText">建立新帳戶</string>
+	<string name="existing_user_login_text">已存在使用此電子郵件地址的帳戶。請輸入您的電子郵件地址和密碼。</string>
+	<string name="normal_user_login_text">請輸入您的 LibreView 帳戶登入資訊。</string>
+	<string name="passwordMismatchErrorMessage">密碼必須相符</string>
+	<string name="invalidEmailAddressErrorMessage">輸入一個有效的電子郵件地址。</string>
+	<string name="passwordResetSent">重設密碼的說明已傳送到您的電子郵件地址。</string>
+	<string name="accountContactOptIn">請向我傳送有關 Abbott Diabetes Care 以及其他 Abbott 產品和服務的資訊。（您可以隨時取消訂閱。）</string>
+	<string name="passwordResetMessage">請輸入用於註冊此帳戶的電子郵件地址。重設密碼的說明將傳送到該地址。</string>
+	<string name="nonExistentUserErrorMessage">您輸入的電子郵件地址不存在帳戶。</string>
+	<string name="invalidLoginErrorMessage">電子郵件地址或密碼不正確。請再試一次。</string>
+	<string name="invalidProfileUpdatePassword">密碼不正確。請再試一次。</string>
+	<string name="invalidProfileDOB">您無法將您的帳戶從成人變更為未成年人。請據此編輯您的出生日期。</string>
+	<string name="invalidAppKeyErrorMessage">與伺服器通訊時出錯。應用程式金鑰無效。</string>
+	<string name="invalidNetworkDomainErrorMessage">與伺服器通訊時出錯。網域無效。</string>
+	<string name="invalidRegistrationErrorMessage">由於資料無效，無法完成註冊。</string>
+	<string name="invalidAccountRegionErrorMessage">您的應用程式的國家設定和您的帳戶不符。請建立一個新的帳戶。</string>
+	<string name="accountRegisteringProgressMessage">正在註冊</string>
+	<string name="accountUpdateProgressMessage">正在傳送</string>
+	<string name="accountAlreadyRegisteredErrorMessage">此電子郵件地址已與 LibreView 帳戶產生連結。\n\n您不需要建立新帳戶。只要登入即可。</string>
+	<string name="professionalAccountAlreadyRegisteredErrorMessage">此電子郵件地址已與 LibreView 專業帳戶產生連結。您需要使用不同的電子郵件地址建立帳戶才能使用此應用程式。</string>
+	<string name="alreadyRegisteredSignInButtonText">@string/signIn</string>
+	<string name="enter_numera_data">建立您的 LibreView 帳戶以與輔理善 LibreLink 和任何其他相容的應用程式一起使用。</string>
+	<string name="minorRegistrationHeader">此使用者是未成年人。家長或監護人必須完成帳戶才能使用此軟件。</string>
+	<string name="parentGuardianFirstName">家長/法定監護人名字</string>
+	<string name="parentGuardianLastName">家長/法定監護人姓氏</string>
+	<string name="parentGuardianEmail">@string/email</string>
+	<string name="nameAndBirthDateHeader">讓我們開填入一些基本資訊。</string>
+	<string name="nameAndBirthDateTitle">@string/createNewAccountText</string>
+	<string name="profileUpdateTopText">變更以下任何資訊將更新您的帳戶。</string>
+	<string name="changePasswordTopText">密碼必須為 8-36 個字元，並且包含至少 1 個數字，1 個大寫字母和 1 個小寫字母。</string>
+	<string name="createAccountSubmitButtonText">建立帳號</string>
+	<string name="authenticationFailure">使用伺服器驗證失敗。請再登入一次。</string>
+	<string name="authenticationFailureLoginButton">登入</string>
+	<string name="reenterPassword">請重新輸入您的密碼。</string>
+	<string name="parentLoginText">需要家長/監護人登入。</string>
+	<string name="parentLoginSubText">請輸入帳戶密碼以存取分享資訊。</string>
+
+	<!-- Side Navigation Drawer -->
+	<string name="navigation_drawer_username">%1$s %2$s</string>
+	<string name="navigation_drawer_daily_graph">@string/daily_graph</string>
+	<string name="navigation_drawer_estimated_a1c">@string/estimated_a1c</string>
+	<string name="navigation_drawer_average_glucose">平均葡萄糖</string>
+	<string name="navigation_drawer_low_glucose">低葡萄糖事件</string>
+	<string name="navigation_drawer_sensor_usage">監測器使用情況</string>
+	<string name="navigation_drawer_daily_patterns">@string/daily_patterns</string>
+	<string name="navigation_drawer_time_in_target">@string/time_in_target</string>
+	<string name="navigation_drawer_sharedata">@string/share</string>
+
+	<!-- Home -->
+	<string name="applyNewSensor">貼放新的監測器</string>
+	<string name="scanNewSensor">掃描新的監測器</string>
+	<string name="startNewSensor">貼放並掃描新的監測器</string>
+	<string name="sensorReadyIn">感測器可在下列時間後使用： %1$s</string>
+	<string name="readyToScanDetail">您的監測器已就緒可供使用。要檢查您的葡萄糖，請將智慧型手機背面靠在監測器上，直到聽到兩個聲響。</string>
+	<string name="applyNewSensorDetail">貼放新的監測器。</string>
+	<string name="scanNewSensorDetail">掃描監測器以將其啟動。</string>
+	<string name="scanNewSensorDetailLateJoin">如果您也想使用掃描檢測器，您必須先加以掃描。</string>
+	<string name="scanSensorDetail">掃描監測器。</string>
+	<string name="last24Hours">最近 24 小時</string>
+	<string name="lastScan">上個掃描</string>
+	<string name="sensorIsReady">掃描就緒</string>
+	<string name="sensorWarmingUp">新的監測器啟動中</string>
+	<string name="sensorHasEnded">您的監測器已結束</string>
+	<string name="sensorEndsIn">監測器距結束時間：%1$s</string>
+	<string name="sensorLateJoinMessage">您現在可以使用此裝置和用於啟動監測器的裝置掃描監測器。\n\n備註：要確保裝置上的報告顯示完整的資料，請至少每 8 小時使用該裝置掃描監測器。裝置之間不共享資料和報告。</string>
+
+	<!-- Stats/Reports -->
+	<!-- Used for Germany to force 24 hour time on the chart axis -->
+	<bool name="force24HourTimes">false</bool>
+
+	<!-- Used to set the string format for graph axis unless 24 hour time is used -->
+	<string name="amTimeAxisFormat">\'上午\'h</string>
+	<string name="pmTimeAxisFormat">\'下午\'h</string>
+
+	<string name="mmolPerMolFormatter" tools:ignore="PluralsCandidate">( %d mmol/mol )</string>
+	<string name="sensor_usage_total_scans">總掃描數</string>
+	<string name="sensor_usage_day_average">每天掃描數</string>
+	<string name="sensor_usage_captured">擷取的監測器資料百分比</string>
+	<string name="days_of_data" tools:ignore="PluralsCandidate">資料在 %2$d 天中的 %1$d 天可用</string>
+	<string name="a1cDaysOfData" tools:ignore="PluralsCandidate">資料跨越時間為 %2$d 天中的 %1$d 天</string>
+	<string name="no_sensor_data">監測器資料不足</string>
+	<string name="timeintarget_glucose_range">%1$s-%2$s</string>
+	<string name="timeintarget_glucose_less_than">&lt; %s</string>
+	<string name="timeintarget_glucose_greater_than">&gt; %s</string>
+	<string name="timeintarget_percent">%</string>
+	<string name="target">目標</string>
+	<string name="timeInTargetGlucoseRangeLabel">目標範圍：%s</string>
+	<string name="average_glucose_info_title">平均葡萄糖</string>
+	<string name="average_glucose_info_msg">平均葡萄糖提供有關監測器葡萄糖讀數平均值的資訊。所選期間的整體平均值顯示在圖表下方。也會顯示一天中不同時段的平均值。高於或低於目標葡萄糖範圍的讀數為黃色、橘色或紅色。範圍內的讀數為綠色。</string>
+	<string name="low_glucose_info_title">低葡萄糖事件</string>
+	<string name="low_glucose_info_msg_mg">低葡萄糖事件提供有關由監測器測量的低葡萄糖事件數的資訊。當您的監測器葡萄糖讀數低於 70 mg/dL 超過 15 分鐘時，記錄低葡萄糖事件。事件總數顯示在圖表下方。條形圖顯示一天中不同時段的低葡萄糖事件。</string>
+	<string name="low_glucose_info_msg_mmol">低葡萄糖事件提供有關由監測器測量的低葡萄糖事件數量的資訊。當您的監測器葡萄糖讀數低於 3.9 mmol/L 超過 15 分鐘時，記錄低葡萄糖事件。事件總數顯示在圖表下方。條形圖顯示一天中不同時段的低葡萄糖事件。</string>
+	<string name="a1c_info_title">預估糖化血紅蛋白</string>
+	<string name="a1c_info_msg">您的預估糖化血紅蛋白水平（也稱為 HbA1c）是根據過去 90 天的可用監測器葡萄糖資料。可用的資料越多，預估值就越準。然而，預估的水平與您在實驗室測得的糖化血紅蛋白可能不符。\n\n糖化血紅蛋白可作為葡萄糖水平控制情況的指標，並且可用於監測您的糖尿病治療方案。</string>
+	<string name="daily_info_title">每日圖表</string>
+	<string name="daily_info_msg">每日圖表提供您的監測器葡萄糖每日讀數的圖表。\n\n在 8 小時內未掃描過至少一次的時間期間，您可能會在圖表中看到間斷。\n\n時鐘符號可能出現，指出時區改變。可能造成圖表中的間斷，或可能隱藏葡萄糖讀數。</string>
+	<string name="sensor_usage_info_title">監測器使用情況</string>
+	<string name="sensor_usage_info_msg">監測器使用情況提供有關掃描監測器的頻率之資訊。這包括您每天掃描監測器的平均次數，從掃描記錄的可能監測器資料的百分比，以及掃描的總數。</string>
+	<string name="time_in_target_info_title">目標範圍內的時間</string>
+	<string name="time_in_target_info_msg">目標範圍內的時間提供了一個圖表，顯示您的監測器葡萄糖讀數高於、低於或在目標葡萄糖範圍內的時間百分比。</string>
+	<string name="daily_average">平均：%1$s %2$s</string>
+	<string name="total_events">總事件數：%1$d</string>
+	<string name="daily_patterns_info_title">每日趨勢圖</string>
+	<string name="daily_patterns_info_msg">每日趨勢圖提供了個圖表，顯示監測器葡萄糖在典型一天中的趨勢圖和變異性。粗黑線表示葡萄糖讀數的中位數（中點）。淺藍色陰影代表監測器讀數的第 10-90 百分位數範圍。深藍色陰影代表第 25-75 百分位數範圍。\n\n備註：每日趨勢圖需要至少 5 天的葡萄糖資料。</string>
+
+	<!-- Scan Result -->
+	<string name="glucoseAboveRange">高葡萄糖\n（超出範圍）</string>
+	<string name="glucoseBelowRange">低葡萄糖\n（超出範圍）</string>
+	<string name="glucoseGoingHigh">葡萄糖升高</string>
+	<string name="glucoseGoingLow">葡萄糖降低</string>
+	<string name="glucoseHigh">高葡萄糖</string>
+	<string name="glucoseInRange">葡萄糖位於範圍內</string>
+	<string name="glucoseLow">低葡萄糖</string>
+	<string name="highGlucoseIsDangerous">高葡萄糖可能是危險的。再次檢查您的葡萄糖，並按照您的專業醫護人員的建議治療。考慮檢查您的酮。</string>
+	<string name="lowGlucoseIsDangerous">低葡萄糖可能是危險的。再次檢查您的葡萄糖，並按照您的專業醫護人員的建議治療。</string>
+	<string name="yourGlucose">我的葡萄糖</string>
+	<string name="vrcFailedTitle">顯示結果時出錯</string>
+	<string name="vrcFailedText">結果是：%s</string>
+	<string name="error_sensor_incompatible_title">監測器不相容</string>
+	<string name="error_sensor_incompatible_msg">此監測器不能與此版本的輔理善 LibreLink 一起使用。</string>
+	<string name="error_sensor_terminated_title">更換監測器</string>
+	<string name="error_sensor_terminated_msg">您的監測器不能運作。請移除您的監測器並啟動一個新的。</string>
+	<string name="error_sensor_removed_title">更換監測器</string>
+	<string name="error_sensor_removed_msg">您的監測器不能運作。請移除您的監測器並啟動一個新的。</string>
+	<string name="error_sensor_expired_title">監測器已結束</string>
+	<string name="error_sensor_expired_msg">啟動一個新的監測器以檢查葡萄糖。</string>
+	<string name="error_sensor_inwarmup_title">監測器啟動</string>
+	<string name="error_sensor_inwarmup_msg">此監測器已啟動，但尚未就緒，不能使用。</string>
+	<string name="error_sensor_corrupt_title">掃描錯誤</string>
+	<string name="error_sensor_corrupt_msg">智慧型手機無法掃描監測器。再次掃描監測器。</string>
+	<string name="error_sensor_transmission_title">掃描錯誤</string>
+	<string name="error_sensor_transmission_msg">智慧型手機無法掃描監測器。再次掃描監測器。確保將智慧型手機的背面靠近監測器。當您聽到第一個聲響或震動時，握住智慧型手機直到聽到第二個聲響或震動。</string>
+	<string name="error_sensor_already_started_title">監測器已在使用中</string>
+	<string name="error_sensor_already_started_msg">剛剛掃描的監測器由另一個裝置啟動，無法使用。</string>
+	<string name="error_sensor_already_started_msg_llj">此監測器由另一個裝置啟動。要使監測器與此智慧型手機一起使用，必須使用此智慧型手機在第一小時內掃描監測器。</string>
+	<string name="error_sensor_temporary_problem_title">監測器錯誤</string>
+	<string name="error_sensor_temporary_problem_msg">沒有葡萄糖讀數。請嘗試在 10 分鐘內再次掃描。</string>
+	<string name="error_sensor_too_hot_title">監測器過熱</string>
+	<string name="error_sensor_too_hot_msg">監測器過熱，無法提供葡萄糖讀數。請在幾分鐘後再試一次。</string>
+	<string name="error_sensor_too_cold_title">監測器過冷</string>
+	<string name="error_sensor_too_cold_msg">監測器過冷，無法提供葡萄糖讀數。請在幾分鐘後再試一次。</string>
+	<string name="error_sensor_insertion_failure_title">檢查監測器</string>
+	<string name="error_sensor_insertion_failure_msg">請檢查您的監測器。如果它從您的皮膚鬆脫，請移除監測器，並啟動一個新的。如果正確貼放，請再啟動監測器一次。</string>
+	<string name="error_sensor_not_active_title">找到新的監測器</string>
+	<string name="error_sensor_not_active_msg">啟動新的監測器將結束當前正在使用的監測器。\n\n您想現在啟動新的嗎？</string>
+
+	<!-- Add/Edit Note -->
+	<string name="addNote">新增備註</string>
+	<string name="editNote">編輯備註</string>
+	<string name="highIntensity">高強度</string>
+	<string name="mediumIntensity">中強度</string>
+	<string name="lowIntensity">低強度</string>
+	<string name="noExerciseTypeChosen">選擇強度</string>
+	<string name="food">食物</string>
+	<string name="exercise">運動</string>
+	<string name="longActingInsulin">長效胰島素</string>
+	<string name="rapidActingInsulin">速效胰島素</string>
+	<string name="meal">餐別</string>
+	<string name="breakfast">早餐</string>
+	<string name="lunch">午餐</string>
+	<string name="snack">點心</string>
+	<string name="dinner">晚餐</string>
+	<string name="carbsGramsError">值應為 %1$s 和 %2$s 之間的整數</string>
+	<string name="carbsServingsError">值應為 0.5 的倍數，在 %1$s 和 %2$s 之間</string>
+	<string name="insulinDoseError">值應為 0.1 的倍數，在 0.1 和 %1$d 之間</string>
+
+	<!-- Manual BG -->
+	<string name="manualBgTitle">血糖結果</string>
+	<string name="manualBgExplanation">輸入您的血糖測試的結果。</string>
+	<string name="manualBgError">值應為 %1$s 和 %2$s 之間的整數</string>
+
+	<!-- Logbook -->
+	<string name="logbookDetail">記錄本詳細資訊</string>
+	<string name="logbookListEmpty">此日期不存在任何輸入資料。</string>
+	<string name="logbookDetailCarbFormatDoseAndUnit">" (&lt;b&gt;%1$s%2$s&lt;/b&gt;)"</string>
+	<string name="logbookDetailInsulinFormatTypeAndDose">%1$s (&lt;b&gt;%2$s&lt;/b&gt;)</string>
+	<string name="logbookDetailSeparator">", "</string>
+	<string name="noteBalloonSeparator">&lt;br/&gt;</string>
+	<string name="logbookDetailExerciseType">@string/exercise</string>
+	<string name="logbookDetailExerciseFormatType">運動%s</string>
+	<string name="logbookDetailExerciseFormatDuration">" (&lt;b&gt;%s&lt;/b&gt;)"</string>
+
+	<!-- Reminders -->
+	<string name="alarms">警報</string>
+	<string name="repeating">重複中</string>
+	<string name="timers">計時器</string>
+	<string name="addReminder">新增提醒</string>
+	<string name="alarmName">提醒名稱</string>
+	<string name="checkGlucose">檢查葡萄糖</string>
+	<string name="myReminder">我的提醒</string>
+	<string name="nextReminderPrompt">下一個提醒：\u0020</string>
+	<string name="nextAlarmPrompt">下一個提醒： %1$s,%2$s </string>
+	<string name="noActiveReminders">沒有啟用中的提醒。</string>
+	<string name="noActiveRemindersAutoScanSensorEnabled">沒有啟用中的提醒。再次掃描時，掃描監測器計時器將重設。</string>
+	<string name="remindMeToCheckAgain">提醒我下面時間後檢查葡萄糖：</string>
+	<string name="setReminder">設定</string>
+
+	<!-- Send Reports -->
+	<string name="sendChooserTitle">傳送</string>
+
+	<!-- Settings -->
+	<string name="unitOfMeasurementTitle">測量單位</string>
+	<string name="unitOfMeasurementTopText">選擇葡萄糖測量單位。所有葡萄糖資料將使用這些單位顯示。</string>
+	<string name="unitOfMeasurementTopTextForSetup">選擇葡萄糖的測量單位。所有葡萄糖資料將使用這些單位顯示。您稍後將無法變更此設定。</string>
+	<string name="unitOfMeasureWarning">選擇正確的葡萄糖測量單位非常重要。錯誤的測量單位可能導致對葡萄糖值的判讀錯誤。如果您不知道使用哪個測量單位，請向您的專業醫護人員詢問。</string>
+	<string name="unitOfMeasurementFixedTopText">您的葡萄糖測量單位將根據您所在國家自動設定。</string>
+	<string name="unitOfMeasurementFixedCountryText">您所在國家為</string>
+	<string name="unitOfMeasurementFixedText">您的測量單位為</string>
+	<string name="targetGlucoseRangeTitle">目標葡萄糖範圍</string>
+	<string name="targetGlucoseRangeTopText">您的目標葡萄糖範圍將顯示在各種圖表上。如果您不知道，請向您的專業醫護人員詢問。</string>
+	<string name="targetGlucoseRangeTopTextForSetup">您的目標葡萄糖範圍將顯示在各種圖表上，可以透過轉到設定進行變更。如果您不知道，請向您的專業醫護人員詢問。</string>
+	<string name="carbohydrateUnitsTitle">碳水化合物單位</string>
+	<string name="carbohydrateUnitsTopText">碳水化合物可以以克或份數輸入，取決於您如何計數。選擇您偏好的碳水化合物單位。</string>
+	<string name="carbohydrateUnitServingSizeMessage">選擇您偏好的份量大小，如果您不知道，請洽您的專業醫護人員。</string>
+	<string name="carbohydrateUnitsTopTextForSetup">@string/carbohydrateUnitsTopText</string>
+	<string name="scanSoundsTitle">掃描聲音</string>
+	<string name="scanSoundsOsDefault">聲音和震動</string>
+	<string name="scanSoundsVibeOnly">僅震動</string>
+	<string name="scanSoundsTopText">掃描一個監測器將觸發震動。選擇是否除了震動外還想聽到聲音。</string>
+	<string name="scanSoundsTopTextForSetup">@string/scanSoundsTopText</string>
+	<string name="scanSoundsNote">請注意：\n掃描聲音將延續智慧型手機的音量設定。例如，如果您的智慧型手機音量已關閉，您將不會聽到掃描聲音。</string>
+	<string name="textToSpeechTitle">文字轉語音</string>
+	<string name="textToSpeechOn">開</string>
+	<string name="textToSpeechOff">關</string>
+	<string name="textToSpeechTopText">開啟文字轉語音以使葡萄糖讀數大聲唸出。</string>
+	<string name="textToSpeechNote">請注意：\n文字轉語音將延續智慧型手機的音量設定。例如，如果您的智慧型手機音量已關閉，您將不會聽到大聲唸出的葡萄糖讀數。</string>
+	<string name="countryOfOriginTitle">確認國家</string>
+	<string name="countryOfOriginTopText">您的國家是在應用程式設定期間使用，並確保您的資料正確儲存。</string>
+	<string name="countryOfOriginTopTextForSetup">@string/countryOfOriginTopText</string>
+	<string name="countryOfOriginExplanation">如果這是正確的，請輕點下一步。\n\n如果這不正確，您可能需要解除安裝輔理善 LibreLink 並安裝您所在國家的版本。如果您有任何問題，請聯絡客戶服務部。</string>
+	<string name="targetGlucoseRangeUnitText">值</string>
+	<string name="servingsWithGramsEquivalent" tools:ignore="PluralsCandidate">份（1 份 = %.1f 克）</string>
+	<string name="countryLabel">居住國家</string>
+	<string name="countryLabelForSetup">您所在國家已被標示為</string>
+	<string name="defaultNetworkErrorMessage">與伺服器通訊時出錯。</string>
+	<string name="serverNotFoundErrorMessage">與伺服器通訊時出錯。找不到伺服器。</string>
+	<string name="pageNotFoundErrorMessage">與伺服器通訊時出錯。在伺服器上找不到任何內容。</string>
+	<string name="networkingErrorMessage">與伺服器通訊時發生網路錯誤。</string>
+	<string name="internalServerErrorMessage">與伺服器通訊時出錯。發生內部伺服器錯誤。</string>
+	<string name="requestTimeoutErrorMessage">與伺服器通訊時出錯。請求超時。</string>
+	<string name="serviceUnavailableErrorMessage">與伺服器通訊時出錯。服務無法取得。</string>
+	<string name="submitButtonText">@string/submit</string>
+	<string name="mgPerDeciliterRadioText"><b>mg/dL</b>（例如，100 mg/dL）</string>
+	<string name="mmolPerLiterRadioText"><b>mmol/L</b>（例如，5.6 mmol/L）</string>
+	<string name="target_range_separator">-</string>
+	<string name="glucoseRangeFormat">%1$s - %2$s %3$s</string>
+	<string name="settingsUnitOfMeasureConfirmationMessage">請確認您要選擇下列測量單位：</string>
+	<string name="networkNotConnectedDefault">您的智慧型手機目前未連接到網際網路。此操作無法完成，直到您有網際網路連線。</string>
+	<string name="networkNotConnectedSetup">您的智慧型手機目前未連線到網際網路。在您連接到網際網路之前，無法完成設定。</string>
+	<string name="networkNotConnectedProfileUpdate">您的智慧型手機目前未連接到網際網路。在您連線網際網路之前，無法變更您的帳戶。</string>
+	<string name="privacyNoticeAcceptanceStatement">我已閱讀並明確接受隱私聲明。</string>
+	<string name="privacyNoticeTitle">隱私聲明</string>
+	<string name="termsOfUseAcceptanceStatement">我已閱讀並明確接受使用條款。</string>
+	<string name="termsOfUseTitle">使用條款</string>
+	<string name="nfcUnsupported">為了使用輔理善 LibreLink 掃描您的監測器，智慧型手機必須支援 NFC。</string>
+	<string name="turnOnNfcPrompt">為了使用輔理善 LibreLink 掃描您的監測器，NFC 必須在智慧型手機上啟用。您要開啟嗎？</string>
+	<string name="enableNetworkTime">為了使用輔理善 LibreLink 掃描您的監測器，您的智慧型手機必須設定為自動更新日期和時間。您要開啟嗎？</string>
+	<string name="getStartedNow">立即啟動</string>
+
+	<!-- My Glucose Explanation -->
+	<string name="myGlucoseExplanationTitle">我的葡萄糖</string>
+	<string name="myGlucoseExplanationTopText">掃描監測器後會出現此螢幕。</string>
+	<string name="myGlucoseExplanationResultCallouts">我的葡萄糖螢幕包含 (1) 您目前的葡萄糖，(2) 您的葡萄糖趨勢箭頭，和 (3) 您的葡萄糖圖表。</string>
+
+	<!-- Trend Arrow Explanation -->
+	<string name="trendExplanationTitle">葡萄糖趨勢箭頭</string>
+	<string name="trendExplanationTopText">當您掃描您的監測器時，有個箭頭會指出您最近的葡萄糖趨勢。</string>
+	<string name="trendExplanationRisingQuickly">迅速上升</string>
+	<string name="trendExplanationRising">正在上升</string>
+	<string name="trendExplanationStable">變化緩慢</string>
+	<string name="trendExplanationFalling">正在下降</string>
+	<string name="trendExplanationFallingQuickly">迅速下降</string>
+
+	<!-- Help -->
+	<string name="helpItemTitleApplySensor">如何貼放監測器</string>
+	<string name="helpItemTitleScanSensor">如何掃描監測器</string>
+	<string name="helpItemTitleEventLog">@string/eventLog</string>
+	<string name="helpItemTitleUserGuide">使用手冊</string>
+
+	<!-- OneStep Log Upload -->
+	<string name="logUploadTitle">傳送疑難排解資料</string>
+	<string name="logUploadOptInDescription">傳送疑難排解資料有助於客戶服務部解答您的問題。</string>
+	<string name="logUploadOptInText1">您之前接受的隱私聲明說明了疑難排解資料包括的內容。</string>
+	<string name="logUploadViewPrivacyButtonLabel">檢視隱私聲明</string>
+	<string name="logUploadOptInText2">您同意傳送疑難排解資料嗎？</string>
+	<string name="logUploadDecline">拒絕</string>
+	<string name="logUploadAccept">同意</string>
+	<string name="logUploadDescription">請輸入客戶服務部提供的案例編號和驗證碼。</string>
+	<string name="logUploadCaseNumberLabel">案例編號</string>
+	<string name="logUploadAccessCodeLabel">驗證碼</string>
+	<string name="logUploadSendButtonLabel">傳送</string>
+	<string name="logUploadErrorTypo">案例編號或驗證碼不正確</string>
+	<string name="logUploadErrorUploadFailedTitle">傳送疑難排解資料時出錯</string>
+	<string name="logUploadErrorUploadFailedText">點選以重試。</string>
+
+	<!-- Apply Sensor Tour -->
+	<string name="applySensorTitle">貼放監測器</string>
+	<string name="applySensorTitleStep1">步驟 1</string>
+	<string name="applySensorTextStep1">選擇上臂背面的部位。</string>
+	<string name="applySensorSubTextStep1">備註：避免疤痕、痣、妊娠紋、腫塊和胰島素注射部位。為了防止皮膚刺激，在貼放之間輪流不同部位。</string>
+	<string name="applySensorTitleStep2">步驟 2</string>
+	<string name="applySensorTextStep2">用酒精紙巾清潔部位。讓部位變乾，然後繼續。</string>
+	<string name="applySensorTitleStep3">步驟 3</string>
+	<string name="applySensorTextStep3">將監測器套件包的封蓋完全撕除。</string>
+	<string name="applySensorTitleStep4">步驟 4</string>
+	<string name="applySensorTextStep4">旋開監測器貼放裝置的蓋子。</string>
+	<string name="applySensorTitleStep5">步驟 5</string>
+	<string name="applySensorTextStep5">在監測器貼放裝置上將深色標記與監測器套件包上的深色標記對齊。在硬的表面上，用力按下監測器貼放裝置直到停止。</string>
+	<string name="applySensorTitleStep6">步驟 6</string>
+	<string name="applySensorTextStep6">將監測器貼放裝置往上拉離監測器套件包。</string>
+	<string name="applySensorTitleStep7">步驟 7</string>
+	<string name="applySensorTextStep7">監測器貼放裝置已準備好貼放監測器。不要觸摸監測器貼放裝置內部或將其放回監測器套件包。</string>
+	<string name="applySensorTitleStep8">步驟 8</string>
+	<string name="applySensorTextStep8">將監測器貼放裝置放置在部位上，然後用力按下以貼放監測器。</string>
+	<string name="applySensorTitleStep9">步驟 9</string>
+	<string name="applySensorTextStep9">輕輕地將監測器貼放裝置遠離身體。</string>
+	<string name="applySensorTitleStep10">步驟 10</string>
+	<string name="applySensorTextStep10">確保監測器固定。根據當地法規丟棄使用過的監測器貼放裝置和監測器套件包。</string>
+
+	<!-- Scan Sensor Tour -->
+	<string name="scanSensorTitle">掃描監測器</string>
+	<string name="scanSensorTitleStep1">步驟 1</string>
+	<string name="scanSensorTextStep1"><![CDATA[將智慧型手機的<b>背面</b><b>靠在</b>監測器上。]]></string>
+	<string name="scanSensorTitleStep2">步驟 2</string>
+	<string name="scanSensorTextStep2">啟用聲音時，智慧型手機在掃描監測器時會產生一連串聲響和震動。在聲響和震動停止之前，請勿將智慧型手機拉開。</string>
+	<string name="scanSensorTitleStep3">步驟 3</string>
+	<string name="scanSensorTextStep3">要掃描監測器，您可能需要將智慧型手機重新放置在監測器附近，以便找到智慧型手機的 NFC 天線。</string>
+
+	<!-- About -->
+	<string name="about">關於</string>
+	<string name="appNameLabel">名稱：</string>
+	<string name="appNameValue">輔理善 LibreLink</string>
+	<string name="appPartOfSystem">輔理善 Libre Flash 葡萄糖監測系統的一部分</string>
+	<string name="last3sensors">過去 3 個監測器：</string>
+	<string name="sensorStatus">&#160;&#160;&#160;&#160;狀態：%1$s</string>
+	<string name="udi">UDI：</string>
+	<string name="registrationNumber">註冊編號：</string>
+	<string name="productStandardNumber">產品標準編號：</string>
+	<string name="model">智慧型手機型號：</string>
+	<string name="appCountryLabel">國家：</string>
+	<string name="supportWebsiteLabel">客戶服務部：</string>
+	<string name="supportWebsiteValue">http://www.freestylelibre.com</string>
+	<string name="consultInstructionsForUse">請諮詢使用說明</string>
+	<string name="productOfUsa">美國產品</string>
+	<string name="patentWebsiteLabel">專利網站：</string>
+	<string name="patentWebsiteValue">https://www.abbott.com/patents</string>
+	<string name="trademarkStatement">輔理善，Libre 和相關品牌標誌是 Abbott Diabetes Care Inc. 在各個司法管轄區的商標。</string>
+	<string name="copyrightStatement">©2018 Abbott</string>
+	<string name="osVersion">Android OS 版本：</string>
+	<string name="sensorNotPresent">無啟用中的監測器</string>
+	<string name="softwareVersion">軟件版本：</string>
+
+	<!-- Notifications -->
+	<string name="alarmExpired">警報已過期</string>
+	<string name="timerExpired">計時器已過期</string>
+
+	<string name="sensorActivated">監測器已啟動</string>
+	<string name="sensorReady">監測器已就緒</string>
+	<string name="sensorReadyContent">您的監測器已就緒可以使用</string>
+	<string name="sensorExpired">監測器已結束</string>
+	<string name="sensorExpiredContent">啟動一個新的監測器以檢查葡萄糖</string>
+	<string name="sensorEndingSoon">監測器即將結束</string>
+
+	<!-- Data Upload -->
+	<string name="uploadFailedTitle">上傳失敗</string>
+	<string name="uploadFailedNoConnectivityContent">沒有連線</string>
+	<string name="uploadFailedInvalidToken">驗證失敗。點擊以登入。</string>
+	<string name="uploadFailedOther">發生了錯誤。點擊以重試</string>
+	<string name="uploadingDataTitle">上傳輔理善 LibreLink 資料</string>
+	<string name="uploadingDataContent">正在傳送資料</string>
+	<string name="serving_size_in_grams">1 份 = %.1f 克</string>
+	<string name="acceptLanguageHeader">zh-TW, zh;q=0.8</string>
+	<string name="appLocale">zh-TW</string>
+
+	<string name="reportHeaderDayOnlyFormat">d \'日\'</string>
+	<string name="reportHeaderFullDateFormat">yyyy \'年\' MMMM d \'日\'</string>
+	<string name="reportHeaderShortMonthFormat">MMM d \'日\'</string>
+	<string name="reportHeaderShortMonthFullFormat">yyyy \'年\' MMM d \'日\'</string>
+	<string name="reportHeaderDateRangeFormat">%1$s - %2$s</string>
+	<string name="reportShareSubjectFormat">%1$s: %2$s</string>
+
+	<string name="nonActionableExplanationTitle">確認葡萄糖讀數</string>
+	<string name="nonActionableExplanationMessage">在做出治療決定之前，用試紙確認葡萄糖讀數。</string>
+
+	<!-- TTS Result -->
+	<string name="spokenLo">超出範圍且低</string>
+	<string name="spokenHi">超出範圍且高</string>
+	<string name="spokenMgDl">每分升毫克</string>
+	<string name="spokenMmolL">每升毫摩尔</string>
+	<string name="resultWithTrendNotDetermined">%1$s %2$s（無法取得趨勢）</string>
+	<string name="resultWithTrendFallingQuickly">%1$s %2$s且快速下降</string>
+	<string name="resultWithTrendFalling">%1$s %2$s且下降</string>
+	<string name="resultWithTrendStable">%1$s %2$s且變化緩慢</string>
+	<string name="resultWithTrendRising">%1$s %2$s且上升</string>
+	<string name="resultWithTrendRisingQuickly">%1$s %2$s 且快速上升</string>
+
+	<!-- Download Progress -->
+	<string name="progressDownloadingConfiguration">正在下載應用程序配置</string>
+	<string name="progressDownloadingUserGuide">正在下載使用手冊</string>
+	<string name="insufficientSpaceMessage">您的智慧型手機上空間不夠。</string>
+
+
+	<!-- New strings added 25SEPT2017 -->
+
+	<string name="modalLookingForSensor">握住 iPhone 靠近監測器</string>
+	<string name="modalSensorFound">掃描完成</string>
+	<string name="settingsMenuTitle">設定</string>
+	<string name="genericOSVersion">OS 版本:</string>
+	<string name="editTime">編輯時間</string>
+	<string name="detail">詳細資訊</string>
+	<string name="helpItemTitleGlucoseHelp">葡萄糖讀數</string>
+	<string name="glucoseHelp">葡萄糖讀數</string>
+
+	<!-- Abbreviated time passed -->
+	<string name="mins_passed">%d  分鐘前</string>
+	<string name="hours_passed">%d  小時前</string>
+
+	<string name="iosNotificationsDisabled">必須在「iOS 設定」中啟用通知，才能接收提醒。</string>
+	<string name="glucoseWarningReminderPrompt">您是否想要設定提醒以檢查您的葡萄糖？</string>
+	<string name="NFCReaderUsageDescription">輔理善 LibreLink 使用 NFC 掃描輔理善 Libre 監測器。</string>
+	<string name="NSPhotoLibraryAddUsageDescription">輔理善 LibreLink 需要存取您的媒體庫才能保存報告。在未獲得您的允許的情況下，不會分享您的照片。</string>
+	<string name="deleteNote">刪除備註</string>
+	<string name="deleteNoteConfirmation">您想要刪除此備註嗎？</string>
+
+	<!-- New strings with existing Android Counterparts -->
+
+	<string name="iosScanSensorTextStep1">在掃描您的監測器之前，請點選掃描按鈕。</string>
+	<string name="iosScanSensorTextStep2">握住您的 iPhone，使頂部靠近監測器。</string>
+	<string name="iosScanSensorTextStep3">掃描監測器後，您的 iPhone 會震動並發出聲音（如果已啟用聲音）。</string>
+	<string name="iosErrorVersionCheckFailed">需要更新此版本的輔理善 LibreLink。請查看 App Store 是否有最新的版本。</string>
+	<string name="iosReadyToScanDetail">您的監測器準備好使用。</string>
+	<string name="iosDefaultSensorErrorMsg">您的掃描没有成功。點選掃描按鈕，再掃描一次。</string>
+	<string name="iosEnableNetworkTimeTitle">更新日期與時間。</string>
+	<string name="iosEnableNetworkTime">您的日期與時間設定必須自動更新，才能使用輔理善 LibreLink。前往設定 &gt; 一般 &gt; 日期與時間，並啟用「自動設定」。</string>
+
+	<!-- New string added per Ashwin Kumar's request 2017-08-30-->
+	<string name="iosCheckGlucoseWithPhone">使用您的 iPhone 检查您的葡萄糖值。</string>
+	<string name="retry">重試</string>
+
+	<!-- New strings for US changes 2017-10-31 -->
+	<string name="sensorUserPrompt">請為將佩戴監測器的人輸入資訊。</string>
+	<string name="welcome">歡迎！</string>
+	<string name="welcomeDetail">花一些時間來學習如何透過此應用軟體瞭解您的葡萄糖讀數。</string>
+	<string name="backgroundGlucoseColorsTitle">葡萄糖背景顏色</string>
+	<string name="backgroundGlucoseColorsDetail">您目前的葡萄糖決定其後面顯示的顏色。</string>
+	<string name="glucoseHighAbove240Mgdl">高葡萄糖（高於 240 mg/dL）</string>
+	<string name="glucoseBetweenTarget240Mgdl">介於目標範圍與 240 mg/dL 之間</string>
+	<string name="glucoseTargetRange">位於您的目標範圍以內的葡萄糖</string>
+	<string name="glucoseBetweenTarget70Mgdl">介於目標範圍與 70 mg/dL 之間</string>
+	<string name="glucoseLowBelow70Mgdl">低葡萄糖（低於 70 mg/dL）</string>
+	<string name="glucoseHighAbove240Mmol">高葡萄糖（高於 13.3 mmol/L）</string>
+	<string name="glucoseBetweenTarget240Mmol">介於目標範圍與 13.3 mmol/L 之間</string>
+	<string name="glucoseBetweenTarget70Mmol">介於目標範圍與 3.9 mmol/L 之間</string>
+	<string name="glucoseLowBelow70Mmol">低葡萄糖（低於 3.9 mmol/L）</string>
+	<string name="treatmentDecisions">治療決定</string>
+	<string name="treatmentDecisionsSymbol">如果您看到此符號，請在做出治療決定前進行血糖測試。</string>
+	<string name="treatmentDecisionsTest">如果監測器葡萄糖讀數與您的感覺不符，請進行血糖測試。</string>
+	<string name="checkBloodGlucoseTitle">檢查血糖</string>
+	<string name="checkBloodGlucoseMessage">做出治療決定前，請進行血糖測試。</string>
+	<string name="highGlucoseCheckBloodGlucose">高葡萄糖可能是危險的。做出治療決定前，請進行血糖測試。考慮檢查您的酮。</string>
+	<string name="lowGlucoseCheckBloodGlucose">低葡萄糖可能是危險的。做出治療決定前，請進行血糖測試。</string>
+	<string name="reminder">提醒</string>
+	<string name="safetyInformation">安全資訊</string>
+	<string name="labeling">標籤</string>
+	<string name="userGuides">使用手冊</string>
+	<string name="quickStartGuide">快速入門指南</string>
+	<string name="quickReferenceGuide">快速參考指南</string>
+	<string name="myGlucoseExplanationUpdate">在成功掃描您的監測器後，您的葡萄糖讀數會出現。尋找 (1) 目前的葡萄糖，(2) 葡萄糖趨勢箭頭，(3) 葡萄糖圖表，以及 (4) 任何葡萄糖訊息。</string>
+	<string name="sensorPlacementInstruction">監測器應只能貼放在您的上臂後方。</string>
+	<string name="sensorReadyAt">監測器就緒時間：</string>
+	<string name="formattedTimeRemaining">（還剩 %1$s）</string>
+	<string name="sensorStartedByOtherDevice">此監測器由另一個裝置啟動。</string>
+	<string name="sensorLatejoinExplanation">要使監測器與此智慧型手機一起使用，必須在監測器啟動時使用此智慧型手機對其進行掃描。</string>
+	<string name="androidScanInstruction1">請將智慧型手機的背面靠近監測器。</string>
+	<string name="androidScanInstruction2">等候直到您聽到兩個聲響或震動。</string>
+	<string name="bugFixesTitle">錯誤修復</string>
+	<string name="bugFixesDetail">錯誤修復與性能改進</string>
+	<string name="performanceImprovements">性能改進</string>
+	<string name="sensorChangeExplanation">啟動新的監測器將結束當前正在使用的監測器。</string>
+	<string name="useNewSensorPrompt">您想要開始使用新的監測器嗎？</string>
+	<string name="earlySensorActivationPrompt">您想要將其作為您的下個監測器嗎？</string>
+	<string name="changeSensorPrompt">您想要開始使用此監測器器嗎？</string>
+	<string name="replaceExistingSensor">這會更換您最近一次啟動的監測器。</string>
+	<string name="earlyActivationExistingEndsSoon">您可以繼續使用您目前的監測器直到其結束為止。</string>
+	<string name="earlyActivationEndsExisting">您可以繼續使用您目前的監測器直到新的監測器就緒。</string>
+	<string name="scanOtherSensor">掃描您的其他監測器以檢查葡萄糖。</string>
+	<string name="sensorNotWorking">您的監測器不能運作。</string>
+	<string name="currentSensorEndsAt">目前監測器距結束時間：</string>
+	<string name="newSensorReadyAt">新的監測器就緒時間：</string>
+	<string name="sensorAlreadyStarted">此監測器已經啟動。</string>
+	<string name="earlySensorStartupTimeRemaining">沒有葡萄糖讀數。請嘗試在 %1$s 內再次掃描。</string>
+	<string name="glucoseReadingUnavailable">沒有葡萄糖讀數。</string>
+	<string name="scanAgainIn">請嘗試在 %1$s 內再次掃描。</string>
+	<string name="softwareReleaseVersion">軟體發佈版本：</string>
+	<string name="softwareFullVersion">軟體完整版本：</string>
+</resources>

@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2015 Airstrip - All Rights Reserved. -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<!-- Plurals -->
+	<plurals name="insulinUnits">
+		<item quantity="one">%1$s eenheid</item>
+		<item quantity="other">%1$s eenheden</item>
+	</plurals>
+	<plurals name="days">
+		<item quantity="one">1 dag</item>
+		<item quantity="other">%1$d dagen</item>
+	</plurals>
+	<plurals name="hours">
+		<item quantity="one">1 uur</item>
+		<item quantity="other">%1$d uren</item>
+	</plurals>
+	<plurals name="minutes">
+		<item quantity="one">1 minuut</item>
+		<item quantity="other">%1$d minuten</item>
+	</plurals>
+	<!-- Phrase describing a time duration in seconds using secs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationSecs">
+		<item quantity="one">1 s</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> s</item>
+	</plurals>
+	<!-- Phrase describing a time duration in minutes using mins abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationMins">
+		<item quantity="one">1 min</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> minuten</item>
+	</plurals>
+	<!-- Phrase describing a time duration in hours using hrs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationHrs">
+		<item quantity="one">1 u</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> uren</item>
+	</plurals>
+	<plurals name="sensorExpiresInDays">
+		<item quantity="one">Sensor over 1 dag vervangen</item>
+		<item quantity="other">Sensor over <xliff:g id="count">%d</xliff:g> dagen vervangen</item>
+	</plurals>
+	<plurals name="sensorExpiresInHours">
+		<item quantity="one">Sensor over 1 uur vervangen</item>
+		<item quantity="other">Sensor over <xliff:g id="count">%d</xliff:g> uur vervangen</item>
+	</plurals>
+	<plurals name="sensorExpiresInMins">
+		<item quantity="one">Sensor over 1 minuut vervangen</item>
+		<item quantity="other">Sensor over <xliff:g id="count">%d</xliff:g> minuten vervangen</item>
+	</plurals>
+	<plurals name="sensorReadyInMins">
+		<item quantity="one">Sensor klaar over 1 minuut</item>
+		<item quantity="other">Sensor klaar over <xliff:g id="count">%d</xliff:g> minuten</item>
+	</plurals>
+
+	<!-- common/generic words, phrases, symbols, and abbreviations -->
+	<string name="deciLiter">dL</string>
+	<string name="gramsSymbol">g</string>
+	<string name="liter">L</string>
+	<string name="mgdl">mg/dL</string>
+	<string name="milligrams">mg</string>
+	<string name="millimole">mmol</string>
+	<string name="mmol">mmol/L</string>
+	<string name="percentSign">\u0025</string>
+	<string name="servingsSymbol">portie</string>
+	<string name="accept">Accepteren</string>
+	<string name="account">Account-instellingen</string>
+	<string name="all">Alle</string>
+	<string name="back">Terug</string>
+	<string name="average">Gemiddelde</string>
+	<string name="delete">Wissen</string>
+	<string name="cancel">Annuleren</string>
+	<string name="durationHourMinuteConcatenate">%1$s %2$s</string>
+	<string name="comments">Opmerkingen</string>
+	<string name="done">Gereed</string>
+	<string name="email">E-mail</string>
+	<string name="friday">Vrijdag</string>
+	<string name="grams">gram</string>
+	<string name="gramsOfCarbs">gram KH</string>
+	<string name="units">e</string>
+	<string name="help">Help</string>
+	<string name="home">Begin</string>
+	<string name="insulinDose">Insulinedosis</string>
+	<string name="loading">Bezig met laden</string>
+	<string name="logbook">Logboek</string>
+	<string name="monday">Maandag</string>
+	<string name="next">Volgende</string>
+	<string name="no">Nee</string>
+	<string name="note">Opmerking</string>
+	<string name="ok">OK</string>
+	<string name="password">Wachtwoord</string>
+	<string name="reminders">Herinneringen</string>
+	<string name="reject">Afwijzen</string>
+	<string name="reports">Rapporten</string>
+	<string name="saturday">Zaterdag</string>
+	<string name="save">Opslaan</string>
+	<string name="sending">Bezig met verzenden</string>
+	<string name="servings">porties</string>
+	<string name="servingsOfCarbs">porties KH</string>
+	<string name="settings">App-instellingen</string>
+	<string name="share">Delen</string>
+	<string name="start">Start</string>
+	<string name="submit">Indienen</string>
+	<string name="sunday">Zondag</string>
+	<string name="thursday">Donderdag</string>
+	<string name="tuesday">Dinsdag</string>
+	<string name="wednesday">Woensdag</string>
+	<string name="yes">Ja</string>
+	<string name="days7">7 dagen</string>
+	<string name="days14">14 dagen</string>
+	<string name="days30">30 dagen</string>
+	<string name="days90">90 dagen</string>
+	<string name="eventLog">Logboek van voorvallen</string>
+	<string name="eventLogEmptyMessage">Geen voorvallen</string>
+
+	<string name="minorFirstName">Voornaam minderjarige</string>
+	<string name="minorLastName">Achternaam minderjarige</string>
+	<string name="parentFirstName">@string/parentGuardianFirstName</string>
+	<string name="parentLastName">@string/parentGuardianLastName</string>
+	<string name="lastName">Achternaam</string>
+	<string name="daily_graph">Dagelijkse grafiek</string>
+	<string name="daily_patterns">Dagelijkse trends</string>
+	<string name="estimated_a1c">Geschatte HbA1c</string>
+	<string name="firstName">Voornaam</string>
+	<string name="noResults">(Geen resultaten)</string>
+	<string name="signIn">Aanmelden</string>
+	<string name="signingIn">Bezig met aanmelden</string>
+	<string name="scanSensor">Sensor scannen</string>
+	<string name="time_in_target">Tijd binnen doelbereik</string>
+	<string name="errorMsgUnexpected">Onverwachte toepassingsfout.</string>
+	<string name="error_nfc_unsupported">NFC niet ondersteund</string>
+	<string name="error_nfc_disabled">NFC uitgeschakeld</string>
+	<string name="error_networktime_disabled">Automatische datum en tijd uitgeschakeld</string>
+	<string name="errorOtherNfcInstalled">Er is een andere app gedetecteerd die NFC gebruikt. Om te zorgen dat FreeStyle LibreLink wordt gebruikt voor het uitlezen van uw sensor zult u FreeStyle LibreLink telkens moeten opstarten voordat u een scan uitvoert. Of als u de andere NFC-app verwijdert, kunt u als het goed is uw sensor altijd scannen wanneer uw smartphone ontgrendeld is.</string>
+	<string name="loadingChartDataText">Gegevens worden geladen</string>
+	<string name="chartErrorMessage">Fout bij gegevens geladen</string>
+	<string name="timeZoneChangeMessage">Verandering tijdzone van %1$s\u00A0in\u00A0%2$s &lt;b&gt;(%3$s)&lt;/b&gt;</string>
+
+	<!-- Countries -->
+	<string name="countryName_AE">Verenigde Arabische Emiraten</string>
+	<string name="countryName_AG">Antigua en Barbuda</string>
+	<string name="countryName_AR">Argentinië</string>
+	<string name="countryName_AT">Oostenrijk</string>
+	<string name="countryName_AU">Australië</string>
+	<string name="countryName_AZ">Azerbeidzjan</string>
+	<string name="countryName_BE">België</string>
+	<string name="countryName_BH">Bahrein</string>
+	<string name="countryName_BR">Brazilië</string>
+	<string name="countryName_BS">Bahama’s</string>
+	<string name="countryName_BW">Botswana</string>
+	<string name="countryName_BY">Wit-Rusland</string>
+	<string name="countryName_BZ">Belize</string>
+	<string name="countryName_CA">Canada</string>
+	<string name="countryName_CH">Zwitserland</string>
+	<string name="countryName_CL">Chili</string>
+	<string name="countryName_CN">China</string>
+	<string name="countryName_CO">Colombia</string>
+	<string name="countryName_CR">Costa Rica</string>
+	<string name="countryName_CY">Cyprus</string>
+	<string name="countryName_DE">Duitsland</string>
+	<string name="countryName_DK">Denemarken</string>
+	<string name="countryName_DO">Dominicaanse Republiek</string>
+	<string name="countryName_DZ">Algerije</string>
+	<string name="countryName_EC">Ecuador</string>
+	<string name="countryName_ES">Spanje</string>
+	<string name="countryName_FI">Finland</string>
+	<string name="countryName_FR">Frankrijk</string>
+	<string name="countryName_GB">Verenigd Koninkrijk</string>
+	<string name="countryName_GR">Griekenland</string>
+	<string name="countryName_HK">Hongkong</string>
+	<string name="countryName_IE">Ierland</string>
+	<string name="countryName_IL">Israël</string>
+	<string name="countryName_IS">IJsland</string>
+	<string name="countryName_IT">Italië</string>
+	<string name="countryName_JO">Jordanië</string>
+	<string name="countryName_JP">Japan</string>
+	<string name="countryName_KR">Republiek Korea</string>
+	<string name="countryName_KW">Koeweit</string>
+	<string name="countryName_KZ">Kazachstan</string>
+	<string name="countryName_LB">Libanon</string>
+	<string name="countryName_LU">Luxemburg</string>
+	<string name="countryName_MT">Malta</string>
+	<string name="countryName_MX">Mexico</string>
+	<string name="countryName_MY">Maleisië</string>
+	<string name="countryName_NL">Nederland</string>
+	<string name="countryName_NO">Noorwegen</string>
+	<string name="countryName_NZ">Nieuw-Zeeland</string>
+	<string name="countryName_OM">Oman</string>
+	<string name="countryName_PA">Panama</string>
+	<string name="countryName_PE">Peru</string>
+	<string name="countryName_PL">Polen</string>
+	<string name="countryName_PT">Portugal</string>
+	<string name="countryName_QA">Qatar</string>
+	<string name="countryName_RU">Rusland</string>
+	<string name="countryName_SA">Saoedi-Arabië</string>
+	<string name="countryName_SE">Zweden</string>
+	<string name="countryName_SG">Singapore</string>
+	<string name="countryName_TH">Thailand</string>
+	<string name="countryName_TR">Turkije</string>
+	<string name="countryName_TT">Trinidad en Tobago</string>
+	<string name="countryName_TW">Taiwan</string>
+	<string name="countryName_US">Verenigde Staten</string>
+	<string name="countryName_UY">Uruguay</string>
+	<string name="countryName_VE">Venezuela</string>
+	<string name="countryName_ZA">Zuid-Afrika</string>
+	<string name="countryName_ZW">Zimbabwe</string>
+
+	<!-- License Check -->
+	<string name="librelinkLicenseCheck">Controle FreeStyle LibreLink-licentie</string>
+	<string name="licenseCheckFailed">Installeer deze app vanuit Google Play.</string>
+
+	<!-- Update Version Check -->
+	<string name="librelink_upgrade_check">Controle upgrade FreeStyle LibreLink</string>
+	<string name="checkingVersion">Versie wordt gecontroleerd</string>
+	<string name="errorVersionCheckFailed">Deze versie van FreeStyle LibreLink moet worden bijgewerkt. Kijk op Google Play voor de nieuwste versie.</string>
+
+	<!-- App Tour -->
+	<string name="checkGlucoseWithPhone">U kunt uw glucose controleren met uw smartphone.</string>
+	<string name="instantAccess">U kunt uw glucose-informatie snel inzien.</string>
+	<string name="actionableInsights">U kunt inzichten verwerven zodat u beter geïnformeerde beslissingen kunt nemen.</string>
+	<string name="shareGlucoseInformation">U kunt uw glucose-informatie delen met uw behandelaar en uw naasten.</string>
+
+	<!-- Account Registration/Sign In -->
+	<string name="changeUserMessage">Als u zich aanmeldt bij uw account, worden alle gegevens van de vorige gebruiker van dit apparaat gewist.\n\nWilt u doorgaan?</string>
+	<string name="changeDeviceMessage">Tik op OK om deze smartphone aan te melden bij uw bestaande LibreView-account. U kunt doorgaan met het uitlezen van een sensor waarmee u op uw vorige smartphone bent begonnen.\n\nOpmerking: Als u op OK tikt, wordt de vorige smartphone afgemeld.</string>
+	<string name="registeringDevice">Smartphone wordt geregistreerd</string>
+	<string name="firstNameLabel">@string/firstName</string>
+	<string name="lastNameLabel">@string/lastName</string>
+	<string name="emailLabel">@string/email</string>
+	<string name="dateOfBirthLabel">@string/dateOfBirth</string>
+	<string name="dateOfBirth">Geboortedatum</string>
+	<string name="passwordLabel">@string/password</string>
+	<string name="createPasswordLabel">@string/password</string>
+	<string name="changePassword">Account wachtwoord</string>
+	<string name="newPasswordLabel">Nieuw wachtwoord</string>
+	<string name="currentPasswordLabel">Huidig wachtwoord</string>
+	<string name="confirmPasswordLabel">Wachtwoord bevestigen</string>
+	<string name="sendingResetRequest">Herstelverzoek wachtwoord wordt verzonden</string>
+	<string name="adultRegistrationTitle">Aanmelding account</string>
+	<string name="minorRegistrationTitle">Aanm. acc. ouder/voogd</string>
+	<string name="signInLinkText">@string/signIn</string>
+	<string name="account_sign_in_title">@string/signIn</string>
+	<string name="alreadyHaveAccountPromptText">Hebt u al een LibreView-account?</string>
+	<string name="invalidPasswordErrorMessage">Voer een geldig wachtwoord in. Wachtwoorden moeten 8\u201336 tekens lang zijn en ten minste 1 cijfer, 1 hoofdletter en 1 kleine letter bevatten.</string>
+	<string tools:ignore="PluralsCandidate" name="tooYoungErrorMessage">U moet %1$s jaar of ouder zijn om FreeStyle LibreLink te gebruiken.</string>
+	<string name="tooYoungWarningMessage">De geboortedatum wordt gebruikt om uw LibreView-account op te zetten en niet om te bepalen of de app geschikt is om door u te worden gebruikt. Raadpleeg de gebruikershandleiding van de app voordat u de app in gebruik neemt.</string>
+	<string name="forgotPasswordText">Wachtwoord vergeten?</string>
+	<string name="createNewAccountText">Nieuw account aanmaken</string>
+	<string name="existing_user_login_text">Er bestaat al een account met dit e-mailadres. Voer uw e-mailadres en wachtwoord in.</string>
+	<string name="normal_user_login_text">Voer de aanmeldgegevens van uw LibreView-account in.</string>
+	<string name="passwordMismatchErrorMessage">Wachtwoorden moeten overeenkomen</string>
+	<string name="invalidEmailAddressErrorMessage">Voer een geldig e-mailadres in.</string>
+	<string name="passwordResetSent">Instructies voor het herstellen van uw wachtwoord zijn naar uw e-mailadres gezonden.</string>
+	<string name="accountContactOptIn">Stuur me informatie over Abbott Diabetes Care en andere producten en diensten van Abbott. (U kunt zich op elk gewenst moment weer uitschrijven.)</string>
+	<string name="passwordResetMessage">Voer het e-mailadres in dat is gebruikt bij het registreren van dit account. Instructies voor het herstellen van uw wachtwoord worden naar dat adres gezonden.</string>
+	<string name="nonExistentUserErrorMessage">Er bestaat geen account voor het e-mailadres dat u hebt ingevoerd.</string>
+	<string name="invalidLoginErrorMessage">E-mailadres of wachtwoord is onjuist. Probeer het opnieuw.</string>
+	<string name="invalidProfileUpdatePassword">Wachtwoord is onjuist. Probeer het opnieuw.</string>
+	<string name="invalidProfileDOB">U kunt het account-type niet veranderen van volwassene naar minderjarige. Bewerk uw geboortedatum zodat dit klopt.</string>
+	<string name="invalidAppKeyErrorMessage">Fout bij communicatie met server. App-sleutel is ongeldig.</string>
+	<string name="invalidNetworkDomainErrorMessage">Fout bij communicatie met server. Domein is ongeldig.</string>
+	<string name="invalidRegistrationErrorMessage">Kan registratie niet voltooien vanwege ongeldige gegevens.</string>
+	<string name="invalidAccountRegionErrorMessage">De landinstellingen voor uw account en voor uw app komen niet overeen. Maak een nieuw account aan.</string>
+	<string name="accountRegisteringProgressMessage">Bezig met registreren</string>
+	<string name="accountUpdateProgressMessage">Bezig met verzenden</string>
+	<string name="accountAlreadyRegisteredErrorMessage">Dit e-mailadres is al gekoppeld aan een LibreView-account.\n\nU hoeft geen nieuw account aan te maken. U kunt zich gewoon aanmelden.</string>
+	<string name="professionalAccountAlreadyRegisteredErrorMessage">Dit e-mailadres is al gekoppeld aan een LibreView Professional-account. U hebt een ander e-mailadres nodig om een account aan te maken voor het gebruik van deze app.</string>
+	<string name="alreadyRegisteredSignInButtonText">@string/signIn</string>
+	<string name="enter_numera_data">Maak een LibreView-account aan voor gebruik met FreeStyle LibreLink en eventuele andere compatibele apps.</string>
+	<string name="minorRegistrationHeader">Deze gebruiker is een minderjarige. Een ouder of voogd moet het account voltooien voor het gebruik van deze software.</string>
+	<string name="parentGuardianFirstName">Voornaam ouder/wettelijk voogd</string>
+	<string name="parentGuardianLastName">Achternaam ouder/wettelijk voogd</string>
+	<string name="parentGuardianEmail">@string/email</string>
+	<string name="nameAndBirthDateHeader">Laten we beginnen met wat basisgegevens.</string>
+	<string name="nameAndBirthDateTitle">@string/createNewAccountText</string>
+	<string name="profileUpdateTopText">Als u een van de gegevens hieronder wijzigt, wordt uw account bijgewerkt.</string>
+	<string name="changePasswordTopText">Wachtwoorden moeten 8-36 tekens lang zijn en ten minste 1 cijfer, 1 hoofdletter en 1 kleine letter bevatten.</string>
+	<string name="createAccountSubmitButtonText">Account aanmaken</string>
+	<string name="authenticationFailure">Verificatie bij server mislukt. Meld u opnieuw aan.</string>
+	<string name="authenticationFailureLoginButton">Aanmelden</string>
+	<string name="reenterPassword">Voer uw wachtwoord opnieuw in.</string>
+	<string name="parentLoginText">Aanmelding van ouder/voogd vereist.</string>
+	<string name="parentLoginSubText">Voer het accountwachtwoord in voor toegang tot delen.</string>
+
+	<!-- Side Navigation Drawer -->
+	<string name="navigation_drawer_username">%1$s %2$s</string>
+	<string name="navigation_drawer_daily_graph">@string/daily_graph</string>
+	<string name="navigation_drawer_estimated_a1c">@string/estimated_a1c</string>
+	<string name="navigation_drawer_average_glucose">Gemiddelde glucose</string>
+	<string name="navigation_drawer_low_glucose">Hypo’s</string>
+	<string name="navigation_drawer_sensor_usage">Sensorgebruik</string>
+	<string name="navigation_drawer_daily_patterns">@string/daily_patterns</string>
+	<string name="navigation_drawer_time_in_target">@string/time_in_target</string>
+	<string name="navigation_drawer_sharedata">@string/share</string>
+
+	<!-- Home -->
+	<string name="applyNewSensor">Nieuwe sensor aanbrengen</string>
+	<string name="scanNewSensor">Nieuwe sensor scannen</string>
+	<string name="startNewSensor">Nieuwe sensor aanbrengen en scannen</string>
+	<string name="sensorReadyIn">Sensor is klaar voor gebruik over %1$s</string>
+	<string name="readyToScanDetail">Uw sensor is klaar voor gebruik. Om uw glucose te controleren houdt u de achterkant van uw smartphone tegen de sensor aan totdat u twee tonen hoort.</string>
+	<string name="applyNewSensorDetail">Breng een nieuwe sensor aan.</string>
+	<string name="scanNewSensorDetail">Scan de sensor om deze te starten.</string>
+	<string name="scanNewSensorDetailLateJoin">Als u ook een scanner wilt gebruiken, moet u er eerst mee scannen.</string>
+	<string name="scanSensorDetail">Scan de sensor.</string>
+	<string name="last24Hours">Afgelopen 24 uur</string>
+	<string name="lastScan">Laatste scan</string>
+	<string name="sensorIsReady">Klaar om te scannen</string>
+	<string name="sensorWarmingUp">Nieuwe sensor start op</string>
+	<string name="sensorHasEnded">Uw sensor is geëindigd</string>
+	<string name="sensorEndsIn">Sensor eindigt over: %1$s</string>
+	<string name="sensorLateJoinMessage">Uw kunt de sensor nu scannen met dit apparaat en met het apparaat dat is gebruikt om de sensor op te starten.\n\nOpmerking: Om te zorgen dat u over de volledige gegevens beschikt moet u de sensor minstens eenmaal per 8 uur scannen met dat apparaat. Gegevens en rapporten worden niet gedeeld tussen verschillende apparaten.</string>
+
+	<!-- Stats/Reports -->
+	<!-- Used for Germany to force 24 hour time on the chart axis -->
+	<bool name="force24HourTimes">false</bool>
+
+	<!-- Used to set the string format for graph axis unless 24 hour time is used -->
+	<string name="amTimeAxisFormat">h\'a.m.\'</string>
+	<string name="pmTimeAxisFormat">h\'p.m.\'</string>
+
+	<string name="mmolPerMolFormatter" tools:ignore="PluralsCandidate">( %d mmol/mol )</string>
+	<string name="sensor_usage_total_scans">Totaal aantal scans</string>
+	<string name="sensor_usage_day_average">Scans per dag</string>
+	<string name="sensor_usage_captured">% sensorgegevens geregistreerd</string>
+	<string name="days_of_data" tools:ignore="PluralsCandidate">Gegevens beschikbaar gedurende %1$d van %2$d dagen</string>
+	<string name="a1cDaysOfData" tools:ignore="PluralsCandidate">Gegevens beslaan %1$d van %2$d dagen</string>
+	<string name="no_sensor_data">Niet voldoende sensorgegevens</string>
+	<string name="timeintarget_glucose_range">%1$s-%2$s</string>
+	<string name="timeintarget_glucose_less_than">&lt; %s</string>
+	<string name="timeintarget_glucose_greater_than">&gt; %s</string>
+	<string name="timeintarget_percent">%</string>
+	<string name="target">DOEL</string>
+	<string name="timeInTargetGlucoseRangeLabel">Doelbereik: %s</string>
+	<string name="average_glucose_info_title">GEMIDDELDE GLUCOSE</string>
+	<string name="average_glucose_info_msg">Gemiddelde glucose biedt informatie over het gemiddelde van uw sensorglucosemetingen. Het algehele gemiddelde over de geselecteerde periode wordt vermeld onder de grafiek. Ook het gemiddelde voor verschillende dagdelen wordt weergegeven. Metingen boven of onder uw glucosedoelbereik zijn geel, oranje of rood. Metingen binnen het bereik zijn groen.</string>
+	<string name="low_glucose_info_title">HYPO’S</string>
+	<string name="low_glucose_info_msg_mg">Hypo’s biedt informatie over het aantal hypo’s dat door uw sensor is gemeten. Een hypo wordt vastgelegd wanneer uw sensorglucosemeting langer dan 15 minuten lager is dan 70 mg/dL. Het totale aantal hypo’s wordt onder de grafiek weergegeven. In het staafdiagram worden de hypo’s in verschillende dagdelen weergegeven.</string>
+	<string name="low_glucose_info_msg_mmol">Hypo’s biedt informatie over het aantal hypo’s dat door uw sensor is gemeten. Een hypo wordt vastgelegd wanneer uw sensorglucosemeting langer dan 15 minuten lager is dan 3,9 mmol/L. Het totale aantal hypo’s wordt onder de grafiek weergegeven. In het staafdiagram worden de hypo’s in verschillende dagdelen weergegeven.</string>
+	<string name="a1c_info_title">GESCHAT HbA1c</string>
+	<string name="a1c_info_msg">Uw geschatte HbA1c-niveau (ook wel A1c genoemd) is gebaseerd op beschikbare sensorglucosegegevens van de afgelopen 90 dagen. Hoe meer gegevens er beschikbaar zijn, hoe nauwkeuriger de schatting is. Het geschatte niveau kan echter afwijken van uw HbA1c gemeten in een laboratorium.\n\nHbA1c kan worden gebruikt als indicator voor hoe goed uw glucoseniveaus onder controle zijn geweest en kan worden gebruikt om uw diabetesbehandelvoorschrift te verifiëren.</string>
+	<string name="daily_info_title">DAGELIJKSE GRAFIEK</string>
+	<string name="daily_info_msg">Dagelijkse grafiek biedt een grafiek van uw sensorglucosemetingen per dag.\n\nEr kunnen lacunes in de grafiek voorkomen, voor tijden wanneer u niet ten minste eenmaal per 8 uur hebt gescand.\n\nEr kan een kloksymbool verschijnen, wat aanduidt dat de tijdzone is veranderd. Hierdoor kunnen lacunes in de grafiek optreden of kunnen glucosemetingen verborgen zijn.</string>
+	<string name="sensor_usage_info_title">SENSORGEBRUIK</string>
+	<string name="sensor_usage_info_msg">Sensorgebruik biedt informatie over hoe vaak u uw sensor scant. Het gaat hierbij om een gemiddelde van hoe vaak u uw sensor elke dag hebt gescand, het percentage mogelijke sensorgegevens vastgelegd bij uw scans en het totale aantal scans.</string>
+	<string name="time_in_target_info_title">TIJD BINNEN DOELBEREIK</string>
+	<string name="time_in_target_info_msg">Tijd binnen doelbereik biedt een grafiek met het percentage van de tijd dat uw sensorglucosemetingen boven, onder of in uw doelglucosebereik vielen.</string>
+	<string name="daily_average">Gemiddelde: %1$s %2$s</string>
+	<string name="total_events">Totaal aantal voorvallen: %1$d</string>
+	<string name="daily_patterns_info_title">DAGELIJKSE TRENDS</string>
+	<string name="daily_patterns_info_msg">Dagelijkse trends biedt een grafiek waarin de trend en de schommelingen van uw sensorglucose in de loop van een typische dag worden weergegeven. De dikke zwarte lijn toont de mediaan (het middelpunt) van uw glucosemetingen. De lichtblauwe arcering geeft het 10e-90e percentielbereik van uw sensormetingen aan. Donkerblauwe arcering geeft het 25e-75e percentielbereik aan.\n\nOpmerking: Dagelijkse trends heeft ten minste 5 dagen aan glucosegegevens nodig.</string>
+
+	<!-- Scan Result -->
+	<string name="glucoseAboveRange">HOGE GLUCOSE\n(BUITEN BEREIK)</string>
+	<string name="glucoseBelowRange">LAGE GLUCOSE\n(BUITEN BEREIK)</string>
+	<string name="glucoseGoingHigh">GLUCOSE GAAT OMHOOG</string>
+	<string name="glucoseGoingLow">GLUCOSE GAAT OMLAAG</string>
+	<string name="glucoseHigh">HOGE GLUCOSE</string>
+	<string name="glucoseInRange">GLUCOSE IN BEREIK</string>
+	<string name="glucoseLow">LAGE GLUCOSE</string>
+	<string name="highGlucoseIsDangerous">Hoog glucose kan gevaarlijk zijn. Controleer uw glucose nogmaals en handel volgens de aanbevelingen van uw behandelaar. Overweeg om uw ketonen te controleren.</string>
+	<string name="lowGlucoseIsDangerous">Laag glucose kan gevaarlijk zijn. Controleer uw glucose nogmaals en handel volgens de aanbevelingen van uw behandelaar.</string>
+	<string name="yourGlucose">Mijn glucose</string>
+	<string name="vrcFailedTitle">Fout bij weergave resultaat</string>
+	<string name="vrcFailedText">Resultaat is: %s</string>
+	<string name="error_sensor_incompatible_title">Onverenigbare sensor</string>
+	<string name="error_sensor_incompatible_msg">Deze sensor kan niet worden gebruikt met deze versie van FreeStyle LibreLink.</string>
+	<string name="error_sensor_terminated_title">Vervang sensor</string>
+	<string name="error_sensor_terminated_msg">Uw sensor werkt niet. Verwijder uw sensor en start een nieuwe sensor.</string>
+	<string name="error_sensor_removed_title">Vervang sensor</string>
+	<string name="error_sensor_removed_msg">Uw sensor werkt niet. Verwijder uw sensor en start een nieuwe sensor.</string>
+	<string name="error_sensor_expired_title">Sensor geëindigd</string>
+	<string name="error_sensor_expired_msg">Start een nieuwe sensor om uw glucose te controleren.</string>
+	<string name="error_sensor_inwarmup_title">Nieuwe sensor wordt opgestart</string>
+	<string name="error_sensor_inwarmup_msg">Deze sensor is gestart, maar nog niet klaar voor gebruik.</string>
+	<string name="error_sensor_corrupt_title">Scanfout</string>
+	<string name="error_sensor_corrupt_msg">De smartphone heeft de sensor niet kunnen scannen. Scan de sensor nogmaals.</string>
+	<string name="error_sensor_transmission_title">Scanfout</string>
+	<string name="error_sensor_transmission_msg">De smartphone heeft de sensor niet kunnen scannen. Scan de sensor nogmaals. Zorg dat u de achterkant van de smartphone dicht bij de sensor houdt. Wanneer u de eerste toon of trilling hoort, houdt u de smartphone stil totdat u de tweede toon of trilling hoort.</string>
+	<string name="error_sensor_already_started_title">Sensor reeds in gebruik</string>
+	<string name="error_sensor_already_started_msg">De sensor die u net gescand hebt, is door een ander apparaat gestart en kan niet worden gebruikt.</string>
+	<string name="error_sensor_already_started_msg_llj">Deze sensor is gestart door een ander apparaat. Om een sensor te laten werken met deze smartphone moet u de sensor binnen het eerste uur scannen met deze smartphone.</string>
+	<string name="error_sensor_temporary_problem_title">Sensorfout</string>
+	<string name="error_sensor_temporary_problem_msg">Glucosemeting is niet beschikbaar. Probeer over 10 minuten nogmaals te scannen.</string>
+	<string name="error_sensor_too_hot_title">Sensor is te warm</string>
+	<string name="error_sensor_too_hot_msg">De sensor is te warm om glucosemetingen te geven. Probeer het over een paar minuten opnieuw.</string>
+	<string name="error_sensor_too_cold_title">Sensor is te koud</string>
+	<string name="error_sensor_too_cold_msg">De sensor is te koud om glucosemetingen te geven. Probeer het over een paar minuten opnieuw.</string>
+	<string name="error_sensor_insertion_failure_title">Controleer sensor</string>
+	<string name="error_sensor_insertion_failure_msg">Controleer uw sensor. Als deze los van de huid ligt, verwijder de sensor dan en start een nieuwe. Als de sensor goed is aangebracht, probeer deze dan opnieuw te starten.</string>
+	<string name="error_sensor_not_active_title">Nieuwe sensor gevonden</string>
+	<string name="error_sensor_not_active_msg">Als u een nieuwe sensor start, wordt de sensor die u momenteel gebruikt beëindigd.\n\nWilt u de nieuwe nu starten?</string>
+
+	<!-- Add/Edit Note -->
+	<string name="addNote">Notitie toevoegen</string>
+	<string name="editNote">Notitie bewerken</string>
+	<string name="highIntensity">Hoge intensiteit</string>
+	<string name="mediumIntensity">Middelhoge intensiteit</string>
+	<string name="lowIntensity">Lage intensiteit</string>
+	<string name="noExerciseTypeChosen">Intensiteit selecteren</string>
+	<string name="food">Voedsel</string>
+	<string name="exercise">Lichaamsbeweging</string>
+	<string name="longActingInsulin">Langwerkende insuline</string>
+	<string name="rapidActingInsulin">Snelwerkende insuline</string>
+	<string name="meal">Maaltijd</string>
+	<string name="breakfast">Ontbijt</string>
+	<string name="lunch">Lunch</string>
+	<string name="snack">Snack</string>
+	<string name="dinner">Diner</string>
+	<string name="carbsGramsError">Waarde moet een heel getal zijn tussen %1$s en %2$s </string>
+	<string name="carbsServingsError">Waarde moet een veelvoud van 0,5 zijn en tussen %1$s en %2$s liggen</string>
+	<string name="insulinDoseError">Waarde moet een veelvoud van 0,1 zijn en tussen 0,1 en %1$d liggen</string>
+
+	<!-- Manual BG -->
+	<string name="manualBgTitle">Resultaat bloedglucose</string>
+	<string name="manualBgExplanation">Voer het resultaat van uw bloedglucosetest in.</string>
+	<string name="manualBgError">Waarde moet een heel getal zijn tussen %1$s en %2$s </string>
+
+	<!-- Logbook -->
+	<string name="logbookDetail">Detail van logboek</string>
+	<string name="logbookListEmpty">Er zijn geen ingevoerde waarden voor deze datum.</string>
+	<string name="logbookDetailCarbFormatDoseAndUnit">" (&lt;b&gt;%1$s%2$s&lt;/b&gt;)"</string>
+	<string name="logbookDetailInsulinFormatTypeAndDose">%1$s (&lt;b&gt;%2$s&lt;/b&gt;)</string>
+	<string name="logbookDetailSeparator">", "</string>
+	<string name="noteBalloonSeparator">&lt;br/&gt;</string>
+	<string name="logbookDetailExerciseType">@string/exercise</string>
+	<string name="logbookDetailExerciseFormatType">Lichaamsbeweging %s</string>
+	<string name="logbookDetailExerciseFormatDuration">" (&lt;b&gt;%s&lt;/b&gt;)"</string>
+
+	<!-- Reminders -->
+	<string name="alarms">Alarmen</string>
+	<string name="repeating">Herhalend</string>
+	<string name="timers">Timers</string>
+	<string name="addReminder">Herinnering toevoegen</string>
+	<string name="alarmName">Naam herinnering</string>
+	<string name="checkGlucose">Controleer glucose</string>
+	<string name="myReminder">Mijn herinnering</string>
+	<string name="nextReminderPrompt">Volgende herinnering:\u0020</string>
+	<string name="nextAlarmPrompt">Volgende herinnering: %1$s, %2$s</string>
+	<string name="noActiveReminders">Geen actieve herinneringen.</string>
+	<string name="noActiveRemindersAutoScanSensorEnabled">Geen actieve herinneringen. De timer voor Sensor scannen wordt teruggezet wanneer u weer een scan uitvoert.</string>
+	<string name="remindMeToCheckAgain">Herinner mij aan glucosecontrole over:</string>
+	<string name="setReminder">Instellen</string>
+
+	<!-- Send Reports -->
+	<string name="sendChooserTitle">Verzenden</string>
+
+	<!-- Settings -->
+	<string name="unitOfMeasurementTitle">Meeteenheid</string>
+	<string name="unitOfMeasurementTopText">Kies de meeteenheid voor uw glucose. Alle glucosegegevens worden weergegeven in deze meeteenheid.</string>
+	<string name="unitOfMeasurementTopTextForSetup">Selecteer de meeteenheid voor uw glucose. Alle glucosegegevens worden weergegeven in deze meeteenheid. U kunt dit later NIET meer veranderen.</string>
+	<string name="unitOfMeasureWarning">Het is ZEER belangrijk om de juiste meeteenheid te selecteren voor uw glucose. Een verkeerde meeteenheid kan leiden tot onjuiste interpretatie van uw glucosewaarden. Raadpleeg uw behandelaar als u niet weet welke meeteenheid u moet gebruiken.</string>
+	<string name="unitOfMeasurementFixedTopText">Uw glucosemeeteenheid wordt automatisch ingesteld op grond van uw land.</string>
+	<string name="unitOfMeasurementFixedCountryText">Uw land is</string>
+	<string name="unitOfMeasurementFixedText">Uw meeteenheid is</string>
+	<string name="targetGlucoseRangeTitle">Glucosedoelbereik</string>
+	<string name="targetGlucoseRangeTopText">Uw glucosedoelbereik wordt weergegeven in diverse grafieken. Raadpleeg uw behandelaar als u het niet weet.</string>
+	<string name="targetGlucoseRangeTopTextForSetup">Uw glucosedoelbereik wordt weergegeven in diverse grafieken en kan worden gewijzigd door naar Instellingen te gaan. Raadpleeg uw behandelaar als u het niet weet.</string>
+	<string name="carbohydrateUnitsTitle">Koolhydraateenheden</string>
+	<string name="carbohydrateUnitsTopText">Koolhydraten kunnen worden ingevoerd in gram of in porties, afhankelijk van hoe u ze telt. Selecteer de koolhydraateenheid die u het liefst gebruikt.</string>
+	<string name="carbohydrateUnitServingSizeMessage">Selecteer de portiegrootte die u het liefst gebruikt of raadpleeg uw behandelaar als u het niet weet.</string>
+	<string name="carbohydrateUnitsTopTextForSetup">@string/carbohydrateUnitsTopText</string>
+	<string name="scanSoundsTitle">Scangeluiden</string>
+	<string name="scanSoundsOsDefault">geluid en trilling</string>
+	<string name="scanSoundsVibeOnly">alleen trilling</string>
+	<string name="scanSoundsTopText">Bij het scannen van een sensor wordt er een trilling geactiveerd. Kies of u naast de trilling ook een geluid wilt horen.</string>
+	<string name="scanSoundsTopTextForSetup">@string/scanSoundsTopText</string>
+	<string name="scanSoundsNote">Let op:\nScangeluiden nemen de volume-instellingen van uw smartphone over. Dus als het volume van uw smartphone bijvoorbeeld is uitgeschakeld, krijgt u het scangeluid niet te horen.</string>
+	<string name="textToSpeechTitle">Tekst naar spraak</string>
+	<string name="textToSpeechOn">aan</string>
+	<string name="textToSpeechOff">uit</string>
+	<string name="textToSpeechTopText">Schakel Tekst naar spraak in om de glucosemeting te laten voorlezen.</string>
+	<string name="textToSpeechNote">Let op:\nTekst naar spraak neemt de volume-instellingen van uw smartphone over. Dus als het volume van uw smartphone bijvoorbeeld is uitgeschakeld, krijgt u het voorlezen van de glucosemeting niet te horen.</string>
+	<string name="countryOfOriginTitle">Land bevestigen</string>
+	<string name="countryOfOriginTopText">Uw land wordt gebruikt tijdens het instellen van de app en om te zorgen dat uw gegevens op de juiste wijze worden opgeslagen.</string>
+	<string name="countryOfOriginTopTextForSetup">@string/countryOfOriginTopText</string>
+	<string name="countryOfOriginExplanation">Als dit klopt, tikt u op Volgende.\n\nAls dit niet klopt, moet u FreeStyle LibreLink mogelijk verwijderen en de versie voor uw land installeren. Neem contact op met de klantenservice als u vragen hebt.</string>
+	<string name="targetGlucoseRangeUnitText">Waarden in</string>
+	<string name="servingsWithGramsEquivalent" tools:ignore="PluralsCandidate">porties (1 portie = %.1f gram)</string>
+	<string name="countryLabel">Land</string>
+	<string name="countryLabelForSetup">Uw land is geïdentificeerd als</string>
+	<string name="defaultNetworkErrorMessage">Fout bij communicatie met server.</string>
+	<string name="serverNotFoundErrorMessage">Fout bij communicatie met server. Server niet gevonden.</string>
+	<string name="pageNotFoundErrorMessage">Fout bij communicatie met server. Geen gegevens gevonden op server.</string>
+	<string name="networkingErrorMessage">Er is een netwerkfout opgetreden bij de communicatie met de server.</string>
+	<string name="internalServerErrorMessage">Fout bij communicatie met server. Er is een interne fout opgetreden op de server.</string>
+	<string name="requestTimeoutErrorMessage">Fout bij communicatie met server. Time-out van verzoek.</string>
+	<string name="serviceUnavailableErrorMessage">Fout bij communicatie met server. Service niet beschikbaar.</string>
+	<string name="submitButtonText">@string/submit</string>
+	<string name="mgPerDeciliterRadioText"><b>mg/dL</b> (bijvoorbeeld 100 mg/dL)</string>
+	<string name="mmolPerLiterRadioText"><b>mmol/L</b> (bijvoorbeeld 5,6 mmol/L)</string>
+	<string name="target_range_separator">-</string>
+	<string name="glucoseRangeFormat">%1$s - %2$s %3$s</string>
+	<string name="settingsUnitOfMeasureConfirmationMessage">Bevestig dat u de volgende meeteenheid wilt selecteren:</string>
+	<string name="networkNotConnectedDefault">Uw smartphone heeft momenteel geen verbinding met internet. Deze bewerking kan pas worden uitgevoerd als u een internetverbinding hebt.</string>
+	<string name="networkNotConnectedSetup">Uw smartphone heeft momenteel geen verbinding met internet. Het instellen kan pas worden uitgevoerd als u een internetverbinding hebt.</string>
+	<string name="networkNotConnectedProfileUpdate">Uw smartphone heeft momenteel geen verbinding met internet. Uw account kan pas worden gewijzigd als u een internetverbinding hebt.</string>
+	<string name="privacyNoticeAcceptanceStatement">Ik heb de Privacyverklaring gelezen en stem daar mee in.</string>
+	<string name="privacyNoticeTitle">Privacyverklaring</string>
+	<string name="termsOfUseAcceptanceStatement">Ik heb de Gebruiksvoorwaarden gelezen en stem daar mee in.</string>
+	<string name="termsOfUseTitle">Gebruiksvoorwaarden</string>
+	<string name="nfcUnsupported">Om uw sensor te kunnen scannen met FreeStyle LibreLink moet NFC worden ondersteund door uw smartphone.</string>
+	<string name="turnOnNfcPrompt">Om uw sensor te kunnen scannen met FreeStyle LibreLink moet NFC zijn ingeschakeld op uw smartphone. Wilt u het inschakelen?</string>
+	<string name="enableNetworkTime">Om uw sensor te kunnen scannen met FreeStyle LibreLink moet uw smartphone zijn ingesteld op automatisch bijwerken van datum en tijd. Wilt u dit inschakelen?</string>
+	<string name="getStartedNow">Aan de slag</string>
+
+	<!-- My Glucose Explanation -->
+	<string name="myGlucoseExplanationTitle">Mijn glucose</string>
+	<string name="myGlucoseExplanationTopText">Dit scherm verschijnt nadat u uw sensor hebt gescand.</string>
+	<string name="myGlucoseExplanationResultCallouts">Het scherm Mijn glucose bevat (1) uw huidige glucose, (2) uw glucosetrendpijl en (3) uw glucosegrafiek.</string>
+
+	<!-- Trend Arrow Explanation -->
+	<string name="trendExplanationTitle">Glucosetrendpijl</string>
+	<string name="trendExplanationTopText">Wanneer u uw sensor scant, geeft een pijl uw recente glucosetrend aan.</string>
+	<string name="trendExplanationRisingQuickly">Stijgt snel</string>
+	<string name="trendExplanationRising">Stijgt</string>
+	<string name="trendExplanationStable">Verandert langzaam</string>
+	<string name="trendExplanationFalling">Daalt</string>
+	<string name="trendExplanationFallingQuickly">Daalt snel</string>
+
+	<!-- Help -->
+	<string name="helpItemTitleApplySensor">Hoe brengt u een sensor aan</string>
+	<string name="helpItemTitleScanSensor">Hoe u een sensor scant</string>
+	<string name="helpItemTitleEventLog">@string/eventLog</string>
+	<string name="helpItemTitleUserGuide">Gebruikershandleiding</string>
+
+	<!-- OneStep Log Upload -->
+	<string name="logUploadTitle">Probleemoplossingsgegevens verzenden</string>
+	<string name="logUploadOptInDescription">Als u probleemoplossingsgegevens verzendt, kan de klantenservice uw vragen beter beantwoorden.</string>
+	<string name="logUploadOptInText1">In de Privacyverklaring waar u eerder mee hebt ingestemd staat omschreven wat de probleemoplossingsgegevens behelzen.</string>
+	<string name="logUploadViewPrivacyButtonLabel">Privacyverklaring bekijken</string>
+	<string name="logUploadOptInText2">Stemt u in met het verzenden van uw probleemoplossingsgegevens?</string>
+	<string name="logUploadDecline">Afwijzen</string>
+	<string name="logUploadAccept">Instemmen</string>
+	<string name="logUploadDescription">Voer het casusnummer en de verificatiecode in die u van de klantenservice hebt gekregen.</string>
+	<string name="logUploadCaseNumberLabel">Casusnummer</string>
+	<string name="logUploadAccessCodeLabel">Verificatiecode</string>
+	<string name="logUploadSendButtonLabel">Verzenden</string>
+	<string name="logUploadErrorTypo">Onjuist(e) casusnummer of verificatiecode</string>
+	<string name="logUploadErrorUploadFailedTitle">Fout bij verzending probleemoplossingsgegevens</string>
+	<string name="logUploadErrorUploadFailedText">Tik om het opnieuw te proberen.</string>
+
+	<!-- Apply Sensor Tour -->
+	<string name="applySensorTitle">Een sensor aanbrengen</string>
+	<string name="applySensorTitleStep1">STAP 1</string>
+	<string name="applySensorTextStep1">Selecteer een locatie op de achterkant van uw bovenarm.</string>
+	<string name="applySensorSubTextStep1">Opmerking: Vermijd littekens, moedervlekken, striae, builen en insuline-injectieplaatsen. Om huidirritatie te voorkomen wisselt u de aanbrengplaatsen af.</string>
+	<string name="applySensorTitleStep2">STAP 2</string>
+	<string name="applySensorTextStep2">Reinig de locatie met een alcoholdoekje. Laat de locatie opdrogen voordat u verdergaat.</string>
+	<string name="applySensorTitleStep3">STAP 3</string>
+	<string name="applySensorTextStep3">Trek het deksel volledig van de sensorverpakking af.</string>
+	<string name="applySensorTitleStep4">STAP 4</string>
+	<string name="applySensorTextStep4">Draai de dop van de sensorapplicator af.</string>
+	<string name="applySensorTitleStep5">STAP 5</string>
+	<string name="applySensorTextStep5">Breng de donkere markering op de sensorapplicator in lijn met de donkere markering op de sensorverpakking. Druk op een harde ondergrond stevig op de sensorapplicator totdat deze niet verdergaat.</string>
+	<string name="applySensorTitleStep6">STAP 6</string>
+	<string name="applySensorTextStep6">Neem de sensorapplicator uit de sensorverpakking.</string>
+	<string name="applySensorTitleStep7">STAP 7</string>
+	<string name="applySensorTextStep7">De sensorapplicator is gereed voor het aanbrengen van de sensor. Raak de binnenkant van de sensorapplicator niet aan en plaats hem niet terug in de sensorverpakking.</string>
+	<string name="applySensorTitleStep8">STAP 8</string>
+	<string name="applySensorTextStep8">Plaats de sensorapplicator op de locatie en druk er stevig op om de sensor aan te brengen.</string>
+	<string name="applySensorTitleStep9">STAP 9</string>
+	<string name="applySensorTextStep9">Trek de sensorapplicator voorzichtig van uw lichaam af.</string>
+	<string name="applySensorTitleStep10">STAP 10</string>
+	<string name="applySensorTextStep10">Ga na of de sensor goed vastzit. Gooi de sensorapplicator en de sensorverpakking weg volgens de plaatselijke regelgeving.</string>
+
+	<!-- Scan Sensor Tour -->
+	<string name="scanSensorTitle">Een sensor scannen</string>
+	<string name="scanSensorTitleStep1">STAP 1</string>
+	<string name="scanSensorTextStep1"><![CDATA[Houd de <b>achterkant</b> van de smartphone <b>tegen</b> de sensor aan.]]></string>
+	<string name="scanSensorTitleStep2">STAP 2</string>
+	<string name="scanSensorTextStep2">Als het geluid is ingeschakeld produceert de smartphone een reeks tonen en trillingen terwijl de sensor wordt gescand. Trek de smartphone niet weg totdat de tonen en trillingen zijn opgehouden.</string>
+	<string name="scanSensorTitleStep3">STAP 3</string>
+	<string name="scanSensorTextStep3">Voor het scannen van de sensor moet u de smartphone mogelijk rond bewegen in de buurt van de sensor om de NFC-antenne van uw smartphone te vinden.</string>
+
+	<!-- About -->
+	<string name="about">Info</string>
+	<string name="appNameLabel">Naam:</string>
+	<string name="appNameValue">FreeStyle LibreLink</string>
+	<string name="appPartOfSystem">Onderdeel van het FreeStyle Libre Flash Flash Glucose Monitoring systeem</string>
+	<string name="last3sensors">Afgelopen 3 sensoren:</string>
+	<string name="sensorStatus">&#160;&#160;&#160;&#160;Status: %1$s</string>
+	<string name="udi">UDI:</string>
+	<string name="registrationNumber">Registratienummer:</string>
+	<string name="productStandardNumber">Nummer productnorm:</string>
+	<string name="model">Smartphone-model:</string>
+	<string name="appCountryLabel">Land:</string>
+	<string name="supportWebsiteLabel">Klantenservice:</string>
+	<string name="supportWebsiteValue">http://www.freestylelibre.com</string>
+	<string name="consultInstructionsForUse">Raadpleeg de gebruiksaanwijzing</string>
+	<string name="productOfUsa">Product van de VS</string>
+	<string name="patentWebsiteLabel">Octrooiwebsite:</string>
+	<string name="patentWebsiteValue">https://www.abbott.com/patents</string>
+	<string name="trademarkStatement">FreeStyle, Libre en gerelateerde merknamen zijn handelsmerken van Abbott Diabetes Care Inc. in verschillende rechtsgebieden.</string>
+	<string name="copyrightStatement">©2018 Abbott</string>
+	<string name="osVersion">Versie Android OS:</string>
+	<string name="sensorNotPresent">Geen actieve sensor</string>
+	<string name="softwareVersion">Softwareversie:</string>
+
+	<!-- Notifications -->
+	<string name="alarmExpired">Alarm verstreken</string>
+	<string name="timerExpired">Timer verstreken</string>
+
+	<string name="sensorActivated">Sensor gestart</string>
+	<string name="sensorReady">Sensor gereed</string>
+	<string name="sensorReadyContent">Uw sensor is klaar voor gebruik</string>
+	<string name="sensorExpired">Sensor geëindigd</string>
+	<string name="sensorExpiredContent">Start een nieuwe sensor om glucose te controleren</string>
+	<string name="sensorEndingSoon">Sensor eindigt spoedig</string>
+
+	<!-- Data Upload -->
+	<string name="uploadFailedTitle">Upload mislukt</string>
+	<string name="uploadFailedNoConnectivityContent">Geen verbinding</string>
+	<string name="uploadFailedInvalidToken">Verificatie mislukt. Klik om u aan te melden.</string>
+	<string name="uploadFailedOther">Er is een fout opgetreden. Klik om het opnieuw te proberen</string>
+	<string name="uploadingDataTitle">FreeStyle LibreLink-gegevens worden geüpload</string>
+	<string name="uploadingDataContent">Gegevens worden verzonden</string>
+	<string name="serving_size_in_grams">1 portie = %.1f gram</string>
+	<string name="acceptLanguageHeader">nl-NL, nl;q=0.8</string>
+	<string name="appLocale">nl-NL</string>
+
+	<string name="reportHeaderDayOnlyFormat">d</string>
+	<string name="reportHeaderFullDateFormat">d MMMM yyyy</string>
+	<string name="reportHeaderShortMonthFormat">d MMM</string>
+	<string name="reportHeaderShortMonthFullFormat">d MMM yyyy</string>
+	<string name="reportHeaderDateRangeFormat">%1$s - %2$s</string>
+	<string name="reportShareSubjectFormat">%1$s: %2$s</string>
+
+	<string name="nonActionableExplanationTitle">Bevestig glucosemeting</string>
+	<string name="nonActionableExplanationMessage">Bevestig uw glucosemeting met een teststrip voordat u een behandelbeslissing neemt.</string>
+
+	<!-- TTS Result -->
+	<string name="spokenLo">buiten bereik en laag</string>
+	<string name="spokenHi">buiten bereik en hoog</string>
+	<string name="spokenMgDl">milligram per deciliter</string>
+	<string name="spokenMmolL">millimol per liter</string>
+	<string name="resultWithTrendNotDetermined">%1$s %2$s met trend niet beschikbaar</string>
+	<string name="resultWithTrendFallingQuickly">%1$s %2$s en daalt snel</string>
+	<string name="resultWithTrendFalling">%1$s %2$s en daalt</string>
+	<string name="resultWithTrendStable">%1$s %2$s en langzaam aan het veranderen</string>
+	<string name="resultWithTrendRising">%1$s %2$s en stijgt</string>
+	<string name="resultWithTrendRisingQuickly">%1$s %2$s en stijgt snel</string>
+
+	<!-- Download Progress -->
+	<string name="progressDownloadingConfiguration">App-configuratie wordt gedownload</string>
+	<string name="progressDownloadingUserGuide">Gebruikershandleiding wordt gedownload</string>
+	<string name="insufficientSpaceMessage">Onvoldoende ruimte op uw smartphone.</string>
+
+
+	<!-- New strings added 25SEPT2017 -->
+
+	<string name="modalLookingForSensor">iPhone nabij sensor houden</string>
+	<string name="modalSensorFound">Scan voltooid</string>
+	<string name="settingsMenuTitle">Instellingen</string>
+	<string name="genericOSVersion">Versie OS:</string>
+	<string name="editTime">Bewerkingstijd</string>
+	<string name="detail">Detail</string>
+	<string name="helpItemTitleGlucoseHelp">Glucosemetingen</string>
+	<string name="glucoseHelp">Glucosemetingen</string>
+
+	<!-- Abbreviated time passed -->
+	<string name="mins_passed">%dm geleden</string>
+	<string name="hours_passed">%du geleden</string>
+
+	<string name="iosNotificationsDisabled">Berichtgeving moet zijn ingeschakeld in de instellingen van iOS om herinneringen te kunnen ontvangen.</string>
+	<string name="glucoseWarningReminderPrompt">Wilt u een herinnering voor het controleren van uw glucose instellen?</string>
+	<string name="NFCReaderUsageDescription">FreeStyle LibreLink maakt gebruik van NFC voor het scannen van FreeStyle Libre-sensoren.</string>
+	<string name="NSPhotoLibraryAddUsageDescription">FreeStyle LibreLink heeft toegang tot uw mediabibliotheek nodig om rapporten te kunnen opslaan. Uw foto’s worden niet zonder uw toestemming gedeeld.</string>
+	<string name="deleteNote">Notitie wissen</string>
+	<string name="deleteNoteConfirmation">Wilt u deze notitie wissen?</string>
+
+	<!-- New strings with existing Android Counterparts -->
+
+	<string name="iosScanSensorTextStep1">Tik op de scanknop voordat u uw sensor scant.</string>
+	<string name="iosScanSensorTextStep2">Houd de bovenkant van uw iPhone nabij de sensor.</string>
+	<string name="iosScanSensorTextStep3">Uw iPhone trilt en maakt een geluid (als geluiden ingeschakeld zijn) na het scannen van de sensor.</string>
+	<string name="iosErrorVersionCheckFailed">Deze versie van FreeStyle LibreLink moet worden bijgewerkt. Kijk in de App Store voor de nieuwste versie.</string>
+	<string name="iosReadyToScanDetail">Uw sensor is klaar voor gebruik.</string>
+	<string name="iosDefaultSensorErrorMsg">De scan is mislukt. Tik op de scanknop en scan opnieuw.</string>
+	<string name="iosEnableNetworkTimeTitle">Datum en tijd bijwerken</string>
+	<string name="iosEnableNetworkTime">Uw datum- en tijdinstellingen moeten automatisch worden bijgewerkt om FreeStyle LibreLink te kunnen gebruiken. Ga naar Instellingen &gt; Algemeen &gt; Datum en tijd en schakel Automatisch instellen in.</string>
+
+	<!-- New string added per Ashwin Kumar's request 2017-08-30-->
+	<string name="iosCheckGlucoseWithPhone">U kunt uw glucose controleren met uw iPhone.</string>
+	<string name="retry">Opnieuw</string>
+
+	<!-- New strings for US changes 2017-10-31 -->
+	<string name="sensorUserPrompt">Voer de informatie in voor de persoon die de sensor gaat dragen. </string>
+	<string name="welcome">Welkom!</string>
+	<string name="welcomeDetail">Neem even de tijd om te leren hoe u bij deze app uw glucosemetingen moet begrijpen.</string>
+	<string name="backgroundGlucoseColorsTitle">Achtergrondkleur glucose</string>
+	<string name="backgroundGlucoseColorsDetail">Uw huidige glucose bepaalt welke kleur erachter wordt weergegeven.</string>
+	<string name="glucoseHighAbove240Mgdl">Hoge glucose (boven de 240 mg/dL)</string>
+	<string name="glucoseBetweenTarget240Mgdl">Tussen doelbereik en 240 mg/dL</string>
+	<string name="glucoseTargetRange">Glucose binnen uw doelbereik</string>
+	<string name="glucoseBetweenTarget70Mgdl">Tussen doelbereik en 70 mg/dL</string>
+	<string name="glucoseLowBelow70Mgdl">Lage glucose (onder de 70 mg/dL)</string>
+	<string name="glucoseHighAbove240Mmol">Hoge glucose (boven de 13,3 mmol/L)</string>
+	<string name="glucoseBetweenTarget240Mmol">Tussen doelbereik en 13,3 mmol/L</string>
+	<string name="glucoseBetweenTarget70Mmol">Tussen doelbereik en 3,9 mmol/L</string>
+	<string name="glucoseLowBelow70Mmol">Lage glucose (onder de 3,9 mmol/L)</string>
+	<string name="treatmentDecisions">Behandelbeslissingen</string>
+	<string name="treatmentDecisionsSymbol">Als u dit symbool ziet, moet u een bloedglucosetest uitvoeren voordat u behandelbeslissingen neemt.</string>
+	<string name="treatmentDecisionsTest">Als de glucosemeting van de sensor niet overeenstemt met hoe u zich voelt, voert u een bloedglucosetest uit.</string>
+	<string name="checkBloodGlucoseTitle">Controleer bloedglucose</string>
+	<string name="checkBloodGlucoseMessage">Voer een bloedglucosetest uit voordat u behandelbeslissingen neemt.</string>
+	<string name="highGlucoseCheckBloodGlucose">Hoge glucose kan gevaarlijk zijn. Voer een bloedglucosetest uit voordat u behandelbeslissingen neemt. Overweeg uw ketonen te controleren.</string>
+	<string name="lowGlucoseCheckBloodGlucose">Lage glucose kan gevaarlijk zijn. Voer een bloedglucosetest uit voordat u behandelbeslissingen neemt.</string>
+	<string name="reminder">Herinnering</string>
+	<string name="safetyInformation">Veiligheidsinformatie</string>
+	<string name="labeling">Etikettering</string>
+	<string name="userGuides">Gebruikershandleidingen</string>
+	<string name="quickStartGuide">Handleiding om snel te beginnen</string>
+	<string name="quickReferenceGuide">Verkorte handleiding</string>
+	<string name="myGlucoseExplanationUpdate">Uw glucosemeting verschijnt nadat u een geslaagde scan van uw sensor hebt uitgevoerd. Kijk naar (1) de huidige glucose, (2) de glucosetrendpijl, (3) de glucosegrafiek en (4) een eventueel glucosebericht.</string>
+	<string name="sensorPlacementInstruction">De sensor mag alleen op de achterkant van uw bovenarm worden aangebracht.</string>
+	<string name="sensorReadyAt">Sensor gereed om:</string>
+	<string name="formattedTimeRemaining">(%1$s resterend)</string>
+	<string name="sensorStartedByOtherDevice">Deze sensor is gestart door een ander apparaat.</string>
+	<string name="sensorLatejoinExplanation">Om een sensor te laten werken met deze smartphone, moet de sensor tijdens het opstarten met deze smartphone worden gescand.</string>
+	<string name="androidScanInstruction1">Houd de achterkant van de smartphone dicht bij de sensor.</string>
+	<string name="androidScanInstruction2">Wacht tot u twee tonen hoort of trillingen voelt.</string>
+	<string name="bugFixesTitle">Bugfixes</string>
+	<string name="bugFixesDetail">Bugfixes en prestatieverbeteringen</string>
+	<string name="performanceImprovements">Prestatieverbeteringen</string>
+	<string name="sensorChangeExplanation">Als u een nieuwe sensor start, wordt de sensor die u momenteel gebruikt beëindigd.</string>
+	<string name="useNewSensorPrompt">Wilt u beginnen met het gebruik van de nieuwe sensor?</string>
+	<string name="earlySensorActivationPrompt">Wilt u dat dit uw volgende sensor wordt?</string>
+	<string name="changeSensorPrompt">Wilt u beginnen met het gebruik van deze sensor?</string>
+	<string name="replaceExistingSensor">Hierdoor wordt de sensor die het meest recentelijk is gestart vervangen.</string>
+	<string name="earlyActivationExistingEndsSoon">U kunt uw huidige sensor blijven gebruiken totdat deze eindigt.</string>
+	<string name="earlyActivationEndsExisting">U kunt uw huidige sensor blijven gebruiken totdat uw nieuwe sensor gereed is.</string>
+	<string name="scanOtherSensor">Scan uw andere sensor om glucose te controleren.</string>
+	<string name="sensorNotWorking">Uw sensor werkt niet.</string>
+	<string name="currentSensorEndsAt">Huidige sensor eindigt over:</string>
+	<string name="newSensorReadyAt">Nieuwe sensor gereed om:</string>
+	<string name="sensorAlreadyStarted">Deze sensor is al gestart.</string>
+	<string name="earlySensorStartupTimeRemaining">Glucosemeting is niet beschikbaar. Probeer over %1$s nogmaals te scannen.</string>
+	<string name="glucoseReadingUnavailable">Glucosemeting is niet beschikbaar. </string>
+	<string name="scanAgainIn">Probeer over %1$s nogmaals te scannen.</string>
+	<string name="softwareReleaseVersion">Releaseversie software:</string>
+	<string name="softwareFullVersion">Volledige versie software:</string>
+</resources>

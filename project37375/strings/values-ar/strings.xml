@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2015 Airstrip - All Rights Reserved. -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<!-- Plurals -->
+	<plurals name="insulinUnits">
+		<item quantity="one">%1$s وحدة</item>
+		<item quantity="other">%1$s وحدات</item>
+	</plurals>
+	<plurals name="days">
+		<item quantity="one">يوم واحد</item>
+		<item quantity="other">%1$d أيام</item>
+	</plurals>
+	<plurals name="hours">
+		<item quantity="one">ساعة واحدة</item>
+		<item quantity="other">%1$d ساعات</item>
+	</plurals>
+	<plurals name="minutes">
+		<item quantity="one">دقيقة واحدة</item>
+		<item quantity="other">%1$d دقائق</item>
+	</plurals>
+	<!-- Phrase describing a time duration in seconds using secs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationSecs">
+		<item quantity="one">١ ثانية</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> ثوان</item>
+	</plurals>
+	<!-- Phrase describing a time duration in minutes using mins abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationMins">
+		<item quantity="one">١ دقيقة</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> دقائق</item>
+	</plurals>
+	<!-- Phrase describing a time duration in hours using hrs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationHrs">
+		<item quantity="one">١ ساعة</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> ساعات</item>
+	</plurals>
+	<plurals name="sensorExpiresInDays">
+		<item quantity="one">استبدل المجس خلال يوم واحد</item>
+		<item quantity="other">استبدل المجس خلال <xliff:g id="count">%d</xliff:g> أيام</item>
+	</plurals>
+	<plurals name="sensorExpiresInHours">
+		<item quantity="one">استبدل المجس خلال ساعة واحدة</item>
+		<item quantity="other">استبدل المجس خلال <xliff:g id="count">%d</xliff:g> ساعات</item>
+	</plurals>
+	<plurals name="sensorExpiresInMins">
+		<item quantity="one">استبدل المجس خلال دقيقة واحدة</item>
+		<item quantity="other">استبدل المجس خلال <xliff:g id="count">%d</xliff:g> دقائق</item>
+	</plurals>
+	<plurals name="sensorReadyInMins">
+		<item quantity="one">المجس جاهز خلال دقيقة واحدة</item>
+		<item quantity="other">المجس جاهز خلال <xliff:g id="count">%d</xliff:g> دقائق</item>
+	</plurals>
+
+	<!-- common/generic words, phrases, symbols, and abbreviations -->
+	<string name="deciLiter">dL</string>
+	<string name="gramsSymbol">جم</string>
+	<string name="liter">L</string>
+	<string name="mgdl">mg/dL</string>
+	<string name="milligrams">mg</string>
+	<string name="millimole">mmol</string>
+	<string name="mmol">mmol/L</string>
+	<string name="percentSign">\u0025</string>
+	<string name="servingsSymbol">حصص</string>
+	<string name="accept">موافقة</string>
+	<string name="account">إعدادات الحساب</string>
+	<string name="all">الكل</string>
+	<string name="back">الخلف</string>
+	<string name="average">المتوسط</string>
+	<string name="delete">حذف</string>
+	<string name="cancel">إلغاء</string>
+	<string name="durationHourMinuteConcatenate">%1$s %2$s</string>
+	<string name="comments">تعليقات</string>
+	<string name="done">تم</string>
+	<string name="email">البريد الإلكتروني:</string>
+	<string name="friday">الجمعة</string>
+	<string name="grams">جرام</string>
+	<string name="gramsOfCarbs">جرام من الكاربز</string>
+	<string name="units">وحدات</string>
+	<string name="help">مساعدة</string>
+	<string name="home">الصفحة الرئيسية</string>
+	<string name="insulinDose">جرعة الأنسولين</string>
+	<string name="loading">جاري التحميل</string>
+	<string name="logbook">السجل</string>
+	<string name="monday">الاثنين</string>
+	<string name="next">التالي</string>
+	<string name="no">لا</string>
+	<string name="note">ملاحظة</string>
+	<string name="ok">موافق</string>
+	<string name="password">كلمة السر</string>
+	<string name="reminders">التذكيرات</string>
+	<string name="reject">رفض</string>
+	<string name="reports">التقارير</string>
+	<string name="saturday">السبت</string>
+	<string name="save">حفظ</string>
+	<string name="sending">جاري الإرسال</string>
+	<string name="servings">حصص</string>
+	<string name="servingsOfCarbs">حصص من الكاربز</string>
+	<string name="settings">إعدادات التطبيق</string>
+	<string name="share">مشاركة</string>
+	<string name="start">البدء</string>
+	<string name="submit">إرسال</string>
+	<string name="sunday">الأحد</string>
+	<string name="thursday">الخميس</string>
+	<string name="tuesday">الثلاثاء</string>
+	<string name="wednesday">الأربعاء</string>
+	<string name="yes">نعم</string>
+	<string name="days7">٧ أيام</string>
+	<string name="days14">١٤ يوم</string>
+	<string name="days30">٣٠ يوم</string>
+	<string name="days90">٩٠ يوم</string>
+	<string name="eventLog">سجل الحالة</string>
+	<string name="eventLogEmptyMessage">لا توجد أحداث</string>
+
+	<string name="minorFirstName">الاسم الأول للقاصر</string>
+	<string name="minorLastName">الاسم الأخير للقاصر</string>
+	<string name="parentFirstName">@string/parentGuardianFirstName</string>
+	<string name="parentLastName">@string/parentGuardianLastName</string>
+	<string name="lastName">الاسم الأخير</string>
+	<string name="daily_graph">الرسم البياني اليومي</string>
+	<string name="daily_patterns">الأنماط اليومية</string>
+	<string name="estimated_a1c">المقدّر A1c</string>
+	<string name="firstName">الاسم الأول</string>
+	<string name="noResults">(لا توجد نتائج)</string>
+	<string name="signIn">تسجيل الدخول</string>
+	<string name="signingIn">جاري تسجيل الدخول</string>
+	<string name="scanSensor">مسح المجس</string>
+	<string name="time_in_target">الوقت في الهدف</string>
+	<string name="errorMsgUnexpected">خطأ غير متوقع في التطبيق.</string>
+	<string name="error_nfc_unsupported">تقنية NFC غير مدعومة</string>
+	<string name="error_nfc_disabled">تقنية NFC معطلة</string>
+	<string name="error_networktime_disabled">التاريخ والوقت التلقائي معطل</string>
+	<string name="errorOtherNfcInstalled">تم رصد تطبيق آخر يستخدم تقنية NFC. للتأكد من استخدام فري ستايل ليبري لينك لقراءة مجسك، يتطلب منك تشغيل فري ستايل ليبري لينك في كل مرة قبل المسح. أو، في حال إلغاء تثبيت تطبيق NFC الآخر، ستتمكن من مسح مجسك كلما كان هاتفك الذكي مفتوحاً.</string>
+	<string name="loadingChartDataText">جاري تحميل البيانات</string>
+	<string name="chartErrorMessage">خطأ أثناء تحميل البيانات</string>
+	<string name="timeZoneChangeMessage">‎%1$s \u00A0‎إلى‎\u00A0%2$s &lt;b&gt;(%3$s)&lt;/b&gt;‏تغيير المنطقة الزمنية من ‏‎</string>
+
+	<!-- Countries -->
+	<string name="countryName_AE">الإمارات العربية المتحدة</string>
+	<string name="countryName_AG">أنتيغوا وبربودا</string>
+	<string name="countryName_AR">الأرجنتين</string>
+	<string name="countryName_AT">النمسا</string>
+	<string name="countryName_AU">أستراليا</string>
+	<string name="countryName_AZ">أذربيجان</string>
+	<string name="countryName_BE">بلجيكا</string>
+	<string name="countryName_BH">البحرين</string>
+	<string name="countryName_BR">البرازيل</string>
+	<string name="countryName_BS">جزر الباهاما</string>
+	<string name="countryName_BW">بوتسوانا</string>
+	<string name="countryName_BY">روسيا البيضاء</string>
+	<string name="countryName_BZ">بليز</string>
+	<string name="countryName_CA">كندا</string>
+	<string name="countryName_CH">سويسرا</string>
+	<string name="countryName_CL">تشيلي</string>
+	<string name="countryName_CN">الصين</string>
+	<string name="countryName_CO">كولومبيا</string>
+	<string name="countryName_CR">كوستاريكا</string>
+	<string name="countryName_CY">قبرص</string>
+	<string name="countryName_DE">ألمانيا</string>
+	<string name="countryName_DK">الدنمارك</string>
+	<string name="countryName_DO">جمهورية الدومينيكان</string>
+	<string name="countryName_DZ">الجزائر</string>
+	<string name="countryName_EC">الإكوادور</string>
+	<string name="countryName_ES">أسبانيا</string>
+	<string name="countryName_FI">فنلندا</string>
+	<string name="countryName_FR">فرنسا</string>
+	<string name="countryName_GB">المملكة المتحدة</string>
+	<string name="countryName_GR">اليونان</string>
+	<string name="countryName_HK">هونج كونج</string>
+	<string name="countryName_IE">أيرلندا</string>
+	<string name="countryName_IL">إسرائيل</string>
+	<string name="countryName_IS">أيسلندا</string>
+	<string name="countryName_IT">إيطاليا</string>
+	<string name="countryName_JO">الأردن</string>
+	<string name="countryName_JP">اليابان</string>
+	<string name="countryName_KR">جمهورية كوريا</string>
+	<string name="countryName_KW">الكويت</string>
+	<string name="countryName_KZ">كازاخستان</string>
+	<string name="countryName_LB">لبنان</string>
+	<string name="countryName_LU">لوكسمبورغ</string>
+	<string name="countryName_MT">مالطا</string>
+	<string name="countryName_MX">المكسيك</string>
+	<string name="countryName_MY">ماليزيا</string>
+	<string name="countryName_NL">هولندا</string>
+	<string name="countryName_NO">النرويج</string>
+	<string name="countryName_NZ">نيوزيلندا</string>
+	<string name="countryName_OM">عُمان</string>
+	<string name="countryName_PA">بنما</string>
+	<string name="countryName_PE">بيرو</string>
+	<string name="countryName_PL">بولندا</string>
+	<string name="countryName_PT">البرتغال</string>
+	<string name="countryName_QA">قطر</string>
+	<string name="countryName_RU">روسيا</string>
+	<string name="countryName_SA">المملكة العربية السعودية</string>
+	<string name="countryName_SE">السويد</string>
+	<string name="countryName_SG">سنغافورة</string>
+	<string name="countryName_TH">تايلند</string>
+	<string name="countryName_TR">تركيا</string>
+	<string name="countryName_TT">ترينيداد وتوباغو</string>
+	<string name="countryName_TW">تايوان</string>
+	<string name="countryName_US">الولايات المتحدة الأمريكية</string>
+	<string name="countryName_UY">أوروغواي</string>
+	<string name="countryName_VE">فنزويلا</string>
+	<string name="countryName_ZA">جنوب أفريقيا</string>
+	<string name="countryName_ZW">زيمبابوي</string>
+
+	<!-- License Check -->
+	<string name="librelinkLicenseCheck">فحص ترخيص فري ستايل ليبري لينك</string>
+	<string name="licenseCheckFailed">يُرجى تثبيت هذا التطبيق من Google Play.</string>
+
+	<!-- Update Version Check -->
+	<string name="librelink_upgrade_check">فحص ترقية فري ستايل ليبري لينك</string>
+	<string name="checkingVersion">جاري فحص الإصدار</string>
+	<string name="errorVersionCheckFailed">هذا الإصدار من فري ستايل ليبري لينك يحتاج إلى تحديث. يُرجى مراجعة Google Play للحصول على أحدث إصدار.</string>
+
+	<!-- App Tour -->
+	<string name="checkGlucoseWithPhone">يمكنك فحص الجلوكوز الخاص بك من خلال هاتفك الذكي.</string>
+	<string name="instantAccess">يمكنك الدخول بشكل سريع إلى المعلومات الخاصة بالجلوكوز لديك.</string>
+	<string name="actionableInsights">يمكنك الحصول على معلومات لمساعدتك في اتخاذ قرارات مستنيرة بشكل أكبر.</string>
+	<string name="shareGlucoseInformation">يمكنك مشاركة معلومات الجلوكوز لديك مع مختص الرعاية الصحية الخاص بك ومع أحبائك.</string>
+
+	<!-- Account Registration/Sign In -->
+	<string name="changeUserMessage">من خلال الدخول إلى حسابك، سيتم إلغاء أية بيانات على هذا الجهاز تخص المستخدم السابق.\n\nهل ترغب في الاستمرار؟</string>
+	<string name="changeDeviceMessage">انقر فوق موافق لتمكين هذا الهاتف الذكي من الدخول إلى حساب ليبري ڤيو الحالي الخاص بك. يمكنك مواصلة قراءة مجس تم البدء في قراءته باستخدام هاتفك الذكي السابق.\n\nملاحظة: النقر على موافق سيؤدي إلى تسجيل خروج الهاتف الذكي السابق.</string>
+	<string name="registeringDevice">جاري تسجيل الهاتف الذكي</string>
+	<string name="firstNameLabel">@string/firstName</string>
+	<string name="lastNameLabel">@string/lastName</string>
+	<string name="emailLabel">@string/email</string>
+	<string name="dateOfBirthLabel">@string/dateOfBirth</string>
+	<string name="dateOfBirth">تاريخ الميلاد</string>
+	<string name="passwordLabel">@string/password</string>
+	<string name="createPasswordLabel">@string/password</string>
+	<string name="changePassword">كلمة السر للحساب</string>
+	<string name="newPasswordLabel">كلمة السر الجديدة</string>
+	<string name="currentPasswordLabel">كلمة السر الحالية</string>
+	<string name="confirmPasswordLabel">تأكيد كلمة السر</string>
+	<string name="sendingResetRequest">جاري إرسال طلب إعادة ضبط كلمة السر</string>
+	<string name="adultRegistrationTitle">تسجيل الدخول إلى الحساب</string>
+	<string name="minorRegistrationTitle">تسجيل دخول ولي الأمر/الوصي</string>
+	<string name="signInLinkText">@string/signIn</string>
+	<string name="account_sign_in_title">@string/signIn</string>
+	<string name="alreadyHaveAccountPromptText">لديك حساب ليبري ڤيو؟</string>
+	<string name="invalidPasswordErrorMessage">يُرجى إدخال كلمة سر صحيحة. يجب أن تحتوي كلمات السر على ٨-٣٦ حرفاً، ورقم واحد على الأقل، وحرف كبير، وحرف صغير.</string>
+	<string tools:ignore="PluralsCandidate" name="tooYoungErrorMessage">يجب أن يكون عمرك %1$s أو أكبر لتتمكن من استخدام فري ستايل ليبري لينك.</string>
+	<string name="tooYoungWarningMessage">يستخدم تاريخ الميلاد لضبط حساب ليبري ڤيو الخاص بك وليس لتحديد ما إذا كان التطبيق مناسباً لك. يُرجى الرجوع لدليل المستخدم للتطبيق قبل استخدامه.</string>
+	<string name="forgotPasswordText">نسيت كلمة السر؟</string>
+	<string name="createNewAccountText">إنشاء حساب جديد</string>
+	<string name="existing_user_login_text">يوجد حساب مرتبط بهذا البريد الإلكتروني. يُرجى إدخال بريدك الإلكتروني وكلمة السر.</string>
+	<string name="normal_user_login_text">يُرجى إدخال اسم المستخدم لحساب ليبري ڤيو الخاص بك.</string>
+	<string name="passwordMismatchErrorMessage">يجب أن تتطابق كلمات السر</string>
+	<string name="invalidEmailAddressErrorMessage">أدخل عنوان بريد إلكتروني صالح.</string>
+	<string name="passwordResetSent">تم إرسال التعليمات الخاصة بإعادة ضبط كلمة السر الخاصة بك إلى عنوان بريدك الإلكتروني.</string>
+	<string name="accountContactOptIn">يُرجى تزويدي بمعلومات حول Abbott Diabetes Care ومنتجات وخدمات Abbott الأخرى. (يمكنك إلغاء الاشتراك في أي وقت.)</string>
+	<string name="passwordResetMessage">يُرجى إدخال عنوان البريد الإلكتروني المستخدم لتسجيل هذا الحساب. سيتم إرسال التعليمات الخاصة بإعادة ضبط كلمة السر الخاصة بك إلى ذلك العنوان.</string>
+	<string name="nonExistentUserErrorMessage">لا يوجد حساب لعنوان البريد الإلكتروني الذي أدخلته.</string>
+	<string name="invalidLoginErrorMessage">عنوان البريد الإلكتروني أو كلمة السر غير صحيحة. يُرجى المحاولة مرة أخرى.</string>
+	<string name="invalidProfileUpdatePassword">كلمة السر غير صحيحة. يُرجى المحاولة مرة أخرى.</string>
+	<string name="invalidProfileDOB">لا يمكنك تغيير نوع حسابك من شخص بالغ إلى قاصر. يُرجى تعديل تاريخ ميلادك وفقا لذلك.</string>
+	<string name="invalidAppKeyErrorMessage">حدث خطأ أثناء الاتصال مع الخادم. مفتاح التطبيق غير صالح.</string>
+	<string name="invalidNetworkDomainErrorMessage">حدث خطأ أثناء الاتصال مع الخادم. النطاق غير صالح.</string>
+	<string name="invalidRegistrationErrorMessage">تعذر استكمال التسجيل بسبب بيانات غير صالحة.</string>
+	<string name="invalidAccountRegionErrorMessage">إعدادات البلد للتطبيق الخاص بك لا تتطابق مع حسابك. يُرجى إنشاء حساب جديد.</string>
+	<string name="accountRegisteringProgressMessage">جاري التسجيل</string>
+	<string name="accountUpdateProgressMessage">جاري الإرسال</string>
+	<string name="accountAlreadyRegisteredErrorMessage">عنوان البريد الإلكتروني هذا مرتبط بحساب ليبري ڤيو.\n\nلا تحتاج إلى إنشاء حساب جديد. فقط قم بتسجيل الدخول.</string>
+	<string name="professionalAccountAlreadyRegisteredErrorMessage">عنوان البريد الإلكتروني هذا مرتبط بحساب ليبري ڤيو بروفيشنال. تحتاج إلى استخدام عنوان بريد إلكتروني مختلف لإنشاء حساب لاستخدام هذا التطبيق.</string>
+	<string name="alreadyRegisteredSignInButtonText">@string/signIn</string>
+	<string name="enter_numera_data">قم بإنشاء حساب ليبري ڤيو خاص بك للاستخدام مع فري ستايل ليبري لينك وأية تطبيقات متوافقة أخرى.</string>
+	<string name="minorRegistrationHeader">هذا المستخدم قاصر. يجب على ولي الأمر أو الوصي استكمال الحساب لاستخدام هذا البرنامج.</string>
+	<string name="parentGuardianFirstName">الاسم الأول لولي الأمر/الوصي</string>
+	<string name="parentGuardianLastName">الاسم الأخير لولي الأمر/الوصي</string>
+	<string name="parentGuardianEmail">@string/email</string>
+	<string name="nameAndBirthDateHeader">لنبدأ مع بعض المعلومات الأساسية.</string>
+	<string name="nameAndBirthDateTitle">@string/createNewAccountText</string>
+	<string name="profileUpdateTopText">سيؤدي تغيير أي من المعلومات الواردة أدناه إلى تحديث حسابك.</string>
+	<string name="changePasswordTopText">يجب أن تحتوي كلمات السر على ٨-٣٦ حرفاً، ورقم واحد على الأقل، وحرف كبير، وحرف صغير.</string>
+	<string name="createAccountSubmitButtonText">إنشاء حساب</string>
+	<string name="authenticationFailure">فشلت عملية المصادقة مع الخادم. يُرجى تسجيل الدخول مرة أخرى.</string>
+	<string name="authenticationFailureLoginButton">تسجيل الدخول</string>
+	<string name="reenterPassword">يُرجى إعادة إدخال كلمة السر.</string>
+	<string name="parentLoginText">يتطلب إدخال اسم المستخدم لولي الأمر/الوصي.</string>
+	<string name="parentLoginSubText">يُرجى إدخال كلمة السر الخاصة بالحساب للوصول إلى المشاركة.</string>
+
+	<!-- Side Navigation Drawer -->
+	<string name="navigation_drawer_username">%1$s %2$s</string>
+	<string name="navigation_drawer_daily_graph">@string/daily_graph</string>
+	<string name="navigation_drawer_estimated_a1c">@string/estimated_a1c</string>
+	<string name="navigation_drawer_average_glucose">متوسط الجلوكوز</string>
+	<string name="navigation_drawer_low_glucose">حالات الجلوكوز المنخفض</string>
+	<string name="navigation_drawer_sensor_usage">استخدام المجس</string>
+	<string name="navigation_drawer_daily_patterns">@string/daily_patterns</string>
+	<string name="navigation_drawer_time_in_target">@string/time_in_target</string>
+	<string name="navigation_drawer_sharedata">@string/share</string>
+
+	<!-- Home -->
+	<string name="applyNewSensor">وضع مجس جديد</string>
+	<string name="scanNewSensor">مسح مجس جديد</string>
+	<string name="startNewSensor">وضع ومسح مجس جديد</string>
+	<string name="sensorReadyIn">يمكن استخدام المجس بعد %1$s</string>
+	<string name="readyToScanDetail">المجس الخاص بك جاهز للاستخدام. لفحص الجلوكوز الخاص بك، قم بحمل الجزء الخلفي من هاتفك الذكي مقابل المجس لحين سماع نغمتين.</string>
+	<string name="applyNewSensorDetail">وضع مجس جديد.</string>
+	<string name="scanNewSensorDetail">قم بمسح المجس لتشغيله.</string>
+	<string name="scanNewSensorDetailLateJoin">إذا رغبت أيضاً باستخدام القارئ، يجب عليك استخدامه للمسح أولاً.</string>
+	<string name="scanSensorDetail">مسح المجس.</string>
+	<string name="last24Hours">آخر ٢٤ ساعة</string>
+	<string name="lastScan">آخر مسح</string>
+	<string name="sensorIsReady">جاهز للمسح</string>
+	<string name="sensorWarmingUp">بدء مجس جديد</string>
+	<string name="sensorHasEnded">انتهى المجس الخاص بك</string>
+	<string name="sensorEndsIn">ينتهي المجس بعد: %1$s</string>
+	<string name="sensorLateJoinMessage">بإمكانك الآن مسح المجس باستخدام هذا الجهاز والجهاز المستخدم لبدء المجس.\n\nملاحظة: للتأكد من عرض التقارير على الجهاز لبيانات كاملة، قم بمسح المجس باستخدام ذلك الجهاز مرة واحدة كل ٨ ساعات على الأقل. لا تتم مشاركة البيانات والتقارير بين الأجهزة.</string>
+
+	<!-- Stats/Reports -->
+	<!-- Used for Germany to force 24 hour time on the chart axis -->
+	<bool name="force24HourTimes">false</bool>
+
+	<!-- Used to set the string format for graph axis unless 24 hour time is used -->
+	<string name="amTimeAxisFormat">\'ص\'h</string>
+	<string name="pmTimeAxisFormat">\'م\'h</string>
+
+	<string name="mmolPerMolFormatter" tools:ignore="PluralsCandidate">( %d ملمول/مول )</string>
+	<string name="sensor_usage_total_scans">إجمالي المسوحات</string>
+	<string name="sensor_usage_day_average">المسوحات في اليوم</string>
+	<string name="sensor_usage_captured">% بيانات المجس الملتقطة</string>
+	<string name="days_of_data" tools:ignore="PluralsCandidate">البيانات المتوفرة لفترة %1$d من %2$d أيام</string>
+	<string name="a1cDaysOfData" tools:ignore="PluralsCandidate">مدى البيانات %1$d من %2$d أيام</string>
+	<string name="no_sensor_data">لا توجد بيانات مجس كافية</string>
+	<string name="timeintarget_glucose_range">%1$s-%2$s</string>
+	<string name="timeintarget_glucose_less_than">&lt; %s</string>
+	<string name="timeintarget_glucose_greater_than">&gt; %s</string>
+	<string name="timeintarget_percent">%</string>
+	<string name="target">الهدف</string>
+	<string name="timeInTargetGlucoseRangeLabel">النطاق المستهدف: %s</string>
+	<string name="average_glucose_info_title">متوسط الجلوكوز</string>
+	<string name="average_glucose_info_msg">متوسط الجلوكوز يعطي معلومات حول متوسط قراءات الجلوكوز من المجس الخاص بك. يتم عرض المتوسط الكلي للفترة المختارة أسفل الرسم البياني. كما يتم عرض المتوسط لفترات مختلفة من اليوم. القراءات أعلى أو أقل من نطاق الجلوكوز المستهدف لديك تكون باللون الأصفر أو البرتقالي أو الأحمر. القراءات ضمن النطاق تكون باللون الأخضر.</string>
+	<string name="low_glucose_info_title">حالات الجلوكوز المنخفض</string>
+	<string name="low_glucose_info_msg_mg">حالات الجلوكوز المنخفض تعطي معلومات حول عدد حالات الجلوكوز المنخفض المقاسة من خلال مجسك. يتم تسجيل حالة جلوكوز منخفض عندما تكون قراءة الجلوكوز من المجس الخاص بك أقل من ٧٠ mg/dL لمدة تزيد عن ١٥ دقيقة. يتم عرض العدد الإجمالي للأحداث أسفل الرسم البياني. يعرض الرسم البياني الشريطي حالات الجلوكوز المنخفض في فترات مختلفة من اليوم.</string>
+	<string name="low_glucose_info_msg_mmol">حالات الجلوكوز المنخفض تعطي معلومات حول عدد حالات الجلوكوز المنخفض المقاسة من خلال مجسك. يتم تسجيل حالة جلوكوز منخفض عندما تكون قراءة الجلوكوز من المجس الخاص بك أقل من ٣.٩ mmol/L لمدة تزيد عن ١٥ دقيقة. يتم عرض العدد الإجمالي للأحداث أسفل الرسم البياني. يعرض الرسم البياني حالات الجلوكوز المنخفض في فترات مختلفة من اليوم.</string>
+	<string name="a1c_info_title">المقدّر A1c</string>
+	<string name="a1c_info_msg">يعتمد مستوى A1c المقدّر (يسمى أيضًا HbA1c) على جميع بيانات الجلوكوز من المجس المتوفرة من الأيام الـ ٩٠ الأخيرة. كلما زادت البيانات المتوفرة سيكون التقدير أفضل. إلا أن قيمة مستوى A1c المقدر الخاص بك قد لا تطابق مستوى A1c المقاس في المختبر.\n\nيمكن استخدام مستوى A1c كمؤشر على مدى جودة التحكم في مستويات الجلوكوز الخاصة بك في الماضي القريب ويمكن استخدامه لمراقبة تأثيرات نظام علاج مرض السكري لديك.</string>
+	<string name="daily_info_title">الرسم البياني اليومي</string>
+	<string name="daily_info_msg">يعرض الرسم البياني اليومي رسماً بيانياً لقراءات الجلوكوز من المجس الخاص بك بشكل يومي.\n\nقد ترى فجوات في الرسم البياني أثناء الفترات التي لم تقم فيها بمسح المجس الخاص بك مرة واحدة على الأقل كل ٨ ساعات.\n\nستُعرض أيقونة ساعة إذا تم اكتشاف تغيُّر في المنطقة الزمنية. قد ينتج عن ذلك فجوات في الرسم البياني أو قد تختفي قراءات الجلوكوز.</string>
+	<string name="sensor_usage_info_title">استخدام المجس</string>
+	<string name="sensor_usage_info_msg">يعرض استخدام المجس معلومات حول عدد المرات التي تقوم فيها بمسح مجسك. ويشمل ذلك متوسط عدد المرات التي قمت فيها بمسح مجسك كل يوم، والنسبة المئوية لبيانات المجس الممكنة التي تم تسجيلها من المسوحات التي قمت بها، وإجمالي عدد المسوحات.</string>
+	<string name="time_in_target_info_title">الوقت في الهدف</string>
+	<string name="time_in_target_info_msg">يعرض الوقت في الهدف رسماً بيانياً يظهر النسبة المئوية للوقت الذي كانت فيه قراءات الجلوكوز من المجس الخاص بك أعلى من نطاق الجلوكوز المستهدف أو أقل منه أو في نطاقه.</string>
+	<string name="daily_average">المتوسط: %1$s %2$s</string>
+	<string name="total_events">إجمالي الأحداث: %1$d</string>
+	<string name="daily_patterns_info_title">الأنماط اليومية</string>
+	<string name="daily_patterns_info_msg">الأنماط اليومية تعرض رسماً بياناً يظهر النمط والتفاوت في الجلوكوز المقاس بالمجس الخاص بك على مدار يوم عادي. يظهر الخط الأسود السميك الوسيط (نقطة الوسط) لقراءات الجلوكوز الخاصة بك. يمثل التظليل الأزرق الفاتح نطاق ١٠- ٩٠ مئينية من قراءات المجس الخاص بك. يمثل التظليل الأزرق الداكن نطاق  ٢٥- ٧٥ مئينية .\n\nملاحظة: تحتاج الأنماط اليومية إلى بيانات جلوكوز تخص ٥ أيام على الأقل.</string>
+
+	<!-- Scan Result -->
+	<string name="glucoseAboveRange">جلوكوز مرتفع\n(خارج النطاق)</string>
+	<string name="glucoseBelowRange">جلوكوز منخفض\n(خارج النطاق)</string>
+	<string name="glucoseGoingHigh">الجلوكوز في ارتفاع</string>
+	<string name="glucoseGoingLow">الجلوكوز في انخفاض</string>
+	<string name="glucoseHigh">جلوكوز مرتفع</string>
+	<string name="glucoseInRange">الجلوكوز في النطاق</string>
+	<string name="glucoseLow">جلوكوز منخفض</string>
+	<string name="highGlucoseIsDangerous">يمكن أن يكون الجلوكوز المرتفع خطرًا. افحص الجلوكوز الخاص بك مجددًا وقم بالعلاج حسب توصية مختص الرعاية الصحية الخاص بك. خذ فحص الكيتون الخاص بك بعين الاعتبار.</string>
+	<string name="lowGlucoseIsDangerous">يمكن أن يكون الجلوكوز المنخفض خطرًا. افحص الجلوكوز الخاص بك مجددًا وقم بالعلاج حسب توصية مختص الرعاية الصحية الخاص بك.</string>
+	<string name="yourGlucose">الجلوكوز الخاص بي</string>
+	<string name="vrcFailedTitle">خطأ في إظهار النتيجة</string>
+	<string name="vrcFailedText">النتيجة هي: %s</string>
+	<string name="error_sensor_incompatible_title">مجس غير متوافق</string>
+	<string name="error_sensor_incompatible_msg">لا يمكن استخدام هذا المجس مع هذا الإصدار من فري ستايل ليبري لينك.</string>
+	<string name="error_sensor_terminated_title">استبدل المجس</string>
+	<string name="error_sensor_terminated_msg">المجس الخاص بك لا يعمل. يرجى إزالة المجس الخاص بك وبدء مجس جديد.</string>
+	<string name="error_sensor_removed_title">استبدل المجس</string>
+	<string name="error_sensor_removed_msg">المجس الخاص بك لا يعمل. يرجى إزالة المجس الخاص بك وبدء مجس جديد.</string>
+	<string name="error_sensor_expired_title">انتهى المجس</string>
+	<string name="error_sensor_expired_msg">ابدأ مجسًا جديدًا لفحص الجلوكوز.</string>
+	<string name="error_sensor_inwarmup_title">جاري تشغيل المجس</string>
+	<string name="error_sensor_inwarmup_msg">لقد تم تشغيل هذا المجس لكنه غير جاهز للاستخدام بعد.</string>
+	<string name="error_sensor_corrupt_title">خطأ في المسح</string>
+	<string name="error_sensor_corrupt_msg">لم يتمكن الهاتف الذكي من مسح المجس. قم بمسح المجس مرة أخرى.</string>
+	<string name="error_sensor_transmission_title">خطأ في المسح</string>
+	<string name="error_sensor_transmission_msg">لم يتمكن الهاتف الذكي من مسح المجس. قم بمسح المجس مرة أخرى. تأكد من توجيه الجزء الخلفي للهاتف بالقرب من المجس. عندما تسمع النغمة أو الاهتزاز لأول مرة، احمل الهاتف بثبات حتى تسمع النغمة أو الاهتزاز للمرة الثانية.</string>
+	<string name="error_sensor_already_started_title">المجس قيد الاستخدام </string>
+	<string name="error_sensor_already_started_msg">تم بدء المجس الذي قمت بمسحه للتو بواسطة جهاز آخر ولا يمكن استخدامه.</string>
+	<string name="error_sensor_already_started_msg_llj">تم بدء هذا المجس بواسطة جهاز آخر. لتمكين المجس من العمل مع هذا الهاتف، يجب استخدام هذا الهاتف لمسح المجس خلال الساعة الأولى.</string>
+	<string name="error_sensor_temporary_problem_title">خطأ في المجس</string>
+	<string name="error_sensor_temporary_problem_msg">قراءة الجلوكوز غير متاحة. جرب المسح مرة أخرى خلال ١٠ دقائق.</string>
+	<string name="error_sensor_too_hot_title">المجس شديد السخونة</string>
+	<string name="error_sensor_too_hot_msg">المجس شديد السخونة ويتعذر اعطاء قراءات الجلوكوز. يرجى المحاولة مرة أخرى خلال بضع دقائق.</string>
+	<string name="error_sensor_too_cold_title">المجس شديد البرودة</string>
+	<string name="error_sensor_too_cold_msg">المجس شديد البرودة ويتعذر اعطاء قراءات الجلوكوز. يرجى المحاولة مرة أخرى خلال بضع دقائق.</string>
+	<string name="error_sensor_insertion_failure_title">افحص المجس</string>
+	<string name="error_sensor_insertion_failure_msg">يرجى فحص المجس الخاص بك. إن كان منفصلاً عن جلدك، يرجى رفع المجس وبدء مجس جديد. إن كان مثبتًا بشكل ملائم، يرجى بدء المجس مرة أخرى.</string>
+	<string name="error_sensor_not_active_title">تم العثور على مجس جديد</string>
+	<string name="error_sensor_not_active_msg">بدء مجس جديد سينهي عمل المجس الذي تستخدمه في الوقت الحالي.\n\nهل ترغب في بدء المجس الجديد الآن؟</string>
+
+	<!-- Add/Edit Note -->
+	<string name="addNote">إضافة ملاحظة</string>
+	<string name="editNote">تعديل الملاحظة</string>
+	<string name="highIntensity">شدة عالية</string>
+	<string name="mediumIntensity">شدة متوسطة</string>
+	<string name="lowIntensity">شدة منخفظة</string>
+	<string name="noExerciseTypeChosen">اختر الشدة</string>
+	<string name="food">طعام</string>
+	<string name="exercise">تمرين</string>
+	<string name="longActingInsulin">الأنسولين طويل المفعول</string>
+	<string name="rapidActingInsulin">الأنسولين سريع المفعول</string>
+	<string name="meal">الوجبة</string>
+	<string name="breakfast">الإفطار</string>
+	<string name="lunch">الغداء</string>
+	<string name="snack">وجبة خفيفة</string>
+	<string name="dinner">العشاء</string>
+	<string name="carbsGramsError">ينبغي أن تكون القيمة رقماً صحيحاً بين %1$s و %2$s</string>
+	<string name="carbsServingsError">ينبغي أن تكون القيمة من مضاعفات ٠.٥ وبين %1$s و %2$s</string>
+	<string name="insulinDoseError">ينبغي أن تكون القيمة من مضاعفات ٠.١ وبين ٠.١ و %1$d</string>
+
+	<!-- Manual BG -->
+	<string name="manualBgTitle">نتيجة جلوكوز الدم</string>
+	<string name="manualBgExplanation">أدخل النتيجة من فحص جلوكوز الدم الخاص بك.</string>
+	<string name="manualBgError">ينبغي أن تكون القيمة رقماً صحيحاً بين %1$s و %2$s</string>
+
+	<!-- Logbook -->
+	<string name="logbookDetail">تفاصيل السجل</string>
+	<string name="logbookListEmpty">لا توجد مدخلات لهذا التاريخ.</string>
+	<string name="logbookDetailCarbFormatDoseAndUnit">" (&lt;b&gt;%1$s%2$s&lt;/b&gt;)"</string>
+	<string name="logbookDetailInsulinFormatTypeAndDose">%1$s (&lt;b&gt;%2$s&lt;/b&gt;)</string>
+	<string name="logbookDetailSeparator">", "</string>
+	<string name="noteBalloonSeparator">&lt;br/&gt;</string>
+	<string name="logbookDetailExerciseType">@string/exercise</string>
+	<string name="logbookDetailExerciseFormatType">تمرين %s</string>
+	<string name="logbookDetailExerciseFormatDuration">" (&lt;b&gt;%s&lt;/b&gt;)"</string>
+
+	<!-- Reminders -->
+	<string name="alarms">تنبيهات</string>
+	<string name="repeating">متكررة</string>
+	<string name="timers">مؤقتات</string>
+	<string name="addReminder">إضافة تذكير</string>
+	<string name="alarmName">اسم التذكير</string>
+	<string name="checkGlucose">فحص الجلوكوز</string>
+	<string name="myReminder">التذكير الخاص بي</string>
+	<string name="nextReminderPrompt">التذكير التالي:\u0020</string>
+	<string name="nextAlarmPrompt">التذكير التالي: %1$s، %2$s</string>
+	<string name="noActiveReminders">لا توجد تذكيرات نشطة.</string>
+	<string name="noActiveRemindersAutoScanSensorEnabled">لا توجد تذكيرات نشطة. ستتم إعادة ضبط مؤقت مسح المجس عندما تقوم بالمسح مرة أخرى.</string>
+	<string name="remindMeToCheckAgain">ذكرني بفحص الجلوكوز في:</string>
+	<string name="setReminder">ضبط</string>
+
+	<!-- Send Reports -->
+	<string name="sendChooserTitle">إرسال</string>
+
+	<!-- Settings -->
+	<string name="unitOfMeasurementTitle">وحدة القياس</string>
+	<string name="unitOfMeasurementTopText">اختر وحدة القياس للجلوكوز الخاص بك. سيتم عرض جميع بيانات الجلوكوز باستخدام هذه الوحدات.</string>
+	<string name="unitOfMeasurementTopTextForSetup">اختر وحدة القياس للجلوكوز الخاص بك. سيتم عرض جميع بيانات الجلوكوز باستخدام هذه الوحدات. لن يكون بوسعك تغيير ذلك لاحقاً.</string>
+	<string name="unitOfMeasureWarning">من المهم جداً اختيار وحدة القياس الصحيحة للجلوكوز الخاص بك. قد تؤدي وحدة القياس الخاطئة إلى التفسير الخاطئ لقيم الجلوكوز الخاص بك. راجع مختص الرعاية الصحية الخاص بك في حال عدم معرفتك بوحدة القياس التي ينبغي استخدامها.</string>
+	<string name="unitOfMeasurementFixedTopText">يتم ضبط وحدة قياس الجلوكوز الخاص بك بشكل تلقائي وفقاً لبلدك.</string>
+	<string name="unitOfMeasurementFixedCountryText">بلدك هو</string>
+	<string name="unitOfMeasurementFixedText">وحدة القياس الخاصة بك هي</string>
+	<string name="targetGlucoseRangeTitle">نطاق الجلوكوز المستهدف</string>
+	<string name="targetGlucoseRangeTopText">سيتم عرض نطاق الجلوكوز المستهدف الخاص بك على رسوم بيانية متعددة. راجع مختص الرعاية الصحية الخاص بك في حال عدم معرفتك بذلك.</string>
+	<string name="targetGlucoseRangeTopTextForSetup">سيتم عرض نطاق الجلوكوز المستهدف الخاص بك على رسوم بيانية متعددة، ويمكن تغييره بالذهاب إلى إعدادات. راجع مختص الرعاية الصحية الخاص بك في حال عدم معرفتك بذلك.</string>
+	<string name="carbohydrateUnitsTitle">وحدات الكاربوهيدرات</string>
+	<string name="carbohydrateUnitsTopText">يمكن إدخال الكاربوهيدرات إما على شكل جرامات أو حصص حسب طريقتك في حسابها. اختر وحدة الكاربوهيدرات المفضلة لديك.</string>
+	<string name="carbohydrateUnitServingSizeMessage">اختر حجم حصتك المفضل أو اتصل بمختص الرعاية الصحية الخاص بك في حال عدم معرفتك بذلك.</string>
+	<string name="carbohydrateUnitsTopTextForSetup">@string/carbohydrateUnitsTopText</string>
+	<string name="scanSoundsTitle">أصوات المسح</string>
+	<string name="scanSoundsOsDefault">صوت واهتزاز</string>
+	<string name="scanSoundsVibeOnly">اهتزاز فقط</string>
+	<string name="scanSoundsTopText">سيصدر اهتزازاً عند مسح المجس. اختر إذا ما كنت ترغب أيضاً في سماع صوتاً بجانب الاهتزاز.</string>
+	<string name="scanSoundsTopTextForSetup">@string/scanSoundsTopText</string>
+	<string name="scanSoundsNote">يُرجى ملاحظة أن:\nأصوات المسح ستتبع إعدادات الصوت في هاتفك الذكي. على سبيل المثال، إذا كان الصوت على هاتفك الذكي مغلقاً، فلن تتمكن من سماع صوت المسح.</string>
+	<string name="textToSpeechTitle">النص إلى كلام</string>
+	<string name="textToSpeechOn">تشغيل</string>
+	<string name="textToSpeechOff">إيقاف</string>
+	<string name="textToSpeechTopText">قم بتشغيل ميزة النص إلى كلام لتتمكن من سماع قراءة الجلوكوز بصوت مرتفع.</string>
+	<string name="textToSpeechNote">يُرجى ملاحظة أن:\nميزة النص إلى كلام ستتبع إعدادات الصوت في هاتفك الذكي. على سبيل المثال، إذا كان الصوت على هاتفك الذكي مغلقاً، فلن تتمكن من سماع قراءة الجلوكوز بصوت مرتفع.</string>
+	<string name="countryOfOriginTitle">تأكيد البلد</string>
+	<string name="countryOfOriginTopText">يتم استخدام بلدك أثناء إعداد التطبيق وللتأكد من تخزين بياناتك بشكل صحيح.</string>
+	<string name="countryOfOriginTopTextForSetup">@string/countryOfOriginTopText</string>
+	<string name="countryOfOriginExplanation">إذا كان هذا صحيحاً، انقر التالي.\n\nإذا كان ذلك غير صحيحاً، قد تحتاج إلى إلغاء تثبيت تطبيق فري ستايل ليبري لينك وتثبيت الإصدار الخاص ببلدك. يُرجى الاتصال بخدمة العملاء إذا كانت لديك استفسارات.</string>
+	<string name="targetGlucoseRangeUnitText">القيم بـ</string>
+	<string name="servingsWithGramsEquivalent" tools:ignore="PluralsCandidate">الحصص (حصة واحدة = %.1f جرام)</string>
+	<string name="countryLabel">بلد الإقامة</string>
+	<string name="countryLabelForSetup">تم التعرف على بلدك بأنه</string>
+	<string name="defaultNetworkErrorMessage">حدث خطأ أثناء الاتصال مع الخادم.</string>
+	<string name="serverNotFoundErrorMessage">حدث خطأ أثناء الاتصال مع الخادم. لم يتم العثور على الخادم.</string>
+	<string name="pageNotFoundErrorMessage">حدث خطأ أثناء الاتصال مع الخادم. لم يتم العثور على أي محتوى على الخادم.</string>
+	<string name="networkingErrorMessage">حدث خطأ بالشبكة عند الاتصال بالخادم.</string>
+	<string name="internalServerErrorMessage">حدث خطأ أثناء الاتصال مع الخادم. حدث خطأ داخلي بالخادم.</string>
+	<string name="requestTimeoutErrorMessage">حدث خطأ أثناء الاتصال مع الخادم. انتهت مهلة الطلب.</string>
+	<string name="serviceUnavailableErrorMessage">حدث خطأ أثناء الاتصال مع الخادم. الخدمة غير متاحة.</string>
+	<string name="submitButtonText">@string/submit</string>
+	<string name="mgPerDeciliterRadioText">‏<b>mg/dL</b> (مثال ١٠٠ mg/dL)</string>
+	<string name="mmolPerLiterRadioText">‏<b>mmol/L</b> (مثال ٥.٦ mmol/L)</string>
+	<string name="target_range_separator">-</string>
+	<string name="glucoseRangeFormat">%1$s - %2$s %3$s</string>
+	<string name="settingsUnitOfMeasureConfirmationMessage">يرجى التأكيد على أنك ترغب في اختيار وحدة القياس التالية:</string>
+	<string name="networkNotConnectedDefault">هاتفك الذكي غير متصل حاليًا بالإنترنت. لا يمكن استكمال هذه العملية حتى يصبح لديك اتصال بالإنترنت.</string>
+	<string name="networkNotConnectedSetup">هاتفك الذكي غير متصل حاليًا بالإنترنت. لا يمكن استكمال الإعداد حتى يصبح لديك اتصال بالإنترنت.</string>
+	<string name="networkNotConnectedProfileUpdate">هاتفك الذكي غير متصل حاليًا بالإنترنت. لا يمكن تغيير حسابك حتى يصبح لديك اتصال بالإنترنت.</string>
+	<string name="privacyNoticeAcceptanceStatement">لقد قرأت إشعار الخصوصية وأوافق عليه صراحة.</string>
+	<string name="privacyNoticeTitle">إشعار الخصوصية</string>
+	<string name="termsOfUseAcceptanceStatement">لقد قرأت شروط الاستخدام وأوافق عليها .</string>
+	<string name="termsOfUseTitle">شروط الاستخدام</string>
+	<string name="nfcUnsupported">من أجل استخدام فري ستايل ليبري لينك لمسح المجس الخاص بك، يجب أن يدعم هاتفك تقنية NFC.</string>
+	<string name="turnOnNfcPrompt">من أجل استخدام فري ستايل ليبري لينك لمسح المجس الخاص بك، يجب أن يتم تفعيل تقنية NFC على هاتفك. هل ترغب في تشغيلها؟</string>
+	<string name="enableNetworkTime">من أجل استخدام فري ستايل ليبري لينك لمسح المجس الخاص بك، يجب أن يتم تفعيل التحديث التلقائي للتاريخ والوقت على هاتفك. هل ترغب في تشغيل ذلك؟</string>
+	<string name="getStartedNow">ابدأ الآن</string>
+
+	<!-- My Glucose Explanation -->
+	<string name="myGlucoseExplanationTitle">الجلوكوز الخاص بي</string>
+	<string name="myGlucoseExplanationTopText">تظهر هذه الشاشة بعد مسحك للمجس الخاص بك.</string>
+	<string name="myGlucoseExplanationResultCallouts">تحتوي شاشة الجلوكوز الخاص بي على (1) الجلوكوز الحالي الخاص بك، (2) سهم اتجاه الجلوكوز الخاص بك، و (3) الرسم البياني للجلوكوز الخاص بك.</string>
+
+	<!-- Trend Arrow Explanation -->
+	<string name="trendExplanationTitle">سهم اتجاه الجلوكوز</string>
+	<string name="trendExplanationTopText">حين تقوم بمسح مجسك، سيشير سهم إلى اتجاه الجلوكوز الخاص بك مؤخرًا.</string>
+	<string name="trendExplanationRisingQuickly">ارتفاع بسرعة</string>
+	<string name="trendExplanationRising">ارتفاع</string>
+	<string name="trendExplanationStable">متغير ببطء</string>
+	<string name="trendExplanationFalling">هابط</string>
+	<string name="trendExplanationFallingQuickly">هابط بسرعة</string>
+
+	<!-- Help -->
+	<string name="helpItemTitleApplySensor">كيف تقوم بوضع مجس</string>
+	<string name="helpItemTitleScanSensor">كيف تقوم بمسح مجس</string>
+	<string name="helpItemTitleEventLog">@string/eventLog</string>
+	<string name="helpItemTitleUserGuide">دليل المستخدم</string>
+
+	<!-- OneStep Log Upload -->
+	<string name="logUploadTitle">أرسل بيانات حل المشكلات</string>
+	<string name="logUploadOptInDescription">إرسال بيانات حل المشكلات يساعد خدمة العملاء على إجابة استفساراتك.</string>
+	<string name="logUploadOptInText1">إشعار الخصوصية الذي وافقت عليه سابقاً يشرح ما تحتويه بيانات حل المشكلات.</string>
+	<string name="logUploadViewPrivacyButtonLabel">عرض إشعار الخصوصية</string>
+	<string name="logUploadOptInText2">هل توافق على إرسال بيانات حل المشكلات الخاصة بك؟</string>
+	<string name="logUploadDecline">رفض</string>
+	<string name="logUploadAccept">موافقة</string>
+	<string name="logUploadDescription">يُرجى إدخال رقم الحالة ورمز التحقق المزوّد من قبل خدمة العملاء.</string>
+	<string name="logUploadCaseNumberLabel">رقم الحالة</string>
+	<string name="logUploadAccessCodeLabel">رمز التحقق</string>
+	<string name="logUploadSendButtonLabel">إرسال</string>
+	<string name="logUploadErrorTypo">رقم حالة أو رمز تحقق خاطئ</string>
+	<string name="logUploadErrorUploadFailedTitle">حدث خطأ أثناء إرسال بيانات حل المشكلات</string>
+	<string name="logUploadErrorUploadFailedText">انقر لإعادة المحاولة.</string>
+
+	<!-- Apply Sensor Tour -->
+	<string name="applySensorTitle">وضع مجس</string>
+	<string name="applySensorTitleStep1">الخطوة ١</string>
+	<string name="applySensorTextStep1">اختر موضعاً على الجزء الخلفي من أعلى الذراع.</string>
+	<string name="applySensorSubTextStep1">ملاحظة: تجنب الندبات والشامات والتجعدات الصغيرة والمناطق المتورمة ومواضع حقن الإنسولين. لتجنب تهيج الجلد، قم بتبديل المواضع بين عمليات الوضع.</string>
+	<string name="applySensorTitleStep2">الخطوة ٢</string>
+	<string name="applySensorTextStep2">امسح الموضع بممسحة كحولية. اترك الموضع يجف قبل الاستمرار.</string>
+	<string name="applySensorTitleStep3">الخطوة ٣</string>
+	<string name="applySensorTextStep3">انزع الغطاء بالكامل عن رزمة المجس.</string>
+	<string name="applySensorTitleStep4">الخطوة ٤</string>
+	<string name="applySensorTextStep4">قم بفك الغطاء عن مطبق المجس.</string>
+	<string name="applySensorTitleStep5">الخطوة ٥</string>
+	<string name="applySensorTextStep5">قم بمحاذاة العلامة الداكنة الموجودة على مطبق المجس مع العلامة الداكنة الموجودة على رزمة المجس. على أرضية صلبة، اضغط بقوة على مطبق المجس حتى يبلغ نهايته.</string>
+	<string name="applySensorTitleStep6">الخطوة ٦</string>
+	<string name="applySensorTextStep6">انزع مطبق المجس عن رزمة المجس.</string>
+	<string name="applySensorTitleStep7">الخطوة ٧</string>
+	<string name="applySensorTextStep7">مطبق المجس جاهز لوضع المجس. لا تلمس الجزء الداخلي لمطبق المجس أو تضعه مرة أخرى في رزمة المجس.</string>
+	<string name="applySensorTitleStep8">الخطوة ٨</string>
+	<string name="applySensorTextStep8">ضع مطبق المجس فوق الموضع واضغط بقوة لوضع المجس.</string>
+	<string name="applySensorTitleStep9">الخطوة ٩</string>
+	<string name="applySensorTextStep9">انزع مطبق المجس بعيدًا عن جسمك برفق.</string>
+	<string name="applySensorTitleStep10">الخطوة ١٠</string>
+	<string name="applySensorTextStep10">تأكد من أن المجس آمن. تخلص من مطبق المجس ورزمة المجس المستخدمين وفقاً للوائح المحلية.</string>
+
+	<!-- Scan Sensor Tour -->
+	<string name="scanSensorTitle">مسح مجس</string>
+	<string name="scanSensorTitleStep1">الخطوة ١</string>
+	<string name="scanSensorTextStep1"><![CDATA[امسك <b>الجزء الخلفي</b> للهاتف بحيث يكون <b>مقابل</b> المجس.]]></string>
+	<string name="scanSensorTitleStep2">الخطوة ٢</string>
+	<string name="scanSensorTextStep2">عند تفعيل الصوت، سيصدر الهاتف سلسلة من النغمات والاهتزازات أثناء مسحه للمجس. لا تبعد الهاتف حتى يتوقف إصدار النغمات أو الاهتزازات.</string>
+	<string name="scanSensorTitleStep3">الخطوة ٣</string>
+	<string name="scanSensorTextStep3">لمسح المجس، قد تحتاج إلى تحريك هاتفك بالقرب من المجس الخاص بك ليتمكن من تحديد موضع هوائي NFC على الهاتف.</string>
+
+	<!-- About -->
+	<string name="about">لمحة سريعة</string>
+	<string name="appNameLabel">الاسم:</string>
+	<string name="appNameValue">فري ستايل ليبري لينك</string>
+	<string name="appPartOfSystem">جزء من نظام فلاش لمراقبة الجلوكوز فري ستايل ليبري</string>
+	<string name="last3sensors">آخر ٣ مجسات:</string>
+	<string name="sensorStatus">&#160;&#160;&#160;&#160;الحالة: %1$s</string>
+	<string name="udi">معرّف الجهاز الفريد UDI:</string>
+	<string name="registrationNumber">رقم التسجيل:</string>
+	<string name="productStandardNumber">الرقم القياسي للمنتج:</string>
+	<string name="model">طراز الهاتف الذكي:</string>
+	<string name="appCountryLabel">البلد:</string>
+	<string name="supportWebsiteLabel">خدمة العملاء:</string>
+	<string name="supportWebsiteValue">http://www.freestylelibre.com</string>
+	<string name="consultInstructionsForUse">استشر تعليمات الاستخدام</string>
+	<string name="productOfUsa">منتج في الولايات المتحدة الأمريكية</string>
+	<string name="patentWebsiteLabel">الموقع الإلكتروني لبراءات الاختراع:</string>
+	<string name="patentWebsiteValue">https://www.abbott.com/patents</string>
+	<string name="trademarkStatement">‎فري ستايل وليبري والعلامات التجارية المرتبطة بهما هي علامات تجارية لشركة ‎Abbott Diabetes Care Inc‏ في عدة أقاليم قضائية.</string>
+	<string name="copyrightStatement">©2018 Abbott</string>
+	<string name="osVersion">الإصدار الخاص بنظام التشغيل أندرويد:</string>
+	<string name="sensorNotPresent">لا يوجد  مجس فعال</string>
+	<string name="softwareVersion">نسخة البرنامج:</string>
+
+	<!-- Notifications -->
+	<string name="alarmExpired">انتهت صلاحية التنبيه</string>
+	<string name="timerExpired">انتهت صلاحية المؤقت</string>
+
+	<string name="sensorActivated">بدأ المجس</string>
+	<string name="sensorReady">المجس جاهز</string>
+	<string name="sensorReadyContent">المجس الخاص بك جاهز للاستخدام</string>
+	<string name="sensorExpired">انتهى المجس</string>
+	<string name="sensorExpiredContent">ابدأ مجسًا جديدًا لفحص الجلوكوز</string>
+	<string name="sensorEndingSoon">ينتهي المجس قريبًا</string>
+
+	<!-- Data Upload -->
+	<string name="uploadFailedTitle">فشل الرفع</string>
+	<string name="uploadFailedNoConnectivityContent">لا يوجد اتصال</string>
+	<string name="uploadFailedInvalidToken">فشلت المصادقة. انقر لتسجيل الدخول.</string>
+	<string name="uploadFailedOther">حدث خطأ. انقر لإعادة المحاولة</string>
+	<string name="uploadingDataTitle">رفع بيانات تطبيق فري ستايل ليبري لينك</string>
+	<string name="uploadingDataContent">جاري إرسال البيانات</string>
+	<string name="serving_size_in_grams">حصة واحدة = ‎%.1f‏ جرام</string>
+	<string name="acceptLanguageHeader">ar-SA, ar;q=0.8</string>
+	<string name="appLocale">ar-SA</string>
+
+	<string name="reportHeaderDayOnlyFormat">d</string>
+	<string name="reportHeaderFullDateFormat">yyyy/MMMM/d</string>
+	<string name="reportHeaderShortMonthFormat">MM/d</string>
+	<string name="reportHeaderShortMonthFullFormat">yyyy/MM/d</string>
+	<string name="reportHeaderDateRangeFormat">%1$s - %2$s</string>
+	<string name="reportShareSubjectFormat">%1$s: %2$s</string>
+
+	<string name="nonActionableExplanationTitle">أكد قراءة الجلوكوز</string>
+	<string name="nonActionableExplanationMessage">أكد قراءة الجلوكوز الخاصة بك بشريط فحص قبل اتخاذ قرارات العلاج.</string>
+
+	<!-- TTS Result -->
+	<string name="spokenLo">خارج النطاق ومنخفض</string>
+	<string name="spokenHi">خارج النطاق ومرتفع</string>
+	<string name="spokenMgDl">مليجرام لكل ديسيلتر</string>
+	<string name="spokenMmolL">مليمول لكل لتر</string>
+	<string name="resultWithTrendNotDetermined">%1$s %2$s مع عدم توفر الاتجاه</string>
+	<string name="resultWithTrendFallingQuickly">%1$s %2$s وينخفض بسرعة</string>
+	<string name="resultWithTrendFalling">%1$s %2$s وينخفض </string>
+	<string name="resultWithTrendStable">%1$s %2$s ويتغير ببطء</string>
+	<string name="resultWithTrendRising">%1$s %2$s ويرتفع</string>
+	<string name="resultWithTrendRisingQuickly">%1$s %2$s ويرتفع بسرعة</string>
+
+	<!-- Download Progress -->
+	<string name="progressDownloadingConfiguration">جاري تنزيل تهيئة التطبيق</string>
+	<string name="progressDownloadingUserGuide">جاري تنزيل دليل المستخدم</string>
+	<string name="insufficientSpaceMessage">مساحة غير كافية على جهازك الذكي.</string>
+
+
+	<!-- New strings added 25SEPT2017 -->
+
+	<string name="modalLookingForSensor">أمسك جهاز iPhone قرب المجس</string>
+	<string name="modalSensorFound">تم المسح</string>
+	<string name="settingsMenuTitle">الإعدادات</string>
+	<string name="genericOSVersion">إصدار نظام التشغيل:</string>
+	<string name="editTime">تعديل الوقت</string>
+	<string name="detail">تفصيلة</string>
+	<string name="helpItemTitleGlucoseHelp">قراءات الجلوكوز</string>
+	<string name="glucoseHelp">قراءات الجلوكوز</string>
+
+	<!-- Abbreviated time passed -->
+	<string name="mins_passed">قبل %dدد</string>
+	<string name="hours_passed">قبل %dسس</string>
+
+	<string name="iosNotificationsDisabled">ينبغي تمكين الإشعارات في إعدادات نظام تشغيل iOS لتلقي التذكيرات.</string>
+	<string name="glucoseWarningReminderPrompt">هل تود ضبط تذكير لفحص الجلوكوز الخاص بك؟</string>
+	<string name="NFCReaderUsageDescription">يستخدم فري ستايل ليبري لينك تقنية NFC لمسح مجسات فري ستايل ليبري.</string>
+	<string name="NSPhotoLibraryAddUsageDescription">يحتاج فري ستايل ليبري لينك إلى الوصول إلى مكتبة الوسائط الخاصة بك لحفظ التقارير. لن تتم مشاركة صورك دون إذنك.</string>
+	<string name="deleteNote">حذف ملاحظة</string>
+	<string name="deleteNoteConfirmation">هل تود حذف هذه الملاحظة؟</string>
+
+	<!-- New strings with existing Android Counterparts -->
+
+	<string name="iosScanSensorTextStep1">اضغط زر المسح قبل مسح مجسك.</string>
+	<string name="iosScanSensorTextStep2">أمسك قمة جهاز iPhone الخاص بك قرب المجس.</string>
+	<string name="iosScanSensorTextStep3">سيهتز جهاز iPhone الخاص بك وسيصدر صوتًا (إذا كانت الأصوات ممكّنة) بعد مسح المجس.</string>
+	<string name="iosErrorVersionCheckFailed">هذا الإصدار من فري ستايل ليبري لينك يحتاج إلى تحديث. يرجى فحص متجر التطبيقات للحصول على أحدث إصدار.</string>
+	<string name="iosReadyToScanDetail">المجس الخاص بك جاهز للاستخدام.</string>
+	<string name="iosDefaultSensorErrorMsg">المسح الخاص بك لم يكن ناجحًا. اضغط زر المسح وامسح مجددًا.</string>
+	<string name="iosEnableNetworkTimeTitle">تحديث التاريخ والوقت</string>
+	<string name="iosEnableNetworkTime">ينبغي تحديث إعدادات التاريخ والوقت الخاصة بك تلقائيًا لاستخدام فري ستايل ليبري لينك. توجه إلى الإعدادات &gt; عام &gt; التاريخ والوقت، ومكّن "الضبط التلقائي".</string>
+
+	<!-- New string added per Ashwin Kumar's request 2017-08-30-->
+	<string name="iosCheckGlucoseWithPhone">يمكنك فحص الجلوكوز الخاص بك من خلال هاتف iPhone الخاص بك.</string>
+	<string name="retry">إعادة المحاولة</string>
+
+	<!-- New strings for US changes 2017-10-31 -->
+	<string name="sensorUserPrompt">أدخل معلومات الشخص الذي سيقوم بارتداء المجس. </string>
+	<string name="welcome">مرحبًا!</string>
+	<string name="welcomeDetail">خذ بعض الوقت لتعلُّم كيفية فهم قراءات الجلوكوز الخاص بك مع هذا التطبيق.</string>
+	<string name="backgroundGlucoseColorsTitle">لون خلفية الجلوكوز</string>
+	<string name="backgroundGlucoseColorsDetail">الجلوكوز الحالي الخاص بك يُحدّد اللون الذي يظهر في الخلف.</string>
+	<string name="glucoseHighAbove240Mgdl">جلوكوز مرتفع (فوق 240 mg/dL)</string>
+	<string name="glucoseBetweenTarget240Mgdl">بين نطاق الهدف و 240 mg/dL</string>
+	<string name="glucoseTargetRange">جلوكوز ضمن نطاق الهدف الخاص بك</string>
+	<string name="glucoseBetweenTarget70Mgdl">بين نطاق الهدف و 70 mg/dL</string>
+	<string name="glucoseLowBelow70Mgdl">جلوكوز منخفض (دون 70 mg/dL)</string>
+	<string name="glucoseHighAbove240Mmol">جلوكوز مرتفع (فوق 13.3 mmol/L)</string>
+	<string name="glucoseBetweenTarget240Mmol">بين نطاق الهدف و 13.3 mmol/L</string>
+	<string name="glucoseBetweenTarget70Mmol">بين نطاق الهدف و 3.9 mmol/L</string>
+	<string name="glucoseLowBelow70Mmol">جلوكوز منخفض (دون 3.9 mmol/L)</string>
+	<string name="treatmentDecisions">قرارات العلاج</string>
+	<string name="treatmentDecisionsSymbol">إذا شاهدت هذا الرمز، قم بعمل فحص جلوكوز الدم قبل اتخاذ قرارات العلاج.</string>
+	<string name="treatmentDecisionsTest">في حال عدم مطابقة قراءة الجلوكوز من المجس مع ما تشعر به، قم بعمل فحص جلوكوز الدم.</string>
+	<string name="checkBloodGlucoseTitle">افحص جلوكوز الدم</string>
+	<string name="checkBloodGlucoseMessage">قم بعمل فحص جلوكوز الدم قبل اتخاذ قرارات العلاج.</string>
+	<string name="highGlucoseCheckBloodGlucose">يمكن أن يكون الجلوكوز المرتفع خطرًا. قم بعمل فحص جلوكوز الدم قبل اتخاذ قرارات العلاج. خذ فحص الكيتون الخاص بك بعين الاعتبار.</string>
+	<string name="lowGlucoseCheckBloodGlucose">يمكن أن يكون الجلوكوز المنخفض خطرًا. قم بعمل فحص جلوكوز الدم قبل اتخاذ قرارات العلاج.</string>
+	<string name="reminder">التذكير</string>
+	<string name="safetyInformation">معلومات السلامة</string>
+	<string name="labeling">الملصقات</string>
+	<string name="userGuides">أدلة المستخدمين</string>
+	<string name="quickStartGuide">دليل البدء السريع</string>
+	<string name="quickReferenceGuide">دليل المرجع السريع</string>
+	<string name="myGlucoseExplanationUpdate">قراءة الجلوكوز الخاصة بك تظهر بعد مسح المجس الخاص بك بنجاح. ابحث عن (1) الجلوكوز الحالي، (2) سهم اتجاه الجلوكوز، (3) الرسم البياني للجلوكوز، و (4) أي رسالة جلوكوز.</string>
+	<string name="sensorPlacementInstruction">يجب أن يتم وضع المجس فقط على ظهر الساعد العلوي الخاص بك.</string>
+	<string name="sensorReadyAt">المجس جاهز عند:</string>
+	<string name="formattedTimeRemaining">(%1$s متبقي)</string>
+	<string name="sensorStartedByOtherDevice">تم بدء هذا المجس بواسطة جهاز آخر.</string>
+	<string name="sensorLatejoinExplanation">لتمكين المجس من العمل مع هذا الهاتف، يجب استخدام هذا الهاتف لمسح المجس أثناء البدء.</string>
+	<string name="androidScanInstruction1">امسك الجزء الخلفي للهاتف الخاص بك بالقرب من المجس.</string>
+	<string name="androidScanInstruction2">انتظر لحين إصدار نغمتين أو الاهتزاز لمرتين.</string>
+	<string name="bugFixesTitle">إصلاح الخلل</string>
+	<string name="bugFixesDetail">إصلاح الخلل وتحسينات الأداء</string>
+	<string name="performanceImprovements">تحسينات الأداء</string>
+	<string name="sensorChangeExplanation">بدء مجس جديد سينهي عمل المجس الذي تستخدمه في الوقت الحالي.</string>
+	<string name="useNewSensorPrompt">هل تريد البدء باستخدام المجس الجديد؟ </string>
+	<string name="earlySensorActivationPrompt">هل تريد أن يكون هذا المجس هو المجس القادم الخاص بك؟</string>
+	<string name="changeSensorPrompt">هل تريد البدء باستخدام هذا المجس؟ </string>
+	<string name="replaceExistingSensor">سيحل هذا محل آخر مجس تم البدء فيه.</string>
+	<string name="earlyActivationExistingEndsSoon">يمكنك الاستمرار في استخدام المجس الحالي الخاص بك لحين انتهائه.</string>
+	<string name="earlyActivationEndsExisting">يمكنك الاستمرار في استخدام المجس الحالي لحين يكون المجس الجديد الخاص بك جاهزًا.</string>
+	<string name="scanOtherSensor">قم بمسح المجس الآخر الخاص بك لفحص الجلوكوز.</string>
+	<string name="sensorNotWorking">المجس الخاص بك لا يعمل.</string>
+	<string name="currentSensorEndsAt">المجس الحالي ينتهي خلال:</string>
+	<string name="newSensorReadyAt">المجس الجديد يكون جاهزًا عند:</string>
+	<string name="sensorAlreadyStarted">تم بدء هذا المجس بالفعل.</string>
+	<string name="earlySensorStartupTimeRemaining">قراءة الجلوكوز غير متاحة. جرب المسح مرة أخرى خلال %1$s.</string>
+	<string name="glucoseReadingUnavailable">قراءة الجلوكوز غير متاحة. </string>
+	<string name="scanAgainIn">جرب المسح مرة أخرى خلال %1$s.</string>
+	<string name="softwareReleaseVersion">نسخة إصدار البرنامج:</string>
+	<string name="softwareFullVersion">نسخة البرنامج الكاملة:</string>
+</resources>

@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2015 Airstrip - All Rights Reserved. -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<!-- Plurals -->
+	<plurals name="insulinUnits">
+		<item quantity="one">%1$s単位</item>
+		<item quantity="other">%1$s単位</item>
+	</plurals>
+	<plurals name="days">
+		<item quantity="one">1日</item>
+		<item quantity="other">%1$d日</item>
+	</plurals>
+	<plurals name="hours">
+		<item quantity="one">1時間</item>
+		<item quantity="other">%1$d時間</item>
+	</plurals>
+	<plurals name="minutes">
+		<item quantity="one">1分</item>
+		<item quantity="other">%1$d分</item>
+	</plurals>
+	<!-- Phrase describing a time duration in seconds using secs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationSecs">
+		<item quantity="one">1秒</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g>秒</item>
+	</plurals>
+	<!-- Phrase describing a time duration in minutes using mins abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationMins">
+		<item quantity="one">1分</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g>分</item>
+	</plurals>
+	<!-- Phrase describing a time duration in hours using hrs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationHrs">
+		<item quantity="one">1 時間</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g>時間</item>
+	</plurals>
+	<plurals name="sensorExpiresInDays">
+		<item quantity="one">あと1日でセンサーを交換します。</item>
+		<item quantity="other">あと<xliff:g id="count">%d</xliff:g>日でセンサーを交換します。</item>
+	</plurals>
+	<plurals name="sensorExpiresInHours">
+		<item quantity="one">あと1時間でセンサーを交換します。</item>
+		<item quantity="other">あと<xliff:g id="count">%d</xliff:g>時間でセンサーを交換します。</item>
+	</plurals>
+	<plurals name="sensorExpiresInMins">
+		<item quantity="one">あと1分でセンサーを交換します。</item>
+		<item quantity="other">あと<xliff:g id="count">%d</xliff:g>分でセンサーを交換します。</item>
+	</plurals>
+	<plurals name="sensorReadyInMins">
+		<item quantity="one">あと1分でセンサーが測定を開始します。</item>
+		<item quantity="other">あと<xliff:g id="count">%d</xliff:g>分でセンサーが測定を開始します。</item>
+	</plurals>
+
+	<!-- common/generic words, phrases, symbols, and abbreviations -->
+	<string name="deciLiter">dL</string>
+	<string name="gramsSymbol">g</string>
+	<string name="liter">L</string>
+	<string name="mgdl">mg/dL</string>
+	<string name="milligrams">mg</string>
+	<string name="millimole">mmol</string>
+	<string name="mmol">mmol/L</string>
+	<string name="percentSign">\u0025</string>
+	<string name="servingsSymbol">カーボ数</string>
+	<string name="accept">同意する</string>
+	<string name="account">アカウント設定</string>
+	<string name="all">すべて</string>
+	<string name="back">戻る</string>
+	<string name="average">平均値</string>
+	<string name="delete">消去</string>
+	<string name="cancel">キャンセル</string>
+	<string name="durationHourMinuteConcatenate">%1$s %2$s</string>
+	<string name="comments">コメント</string>
+	<string name="done">完了</string>
+	<string name="email">Email</string>
+	<string name="friday">金曜日</string>
+	<string name="grams">グラム</string>
+	<string name="gramsOfCarbs">カーボグラム数</string>
+	<string name="units">単位</string>
+	<string name="help">ヘルプ</string>
+	<string name="home">ホーム</string>
+	<string name="insulinDose">インスリン投与量</string>
+	<string name="loading">読み込み中... </string>
+	<string name="logbook">履歴</string>
+	<string name="monday">月曜日</string>
+	<string name="next">次へ</string>
+	<string name="no">いいえ</string>
+	<string name="note">注記</string>
+	<string name="ok">OK</string>
+	<string name="password">パスワード</string>
+	<string name="reminders">アラーム</string>
+	<string name="reject">拒否する</string>
+	<string name="reports">レポート</string>
+	<string name="saturday">土曜日</string>
+	<string name="save">保存</string>
+	<string name="sending">送信中</string>
+	<string name="servings">回分</string>
+	<string name="servingsOfCarbs">回分のカーボ</string>
+	<string name="settings">アプリの設定</string>
+	<string name="share">共有する</string>
+	<string name="start">起動</string>
+	<string name="submit">送信</string>
+	<string name="sunday">日曜日</string>
+	<string name="thursday">木曜日</string>
+	<string name="tuesday">火曜日</string>
+	<string name="wednesday">水曜日</string>
+	<string name="yes">はい</string>
+	<string name="days7">7日間</string>
+	<string name="days14">14日間</string>
+	<string name="days30">30日間</string>
+	<string name="days90">90日間</string>
+	<string name="eventLog">イベント記録</string>
+	<string name="eventLogEmptyMessage">イベントなし</string>
+
+	<string name="minorFirstName">未成年者の名</string>
+	<string name="minorLastName">未成年者の姓</string>
+	<string name="parentFirstName">@string/parentGuardianFirstName</string>
+	<string name="parentLastName">@string/parentGuardianLastName</string>
+	<string name="lastName">姓</string>
+	<string name="daily_graph">日内グラフ</string>
+	<string name="daily_patterns">日内パターン</string>
+	<string name="estimated_a1c">推定A1c</string>
+	<string name="firstName">名</string>
+	<string name="noResults">(測定結果なし)</string>
+	<string name="signIn">サインイン</string>
+	<string name="signingIn">サインイン中</string>
+	<string name="scanSensor">センサーをスキャン</string>
+	<string name="time_in_target">目標範囲内であった時間</string>
+	<string name="errorMsgUnexpected">予期せぬアプリケーションエラー</string>
+	<string name="error_nfc_unsupported">NFCはサポートされていません</string>
+	<string name="error_nfc_disabled">NFCが無効です</string>
+	<string name="error_networktime_disabled">日時自動更新が無効です</string>
+	<string name="errorOtherNfcInstalled">NFCを使用する別のアプリが見つかりました。センサーをスキャンしてデータの読み取りを行う際には、スキャンの前にFreeStyle リブレLinkを起動する必要があります。NFCを使用する他のアプリがインストールされていなければ、スマートフォンがロック解除された状態で、いつでもセンサーをスキャンできます。</string>
+	<string name="loadingChartDataText">データ読み込み中</string>
+	<string name="chartErrorMessage">データ読み込みエラー</string>
+	<string name="timeZoneChangeMessage">タイムゾーンを %1$s\u00A0から\u00A0%2$sに変更&lt;b&gt;(%3$s)&lt;/b&gt;</string>
+
+	<!-- Countries -->
+	<string name="countryName_AE">アラブ首長国連邦</string>
+	<string name="countryName_AG">アンチグアバーブーダ</string>
+	<string name="countryName_AR">アルゼンチン</string>
+	<string name="countryName_AT">オーストリア</string>
+	<string name="countryName_AU">オーストラリア</string>
+	<string name="countryName_AZ">アゼルバイジャン</string>
+	<string name="countryName_BE">ベルギー</string>
+	<string name="countryName_BH">バーレーン</string>
+	<string name="countryName_BR">ブラジル</string>
+	<string name="countryName_BS">バハマ</string>
+	<string name="countryName_BW">ボツワナ</string>
+	<string name="countryName_BY">ベラルーシ</string>
+	<string name="countryName_BZ">ベリーズ</string>
+	<string name="countryName_CA">カナダ</string>
+	<string name="countryName_CH">スイス</string>
+	<string name="countryName_CL">チリ</string>
+	<string name="countryName_CN">中国</string>
+	<string name="countryName_CO">コロンビア</string>
+	<string name="countryName_CR">コスタリカ</string>
+	<string name="countryName_CY">キプロス</string>
+	<string name="countryName_DE">ドイツ</string>
+	<string name="countryName_DK">デンマーク</string>
+	<string name="countryName_DO">ドミニカ共和国</string>
+	<string name="countryName_DZ">アルジェリア</string>
+	<string name="countryName_EC">エクアドル</string>
+	<string name="countryName_ES">スペイン</string>
+	<string name="countryName_FI">フィンランド</string>
+	<string name="countryName_FR">フランス</string>
+	<string name="countryName_GB">イギリス</string>
+	<string name="countryName_GR">ギリシア</string>
+	<string name="countryName_HK">香港</string>
+	<string name="countryName_IE">アイルランド</string>
+	<string name="countryName_IL">イスラエル</string>
+	<string name="countryName_IS">アイスランド</string>
+	<string name="countryName_IT">イタリア</string>
+	<string name="countryName_JO">ヨルダン</string>
+	<string name="countryName_JP">日本</string>
+	<string name="countryName_KR">韓国</string>
+	<string name="countryName_KW">クウェート</string>
+	<string name="countryName_KZ">カザフスタン</string>
+	<string name="countryName_LB">レバノン</string>
+	<string name="countryName_LU">ルクセンブルグ</string>
+	<string name="countryName_MT">マルタ</string>
+	<string name="countryName_MX">メキシコ</string>
+	<string name="countryName_MY">マレーシア</string>
+	<string name="countryName_NL">オランダ</string>
+	<string name="countryName_NO">ノルウェイ</string>
+	<string name="countryName_NZ">ニュージーランド</string>
+	<string name="countryName_OM">オマーン</string>
+	<string name="countryName_PA">パナマ</string>
+	<string name="countryName_PE">ペルー</string>
+	<string name="countryName_PL">ポーランド</string>
+	<string name="countryName_PT">ポルトガル</string>
+	<string name="countryName_QA">カタール</string>
+	<string name="countryName_RU">ロシア</string>
+	<string name="countryName_SA">サウジアラビア</string>
+	<string name="countryName_SE">スウェーデン</string>
+	<string name="countryName_SG">シンガポール</string>
+	<string name="countryName_TH">タイ</string>
+	<string name="countryName_TR">トルコ</string>
+	<string name="countryName_TT">トリニダードトバゴ</string>
+	<string name="countryName_TW">台湾</string>
+	<string name="countryName_US">アメリカ合衆国</string>
+	<string name="countryName_UY">ウルグアイ</string>
+	<string name="countryName_VE">ベネズエラ</string>
+	<string name="countryName_ZA">南アフリカ</string>
+	<string name="countryName_ZW">ジンバブエ</string>
+
+	<!-- License Check -->
+	<string name="librelinkLicenseCheck">FreeStyle リブレLink ライセンスの確認</string>
+	<string name="licenseCheckFailed">このアプリをGoogle Playからインストールしてください。</string>
+
+	<!-- Update Version Check -->
+	<string name="librelink_upgrade_check">FreeStyle リブレLink アップグレードの確認</string>
+	<string name="checkingVersion">バージョンを確認中</string>
+	<string name="errorVersionCheckFailed">FreeStyle リブレLink のバージョンをアップデートする必要があります。最新バージョンをGoogle Playで調べてください。</string>
+
+	<!-- App Tour -->
+	<string name="checkGlucoseWithPhone">スマートフォンを使用してグルコース値を測定できます。</string>
+	<string name="instantAccess">自分のグルコース値情報をすぐに確認できます。</string>
+	<string name="actionableInsights">より充実した情報に基づく判断を下すための見識を得ることができます。</string>
+	<string name="shareGlucoseInformation">自分のグルコース詳細を医療従事者や家族と共有できます。</string>
+
+	<!-- Account Registration/Sign In -->
+	<string name="changeUserMessage">ご自分のアカウントにサインインすることにより、前のユーザーのデータがこの機器から消去されます。\n\n続けますか? </string>
+	<string name="changeDeviceMessage">OKをタップして既存のリブレViewアカウントでこのスマートフォンにサインインします。以前のスマートフォンで起動したセンサーを引き続き読み取ることができます。\n\n注記：OKをタップすれば以前のスマートフォンからサインアウトします。</string>
+	<string name="registeringDevice">このスマートフォンを登録中</string>
+	<string name="firstNameLabel">@string/firstName</string>
+	<string name="lastNameLabel">@string/lastName</string>
+	<string name="emailLabel">@string/email</string>
+	<string name="dateOfBirthLabel">@string/dateOfBirth</string>
+	<string name="dateOfBirth">生年月日</string>
+	<string name="passwordLabel">@string/password</string>
+	<string name="createPasswordLabel">@string/password</string>
+	<string name="changePassword">アカウントパスワード</string>
+	<string name="newPasswordLabel">新規パスワード</string>
+	<string name="currentPasswordLabel">現在のパスワード</string>
+	<string name="confirmPasswordLabel">パスワードを確認</string>
+	<string name="sendingResetRequest">パスワードリセットのリクエスト送信中</string>
+	<string name="adultRegistrationTitle">アカウント設定</string>
+	<string name="minorRegistrationTitle">保護者アカウント設定</string>
+	<string name="signInLinkText">@string/signIn</string>
+	<string name="account_sign_in_title">@string/signIn</string>
+	<string name="alreadyHaveAccountPromptText">既にリブレViewアカウントをお持ちですか？</string>
+	<string name="invalidPasswordErrorMessage">有効なパスワードを入力してください。パスワードは8～36文字の範囲内で、数字、アルファベットの大文字と小文字がそれぞれ少なくとも1文字含まれている必要があります。</string>
+	<string tools:ignore="PluralsCandidate" name="tooYoungErrorMessage">FreeStyle リブレLinkを使用するには、 %1$s 歳以上でなければなりません。</string>
+	<string name="tooYoungWarningMessage">生年月日はリブレViewアカウントの設定に使用され、アプリが使用に適しているかの判断には使用されません。アプリを使用する前にアプリの取扱説明書を参照してください。</string>
+	<string name="forgotPasswordText">パスワードをお忘れですか？</string>
+	<string name="createNewAccountText">新規アカウントを作成</string>
+	<string name="existing_user_login_text">このメールアドレスでのアカウントが既に存在します。メールアドレスとパスワードを入力してください。</string>
+	<string name="normal_user_login_text">リブレViewアカウント情報を入力してください。</string>
+	<string name="passwordMismatchErrorMessage">パスワードは一致する必要があります</string>
+	<string name="invalidEmailAddressErrorMessage">有効なメールアドレスを入力してください。</string>
+	<string name="passwordResetSent">パスワードのリセット方法を、登録されているメールアドレスに送信しました。</string>
+	<string name="accountContactOptIn">Abbott Diabetes Care事業部や他のAbbott製品・サービスについての詳細の送付を希望します。（これはいつでも登録解除できます。）</string>
+	<string name="passwordResetMessage">このアカウントの登録に使用したメールアドレスを入力してください。パスワードのリセット方法を、登録されているメールアドレスに送信します。</string>
+	<string name="nonExistentUserErrorMessage">入力したメールアドレスに対応するアカウントが存在しません。</string>
+	<string name="invalidLoginErrorMessage">メールアドレスまたはパスワードが正しくありません。再度入力してください。</string>
+	<string name="invalidProfileUpdatePassword">パスワードが正しくありません。再度入力してください。</string>
+	<string name="invalidProfileDOB">成人から未成年者への設定変更はできません。生年月日を修正してください。</string>
+	<string name="invalidAppKeyErrorMessage">サーバーとの通信エラーです。アプリキーが無効です。</string>
+	<string name="invalidNetworkDomainErrorMessage">サーバーとの通信エラーです。ドメインが無効です。</string>
+	<string name="invalidRegistrationErrorMessage">データが無効なため、登録を完了できませんでした。</string>
+	<string name="invalidAccountRegionErrorMessage">アプリの国の設定とアカウントが一致しません。新しいアカウントを作成してください。</string>
+	<string name="accountRegisteringProgressMessage">登録中</string>
+	<string name="accountUpdateProgressMessage">送信中</string>
+	<string name="accountAlreadyRegisteredErrorMessage">このメールアドレスはすでにリブレViewアカウントに登録されています。\n\n新規アカウントを作成する必要はありません。サインインしてください。</string>
+	<string name="professionalAccountAlreadyRegisteredErrorMessage">このメールアドレスはすでにリブレView Professionalアカウントに登録されています。このアプリを使用するには、別のメールアドレスを用いてアカウントを作成する必要があります。</string>
+	<string name="alreadyRegisteredSignInButtonText">@string/signIn</string>
+	<string name="enter_numera_data">FreeStyle リブレLinkや他のアプリを使用できるようにリブレViewアカウントを作成してください。</string>
+	<string name="minorRegistrationHeader">このユーザーは未成年者です。アプリを使用するには保護者がアカウントの作成を完了しなければなりません。</string>
+	<string name="parentGuardianFirstName">保護者の名</string>
+	<string name="parentGuardianLastName">保護者の姓</string>
+	<string name="parentGuardianEmail">@string/email</string>
+	<string name="nameAndBirthDateHeader">基本情報の入力</string>
+	<string name="nameAndBirthDateTitle">@string/createNewAccountText</string>
+	<string name="profileUpdateTopText">以下の情報を変更すると、アカウントが更新されます。</string>
+	<string name="changePasswordTopText">パスワードは8～36文字の範囲内で、数字、アルファベットの大文字と小文字がそれぞれ少なくとも1文字含まれている必要があります。</string>
+	<string name="createAccountSubmitButtonText">アカウントの作成</string>
+	<string name="authenticationFailure">サーバーでの認証に失敗しました。再度サインインしてください。</string>
+	<string name="authenticationFailureLoginButton">サインイン</string>
+	<string name="reenterPassword">パスワードを再入力してください。</string>
+	<string name="parentLoginText">保護者のログインが必要です。</string>
+	<string name="parentLoginSubText">アクセス共有のためのアカウントパスワードを入力してください。</string>
+
+	<!-- Side Navigation Drawer -->
+	<string name="navigation_drawer_username">%1$s %2$s</string>
+	<string name="navigation_drawer_daily_graph">@string/daily_graph</string>
+	<string name="navigation_drawer_estimated_a1c">@string/estimated_a1c</string>
+	<string name="navigation_drawer_average_glucose">平均グルコース値</string>
+	<string name="navigation_drawer_low_glucose">低グルコースイベント</string>
+	<string name="navigation_drawer_sensor_usage">センサーの使用頻度</string>
+	<string name="navigation_drawer_daily_patterns">@string/daily_patterns</string>
+	<string name="navigation_drawer_time_in_target">@string/time_in_target</string>
+	<string name="navigation_drawer_sharedata">@string/share</string>
+
+	<!-- Home -->
+	<string name="applyNewSensor">新しいセンサーを装着</string>
+	<string name="scanNewSensor">新しいセンサーをスキャン</string>
+	<string name="startNewSensor">新しいセンサーを装着しスキャン</string>
+	<string name="sensorReadyIn">センサー使用可能まであと%1$s</string>
+	<string name="readyToScanDetail">センサーの起動は完了しています。グルコース値を測定するには、2種の異なる音が聞こえるまで、スマホの背面をセンサーにあてて保持します。</string>
+	<string name="applyNewSensorDetail">新しいセンサーを装着します。</string>
+	<string name="scanNewSensorDetail">センサーをスキャンして起動します。</string>
+	<string name="scanNewSensorDetailLateJoin">読取装置を使用したい場合はまずスキャンの必要あり。</string>
+	<string name="scanSensorDetail">センサーをスキャンします。</string>
+	<string name="last24Hours">過去24時間</string>
+	<string name="lastScan">最後のスキャン</string>
+	<string name="sensorIsReady">スキャンできます</string>
+	<string name="sensorWarmingUp">新しいセンサーを起動中</string>
+	<string name="sensorHasEnded">センサーが終了しました</string>
+	<string name="sensorEndsIn">センサー終了まで残り：%1$s</string>
+	<string name="sensorLateJoinMessage">この機器またはこのセンサーを起動する際に使用した機器を使用して、センサーをスキャンできます。\n\n注記：機器に表示されるレポートにすべてのデータが確実に含まれるよう、最低8時間に1回はセンサーをスキャンしてください。データおよびレポートは機器間で共有されません。</string>
+
+	<!-- Stats/Reports -->
+	<!-- Used for Germany to force 24 hour time on the chart axis -->
+	<bool name="force24HourTimes">false</bool>
+
+	<!-- Used to set the string format for graph axis unless 24 hour time is used -->
+	<string name="amTimeAxisFormat">\'午前\'h</string>
+	<string name="pmTimeAxisFormat">\'午後\'h</string>
+
+	<string name="mmolPerMolFormatter" tools:ignore="PluralsCandidate">( %d mmol/mol )</string>
+	<string name="sensor_usage_total_scans">総スキャン回数</string>
+	<string name="sensor_usage_day_average">1日の平均スキャン回数</string>
+	<string name="sensor_usage_captured">取り込まれたセンサーデータの割合(%)</string>
+	<string name="days_of_data" tools:ignore="PluralsCandidate">データは %2$d 日中 %1$d 日分利用可能</string>
+	<string name="a1cDaysOfData" tools:ignore="PluralsCandidate">データは %2$d 日中 %1$d 日間に及ぶ</string>
+	<string name="no_sensor_data">センサーデータ量が不足しています</string>
+	<string name="timeintarget_glucose_range">%1$s-%2$s</string>
+	<string name="timeintarget_glucose_less_than">&lt; %s</string>
+	<string name="timeintarget_glucose_greater_than">&gt; %s</string>
+	<string name="timeintarget_percent">%</string>
+	<string name="target">目標</string>
+	<string name="timeInTargetGlucoseRangeLabel">目標範囲: %s</string>
+	<string name="average_glucose_info_title">平均グルコース値</string>
+	<string name="average_glucose_info_msg">平均グルコース値は、センサーの平均グルコース測定値に関する情報を提供します。選択された期間での平均グルコース値をグラフの下に表示します。各時間帯の平均値も併記します。黄色、オレンジ色、赤色は目標グルコース範囲外の測定値です。緑色は範囲内の測定値です。</string>
+	<string name="low_glucose_info_title">低グルコースイベント</string>
+	<string name="low_glucose_info_msg_mg">低グルコースイベントは、センサーにより測定された低グルコースイベントの件数に関する情報を提供します。低グルコースイベントは、センサーのグルコース測定値が、15分以上にわたり70mg/dLを下回った場合に記録されます。イベントの総件数をグラフの下に表示します。棒グラフは一日の異なる時間帯の低グルコースイベントを表示しています。</string>
+	<string name="low_glucose_info_msg_mmol">低グルコースイベントは、センサーにより測定された低グルコースイベントの件数に関する情報を提供します。低グルコースイベントは、センサーのグルコース測定値が、15分以上にわたり3.9 mmol/Lを下回った場合に記録されます。イベントの総件数をグラフの下に表示します。棒グラフは各時間帯の低グルコースイベントを表しています。</string>
+	<string name="a1c_info_title">推定A1c</string>
+	<string name="a1c_info_msg">推定A1cは過去90日間にわたるセンサーのグルコースデータに基づくものです。得られたデータが多いほど推定精度は高まります。あくまでも推定値であり、血液を採取して行うHbA1c検査の代わりにはなりません。\n\nA1c値は、グルコースレベルの管理状態を示す指標として、また糖尿病治療計画のモニターとしても使用できます。</string>
+	<string name="daily_info_title">日内グラフ</string>
+	<string name="daily_info_msg">日内グラフは、日ごとのセンサーのグルコース測定値のグラフです。\n\nセンサーを8時間の間に一度もスキャンしないと、グルコースグラフに間隔があく場合があります。\n\n時計マークが表示される場合は時間が変更されたことを示します。グラフ内に間隔があいたりグルコース測定値が非表示になる場合があります。</string>
+	<string name="sensor_usage_info_title">センサーの使用頻度</string>
+	<string name="sensor_usage_info_msg">センサーの使用頻度はセンサーをスキャンする頻度のデータを表しています。レポートには、一日の平均スキャン回数、およびスキャンで取得できたセンサーデータの割合、が含まれます。</string>
+	<string name="time_in_target_info_title">目標範囲内であった時間</string>
+	<string name="time_in_target_info_msg">目標範囲内であった時間は、センサーのグルコース測定値が目標グルコース範囲より上か下か、または範囲内であった時間の割合をグラフで示したものです。</string>
+	<string name="daily_average">平均値：%1$s %2$s</string>
+	<string name="total_events">イベント総数：%1$d</string>
+	<string name="daily_patterns_info_title">日内パターン</string>
+	<string name="daily_patterns_info_msg">日内パターンは、センサーのグルコース値の日内および日差変動を24時間軸のグラフで表示します。太い黒線（中央曲線）はグルコース測定値の中央値の推移を示しています。薄い青色の範囲は、センサー測定値の10～90パーセンタイル値を示しています。濃い青色の範囲は、センサー測定値の25～75パーセンタイル値を示しています。\n\n注記：日内パターンには、少なくとも5日間のグルコースデータが必要です。</string>
+
+	<!-- Scan Result -->
+	<string name="glucoseAboveRange">高グルコース\n（範囲外）</string>
+	<string name="glucoseBelowRange">低グルコース\n（範囲外）</string>
+	<string name="glucoseGoingHigh">グルコース値が上昇</string>
+	<string name="glucoseGoingLow">グルコース値が低下</string>
+	<string name="glucoseHigh">高グルコース</string>
+	<string name="glucoseInRange">グルコース値は範囲内</string>
+	<string name="glucoseLow">低グルコース</string>
+	<string name="highGlucoseIsDangerous">高グルコースは危険を伴うことがあります。グルコース値を再度測定し、医療従事者が推奨する処置を取ってください。ケトンを測定することを検討してください。</string>
+	<string name="lowGlucoseIsDangerous">低グルコースは危険を伴うことがあります。グルコース値を再度測定し、医療従事者が推奨する処置を取ってください。</string>
+	<string name="yourGlucose">マイグルコース</string>
+	<string name="vrcFailedTitle">結果表示エラー</string>
+	<string name="vrcFailedText">結果: %s</string>
+	<string name="error_sensor_incompatible_title">互換性のないセンサー</string>
+	<string name="error_sensor_incompatible_msg">このセンサーは、FreeStyle リブレLinkのこのバージョンでは使用できません。</string>
+	<string name="error_sensor_terminated_title">センサーを交換</string>
+	<string name="error_sensor_terminated_msg">センサーが機能していません。センサーを外して新しいセンサーを起動してください。</string>
+	<string name="error_sensor_removed_title">センサーを交換</string>
+	<string name="error_sensor_removed_msg">センサーが機能していません。センサーを外して新しいセンサーを起動してください。</string>
+	<string name="error_sensor_expired_title">センサー終了</string>
+	<string name="error_sensor_expired_msg">新しいセンサーを起動してグルコース値を測定します。</string>
+	<string name="error_sensor_inwarmup_title">センサーを起動中</string>
+	<string name="error_sensor_inwarmup_msg">このセンサーを起動していますが、まだ使用の準備は完了していません。</string>
+	<string name="error_sensor_corrupt_title">スキャンエラー</string>
+	<string name="error_sensor_corrupt_msg">スマートフォンでセンサーをスキャンできませんでした。センサーを再度スキャンしてください。</string>
+	<string name="error_sensor_transmission_title">スキャンエラー</string>
+	<string name="error_sensor_transmission_msg">スマートフォンでセンサーをスキャンできませんでした。センサーを再度スキャンしてください。スマートフォンの背面をセンサーに近づけて保持します。最初のバイブ、ビープ音があっても、引き続き2つ目のバイブ、ビープ音が終わるまでスマートフォンをそのまま保持してください。</string>
+	<string name="error_sensor_already_started_title">既に使用中のセンサー</string>
+	<string name="error_sensor_already_started_msg">このセンサーは別の機器によって起動されており、使用できません。</string>
+	<string name="error_sensor_already_started_msg_llj">このセンサーは別の機器によって起動されています。センサーをこのスマートフォンと連動させるには、センサー起動後1時間以内にこのスマートフォンを使用してセンサーをスキャンする必要があります。</string>
+	<string name="error_sensor_temporary_problem_title">センサーエラー</string>
+	<string name="error_sensor_temporary_problem_msg">グルコース値測定は利用不可です。10分後に再度スキャンをしてください。</string>
+	<string name="error_sensor_too_hot_title">センサーが熱すぎます</string>
+	<string name="error_sensor_too_hot_msg">センサーの温度が高過ぎるためグルコース測定値を読み取れません。数分後に再度スキャンしてください。</string>
+	<string name="error_sensor_too_cold_title">センサーが冷たすぎます</string>
+	<string name="error_sensor_too_cold_msg">センサーの温度が低過ぎるためグルコース測定値を読み取れません。数分後に再度スキャンしてください。</string>
+	<string name="error_sensor_insertion_failure_title">センサーを点検</string>
+	<string name="error_sensor_insertion_failure_msg">センサーを点検してください。センサーが皮膚から剥がれている場合は、外して新しいセンサーを起動します。センサーが正しく装着されている場合は、センサーを再起動してみてください。</string>
+	<string name="error_sensor_not_active_title">新しいセンサーが見つかりました</string>
+	<string name="error_sensor_not_active_msg">新しいセンサーを起動すると、現在使用中のセンサーの読取りができなくなります。\n\n新しいセンサーをすぐに起動しますか？</string>
+
+	<!-- Add/Edit Note -->
+	<string name="addNote">メモの追加</string>
+	<string name="editNote">メモの修正</string>
+	<string name="highIntensity">高</string>
+	<string name="mediumIntensity">中</string>
+	<string name="lowIntensity">低</string>
+	<string name="noExerciseTypeChosen">運動強度</string>
+	<string name="food">食事</string>
+	<string name="exercise">運動</string>
+	<string name="longActingInsulin">持効型インスリン</string>
+	<string name="rapidActingInsulin">超速効型インスリン</string>
+	<string name="meal">食事</string>
+	<string name="breakfast">朝食</string>
+	<string name="lunch">昼食</string>
+	<string name="snack">スナック</string>
+	<string name="dinner">夕食</string>
+	<string name="carbsGramsError">値は%1$s ～ %2$sの範囲内の整数としてください</string>
+	<string name="carbsServingsError">値は%1$s ～ %2$sの範囲内で、0.5の倍数としてください</string>
+	<string name="insulinDoseError">値は0.1 ～ %1$dの範囲内で、0.1の倍数としてください</string>
+
+	<!-- Manual BG -->
+	<string name="manualBgTitle">血糖測定の結果</string>
+	<string name="manualBgExplanation">血糖測定電極による測定値を入力してください。</string>
+	<string name="manualBgError">値は%1$s ～ %2$sの範囲内の整数としてください</string>
+
+	<!-- Logbook -->
+	<string name="logbookDetail">履歴詳細</string>
+	<string name="logbookListEmpty">この日付に対する入力項目はありません。</string>
+	<string name="logbookDetailCarbFormatDoseAndUnit">" (&lt;b&gt;%1$s%2$s&lt;/b&gt;)"</string>
+	<string name="logbookDetailInsulinFormatTypeAndDose">%1$s (&lt;b&gt;%2$s&lt;/b&gt;)</string>
+	<string name="logbookDetailSeparator">", "</string>
+	<string name="noteBalloonSeparator">&lt;br/&gt;</string>
+	<string name="logbookDetailExerciseType">@string/exercise</string>
+	<string name="logbookDetailExerciseFormatType">運動：　%s</string>
+	<string name="logbookDetailExerciseFormatDuration">" (&lt;b&gt;%s&lt;/b&gt;)"</string>
+
+	<!-- Reminders -->
+	<string name="alarms">アラーム</string>
+	<string name="repeating">繰り返し</string>
+	<string name="timers">タイマー</string>
+	<string name="addReminder">アラームの追加</string>
+	<string name="alarmName">アラーム名</string>
+	<string name="checkGlucose">グルコース値を測定</string>
+	<string name="myReminder">アラーム設定</string>
+	<string name="nextReminderPrompt">次のアラーム：\u0020</string>
+	<string name="nextAlarmPrompt">次のアラーム：%1$s、%2$s</string>
+	<string name="noActiveReminders">有効なアラームなし。</string>
+	<string name="noActiveRemindersAutoScanSensorEnabled">有効なアラームなし。センサースキャン用のタイマーは、スキャンするたびにリセットされます。</string>
+	<string name="remindMeToCheckAgain">グルコース値測定を知らせるアラームを設定：</string>
+	<string name="setReminder">設定</string>
+
+	<!-- Send Reports -->
+	<string name="sendChooserTitle">送信</string>
+
+	<!-- Settings -->
+	<string name="unitOfMeasurementTitle">測定値の単位</string>
+	<string name="unitOfMeasurementTopText">グルコース値の単位を選択します。すべてのグルコース値データはこれらの単位を使用して表示されます。</string>
+	<string name="unitOfMeasurementTopTextForSetup">グルコース測定用の単位を選択します。すべてのグルコース値データはこれらの単位を使用して表示されます。この設定は後で変更することはできません。</string>
+	<string name="unitOfMeasureWarning">適切なグルコース測定値の単位を選ぶことが非常に重要です。不適切な単位ではグルコース値の誤った解釈につながります。どの測定単位を使用すべきか分からない場合には、かかりつけの医療従事者にお尋ねください。</string>
+	<string name="unitOfMeasurementFixedTopText">グルコース値の単位は、お住まいの国に基づいて自動的に設定されます。</string>
+	<string name="unitOfMeasurementFixedCountryText">お住まいの国：</string>
+	<string name="unitOfMeasurementFixedText">あなたの測定単位</string>
+	<string name="targetGlucoseRangeTitle">目標グルコース範囲</string>
+	<string name="targetGlucoseRangeTopText">目標グルコース範囲はさまざまなグラフに表示されます。ご不明な場合は、かかりつけの医療従事者にお問い合わせください。</string>
+	<string name="targetGlucoseRangeTopTextForSetup">目標グルコース範囲はさまざまなグラフに表示され、「設定」から変更できます。ご不明な場合は、かかりつけの医療従事者にお問い合わせください。</string>
+	<string name="carbohydrateUnitsTitle">炭水化物量の単位</string>
+	<string name="carbohydrateUnitsTopText">炭水化物量は、グラムまたはサービングのいずれの単位でも入力可能です。お好みの炭水化物量の単位を選択してください。</string>
+	<string name="carbohydrateUnitServingSizeMessage">お好みの回分を選択するか、分からない場合にはかかりつけの医療従事者にお問い合せください。</string>
+	<string name="carbohydrateUnitsTopTextForSetup">@string/carbohydrateUnitsTopText</string>
+	<string name="scanSoundsTitle">スキャン時の音</string>
+	<string name="scanSoundsOsDefault">音とバイブレーション</string>
+	<string name="scanSoundsVibeOnly">バイブレーションのみ</string>
+	<string name="scanSoundsTopText">センサーをスキャンするとバイブでお知らせします。バイブに加えてビープ音を出すことも設定できます。</string>
+	<string name="scanSoundsTopTextForSetup">@string/scanSoundsTopText</string>
+	<string name="scanSoundsNote">注意事項：\nスキャン時の音はスマートフォンの音量設定が適用されます。スマートフォンの音量がオフの場合、スキャン時のビープ音は聞こえません。</string>
+	<string name="textToSpeechTitle">音声による測定値の読み上げ</string>
+	<string name="textToSpeechOn">オン</string>
+	<string name="textToSpeechOff">オフ</string>
+	<string name="textToSpeechTopText">この機能をオンにすると、グルコース測定値を音声で読み上げます。</string>
+	<string name="textToSpeechNote">注意事項：\n測定値の読み上げはスマートフォンの音量設定が適用されます。スマートフォンの音量がオフの場合、グルコース測定値の読み上げ音声は聞こえません。</string>
+	<string name="countryOfOriginTitle">お住まいの国</string>
+	<string name="countryOfOriginTopText">お住まいの国でアプリの設定で使用され、あなたのデータが正しく保存されるよう設定が行われます。</string>
+	<string name="countryOfOriginTopTextForSetup">@string/countryOfOriginTopText</string>
+	<string name="countryOfOriginExplanation">これでよければ、「次へ」をタップします。\n\nこれが正しくなければ、FreeStyle リブレLinkは、お住まいの国のバージョンをインストールする必要があります。質問があればカスタマーサービスまでお問い合わせください。</string>
+	<string name="targetGlucoseRangeUnitText">値</string>
+	<string name="servingsWithGramsEquivalent" tools:ignore="PluralsCandidate">サービング（1回分＝%.1fグラム）</string>
+	<string name="countryLabel">お住まいの国</string>
+	<string name="countryLabelForSetup">お住まいの国</string>
+	<string name="defaultNetworkErrorMessage">サーバーとの通信エラーです。</string>
+	<string name="serverNotFoundErrorMessage">サーバーとの通信エラーです。サーバーが見つかりません。</string>
+	<string name="pageNotFoundErrorMessage">サーバーとの通信エラーです。サーバー上にコンテンツがありません。</string>
+	<string name="networkingErrorMessage">サーバーとの通信中にネットワークエラーが発生しました。</string>
+	<string name="internalServerErrorMessage">サーバーとの通信エラーです。内部サーバーエラーが発生しました。</string>
+	<string name="requestTimeoutErrorMessage">サーバーとの通信エラーです。リクエストがタイムアウトしました。</string>
+	<string name="serviceUnavailableErrorMessage">サーバーとの通信エラーです。サービスは利用不可です。</string>
+	<string name="submitButtonText">@string/submit</string>
+	<string name="mgPerDeciliterRadioText"><b>mg/dL</b>(例：100 mg/dL)</string>
+	<string name="mmolPerLiterRadioText"><b>mmol/L</b> (例：5.6 mmol/L)</string>
+	<string name="target_range_separator">-</string>
+	<string name="glucoseRangeFormat">%1$s - %2$s %3$s</string>
+	<string name="settingsUnitOfMeasureConfirmationMessage">次の測定単位を選択することを確認してください：</string>
+	<string name="networkNotConnectedDefault">お使いのスマートフォンは現在インターネットに接続されていません。この操作は、インターネットに接続するまでは完了できません。</string>
+	<string name="networkNotConnectedSetup">お使いのスマートフォンは現在インターネットに接続されていません。この操作は、インターネットに接続するまでは完了できません。</string>
+	<string name="networkNotConnectedProfileUpdate">お使いのスマートフォンは現在インターネットに接続されていません。アカウントは、インターネットに接続するまでは変更できません。</string>
+	<string name="privacyNoticeAcceptanceStatement">私はプライバシーに関する方針を読み、その内容に同意します。</string>
+	<string name="privacyNoticeTitle">プライバシーに関する方針</string>
+	<string name="termsOfUseAcceptanceStatement">私は利用規約を読み、その内容に同意します。</string>
+	<string name="termsOfUseTitle">利用規約</string>
+	<string name="nfcUnsupported">FreeStyle リブレLinkでセンサーのスキャンを行なうには、お使いのスマートフォンがNFCに対応している必要があります。</string>
+	<string name="turnOnNfcPrompt">FreeStyle リブレLinkでセンサーのスキャンを行なうには、お使いのスマートフォンでNFCが有効化されている必要があります。有効にしますか？</string>
+	<string name="enableNetworkTime">FreeStyle リブレLinkでセンサーのスキャンを行なうには、お使いのスマートフォンで日付・時刻の自動更新が有効になっている必要があります。有効にしますか？</string>
+	<string name="getStartedNow">今すぐ始めましょう</string>
+
+	<!-- My Glucose Explanation -->
+	<string name="myGlucoseExplanationTitle">マイグルコース</string>
+	<string name="myGlucoseExplanationTopText">センサーのスキャン後、この画面が表示されます。</string>
+	<string name="myGlucoseExplanationResultCallouts">マイグルコース画面には、(1) 現在のグルコース値、 (2) グルコース値の傾向を示す矢印、および (3) グルコースグラフが表示されます。</string>
+
+	<!-- Trend Arrow Explanation -->
+	<string name="trendExplanationTitle">グルコース値の傾向を示す矢印</string>
+	<string name="trendExplanationTopText">センサーをスキャンすると矢印が最近のグルコース値の傾向を示します。</string>
+	<string name="trendExplanationRisingQuickly">急速に上昇</string>
+	<string name="trendExplanationRising">上昇</string>
+	<string name="trendExplanationStable">ゆっくりと変化</string>
+	<string name="trendExplanationFalling">低下</string>
+	<string name="trendExplanationFallingQuickly">急速に低下</string>
+
+	<!-- Help -->
+	<string name="helpItemTitleApplySensor">センサーの装着手順</string>
+	<string name="helpItemTitleScanSensor">センサーのスキャン手順</string>
+	<string name="helpItemTitleEventLog">@string/eventLog</string>
+	<string name="helpItemTitleUserGuide">取扱説明書</string>
+
+	<!-- OneStep Log Upload -->
+	<string name="logUploadTitle">トラブルシューティング</string>
+	<string name="logUploadOptInDescription">トラブルシューティング・データはカスタマーサービスの質向上に役立てさせていただきます。</string>
+	<string name="logUploadOptInText1">トラブルシューティング・データの内容は、同意いただいたプライバシーに関する方針に記載されています。</string>
+	<string name="logUploadViewPrivacyButtonLabel">プライバシーに関する方針を見る</string>
+	<string name="logUploadOptInText2">トラブルシューティング・データの送信に同意しますか? </string>
+	<string name="logUploadDecline">同意しない</string>
+	<string name="logUploadAccept">同意</string>
+	<string name="logUploadDescription">カスタマーサービスから提供された照会番号と確認コードを入力してください。</string>
+	<string name="logUploadCaseNumberLabel">照会番号</string>
+	<string name="logUploadAccessCodeLabel">確認コード</string>
+	<string name="logUploadSendButtonLabel">送信</string>
+	<string name="logUploadErrorTypo">照会番号または確認コードが間違っています。</string>
+	<string name="logUploadErrorUploadFailedTitle">トラブルシューティング・データの送信エラー</string>
+	<string name="logUploadErrorUploadFailedText">タップして再試行</string>
+
+	<!-- Apply Sensor Tour -->
+	<string name="applySensorTitle">センサーの装着手順</string>
+	<string name="applySensorTitleStep1">ステップ1</string>
+	<string name="applySensorTextStep1">センサーは上腕の後ろ側に装着します。</string>
+	<string name="applySensorSubTextStep1">注記：傷跡、ほくろ、皮膚線条、しこり、インスリン注入部位を避けてください。皮膚の炎症を避けるために、前回とは別の装着部位を選んでください。</string>
+	<string name="applySensorTitleStep2">ステップ2</string>
+	<string name="applySensorTextStep2">アルコール綿で装着部位を拭きます。先に進む前に部位が乾くのを待ちます。</string>
+	<string name="applySensorTitleStep3">ステップ3</string>
+	<string name="applySensorTextStep3">センサーパックのフタを完全はがして開けます。</string>
+	<string name="applySensorTitleStep4">ステップ4</string>
+	<string name="applySensorTextStep4">センサーアプリケーターのキャップを回して外します。</string>
+	<string name="applySensorTitleStep5">ステップ5</string>
+	<string name="applySensorTextStep5">平らな場所にセンサーパックを置き、センサーアプリケーターの黒のマークをセンサーパックの黒のマークに合わせます。センサーアプリケーターを上から強く、止まるところまで押し下げてください。</string>
+	<string name="applySensorTitleStep6">ステップ6</string>
+	<string name="applySensorTextStep6">センサーアプリケーターをセンサーパックから持ち上げます。</string>
+	<string name="applySensorTitleStep7">ステップ7</string>
+	<string name="applySensorTextStep7">これでセンサーを装着する準備が整いました。センサーアプリケーターの内部に触れたり、センサーパックに戻したりしないでください。</string>
+	<string name="applySensorTitleStep8">ステップ8</string>
+	<string name="applySensorTextStep8">センサーアプリケーターを装着部位にあて、センサーが身体に装着されるまでしっかりと押し込みます。</string>
+	<string name="applySensorTitleStep9">ステップ9</string>
+	<string name="applySensorTextStep9">センサーアプリケーターをそっと身体から引き離します。</string>
+	<string name="applySensorTitleStep10">ステップ10</string>
+	<string name="applySensorTextStep10">センサーが固定されていることを確認してください。使用済みのセンサーアプリケーターとセンサーパックは地域の規制に従って廃棄してください。</string>
+
+	<!-- Scan Sensor Tour -->
+	<string name="scanSensorTitle">センサーのスキャン手順</string>
+	<string name="scanSensorTitleStep1">ステップ1</string>
+	<string name="scanSensorTextStep1"><![CDATA[スマートフォンの <b>背面</b> をセンサーに <b>かざして</b> 保持します。]]></string>
+	<string name="scanSensorTitleStep2">ステップ2</string>
+	<string name="scanSensorTextStep2">音が有効化されている場合、センサーのスキャン中にバイブと共にスマートフォンから一連のビープ音が発せられます。最初のバイブ、ビープ音があっても、引き続き2つ目のバイブ、ビープ音が終わるまでスマートフォンをそのまま保持してください。</string>
+	<string name="scanSensorTitleStep3">ステップ3</string>
+	<string name="scanSensorTextStep3">スマートフォンをセンサーにかざしたまま、センサーがスキャンされるよう位置を調整する必要がある場合もあります。</string>
+
+	<!-- About -->
+	<string name="about">このアプリについて</string>
+	<string name="appNameLabel">製品名:</string>
+	<string name="appNameValue">FreeStyle リブレLink</string>
+	<string name="appPartOfSystem">FreeStyleリブレフラッシュグルコースモニタリングシステムの一部</string>
+	<string name="last3sensors">最後に使用された3つのセンサー:</string>
+	<string name="sensorStatus">&#160;&#160;&#160;&#160;状況: %1$s</string>
+	<string name="udi">UDI:</string>
+	<string name="registrationNumber">登録番号:</string>
+	<string name="productStandardNumber">製品規格番号:</string>
+	<string name="model">スマートフォンの機種:</string>
+	<string name="appCountryLabel">国:</string>
+	<string name="supportWebsiteLabel">カスタマーサービス:</string>
+	<string name="supportWebsiteValue">http://www.freestylelibre.com</string>
+	<string name="consultInstructionsForUse">使用説明書を参照</string>
+	<string name="productOfUsa">米国製</string>
+	<string name="patentWebsiteLabel">特許サイト:</string>
+	<string name="patentWebsiteValue">https://www.abbott.com/patents</string>
+	<string name="trademarkStatement">FreeStyle, Libre and related brand marks are trademarks of Abbott Diabetes Care Inc. in various jurisdictions. </string>
+	<string name="copyrightStatement">©2018 Abbott</string>
+	<string name="osVersion">Android OSバージョン:</string>
+	<string name="sensorNotPresent">起動しているセンサーなし</string>
+	<string name="softwareVersion">ソフトウェアのバージョン:</string>
+
+	<!-- Notifications -->
+	<string name="alarmExpired">アラーム切れ</string>
+	<string name="timerExpired">タイマー切れ</string>
+
+	<string name="sensorActivated">センサー起動済み</string>
+	<string name="sensorReady">センサー準備完了</string>
+	<string name="sensorReadyContent">センサーをスキャンできます</string>
+	<string name="sensorExpired">センサー終了</string>
+	<string name="sensorExpiredContent">新しいセンサーを起動してグルコース値を測定します</string>
+	<string name="sensorEndingSoon">センサーがまもなく期限切れ</string>
+
+	<!-- Data Upload -->
+	<string name="uploadFailedTitle">アップロード失敗</string>
+	<string name="uploadFailedNoConnectivityContent">接続していません</string>
+	<string name="uploadFailedInvalidToken">認証に失敗しました。クリックしてサインインします。</string>
+	<string name="uploadFailedOther">エラーが発生しました。クリックして再試行</string>
+	<string name="uploadingDataTitle">FreeStyle リブレLink データをアップロード中</string>
+	<string name="uploadingDataContent">データ送信中</string>
+	<string name="serving_size_in_grams">1回分＝%.1fグラム</string>
+	<string name="acceptLanguageHeader">ja-JP, ja;q=0.8</string>
+	<string name="appLocale">ja-JP</string>
+
+	<string name="reportHeaderDayOnlyFormat">d</string>
+	<string name="reportHeaderFullDateFormat">yyyy \'年\' MMMM d \'日\' </string>
+	<string name="reportHeaderShortMonthFormat">MMM d \'日\' </string>
+	<string name="reportHeaderShortMonthFullFormat">yyyy \'年\' MMM d \'日\' </string>
+	<string name="reportHeaderDateRangeFormat">%1$s - %2$s</string>
+	<string name="reportShareSubjectFormat">%1$s: %2$s</string>
+
+	<string name="nonActionableExplanationTitle">グルコース測定値の確認</string>
+	<string name="nonActionableExplanationMessage">治療判断をする前に電極を使ってグルコース測定値を確認します。</string>
+
+	<!-- TTS Result -->
+	<string name="spokenLo">範囲外および低値</string>
+	<string name="spokenHi">範囲外および高値</string>
+	<string name="spokenMgDl">ミリグラム・パー・デシリットル</string>
+	<string name="spokenMmolL">ミリモル・パー・リットル</string>
+	<string name="resultWithTrendNotDetermined">%1$s%2$s傾向不明</string>
+	<string name="resultWithTrendFallingQuickly">%1$s%2$sかつ急速に低下</string>
+	<string name="resultWithTrendFalling">%1$s%2$sかつ低下</string>
+	<string name="resultWithTrendStable">%1$s%2$sかつゆっくりと変化</string>
+	<string name="resultWithTrendRising">%1$s%2$sかつ上昇</string>
+	<string name="resultWithTrendRisingQuickly">%1$s%2$sかつ急速に上昇</string>
+
+	<!-- Download Progress -->
+	<string name="progressDownloadingConfiguration">アプリの設定をダウンロード中</string>
+	<string name="progressDownloadingUserGuide">取扱説明書をダウンロード中</string>
+	<string name="insufficientSpaceMessage">スマートフォンの空き容量が不十分です。</string>
+
+
+	<!-- New strings added 25SEPT2017 -->
+
+	<string name="modalLookingForSensor">センサーにiPhoneを近づけます。</string>
+	<string name="modalSensorFound">スキャンが完了しました</string>
+	<string name="settingsMenuTitle">設定</string>
+	<string name="genericOSVersion">OSバージョン:</string>
+	<string name="editTime">時刻の修正</string>
+	<string name="detail">詳細</string>
+	<string name="helpItemTitleGlucoseHelp">グルコース測定値</string>
+	<string name="glucoseHelp">グルコース測定値</string>
+
+	<!-- Abbreviated time passed -->
+	<string name="mins_passed">%d分前</string>
+	<string name="hours_passed">%d時間前</string>
+
+	<string name="iosNotificationsDisabled">アラームを受け取るにはiOS設定で通知が有効になっている必要があります。</string>
+	<string name="glucoseWarningReminderPrompt">グルコース確認のアラームを設定しますか？</string>
+	<string name="NFCReaderUsageDescription">FreeStyle リブレLinkはNFCを使用してFreeStyleリブレセンサーをスキャンします。</string>
+	<string name="NSPhotoLibraryAddUsageDescription">FreeStyle リブレLinkはレポートを保存するのにメディアライブラリにアクセスする必要があります。写真はあなたの許可なしに共有されません。</string>
+	<string name="deleteNote">メモの消去</string>
+	<string name="deleteNoteConfirmation">このメモを消去しますか？</string>
+
+	<!-- New strings with existing Android Counterparts -->
+
+	<string name="iosScanSensorTextStep1">センサーをスキャンする前にスキャンボタンをタップします。</string>
+	<string name="iosScanSensorTextStep2">センサーにiPhoneの上部を近づけます。</string>
+	<string name="iosScanSensorTextStep3">センサーをスキャンした後、iPhoneがバイブレーションし、音が鳴ります（音が有効になっている場合）。</string>
+	<string name="iosErrorVersionCheckFailed">FreeStyle リブレLinkのこのバージョンはアップデートする必要があります。最新のバージョンをApp Storeで調べてください。</string>
+	<string name="iosReadyToScanDetail">センサーは使用準備が完了しています。</string>
+	<string name="iosDefaultSensorErrorMsg">正しくスキャンできませんでした。スキャンボタンをタップし、再度スキャンしてください。</string>
+	<string name="iosEnableNetworkTimeTitle">日付と時刻の更新</string>
+	<string name="iosEnableNetworkTime">FreeStyle リブレLinkを使用するためには、日付と時刻の設定を自動的に更新する必要があります。設定&gt;一般&gt;日付と時刻の順に選択し、自動設定を有効にします。</string>
+
+	<!-- New string added per Ashwin Kumar's request 2017-08-30-->
+	<string name="iosCheckGlucoseWithPhone">iPhoneを使用してグルコース値を測定できます。</string>
+	<string name="retry">再試行</string>
+
+	<!-- New strings for US changes 2017-10-31 -->
+	<string name="sensorUserPrompt">センサーを装着する個人の情報を入力してください。</string>
+	<string name="welcome">ようこそ！</string>
+	<string name="welcomeDetail">時間をかけて、このアプリでグルコース測定値を理解する方法を学習してください。</string>
+	<string name="backgroundGlucoseColorsTitle">グルコース値の背景色</string>
+	<string name="backgroundGlucoseColorsDetail">現在のグルコース値によって、その背景にどの色が表示されるかが決定されます。</string>
+	<string name="glucoseHighAbove240Mgdl">高グルコース（240 mg/dLより高い）</string>
+	<string name="glucoseBetweenTarget240Mgdl">目標範囲と240 mg/dLの間</string>
+	<string name="glucoseTargetRange">グルコース値は目標範囲内にある</string>
+	<string name="glucoseBetweenTarget70Mgdl">目標範囲と70 mg/dLの間</string>
+	<string name="glucoseLowBelow70Mgdl">低グルコース（70 mg/dLより低い）</string>
+	<string name="glucoseHighAbove240Mmol">高グルコース（13.3 mmol/Lより高い）</string>
+	<string name="glucoseBetweenTarget240Mmol">目標範囲と13.3 mmol/Lの間</string>
+	<string name="glucoseBetweenTarget70Mmol">目標範囲と3.9 mmol/Lの間</string>
+	<string name="glucoseLowBelow70Mmol">低グルコース（3.9 mmol/Lより低い）</string>
+	<string name="treatmentDecisions">治療判断</string>
+	<string name="treatmentDecisionsSymbol">この記号が表示されたら、治療判断をする前に血糖測定を行ってください。</string>
+	<string name="treatmentDecisionsTest">センサーのグルコース測定値が症状と一致しない場合は、血糖測定を実施してください。</string>
+	<string name="checkBloodGlucoseTitle">血糖値を測定する</string>
+	<string name="checkBloodGlucoseMessage">治療判断をする前に血糖測定を行ってください。</string>
+	<string name="highGlucoseCheckBloodGlucose">高グルコースは危険を伴うことがあります。治療判断をする前に血糖測定を行ってください。ケトンを測定することを検討してください。</string>
+	<string name="lowGlucoseCheckBloodGlucose">低グルコースは危険を伴うことがあります。治療判断をする前に血糖測定を行ってください。</string>
+	<string name="reminder">アラーム</string>
+	<string name="safetyInformation">安全性情報</string>
+	<string name="labeling">ラベリング</string>
+	<string name="userGuides">ユーザーガイド</string>
+	<string name="quickStartGuide">クイックスタートガイド</string>
+	<string name="quickReferenceGuide">クイックリファレンスガイド</string>
+	<string name="myGlucoseExplanationUpdate">センサーが正しくスキャンされるとグルコース測定値が表示されます。(1) 現在のグルコース、 (2) グルコース値の傾向を示す矢印、 (3) グルコースグラフ、および（4）他のグルコースメッセージを探してください。</string>
+	<string name="sensorPlacementInstruction">センサーは上腕の後ろ側のみに装着する必要があります。</string>
+	<string name="sensorReadyAt">センサー準備完了：</string>
+	<string name="formattedTimeRemaining">（残り%1$s）</string>
+	<string name="sensorStartedByOtherDevice">このセンサーは別のデバイスによって起動されています。</string>
+	<string name="sensorLatejoinExplanation">センサーをこのスマートフォンと連動させるには、起動中にこのスマートフォンを使用してセンサーをスキャンしなければなりません。</string>
+	<string name="androidScanInstruction1">スマートフォンの背面をセンサーに近づけて保持します。</string>
+	<string name="androidScanInstruction2">2回の音またはバイブが発するまで待ちます。</string>
+	<string name="bugFixesTitle">バグの修正</string>
+	<string name="bugFixesDetail">バグの修正および性能の改善</string>
+	<string name="performanceImprovements">性能の改善</string>
+	<string name="sensorChangeExplanation">新しいセンサーを起動すると、現在使用中のセンサーは終了します。</string>
+	<string name="useNewSensorPrompt">新しいセンサーの使用を開始しますか？</string>
+	<string name="earlySensorActivationPrompt">これを次のセンサーにしますか？</string>
+	<string name="changeSensorPrompt">このセンサーを開始しますか？</string>
+	<string name="replaceExistingSensor">このセンサーが、最も最近に起動したセンサーに取って代わります。</string>
+	<string name="earlyActivationExistingEndsSoon">終了するまで現在のセンサーの使用を続けることができます。</string>
+	<string name="earlyActivationEndsExisting">新しいセンサーが準備完了になるまで現在のセンサーの使用を続けることができます。</string>
+	<string name="scanOtherSensor">他のセンサーをスキャンしてグルコース値を測定してください。</string>
+	<string name="sensorNotWorking">センサーが機能していません。</string>
+	<string name="currentSensorEndsAt">現在のセンサー終了までの残り：</string>
+	<string name="newSensorReadyAt">新しいセンサーが準備完了になる時刻：</string>
+	<string name="sensorAlreadyStarted">このセンサーはすでに起動しています。</string>
+	<string name="earlySensorStartupTimeRemaining">グルコース値を測定できません。%1$s後に再度スキャンしてみてください。</string>
+	<string name="glucoseReadingUnavailable">グルコース値を測定できません。</string>
+	<string name="scanAgainIn">%1$s後に再度スキャンしてみてください。</string>
+	<string name="softwareReleaseVersion">ソフトウェアリリースバージョン：</string>
+	<string name="softwareFullVersion">ソフトウェアのフルバージョン:：</string>
+</resources>

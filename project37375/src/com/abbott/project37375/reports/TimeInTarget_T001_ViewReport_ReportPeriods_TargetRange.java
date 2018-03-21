@@ -329,7 +329,7 @@ ReportsHelper {
 		 * @Dependancy Script cannot proceed if this step fails
 		 * 
 		 **/
-		navigateToScreen(client, "Settings");
+		clickOnSettingsMenu(client, "App Settings");
 		if (getUnits().equalsIgnoreCase("mg/dL")) {
 			verifyandsetTGfromSettings(client, 100, 140);
 		} else if (getUnits().equalsIgnoreCase("mmol/L")) {
@@ -406,7 +406,7 @@ ReportsHelper {
 		 * @Dependancy Script cannot proceed if this step fails
 		 * 
 		 **/
-		navigateToScreen(client, "Settings");
+		clickOnSettingsMenu(client, "App Settings");
 		if (getUnits().equalsIgnoreCase("mg/dL")) {
 			verifyandsetTGfromSettings(client, 70, 180);
 		} else if (getUnits().equalsIgnoreCase("mmol/L")) {

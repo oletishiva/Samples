@@ -448,6 +448,7 @@ public class ReportsHelper extends BaseHelper {
 	public void verifyReportXAxisWith3HoursPeriodFor12Hours(
 			Client client,String report) {
 		client.waitForElement("NATIVE", "text="+report, 0, 1000);
+		//TODO values not executed for daily graph
 		client.verifyElementFound("TEXT", "12AM", 0);
 		client.verifyElementFound("TEXT", "3AM", 0);
 		client.verifyElementFound("TEXT", "6AM", 0);
@@ -475,6 +476,7 @@ public class ReportsHelper extends BaseHelper {
 	public void verifyReportXAxisWith3HoursPeriodFor24Hours(
 			Client client,String report) {
 		client.waitForElement("NATIVE", "text="+report, 0, 1000);
+		//TODO values not executed for daily graph
 		client.verifyElementFound("TEXT", "00:00", 1);
 		client.verifyElementFound("TEXT", "03:00", 0);
 		client.verifyElementFound("TEXT", "06:00", 0);
@@ -743,6 +745,27 @@ public class ReportsHelper extends BaseHelper {
 		}
 	}
 
+
+	/**
+	 * Author:Devi
+	 * 
+	 * Verify DailyGraph is not displayed for period beyond 90 days
+	 *  
+	 * @param client
+	 *            Integrate SeeTestAutomation
+	 * 
+	 */
+
+	public void verifyDailyGraphForPeriodBeyond90days(Client client) {
+
+		if (client.waitForElement("NATIVE", "xpath=//*[@id='date_header']", 0,
+				1000)) {
+			client.verifyElementNotFound("NATIVE", "xpath=//*[@text='Daily Graph'and @id='text1' and @hidden='false']", 0);
+
+		}
+		
+	}
+	
 	/**
 	 * Author:Devi
 	 * 
@@ -763,8 +786,10 @@ public class ReportsHelper extends BaseHelper {
 
 				for (int i = 1; i <= count; i++) {
 					client.click("NATIVE", "xpath=//*[@id='forward_button' and @onScreen='true']", 0, 1);
+					
 				}
-				waitFor(client,1);
+				waitFor(client,3);
+			
 				client.verifyElementFound("NATIVE","xpath=//*[@text='"+dateToBeDisplayed+"']", 0);
 			} catch (ParseException e) {
 				// TODO Auto-generated catch block
@@ -779,7 +804,7 @@ public class ReportsHelper extends BaseHelper {
 		Date date;
 		String dateToBeDisplayed=null;
 		Calendar c1 = null;
-		sdf = new SimpleDateFormat("dd MMMMM yyyy");
+		sdf = new SimpleDateFormat("d MMMMM yyyy");
 		date = sdf.parse(currentDate);
 		c1 = Calendar.getInstance();
 		c1.setTime(date);
@@ -819,24 +844,7 @@ public class ReportsHelper extends BaseHelper {
 		}
 	}
 
-	/**
-	 * Author:Devi
-	 * 
-	 * Verify DailyGraph is not displayed for period beyond 90 days
-	 *  
-	 * @param client
-	 *            Integrate SeeTestAutomation
-	 * 
-	 */
-
-	public void verifyDailyGraphForPeriodBeyond90days(Client client) {
-
-		if (client.waitForElement("NATIVE", "xpath=//*[@id='date_header']", 0,
-				1000)) {
-			client.verifyElementNotFound("NATIVE", "xpath=//*[@text='Daily Graph'and @id='text1' and @hidden='false']", 0);
-
-		}
-	}
+	
 
 	/**
 	 * Author:Devi

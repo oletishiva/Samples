@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2015 Airstrip - All Rights Reserved. -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<!-- Plurals -->
+	<plurals name="insulinUnits">
+		<item quantity="one">%1$s unidad</item>
+		<item quantity="other">%1$s unidades</item>
+	</plurals>
+	<plurals name="days">
+		<item quantity="one">1 día</item>
+		<item quantity="other">%1$d días</item>
+	</plurals>
+	<plurals name="hours">
+		<item quantity="one">1 hora</item>
+		<item quantity="other">%1$d horas</item>
+	</plurals>
+	<plurals name="minutes">
+		<item quantity="one">1 minuto</item>
+		<item quantity="other">%1$d minutos</item>
+	</plurals>
+	<!-- Phrase describing a time duration in seconds using secs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationSecs">
+		<item quantity="one">1 seg.</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> seg.</item>
+	</plurals>
+	<!-- Phrase describing a time duration in minutes using mins abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationMins">
+		<item quantity="one">1 min.</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> min.</item>
+	</plurals>
+	<!-- Phrase describing a time duration in hours using hrs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationHrs">
+		<item quantity="one">1 h</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> h</item>
+	</plurals>
+	<plurals name="sensorExpiresInDays">
+		<item quantity="one">Cambie el sensor en 1 día</item>
+		<item quantity="other">Cambie el sensor en <xliff:g id="count">%d</xliff:g> días</item>
+	</plurals>
+	<plurals name="sensorExpiresInHours">
+		<item quantity="one">Cambie el sensor en 1 hora</item>
+		<item quantity="other">Cambie el sensor en <xliff:g id="count">%d</xliff:g> horas</item>
+	</plurals>
+	<plurals name="sensorExpiresInMins">
+		<item quantity="one">Cambie el sensor en 1 minuto</item>
+		<item quantity="other">Cambie el sensor en <xliff:g id="count">%d</xliff:g> minutos</item>
+	</plurals>
+	<plurals name="sensorReadyInMins">
+		<item quantity="one">Sensor listo en 1 minuto</item>
+		<item quantity="other">Sensor listo en <xliff:g id="count">%d</xliff:g> minutos</item>
+	</plurals>
+
+	<!-- common/generic words, phrases, symbols, and abbreviations -->
+	<string name="deciLiter">dL</string>
+	<string name="gramsSymbol">g</string>
+	<string name="liter">L</string>
+	<string name="mgdl">mg/dL</string>
+	<string name="milligrams">mg</string>
+	<string name="millimole">mmol</string>
+	<string name="mmol">mmol/L</string>
+	<string name="percentSign">\u0025</string>
+	<string name="servingsSymbol">porc.</string>
+	<string name="accept">Aceptar</string>
+	<string name="account">Configuración de la cuenta</string>
+	<string name="all">Todo</string>
+	<string name="back">Atrás</string>
+	<string name="average">Promedio</string>
+	<string name="delete">Borrar</string>
+	<string name="cancel">Cancelar</string>
+	<string name="durationHourMinuteConcatenate">%1$s %2$s</string>
+	<string name="comments">Comentarios</string>
+	<string name="done">Listo</string>
+	<string name="email">Correo electrónico</string>
+	<string name="friday">Viernes</string>
+	<string name="grams">gramos</string>
+	<string name="gramsOfCarbs">gramos de carb.</string>
+	<string name="units">unidades</string>
+	<string name="help">Ayuda</string>
+	<string name="home">Inicio</string>
+	<string name="insulinDose">Dosis insulina</string>
+	<string name="loading">Cargando</string>
+	<string name="logbook">Libro de registro</string>
+	<string name="monday">Lunes</string>
+	<string name="next">Siguiente</string>
+	<string name="no">No</string>
+	<string name="note">Nota</string>
+	<string name="ok">OK</string>
+	<string name="password">Contraseña</string>
+	<string name="reminders">Recordatorios</string>
+	<string name="reject">Rechazar</string>
+	<string name="reports">Informes</string>
+	<string name="saturday">Sábado</string>
+	<string name="save">Guardar</string>
+	<string name="sending">Enviando</string>
+	<string name="servings">porciones</string>
+	<string name="servingsOfCarbs">porciones de carb.</string>
+	<string name="settings">Configuración de la aplicación</string>
+	<string name="share">Compartir</string>
+	<string name="start">Iniciar</string>
+	<string name="submit">Enviar</string>
+	<string name="sunday">Domingo</string>
+	<string name="thursday">Jueves</string>
+	<string name="tuesday">Martes</string>
+	<string name="wednesday">Miércoles</string>
+	<string name="yes">Sí</string>
+	<string name="days7">7 días</string>
+	<string name="days14">14 días</string>
+	<string name="days30">30 días</string>
+	<string name="days90">90 días</string>
+	<string name="eventLog">Registro de eventos</string>
+	<string name="eventLogEmptyMessage">No hay eventos</string>
+
+	<string name="minorFirstName">Nombre del menor</string>
+	<string name="minorLastName">Apellido del menor</string>
+	<string name="parentFirstName">@string/parentGuardianFirstName</string>
+	<string name="parentLastName">@string/parentGuardianLastName</string>
+	<string name="lastName">Apellido</string>
+	<string name="daily_graph">Gráfico diario</string>
+	<string name="daily_patterns">Patrones diarios</string>
+	<string name="estimated_a1c">A1c calculada</string>
+	<string name="firstName">Nombre</string>
+	<string name="noResults">(No hay resultados)</string>
+	<string name="signIn">Iniciar sesión</string>
+	<string name="signingIn">Iniciando sesión</string>
+	<string name="scanSensor">Escanear sensor</string>
+	<string name="time_in_target">Tiempo en el rango deseado</string>
+	<string name="errorMsgUnexpected">Error de aplicación inesperado.</string>
+	<string name="error_nfc_unsupported">NFC incompatible</string>
+	<string name="error_nfc_disabled">NFC desactivado</string>
+	<string name="error_networktime_disabled">Fecha y hora automáticas desactivadas</string>
+	<string name="errorOtherNfcInstalled">Se detectó otra aplicación que usa NFC. Para garantizar que se use FreeStyle LibreLink para leer el sensor, deberá iniciar FreeStyle LibreLink antes de cada escaneo. O bien, si desinstala la otra aplicación NFC, podrá escanear el sensor siempre que tenga desbloqueado el smartphone.</string>
+	<string name="loadingChartDataText">Cargando datos</string>
+	<string name="chartErrorMessage">Error al cargar datos</string>
+	<string name="timeZoneChangeMessage">Cambio de zona horaria de %1$s\u00A0a\u00A0%2$s &lt;b&gt;(%3$s)&lt;/b&gt;</string>
+
+	<!-- Countries -->
+	<string name="countryName_AE">Emiratos Árabes Unidos</string>
+	<string name="countryName_AG">Antigua y Barbuda</string>
+	<string name="countryName_AR">Argentina</string>
+	<string name="countryName_AT">Austria</string>
+	<string name="countryName_AU">Australia</string>
+	<string name="countryName_AZ">Azerbaiyán</string>
+	<string name="countryName_BE">Bélgica</string>
+	<string name="countryName_BH">Bahrein</string>
+	<string name="countryName_BR">Brasil</string>
+	<string name="countryName_BS">Bahamas</string>
+	<string name="countryName_BW">Botsuana</string>
+	<string name="countryName_BY">Bielorrusia</string>
+	<string name="countryName_BZ">Belice</string>
+	<string name="countryName_CA">Canadá</string>
+	<string name="countryName_CH">Suiza</string>
+	<string name="countryName_CL">Chile</string>
+	<string name="countryName_CN">China</string>
+	<string name="countryName_CO">Colombia</string>
+	<string name="countryName_CR">Costa Rica</string>
+	<string name="countryName_CY">Chipre</string>
+	<string name="countryName_DE">Alemania</string>
+	<string name="countryName_DK">Dinamarca</string>
+	<string name="countryName_DO">República Dominicana</string>
+	<string name="countryName_DZ">Algeria</string>
+	<string name="countryName_EC">Ecuador</string>
+	<string name="countryName_ES">España</string>
+	<string name="countryName_FI">Finlandia</string>
+	<string name="countryName_FR">Francia</string>
+	<string name="countryName_GB">Reino Unido</string>
+	<string name="countryName_GR">Grecia</string>
+	<string name="countryName_HK">Hong Kong</string>
+	<string name="countryName_IE">Irlanda</string>
+	<string name="countryName_IL">Israel</string>
+	<string name="countryName_IS">Islandia</string>
+	<string name="countryName_IT">Italia</string>
+	<string name="countryName_JO">Jordania</string>
+	<string name="countryName_JP">Japón</string>
+	<string name="countryName_KR">República de Corea</string>
+	<string name="countryName_KW">Kuwait</string>
+	<string name="countryName_KZ">Kazajstán</string>
+	<string name="countryName_LB">Líbano</string>
+	<string name="countryName_LU">Luxemburgo</string>
+	<string name="countryName_MT">Malta</string>
+	<string name="countryName_MX">México</string>
+	<string name="countryName_MY">Malasia</string>
+	<string name="countryName_NL">Países Bajos</string>
+	<string name="countryName_NO">Noruega</string>
+	<string name="countryName_NZ">Nueva Zelanda</string>
+	<string name="countryName_OM">Omán</string>
+	<string name="countryName_PA">Panamá</string>
+	<string name="countryName_PE">Perú</string>
+	<string name="countryName_PL">Polonia</string>
+	<string name="countryName_PT">Portugal</string>
+	<string name="countryName_QA">Qatar</string>
+	<string name="countryName_RU">Rusia</string>
+	<string name="countryName_SA">Arabia Saudí</string>
+	<string name="countryName_SE">Suecia</string>
+	<string name="countryName_SG">Singapur</string>
+	<string name="countryName_TH">Tailandia</string>
+	<string name="countryName_TR">Turquía</string>
+	<string name="countryName_TT">Trinidad y Tobago</string>
+	<string name="countryName_TW">Taiwan</string>
+	<string name="countryName_US">Estados Unidos</string>
+	<string name="countryName_UY">Uruguay</string>
+	<string name="countryName_VE">Venezuela</string>
+	<string name="countryName_ZA">Sudáfrica</string>
+	<string name="countryName_ZW">Zimbabue</string>
+
+	<!-- License Check -->
+	<string name="librelinkLicenseCheck">Comprobación de licencia de FreeStyle LibreLink</string>
+	<string name="licenseCheckFailed">Instale esta aplicación desde Google Play.</string>
+
+	<!-- Update Version Check -->
+	<string name="librelink_upgrade_check">Comprobación de actualización de FreeStyle LibreLink</string>
+	<string name="checkingVersion">Comprobando versión</string>
+	<string name="errorVersionCheckFailed">Esta versión de FreeStyle LibreLink necesita actualizarse. Compruebe cuál es la última versión en Google Play.</string>
+
+	<!-- App Tour -->
+	<string name="checkGlucoseWithPhone">Puede comprobar su glucosa con el smartphone.</string>
+	<string name="instantAccess">Puede tener acceso rápido a la información de su glucosa.</string>
+	<string name="actionableInsights">Puede obtener información útil para tomar decisiones más fundamentadas.</string>
+	<string name="shareGlucoseInformation">Puede compartir fácilmente sus datos de glucosa con su profesional de la salud y sus seres queridos.</string>
+
+	<!-- Account Registration/Sign In -->
+	<string name="changeUserMessage">Al iniciar sesión en su cuenta, los datos del usuario anterior en este dispositivo se eliminarán.\n\n¿Desea continuar?</string>
+	<string name="changeDeviceMessage">Pulse OK para registrar este smartphone en su cuenta de LibreView existente. Puede continuar para leer un sensor que haya iniciado con el smartphone anterior.\n\nAtención: Al pulsar OK, cerrará la sesión del smartphone anterior.</string>
+	<string name="registeringDevice">Registrando smartphone</string>
+	<string name="firstNameLabel">@string/firstName</string>
+	<string name="lastNameLabel">@string/lastName</string>
+	<string name="emailLabel">@string/email</string>
+	<string name="dateOfBirthLabel">@string/dateOfBirth</string>
+	<string name="dateOfBirth">Fecha de nacimiento</string>
+	<string name="passwordLabel">@string/password</string>
+	<string name="createPasswordLabel">@string/password</string>
+	<string name="changePassword">Contraseña de la cuenta</string>
+	<string name="newPasswordLabel">Contraseña nueva</string>
+	<string name="currentPasswordLabel">Contraseña actual</string>
+	<string name="confirmPasswordLabel">Confirmar contraseña</string>
+	<string name="sendingResetRequest">Enviando solicitud para restablecer contraseña</string>
+	<string name="adultRegistrationTitle">Inicio de sesión de cuenta</string>
+	<string name="minorRegistrationTitle">Inicio de sesión del padre/tutor</string>
+	<string name="signInLinkText">@string/signIn</string>
+	<string name="account_sign_in_title">@string/signIn</string>
+	<string name="alreadyHaveAccountPromptText">¿Ya tiene una cuenta LibreView?</string>
+	<string name="invalidPasswordErrorMessage">Ingrese una contraseña válida. Las contraseñas deben tener 8\u201336 caracteres y contener al menos 1 dígito, 1 letra mayúscula y 1 letra minúscula.</string>
+	<string tools:ignore="PluralsCandidate" name="tooYoungErrorMessage">Debe tener al menos %1$s años para usar FreeStyle LibreLink.</string>
+	<string name="tooYoungWarningMessage">La fecha de nacimiento se utiliza para configurar su cuenta LibreView y no para determinar si la aplicación es adecuada para que la utilice usted. Consulte el manual del usuario de la aplicación antes de utilizarla.</string>
+	<string name="forgotPasswordText">¿Olvidó la contraseña?</string>
+	<string name="createNewAccountText">Crear nueva cuenta</string>
+	<string name="existing_user_login_text">Ya existe una cuenta con esta dirección de correo electrónico. Ingrese su dirección de correo electrónico y contraseña.</string>
+	<string name="normal_user_login_text">Ingrese sus datos de inicio de sesión de la cuenta de LibreView.</string>
+	<string name="passwordMismatchErrorMessage">Las contraseñas deben ser iguales</string>
+	<string name="invalidEmailAddressErrorMessage">Ingrese una dirección de correo electrónico válida.</string>
+	<string name="passwordResetSent">Las instrucciones para restablecer la contraseña se han enviado a su dirección de correo electrónico.</string>
+	<string name="accountContactOptIn">Por favor, envíenme información sobre Abbott Diabetes Care y otros productos y servicios de Abbott. (Puede cancelar su suscripción en cualquier momento.)</string>
+	<string name="passwordResetMessage">Ingrese la dirección de correo electrónico que se usó para registrar esta cuenta. Las instrucciones para restablecer la contraseña se enviarán a esa dirección.</string>
+	<string name="nonExistentUserErrorMessage">No existe ninguna cuenta para la dirección de correo electrónico ingresada.</string>
+	<string name="invalidLoginErrorMessage">La dirección de correo electrónico o la contraseña es incorrecta. Inténtelo de nuevo.</string>
+	<string name="invalidProfileUpdatePassword">La contraseña es incorrecta. Inténtelo de nuevo.</string>
+	<string name="invalidProfileDOB">No puede cambiar su tipo de cuenta de adulto a menor. Edite su fecha de nacimiento según corresponda.</string>
+	<string name="invalidAppKeyErrorMessage">Error al comunicarse con el servidor. La clave de la aplicación no es válida.</string>
+	<string name="invalidNetworkDomainErrorMessage">Error al comunicarse con el servidor. El dominio no es válido.</string>
+	<string name="invalidRegistrationErrorMessage">No se pudo completar el registro a causa de datos no válidos.</string>
+	<string name="invalidAccountRegionErrorMessage">La configuración de país de su aplicación y su cuenta no coinciden. Cree una nueva cuenta.</string>
+	<string name="accountRegisteringProgressMessage">Registrando</string>
+	<string name="accountUpdateProgressMessage">Enviando</string>
+	<string name="accountAlreadyRegisteredErrorMessage">Esta dirección de correo electrónico ya está asociada a una cuenta de LibreView.\n\nNo necesita crear una cuenta nueva. Simplemente inicie sesión.</string>
+	<string name="professionalAccountAlreadyRegisteredErrorMessage">Esta dirección de correo electrónico ya está asociada a una cuenta de LibreView Professional. Tendrá que usar una dirección de correo electrónico diferente para crear una cuenta para esta aplicación.</string>
+	<string name="alreadyRegisteredSignInButtonText">@string/signIn</string>
+	<string name="enter_numera_data">Cree su cuenta de LibreView para usar con FreeStyle LibreLink y cualquier otra aplicación compatible.</string>
+	<string name="minorRegistrationHeader">Este usuario es un menor. Un padre o tutor debe completar la cuenta para usar este software.</string>
+	<string name="parentGuardianFirstName">Nombre del padre/tutor legal</string>
+	<string name="parentGuardianLastName">Apellido del padre/tutor legal</string>
+	<string name="parentGuardianEmail">@string/email</string>
+	<string name="nameAndBirthDateHeader">Comencemos con cierta información básica.</string>
+	<string name="nameAndBirthDateTitle">@string/createNewAccountText</string>
+	<string name="profileUpdateTopText">Si cambia alguno de los datos más abajo, se actualizará su cuenta.</string>
+	<string name="changePasswordTopText">Las contraseñas deben tener 8–36 caracteres y contener al menos 1 dígito, 1 letra mayúscula y 1 letra minúscula.</string>
+	<string name="createAccountSubmitButtonText">Crear cuenta</string>
+	<string name="authenticationFailure">La autenticación con el servidor falló. Inicie sesión de nuevo.</string>
+	<string name="authenticationFailureLoginButton">Iniciar sesión</string>
+	<string name="reenterPassword">Ingrese de nuevo su contraseña.</string>
+	<string name="parentLoginText">Se requiere el inicio de sesión del padre/tutor.</string>
+	<string name="parentLoginSubText">Ingrese la contraseña de la cuenta para poder compartir datos.</string>
+
+	<!-- Side Navigation Drawer -->
+	<string name="navigation_drawer_username">%1$s %2$s</string>
+	<string name="navigation_drawer_daily_graph">@string/daily_graph</string>
+	<string name="navigation_drawer_estimated_a1c">@string/estimated_a1c</string>
+	<string name="navigation_drawer_average_glucose">Glucosa promedio</string>
+	<string name="navigation_drawer_low_glucose">Eventos de glucosa baja</string>
+	<string name="navigation_drawer_sensor_usage">Uso del sensor</string>
+	<string name="navigation_drawer_daily_patterns">@string/daily_patterns</string>
+	<string name="navigation_drawer_time_in_target">@string/time_in_target</string>
+	<string name="navigation_drawer_sharedata">@string/share</string>
+
+	<!-- Home -->
+	<string name="applyNewSensor">Aplicar nuevo sensor</string>
+	<string name="scanNewSensor">Escanear nuevo sensor</string>
+	<string name="startNewSensor">Aplicar y escanear nuevo sensor</string>
+	<string name="sensorReadyIn">El sensor se podrá usar en %1$s</string>
+	<string name="readyToScanDetail">El sensor está listo para usarse. Para verificar su glucosa, sujete la parte posterior del smartphone contra el sensor hasta que oiga dos tonos.</string>
+	<string name="applyNewSensorDetail">Aplique un nuevo sensor.</string>
+	<string name="scanNewSensorDetail">Escanee el sensor para iniciarlo.</string>
+	<string name="scanNewSensorDetailLateJoin">Si quiere usar también un lector, debe escanear primero con él.</string>
+	<string name="scanSensorDetail">Escanee el sensor.</string>
+	<string name="last24Hours">Últimas 24 horas</string>
+	<string name="lastScan">Último escaneo</string>
+	<string name="sensorIsReady">Listo para escanear</string>
+	<string name="sensorWarmingUp">Iniciando nuevo sensor</string>
+	<string name="sensorHasEnded">El sensor ha terminado</string>
+	<string name="sensorEndsIn">El sensor termina en: %1$s</string>
+	<string name="sensorLateJoinMessage">Ya puede escanear el sensor usando este dispositivo y el dispositivo que usó para iniciar el sensor.\n\nAtención: Para asegurarse de que los informes en un dispositivo muestren los datos completos, escanee el sensor con ese dispositivo al menos una vez cada 8 horas. Los datos e informes no se comparten entre dispositivos.</string>
+
+	<!-- Stats/Reports -->
+	<!-- Used for Germany to force 24 hour time on the chart axis -->
+	<bool name="force24HourTimes">false</bool>
+
+	<!-- Used to set the string format for graph axis unless 24 hour time is used -->
+	<string name="amTimeAxisFormat">h\'AM\'</string>
+	<string name="pmTimeAxisFormat">h\'PM\'</string>
+
+	<string name="mmolPerMolFormatter" tools:ignore="PluralsCandidate">( %d mmol/mol )</string>
+	<string name="sensor_usage_total_scans">Escaneos totales</string>
+	<string name="sensor_usage_day_average">Escaneos por día</string>
+	<string name="sensor_usage_captured">% de datos del sensor capturados</string>
+	<string name="days_of_data" tools:ignore="PluralsCandidate">Datos disponibles durante %1$d de %2$d días</string>
+	<string name="a1cDaysOfData" tools:ignore="PluralsCandidate">Los datos abarcan %1$d de %2$d días</string>
+	<string name="no_sensor_data">Sin suficientes datos del sensor</string>
+	<string name="timeintarget_glucose_range">%1$s-%2$s</string>
+	<string name="timeintarget_glucose_less_than">&lt; %s</string>
+	<string name="timeintarget_glucose_greater_than">&gt; %s</string>
+	<string name="timeintarget_percent">%</string>
+	<string name="target">RANGO</string>
+	<string name="timeInTargetGlucoseRangeLabel">Rango deseado: %s</string>
+	<string name="average_glucose_info_title">GLUCOSA PROMEDIO</string>
+	<string name="average_glucose_info_msg">Glucosa promedio proporciona información sobre el promedio de las lecturas de glucosa del sensor. El promedio general para el período seleccionado se muestra debajo del gráfico. Se muestra también el promedio para diferentes períodos del día. Las lecturas por arriba o por debajo del rango deseado de glucosa son de color amarillo, naranja o rojo. Las lecturas dentro de un rango son de color verde.</string>
+	<string name="low_glucose_info_title">EVENTOS DE GLUCOSA BAJA</string>
+	<string name="low_glucose_info_msg_mg">Eventos de glucosa baja proporciona información sobre el número de eventos de glucosa baja medidos por el sensor. Un evento de glucosa baja se registra cuando la lectura de glucosa del sensor está por debajo de 70 mg/dL durante más de 15 minutos. El número total de eventos se muestra debajo del gráfico. El gráfico de barras muestra los eventos de glucosa baja en diferentes períodos del día.</string>
+	<string name="low_glucose_info_msg_mmol">Eventos de glucosa baja proporciona información sobre el número de eventos de glucosa baja medidos por el sensor. Un evento de glucosa baja se registra cuando la lectura de glucosa del sensor está por debajo de 3,9 mmol/L durante más de 15 minutos. El número total de eventos se muestra debajo del gráfico. El gráfico de barras muestra los eventos de glucosa baja en diferentes períodos del día.</string>
+	<string name="a1c_info_title">A1c CALCULADA</string>
+	<string name="a1c_info_msg">El nivel de A1c calculada (llamado también HbA1c) se basa en los datos de glucosa del sensor disponibles de los últimos 90 días. Cuanto más datos haya disponibles, mejor será el cálculo. Sin embargo, es posible que el nivel calculado no sea igual a la A1c medida en un laboratorio.\n\nLa A1c puede usarse como un indicador de lo bien que se han controlado los niveles de glucosa y podría usarse para monitorear su régimen de tratamiento de la diabetes.</string>
+	<string name="daily_info_title">GRÁFICO DIARIO</string>
+	<string name="daily_info_msg">Gráfico diario proporciona un gráfico de las lecturas de glucosa del sensor por día.\n\nEs posible que vea espacios vacíos en el gráfico cuando no haya escaneado al menos una vez cada 8 horas.\n\nPuede aparecer el símbolo de un reloj para indicar un cambio de zona horaria. Podrían producirse espacios vacíos en el gráfico o las lecturas de glucosa podrían estar ocultas.</string>
+	<string name="sensor_usage_info_title">USO DEL SENSOR</string>
+	<string name="sensor_usage_info_msg">Uso del sensor proporciona información sobre la frecuencia con la que escanea el sensor. Esto incluye un promedio de cuántas veces escaneó el sensor cada día, el porcentaje de posibles datos del sensor registrados de sus escaneos y el número total de escaneos.</string>
+	<string name="time_in_target_info_title">TIEMPO EN EL RANGO DESEADO</string>
+	<string name="time_in_target_info_msg">Tiempo en el rango deseado proporciona un gráfico que muestra el porcentaje de tiempo que las lecturas de glucosa del sensor estuvieron por arriba, por debajo o dentro del rango deseado de glucosa.</string>
+	<string name="daily_average">Promedio: %1$s %2$s</string>
+	<string name="total_events">Eventos totales: %1$d</string>
+	<string name="daily_patterns_info_title">PATRONES DIARIOS</string>
+	<string name="daily_patterns_info_msg">Patrones diarios proporciona un gráfico que muestra el patrón y la variabilidad de la glucosa del sensor durante un día típico. La línea negra sólida muestra la mediana (punto medio) de las lecturas de glucosa. El sombreado azul claro representa el rango de percentiles 10–90 de las lecturas del sensor. El sombreado azul oscuro representa el rango de percentiles 25–75.\n\nAtención: Patrones diarios necesita al menos 5 días de datos de glucosa.</string>
+
+	<!-- Scan Result -->
+	<string name="glucoseAboveRange">GLUCOSA ALTA\n(FUERA DEL RANGO)</string>
+	<string name="glucoseBelowRange">GLUCOSA BAJA\n(FUERA DEL RANGO)</string>
+	<string name="glucoseGoingHigh">GLUCOSA EN AUMENTO</string>
+	<string name="glucoseGoingLow">GLUCOSA EN DESCENSO</string>
+	<string name="glucoseHigh">GLUCOSA ALTA</string>
+	<string name="glucoseInRange">GLUCOSA EN EL RANGO DESEADO</string>
+	<string name="glucoseLow">GLUCOSA BAJA</string>
+	<string name="highGlucoseIsDangerous">La glucosa alta puede ser peligrosa. Vuelva a verificar su glucosa y siga el tratamiento recomendado por su profesional de la salud. Considere verificar su nivel de cetonas.</string>
+	<string name="lowGlucoseIsDangerous">La glucosa baja puede ser peligrosa. Vuelva a verificar su glucosa y siga el tratamiento recomendado por su profesional de la salud.</string>
+	<string name="yourGlucose">Mi glucosa</string>
+	<string name="vrcFailedTitle">Error el mostrar el resultado</string>
+	<string name="vrcFailedText">El resultado es: %s</string>
+	<string name="error_sensor_incompatible_title">Sensor incompatible</string>
+	<string name="error_sensor_incompatible_msg">Este sensor no se puede usar con esta versión de FreeStyle LibreLink.</string>
+	<string name="error_sensor_terminated_title">Cambie el sensor</string>
+	<string name="error_sensor_terminated_msg">El sensor no funciona. Quítese el sensor e inicie uno nuevo.</string>
+	<string name="error_sensor_removed_title">Cambie el sensor</string>
+	<string name="error_sensor_removed_msg">El sensor no funciona. Quíteselo e inicie uno nuevo.</string>
+	<string name="error_sensor_expired_title">Sensor agotado</string>
+	<string name="error_sensor_expired_msg">Inicie un nuevo sensor para comprobar el nivel de glucosa.</string>
+	<string name="error_sensor_inwarmup_title">Sensor iniciándose</string>
+	<string name="error_sensor_inwarmup_msg">Este sensor se ha iniciado pero aún no está listo para usarse.</string>
+	<string name="error_sensor_corrupt_title">Error de escaneo</string>
+	<string name="error_sensor_corrupt_msg">El smartphone no pudo escanear el sensor. Vuelva a escanear el sensor.</string>
+	<string name="error_sensor_transmission_title">Error de escaneo</string>
+	<string name="error_sensor_transmission_msg">El smartphone no pudo escanear el sensor. Vuelva a escanear el sensor. Asegúrese de sujetar la parte posterior del smartphone cerca del sensor. Cuando escuche el primer tono o vibración, sujete el smartphone sin moverlo hasta que escuche el segundo tono o vibración.</string>
+	<string name="error_sensor_already_started_title">El sensor ya está en uso</string>
+	<string name="error_sensor_already_started_msg">El sensor que acaba de escanear no se puede usar porque se inició con otro dispositivo.</string>
+	<string name="error_sensor_already_started_msg_llj">Este sensor se inició con otro dispositivo. Para que un sensor funcione con este smartphone, debe escanear el sensor con el smartphone dentro de la primera hora.</string>
+	<string name="error_sensor_temporary_problem_title">Error del sensor</string>
+	<string name="error_sensor_temporary_problem_msg">La lectura de glucosa no está disponible. Intente escanear el sensor nuevamente en 10 minutos.</string>
+	<string name="error_sensor_too_hot_title">Sensor muy caliente</string>
+	<string name="error_sensor_too_hot_msg">El sensor está demasiado caliente para dar lecturas de glucosa. Inténtelo nuevamente en unos minutos.</string>
+	<string name="error_sensor_too_cold_title">Sensor muy frío</string>
+	<string name="error_sensor_too_cold_msg">El sensor está demasiado frío para facilitar lecturas de glucosa. Inténtelo nuevamente en unos minutos.</string>
+	<string name="error_sensor_insertion_failure_title">Comprobar sensor</string>
+	<string name="error_sensor_insertion_failure_msg">Compruebe su sensor. Si no está bien sujeto a la piel, quítese el sensor e inicie uno nuevo. Si está colocado correctamente, intente iniciar el sensor otra vez.</string>
+	<string name="error_sensor_not_active_title">Nuevo sensor detectado</string>
+	<string name="error_sensor_not_active_msg">Al iniciar un nuevo sensor, el que estaba usando ahora terminará.\n\n¿Quiere iniciar el nuevo ahora?</string>
+
+	<!-- Add/Edit Note -->
+	<string name="addNote">Agregar nota</string>
+	<string name="editNote">Editar nota</string>
+	<string name="highIntensity">Intensidad alta</string>
+	<string name="mediumIntensity">Intensidad media</string>
+	<string name="lowIntensity">Intensidad baja</string>
+	<string name="noExerciseTypeChosen">Seleccionar intensidad</string>
+	<string name="food">Alimentos</string>
+	<string name="exercise">Ejercicio</string>
+	<string name="longActingInsulin">Insulina de acción prolongada</string>
+	<string name="rapidActingInsulin">Insulina de acción rápida</string>
+	<string name="meal">Comida</string>
+	<string name="breakfast">Desayuno</string>
+	<string name="lunch">Almuerzo</string>
+	<string name="snack">Refrigerio</string>
+	<string name="dinner">Cena</string>
+	<string name="carbsGramsError">El valor debe ser un número entero entre %1$s y %2$s</string>
+	<string name="carbsServingsError">El valor debe ser un múltiplo de 0,5 y estar entre %1$s y %2$s</string>
+	<string name="insulinDoseError">El valor debe ser un múltiplo de 0,1 y estar entre 0,1 y %1$d</string>
+
+	<!-- Manual BG -->
+	<string name="manualBgTitle">Glucosa en sangre</string>
+	<string name="manualBgExplanation">Ingrese el resultado de su prueba de glucosa en sangre.</string>
+	<string name="manualBgError">El valor debe ser un número entero entre %1$s y %2$s</string>
+
+	<!-- Logbook -->
+	<string name="logbookDetail">Detalle del libro de registro</string>
+	<string name="logbookListEmpty">No existen entradas para esta fecha.</string>
+	<string name="logbookDetailCarbFormatDoseAndUnit">" (&lt;b&gt;%1$s%2$s&lt;/b&gt;)"</string>
+	<string name="logbookDetailInsulinFormatTypeAndDose">%1$s (&lt;b&gt;%2$s&lt;/b&gt;)</string>
+	<string name="logbookDetailSeparator">", "</string>
+	<string name="noteBalloonSeparator">&lt;br/&gt;</string>
+	<string name="logbookDetailExerciseType">@string/exercise</string>
+	<string name="logbookDetailExerciseFormatType">Ejercicio %s</string>
+	<string name="logbookDetailExerciseFormatDuration">" (&lt;b&gt;%s&lt;/b&gt;)"</string>
+
+	<!-- Reminders -->
+	<string name="alarms">Alarmas</string>
+	<string name="repeating">Repitiendo</string>
+	<string name="timers">Contadores</string>
+	<string name="addReminder">Agregar recordatorio</string>
+	<string name="alarmName">Nombre del recordatorio</string>
+	<string name="checkGlucose">Verificar glucosa</string>
+	<string name="myReminder">Mi recordatorio</string>
+	<string name="nextReminderPrompt">Siguiente recordatorio:\u0020</string>
+	<string name="nextAlarmPrompt">Siguiente recordatorio: %1$s, %2$s</string>
+	<string name="noActiveReminders">No hay recordatorios activos.</string>
+	<string name="noActiveRemindersAutoScanSensorEnabled">No hay recordatorios activos. El contador Escanear sensor se restablecerá al escanear de nuevo.</string>
+	<string name="remindMeToCheckAgain">Recordarme verificar glucosa en:</string>
+	<string name="setReminder">Configurar</string>
+
+	<!-- Send Reports -->
+	<string name="sendChooserTitle">Enviar</string>
+
+	<!-- Settings -->
+	<string name="unitOfMeasurementTitle">Unidad de medida</string>
+	<string name="unitOfMeasurementTopText">Elija la unidad de medida para la glucosa. Todos los datos de glucosa se mostrarán en estas unidades.</string>
+	<string name="unitOfMeasurementTopTextForSetup">Seleccione la unidad de medida para la glucosa. Todos los datos de glucosa se mostrarán en estas unidades. NO podrá cambiar esto más tarde.</string>
+	<string name="unitOfMeasureWarning">Es MUY importante que seleccione la unidad de medida correcta para la glucosa. Los valores de la glucosa pueden interpretarse erróneamente si la unidad de medida no es correcta. Si no sabe qué unidad de medida usar, pregunte a su profesional de la salud.</string>
+	<string name="unitOfMeasurementFixedTopText">La unidad de medida de la glucosa se configura automáticamente según el país.</string>
+	<string name="unitOfMeasurementFixedCountryText">Su país es</string>
+	<string name="unitOfMeasurementFixedText">Su unidad de medida es</string>
+	<string name="targetGlucoseRangeTitle">Rango deseado de glucosa</string>
+	<string name="targetGlucoseRangeTopText">El rango deseado de glucosa se mostrará en distintos gráficos. Si no sabe cuál es, pregunte a su profesional de la salud.</string>
+	<string name="targetGlucoseRangeTopTextForSetup">El rango deseado de glucosa se mostrará en distintos gráficos y puede cambiarse en Configuración. Si no sabe cuál es, pregunte a su profesional de la salud.</string>
+	<string name="carbohydrateUnitsTitle">Unidades de carbohidratos</string>
+	<string name="carbohydrateUnitsTopText">Los carbohidratos pueden ingresarse en gramos o en porciones, dependiendo de cómo los cuente. Seleccione su unidad de carbohidratos preferida.</string>
+	<string name="carbohydrateUnitServingSizeMessage">Seleccione su tamaño de porción preferido o pregunte a su profesional de la salud si no lo sabe.</string>
+	<string name="carbohydrateUnitsTopTextForSetup">@string/carbohydrateUnitsTopText</string>
+	<string name="scanSoundsTitle">Sonidos de escaneo</string>
+	<string name="scanSoundsOsDefault">sonido y vibración</string>
+	<string name="scanSoundsVibeOnly">solo vibración</string>
+	<string name="scanSoundsTopText">El escaneo de un sensor activará una vibración. Seleccione si quiere escuchar también un sonido además de la vibración.</string>
+	<string name="scanSoundsTopTextForSetup">@string/scanSoundsTopText</string>
+	<string name="scanSoundsNote">Atención:\nSonidos de escaneo usará la configuración de volumen del smartphone. Por ejemplo, si el volumen del smartphone está apagado, no oirá el sonido de escaneo.</string>
+	<string name="textToSpeechTitle">Texto a voz</string>
+	<string name="textToSpeechOn">sí</string>
+	<string name="textToSpeechOff">no</string>
+	<string name="textToSpeechTopText">Active Texto a voz para que la lectura de glucosa se lea en voz alta.</string>
+	<string name="textToSpeechNote">Atención:\nTexto a voz usará la configuración de volumen del smartphone. Por ejemplo, si el volumen del smartphone está apagado, no oirá la lectura de glucosa leída en voz alta.</string>
+	<string name="countryOfOriginTitle">Confirmar país</string>
+	<string name="countryOfOriginTopText">El país se usa para configurar la aplicación y garantizar que los datos se guarden bien.</string>
+	<string name="countryOfOriginTopTextForSetup">@string/countryOfOriginTopText</string>
+	<string name="countryOfOriginExplanation">Si esto es correcto, pulse Siguiente.\n\nSi esto no es correcto, es posible que necesite desinstalar FreeStyle LibreLink e instalar la versión de su país. Comuníquese con Atención al cliente si tiene preguntas.</string>
+	<string name="targetGlucoseRangeUnitText">Valores en</string>
+	<string name="servingsWithGramsEquivalent" tools:ignore="PluralsCandidate">porciones (1 porción = %.1f gramos)</string>
+	<string name="countryLabel">País de residencia</string>
+	<string name="countryLabelForSetup">Su país ha sido identificado como</string>
+	<string name="defaultNetworkErrorMessage">Error al comunicarse con el servidor.</string>
+	<string name="serverNotFoundErrorMessage">Error al comunicarse con el servidor. No se encontró servidor.</string>
+	<string name="pageNotFoundErrorMessage">Error al comunicarse con el servidor. No se encontró ningún contenido en el servidor.</string>
+	<string name="networkingErrorMessage">Ocurrió un error de la red al comunicarse con el servidor.</string>
+	<string name="internalServerErrorMessage">Error al comunicarse con el servidor. Ocurrió un error interno del servidor.</string>
+	<string name="requestTimeoutErrorMessage">Error al comunicarse con el servidor. Se agotó el tiempo de espera para esta solicitud.</string>
+	<string name="serviceUnavailableErrorMessage">Error al comunicarse con el servidor. Servicio no disponible.</string>
+	<string name="submitButtonText">@string/submit</string>
+	<string name="mgPerDeciliterRadioText"><b>mg/dL</b> (por ejemplo, 100 mg/dL)</string>
+	<string name="mmolPerLiterRadioText"><b>mmol/L</b> (por ejemplo, 5,6 mmol/L)</string>
+	<string name="target_range_separator">-</string>
+	<string name="glucoseRangeFormat">%1$s - %2$s %3$s</string>
+	<string name="settingsUnitOfMeasureConfirmationMessage">Confirme que desea seleccionar la siguiente unidad de medida:</string>
+	<string name="networkNotConnectedDefault">Su smartphone no está actualmente conectado a Internet. Esta operación no puede completarse hasta que haya conexión a Internet.</string>
+	<string name="networkNotConnectedSetup">Su smartphone no está actualmente conectado a Internet. La configuración no puede completarse hasta que haya conexión a Internet.</string>
+	<string name="networkNotConnectedProfileUpdate">Su smartphone no está actualmente conectado a Internet. Su cuenta no puede cambiarse hasta que haya conexión a Internet.</string>
+	<string name="privacyNoticeAcceptanceStatement">He leído y acepto explícitamente el Aviso de privacidad.</string>
+	<string name="privacyNoticeTitle">Aviso de privacidad</string>
+	<string name="termsOfUseAcceptanceStatement">He leído y acepto explícitamente los Términos de uso.</string>
+	<string name="termsOfUseTitle">Términos de uso</string>
+	<string name="nfcUnsupported">Para poder usar FreeStyle LibreLink para escanear el sensor, NFC debe ser compatible con su smartphone.</string>
+	<string name="turnOnNfcPrompt">Para poder usar FreeStyle LibreLink para escanear el sensor, NFC debe estar activado en su smartphone. ¿Desea activarlo?</string>
+	<string name="enableNetworkTime">Para poder usar FreeStyle LibreLink para escanear el sensor, el smartphone debe estar configurado para actualizar automáticamente la fecha y la hora. ¿Desea activarlo?</string>
+	<string name="getStartedNow">Empezar ahora</string>
+
+	<!-- My Glucose Explanation -->
+	<string name="myGlucoseExplanationTitle">Mi glucosa</string>
+	<string name="myGlucoseExplanationTopText">Esta pantalla aparece después de escanear el sensor.</string>
+	<string name="myGlucoseExplanationResultCallouts">La pantalla Mi glucosa contiene (1) la glucosa actual, (2) la flecha de tendencia de glucosa y (3) el gráfico de glucosa.</string>
+
+	<!-- Trend Arrow Explanation -->
+	<string name="trendExplanationTitle">Flecha de tendencia de glucosa</string>
+	<string name="trendExplanationTopText">Cuando escanee el sensor, una flecha indicará su tendencia de glucosa reciente.</string>
+	<string name="trendExplanationRisingQuickly">Subiendo rápidamente</string>
+	<string name="trendExplanationRising">Subiendo</string>
+	<string name="trendExplanationStable">Cambiando lentamente</string>
+	<string name="trendExplanationFalling">Bajando</string>
+	<string name="trendExplanationFallingQuickly">Bajando rápidamente</string>
+
+	<!-- Help -->
+	<string name="helpItemTitleApplySensor">Cómo aplicar un sensor</string>
+	<string name="helpItemTitleScanSensor">Cómo escanear un sensor</string>
+	<string name="helpItemTitleEventLog">@string/eventLog</string>
+	<string name="helpItemTitleUserGuide">Manual del usuario</string>
+
+	<!-- OneStep Log Upload -->
+	<string name="logUploadTitle">Enviar datos de resolución de problemas</string>
+	<string name="logUploadOptInDescription">Al enviar datos de resolución de problemas, Atención al cliente puede responder mejor sus preguntas.</string>
+	<string name="logUploadOptInText1">El Aviso de privacidad que aceptó previamente describe lo que se incluye en los datos de resolución de problemas.</string>
+	<string name="logUploadViewPrivacyButtonLabel">Ver Aviso de privacidad</string>
+	<string name="logUploadOptInText2">¿Acepta enviar los datos de resolución de problemas?</string>
+	<string name="logUploadDecline">No acepto</string>
+	<string name="logUploadAccept">Acepto</string>
+	<string name="logUploadDescription">Ingrese el número de caso y el código de verificación que le proporcionó Atención al cliente.</string>
+	<string name="logUploadCaseNumberLabel">Número de caso</string>
+	<string name="logUploadAccessCodeLabel">Código de verificación</string>
+	<string name="logUploadSendButtonLabel">Enviar</string>
+	<string name="logUploadErrorTypo">Número de caso o código de verificación incorrectos</string>
+	<string name="logUploadErrorUploadFailedTitle">Error al enviar datos de resolución de problemas</string>
+	<string name="logUploadErrorUploadFailedText">Pulsar para reintentar.</string>
+
+	<!-- Apply Sensor Tour -->
+	<string name="applySensorTitle">Aplicación de un sensor</string>
+	<string name="applySensorTitleStep1">PASO 1</string>
+	<string name="applySensorTextStep1">Seleccione un lugar en la parte posterior del brazo.</string>
+	<string name="applySensorSubTextStep1">Atención: Evite las cicatrices, lunares, estrías, bultos y lugares de inyección de insulina. Para evitar irritación en la piel, cambie de lugar entre aplicaciones.</string>
+	<string name="applySensorTitleStep2">PASO 2</string>
+	<string name="applySensorTextStep2">Limpie el lugar con una toallita humedecida en alcohol. Deje que el lugar se seque antes de continuar.</string>
+	<string name="applySensorTitleStep3">PASO 3</string>
+	<string name="applySensorTextStep3">Desprenda por completo la tapa del envase del sensor.</string>
+	<string name="applySensorTitleStep4">PASO 4</string>
+	<string name="applySensorTextStep4">Desenrosque el tapón del aplicador del sensor.</string>
+	<string name="applySensorTitleStep5">PASO 5</string>
+	<string name="applySensorTextStep5">Alinee la marca oscura del aplicador del sensor con la marca oscura del envase del sensor. Sobre una superficie dura, oprima el aplicador del sensor firmemente hacia abajo hasta el tope.</string>
+	<string name="applySensorTitleStep6">PASO 6</string>
+	<string name="applySensorTextStep6">Extraiga el aplicador del sensor del envase del sensor.</string>
+	<string name="applySensorTitleStep7">PASO 7</string>
+	<string name="applySensorTextStep7">El aplicador del sensor está listo para aplicar el sensor. No toque el interior del aplicador del sensor ni lo coloque de nuevo en el envase del sensor.</string>
+	<string name="applySensorTitleStep8">PASO 8</string>
+	<string name="applySensorTextStep8">Coloque el aplicador del sensor sobre el lugar y empuje hacia abajo con firmeza para aplicarse el sensor.</string>
+	<string name="applySensorTitleStep9">PASO 9</string>
+	<string name="applySensorTextStep9">Retire suavemente el aplicador del sensor del cuerpo.</string>
+	<string name="applySensorTitleStep10">PASO 10</string>
+	<string name="applySensorTextStep10">Asegúrese de que el sensor esté firmemente colocado. Deseche el envase del sensor y el aplicador del sensor usados siguiendo los reglamentos locales.</string>
+
+	<!-- Scan Sensor Tour -->
+	<string name="scanSensorTitle">Escaneo de un sensor</string>
+	<string name="scanSensorTitleStep1">PASO 1</string>
+	<string name="scanSensorTextStep1"><![CDATA[Sujete la <b>parte posterior</b> del smartphone <b>contra</b> el sensor.]]></string>
+	<string name="scanSensorTitleStep2">PASO 2</string>
+	<string name="scanSensorTextStep2">Cuando el sonido está activado, el smartphone produce una serie de tonos y vibraciones mientras escanea el sensor. No retire el smartphone hasta que los tonos y vibraciones hayan cesado.</string>
+	<string name="scanSensorTitleStep3">PASO 3</string>
+	<string name="scanSensorTextStep3">Para escanear el sensor, es posible que tenga que recolocar el smartphone cerca del sensor para localizar la antena NFC del smartphone.</string>
+
+	<!-- About -->
+	<string name="about">Acerca de</string>
+	<string name="appNameLabel">Nombre:</string>
+	<string name="appNameValue">FreeStyle LibreLink</string>
+	<string name="appPartOfSystem">Parte del Sistema Flash de monitoreo de glucosa FreeStyle Libre</string>
+	<string name="last3sensors">Últimos 3 sensores:</string>
+	<string name="sensorStatus">&#160;&#160;&#160;&#160;Estado: %1$s</string>
+	<string name="udi">UDI:</string>
+	<string name="registrationNumber">Número de registro:</string>
+	<string name="productStandardNumber">Número estándar de producto:</string>
+	<string name="model">Modelo de smartphone:</string>
+	<string name="appCountryLabel">País:</string>
+	<string name="supportWebsiteLabel">Atención al cliente:</string>
+	<string name="supportWebsiteValue">http://www.freestylelibre.com</string>
+	<string name="consultInstructionsForUse">Consultar las Instrucciones de uso</string>
+	<string name="productOfUsa">Producto de EE. UU.</string>
+	<string name="patentWebsiteLabel">Sitio web de patentes:</string>
+	<string name="patentWebsiteValue">https://www.abbott.com/patents</string>
+	<string name="trademarkStatement">FreeStyle, Libre y las marcas relacionadas son marcas comerciales de Abbott Diabetes Care, Inc. en varias jurisdicciones.</string>
+	<string name="copyrightStatement">©2018 Abbott</string>
+	<string name="osVersion">Versión del SO Android:</string>
+	<string name="sensorNotPresent">Sin sensor activo</string>
+	<string name="softwareVersion">Versión del software:</string>
+
+	<!-- Notifications -->
+	<string name="alarmExpired">Alarma caducada</string>
+	<string name="timerExpired">Contador caducado</string>
+
+	<string name="sensorActivated">Sensor iniciado</string>
+	<string name="sensorReady">Sensor listo</string>
+	<string name="sensorReadyContent">El sensor está listo para usarse</string>
+	<string name="sensorExpired">Sensor agotado</string>
+	<string name="sensorExpiredContent">Inicie un nuevo sensor para comprobar el nivel de glucosa</string>
+	<string name="sensorEndingSoon">Sensor agotándose</string>
+
+	<!-- Data Upload -->
+	<string name="uploadFailedTitle">Error al cargar datos</string>
+	<string name="uploadFailedNoConnectivityContent">No hay conexión</string>
+	<string name="uploadFailedInvalidToken">La autenticación falló. Haga clic para iniciar sesión.</string>
+	<string name="uploadFailedOther">Se produjo un error. Haga clic para reintentar</string>
+	<string name="uploadingDataTitle">Cargando datos de FreeStyle LibreLink</string>
+	<string name="uploadingDataContent">Enviando datos</string>
+	<string name="serving_size_in_grams">1 porción = %.1f gramos</string>
+	<string name="acceptLanguageHeader">es-US, es;q=0.8</string>
+	<string name="appLocale">es-US</string>
+
+	<string name="reportHeaderDayOnlyFormat">d</string>
+	<string name="reportHeaderFullDateFormat">d \'de\' MMMM \'de\' yyyy</string>
+	<string name="reportHeaderShortMonthFormat">d \'de\' MMM</string>
+	<string name="reportHeaderShortMonthFullFormat">d \'de\' MMM \'de\' yyyy</string>
+	<string name="reportHeaderDateRangeFormat">%1$s - %2$s</string>
+	<string name="reportShareSubjectFormat">%1$s: %2$s</string>
+
+	<string name="nonActionableExplanationTitle">Confirmar lectura de glucosa</string>
+	<string name="nonActionableExplanationMessage">Confirme su lectura de glucosa con una tira de prueba antes de tomar decisiones relacionadas con el tratamiento.</string>
+
+	<!-- TTS Result -->
+	<string name="spokenLo">fuera de rango y baja</string>
+	<string name="spokenHi">fuera de rango y alta</string>
+	<string name="spokenMgDl">miligramos por decilitro</string>
+	<string name="spokenMmolL">milimoles por litro</string>
+	<string name="resultWithTrendNotDetermined">%1$s %2$s con tendencia no disponible</string>
+	<string name="resultWithTrendFallingQuickly">%1$s %2$s y bajando rápidamente</string>
+	<string name="resultWithTrendFalling">%1$s %2$s y bajando</string>
+	<string name="resultWithTrendStable">%1$s %2$s y cambiando lentamente</string>
+	<string name="resultWithTrendRising">%1$s %2$s y subiendo</string>
+	<string name="resultWithTrendRisingQuickly">%1$s %2$s y subiendo rápidamente</string>
+
+	<!-- Download Progress -->
+	<string name="progressDownloadingConfiguration">Descargando configuración de la aplicación</string>
+	<string name="progressDownloadingUserGuide">Descargando Manual del usuario</string>
+	<string name="insufficientSpaceMessage">Espacio insuficiente en su smartphone.</string>
+
+
+	<!-- New strings added 25SEPT2017 -->
+
+	<string name="modalLookingForSensor">Sujetar el iPhone cerca del sensor</string>
+	<string name="modalSensorFound">Escaneo finalizado</string>
+	<string name="settingsMenuTitle">Configuración</string>
+	<string name="genericOSVersion">Versión OS:</string>
+	<string name="editTime">Editar hora</string>
+	<string name="detail">Detalle</string>
+	<string name="helpItemTitleGlucoseHelp">Lecturas de glucosa</string>
+	<string name="glucoseHelp">Lecturas de glucosa</string>
+
+	<!-- Abbreviated time passed -->
+	<string name="mins_passed">hace %dm</string>
+	<string name="hours_passed">hace %dh</string>
+
+	<string name="iosNotificationsDisabled">Las notificaciones deben estar activadas en la configuración iOS para poder recibir recordatorios.</string>
+	<string name="glucoseWarningReminderPrompt">¿Desea establecer un recordatorio para verificar su glucosa?</string>
+	<string name="NFCReaderUsageDescription">FreeStyle LibreLink usa NFC para escanear los sensores FreeStyle Libre.</string>
+	<string name="NSPhotoLibraryAddUsageDescription">FreeStyle LibreLink necesita acceso a su biblioteca de medios para guardar informes. Sus fotos no se compartirán sin su permiso.</string>
+	<string name="deleteNote">Borrar nota</string>
+	<string name="deleteNoteConfirmation">¿Desea borrar esta nota?</string>
+
+	<!-- New strings with existing Android Counterparts -->
+
+	<string name="iosScanSensorTextStep1">Pulse el botón de escanear antes de escanear el sensor.</string>
+	<string name="iosScanSensorTextStep2">Sujete la parte superior del iPhone cerca del sensor.</string>
+	<string name="iosScanSensorTextStep3">Después de escanear el sensor, el iPhone vibrará y emitirá un sonido (si los sonidos están activados).</string>
+	<string name="iosErrorVersionCheckFailed">Esta versión de FreeStyle LibreLink necesita actualizarse. En la App Store encontrará la última versión.</string>
+	<string name="iosReadyToScanDetail">El sensor está listo para usarse.</string>
+	<string name="iosDefaultSensorErrorMsg">El escaneo no tuvo éxito. Pulse el botón de escanear y vuelva a escanear.</string>
+	<string name="iosEnableNetworkTimeTitle">Actualizar fecha y hora</string>
+	<string name="iosEnableNetworkTime">La configuración de fecha y hora debe actualizarse automáticamente para poder usar FreeStyle LibreLink. Vaya a Configuración &gt; General &gt; Fecha y hora, y active Configurar automáticamente.</string>
+
+	<!-- New string added per Ashwin Kumar's request 2017-08-30-->
+	<string name="iosCheckGlucoseWithPhone">Puede comprobar su glucosa con el iPhone.</string>
+	<string name="retry">Reintentar</string>
+
+	<!-- New strings for US changes 2017-10-31 -->
+	<string name="sensorUserPrompt">Ingrese la información de la persona que va a llevar puesto el sensor. </string>
+	<string name="welcome">¡Bienvenido!</string>
+	<string name="welcomeDetail">Tómese unos instantes para aprender a entender las lecturas de glucosa con esta aplicación.</string>
+	<string name="backgroundGlucoseColorsTitle">Color de fondo de glucosa</string>
+	<string name="backgroundGlucoseColorsDetail">Su glucosa actual determina el color que se mostrará detrás.</string>
+	<string name="glucoseHighAbove240Mgdl">Glucosa alta (por arriba de 240 mg/dL)</string>
+	<string name="glucoseBetweenTarget240Mgdl">Entre el rango deseado y 240 mg/dL</string>
+	<string name="glucoseTargetRange">Glucosa dentro de su rango deseado</string>
+	<string name="glucoseBetweenTarget70Mgdl">Entre el rango deseado y 70 mg/dL</string>
+	<string name="glucoseLowBelow70Mgdl">Glucosa baja (por debajo de 70 mg/dL)</string>
+	<string name="glucoseHighAbove240Mmol">Glucosa alta (por arriba de 13.3 mmol/L)</string>
+	<string name="glucoseBetweenTarget240Mmol">Entre el rango deseado y 13.3 mmol/L</string>
+	<string name="glucoseBetweenTarget70Mmol">Entre el rango deseado y 3.9 mmol/L</string>
+	<string name="glucoseLowBelow70Mmol">Glucosa baja (por debajo de 3.9 mmol/L)</string>
+	<string name="treatmentDecisions">Decisiones relacionadas con el tratamiento</string>
+	<string name="treatmentDecisionsSymbol">Si ve este símbolo, realice una prueba de glucosa en sangre antes de tomar decisiones relacionadas con el tratamiento.</string>
+	<string name="treatmentDecisionsTest">Si la lectura de glucosa del sensor no refleja cómo se siente, realice una prueba de glucosa en sangre.</string>
+	<string name="checkBloodGlucoseTitle">Verificar glucosa en sangre</string>
+	<string name="checkBloodGlucoseMessage">Realice una prueba de glucosa en sangre antes de tomar decisiones relacionadas con el tratamiento.</string>
+	<string name="highGlucoseCheckBloodGlucose">La glucosa alta puede ser peligrosa. Realice una prueba de glucosa en sangre antes de tomar decisiones relacionadas con el tratamiento. Considere verificar su nivel de cetonas.</string>
+	<string name="lowGlucoseCheckBloodGlucose">La glucosa baja puede ser peligrosa. Realice una prueba de glucosa en sangre antes de tomar decisiones relacionadas con el tratamiento.</string>
+	<string name="reminder">Recordatorio</string>
+	<string name="safetyInformation">Información de seguridad</string>
+	<string name="labeling">Etiquetado</string>
+	<string name="userGuides">Guías del usuario</string>
+	<string name="quickStartGuide">Guía de inicio rápido</string>
+	<string name="quickReferenceGuide">Guía de referencia rápida</string>
+	<string name="myGlucoseExplanationUpdate"> La lectura de glucosa aparece después de escanearse con éxito el sensor. Busque la (1) glucosa actual, la (2) flecha de tendencia de glucosa, el (3) gráfico de glucosa y (4) cualquier mensaje sobre la glucosa.</string>
+	<string name="sensorPlacementInstruction">El sensor solamente debe colocarse en la parte posterior del brazo.</string>
+	<string name="sensorReadyAt">Sensor listo a las:</string>
+	<string name="formattedTimeRemaining">(quedan %1$s)</string>
+	<string name="sensorStartedByOtherDevice">Este sensor se inició con otro dispositivo.</string>
+	<string name="sensorLatejoinExplanation">Para que un sensor funcione con este smartphone, debe escanear el sensor con el smartphone mientras este se inicia.</string>
+	<string name="androidScanInstruction1">Sujete la parte posterior del smartphone cerca del sensor.</string>
+	<string name="androidScanInstruction2">Espere hasta obtener dos sonidos o vibraciones.</string>
+	<string name="bugFixesTitle">Corrección de errores</string>
+	<string name="bugFixesDetail">Corrección de errores y mejoras en el rendimiento</string>
+	<string name="performanceImprovements">Mejoras en el rendimiento</string>
+	<string name="sensorChangeExplanation">Cuando inicie un nuevo sensor, finalizará el que estaba usando.</string>
+	<string name="useNewSensorPrompt">¿Desea empezar a usar el nuevo sensor?</string>
+	<string name="earlySensorActivationPrompt">¿Desea que este sea su siguiente sensor?</string>
+	<string name="changeSensorPrompt">¿Desea empezar a usar este sensor?</string>
+	<string name="replaceExistingSensor">El último sensor iniciado se cambiará por este.</string>
+	<string name="earlyActivationExistingEndsSoon">Puede continuar usando el sensor actual hasta que finalice.</string>
+	<string name="earlyActivationEndsExisting">Puede continuar usando el sensor actual hasta que el nuevo esté listo.</string>
+	<string name="scanOtherSensor">Escanee el otro sensor para verificar la glucosa.</string>
+	<string name="sensorNotWorking">El sensor no funciona.</string>
+	<string name="currentSensorEndsAt">El sensor actual finaliza en:</string>
+	<string name="newSensorReadyAt">Nuevo sensor listo a las:</string>
+	<string name="sensorAlreadyStarted">Este sensor ya se inició.</string>
+	<string name="earlySensorStartupTimeRemaining">La lectura de glucosa no está disponible. Intente escanear el sensor nuevamente en %1$s.</string>
+	<string name="glucoseReadingUnavailable">La lectura de glucosa no está disponible. </string>
+	<string name="scanAgainIn">Intente escanear el sensor nuevamente en %1$s.</string>
+	<string name="softwareReleaseVersion">Versión de lanzamiento del software:</string>
+	<string name="softwareFullVersion">Versión completa del software:</string>
+</resources>

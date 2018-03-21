@@ -508,7 +508,7 @@ extends ReportsHelper {
 		 * 
 		 **/
 		setTheDateAndTime(client, 28, 02, 2013, "23:50");
-		navigateToScreen(client, "Settings");
+		clickOnSettingsMenu(client, "App Settings");
 		if (getUnits().equalsIgnoreCase("mg/dL")) {
 			verifyandsetTGfromSettings(client, 70, 71);
 		} else if (getUnits().equalsIgnoreCase("mmol/L")) {
@@ -579,7 +579,7 @@ extends ReportsHelper {
 		 * @Dependancy Script cannot proceed if this step fails
 		 * 
 		 **/
-		navigateToScreen(client, "Settings");
+		clickOnSettingsMenu(client, "App Settings");
 		if (getUnits().equalsIgnoreCase("mg/dL")) {
 			verifyandsetTGfromSettings(client, 100, 140);
 		} else if (getUnits().equalsIgnoreCase("mmol/L")) {
@@ -626,7 +626,7 @@ extends ReportsHelper {
 		 * @Dependancy Script cannot proceed if this step fails
 		 * 
 		 **/
-		navigateToScreen(client, "Settings");
+		clickOnSettingsMenu(client, "App Settings");
 		if (getUnits().equalsIgnoreCase("mg/dL")) {
 			verifyandsetTGfromSettings(client, 150, 180);
 		} else if (getUnits().equalsIgnoreCase("mmol/L")) {

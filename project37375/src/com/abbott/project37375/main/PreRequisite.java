@@ -9,12 +9,12 @@ public class PreRequisite extends BaseHelper {
 	public void runPrerequisite(){
 	
 
-		setStepID("App installed and launched. File Name: "+getapkFileName()+" & "+"Application Version: ");
+	//	setStepID("App installed and launched. File Name: "+getapkFileName()+" & "+"Application Version: ");
 		createPropertyFiles();
-		changeLanguageAndRegioninDevice(client);
+		/*changeLanguageAndRegioninDevice(client);
 		install(client);	
 		launch(client);
-		capturescreenshot(client, getStepID()+ getAppversion(), true);
+		capturescreenshot(client, getStepID()+ getAppversion(), true);*/
 	}
 
 }

@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2015 Airstrip - All Rights Reserved. -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<!-- Plurals -->
+	<plurals name="insulinUnits">
+		<item quantity="one">%1$s enhed</item>
+		<item quantity="other">%1$s enheder</item>
+	</plurals>
+	<plurals name="days">
+		<item quantity="one">1 dag</item>
+		<item quantity="other">%1$d dage</item>
+	</plurals>
+	<plurals name="hours">
+		<item quantity="one">1 time</item>
+		<item quantity="other">%1$d timer</item>
+	</plurals>
+	<plurals name="minutes">
+		<item quantity="one">1 minut</item>
+		<item quantity="other">%1$d minutter</item>
+	</plurals>
+	<!-- Phrase describing a time duration in seconds using secs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationSecs">
+		<item quantity="one">1 sek</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> sek</item>
+	</plurals>
+	<!-- Phrase describing a time duration in minutes using mins abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationMins">
+		<item quantity="one">1 min</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> min</item>
+	</plurals>
+	<!-- Phrase describing a time duration in hours using hrs abbrevation [CHAR LIMIT=16] -->
+	<plurals name="abbrevDurationHrs">
+		<item quantity="one">1 time</item>
+		<item quantity="other"><xliff:g id="count">%d</xliff:g> timer</item>
+	</plurals>
+	<plurals name="sensorExpiresInDays">
+		<item quantity="one">Udskift sensor om 1 dag</item>
+		<item quantity="other">Udskift sensor om <xliff:g id="count">%d</xliff:g> dage</item>
+	</plurals>
+	<plurals name="sensorExpiresInHours">
+		<item quantity="one">Udskift sensor om 1 time</item>
+		<item quantity="other">Udskift sensor om <xliff:g id="count">%d</xliff:g> timer</item>
+	</plurals>
+	<plurals name="sensorExpiresInMins">
+		<item quantity="one">Udskift sensor om 1 minut</item>
+		<item quantity="other">Udskift sensor om <xliff:g id="count">%d</xliff:g> minutter</item>
+	</plurals>
+	<plurals name="sensorReadyInMins">
+		<item quantity="one">Sensor klar om 1 minut</item>
+		<item quantity="other">Sensor klar om <xliff:g id="count">%d</xliff:g> minutter</item>
+	</plurals>
+
+	<!-- common/generic words, phrases, symbols, and abbreviations -->
+	<string name="deciLiter">dL</string>
+	<string name="gramsSymbol">g</string>
+	<string name="liter">L</string>
+	<string name="mgdl">mg/dL</string>
+	<string name="milligrams">mg</string>
+	<string name="millimole">mmol</string>
+	<string name="mmol">mmol/L</string>
+	<string name="percentSign">\u0025</string>
+	<string name="servingsSymbol">prtion</string>
+	<string name="accept">Accepter</string>
+	<string name="account">Kontoindstillinger</string>
+	<string name="all">Alle</string>
+	<string name="back">Tilbage</string>
+	<string name="average">Gennemsnit</string>
+	<string name="delete">Slet</string>
+	<string name="cancel">Annuller</string>
+	<string name="durationHourMinuteConcatenate">%1$s %2$s</string>
+	<string name="comments">Kommentarer</string>
+	<string name="done">Udført</string>
+	<string name="email">E-mail</string>
+	<string name="friday">Fredag</string>
+	<string name="grams">gram</string>
+	<string name="gramsOfCarbs">gram kulhydrater</string>
+	<string name="units">enheder</string>
+	<string name="help">Hjælp</string>
+	<string name="home">Hjem</string>
+	<string name="insulinDose">Insulindosis</string>
+	<string name="loading">Indlæser</string>
+	<string name="logbook">Logbog</string>
+	<string name="monday">Mandag</string>
+	<string name="next">Næste</string>
+	<string name="no">Nej</string>
+	<string name="note">Bemærk</string>
+	<string name="ok">OK</string>
+	<string name="password">Adgangskode</string>
+	<string name="reminders">Påmindelser</string>
+	<string name="reject">Afvis</string>
+	<string name="reports">Rapporter</string>
+	<string name="saturday">Lørdag</string>
+	<string name="save">Gem</string>
+	<string name="sending">Sender</string>
+	<string name="servings">portioner</string>
+	<string name="servingsOfCarbs">portioner kulhydrater</string>
+	<string name="settings">appens indstillinger</string>
+	<string name="share">Del</string>
+	<string name="start">Start</string>
+	<string name="submit">Send</string>
+	<string name="sunday">Søndag</string>
+	<string name="thursday">Torsdag</string>
+	<string name="tuesday">Tirsdag</string>
+	<string name="wednesday">Onsdag</string>
+	<string name="yes">Ja</string>
+	<string name="days7">7 dage</string>
+	<string name="days14">14 dage</string>
+	<string name="days30">30 dage</string>
+	<string name="days90">90 dage</string>
+	<string name="eventLog">Hændelseslog</string>
+	<string name="eventLogEmptyMessage">Ingen hændelser</string>
+
+	<string name="minorFirstName">Mindreårig - Fornavn</string>
+	<string name="minorLastName">Mindreårig - Efternavn</string>
+	<string name="parentFirstName">@string/parentGuardianFirstName</string>
+	<string name="parentLastName">@string/parentGuardianLastName</string>
+	<string name="lastName">Efternavn</string>
+	<string name="daily_graph">Daglig kurve</string>
+	<string name="daily_patterns">Daglige mønstre</string>
+	<string name="estimated_a1c">Estimeret A1c</string>
+	<string name="firstName">Fornavn</string>
+	<string name="noResults">(Ingen resultater)</string>
+	<string name="signIn">Log på</string>
+	<string name="signingIn">Logger på</string>
+	<string name="scanSensor">Scan sensor</string>
+	<string name="time_in_target">Tid i målområde</string>
+	<string name="errorMsgUnexpected">Uventet fejl i appen.</string>
+	<string name="error_nfc_unsupported">NFC ikke understøttet</string>
+	<string name="error_nfc_disabled">NFC ikke aktiveret</string>
+	<string name="error_networktime_disabled">Automatisk dato og tidspunkt deaktiveret</string>
+	<string name="errorOtherNfcInstalled">Der blev registreret en anden app, der bruger NFC. For at sikre, at FreeStyle LibreLink bruges til aflæsning af sensoren skal du starte FreeStyle LibreLink hver gang, inden du scanner. Eller, hvis du afinstallerer den anden NFC app, bør du være i stand til at scanne sensoren, når som helst din smartphone er ulåst.</string>
+	<string name="loadingChartDataText">Indlæser data</string>
+	<string name="chartErrorMessage">Fejl under indlæsning af data</string>
+	<string name="timeZoneChangeMessage">Tidszonen blev ændret fra %1$s\u00A0til\u00A0%2$s &lt;b&gt;(%3$s)&lt;/b&gt;</string>
+
+	<!-- Countries -->
+	<string name="countryName_AE">de Forenede Arabiske Emirater</string>
+	<string name="countryName_AG">Antigua og Barbuda</string>
+	<string name="countryName_AR">Argentina</string>
+	<string name="countryName_AT">Østrig</string>
+	<string name="countryName_AU">Australien</string>
+	<string name="countryName_AZ">Aserbajdsjan</string>
+	<string name="countryName_BE">Belgien</string>
+	<string name="countryName_BH">Bahrain</string>
+	<string name="countryName_BR">Brasilien</string>
+	<string name="countryName_BS">Bahamas</string>
+	<string name="countryName_BW">Botswana</string>
+	<string name="countryName_BY">Belarus</string>
+	<string name="countryName_BZ">Belize</string>
+	<string name="countryName_CA">Canada</string>
+	<string name="countryName_CH">Schweiz</string>
+	<string name="countryName_CL">Chile</string>
+	<string name="countryName_CN">Kina</string>
+	<string name="countryName_CO">Colombia</string>
+	<string name="countryName_CR">Costa Rica</string>
+	<string name="countryName_CY">Cypern</string>
+	<string name="countryName_DE">Tyskland</string>
+	<string name="countryName_DK">Danmark</string>
+	<string name="countryName_DO">Dominikanske Republik</string>
+	<string name="countryName_DZ">Algeriet</string>
+	<string name="countryName_EC">Ecuador</string>
+	<string name="countryName_ES">Spanien</string>
+	<string name="countryName_FI">Finland</string>
+	<string name="countryName_FR">Frankrig</string>
+	<string name="countryName_GB">United Kingdom</string>
+	<string name="countryName_GR">Grækenland</string>
+	<string name="countryName_HK">Hong Kong</string>
+	<string name="countryName_IE">Irland</string>
+	<string name="countryName_IL">Israel</string>
+	<string name="countryName_IS">Island</string>
+	<string name="countryName_IT">Italien</string>
+	<string name="countryName_JO">Jordan</string>
+	<string name="countryName_JP">Japan</string>
+	<string name="countryName_KR">Korea</string>
+	<string name="countryName_KW">Kuwait</string>
+	<string name="countryName_KZ">Kasakhstan</string>
+	<string name="countryName_LB">Libanon</string>
+	<string name="countryName_LU">Luxemborg</string>
+	<string name="countryName_MT">Malta</string>
+	<string name="countryName_MX">Mexico</string>
+	<string name="countryName_MY">Malaysia</string>
+	<string name="countryName_NL">Holland</string>
+	<string name="countryName_NO">Norge</string>
+	<string name="countryName_NZ">New Zealand</string>
+	<string name="countryName_OM">Oman</string>
+	<string name="countryName_PA">Panama</string>
+	<string name="countryName_PE">Peru</string>
+	<string name="countryName_PL">Polen</string>
+	<string name="countryName_PT">Portugal</string>
+	<string name="countryName_QA">Qatar</string>
+	<string name="countryName_RU">Rusland</string>
+	<string name="countryName_SA">Saudi Arabien</string>
+	<string name="countryName_SE">Sverige</string>
+	<string name="countryName_SG">Singapore</string>
+	<string name="countryName_TH">Thailand</string>
+	<string name="countryName_TR">Tyrkiet</string>
+	<string name="countryName_TT">Trinidad og Tobago</string>
+	<string name="countryName_TW">Taiwan</string>
+	<string name="countryName_US">De Forenede Stater</string>
+	<string name="countryName_UY">Uruguay</string>
+	<string name="countryName_VE">Venezuela</string>
+	<string name="countryName_ZA">Sydafrika</string>
+	<string name="countryName_ZW">Zimbabwe</string>
+
+	<!-- License Check -->
+	<string name="librelinkLicenseCheck">FreeStyle LibreLink licenstjek</string>
+	<string name="licenseCheckFailed">Installer venligst appen fra Google Play.</string>
+
+	<!-- Update Version Check -->
+	<string name="librelink_upgrade_check">FreeStyle LibreLink opgraderingstjek</string>
+	<string name="checkingVersion">Tjekker versionen</string>
+	<string name="errorVersionCheckFailed">Denne version af FreeStyle LibreLink skal opdateres. Tjek Google Play for den nyeste version.</string>
+
+	<!-- App Tour -->
+	<string name="checkGlucoseWithPhone">Du kan tjekke glukose med din smartphone.</string>
+	<string name="instantAccess">Du har hurtig adgang til dine glukoseoplysninger.</string>
+	<string name="actionableInsights">Du får et større indblik, der gør dig bedre i stand til at træffe beslutninger.</string>
+	<string name="shareGlucoseInformation">Du kan dele dine glukoseoplysninger med sundhedspersonalet og pårørende.</string>
+
+	<!-- Account Registration/Sign In -->
+	<string name="changeUserMessage">Når du logger på kontoen bliver data på enheden fra den tidligere bruger slettet.\n\nVil du fortsætte?</string>
+	<string name="changeDeviceMessage">Tryk på OK for at logge denne smartphone på din eksisterende LibreView konto. Du kan fortsætte med at aflæse en sensor, som blev startet med din tidligere smartphone.\n\nBemærk: Når du trykker på OK, bliver den tidligere smartphone logget af.</string>
+	<string name="registeringDevice">Registrering af smartphonen</string>
+	<string name="firstNameLabel">@string/firstName</string>
+	<string name="lastNameLabel">@string/lastName</string>
+	<string name="emailLabel">@string/email</string>
+	<string name="dateOfBirthLabel">@string/dateOfBirth</string>
+	<string name="dateOfBirth">Fødselsdato</string>
+	<string name="passwordLabel">@string/password</string>
+	<string name="createPasswordLabel">@string/password</string>
+	<string name="changePassword">Kontoens adgangskode</string>
+	<string name="newPasswordLabel">Ny adgangskode</string>
+	<string name="currentPasswordLabel">Aktuel adgangskode</string>
+	<string name="confirmPasswordLabel">Bekræft adgangskode</string>
+	<string name="sendingResetRequest">Sender anmodning om nulstilling af adgangskode</string>
+	<string name="adultRegistrationTitle">Konto-log ind</string>
+	<string name="minorRegistrationTitle">Forældre/værgeres konto-log ind</string>
+	<string name="signInLinkText">@string/signIn</string>
+	<string name="account_sign_in_title">@string/signIn</string>
+	<string name="alreadyHaveAccountPromptText">Har du allerede en LibreView konto?</string>
+	<string name="invalidPasswordErrorMessage">Indtast en gyldig adgangskode. Adgangskoder skal være på 8\u201336 tegn og indeholde mindst 1 tal, 1 stort bogstav og 1 lille bogstav.</string>
+	<string tools:ignore="PluralsCandidate" name="tooYoungErrorMessage">Du skal være %1$s år eller derover for at bruge FreeStyle LibreLink.</string>
+	<string name="tooYoungWarningMessage">En fødselsdato bruges til at oprette LibreView kontoen og ikke til at afgøre, om du kan bruge appen eller ej. Se venligst brugervejledningen til appen, inden du bruger appen.</string>
+	<string name="forgotPasswordText">Glemt adgangskoden?</string>
+	<string name="createNewAccountText">Opret en ny konto</string>
+	<string name="existing_user_login_text">En konto med denne e-mailadresse findes allerede. Indtast din e-mailadresse og adgangskode.</string>
+	<string name="normal_user_login_text">Indtast dit LibreView konto-login.</string>
+	<string name="passwordMismatchErrorMessage">Adgangskoderne skal være identiske</string>
+	<string name="invalidEmailAddressErrorMessage">Indtast en gyldig e-mailadresse.</string>
+	<string name="passwordResetSent">Instruktioner til nulstilling af din adgangskode er blevet sendt til din e-mailadresse.</string>
+	<string name="accountContactOptIn">Send venligst oplysninger om Abbott Diabetes Care og andre Abbott produkter og tjenester. (Du kan afmelde når som helst).</string>
+	<string name="passwordResetMessage">Indtast den e-mailadresse, der blev brugt til at registrere kontoen. Instruktioner til nulstilling af din adgangskode bliver sendt til den adresse.</string>
+	<string name="nonExistentUserErrorMessage">Der findes ingen konto for den e-mailadresse du indtastede.</string>
+	<string name="invalidLoginErrorMessage">E-mailadressen eller adgangskoden er forkert. Prøv igen.</string>
+	<string name="invalidProfileUpdatePassword">Adgangskoden er forkert. Prøv igen.</string>
+	<string name="invalidProfileDOB">Du kan ikke ændre kontotype fra en voksen til en mindreårig. Rediger din fødselsdato i overensstemmelse hermed.</string>
+	<string name="invalidAppKeyErrorMessage">Fejl i kommunikationen med serveren. Ugyldig app kode.</string>
+	<string name="invalidNetworkDomainErrorMessage">Fejl i kommunikationen med serveren. Ugyldigt domænenavn.</string>
+	<string name="invalidRegistrationErrorMessage">Registreringen kunne ikke udføres pga. af ugyldige data.</string>
+	<string name="invalidAccountRegionErrorMessage">Indstillingerne for land for din app og din konto stemmer ikke overens. Du bedes oprette en ny konto.</string>
+	<string name="accountRegisteringProgressMessage">Registrerer</string>
+	<string name="accountUpdateProgressMessage">Sender</string>
+	<string name="accountAlreadyRegisteredErrorMessage">Denne e-mailadresse er allerede forbundet med en LibreView konto.\n\nDu behøver ikke oprette en ny konto. Du logger bare på.</string>
+	<string name="professionalAccountAlreadyRegisteredErrorMessage">Denne e-mailadresse er allerede forbundet med en LibreView Professional konto. Du skal bruge en anden e-mailadresse til at oprette en konto og bruge denne app.</string>
+	<string name="alreadyRegisteredSignInButtonText">@string/signIn</string>
+	<string name="enter_numera_data">Opret din LibreView konto til brug med FreeStyle LibreLink og andre kompatible apps.</string>
+	<string name="minorRegistrationHeader">Denne bruger er mindreårig. En forældre eller værger skal fuldføre kontoen for at bruge denne software.</string>
+	<string name="parentGuardianFirstName">Forældre/værgeres fornavn</string>
+	<string name="parentGuardianLastName">Forældre/værgeres efternavn</string>
+	<string name="parentGuardianEmail">@string/email</string>
+	<string name="nameAndBirthDateHeader">Lad os begynde med nogle grundlæggende oplysninger.</string>
+	<string name="nameAndBirthDateTitle">@string/createNewAccountText</string>
+	<string name="profileUpdateTopText">Enhver ændring i de nedenstående oplysninger vil opdatere kontoen.</string>
+	<string name="changePasswordTopText">Adgangskoder skal være mellem 8–36 tegn og indeholde mindst 1 tal, 1 stort bogstav og 1 lille bogstav.</string>
+	<string name="createAccountSubmitButtonText">Opret konto</string>
+	<string name="authenticationFailure">Autentificering med serveren mislykkedes. Log venligst på igen.</string>
+	<string name="authenticationFailureLoginButton">Log på</string>
+	<string name="reenterPassword">Indtast din adgangskode igen.</string>
+	<string name="parentLoginText">Forældre/værgeres log-ind påkrævet.</string>
+	<string name="parentLoginSubText">Indtast kontoens adgangskode for at få adgang til delefunktionen.</string>
+
+	<!-- Side Navigation Drawer -->
+	<string name="navigation_drawer_username">%1$s %2$s</string>
+	<string name="navigation_drawer_daily_graph">@string/daily_graph</string>
+	<string name="navigation_drawer_estimated_a1c">@string/estimated_a1c</string>
+	<string name="navigation_drawer_average_glucose">Gennemsnitlig glukose</string>
+	<string name="navigation_drawer_low_glucose">Hændelser med lavt glukoseniveau</string>
+	<string name="navigation_drawer_sensor_usage">Brug af sensor</string>
+	<string name="navigation_drawer_daily_patterns">@string/daily_patterns</string>
+	<string name="navigation_drawer_time_in_target">@string/time_in_target</string>
+	<string name="navigation_drawer_sharedata">@string/share</string>
+
+	<!-- Home -->
+	<string name="applyNewSensor">Fastgør en ny sensor</string>
+	<string name="scanNewSensor">Scan den nye sensor</string>
+	<string name="startNewSensor">Fastgør og scan den nye sensor</string>
+	<string name="sensorReadyIn">Sensoren kan bruges om %1$s</string>
+	<string name="readyToScanDetail">Din sensor er klar til brug. Tjek dit glukoseniveau ved at holde smartphonens bagside ind imod sensoren til du hører to toner.</string>
+	<string name="applyNewSensorDetail">Sæt en ny sensor på.</string>
+	<string name="scanNewSensorDetail">Scan sensoren for at starte den.</string>
+	<string name="scanNewSensorDetailLateJoin">Hvis du også vil anvende en læser, skal du først scanne med den.</string>
+	<string name="scanSensorDetail">Scan sensoren.</string>
+	<string name="last24Hours">Sidste 24 timer</string>
+	<string name="lastScan">Sidste scanning</string>
+	<string name="sensorIsReady">Klar til at scanne</string>
+	<string name="sensorWarmingUp">Ny sensor starter</string>
+	<string name="sensorHasEnded">Din sensor endte</string>
+	<string name="sensorEndsIn">Sensor ender om: %1$s</string>
+	<string name="sensorLateJoinMessage">Du kan nu scanne sensoren med denne enhed og med enheden, der blev brugt til at starte sensoren.\n\nBemærk: For at være sikker på, at rapporter på en enhed viser alle data, skal du scanne sensoren med den enhed mindst én gang hver 8. time. Enhederne deler ikke data og rapporter.</string>
+
+	<!-- Stats/Reports -->
+	<!-- Used for Germany to force 24 hour time on the chart axis -->
+	<bool name="force24HourTimes">false</bool>
+
+	<!-- Used to set the string format for graph axis unless 24 hour time is used -->
+	<string name="amTimeAxisFormat">h\'AM\'</string>
+	<string name="pmTimeAxisFormat">h\'PM\'</string>
+
+	<string name="mmolPerMolFormatter" tools:ignore="PluralsCandidate">( %d mmol/mol )</string>
+	<string name="sensor_usage_total_scans">Totale scanninger</string>
+	<string name="sensor_usage_day_average">Scanninger pr. dag</string>
+	<string name="sensor_usage_captured">% sensordata registreret</string>
+	<string name="days_of_data" tools:ignore="PluralsCandidate">Data tilgængelige i %1$d af %2$d dage</string>
+	<string name="a1cDaysOfData" tools:ignore="PluralsCandidate">Data over %1$d af %2$d dage</string>
+	<string name="no_sensor_data">Ikke nok data fra sensoren</string>
+	<string name="timeintarget_glucose_range">%1$s-%2$s</string>
+	<string name="timeintarget_glucose_less_than">&lt; %s</string>
+	<string name="timeintarget_glucose_greater_than">&gt; %s</string>
+	<string name="timeintarget_percent">%</string>
+	<string name="target">MÅLVÆRDI</string>
+	<string name="timeInTargetGlucoseRangeLabel">Målområde: %s</string>
+	<string name="average_glucose_info_title">Gennemsnitlig glukose</string>
+	<string name="average_glucose_info_msg">Gennemsnitlig glukose giver oplysninger om gennemsnittet af sensorens glukosemålinger. Det samlede gennemsnit for den valgte periode er vist under kurven. Der er også vist et gennemsnit for forskellige tidspunkter på dagen. Målinger over eller under dit Målområde for glukose er vist med gult, orange eller rødt. Målinger inden for område er grønne.</string>
+	<string name="low_glucose_info_title">HÆNDELSER MED LAVT GLUKOSENIVEAU</string>
+	<string name="low_glucose_info_msg_mg">Hændelser med lavt glukoseniveau indeholder oplysninger om antallet af hændelser med lavt glukoseniveau som målt af sensoren. En hændelse med lavt glukoseniveau registreres, når sensorens måling af din glukose er under 70 mg/dL i mere end 15 minutter. Det totale antal hændelser vises under kurven. Søjlediagrammet viser hændelser med lavt glukoseniveau på forskellige tidspunkter på dagen.</string>
+	<string name="low_glucose_info_msg_mmol">Hændelser med lavt glukoseniveau indeholder oplysninger om antallet af hændelser med lavt glukoseniveau som målt af sensoren. En hændelse med lavt glukoseniveau registreres, når sensorens glukosemåling er lavere end 3,9 mmol/L i mere end 15 minutter. Det totale antal hændelser vises under kurven. Søjlediagrammet viser hændelser med lavt glukoseniveau på forskellige tidspunkter på dagen.</string>
+	<string name="a1c_info_title">ESTIMERET A1c</string>
+	<string name="a1c_info_msg">Dit estimerede A1c niveau (også kaldet HbA1c) er baseret på tilgængelige sensorglukosedata fra de sidste 90 dage. Jo flere data, der er tilgængelige, desto bedre bliver din estimering. Det estimerede niveau vil imidlertid ikke nødvendigvis stemme overens med din A1c målt på et laboratorium.\n\nA1c kan bruges som en indikator for, hvor godt dine glukoseniveauer er blevet kontrolleret og eventuelt vil blive brugt til at overvåge dit behandlingsregime.</string>
+	<string name="daily_info_title">Daglig kurve</string>
+	<string name="daily_info_msg">Daglig kurve viser en graf over dine sensorglukosemålinger pr. dag.\n\nDu vil muligvis observere mellemrum i kurven på tidspunkter, hvor du ikke har scannet mindst én gang inden for 8 timer.\n\nEt ur-symbol vises muligvis for at angive en ny tidszone. Der kan være mellemrum i kurven, eller glukosemålinger kan være skjult.</string>
+	<string name="sensor_usage_info_title">BRUG AF SENSOR</string>
+	<string name="sensor_usage_info_msg">Brug af sensor indeholder oplysninger om, hvor ofte du scanner sensoren. Dette inkluderer et gennemsnit af, hvor mange gange om dagen du scannede sensoren, procentdelen af mulige sensordata registreret fra dine scanninger, samt det samlede antal scanninger.</string>
+	<string name="time_in_target_info_title">Tid i målområde</string>
+	<string name="time_in_target_info_msg">Tid i målområde er en kurve, der viser procentdelen af tid sensorens glukosemålinger lå over, under eller inden for Målområde for glukose.</string>
+	<string name="daily_average">Gennemsnit: %1$s %2$s</string>
+	<string name="total_events">Totale hændelser: %1$d</string>
+	<string name="daily_patterns_info_title">Daglige mønstre</string>
+	<string name="daily_patterns_info_msg">Daglige mønstre er en kurve, der viser mønstre og variabilitet af sensorens glukosemåling i løbet af en typisk dag. Den fede sorte streg angiver middelværdien (midtpunktet) af dine glukosemålinger. Det lyseblå skraverede område repræsenterer 10–90 percentilområdet af dine sensormålinger. Det mørkeblå skraverede område repræsenterer 25–75 percentilområdet.\n\nBemærk: Daglige mønstre kræver glukosedata fra mindst 5 dage.</string>
+
+	<!-- Scan Result -->
+	<string name="glucoseAboveRange">HØJT GLUKOSENIVEAU\n(UDEN FOR OMRÅDE)</string>
+	<string name="glucoseBelowRange">LAV GLUKOSE\n(UDEN FOR OMRÅDE)</string>
+	<string name="glucoseGoingHigh">GLUKOSE BLIVER HØJT</string>
+	<string name="glucoseGoingLow">GLUKOSE BLIVER LAVT</string>
+	<string name="glucoseHigh">HØJT GLUKOSENIVEAU</string>
+	<string name="glucoseInRange">GLUKOSE INDEN FOR OMRÅDE</string>
+	<string name="glucoseLow">LAV GLUKOSE</string>
+	<string name="highGlucoseIsDangerous">Et højt glukoseniveau kan være farligt. Tjek dit glukoseniveau igen, og følg den behandling, der anbefales af sundhedspersonalet. Overvej også at tjekke dit ketonniveau.</string>
+	<string name="lowGlucoseIsDangerous">Et lavt glukoseniveau kan være farligt. Tjek dit glukoseniveau igen, og følg den behandling, der anbefales af sundhedspersonalet.</string>
+	<string name="yourGlucose">Min glukose</string>
+	<string name="vrcFailedTitle">Fejl ved visning af resultat</string>
+	<string name="vrcFailedText">Resultatet er: %s</string>
+	<string name="error_sensor_incompatible_title">Inkompatibel sensor</string>
+	<string name="error_sensor_incompatible_msg">Denne sensor kan ikke anvendes med denne version af FreeStyle LibreLink.</string>
+	<string name="error_sensor_terminated_title">Udskift sensor</string>
+	<string name="error_sensor_terminated_msg">Sensoren fungerer ikke. Fjern sensoren, og start en ny.</string>
+	<string name="error_sensor_removed_title">Udskift sensor</string>
+	<string name="error_sensor_removed_msg">Sensoren fungerer ikke. Fjern sensoren, og start en ny.</string>
+	<string name="error_sensor_expired_title">Sensor endt</string>
+	<string name="error_sensor_expired_msg">Start en ny sensor for at tjekke glukose.</string>
+	<string name="error_sensor_inwarmup_title">Sensoren starter</string>
+	<string name="error_sensor_inwarmup_msg">Sensoren er startet men er endnu ikke klar til brug.</string>
+	<string name="error_sensor_corrupt_title">Scanningsfejl</string>
+	<string name="error_sensor_corrupt_msg">Smartphonen kunne ikke scanne sensoren. Scan sensoren igen.</string>
+	<string name="error_sensor_transmission_title">Scanningsfejl</string>
+	<string name="error_sensor_transmission_msg">Smartphonen kunne ikke scanne sensoren. Scan sensoren igen. Sørg for at holde bagsiden af smartphonen tæt på sensoren. Når du hører den første tone eller vibration, skal du holde smartphonen i ro, indtil du hører den næste tone eller vibration.</string>
+	<string name="error_sensor_already_started_title">Sensor er allerede i brug</string>
+	<string name="error_sensor_already_started_msg">Den sensor du lige har scannet blev startet af en anden enhed og kan ikke bruges.</string>
+	<string name="error_sensor_already_started_msg_llj">Denne sensor blev startet med en anden enhed. For at sensoren kan fungere med denne smartphone skal du bruge denne smartphone til at scanne sensoren inden for den første time.</string>
+	<string name="error_sensor_temporary_problem_title">Sensorfejl</string>
+	<string name="error_sensor_temporary_problem_msg">Glukosemåling er ikke tilgængelig. Prøv at scanne igen om 10 minutter.</string>
+	<string name="error_sensor_too_hot_title">Sensor for varm</string>
+	<string name="error_sensor_too_hot_msg">Sensoren er for varm til at foretage glukosemålinger. Prøv igen om et par minutter.</string>
+	<string name="error_sensor_too_cold_title">Sensor for kold</string>
+	<string name="error_sensor_too_cold_msg">Sensoren er for kold til at foretage glukosemålinger. Prøv igen om et par minutter.</string>
+	<string name="error_sensor_insertion_failure_title">Tjek sensor</string>
+	<string name="error_sensor_insertion_failure_msg">Tjek sensoren. Hvis sensoren sidder løst på huden, skal du fjerne den og starte en ny. Hvis sensoren sidder korrekt, prøv at starte den igen.</string>
+	<string name="error_sensor_not_active_title">Ny sensor fundet</string>
+	<string name="error_sensor_not_active_msg">Når du starter en ny sensor, stopper den sensor, du er i færd med at bruge.\n\nVil du starte den nye nu?</string>
+
+	<!-- Add/Edit Note -->
+	<string name="addNote">Tilføj note</string>
+	<string name="editNote">Rediger note</string>
+	<string name="highIntensity">Høj intensitet</string>
+	<string name="mediumIntensity">Middel intensitet</string>
+	<string name="lowIntensity">Lav intensitet</string>
+	<string name="noExerciseTypeChosen">Vælg intensitet</string>
+	<string name="food">Mad</string>
+	<string name="exercise">Motion</string>
+	<string name="longActingInsulin">Langtids virkende insulin</string>
+	<string name="rapidActingInsulin">Hurtigt virkende insulin</string>
+	<string name="meal">Måltid</string>
+	<string name="breakfast">Morgenmad</string>
+	<string name="lunch">Frokost</string>
+	<string name="snack">Mellemmåltid</string>
+	<string name="dinner">Aftensmad</string>
+	<string name="carbsGramsError">Værdien skal være et helt tal mellem %1$s og %2$s</string>
+	<string name="carbsServingsError">Værdien skal være et multiplum af 0,5 og være mellem %1$s og %2$s</string>
+	<string name="insulinDoseError">Værdien skal være et multiplum af 0,1 og være mellem 0,1 og %1$d</string>
+
+	<!-- Manual BG -->
+	<string name="manualBgTitle">Blodsukkerresultat</string>
+	<string name="manualBgExplanation">Indtast resultatet fra din blodsukkertest.</string>
+	<string name="manualBgError">Værdien skal være et helt tal mellem %1$s og %2$s</string>
+
+	<!-- Logbook -->
+	<string name="logbookDetail">Logbogsdetaljer</string>
+	<string name="logbookListEmpty">Ingen poster for denne dato.</string>
+	<string name="logbookDetailCarbFormatDoseAndUnit">" (&lt;b&gt;%1$s%2$s&lt;/b&gt;)"</string>
+	<string name="logbookDetailInsulinFormatTypeAndDose">%1$s (&lt;b&gt;%2$s&lt;/b&gt;)</string>
+	<string name="logbookDetailSeparator">", "</string>
+	<string name="noteBalloonSeparator">&lt;br/&gt;</string>
+	<string name="logbookDetailExerciseType">@string/exercise</string>
+	<string name="logbookDetailExerciseFormatType">Motion %s</string>
+	<string name="logbookDetailExerciseFormatDuration">" (&lt;b&gt;%s&lt;/b&gt;)"</string>
+
+	<!-- Reminders -->
+	<string name="alarms">Alarmer</string>
+	<string name="repeating">Gentages</string>
+	<string name="timers">Timere</string>
+	<string name="addReminder">Tilføj påmindelse</string>
+	<string name="alarmName">Navn på påmindelse</string>
+	<string name="checkGlucose">Tjek glukose</string>
+	<string name="myReminder">Min påmindelse</string>
+	<string name="nextReminderPrompt">Næste påmindelse:\u0020</string>
+	<string name="nextAlarmPrompt">Næste påmindelse: %1$s, %2$s</string>
+	<string name="noActiveReminders">Ingen aktive påmindelser.</string>
+	<string name="noActiveRemindersAutoScanSensorEnabled">Ingen aktive påmindelser. Scan sensor timeren nulstilles, næste gang du scanner.</string>
+	<string name="remindMeToCheckAgain">Mind mig om at tjekke glukose om:</string>
+	<string name="setReminder">Indstil</string>
+
+	<!-- Send Reports -->
+	<string name="sendChooserTitle">Send</string>
+
+	<!-- Settings -->
+	<string name="unitOfMeasurementTitle">Måleenhed</string>
+	<string name="unitOfMeasurementTopText">Vælg enhed for glukose. Alle glukosedata vil blive vist i disse enheder.</string>
+	<string name="unitOfMeasurementTopTextForSetup">Vælg enhed for glukose. Alle glukosedata vil blive vist i disse enheder. Du vil IKKE være i stand til at ændre dette senere hen.</string>
+	<string name="unitOfMeasureWarning">Det er MEGET vigtigt at vælge den rette måleenhed for din glukose. En forkert måleenhed kan føre til misfortolkning af dine glukoseværdier. Tjek med din diabetesbehandler, hvis du ikke ved, hvilket enhed du skal vælge.</string>
+	<string name="unitOfMeasurementFixedTopText">Din måleenhed for glukose bliver indstillet automatisk ud fra landet, hvor du bor.</string>
+	<string name="unitOfMeasurementFixedCountryText">Dit land er</string>
+	<string name="unitOfMeasurementFixedText">Din måleenhed er</string>
+	<string name="targetGlucoseRangeTitle">Målområde for glukose</string>
+	<string name="targetGlucoseRangeTopText">Dit målområde for glukose bliver vist på forskellige kurver. Tjek med din diabetesbehandler, hvis du ikke kender dit målområde.</string>
+	<string name="targetGlucoseRangeTopTextForSetup">Dit målområde for glukose bliver vist på forskellige kurver, og det kan ændres i Indstillinger. Tjek med din diabetesbehandler, hvis du ikke kender dit målområde.</string>
+	<string name="carbohydrateUnitsTitle">Kulhydratenheder</string>
+	<string name="carbohydrateUnitsTopText">Kulhydrater kan indtastes i gram eller i portioner, afhængigt af, hvordan du tæller dem. Vælg din foretrukne enhed for kulhydrater.</string>
+	<string name="carbohydrateUnitServingSizeMessage">Vælg din foretrukne potionsstørrelse, eller kontakt din diabetesbehandler, hvis du ikke kender denne.</string>
+	<string name="carbohydrateUnitsTopTextForSetup">@string/carbohydrateUnitsTopText</string>
+	<string name="scanSoundsTitle">Scannelyde</string>
+	<string name="scanSoundsOsDefault">lyd og vibration</string>
+	<string name="scanSoundsVibeOnly">kun vibration</string>
+	<string name="scanSoundsTopText">Scanning af en sensor udløser en vibration. Vælg dette, hvis du også ønsker at høre en lyd foruden vibrationen.</string>
+	<string name="scanSoundsTopTextForSetup">@string/scanSoundsTopText</string>
+	<string name="scanSoundsNote">Bemærk:\nScannelyde overtager din smartphones lydstyrkeindstillinger. Hvis fx lydstyrken på din smartphone er slået fra, hører du ikke scannelyden.</string>
+	<string name="textToSpeechTitle">Tekst til tale</string>
+	<string name="textToSpeechOn">tændt</string>
+	<string name="textToSpeechOff">slukket</string>
+	<string name="textToSpeechTopText">Tænd for Tekst til tale, hvis du ønsker at få glukosemålingen læst højt.</string>
+	<string name="textToSpeechNote">Bemærk:\nTekst til tale overtager din smartphones lydstyrkeindstillinger. Hvis fx lydstyrken på din smartphone er slået fra, vil du ikke høre glukosemålingen blive læst højt.</string>
+	<string name="countryOfOriginTitle">Bekræft land eller område</string>
+	<string name="countryOfOriginTopText">Dit land eller område bruges under opsætningen af appen og for at sikre, at dine oplysninger opbevares korrekt.</string>
+	<string name="countryOfOriginTopTextForSetup">@string/countryOfOriginTopText</string>
+	<string name="countryOfOriginExplanation">Hvis korrekt, tryk på Næste.\n\nHvis forkert, er du muligvis nødt til at afinstallere FreeStyle LibreLink og installere versionen for dit land eller område. Kontakt Kundeservice, hvis du har spørgsmål.</string>
+	<string name="targetGlucoseRangeUnitText">Værdier i</string>
+	<string name="servingsWithGramsEquivalent" tools:ignore="PluralsCandidate">portioner (1 portion = %.1f gram)</string>
+	<string name="countryLabel">Land eller område</string>
+	<string name="countryLabelForSetup">Dit land eller område er blevet identificeret som</string>
+	<string name="defaultNetworkErrorMessage">Fejl i kommunikationen med serveren.</string>
+	<string name="serverNotFoundErrorMessage">Fejl i kommunikationen med serveren. Serveren blev ikke fundet.</string>
+	<string name="pageNotFoundErrorMessage">Fejl i kommunikationen med serveren. Serveren har intet indhold.</string>
+	<string name="networkingErrorMessage">Der opstod en netværksfejl under kommunikation med serveren.</string>
+	<string name="internalServerErrorMessage">Fejl i kommunikationen med serveren. Der opstod en intern serverfejl.</string>
+	<string name="requestTimeoutErrorMessage">Fejl i kommunikationen med serveren. Anmodning fik timeout.</string>
+	<string name="serviceUnavailableErrorMessage">Fejl i kommunikationen med serveren. Ingen service.</string>
+	<string name="submitButtonText">@string/submit</string>
+	<string name="mgPerDeciliterRadioText"><b>mg/dL</b> (f.eks. 100 mg/dL)</string>
+	<string name="mmolPerLiterRadioText"><b>mmol/L</b> (f. eks. 5,6 mmol/L)</string>
+	<string name="target_range_separator">-</string>
+	<string name="glucoseRangeFormat">%1$s - %2$s %3$s</string>
+	<string name="settingsUnitOfMeasureConfirmationMessage">Bekræft, at du vil vælge den følgende måleenhed:</string>
+	<string name="networkNotConnectedDefault">Din smartphone er i øjeblikket ikke koblet til internettet. Denne funktion kan ikke udføres uden internetforbindelse.</string>
+	<string name="networkNotConnectedSetup">Din smartphone er i øjeblikket ikke koblet til internettet. Opsætningen kan ikke udføres uden internetforbindelse.</string>
+	<string name="networkNotConnectedProfileUpdate">Din smartphone er i øjeblikket ikke koblet til internettet. Din konto kan ikke ændres uden internetforbindelse.</string>
+	<string name="privacyNoticeAcceptanceStatement">Jeg har læst og accepterer udtrykkeligt denne fortrolighedserklæring.</string>
+	<string name="privacyNoticeTitle">Fortrolighedserklæring</string>
+	<string name="termsOfUseAcceptanceStatement">Jeg har læst og accepterer udtrykkeligt Vilkår for anvendelse.</string>
+	<string name="termsOfUseTitle">Vilkår for anvendelse</string>
+	<string name="nfcUnsupported">Før du kan bruge FreeStyle LibreLink til at scanne din sensor, skal NFC være understøttet af din smartphone.</string>
+	<string name="turnOnNfcPrompt">Før du kan bruge FreeStyle LibreLink til at scanne din sensor, skal NFC være aktiveret på din smartphone. Vil du slå det til?</string>
+	<string name="enableNetworkTime">Før du kan bruge FreeStyle LibreLink til at scanne din sensor, skal din smartphone være indstillet til automatisk at opdatere dato og klokkeslæt. Vil du slå det til?</string>
+	<string name="getStartedNow">Kom i gang nu</string>
+
+	<!-- My Glucose Explanation -->
+	<string name="myGlucoseExplanationTitle">Min glukose</string>
+	<string name="myGlucoseExplanationTopText">Dette skærmbillede vises, efter du har scannet sensoren.</string>
+	<string name="myGlucoseExplanationResultCallouts">Skærmbilledet Min glukose viser (1) dit aktuelle glukoseniveau, (2) din glukosetrendpil og (3) din glukosekurve.</string>
+
+	<!-- Trend Arrow Explanation -->
+	<string name="trendExplanationTitle">Glukosetrendpil</string>
+	<string name="trendExplanationTopText">Når du scanner sensoren, viser en pil din seneste glukosetendens.</string>
+	<string name="trendExplanationRisingQuickly">Hurtigt stigende</string>
+	<string name="trendExplanationRising">Stigende</string>
+	<string name="trendExplanationStable">Ændrer sig langsomt</string>
+	<string name="trendExplanationFalling">Faldende</string>
+	<string name="trendExplanationFallingQuickly">Hurtigt faldende</string>
+
+	<!-- Help -->
+	<string name="helpItemTitleApplySensor">Sådan sætter du en sensor på</string>
+	<string name="helpItemTitleScanSensor">Sådan scanner du en sensor</string>
+	<string name="helpItemTitleEventLog">@string/eventLog</string>
+	<string name="helpItemTitleUserGuide">Brugervejledning</string>
+
+	<!-- OneStep Log Upload -->
+	<string name="logUploadTitle">Send fejlfindingsoplysninger</string>
+	<string name="logUploadOptInDescription">Kundeservice kan bedre hjælpe dig, når du sender fejlfindingsoplysninger.</string>
+	<string name="logUploadOptInText1">Den fortrolighedserklæring du accepterede tidligere, beskriver hvad fejlfindingsoplysninger omfatter.</string>
+	<string name="logUploadViewPrivacyButtonLabel">Vis fortrolighedserklæringen</string>
+	<string name="logUploadOptInText2">Indvilliger du i at sende dine fejlfindingsoplysninger?</string>
+	<string name="logUploadDecline">Afslået</string>
+	<string name="logUploadAccept">Enig</string>
+	<string name="logUploadDescription">Indtast det kundenummer og verificeringskoden du fik fra kundeservice.</string>
+	<string name="logUploadCaseNumberLabel">Kundenummer</string>
+	<string name="logUploadAccessCodeLabel">Verificeringskode</string>
+	<string name="logUploadSendButtonLabel">Send</string>
+	<string name="logUploadErrorTypo">Kundenummeret eller verificeringskoden er forkert</string>
+	<string name="logUploadErrorUploadFailedTitle">Fejl ved overførsel af fejlfindingsoplysninger</string>
+	<string name="logUploadErrorUploadFailedText">Tryk for at prøve igen.</string>
+
+	<!-- Apply Sensor Tour -->
+	<string name="applySensorTitle">Påsætning af en sensor</string>
+	<string name="applySensorTitleStep1">TRIN 1</string>
+	<string name="applySensorTextStep1">Vælg et sted på bagsiden af din overarm.</string>
+	<string name="applySensorSubTextStep1">Bemærk: Undgå steder med ar, modermærker, strækmærker, buler og indstikssteder. Skift mellem påsætningssteder, så du undgår hudirritation.</string>
+	<string name="applySensorTitleStep2">TRIN 2</string>
+	<string name="applySensorTextStep2">Rengør stedet med en spritserviet. Lad stedet tørre, inden du fortsætter.</string>
+	<string name="applySensorTitleStep3">TRIN 3</string>
+	<string name="applySensorTextStep3">Træk låget helt af sensorpakken.</string>
+	<string name="applySensorTitleStep4">TRIN 4</string>
+	<string name="applySensorTextStep4">Skru hætten af sensorapplikatoren.</string>
+	<string name="applySensorTitleStep5">TRIN 5</string>
+	<string name="applySensorTextStep5">Bring det mørke mærke på sensorapplikatoren på højde med det mørke mærke på sensorpakken. Tryk ned på sensorapplikatoren med et fast tryk på en hård overflade, indtil den stopper.</string>
+	<string name="applySensorTitleStep6">TRIN 6</string>
+	<string name="applySensorTextStep6">Løft sensorapplikatoren ud af sensorpakken.</string>
+	<string name="applySensorTitleStep7">TRIN 7</string>
+	<string name="applySensorTextStep7">Sensorapplikatoren er klar til at fastgøre sensoren. Du må ikke røre ved indersiden af sensorapplikatoren eller lægge den tilbage i sensorpakken.</string>
+	<string name="applySensorTitleStep8">TRIN 8</string>
+	<string name="applySensorTextStep8">Anbring sensorapplikatoren over stedet, og tryk ned med et fast tryk for at fastgøre sensoren.</string>
+	<string name="applySensorTitleStep9">TRIN 9</string>
+	<string name="applySensorTextStep9">Træk forsigtigt sensorapplikatoren væk fra kroppen.</string>
+	<string name="applySensorTitleStep10">TRIN 10</string>
+	<string name="applySensorTextStep10">Sørg for at sensoren sidder fast. Kassér den brugte sensorapplikator og sensorpakke i henhold til lokale bestemmelser.</string>
+
+	<!-- Scan Sensor Tour -->
+	<string name="scanSensorTitle">Sådan scanner du en sensor</string>
+	<string name="scanSensorTitleStep1">TRIN 1</string>
+	<string name="scanSensorTextStep1"><![CDATA[Hold <b>bagsiden</b> af smartphonen <b>ind imod</b> sensoren.]]></string>
+	<string name="scanSensorTitleStep2">TRIN 2</string>
+	<string name="scanSensorTextStep2">Hvis lyden er aktiveret udsender smartphonen en serie toner og vibrationer, mens den scanner sensoren. Fjern ikke smartphonen, før tonerne og vibrationerne er holdt op.</string>
+	<string name="scanSensorTitleStep3">TRIN 3</string>
+	<string name="scanSensorTextStep3">For at scanne sensoren er du muligvis nødt til at ændre positionen af din smartphone tæt på sensoren, så den kan finde smartphonens NFC-antenne.</string>
+
+	<!-- About -->
+	<string name="about">Om</string>
+	<string name="appNameLabel">Navn:</string>
+	<string name="appNameValue">FreeStyle LibreLink</string>
+	<string name="appPartOfSystem">Del af FreeStyle Libre flashglukosemonitoreringssystemet</string>
+	<string name="last3sensors">Sidste 3 sensorer:</string>
+	<string name="sensorStatus">&#160;&#160;&#160;&#160;status: %1$s</string>
+	<string name="udi">UDI:</string>
+	<string name="registrationNumber">Registreringsnummer:</string>
+	<string name="productStandardNumber">Produktets standardnummer:</string>
+	<string name="model">Smartphone model:</string>
+	<string name="appCountryLabel">Land eller område:</string>
+	<string name="supportWebsiteLabel">Kundeservice:</string>
+	<string name="supportWebsiteValue">http://www.freestylelibre.com</string>
+	<string name="consultInstructionsForUse">Se brugervejledningen</string>
+	<string name="productOfUsa">Produceret i USA</string>
+	<string name="patentWebsiteLabel">Patenter på hjemmeside:</string>
+	<string name="patentWebsiteValue">https://www.abbott.com/patents</string>
+	<string name="trademarkStatement">FreeStyle, Libre og relaterede varemærker tilhører Abbott Diabetes Care Inc. inden for forskellige retskredse.</string>
+	<string name="copyrightStatement">©2018 Abbott</string>
+	<string name="osVersion">Android OS version:</string>
+	<string name="sensorNotPresent">Ingen aktiv sensor</string>
+	<string name="softwareVersion">Softwareversion:</string>
+
+	<!-- Notifications -->
+	<string name="alarmExpired">Alarm udløbet</string>
+	<string name="timerExpired">Timer udløbet</string>
+
+	<string name="sensorActivated">Sensor startede</string>
+	<string name="sensorReady">Sensor klar</string>
+	<string name="sensorReadyContent">Din sensor er klar til brug</string>
+	<string name="sensorExpired">Sensor endt</string>
+	<string name="sensorExpiredContent">Start en ny sensor for at tjekke glukose</string>
+	<string name="sensorEndingSoon">Sensor ender snart</string>
+
+	<!-- Data Upload -->
+	<string name="uploadFailedTitle">Overførsel mislykkedes</string>
+	<string name="uploadFailedNoConnectivityContent">Ingen forbindelse</string>
+	<string name="uploadFailedInvalidToken">Autentificeringen lykkedes ikke. Klik for at logge på.</string>
+	<string name="uploadFailedOther">Der opstod en fejl. Klik for at prøve igen</string>
+	<string name="uploadingDataTitle">Overfører FreeStyle LibreLink data</string>
+	<string name="uploadingDataContent">Sender data</string>
+	<string name="serving_size_in_grams">1 portion = %.1f gram</string>
+	<string name="acceptLanguageHeader">da-DK, da;q=0.8</string>
+	<string name="appLocale">da-DK</string>
+
+	<string name="reportHeaderDayOnlyFormat">d</string>
+	<string name="reportHeaderFullDateFormat">d MMMM yyyy</string>
+	<string name="reportHeaderShortMonthFormat">d MMM</string>
+	<string name="reportHeaderShortMonthFullFormat">d MMM yyyy</string>
+	<string name="reportHeaderDateRangeFormat">%1$s - %2$s</string>
+	<string name="reportShareSubjectFormat">%1$s: %2$s</string>
+
+	<string name="nonActionableExplanationTitle">Bekræft glukosemåling</string>
+	<string name="nonActionableExplanationMessage">Bekræft glukosemålingen med en teststrimmel, før du træffer beslutninger om behandlingen.</string>
+
+	<!-- TTS Result -->
+	<string name="spokenLo">uden for område og lav</string>
+	<string name="spokenHi">uden for område og høj</string>
+	<string name="spokenMgDl">milligram per deciliter</string>
+	<string name="spokenMmolL">millimol per liter</string>
+	<string name="resultWithTrendNotDetermined">%1$s %2$s med utilgængelig trend</string>
+	<string name="resultWithTrendFallingQuickly">%1$s %2$s og hurtigt faldende</string>
+	<string name="resultWithTrendFalling">%1$s %2$s og faldende</string>
+	<string name="resultWithTrendStable">%1$s %2$s og ændrer sig langsomt</string>
+	<string name="resultWithTrendRising">%1$s %2$s og stigende</string>
+	<string name="resultWithTrendRisingQuickly">%1$s %2$s og hurtigt stigende</string>
+
+	<!-- Download Progress -->
+	<string name="progressDownloadingConfiguration">Henter app konfiguration</string>
+	<string name="progressDownloadingUserGuide">Henter brugervejledning</string>
+	<string name="insufficientSpaceMessage">Ikke nok ledig plads på din smartphone.</string>
+
+
+	<!-- New strings added 25SEPT2017 -->
+
+	<string name="modalLookingForSensor">Hold iPhone tæt på sensoren</string>
+	<string name="modalSensorFound">Scanning udført</string>
+	<string name="settingsMenuTitle">Indstillinger</string>
+	<string name="genericOSVersion">iOS-version:</string>
+	<string name="editTime">Rediger Tid</string>
+	<string name="detail">Detaljer</string>
+	<string name="helpItemTitleGlucoseHelp">Glukosemålinger</string>
+	<string name="glucoseHelp">Glukosemålinger</string>
+
+	<!-- Abbreviated time passed -->
+	<string name="mins_passed">For %dm siden</string>
+	<string name="hours_passed">For %dt siden</string>
+
+	<string name="iosNotificationsDisabled">Du skal aktivere meddelelser i iOS-enhedens Indstillinger for, at du kan modtage påmindelser.</string>
+	<string name="glucoseWarningReminderPrompt">Vil du indstille en påmindelse om at tjekke dit glukoseniveau?</string>
+	<string name="NFCReaderUsageDescription">FreeStyle LibreLink bruger NFC til scanning af FreeStyle Libre sensorer.</string>
+	<string name="NSPhotoLibraryAddUsageDescription">FreeStyle LibreLink skal have adgang til dit mediebibliotek for at kunne gemme rapporter. Dine billeder kan ikke deles uden din tilladelse.</string>
+	<string name="deleteNote">Slet note</string>
+	<string name="deleteNoteConfirmation">Vil du slette denne note?</string>
+
+	<!-- New strings with existing Android Counterparts -->
+
+	<string name="iosScanSensorTextStep1">Tryk på scanneknappen, før du scanner sensoren.</string>
+	<string name="iosScanSensorTextStep2">Hold toppen af din iPhone tæt på sensoren.</string>
+	<string name="iosScanSensorTextStep3">Din iPhone vibrerer og laver en lyd (hvis lyde er aktiveret) efter scanningen af sensoren.</string>
+	<string name="iosErrorVersionCheckFailed">Denne version af FreeStyle LibreLink skal opdateres. Tjek App Store for den nyeste version.</string>
+	<string name="iosReadyToScanDetail">Din sensor er klar til brug.</string>
+	<string name="iosDefaultSensorErrorMsg">Scanningen mislykkedes. Tryk på scanneknappen, og scan igen.</string>
+	<string name="iosEnableNetworkTimeTitle">Opdater Dato &amp; tid</string>
+	<string name="iosEnableNetworkTime">Dine indstillinger for dato og tid skal være opdateret automatisk, før du kan bruge FreeStyle LibreLink. Gå til Indstillinger &gt; Generelt &gt; Dato &amp; tid, og slå Indstil automatisk til.</string>
+
+	<!-- New string added per Ashwin Kumar's request 2017-08-30-->
+	<string name="iosCheckGlucoseWithPhone">Du kan tjekke glukose med din iPhone.</string>
+	<string name="retry">Prøv igen</string>
+
+	<!-- New strings for US changes 2017-10-31 -->
+	<string name="sensorUserPrompt">Indtast oplysninger for den person, som skal bære sensoren. </string>
+	<string name="welcome">Velkommen!</string>
+	<string name="welcomeDetail">Brug et øjeblik på at lære, hvordan du skal fortolke dine glukosemålinger med denne app.</string>
+	<string name="backgroundGlucoseColorsTitle">Baggrundsfarve for glukoseniveau</string>
+	<string name="backgroundGlucoseColorsDetail">Dit aktuelle glukoseniveau bestemmer, hvilken farve der vises i baggrunden.</string>
+	<string name="glucoseHighAbove240Mgdl">Højt glukoseniveau (over 240 mg/dL)</string>
+	<string name="glucoseBetweenTarget240Mgdl">Mellem målområde og 240 mg/dL</string>
+	<string name="glucoseTargetRange">Glukoseniveau inden for målområdet</string>
+	<string name="glucoseBetweenTarget70Mgdl">Mellem målområde og 70 mg/dL</string>
+	<string name="glucoseLowBelow70Mgdl">Lavt glukoseniveau (under 70 mg/dL)</string>
+	<string name="glucoseHighAbove240Mmol">Højt glukoseniveau (over 13,3 mmol/L)</string>
+	<string name="glucoseBetweenTarget240Mmol">Mellem målområde og 13,3 mmol/L</string>
+	<string name="glucoseBetweenTarget70Mmol">Mellem målområde og 3,9 mmol/L</string>
+	<string name="glucoseLowBelow70Mmol">Lavt glukoseniveau (under 3,9 mmol/L)</string>
+	<string name="treatmentDecisions">Behandlingsbeslutninger</string>
+	<string name="treatmentDecisionsSymbol">Hvis du ser dette symbol, skal du foretage en blodsukkertest, inden du træffer nogen behandlingsbeslutninger.</string>
+	<string name="treatmentDecisionsTest">Hvis sensorglukosemålingen ikke svarer til, hvordan du har det, skal du foretage en blodsukkertest.</string>
+	<string name="checkBloodGlucoseTitle">Tjek blodsukker</string>
+	<string name="checkBloodGlucoseMessage">Udfør en blodsukkertest, inden du træffer nogen behandlingsbeslutninger.</string>
+	<string name="highGlucoseCheckBloodGlucose">Et højt glukoseniveau kan være farligt. Udfør en blodsukkertest, inden du træffer nogen behandlingsbeslutninger. Overvej også at tjekke dit ketonniveau.</string>
+	<string name="lowGlucoseCheckBloodGlucose">Et lavt glukoseniveau kan være farligt. Udfør en blodsukkertest, inden du træffer nogen behandlingsbeslutninger.</string>
+	<string name="reminder">Påmindelse</string>
+	<string name="safetyInformation">Sikkerhedsoplysninger</string>
+	<string name="labeling">Mærkning</string>
+	<string name="userGuides">Brugervejledning</string>
+	<string name="quickStartGuide">Lommeguide</string>
+	<string name="quickReferenceGuide">Kort vejledning</string>
+	<string name="myGlucoseExplanationUpdate">Din glukosemåling bliver vist, når du har scannet din sensor. Tjek for (1) aktuelt glukoseniveau, (2) glukosetendenspil, (3) glukosekurve og (4) glukosemeddelelser.</string>
+	<string name="sensorPlacementInstruction">Sensoren må kun påsættes bag på din overarm.</string>
+	<string name="sensorReadyAt">Sensor klar kl.:</string>
+	<string name="formattedTimeRemaining">(%1$s tilbage)</string>
+	<string name="sensorStartedByOtherDevice">Denne sensor blev startet med en anden enhed.</string>
+	<string name="sensorLatejoinExplanation">For at sensoren kan fungere med denne smartphone skal du bruge denne smartphone til at scanne sensoren, mens den starter.</string>
+	<string name="androidScanInstruction1">Hold bagsiden af smartphonen tæt på sensoren.</string>
+	<string name="androidScanInstruction2">Vent, indtil du hører to toner eller vibrationer.</string>
+	<string name="bugFixesTitle">Rettelse af programfejl</string>
+	<string name="bugFixesDetail">Rettelse af programfejl og funktionsforbedringer</string>
+	<string name="performanceImprovements">Funktionsforbedringer</string>
+	<string name="sensorChangeExplanation">Når du starter en ny sensor, stopper den sensor, du er i færd med at bruge.</string>
+	<string name="useNewSensorPrompt">Ønsker du at starte en ny sensor?</string>
+	<string name="earlySensorActivationPrompt">Ønsker du, at dette er din næste sensor?</string>
+	<string name="changeSensorPrompt">Ønsker du at starte denne sensor?</string>
+	<string name="replaceExistingSensor">Det vil erstatte den senest startede sensor.</string>
+	<string name="earlyActivationExistingEndsSoon">Du kan fortsætte med at bruge din aktuelle sensor, indtil den stopper.</string>
+	<string name="earlyActivationEndsExisting">Du kan fortsætte med at bruge din aktuelle sensor, indtil din nye sensor er klar.</string>
+	<string name="scanOtherSensor">Scan din anden sensor for at tjekke glukose.</string>
+	<string name="sensorNotWorking">Sensoren fungerer ikke.</string>
+	<string name="currentSensorEndsAt">Aktuel sensor stopper om:</string>
+	<string name="newSensorReadyAt">Ny sensor klar kl.:</string>
+	<string name="sensorAlreadyStarted">Denne sensor er allerede blevet startet.</string>
+	<string name="earlySensorStartupTimeRemaining">Glukosemåling er ikke tilgængelig. Prøv at scanne igen om %1$s.</string>
+	<string name="glucoseReadingUnavailable">Glukosemåling er ikke tilgængelig. </string>
+	<string name="scanAgainIn">Prøv at scanne igen om %1$s.</string>
+	<string name="softwareReleaseVersion">Software udgaveversion:</string>
+	<string name="softwareFullVersion">Software fuld version:</string>
+</resources>
