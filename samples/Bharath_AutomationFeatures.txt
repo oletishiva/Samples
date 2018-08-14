@@ -1,0 +1,25 @@
+Hi ,
+
+Thank you for providing me to work on Automation.
+I have started this journey with by learning the Appium automation and implemented the same in  our application automation.
+I have started developing the Test scripts by using Page Object Model and implemented Extent Reports at some extent.
+
+Completed the following features.
+
+1.	Reporting with Extent Reports with screen shots
+2.	Common Methods
+3.	Designed Page Object model
+
+Test Cases completed
+
+1.	User Name Error Validation
+2.	Password Error Validation
+3.	Sign-In
+4.	Sign-out
+5.	Navigation Drawer Items Verification
+6.	Home tabs Verification
+7.	Department Items Verification
+8.	Verify Favourites List is empty
+9.	Adding Items to Favourites List
+10.	Removing Items to Favourites List
+
