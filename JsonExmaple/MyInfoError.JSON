@@ -1,0 +1,10 @@
+{
+  "email_mobile_error": {
+    "errorTitle": "This Email and mobile number already exists",
+    "errorDescription": "please login to your payLah account using emailID"
+      },
+  "email_error": {
+   "errorTitle": "This Email already exists",
+    "errorDescription": "please login to your payLah account using emailID"
+  }
+}
